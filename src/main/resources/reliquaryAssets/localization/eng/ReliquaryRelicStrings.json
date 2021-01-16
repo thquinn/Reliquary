@@ -1,0 +1,74 @@
+{
+  "reliquary:BrokenClock": {
+    "NAME": "Broken Clock",
+    "FLAVOR": "It's a clock.",
+    "DESCRIPTIONS": [
+      "Each combat starts with two player turns, then two enemy turns."
+    ]
+  },
+  "reliquary:Firecrackers": {
+    "NAME": "Firecrackers",
+    "FLAVOR": "It's an explosive.",
+    "DESCRIPTIONS": [
+      "Overkill damage is dealt to all other enemies."
+    ]
+  },
+  "reliquary:JackalopeHorn": {
+    "NAME": "Jackalope Horn",
+    "FLAVOR": "It's a horn.",
+    "DESCRIPTIONS": [
+      "Whenever an enemy dies, refund the Energy cost of the last card you played."
+    ]
+  },
+  "reliquary:KinkedSpring": {
+    "NAME": "Kinked Spring",
+    "FLAVOR": "It's a spring.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Your discard pile can't shuffle into your draw pile during your turn."
+    ]
+  },
+  "reliquary:PorcupineQuills": {
+    "NAME": "Porcupine Quills",
+    "FLAVOR": "It's some quills.",
+    "DESCRIPTIONS": [
+      "Whenever you receive #b12 or more unblocked damage, deal that much damage back."
+    ]
+  },
+  "reliquary:PurpleTingedLeaf": {
+    "NAME": "Purple-Tinged Leaf",
+    "FLAVOR": "It's a leaf.",
+    "DESCRIPTIONS": [
+      "Upon pick up, choose a card. Whenever you play that card, heal #b1 HP.",
+      "Whenever you play the chosen ",
+      ", heal #b1 HP."
+    ]
+  },
+  "reliquary:RadioactivePellet": {
+    "NAME": "Radioactive Pellet",
+    "FLAVOR": "It's a pellet.",
+    "DESCRIPTIONS": [
+      "#yPoison doesn't decrement."
+    ]
+  },
+  "reliquary:RosewoodLute": {
+    "NAME": "Rosewood Lute",
+    "FLAVOR": "It's a lute.",
+    "DESCRIPTIONS": [
+      "Whenever you block damage exactly, gain #b1 [E] next turn."
+    ]
+  },
+  "reliquary:QuartzCube": {
+    "NAME": "Quartz Cube",
+    "FLAVOR": "It's a cube.",
+    "DESCRIPTIONS": [
+      "At the start of each combat with #b2 or more enemies, apply #b2 #yStun to a random one. It can't be damaged while Stunned."
+    ]
+  },
+  "reliquary:ShortFuse": {
+    "NAME": "Short Fuse",
+    "FLAVOR": "It's a fuse.",
+    "DESCRIPTIONS": [
+      "Your #yLightning Orbs target the enemy with the least HP."
+    ]
+  }
+}

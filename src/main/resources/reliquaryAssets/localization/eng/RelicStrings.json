@@ -50,6 +50,13 @@
       "Gain [E] at the start of your turn. Your discard pile can't shuffle into your draw pile during your turn."
     ]
   },
+  "reliquary:MedicineBall": {
+    "NAME": "Medicine Ball",
+    "FLAVOR": "It's a ball.",
+    "DESCRIPTIONS": [
+      "You have additional #yStrength equal to your enemies' combined #yStrength."
+    ]
+  },
   "reliquary:PorcupineQuills": {
     "NAME": "Porcupine Quills",
     "FLAVOR": "It's some quills.",

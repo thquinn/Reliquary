@@ -4,6 +4,7 @@ import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 import relics.*;
@@ -19,6 +20,7 @@ public class Reliquary implements EditRelicsSubscriber, EditStringsSubscriber {
         BaseMod.addRelic(new RelicBookmark(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBrokenClock(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFirecrackers(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicIridiumChain(), RelicType.SHARED);
         BaseMod.addRelic(new RelicJackalopeHorn(), RelicType.SHARED);
         BaseMod.addRelic(new RelicKinkedSpring(), RelicType.SHARED);
         BaseMod.addRelic(new RelicPorcupineQuills(), RelicType.SHARED);
@@ -31,6 +33,7 @@ public class Reliquary implements EditRelicsSubscriber, EditStringsSubscriber {
         UnlockTracker.markRelicAsSeen(RelicBookmark.ID);
         UnlockTracker.markRelicAsSeen(RelicBrokenClock.ID);
         UnlockTracker.markRelicAsSeen(RelicFirecrackers.ID);
+        UnlockTracker.markRelicAsSeen(RelicIridiumChain.ID);
         UnlockTracker.markRelicAsSeen(RelicJackalopeHorn.ID);
         UnlockTracker.markRelicAsSeen(RelicKinkedSpring.ID);
         UnlockTracker.markRelicAsSeen(RelicPorcupineQuills.ID);
@@ -44,6 +47,7 @@ public class Reliquary implements EditRelicsSubscriber, EditStringsSubscriber {
 
     @Override
     public void receiveEditStrings() {
-        BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/eng/ReliquaryRelicStrings.json");
+        BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/eng/RelicStrings.json");
+        BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/eng/UIStrings.json");
     }
 }

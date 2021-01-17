@@ -20,6 +20,14 @@
       "Overkill damage is dealt to all other enemies."
     ]
   },
+  "reliquary:IridiumChain": {
+    "NAME": "Iridium Chain",
+    "FLAVOR": "It's a chain.",
+    "DESCRIPTIONS": [
+      "Whenever you play a #yPower card, put an #yEthereal copy into your hand that costs #b1 more.",
+      "Ethereal. NL "
+    ]
+  },
   "reliquary:JackalopeHorn": {
     "NAME": "Jackalope Horn",
     "FLAVOR": "It's a horn.",
@@ -47,7 +55,7 @@
     "DESCRIPTIONS": [
       "Upon pick up, choose a card. Whenever you play that card, heal #b1 HP.",
       "Whenever you play the chosen ",
-      ", heal #b1 HP."
+      ", heal 1 HP."
     ]
   },
   "reliquary:RadioactivePellet": {

@@ -92,9 +92,6 @@ public class RelicPurpleTingedLeaf extends CustomRelic implements CustomBottleRe
             cardSelected = true;
             card = AbstractDungeon.gridSelectScreen.selectedCards.get(0);
             PatchPurpleTingedLeaf.inPurpleTingedLeaf.set(card, true);
-            if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.INCOMPLETE) {
-                AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.COMPLETE;
-            }
             AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.COMPLETE;
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
             setDescriptionAfterLoading();

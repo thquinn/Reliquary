@@ -13,6 +13,14 @@
       "Each combat starts with two player turns, then two enemy turns."
     ]
   },
+  "reliquary:FeatherDuster": {
+    "NAME": "Feather Duster",
+    "FLAVOR": "It's a duster.",
+    "DESCRIPTIONS": [
+      "Upon pickup, remove any number of cards from your deck except Strike, Defend, and #rCurse cards.",
+      "Select any number of cards to remove."
+    ]
+  },
   "reliquary:Firecrackers": {
     "NAME": "Firecrackers",
     "FLAVOR": "It's an explosive.",
@@ -53,7 +61,7 @@
     "NAME": "Purple-Tinged Leaf",
     "FLAVOR": "It's a leaf.",
     "DESCRIPTIONS": [
-      "Upon pick up, choose a card. Whenever you play that card, heal #b1 HP.",
+      "Upon pickup, choose a card. Whenever you play that card, heal #b1 HP.",
       "Whenever you play the chosen ",
       ", heal 1 HP."
     ]

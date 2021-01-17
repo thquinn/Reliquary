@@ -5,6 +5,7 @@ import basemod.interfaces.EditStringsSubscriber;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 import relics.*;
@@ -19,6 +20,7 @@ public class Reliquary implements EditRelicsSubscriber, EditStringsSubscriber {
     public void receiveEditRelics() {
         BaseMod.addRelic(new RelicBookmark(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBrokenClock(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicFeatherDuster(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFirecrackers(), RelicType.SHARED);
         BaseMod.addRelic(new RelicIridiumChain(), RelicType.SHARED);
         BaseMod.addRelic(new RelicJackalopeHorn(), RelicType.SHARED);
@@ -32,6 +34,7 @@ public class Reliquary implements EditRelicsSubscriber, EditStringsSubscriber {
         BaseMod.addRelic(new RelicShortFuse(), RelicType.BLUE);
         UnlockTracker.markRelicAsSeen(RelicBookmark.ID);
         UnlockTracker.markRelicAsSeen(RelicBrokenClock.ID);
+        UnlockTracker.markRelicAsSeen(RelicFeatherDuster.ID);
         UnlockTracker.markRelicAsSeen(RelicFirecrackers.ID);
         UnlockTracker.markRelicAsSeen(RelicIridiumChain.ID);
         UnlockTracker.markRelicAsSeen(RelicJackalopeHorn.ID);

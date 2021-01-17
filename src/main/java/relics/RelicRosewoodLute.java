@@ -9,8 +9,6 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.EnergizedPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import util.TextureLoader;
 
 public class RelicRosewoodLute extends CustomRelic implements OnLoseBlockRelic {

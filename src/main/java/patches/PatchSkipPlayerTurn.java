@@ -9,8 +9,6 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.EnemyTurnEffect;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 @SpirePatch(
         clz=AbstractRoom.class,
@@ -25,11 +23,9 @@ public class PatchSkipPlayerTurn
             method="getNextAction"
     )
     private static class PatchSkipPlayerTurnInternal {
-        public static final Logger logger = LogManager.getLogger(PatchSkipPlayerTurnInternal.class.getName());
         @SpireInsertPatch(locator=Locator.class)
         public static SpireReturn Insert(GameActionManager __instance) {
             if (__instance.monsterQueue.isEmpty() && PatchSkipPlayerTurn.skipPlayerTurn.get(AbstractDungeon.getCurrRoom())) {
-                logger.info("restarting monster turn");
                 AbstractDungeon.getCurrRoom().monsters.applyEndOfTurnPowers();
                 AbstractDungeon.getCurrRoom().monsters.queueMonsters();
                 AbstractDungeon.getMonsters().showIntent();

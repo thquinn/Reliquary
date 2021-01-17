@@ -6,6 +6,8 @@ import basemod.abstracts.CustomBottleRelic;
 import basemod.abstracts.CustomRelic;
 import basemod.abstracts.CustomSavable;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.actions.common.HealAction;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
@@ -97,8 +99,8 @@ public class RelicPurpleTingedLeaf extends CustomRelic implements CustomBottleRe
 
     public void onUseCard(AbstractCard targetCard, UseCardAction useCardAction) {
         if (PatchPurpleTingedLeaf.inPurpleTingedLeaf.get(targetCard)) {
-            AbstractDungeon.player.heal(1, true);
-            flash();
+            addToTop(new HealAction(AbstractDungeon.player, AbstractDungeon.player, 1));
+            addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         }
     }
 

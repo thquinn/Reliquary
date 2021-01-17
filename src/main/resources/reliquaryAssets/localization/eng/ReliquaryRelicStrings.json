@@ -1,4 +1,11 @@
 {
+  "reliquary:Bookmark": {
+    "NAME": "Bookmark",
+    "FLAVOR": "It's a bookmark.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, draw an extra card for each #yInnate card in your deck."
+    ]
+  },
   "reliquary:BrokenClock": {
     "NAME": "Broken Clock",
     "FLAVOR": "It's a clock.",
@@ -50,6 +57,13 @@
       "#yPoison doesn't decrement."
     ]
   },
+  "reliquary:RoseTintedGlasses": {
+    "NAME": "Rose-Tinted Glasses",
+    "FLAVOR": "It's a pair of glasses.",
+    "DESCRIPTIONS": [
+      "The first #b2 times you draw a #yStatus each combat, #yExhaust it and draw a card."
+    ]
+  },
   "reliquary:RosewoodLute": {
     "NAME": "Rosewood Lute",
     "FLAVOR": "It's a lute.",
@@ -61,7 +75,7 @@
     "NAME": "Quartz Cube",
     "FLAVOR": "It's a cube.",
     "DESCRIPTIONS": [
-      "At the start of each combat with #b2 or more enemies, apply #b2 #yStun to a random one. It can't be damaged while Stunned."
+      "At the start of each combat with #b2 or more enemies, apply #b2 #yStun to one. It can't be damaged while Stunned."
     ]
   },
   "reliquary:ShortFuse": {

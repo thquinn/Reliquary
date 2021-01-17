@@ -16,6 +16,7 @@ public class Reliquary implements EditRelicsSubscriber, EditStringsSubscriber {
 
     @Override
     public void receiveEditRelics() {
+        BaseMod.addRelic(new RelicBookmark(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBrokenClock(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFirecrackers(), RelicType.SHARED);
         BaseMod.addRelic(new RelicJackalopeHorn(), RelicType.SHARED);
@@ -23,9 +24,11 @@ public class Reliquary implements EditRelicsSubscriber, EditStringsSubscriber {
         BaseMod.addRelic(new RelicPorcupineQuills(), RelicType.SHARED);
         BaseMod.addRelic(new RelicPurpleTingedLeaf(), RelicType.SHARED);
         BaseMod.addRelic(new RelicRadioactivePellet(), RelicType.GREEN);
+        BaseMod.addRelic(new RelicRoseTintedGlasses(), RelicType.SHARED);
         BaseMod.addRelic(new RelicRosewoodLute(), RelicType.SHARED);
         BaseMod.addRelic(new RelicQuartzCube(), RelicType.SHARED);
         BaseMod.addRelic(new RelicShortFuse(), RelicType.BLUE);
+        UnlockTracker.markRelicAsSeen(RelicBookmark.ID);
         UnlockTracker.markRelicAsSeen(RelicBrokenClock.ID);
         UnlockTracker.markRelicAsSeen(RelicFirecrackers.ID);
         UnlockTracker.markRelicAsSeen(RelicJackalopeHorn.ID);
@@ -33,6 +36,7 @@ public class Reliquary implements EditRelicsSubscriber, EditStringsSubscriber {
         UnlockTracker.markRelicAsSeen(RelicPorcupineQuills.ID);
         UnlockTracker.markRelicAsSeen(RelicPurpleTingedLeaf.ID);
         UnlockTracker.markRelicAsSeen(RelicRadioactivePellet.ID);
+        UnlockTracker.markRelicAsSeen(RelicRoseTintedGlasses.ID);
         UnlockTracker.markRelicAsSeen(RelicRosewoodLute.ID);
         UnlockTracker.markRelicAsSeen(RelicQuartzCube.ID);
         UnlockTracker.markRelicAsSeen(RelicShortFuse.ID);

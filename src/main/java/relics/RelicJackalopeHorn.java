@@ -2,6 +2,7 @@ package relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -33,7 +34,8 @@ public class RelicJackalopeHorn extends CustomRelic {
 
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        if (damageAmount >= target.currentHealth) {
+        if (damageAmount >= target.currentHealth && lastCost > 0) {
+            addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             AbstractDungeon.player.gainEnergy(lastCost);
         }
     }

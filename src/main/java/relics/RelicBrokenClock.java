@@ -2,6 +2,7 @@ package relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.actions.watcher.SkipEnemiesTurnAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -31,7 +32,7 @@ public class RelicBrokenClock extends CustomRelic {
     public void onPlayerEndTurn() {
         turn++;
         if (turn == 1) {
-            flash();
+            addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         } else if (turn == 2) {
             PatchSkipPlayerTurn.skipPlayerTurn.set(AbstractDungeon.getCurrRoom(), true);
         }

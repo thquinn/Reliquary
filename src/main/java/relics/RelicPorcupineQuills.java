@@ -4,6 +4,7 @@ import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.defect.DamageAllButOneEnemyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -25,12 +26,12 @@ public class RelicPorcupineQuills extends CustomRelic {
     public int onAttacked(DamageInfo info, int damageAmount) {
         int unblocked = damageAmount - AbstractDungeon.player.currentBlock;
         if (unblocked >= 12) {
+            addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             addToBot(new DamageAction(
                     info.owner,
                     new DamageInfo(AbstractDungeon.player, unblocked, DamageInfo.DamageType.THORNS),
                     AbstractGameAction.AttackEffect.SLASH_VERTICAL
             ));
-            flash();
         }
         return damageAmount;
     }

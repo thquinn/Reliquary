@@ -33,6 +33,7 @@ public class Reliquary implements EditRelicsSubscriber, EditStringsSubscriber {
         BaseMod.addRelic(new RelicRosewoodLute(), RelicType.SHARED);
         BaseMod.addRelic(new RelicQuartzCube(), RelicType.SHARED);
         BaseMod.addRelic(new RelicShortFuse(), RelicType.BLUE);
+        BaseMod.addRelic(new RelicTatteredRug(), RelicType.SHARED);
         UnlockTracker.markRelicAsSeen(RelicBookmark.ID);
         UnlockTracker.markRelicAsSeen(RelicBrokenClock.ID);
         UnlockTracker.markRelicAsSeen(RelicFeatherDuster.ID);
@@ -48,6 +49,7 @@ public class Reliquary implements EditRelicsSubscriber, EditStringsSubscriber {
         UnlockTracker.markRelicAsSeen(RelicRosewoodLute.ID);
         UnlockTracker.markRelicAsSeen(RelicQuartzCube.ID);
         UnlockTracker.markRelicAsSeen(RelicShortFuse.ID);
+        UnlockTracker.markRelicAsSeen(RelicTatteredRug.ID);
     }
 
     @Override

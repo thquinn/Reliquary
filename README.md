@@ -1,2 +1,2 @@
 # Reliquary
- 10 custom relics for Slay the Spire
+Some custom relics for Slay the Spire

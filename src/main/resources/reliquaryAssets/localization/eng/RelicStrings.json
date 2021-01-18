@@ -107,5 +107,21 @@
     "DESCRIPTIONS": [
       "Your #yLightning Orbs target the enemy with the least HP."
     ]
+  },
+  "reliquary:TatteredRug": {
+    "NAME": "Tattered Rug",
+    "FLAVOR": "It's a rug.",
+    "DESCRIPTIONS": [
+      "You can sell potions to the Merchant.",
+      "Sell for ",
+      " Gold",
+      "I'll take it!",
+      "You got yourself a deal!",
+      "~What're~ ~ya~ ~sellin'?~",
+      "Ah! I'll buy it at a high price!",
+      "Gimme!",
+      "I'd be a fool @not@ to buy it!",
+      "You drive a hard bargain!"
+    ]
   }
 }

@@ -25,13 +25,13 @@ public class PatchSkipPlayerTurn
     private static class PatchSkipPlayerTurnInternal {
         @SpireInsertPatch(locator=Locator.class)
         public static SpireReturn Insert(GameActionManager __instance) {
-            if (__instance.monsterQueue.isEmpty() && PatchSkipPlayerTurn.skipPlayerTurn.get(AbstractDungeon.getCurrRoom())) {
+            if (__instance.monsterQueue.isEmpty() && skipPlayerTurn.get(AbstractDungeon.getCurrRoom())) {
                 AbstractDungeon.getCurrRoom().monsters.applyEndOfTurnPowers();
                 AbstractDungeon.getCurrRoom().monsters.queueMonsters();
                 AbstractDungeon.getMonsters().showIntent();
                 AbstractDungeon.topLevelEffects.add(new EnemyTurnEffect());
                 AbstractDungeon.actionManager.addToBottom(new MonsterStartTurnAction());
-                PatchSkipPlayerTurn.skipPlayerTurn.set(AbstractDungeon.getCurrRoom(), false);
+                skipPlayerTurn.set(AbstractDungeon.getCurrRoom(), false);
                 return SpireReturn.Return(null);
             }
             return SpireReturn.Continue();

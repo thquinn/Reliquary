@@ -101,6 +101,13 @@
       "At the start of each combat with #b2 or more enemies, apply #b2 #yStun to one. It can't be damaged while Stunned."
     ]
   },
+  "reliquary:SculptingSteel": {
+    "NAME": "Sculpting Steel",
+    "FLAVOR": "It's a lump of steel.",
+    "DESCRIPTIONS": [
+      "Upon pickup, becomes a copy of a relic you already have."
+    ]
+  },
   "reliquary:ShortFuse": {
     "NAME": "Short Fuse",
     "FLAVOR": "It's a fuse.",

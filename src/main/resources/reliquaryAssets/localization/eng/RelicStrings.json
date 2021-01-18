@@ -50,6 +50,13 @@
       "Gain [E] at the start of your turn. Your discard pile can't shuffle into your draw pile during your turn."
     ]
   },
+  "reliquary:Knoch": {
+    "NAME": "Knoch",
+    "FLAVOR": "It's a knoch.",
+    "DESCRIPTIONS": [
+      "Enemies with #b25% or less health are #yWeak."
+    ]
+  },
   "reliquary:MedicineBall": {
     "NAME": "Medicine Ball",
     "FLAVOR": "It's a ball.",

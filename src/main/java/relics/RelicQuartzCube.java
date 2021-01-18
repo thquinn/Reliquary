@@ -68,7 +68,7 @@ public class RelicQuartzCube extends CustomRelic {
         // This has to be done here: stunning a monster in atBattleStart/atTurnStart causes its intent to never get set.
         if (target.intent != AbstractMonster.Intent.DEBUG) {
             activated = true;
-            addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+            addToBot(new RelicAboveCreatureAction(target, this));
             addToBot(new ApplyPowerAction(target, AbstractDungeon.player, new StunMonsterPower(target, 2)));
             addToBot(new ApplyPowerAction(target, AbstractDungeon.player, new InvinciblePower(target, 0)));
         }

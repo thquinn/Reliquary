@@ -38,6 +38,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addRelic(new RelicKinkedSpring(), RelicType.SHARED);
         BaseMod.addRelic(new RelicKnoch(), RelicType.SHARED);
         BaseMod.addRelic(new RelicMedicineBall(), RelicType.RED);
+        BaseMod.addRelic(new RelicMudwinsCradle(), RelicType.PURPLE);
         BaseMod.addRelic(new RelicPorcupineQuills(), RelicType.SHARED);
         BaseMod.addRelic(new RelicPurpleTingedLeaf(), RelicType.SHARED);
         BaseMod.addRelic(new RelicRadioactivePellet(), RelicType.GREEN);
@@ -57,6 +58,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         UnlockTracker.markRelicAsSeen(RelicKinkedSpring.ID);
         UnlockTracker.markRelicAsSeen(RelicKnoch.ID);
         UnlockTracker.markRelicAsSeen(RelicMedicineBall.ID);
+        UnlockTracker.markRelicAsSeen(RelicMudwinsCradle.ID);
         UnlockTracker.markRelicAsSeen(RelicPorcupineQuills.ID);
         UnlockTracker.markRelicAsSeen(RelicPurpleTingedLeaf.ID);
         UnlockTracker.markRelicAsSeen(RelicRadioactivePellet.ID);

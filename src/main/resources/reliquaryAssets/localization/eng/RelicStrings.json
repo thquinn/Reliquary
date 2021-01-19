@@ -71,6 +71,13 @@
       "You have additional #yStrength equal to your enemies' combined #yStrength."
     ]
   },
+  "reliquary:MudwinsCradle": {
+    "NAME": "Mudwin's Cradle",
+    "FLAVOR": "It's a desk toy.",
+    "DESCRIPTIONS": [
+      "Whenever you exit #yDivinity, gain #b2 #yMantra for each time you entered #yDivinity this combat."
+    ]
+  },
   "reliquary:PorcupineQuills": {
     "NAME": "Porcupine Quills",
     "FLAVOR": "It's some quills.",

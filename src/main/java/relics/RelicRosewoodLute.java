@@ -13,8 +13,8 @@ import util.TextureLoader;
 
 public class RelicRosewoodLute extends CustomRelic implements OnLoseBlockRelic {
     public static final String ID = "reliquary:RosewoodLute";
-    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/rosewoodLute.png");
-    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/outlines/rosewoodLute.png");
+    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/rosewoodLute.png");
+    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/rosewoodLute.png");
 
     public RelicRosewoodLute() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.SOLID);

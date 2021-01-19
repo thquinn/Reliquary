@@ -13,8 +13,8 @@ import util.TextureLoader;
 
 public class RelicJackalopeHorn extends CustomRelic {
     public static final String ID = "reliquary:JackalopeHorn";
-    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/jackalopeHorn.png");
-    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/outlines/jackalopeHorn.png");
+    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/jackalopeHorn.png");
+    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/jackalopeHorn.png");
 
     int lastCost;
 

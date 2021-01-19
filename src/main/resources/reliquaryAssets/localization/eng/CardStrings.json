@@ -1,0 +1,206 @@
+{
+  "reliquary:VaporAmbrosia": {
+    "NAME": "Ambrosial Vapor",
+    "DESCRIPTION": "Retain. NL Gain !M! Mantra. NL Exhaust."
+  },
+  "reliquary:VaporAncientPotion": {
+    "NAME": "Ancient Vapor",
+    "DESCRIPTION": "Retain. NL Remove 1 Artifact from the enemy. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Remove 1 Artifact from ALL enemies. NL Exhaust."
+  },
+  "reliquary:VaporAttackPotion": {
+    "NAME": "Maddening Vapor",
+    "DESCRIPTION": "Retain. NL Add a random Attack card into your hand. It costs 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Add !M! copies of a random Attack card into your hand. They cost 0 this turn. NL Exhaust."
+  },
+  "reliquary:VaporBlessingOfTheForge": {
+    "NAME": "Quenching Vapor",
+    "DESCRIPTION": "Retain. NL Upgrade a random card in your hand for the rest of combat. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Upgrade half of the cards in your hand for the rest of combat, at random, rounded up. NL Exhaust."
+  },
+  "reliquary:VaporBlockPotion": {
+    "NAME": "Enshrouding Vapor",
+    "DESCRIPTION": "Retain. NL Gain !B! Block. NL Exhaust."
+  },
+  "reliquary:VaporBloodPotion": {
+    "NAME": "Blood Vapor",
+    "DESCRIPTION": "Retain. NL Heal for !M! percent of your NL Max HP. NL Exhaust."
+  },
+  "reliquary:VaporBottledMiracle": {
+    "NAME": "Miraculous Vapor",
+    "DESCRIPTION": "Retain. NL Add a *Miracle into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Add a *Miracle+ into your hand. NL Exhaust."
+  },
+  "reliquary:VaporColorlessPotion": {
+    "NAME": "Transparent Vapor",
+    "DESCRIPTION": "Retain. NL Add a random Colorless card into your hand. It costs 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Add !M! copies of a random Colorless card into your hand. They cost 0 this turn. NL Exhaust."
+  },
+  "reliquary:VaporCultistPotion": {
+    "NAME": "Ritual Vapor",
+    "DESCRIPTION": "Retain. NL Gain 1 Ritual and lose !M! Strength. NL Exhaust."
+  },
+  "reliquary:VaporCunningPotion": {
+    "NAME": "Deceptive Vapor",
+    "DESCRIPTION": "Retain. NL Add a *Shiv+ into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Add !M! *Shiv+ into your hand. NL Exhaust."
+  },
+  "reliquary:VaporDexterityPotion": {
+    "NAME": "Swirling Vapor",
+    "DESCRIPTION": "Retain. NL Gain !M! Dexterity. NL Exhaust."
+  },
+  "reliquary:VaporDistilledChaos": {
+    "NAME": "Chaotic Vapor",
+    "DESCRIPTION": "Retain. NL Play the top card of your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Play the top !M! cards of your draw pile. NL Exhaust."
+  },
+  "reliquary:VaporDuplicationPotion": {
+    "NAME": "Vaporous Vapor",
+    "DESCRIPTION": "Retain. NL This turn, your next cost 0 or 1 card is played twice. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL This turn, your next !M! cost 0 or 1 cards are played twice. NL Exhaust."
+  },
+  "reliquary:VaporElixir": {
+    "NAME": "Cleansing Vapor",
+    "DESCRIPTION": "Retain. NL Exhaust a random Status or Curse card in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Exhaust all Status and Curse cards in your hand. NL Exhaust."
+  },
+  "reliquary:VaporEnergyPotion": {
+    "NAME": "Energetic Vapor",
+    "DESCRIPTION": "Retain. NL Gain [W]. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain [E] [E]. NL Exhaust."
+  },
+  "reliquary:VaporEntropicBrew": {
+    "NAME": "Entropic Vapor",
+    "DESCRIPTION": "Retain. NL A random one of your potions turns into a new potion. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Each of your potions turns into a new potion. NL Exhaust."
+  },
+  "reliquary:VaporEssenceOfDarkness": {
+    "NAME": "Dark Vapor",
+    "DESCRIPTION": "Retain. NL Trigger the passive ability of all Dark orbs. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Trigger the passive ability of all Dark orbs !M! times. NL Exhaust."
+  },
+  "reliquary:VaporEssenceOfSteel": {
+    "NAME": "Steel Vapor",
+    "DESCRIPTION": "Retain. NL Gain !M! Plated Armor. NL Exhaust."
+  },
+  "reliquary:VaporExplosivePotion": {
+    "NAME": "Explosive Vapor",
+    "DESCRIPTION": "Retain. NL Deal !D! damage to ALL enemies. NL Exhaust."
+  },
+  "reliquary:VaporFairyInABottle": {
+    "NAME": "Insulating Vapor",
+    "DESCRIPTION": "Retain. NL Prevent the next time you would lose HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Prevent the next !M! times you would lose HP. NL Exhaust."
+  },
+  "reliquary:VaporFearPotion": {
+    "NAME": "Menacing Vapor",
+    "DESCRIPTION": "Retain. NL Apply !M! Vulnerable. NL Exhaust."
+  },
+  "reliquary:VaporFirePotion": {
+    "NAME": "Fiery Vapor",
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL Exhaust."
+  },
+  "reliquary:VaporFlexPotion": {
+    "NAME": "Beefy Vapor",
+    "DESCRIPTION": "Retain. NL Gain !M! Strength. NL At the end of this turn, lose !M! Strength. NL Exhaust."
+  },
+  "reliquary:VaporFocusPotion": {
+    "NAME": "Concentrated Vapor",
+    "DESCRIPTION": "Retain. NL Gain !M! Focus. NL Exhaust."
+  },
+  "reliquary:VaporFruitJuice": {
+    "NAME": "Fruity Vapor",
+    "DESCRIPTION": "Retain. NL Gain !M! Max HP. NL Exhaust."
+  },
+  "reliquary:VaporGamblersBrew": {
+    "NAME": "Shifting Vapor",
+    "DESCRIPTION": "Retain. NL Discard 1 card at random, then draw 1 card. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Discard your hand, then draw that many cards. NL Exhaust."
+  },
+  "reliquary:VaporGhostInAJar": {
+    "NAME": "Ghostly Vapor",
+    "DESCRIPTION": "Retain. NL !M! percent chance to apply 1 Intangible. NL Exhaust."
+  },
+  "reliquary:VaporHeartOfIron": {
+    "NAME": "Shiny Vapor",
+    "DESCRIPTION": "Retain. NL Gain !M! Metallicize. NL Exhaust."
+  },
+  "reliquary:VaporLiquidBronze": {
+    "NAME": "Prickly Vapor",
+    "DESCRIPTION": "Retain. NL Gain !M! Thorns. NL Exhaust."
+  },
+  "reliquary:VaporLiquidMemories": {
+    "NAME": "Deja Vapor",
+    "DESCRIPTION": "Retain. NL Return a random card from your discard pile to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Return !M! random cards from your discard pile to your hand. NL Exhaust."
+  },
+  "reliquary:VaporPoisonPotion": {
+    "NAME": "Poisonous Vapor",
+    "DESCRIPTION": "Retain. NL Apply !M! Poison. NL Exhaust."
+  },
+  "reliquary:VaporPotionOfCapacity": {
+    "NAME": "Billowing Vapor",
+    "DESCRIPTION": "Retain. NL Gain 1 orb slot. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain !M! orb slots. NL Exhaust."
+  },
+  "reliquary:VaporPowerPotion": {
+    "NAME": "Powerful Vapor",
+    "DESCRIPTION": "Retain. NL Add a random Power card into your hand. It costs 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Add !M! copies of a random Power card into your hand. They cost 0 this turn. NL Exhaust."
+  },
+  "reliquary:VaporRegenPotion": {
+    "NAME": "Permeating Vapor",
+    "DESCRIPTION": "Retain. NL Gain !M! Regeneration. NL Exhaust."
+  },
+  "reliquary:VaporSkillPotion": {
+    "NAME": "Glowing Vapor",
+    "DESCRIPTION": "Retain. NL Add a random Skill card into your hand. It costs 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Add !M! copies of a random Skill card into your hand. They cost 0 this turn. NL Exhaust."
+  },
+  "reliquary:VaporSmokeBomb": {
+    "NAME": "Obscuring Vapor",
+    "DESCRIPTION": "Retain. NL Spend !M! Gold to escape from a non-boss combat. Receive no rewards. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "I don't have the Gold to distract them!",
+      "I'm surrounded!",
+      "It's too powerful!",
+      "They're too powerful!"
+    ]
+  },
+  "reliquary:VaporSneckoOil": {
+    "NAME": "Oily Vapor",
+    "DESCRIPTION": "Retain. NL Randomize the costs of half of the cards in your hand, rounded up. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Randomize the cost of cards in your hand. NL Exhaust."
+  },
+  "reliquary:VaporSpeedPotion": {
+    "NAME": "Brisk Vapor",
+    "DESCRIPTION": "Retain. NL Gain !M! Dexterity. NL At the end of this turn, lose !M! Dexterity. NL Exhaust."
+  },
+  "reliquary:VaporStancePotion": {
+    "NAME": "Poised Vapor",
+    "DESCRIPTION": "Retain. NL If you aren't in a Stance, enter Calm or Wrath randomly. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL If you are in Calm or Wrath, enter the other stance. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "I can't do that while in a Stance.",
+      "I must be in Calm or Wrath to do that."
+    ]
+  },
+  "reliquary:VaporStrengthPotion": {
+    "NAME": "Strong Vapor",
+    "DESCRIPTION": "Retain. NL Gain !M! Strength. NL Exhaust."
+  },
+  "reliquary:VaporSwiftPotion": {
+    "NAME": "Swift Vapor",
+    "DESCRIPTION": "Retain. NL Draw a card. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Draw !M! cards. NL Exhaust."
+  },
+  "reliquary:VaporUnknownPotion": {
+    "NAME": "Mysterious Vapor",
+    "DESCRIPTION": "Retain. NL Add a random Vapor card into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Add !M! random Vapor cards into your hand. NL Exhaust."
+  },
+  "reliquary:VaporWeakPotion": {
+    "NAME": "Sickly Vapor",
+    "DESCRIPTION": "Retain. NL Apply !M! Weak. NL Exhaust."
+  }
+}

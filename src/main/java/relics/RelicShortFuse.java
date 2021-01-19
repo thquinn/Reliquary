@@ -7,8 +7,8 @@ import util.TextureLoader;
 
 public class RelicShortFuse extends CustomRelic {
     public static final String ID = "reliquary:ShortFuse";
-    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/shortFuse.png");
-    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/outlines/shortFuse.png");
+    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/shortFuse.png");
+    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/shortFuse.png");
 
     public RelicShortFuse() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.CLINK);

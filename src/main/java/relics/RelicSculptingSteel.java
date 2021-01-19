@@ -14,11 +14,11 @@ import java.util.Set;
 
 public class RelicSculptingSteel extends CustomRelic {
     public static final String ID = "reliquary:SculptingSteel";
-    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/sculptingSteel.png");
-    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/outlines/sculptingSteel.png");
+    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/sculptingSteel.png");
+    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/sculptingSteel.png");
 
     public RelicSculptingSteel() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, null);
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
     }
 
     @Override
@@ -61,6 +61,7 @@ public class RelicSculptingSteel extends CustomRelic {
 
     private final Set<String> COPYABLE_RELICS = new HashSet<>(Arrays.asList(
             // Reliquary
+            RelicBoilingFlask.ID,
             RelicBookmark.ID,
             RelicFirecrackers.ID,
             RelicJackalopeHorn.ID,

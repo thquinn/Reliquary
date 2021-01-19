@@ -1,22 +1,34 @@
+import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.helpers.RelicType;
+import basemod.interfaces.EditCardsSubscriber;
+import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
+import cards.colorless.vapor.CardVaporAmbrosia;
+import cards.colorless.vapor.CardVaporBlockPotion;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import relics.*;
 
 @SpireInitializer
-public class Reliquary implements EditRelicsSubscriber, EditStringsSubscriber {
+public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber, EditStringsSubscriber {
+    public static final String ID = "reliquary";
+
     public static void initialize() {
         BaseMod.subscribe(new Reliquary());
     }
 
     @Override
     public void receiveEditRelics() {
+        BaseMod.addRelic(new RelicBoilingFlask(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBookmark(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBrokenClock(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFeatherDuster(), RelicType.SHARED);
@@ -35,6 +47,7 @@ public class Reliquary implements EditRelicsSubscriber, EditStringsSubscriber {
         BaseMod.addRelic(new RelicSculptingSteel(), RelicType.SHARED);
         BaseMod.addRelic(new RelicShortFuse(), RelicType.BLUE);
         BaseMod.addRelic(new RelicTatteredRug(), RelicType.SHARED);
+        UnlockTracker.markRelicAsSeen(RelicBoilingFlask.ID);
         UnlockTracker.markRelicAsSeen(RelicBookmark.ID);
         UnlockTracker.markRelicAsSeen(RelicBrokenClock.ID);
         UnlockTracker.markRelicAsSeen(RelicFeatherDuster.ID);
@@ -56,7 +69,22 @@ public class Reliquary implements EditRelicsSubscriber, EditStringsSubscriber {
     }
 
     @Override
+    public void receiveEditCards() {
+        new AutoAdd(ID)
+            .packageFilter(CardVaporAmbrosia.class)
+            .setDefaultSeen(true)
+            .cards();
+    }
+
+    @Override
+    public void receiveEditKeywords() {
+        BaseMod.addKeyword(new String[]{ "vapor" },"Vapors have minor effects derived from your Potions, Retain, and Exhaust.");
+    }
+
+    @Override
     public void receiveEditStrings() {
+        BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/eng/CardStrings.json");
+        BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/eng/PowerStrings.json");
         BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/eng/RelicStrings.json");
         BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/eng/UIStrings.json");
     }

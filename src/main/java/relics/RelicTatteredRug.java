@@ -8,8 +8,8 @@ import util.TextureLoader;
 
 public class RelicTatteredRug extends CustomRelic {
     public static final String ID = "reliquary:TatteredRug";
-    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/tatteredRug.png");
-    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/outlines/tatteredRug.png");
+    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/tatteredRug.png");
+    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/tatteredRug.png");
 
     public RelicTatteredRug() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.FLAT);

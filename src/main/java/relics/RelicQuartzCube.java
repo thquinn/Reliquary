@@ -22,8 +22,8 @@ import java.util.stream.IntStream;
 
 public class RelicQuartzCube extends CustomRelic {
     public static final String ID = "reliquary:QuartzCube";
-    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/quartzCube.png");
-    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/outlines/quartzCube.png");
+    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/quartzCube.png");
+    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/quartzCube.png");
 
     boolean activated = false, added = false, removed = false;
     AbstractMonster target;

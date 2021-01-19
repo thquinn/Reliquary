@@ -13,8 +13,8 @@ import util.TextureLoader;
 
 public class RelicBrokenClock extends CustomRelic {
     public static final String ID = "reliquary:BrokenClock";
-    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/brokenClock.png");
-    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/outlines/brokenClock.png");
+    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/brokenClock.png");
+    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/brokenClock.png");
 
     private int turn = 0;
 

@@ -16,8 +16,8 @@ import util.TextureLoader;
 
 public class RelicIridiumChain extends CustomRelic {
     public static final String ID = "reliquary:IridiumChain";
-    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/iridiumChain.png");
-    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/outlines/iridiumChain.png");
+    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/iridiumChain.png");
+    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/iridiumChain.png");
 
     public RelicIridiumChain() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.CLINK);

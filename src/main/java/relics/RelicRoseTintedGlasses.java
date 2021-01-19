@@ -12,8 +12,8 @@ import util.TextureLoader;
 
 public class RelicRoseTintedGlasses extends CustomRelic {
     public static final String ID = "reliquary:RoseTintedGlasses";
-    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/roseTintedGlasses.png");
-    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/outlines/roseTintedGlasses.png");
+    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/roseTintedGlasses.png");
+    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/roseTintedGlasses.png");
 
     public RelicRoseTintedGlasses() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT);

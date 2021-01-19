@@ -14,8 +14,8 @@ import util.TextureLoader;
 
 public class RelicMedicineBall extends CustomRelic {
     public static final String ID = "reliquary:MedicineBall";
-    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/medicineBall.png");
-    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/outlines/medicineBall.png");
+    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/medicineBall.png");
+    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/medicineBall.png");
 
     int lastStrength = 0;
     boolean firstPerBattle = true;

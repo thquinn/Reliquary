@@ -12,8 +12,8 @@ import util.TextureLoader;
 
 public class RelicKinkedSpring extends CustomRelic {
     public static final String ID = "reliquary:KinkedSpring";
-    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/kinkedSpring.png");
-    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/outlines/kinkedSpring.png");
+    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/kinkedSpring.png");
+    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/kinkedSpring.png");
 
     public RelicKinkedSpring() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);

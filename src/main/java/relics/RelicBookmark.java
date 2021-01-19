@@ -10,8 +10,8 @@ import util.TextureLoader;
 
 public class RelicBookmark extends CustomRelic {
     public static final String ID = "reliquary:Bookmark";
-    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/bookmark.png");
-    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/outlines/bookmark.png");
+    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/bookmark.png");
+    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/bookmark.png");
 
     public RelicBookmark() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.FLAT);

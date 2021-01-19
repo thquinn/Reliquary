@@ -1,4 +1,11 @@
 {
+  "reliquary:BoilingFlask": {
+    "NAME": "Boiling Flask",
+    "FLAVOR": "It's a flask.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, if your potion slots are full, choose a #yVapor card and add it into your hand."
+    ]
+  },
   "reliquary:Bookmark": {
     "NAME": "Bookmark",
     "FLAVOR": "It's a bookmark.",

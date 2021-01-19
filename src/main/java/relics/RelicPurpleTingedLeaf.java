@@ -21,8 +21,8 @@ import util.TextureLoader;
 
 public class RelicPurpleTingedLeaf extends CustomRelic implements CustomBottleRelic, CustomSavable<Integer> {
     public static final String ID = "reliquary:PurpleTingedLeaf";
-    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/purpleTingedLeaf.png");
-    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/outlines/purpleTingedLeaf.png");
+    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/purpleTingedLeaf.png");
+    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/purpleTingedLeaf.png");
 
     private static AbstractCard card;
     private boolean cardSelected = true;

@@ -15,8 +15,8 @@ import util.TextureLoader;
 
 public class RelicPorcupineQuills extends CustomRelic {
     public static final String ID = "reliquary:PorcupineQuills";
-    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/porcupineQuills.png");
-    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/outlines/porcupineQuills.png");
+    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/porcupineQuills.png");
+    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/porcupineQuills.png");
 
     public RelicPorcupineQuills() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT);

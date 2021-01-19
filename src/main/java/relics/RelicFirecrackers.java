@@ -3,6 +3,7 @@ package relics;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.defect.DamageAllButOneEnemyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -28,15 +29,15 @@ public class RelicFirecrackers extends CustomRelic {
         int overkill = damageAmount - target.currentHealth;
         if (overkill <= 0)
             return;
+        addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         addToBot(new DamageAllButOneEnemyAction(
                 AbstractDungeon.player,
                 target,
                 DamageInfo.createDamageMatrix(overkill, true),
                 DamageInfo.DamageType.THORNS,
-                AbstractGameAction.AttackEffect.SLASH_HORIZONTAL,
+                AbstractGameAction.AttackEffect.FIRE,
                 true
         ));
-        flash();
     }
 
     @Override

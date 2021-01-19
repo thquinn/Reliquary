@@ -20,6 +20,15 @@
       "Each combat starts with two player turns, then two enemy turns."
     ]
   },
+  "reliquary:ExpiredCoupon": {
+    "NAME": "Expired Coupon",
+    "FLAVOR": "It's a coupon.",
+    "DESCRIPTIONS": [
+      "Whenever you reach #b",
+      " or more total unblocked damage in a combat, deals #b",
+      " damage to all enemies."
+    ]
+  },
   "reliquary:FeatherDuster": {
     "NAME": "Feather Duster",
     "FLAVOR": "It's a duster.",

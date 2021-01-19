@@ -15,8 +15,7 @@ public class RelicSilkGlove extends CustomRelic {
     }
 
     // implemented in PatchSilkGlove
-    // done as a patch so we can do our check after Well-Laid Plans has already resolved; we need to go on the actions
-    // stack after end-turn powers, but relics are done before powers by default
+    // done as a patch so we can do our check after Well-Laid Plans has already resolved
 
     @Override
     public String getUpdatedDescription() {

@@ -153,7 +153,7 @@
     ]
   },
   "reliquary:SilkGlove": {
-    "NAME": "Silk `Glove",
+    "NAME": "Silk Glove",
     "FLAVOR": "It's a glove.",
     "DESCRIPTIONS": [
       "Whenever you would discard a single card at the end of your turn, #yRetain it."
@@ -173,6 +173,14 @@
       "Gimme!",
       "I'd be a fool @not@ to buy it!",
       "You drive a hard bargain!"
+    ]
+  },
+  "reliquary:WritOfMandamus": {
+    "NAME": "Writ of Mandamus",
+    "FLAVOR": "It's a writ.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. At the end of your turn, you lose ",
+      " #yBlock."
     ]
   }
 }

@@ -100,6 +100,7 @@ public class RelicPurpleTingedLeaf extends CustomRelic implements CustomBottleRe
 
     public void onUseCard(AbstractCard targetCard, UseCardAction useCardAction) {
         if (PatchPurpleTingedLeaf.inPurpleTingedLeaf.get(targetCard)) {
+            if (AbstractDungeon.player.getRelic(ID) != this) return; // Prevent multiple triggers from one play.
             addToTop(new HealAction(AbstractDungeon.player, AbstractDungeon.player, 1));
             addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         }

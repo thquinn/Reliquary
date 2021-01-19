@@ -5,7 +5,6 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.*;
-import com.megacrit.cardcrawl.ui.panels.PotionPopUp;
 import util.TextureLoader;
 
 import java.util.Arrays;
@@ -67,7 +66,6 @@ public class RelicSculptingSteel extends CustomRelic {
             RelicJackalopeHorn.ID,
             RelicMedicineBall.ID,
             RelicPorcupineQuills.ID,
-            RelicPurpleTingedLeaf.ID,
             RelicRosewoodLute.ID,
             // base game
             Abacus.ID,
@@ -80,9 +78,6 @@ public class RelicSculptingSteel extends CustomRelic {
             BlackBlood.ID,
             BloodVial.ID,
             BloodyIdol.ID,
-            BottledFlame.ID,
-            BottledLightning.ID,
-            BottledTornado.ID,
             Brimstone.ID,
             BronzeScales.ID,
             BurningBlood.ID,

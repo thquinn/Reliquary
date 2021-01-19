@@ -1,11 +1,8 @@
 import basemod.AutoAdd;
 import basemod.BaseMod;
-import basemod.devcommands.relic.Relic;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import cards.colorless.vapor.CardVaporAmbrosia;
-import cards.colorless.vapor.CardVaporBlockPotion;
-import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -14,8 +11,6 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import powers.LesserDuplicationPower;
 import relics.*;
 
@@ -55,6 +50,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addRelic(new RelicShortFuse(), RelicType.BLUE);
         BaseMod.addRelic(new RelicSilkGlove(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTatteredRug(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicWritOfMandamus(), RelicType.SHARED);
         UnlockTracker.markRelicAsSeen(RelicBoilingFlask.ID);
         UnlockTracker.markRelicAsSeen(RelicBookmark.ID);
         UnlockTracker.markRelicAsSeen(RelicBrokenClock.ID);
@@ -78,6 +74,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         UnlockTracker.markRelicAsSeen(RelicShortFuse.ID);
         UnlockTracker.markRelicAsSeen(RelicSilkGlove.ID);
         UnlockTracker.markRelicAsSeen(RelicTatteredRug.ID);
+        UnlockTracker.markRelicAsSeen(RelicWritOfMandamus.ID);
     }
 
     @Override

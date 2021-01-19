@@ -28,6 +28,9 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
 
     @Override
     public void receiveEditRelics() {
+        new AutoAdd(ID)
+                .packageFilter(RelicBoilingFlask.class)
+                .setDefaultSeen(true);
         BaseMod.addRelic(new RelicBoilingFlask(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBookmark(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBrokenClock(), RelicType.SHARED);
@@ -47,6 +50,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addRelic(new RelicQuartzCube(), RelicType.SHARED);
         BaseMod.addRelic(new RelicSculptingSteel(), RelicType.SHARED);
         BaseMod.addRelic(new RelicShortFuse(), RelicType.BLUE);
+        BaseMod.addRelic(new RelicSilkGlove(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTatteredRug(), RelicType.SHARED);
         UnlockTracker.markRelicAsSeen(RelicBoilingFlask.ID);
         UnlockTracker.markRelicAsSeen(RelicBookmark.ID);
@@ -67,6 +71,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         UnlockTracker.markRelicAsSeen(RelicQuartzCube.ID);
         UnlockTracker.markRelicAsSeen(RelicSculptingSteel.ID);
         UnlockTracker.markRelicAsSeen(RelicShortFuse.ID);
+        UnlockTracker.markRelicAsSeen(RelicSilkGlove.ID);
         UnlockTracker.markRelicAsSeen(RelicTatteredRug.ID);
     }
 

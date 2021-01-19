@@ -136,6 +136,13 @@
       "Your #yLightning Orbs target the enemy with the least HP."
     ]
   },
+  "reliquary:SilkGlove": {
+    "NAME": "SilkGlove",
+    "FLAVOR": "It's a glove.",
+    "DESCRIPTIONS": [
+      "Whenever you would discard a single card at the end of your turn, #yRetain it."
+    ]
+  },
   "reliquary:TatteredRug": {
     "NAME": "Tattered Rug",
     "FLAVOR": "It's a rug.",

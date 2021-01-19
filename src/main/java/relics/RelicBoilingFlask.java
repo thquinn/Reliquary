@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.potions.*;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.relics.SacredBark;
+import com.megacrit.cardcrawl.relics.Sozu;
 import util.TextureLoader;
 
 import java.util.Map;
@@ -71,6 +72,15 @@ public class RelicBoilingFlask extends CustomRelic {
 
     public RelicBoilingFlask() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.CLINK);
+    }
+
+    @Override
+    public boolean canSpawn() {
+        boolean hasEmptySlot = AbstractDungeon.player.potions.stream().anyMatch(p -> p instanceof PotionSlot);
+        if (AbstractDungeon.player.hasRelic(Sozu.ID) && hasEmptySlot) {
+            return false;
+        }
+        return true;
     }
 
     public void atBattleStartPreDraw() {

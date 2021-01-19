@@ -110,6 +110,13 @@
       "#yPoison doesn't decrement."
     ]
   },
+  "reliquary:RedPaperclip": {
+    "NAME": "Red Paperclip",
+    "FLAVOR": "It's a paperclip.",
+    "DESCRIPTIONS": [
+      "Upon pickup, lose a random Common relic. Gain [E] at the start of your turn."
+    ]
+  },
   "reliquary:RoseTintedGlasses": {
     "NAME": "Rose-Tinted Glasses",
     "FLAVOR": "It's a pair of glasses.",
@@ -146,7 +153,7 @@
     ]
   },
   "reliquary:SilkGlove": {
-    "NAME": "SilkGlove",
+    "NAME": "Silk `Glove",
     "FLAVOR": "It's a glove.",
     "DESCRIPTIONS": [
       "Whenever you would discard a single card at the end of your turn, #yRetain it."

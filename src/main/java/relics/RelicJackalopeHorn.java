@@ -29,7 +29,7 @@ public class RelicJackalopeHorn extends CustomRelic {
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
-        lastCost = c.cost;
+        lastCost = c.energyOnUse;
     }
 
     @Override

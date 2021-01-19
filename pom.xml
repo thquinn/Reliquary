@@ -3,7 +3,7 @@
 
     <groupId>Reliquary</groupId>
     <artifactId>Reliquary</artifactId>
-    <version>v1.0.0</version>
+    <version>v0.1</version>
     <packaging>jar</packaging>
 
     <name>Reliquary</name>

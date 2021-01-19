@@ -1,13 +1,13 @@
 import basemod.AutoAdd;
 import basemod.BaseMod;
+import basemod.devcommands.relic.Relic;
 import basemod.helpers.RelicType;
-import basemod.interfaces.EditCardsSubscriber;
-import basemod.interfaces.EditKeywordsSubscriber;
-import basemod.interfaces.EditRelicsSubscriber;
-import basemod.interfaces.EditStringsSubscriber;
+import basemod.interfaces.*;
 import cards.colorless.vapor.CardVaporAmbrosia;
 import cards.colorless.vapor.CardVaporBlockPotion;
+import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
@@ -16,10 +16,11 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import powers.LesserDuplicationPower;
 import relics.*;
 
 @SpireInitializer
-public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber, EditStringsSubscriber {
+public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber, EditStringsSubscriber, PostInitializeSubscriber, PostUpdateSubscriber {
     public static final String ID = "reliquary";
 
     public static void initialize() {
@@ -46,6 +47,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addRelic(new RelicPorcupineQuills(), RelicType.SHARED);
         BaseMod.addRelic(new RelicPurpleTingedLeaf(), RelicType.SHARED);
         BaseMod.addRelic(new RelicRadioactivePellet(), RelicType.GREEN);
+        BaseMod.addRelic(new RelicRedPaperclip(), RelicType.SHARED);
         BaseMod.addRelic(new RelicRoseTintedGlasses(), RelicType.SHARED);
         BaseMod.addRelic(new RelicRosewoodLute(), RelicType.SHARED);
         BaseMod.addRelic(new RelicQuartzCube(), RelicType.SHARED);
@@ -68,6 +70,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         UnlockTracker.markRelicAsSeen(RelicPorcupineQuills.ID);
         UnlockTracker.markRelicAsSeen(RelicPurpleTingedLeaf.ID);
         UnlockTracker.markRelicAsSeen(RelicRadioactivePellet.ID);
+        UnlockTracker.markRelicAsSeen(RelicRedPaperclip.ID);
         UnlockTracker.markRelicAsSeen(RelicRoseTintedGlasses.ID);
         UnlockTracker.markRelicAsSeen(RelicRosewoodLute.ID);
         UnlockTracker.markRelicAsSeen(RelicQuartzCube.ID);
@@ -96,5 +99,16 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/eng/PowerStrings.json");
         BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/eng/RelicStrings.json");
         BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/eng/UIStrings.json");
+    }
+
+    @Override
+    public void receivePostInitialize() {
+        BaseMod.addPower(LesserDuplicationPower.class, LesserDuplicationPower.POWER_ID);
+    }
+
+    @Override
+    public void receivePostUpdate() {
+        if (AbstractDungeon.player == null) return;
+        if (AbstractDungeon.player.hasRelic(RelicRedPaperclip.ID)) ((RelicRedPaperclip)AbstractDungeon.player.getRelic(RelicRedPaperclip.ID)).postUpdate();
     }
 }

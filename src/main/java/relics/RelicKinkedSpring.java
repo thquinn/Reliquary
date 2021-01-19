@@ -20,11 +20,6 @@ public class RelicKinkedSpring extends CustomRelic {
     }
 
     @Override
-    public void atBattleStartPreDraw() {
-        flash();
-    }
-
-    @Override
     public void onEquip() {
         AbstractDungeon.player.energy.energyMaster += 1;
     }
@@ -32,6 +27,11 @@ public class RelicKinkedSpring extends CustomRelic {
     @Override
     public void onUnequip() {
         AbstractDungeon.player.energy.energyMaster -= 1;
+    }
+
+    @Override
+    public void atBattleStartPreDraw() {
+        flash();
     }
 
     // downside implemented in PatchKinkedSpring

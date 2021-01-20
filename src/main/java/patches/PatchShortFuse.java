@@ -33,7 +33,7 @@ public class PatchShortFuse {
                 rloc = 3,
                 localvars = {"m"}
         )
-        public static void Insert(LightningOrbPassiveAction __instance,@ByRef AbstractMonster[] m) {
+        public static void Insert(LightningOrbPassiveAction __instance, @ByRef AbstractMonster[] m) {
             Impl(m);
         }
     }

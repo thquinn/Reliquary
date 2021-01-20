@@ -84,7 +84,7 @@
     "NAME": "Mudwin's Cradle",
     "FLAVOR": "It's a desk toy.",
     "DESCRIPTIONS": [
-      "Whenever you exit #yDivinity, gain #b2 #yMantra for each time you entered #yDivinity this combat."
+      "Whenever you exit #yDivinity, gain #b2 #yMantra for each time you entered #yDivinity this combat (max 9)."
     ]
   },
   "reliquary:PorcupineQuills": {
@@ -135,7 +135,7 @@
     "NAME": "Quartz Cube",
     "FLAVOR": "It's a cube.",
     "DESCRIPTIONS": [
-      "At the start of each combat with #b2 or more enemies, apply #b2 #yStun to one. It can't be damaged while Stunned."
+      "At the start of each combat with #b2 or more enemies, apply #b2 #yStunned to one. It can't be damaged while #yStunned."
     ]
   },
   "reliquary:SculptingSteel": {
@@ -159,6 +159,13 @@
       "Whenever you would discard a single card at the end of your turn, #yRetain it."
     ]
   },
+  "reliquary:Stiletto": {
+    "NAME": "Stiletto",
+    "FLAVOR": "It's a dagger.",
+    "DESCRIPTIONS": [
+      "Your Attacks deal double damage to enemies' #yBlock."
+    ]
+  },
   "reliquary:TatteredRug": {
     "NAME": "Tattered Rug",
     "FLAVOR": "It's a rug.",
@@ -172,7 +179,7 @@
       "Ah! I'll buy it at a high price!",
       "Gimme!",
       "I'd be a fool @not@ to buy it!",
-      "You drive a hard bargain!"
+      "You drive a hard bargain..."
     ]
   },
   "reliquary:WritOfMandamus": {

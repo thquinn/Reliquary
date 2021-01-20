@@ -1,5 +1,6 @@
 package relics;
 
+import actions.TriggerArtifactAction;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.powers.StunMonsterPower;
@@ -69,6 +70,10 @@ public class RelicQuartzCube extends CustomRelic {
         if (target.intent != AbstractMonster.Intent.DEBUG) {
             activated = true;
             addToBot(new RelicAboveCreatureAction(target, this));
+            if (target.hasPower("Artifact")) {
+                addToBot(new TriggerArtifactAction(target));
+                return;
+            }
             addToBot(new ApplyPowerAction(target, AbstractDungeon.player, new StunMonsterPower(target, 2)));
             addToBot(new ApplyPowerAction(target, AbstractDungeon.player, new InvinciblePower(target, 0)));
         }

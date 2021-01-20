@@ -19,7 +19,7 @@ public class RelicBrokenClock extends CustomRelic {
     private int turn = 0;
 
     public RelicBrokenClock() {
-        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.SOLID);
+        super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.SOLID);
     }
 
     @Override
@@ -34,7 +34,7 @@ public class RelicBrokenClock extends CustomRelic {
         if (turn == 1) {
             addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         } else if (turn == 2) {
-            PatchSkipPlayerTurn.skipPlayerTurn.set(AbstractDungeon.getCurrRoom(), true);
+            PatchSkipPlayerTurn.SkipPlayerTurn.skipPlayerTurn.set(AbstractDungeon.getCurrRoom(), true);
         }
     }
 

@@ -3,7 +3,7 @@
     "NAME": "Boiling Flask",
     "FLAVOR": "It's a flask.",
     "DESCRIPTIONS": [
-      "At the start of each combat, if your potion slots are full, choose a #yVapor card and add it into your hand."
+      "At the start of each combat, if your potion slots are full, choose a #yVapor and add it into your hand."
     ]
   },
   "reliquary:Bookmark": {
@@ -89,7 +89,7 @@
   },
   "reliquary:MudwinsCradle": {
     "NAME": "Mudwin's Cradle",
-    "FLAVOR": "It's a desk toy.",
+    "FLAVOR": "Most popular desk toy.",
     "DESCRIPTIONS": [
       "Whenever you exit #yDivinity, gain #b2 #yMantra for each time you entered #yDivinity this combat (max 9)."
     ]
@@ -187,6 +187,13 @@
       "Gimme!",
       "I'd be a fool @not@ to buy it!",
       "You drive a hard bargain..."
+    ]
+  },
+  "reliquary:TridentHead": {
+    "NAME": "Trident Head",
+    "FLAVOR": "It's a piece of a trident.",
+    "DESCRIPTIONS": [
+      "The first card you play on a single enemy each combat is copied to all other enemies."
     ]
   },
   "reliquary:WritOfMandamus": {

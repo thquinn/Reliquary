@@ -168,7 +168,7 @@
     ]
   },
   "reliquary:VaporSneckoOil": {
-    "NAME": "Oily Vapor",
+    "NAME": "Hissing Vapor",
     "DESCRIPTION": "Retain. NL Randomize the costs of half of the cards in your hand, rounded up. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain. NL Randomize the cost of cards in your hand. NL Exhaust."
   },

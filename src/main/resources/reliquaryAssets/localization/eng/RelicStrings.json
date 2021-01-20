@@ -13,6 +13,13 @@
       "At the start of each combat, draw an extra card for each #yInnate card in your deck."
     ]
   },
+  "reliquary:Boomerang": {
+    "NAME": "Boomerang",
+    "FLAVOR": "It's a boomerang.",
+    "DESCRIPTIONS": [
+      "Put the first card you play each turn on top of your draw pile."
+    ]
+  },
   "reliquary:BrokenClock": {
     "NAME": "Broken Clock",
     "FLAVOR": "It's a clock.",
@@ -163,7 +170,7 @@
     "NAME": "Stiletto",
     "FLAVOR": "It's a dagger.",
     "DESCRIPTIONS": [
-      "Your Attacks deal double damage to enemies' #yBlock."
+      "Your #yAttacks deal double damage to enemies' #yBlock."
     ]
   },
   "reliquary:TatteredRug": {

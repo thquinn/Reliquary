@@ -31,11 +31,11 @@ public class PatchStiletto {
         if (info.owner != p || !p.hasRelic(RelicStiletto.ID)) {
             return;
         }
-        int blockBroken = Math.min(damageAmount[0], __instance.currentBlock);
+        int blockBroken = Math.min(damageAmount[0] * 2, __instance.currentBlock);
         if (blockBroken > 0) {
             p.getRelic(RelicStiletto.ID).flash();
         }
-        damageAmount[0] += (int)Math.ceil(blockBroken / 2f);
+        damageAmount[0] += blockBroken / 2;
     }
 
     private static class Locator extends SpireInsertLocator {

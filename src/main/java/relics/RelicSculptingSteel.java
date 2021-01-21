@@ -62,9 +62,10 @@ public class RelicSculptingSteel extends CustomRelic {
             // Reliquary
             RelicBoilingFlask.ID,
             RelicBookmark.ID,
+            RelicBoomerang.ID,
             RelicExpiredCoupon.ID,
             RelicFirecrackers.ID,
-            RelicJackalopeHorn.ID,
+            RelicJackalopeAntler.ID,
             RelicMedicineBall.ID,
             RelicPorcupineQuills.ID,
             RelicRosewoodLute.ID,

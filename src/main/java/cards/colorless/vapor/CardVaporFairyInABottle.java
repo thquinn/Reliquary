@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.powers.BufferPower;
 
 public class CardVaporFairyInABottle extends CustomCard {
     public static final String ID = "reliquary:VaporFairyInABottle";
-    private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/blockPotion.png";
+    private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/fairyInABottle.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

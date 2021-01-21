@@ -27,6 +27,13 @@
       "Each combat starts with two player turns, then two enemy turns."
     ]
   },
+  "reliquary:Ember": {
+    "NAME": "Ember",
+    "FLAVOR": "It's an ember.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Take #b1 damage for each [E] beyond the third you spend each turn."
+    ]
+  },
   "reliquary:ExpiredCoupon": {
     "NAME": "Expired Coupon",
     "FLAVOR": "It's a coupon.",
@@ -59,9 +66,9 @@
       "Ethereal. NL "
     ]
   },
-  "reliquary:JackalopeHorn": {
-    "NAME": "Jackalope Horn",
-    "FLAVOR": "It's a horn.",
+  "reliquary:JackalopeAntler": {
+    "NAME": "Jackalope Antler",
+    "FLAVOR": "It's an antler.",
     "DESCRIPTIONS": [
       "Whenever an enemy dies, refund the Energy cost of the last card you played."
     ]
@@ -94,6 +101,13 @@
       "Whenever you exit #yDivinity, gain #b2 #yMantra for each time you entered #yDivinity this combat (max 9)."
     ]
   },
+  "reliquary:OuijaBoard": {
+    "NAME": "Ouija Board",
+    "FLAVOR": "It's a game board.",
+    "DESCRIPTIONS": [
+      "Right click this once each turn to play a card from your discard pile with random targets and shuffle it into your draw pile. It costs [E] more."
+    ]
+  },
   "reliquary:PorcupineQuills": {
     "NAME": "Porcupine Quills",
     "FLAVOR": "It's some quills.",
@@ -107,7 +121,7 @@
     "DESCRIPTIONS": [
       "Upon pickup, choose a card. Whenever you play that card, heal #b1 HP.",
       "Whenever you play the chosen ",
-      ", heal 1 HP."
+      ", heal #b1 HP."
     ]
   },
   "reliquary:RadioactivePellet": {
@@ -121,7 +135,7 @@
     "NAME": "Red Paperclip",
     "FLAVOR": "It's a paperclip.",
     "DESCRIPTIONS": [
-      "Upon pickup, lose a random Common relic. Gain [E] at the start of your turn."
+      "Gain [E] at the start of your turn. Replaces a random Common relic."
     ]
   },
   "reliquary:RoseTintedGlasses": {
@@ -191,7 +205,7 @@
   },
   "reliquary:TridentHead": {
     "NAME": "Trident Head",
-    "FLAVOR": "It's a piece of a trident.",
+    "FLAVOR": "A part of the weapon wielded by the fabled Wave King.",
     "DESCRIPTIONS": [
       "The first card you play on a single enemy each combat is copied to all other enemies."
     ]
@@ -200,7 +214,7 @@
     "NAME": "Writ of Mandamus",
     "FLAVOR": "It's a writ.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. At the end of your turn, you lose ",
+      "Gain [E] at the start of your turn. At the end of your turn, you lose #b",
       " #yBlock."
     ]
   }

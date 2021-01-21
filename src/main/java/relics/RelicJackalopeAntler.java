@@ -11,15 +11,15 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicJackalopeHorn extends CustomRelic {
-    public static final String ID = "reliquary:JackalopeHorn";
-    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/jackalopeHorn.png");
-    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/jackalopeHorn.png");
+public class RelicJackalopeAntler extends CustomRelic {
+    public static final String ID = "reliquary:JackalopeAntler";
+    private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/jackalopeAntler.png");
+    private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/jackalopeAntler.png");
 
     int lastCost;
 
-    public RelicJackalopeHorn() {
-        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.MAGICAL);
+    public RelicJackalopeAntler() {
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
     }
 
     @Override
@@ -29,7 +29,7 @@ public class RelicJackalopeHorn extends CustomRelic {
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
-        lastCost = c.energyOnUse;
+        lastCost = c.cost == -1 ? c.energyOnUse : c.costForTurn;
     }
 
     @Override
@@ -47,6 +47,6 @@ public class RelicJackalopeHorn extends CustomRelic {
     @Override
     public AbstractRelic makeCopy()
     {
-        return new RelicJackalopeHorn();
+        return new RelicJackalopeAntler();
     }
 }

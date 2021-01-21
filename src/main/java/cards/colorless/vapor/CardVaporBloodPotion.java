@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class CardVaporBloodPotion extends CustomCard {
     public static final String ID = "reliquary:VaporBloodPotion";
-    private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/blockPotion.png";
+    private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/bloodPotion.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

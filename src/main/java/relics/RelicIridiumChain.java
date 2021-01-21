@@ -4,8 +4,6 @@ import basemod.abstracts.CustomRelic;
 import basemod.helpers.CardModifierManager;
 import cardmods.CardModEthereal;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -28,13 +26,13 @@ public class RelicIridiumChain extends CustomRelic {
         if (c.type != AbstractCard.CardType.POWER)
             return;
         AbstractCard copy = c.makeStatEquivalentCopy();
-        c.modifyCostForCombat(1);
-        if (!c.isEthereal) {
-            CardModifierManager.addModifier(c, new CardModEthereal());
+        copy.modifyCostForCombat(1);
+        if (!copy.isEthereal) {
+            CardModifierManager.addModifier(copy, new CardModEthereal());
         }
-        c.initializeDescription();
+        copy.initializeDescription();
         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        addToBot(new MakeTempCardInHandAction(c));
+        addToBot(new MakeTempCardInHandAction(copy));
     }
 
     @Override

@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.stances.WrathStance;
 
 public class CardVaporStancePotion extends CustomCard {
     public static final String ID = "reliquary:VaporStancePotion";
-    private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/blockPotion.png";
+    private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/stancePotion.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

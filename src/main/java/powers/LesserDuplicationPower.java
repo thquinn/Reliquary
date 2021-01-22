@@ -14,7 +14,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import util.ReliquaryLogger;
 import util.TextureLoader;
 
 public class LesserDuplicationPower extends AbstractPower {

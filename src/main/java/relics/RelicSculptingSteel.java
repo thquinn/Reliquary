@@ -65,10 +65,13 @@ public class RelicSculptingSteel extends CustomRelic {
             RelicBoomerang.ID,
             RelicExpiredCoupon.ID,
             RelicFirecrackers.ID,
+            RelicHotPoker.ID,
             RelicJackalopeAntler.ID,
             RelicMedicineBall.ID,
+            RelicOuijaBoard.ID,
             RelicPorcupineQuills.ID,
             RelicRosewoodLute.ID,
+            RelicTuningFork.ID,
             RelicWritOfMandamus.ID,
             // base game
             Abacus.ID,

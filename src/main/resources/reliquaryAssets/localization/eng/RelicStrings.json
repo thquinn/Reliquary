@@ -67,6 +67,13 @@
       "Overkill damage is dealt to ALL other enemies."
     ]
   },
+  "reliquary:HotPoker": {
+    "NAME": "Hot Poker",
+    "FLAVOR": "It's a poker.",
+    "DESCRIPTIONS": [
+      "Whenever you draw a card during your turn, deal damage equal to its cost to a random enemy."
+    ]
+  },
   "reliquary:IridiumChain": {
     "NAME": "Iridium Chain",
     "FLAVOR": "It's a chain.",

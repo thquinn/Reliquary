@@ -1,7 +1,5 @@
 package relics;
 
-import java.util.function.Predicate;
-
 import basemod.abstracts.CustomBottleRelic;
 import basemod.abstracts.CustomRelic;
 import basemod.abstracts.CustomSavable;
@@ -15,9 +13,10 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-
 import patches.PatchPurpleTingedLeaf;
 import util.TextureLoader;
+
+import java.util.function.Predicate;
 
 public class RelicPurpleTingedLeaf extends CustomRelic implements CustomBottleRelic, CustomSavable<Integer> {
     public static final String ID = "reliquary:PurpleTingedLeaf";

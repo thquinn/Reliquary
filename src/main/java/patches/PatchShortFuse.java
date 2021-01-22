@@ -1,12 +1,12 @@
 package patches;
 
-import com.evacipated.cardcrawl.modthespire.lib.*;
+import com.evacipated.cardcrawl.modthespire.lib.ByRef;
+import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
+import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.actions.defect.LightningOrbEvokeAction;
 import com.megacrit.cardcrawl.actions.defect.LightningOrbPassiveAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.Lightning;
 import relics.RelicShortFuse;
 
 public class PatchShortFuse {

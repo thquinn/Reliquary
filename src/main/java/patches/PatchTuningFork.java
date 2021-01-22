@@ -1,6 +1,5 @@
 package patches;
 
-import basemod.devcommands.relic.Relic;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -9,7 +8,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
-import relics.RelicStiletto;
 import relics.RelicTuningFork;
 
 @SpirePatch(

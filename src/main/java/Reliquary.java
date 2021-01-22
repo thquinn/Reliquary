@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-
 import powers.LesserDuplicationPower;
 import relics.*;
 
@@ -36,6 +35,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addRelic(new RelicExpiredCoupon(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFeatherDuster(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFirecrackers(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicHotPoker(), RelicType.SHARED);
         BaseMod.addRelic(new RelicIridiumChain(), RelicType.SHARED);
         BaseMod.addRelic(new RelicJackalopeAntler(), RelicType.SHARED);
         BaseMod.addRelic(new RelicKinkedSpring(), RelicType.SHARED);
@@ -67,6 +67,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         UnlockTracker.markRelicAsSeen(RelicExpiredCoupon.ID);
         UnlockTracker.markRelicAsSeen(RelicFeatherDuster.ID);
         UnlockTracker.markRelicAsSeen(RelicFirecrackers.ID);
+        UnlockTracker.markRelicAsSeen(RelicHotPoker.ID);
         UnlockTracker.markRelicAsSeen(RelicIridiumChain.ID);
         UnlockTracker.markRelicAsSeen(RelicJackalopeAntler.ID);
         UnlockTracker.markRelicAsSeen(RelicKinkedSpring.ID);

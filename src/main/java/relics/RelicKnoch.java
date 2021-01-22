@@ -13,7 +13,8 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import util.TextureLoader;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 public class RelicKnoch extends CustomRelic {
     public static final String ID = "reliquary:Knoch";

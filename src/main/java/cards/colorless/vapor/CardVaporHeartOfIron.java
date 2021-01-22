@@ -18,11 +18,10 @@ public class CardVaporHeartOfIron extends CustomCard {
     private static final int COST = 0;
 
     public CardVaporHeartOfIron() {
-        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.NONE);
+        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.NONE);
         baseMagicNumber = 3;
         magicNumber = 3;
         selfRetain = true;
-        exhaust = true;
     }
 
     @Override

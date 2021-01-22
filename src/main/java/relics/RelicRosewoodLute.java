@@ -30,11 +30,6 @@ public class RelicRosewoodLute extends CustomRelic implements OnLoseBlockRelic {
     }
 
     @Override
-    public void onBlockBroken(AbstractCreature m) {
-        super.onBlockBroken(m);
-    }
-
-    @Override
     public String getUpdatedDescription() {
         return DESCRIPTIONS[0];
     }

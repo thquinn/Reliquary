@@ -6,14 +6,13 @@ import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.relics.ClickableRelic;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
+import com.megacrit.cardcrawl.vfx.ThoughtBubble;
 import util.TextureLoader;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class RelicOuijaBoard extends CustomRelic implements ClickableRelic {
     public static final String ID = "reliquary:OuijaBoard";
@@ -39,7 +38,16 @@ public class RelicOuijaBoard extends CustomRelic implements ClickableRelic {
 
     @Override
     public void onRightClick() {
-        if (IsInappropriate() || validTargets.size() == 0) {
+        if (IsInappropriate()) {
+            return;
+        }
+        AbstractPlayer p = AbstractDungeon.player;
+        if (usedThisTurn) {
+            AbstractDungeon.effectList.add(new ThoughtBubble(p.dialogX, p.dialogY, 3.0F, DESCRIPTIONS[1], true));
+            return;
+        }
+        if (validTargets.size() == 0) {
+            AbstractDungeon.effectList.add(new ThoughtBubble(p.dialogX, p.dialogY, 3.0F, DESCRIPTIONS[p.discardPile.isEmpty() ? 2 : 3], true));
             return;
         }
         addToBot(new OuijaBoardAction(1));
@@ -50,7 +58,7 @@ public class RelicOuijaBoard extends CustomRelic implements ClickableRelic {
     @Override
     public void update() {
         super.update();
-        if (IsInappropriate()) {
+        if (IsInappropriate() || usedThisTurn) {
             return;
         }
         validTargets.clear();
@@ -67,12 +75,12 @@ public class RelicOuijaBoard extends CustomRelic implements ClickableRelic {
     }
 
     private boolean IsInappropriate() {
-        return !isObtained || usedThisTurn || AbstractDungeon.getCurrRoom() == null || AbstractDungeon.getCurrRoom().phase != AbstractRoom.RoomPhase.COMBAT || AbstractDungeon.actionManager.turnHasEnded || !AbstractDungeon.actionManager.actions.isEmpty();
+        return !isObtained || AbstractDungeon.getCurrRoom() == null || AbstractDungeon.getCurrRoom().phase != AbstractRoom.RoomPhase.COMBAT || AbstractDungeon.actionManager.turnHasEnded || !AbstractDungeon.actionManager.actions.isEmpty();
     }
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0];
+        return CLICKABLE_DESCRIPTIONS()[0] + " NL " + DESCRIPTIONS[0];
     }
     @Override
     public AbstractRelic makeCopy()

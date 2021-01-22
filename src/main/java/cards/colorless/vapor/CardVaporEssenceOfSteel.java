@@ -18,11 +18,10 @@ public class CardVaporEssenceOfSteel extends CustomCard {
     private static final int COST = 0;
 
     public CardVaporEssenceOfSteel() {
-        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.NONE);
+        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.NONE);
         baseMagicNumber = 2;
         magicNumber = 2;
         selfRetain = true;
-        exhaust = true;
     }
 
     @Override

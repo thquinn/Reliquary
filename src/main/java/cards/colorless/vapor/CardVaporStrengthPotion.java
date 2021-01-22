@@ -18,11 +18,10 @@ public class CardVaporStrengthPotion extends CustomCard {
     private static final int COST = 0;
 
     public CardVaporStrengthPotion() {
-        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.NONE);
+        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.NONE);
         baseMagicNumber = 1;
         magicNumber = 1;
         selfRetain = true;
-        exhaust = true;
     }
 
     @Override

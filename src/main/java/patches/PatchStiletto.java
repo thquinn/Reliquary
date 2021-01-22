@@ -1,5 +1,6 @@
 package patches;
 
+import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
 import com.megacrit.cardcrawl.actions.common.DiscardAtEndOfTurnAction;
@@ -18,29 +19,31 @@ import relics.RelicStiletto;
 import util.ReliquaryLogger;
 
 @SpirePatch(
-        clz= AbstractMonster.class,
-        method="damage"
+        clz= AbstractCreature.class,
+        method="addBlock"
 )
 public class PatchStiletto {
     @SpireInsertPatch(
             locator= Locator.class,
-            localvars={"damageAmount"}
+            localvars={"tmp"}
     )
-    public static void Insert(AbstractMonster __instance, DamageInfo info, @ByRef int[] damageAmount) {
+    public static void Insert(AbstractCreature __instance, int blockAmount, @ByRef float[] tmp) {
         AbstractPlayer p = AbstractDungeon.player;
-        if (info.owner != p || !p.hasRelic(RelicStiletto.ID)) {
+        if (__instance == p) {
             return;
         }
-        int blockBroken = Math.min(damageAmount[0] * 2, __instance.currentBlock);
-        if (blockBroken > 0) {
-            p.getRelic(RelicStiletto.ID).flash();
+        RelicStiletto stiletto = (RelicStiletto) p.getRelic(RelicStiletto.ID);
+        if (stiletto != null) {
+            if (tmp[0] >= 1) {
+                AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(__instance, stiletto));
+            }
+            tmp[0] /= 2;
         }
-        damageAmount[0] += blockBroken / 2;
     }
 
     private static class Locator extends SpireInsertLocator {
         public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {
-            Matcher matcher = new Matcher.MethodCallMatcher(AbstractMonster.class, "decrementBlock");
+            Matcher matcher = new Matcher.FieldAccessMatcher(AbstractCreature.class, "currentBlock");
             return LineFinder.findInOrder(ctMethodToPatch, matcher);
         }
     }

@@ -1,9 +1,18 @@
 {
+  "reliquary:Aerogel": {
+    "NAME": "Aerogel",
+    "FLAVOR": "It's some aerated gel.",
+    "DESCRIPTIONS": [
+      "Upon pickup, choose a card. Whenever you shuffle your draw pile with this card in it, it will end up on top.",
+      "Whenever you shuffle, the chosen ",
+      " will end up on top."
+    ]
+  },
   "reliquary:BoilingFlask": {
     "NAME": "Boiling Flask",
     "FLAVOR": "It's a flask.",
     "DESCRIPTIONS": [
-      "At the start of each combat, if your potion slots are full, choose a #yVapor and add it into your hand."
+      "At the start of each combat, if your potion slots are full, choose a #yVapor card and add it into your hand."
     ]
   },
   "reliquary:Bookmark": {
@@ -40,7 +49,7 @@
     "DESCRIPTIONS": [
       "Whenever you reach #b",
       " or more total unblocked damage in a combat, deals #b",
-      " damage to all enemies."
+      " damage to ALL enemies."
     ]
   },
   "reliquary:FeatherDuster": {
@@ -55,7 +64,7 @@
     "NAME": "Firecrackers",
     "FLAVOR": "It's an explosive.",
     "DESCRIPTIONS": [
-      "Overkill damage is dealt to all other enemies."
+      "Overkill damage is dealt to ALL other enemies."
     ]
   },
   "reliquary:IridiumChain": {
@@ -98,14 +107,17 @@
     "NAME": "Mudwin's Cradle",
     "FLAVOR": "Most popular desk toy.",
     "DESCRIPTIONS": [
-      "Whenever you exit #yDivinity, gain #b2 #yMantra for each time you entered #yDivinity this combat (max 9)."
+      "Whenever you exit #yDivinity, gain #b2 #yMantra for each time you entered #yDivinity this combat (up to a max of #b9)."
     ]
   },
   "reliquary:OuijaBoard": {
     "NAME": "Ouija Board",
     "FLAVOR": "It's a game board.",
     "DESCRIPTIONS": [
-      "Right click this once each turn to play a card from your discard pile with random targets and shuffle it into your draw pile. It costs [E] more."
+      "Once each turn, play a card from your discard pile with random targets and shuffle it into your draw pile. It costs #b1 more.",
+      "I already used that this turn.",
+      "My discard pile is #rempty.",
+      "I don't have enough Energy for the cards in my discard pile."
     ]
   },
   "reliquary:PorcupineQuills": {
@@ -117,11 +129,18 @@
   },
   "reliquary:PurpleTingedLeaf": {
     "NAME": "Purple-Tinged Leaf",
-    "FLAVOR": "It's a leaf.",
+    "FLAVOR": "This leaf has the unusual appearance, unique in all the plant kingdom, of having been drawn by a grade schooler.",
     "DESCRIPTIONS": [
-      "Upon pickup, choose a card. Whenever you play that card, heal #b1 HP.",
+      "Upon pickup, choose a card. Whenever you play this card, heal #b1 HP.",
       "Whenever you play the chosen ",
       ", heal #b1 HP."
+    ]
+  },
+  "reliquary:QuartzCube": {
+    "NAME": "Quartz Cube",
+    "FLAVOR": "It's a cube.",
+    "DESCRIPTIONS": [
+      "At the start of each combat with #b2 or more enemies, apply #b2 #yStunned to one. It can't be damaged while #yStunned."
     ]
   },
   "reliquary:RadioactivePellet": {
@@ -135,7 +154,7 @@
     "NAME": "Red Paperclip",
     "FLAVOR": "It's a paperclip.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. Replaces a random Common relic."
+      "Gain [E] at the start of your turn. Replaces a random #bUncommon relic."
     ]
   },
   "reliquary:RoseTintedGlasses": {
@@ -149,21 +168,14 @@
     "NAME": "Rosewood Lute",
     "FLAVOR": "It's a lute.",
     "DESCRIPTIONS": [
-      "Whenever you block damage exactly, gain #b1 [E] next turn."
-    ]
-  },
-  "reliquary:QuartzCube": {
-    "NAME": "Quartz Cube",
-    "FLAVOR": "It's a cube.",
-    "DESCRIPTIONS": [
-      "At the start of each combat with #b2 or more enemies, apply #b2 #yStunned to one. It can't be damaged while #yStunned."
+      "Whenever you block damage exactly, gain [E] next turn."
     ]
   },
   "reliquary:SculptingSteel": {
     "NAME": "Sculpting Steel",
     "FLAVOR": "It's a lump of steel.",
     "DESCRIPTIONS": [
-      "Upon pickup, becomes a copy of a relic you already have."
+      "Upon pickup, becomes a copy of a random relic you already have."
     ]
   },
   "reliquary:ShortFuse": {
@@ -184,7 +196,7 @@
     "NAME": "Stiletto",
     "FLAVOR": "It's a dagger.",
     "DESCRIPTIONS": [
-      "Your #yAttacks deal double damage to enemies' #yBlock."
+      "Enemies gain #b50% less #yBlock."
     ]
   },
   "reliquary:TatteredRug": {
@@ -208,6 +220,13 @@
     "FLAVOR": "A part of the weapon wielded by the fabled Wave King.",
     "DESCRIPTIONS": [
       "The first card you play on a single enemy each combat is copied to all other enemies."
+    ]
+  },
+  "reliquary:TuningFork": {
+    "NAME": "Tuning Fork",
+    "FLAVOR": "If you try eating with it, you're liable to break a tooth.",
+    "DESCRIPTIONS": [
+      "Whenever you break an enemy's #yBlock exactly, deal #b10 damage to it."
     ]
   },
   "reliquary:WritOfMandamus": {

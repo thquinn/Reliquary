@@ -16,8 +16,6 @@ public class RelicStiletto extends CustomRelic {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT);
     }
 
-    // implemented in PatchStiletto
-
     @Override
     public String getUpdatedDescription() {
         return DESCRIPTIONS[0];

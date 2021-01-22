@@ -38,7 +38,7 @@
   },
   "reliquary:VaporCultistPotion": {
     "NAME": "Ritual Vapor",
-    "DESCRIPTION": "Retain. NL Gain 1 Ritual and lose !M! Strength. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Gain 1 Ritual and lose !M! Strength."
   },
   "reliquary:VaporCunningPotion": {
     "NAME": "Deceptive Vapor",
@@ -47,7 +47,7 @@
   },
   "reliquary:VaporDexterityPotion": {
     "NAME": "Swirling Vapor",
-    "DESCRIPTION": "Retain. NL Gain !M! Dexterity. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Gain !M! Dexterity."
   },
   "reliquary:VaporDistilledChaos": {
     "NAME": "Chaotic Vapor",
@@ -81,7 +81,7 @@
   },
   "reliquary:VaporEssenceOfSteel": {
     "NAME": "Steel Vapor",
-    "DESCRIPTION": "Retain. NL Gain !M! Plated Armor. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Gain !M! Plated Armor."
   },
   "reliquary:VaporExplosivePotion": {
     "NAME": "Explosive Vapor",
@@ -123,11 +123,11 @@
   },
   "reliquary:VaporHeartOfIron": {
     "NAME": "Shining Vapor",
-    "DESCRIPTION": "Retain. NL Gain !M! Metallicize. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Gain !M! Metallicize."
   },
   "reliquary:VaporLiquidBronze": {
     "NAME": "Prickly Vapor",
-    "DESCRIPTION": "Retain. NL Gain !M! Thorns. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Gain !M! Thorns."
   },
   "reliquary:VaporLiquidMemories": {
     "NAME": "Deja Vapor",
@@ -140,8 +140,8 @@
   },
   "reliquary:VaporPotionOfCapacity": {
     "NAME": "Billowing Vapor",
-    "DESCRIPTION": "Retain. NL Gain 1 orb slot. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Gain !M! orb slots. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Gain 1 orb slot.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain !M! orb slots."
   },
   "reliquary:VaporPowerPotion": {
     "NAME": "Powerful Vapor",
@@ -150,7 +150,7 @@
   },
   "reliquary:VaporRegenPotion": {
     "NAME": "Permeating Vapor",
-    "DESCRIPTION": "Retain. NL Gain !M! Regeneration. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Gain !M! Regeneration."
   },
   "reliquary:VaporSkillPotion": {
     "NAME": "Glowing Vapor",
@@ -187,7 +187,7 @@
   },
   "reliquary:VaporStrengthPotion": {
     "NAME": "Strong Vapor",
-    "DESCRIPTION": "Retain. NL Gain !M! Strength. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Gain !M! Strength."
   },
   "reliquary:VaporSwiftPotion": {
     "NAME": "Swift Vapor",
@@ -195,7 +195,7 @@
     "UPGRADE_DESCRIPTION": "Retain. NL Draw !M! cards. NL Exhaust."
   },
   "reliquary:VaporUnknownPotion": {
-    "NAME": "Mysterious Vapor",
+    "NAME": "Unknown Vapor",
     "DESCRIPTION": "Retain. NL Add a random Vapor card into your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain. NL Add !M! random Vapor cards into your hand. NL Exhaust."
   },

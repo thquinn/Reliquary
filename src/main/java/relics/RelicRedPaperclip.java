@@ -24,7 +24,7 @@ public class RelicRedPaperclip extends CustomRelic {
     @Override
     public boolean canSpawn() {
         for (AbstractRelic r : AbstractDungeon.player.relics) {
-            if (r.tier == RelicTier.COMMON) {
+            if (r.tier == RelicTier.UNCOMMON) {
                 return true;
             }
         }
@@ -33,9 +33,9 @@ public class RelicRedPaperclip extends CustomRelic {
 
     @Override
     public void onEquip() {
-        AbstractRelic[] commons = AbstractDungeon.player.relics.stream().filter(r -> r.tier == RelicTier.COMMON).toArray(AbstractRelic[]::new);
-        if (commons.length > 0) {
-            toRemove = commons[MathUtils.random(commons.length - 1)];
+        AbstractRelic[] uncommons = AbstractDungeon.player.relics.stream().filter(r -> r.tier == RelicTier.UNCOMMON).toArray(AbstractRelic[]::new);
+        if (uncommons.length > 0) {
+            toRemove = uncommons[MathUtils.random(uncommons.length - 1)];
             ReliquaryLogger.log("set toRemove: " + toRemove.relicId);
         }
         AbstractDungeon.player.energy.energyMaster += 1;

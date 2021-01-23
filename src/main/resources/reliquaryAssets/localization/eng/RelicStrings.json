@@ -82,6 +82,13 @@
       "Ethereal. NL "
     ]
   },
+  "reliquary:IvoryTrinket": {
+    "NAME": "Ivory Trinket",
+    "FLAVOR": "It's a trinket.",
+    "DESCRIPTIONS": [
+      "Every #b10th time you #yRetain a #yMiracle, add a #yMiracle into your hand."
+    ]
+  },
   "reliquary:JackalopeAntler": {
     "NAME": "Jackalope Antler",
     "FLAVOR": "It's an antler.",

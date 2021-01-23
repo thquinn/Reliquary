@@ -11,7 +11,7 @@ public class RelicPartyBalloon extends CustomRelic {
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/partyBalloon.png");
 
     public RelicPartyBalloon() {
-        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT);
+        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.MAGICAL);
     }
 
     // implemented in PatchPartyBalloon

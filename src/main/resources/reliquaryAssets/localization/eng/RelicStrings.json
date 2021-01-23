@@ -185,6 +185,13 @@
       "#yPoison doesn't decrement."
     ]
   },
+  "reliquary:RedCape": {
+    "NAME": "Red Cape",
+    "FLAVOR": "It's a cape.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Whenever you #yAttack a single enemy, other enemies can't be targeted until that enemy dies."
+    ]
+  },
   "reliquary:RedPaperclip": {
     "NAME": "Red Paperclip",
     "FLAVOR": "It's a paperclip.",

@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import powers.LesserDuplicationPower;
+import powers.TauntPower;
 import relics.*;
 
 @SpireInitializer
@@ -50,6 +51,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addRelic(new RelicPorcupineQuills(), RelicType.SHARED);
         BaseMod.addRelic(new RelicPurpleTingedLeaf(), RelicType.SHARED);
         BaseMod.addRelic(new RelicRadioactivePellet(), RelicType.GREEN);
+        BaseMod.addRelic(new RelicRedCape(), RelicType.SHARED);
         BaseMod.addRelic(new RelicRedPaperclip(), RelicType.SHARED);
         BaseMod.addRelic(new RelicRoseTintedGlasses(), RelicType.SHARED);
         BaseMod.addRelic(new RelicRosewoodLute(), RelicType.SHARED);
@@ -87,6 +89,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         UnlockTracker.markRelicAsSeen(RelicPorcupineQuills.ID);
         UnlockTracker.markRelicAsSeen(RelicPurpleTingedLeaf.ID);
         UnlockTracker.markRelicAsSeen(RelicRadioactivePellet.ID);
+        UnlockTracker.markRelicAsSeen(RelicRedCape.ID);
         UnlockTracker.markRelicAsSeen(RelicRedPaperclip.ID);
         UnlockTracker.markRelicAsSeen(RelicRoseTintedGlasses.ID);
         UnlockTracker.markRelicAsSeen(RelicRosewoodLute.ID);
@@ -126,6 +129,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
     @Override
     public void receivePostInitialize() {
         BaseMod.addPower(LesserDuplicationPower.class, LesserDuplicationPower.POWER_ID);
+        BaseMod.addPower(TauntPower.class, TauntPower.POWER_ID);
     }
 
     @Override

@@ -1,10 +1,16 @@
 {
-  "reliquary:LesserDuplicationPower": {
+  "reliquary:LesserDuplication": {
     "NAME": "Lesser Duplication",
     "DESCRIPTIONS": [
       "Your next cost 0 or 1 card is played twice this turn.",
       "Your next #b",
       " cost 0 or 1 cards are played twice this turn."
+    ]
+  },
+  "reliquary:Taunt": {
+    "NAME": "Taunt",
+    "DESCRIPTIONS": [
+      "Other enemies can't be targeted until this enemy dies."
     ]
   }
 }

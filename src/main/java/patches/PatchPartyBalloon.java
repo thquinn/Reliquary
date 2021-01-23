@@ -8,7 +8,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
 import relics.RelicPartyBalloon;
-import util.ReliquaryLogger;
 
 import java.util.Collections;
 

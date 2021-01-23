@@ -64,7 +64,7 @@
     "NAME": "Firecrackers",
     "FLAVOR": "It's an explosive.",
     "DESCRIPTIONS": [
-      "Overkill damage is dealt to ALL other enemies."
+      "Overkill damage is dealt to a random enemy."
     ]
   },
   "reliquary:HotPoker": {
@@ -218,6 +218,13 @@
     "FLAVOR": "It's a dagger.",
     "DESCRIPTIONS": [
       "Enemies gain #b50% less #yBlock."
+    ]
+  },
+  "reliquary:Tamtam": {
+    "NAME": "Tam-Tam",
+    "FLAVOR": "It's a gong.",
+    "DESCRIPTIONS": [
+      "Whenever you completely block an attack, gain #b2 #yStrength and ALL enemies gain #b1 #yStrength."
     ]
   },
   "reliquary:TatteredRug": {

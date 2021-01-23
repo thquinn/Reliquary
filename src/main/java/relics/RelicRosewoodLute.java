@@ -3,8 +3,10 @@ package relics;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.relics.OnLoseBlockRelic;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.EnergizedPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
@@ -21,9 +23,10 @@ public class RelicRosewoodLute extends CustomRelic implements OnLoseBlockRelic {
 
     @Override
     public int onLoseBlock(DamageInfo damageInfo, int i) {
-        if (i == AbstractDungeon.player.currentBlock) {
-            addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-            AbstractDungeon.player.addPower(new EnergizedPower(AbstractDungeon.player, 1));
+        AbstractPlayer p = AbstractDungeon.player;
+        if (i == p.currentBlock) {
+            addToBot(new RelicAboveCreatureAction(p, this));
+            addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 1)));
         }
         return i;
     }

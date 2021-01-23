@@ -20,6 +20,8 @@ public class RelicTuningFork extends CustomRelic {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
     }
 
+    // event implemented in PatchTuningFork
+
     public void onAttackBeforeBlock(AbstractMonster target, int damageAmount) {
         if (damageAmount > 0 && damageAmount == target.currentBlock) {
             addToBot(new RelicAboveCreatureAction(target, this));

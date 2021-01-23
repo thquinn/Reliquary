@@ -30,6 +30,8 @@ public class RelicAerogel extends CustomRelic implements CustomBottleRelic, Cust
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
     }
 
+    // event implemented in PatchAerogel
+
     public void afterShuffle() {
         CardGroup drawPile = AbstractDungeon.player.drawPile;
         for (AbstractCard card : drawPile.group) {

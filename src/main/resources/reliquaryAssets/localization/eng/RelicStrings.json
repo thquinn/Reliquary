@@ -4,8 +4,8 @@
     "FLAVOR": "It's some aerated gel.",
     "DESCRIPTIONS": [
       "Upon pickup, choose a card. Whenever you shuffle your draw pile with this card in it, it will end up on top.",
-      "Whenever you shuffle, the chosen ",
-      " will end up on top."
+      "Whenever you shuffle your draw pile with the chosen ",
+      " in it, it will end up on top."
     ]
   },
   "reliquary:BoilingFlask": {
@@ -48,7 +48,7 @@
     "FLAVOR": "It's a coupon.",
     "DESCRIPTIONS": [
       "Whenever you reach #b",
-      " or more total unblocked damage in a combat, deals #b",
+      " or more total unblocked damage dealt in a combat, deal #b",
       " damage to ALL enemies."
     ]
   },
@@ -125,6 +125,13 @@
       "I already used that this turn.",
       "My discard pile is #rempty.",
       "I don't have enough Energy for the cards in my discard pile."
+    ]
+  },
+  "reliquary:PartyBalloon": {
+    "NAME": "Party Balloon",
+    "FLAVOR": "It's a balloon.",
+    "DESCRIPTIONS": [
+      "#yPower cards start each combat in the top half of your draw pile."
     ]
   },
   "reliquary:PorcupineQuills": {

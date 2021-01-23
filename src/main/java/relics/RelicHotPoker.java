@@ -27,8 +27,8 @@ public class RelicHotPoker extends CustomRelic {
 
     @Override
     public void onCardDraw(AbstractCard drawnCard) {
-        if (AbstractDungeon.actionManager.actions.stream().anyMatch(a -> a instanceof EnableEndTurnButtonAction)) {
-            // It's a start of turn draw.
+        if (!AbstractDungeon.overlayMenu.endTurnButton.enabled) {
+            // If the End Turn button is disabled, it's a start-of-turn draw.
             return;
         }
         if (drawnCard.costForTurn > 0) {

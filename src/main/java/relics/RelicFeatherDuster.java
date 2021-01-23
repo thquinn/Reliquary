@@ -9,7 +9,9 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.screens.select.GridCardSelectScreen;
 import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
+import util.ReliquaryLogger;
 import util.TextureLoader;
 
 public class RelicFeatherDuster extends CustomRelic {
@@ -25,13 +27,6 @@ public class RelicFeatherDuster extends CustomRelic {
 
     @Override
     public void onEquip() {
-        this.cardsSelected = false;
-        if (AbstractDungeon.isScreenUp) {
-            AbstractDungeon.dynamicBanner.hide();
-            AbstractDungeon.overlayMenu.cancelButton.hide();
-            AbstractDungeon.previousScreen = AbstractDungeon.screen;
-        }
-        AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.INCOMPLETE;
         CardGroup tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         for (AbstractCard card : AbstractDungeon.player.masterDeck.getPurgeableCards().group) {
             if (!card.hasTag(AbstractCard.CardTags.STARTER_DEFEND) && !card.hasTag(AbstractCard.CardTags.STARTER_STRIKE) && card.type != AbstractCard.CardType.CURSE)
@@ -41,13 +36,20 @@ public class RelicFeatherDuster extends CustomRelic {
             this.cardsSelected = true;
             return;
         }
+        this.cardsSelected = false;
+        if (AbstractDungeon.isScreenUp) {
+            AbstractDungeon.dynamicBanner.hide();
+            AbstractDungeon.overlayMenu.cancelButton.hide();
+            AbstractDungeon.previousScreen = AbstractDungeon.screen;
+        }
+        AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.INCOMPLETE;
         AbstractDungeon.gridSelectScreen.open(tmp, tmp.size(), true, this.DESCRIPTIONS[1]);
     }
 
     @Override
     public void update() {
         super.update();
-        if (!cardsSelected && !AbstractDungeon.isScreenUp) {
+        if (!cardsSelected && AbstractDungeon.screen != AbstractDungeon.CurrentScreen.GRID) {
             cardsSelected = true;
             int numCards = AbstractDungeon.gridSelectScreen.selectedCards.size();
             float sigmoid = 1 / (1 + (float)Math.pow(Math.E, -numCards * .4)) - .5f;
@@ -67,6 +69,7 @@ public class RelicFeatherDuster extends CustomRelic {
             }
             AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.COMPLETE;
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
+            ReliquaryLogger.log("clearing...");
         }
     }
 

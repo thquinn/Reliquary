@@ -14,7 +14,7 @@ import powers.LesserDuplicationPower;
 )
 public class PatchLesserDuplication {
     public static SpireReturn Prefix(DuplicationPower __instance, AbstractCard card, UseCardAction action) {
-        if (card.cost < 2 && AbstractDungeon.player.hasPower(LesserDuplicationPower.POWER_ID)) {
+        if (card.costForTurn < 2 && AbstractDungeon.player.hasPower(LesserDuplicationPower.POWER_ID)) {
             return SpireReturn.Return(null);
         }
         return SpireReturn.Continue();

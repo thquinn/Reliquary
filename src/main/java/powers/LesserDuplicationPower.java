@@ -41,7 +41,7 @@ public class LesserDuplicationPower extends AbstractPower {
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card.cost > 1 || card.cost == -1) {
+        if (card.costForTurn > 1 || card.cost == -1) {
             return;
         }
         if (!card.purgeOnUse && amount > 0) {

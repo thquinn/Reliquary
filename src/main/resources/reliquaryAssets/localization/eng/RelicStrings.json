@@ -96,6 +96,13 @@
       "Whenever an enemy dies, refund the Energy cost of the last card you played."
     ]
   },
+  "reliquary:KillPill": {
+    "NAME": "Kill Pill",
+    "FLAVOR": "It's a pill.",
+    "DESCRIPTIONS": [
+      "Whenever you apply #yPoison, it triggers immediately."
+    ]
+  },
   "reliquary:KinkedSpring": {
     "NAME": "Kinked Spring",
     "FLAVOR": "It's a spring.",

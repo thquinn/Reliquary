@@ -110,6 +110,13 @@
       "Enemies with #b25% or less health are #yWeak."
     ]
   },
+  "reliquary:LoveEmittingDiode": {
+    "NAME": "Love-Emitting Diode",
+    "FLAVOR": "It's a diode.",
+    "DESCRIPTIONS": [
+      "Positive #yFocus triply affects your rightmost Orb."
+    ]
+  },
   "reliquary:MedicineBall": {
     "NAME": "Medicine Ball",
     "FLAVOR": "It's a ball.",

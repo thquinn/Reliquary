@@ -72,6 +72,7 @@ public class RelicSculptingSteel extends CustomRelic {
             RelicOuijaBoard.ID,
             RelicPorcupineQuills.ID,
             RelicRosewoodLute.ID,
+            RelicTamtam.ID,
             RelicTuningFork.ID,
             RelicWritOfMandamus.ID,
             // base game

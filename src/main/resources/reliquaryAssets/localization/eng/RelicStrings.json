@@ -43,6 +43,13 @@
       "Each combat starts with two player turns, then two enemy turns."
     ]
   },
+  "reliquary:Buckler": {
+    "NAME": "Buckler",
+    "FLAVOR": "It's a shield.",
+    "DESCRIPTIONS": [
+      "The next #b2 times you play an upgradeable card that's in your deck, #yUpgrade it permanently."
+    ]
+  },
   "reliquary:Ember": {
     "NAME": "Ember",
     "FLAVOR": "It's an ember.",

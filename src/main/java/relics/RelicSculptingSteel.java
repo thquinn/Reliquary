@@ -2,7 +2,6 @@ package relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.*;
 import util.TextureLoader;
@@ -58,6 +57,7 @@ public class RelicSculptingSteel extends CustomRelic {
             RelicBoilingFlask.ID,
             RelicBookmark.ID,
             RelicBoomerang.ID,
+            RelicBuckler.ID,
             RelicEmber.ID,
             RelicExpiredCoupon.ID,
             RelicFirecrackers.ID,
@@ -69,6 +69,7 @@ public class RelicSculptingSteel extends CustomRelic {
             RelicOuijaBoard.ID,
             RelicPorcupineQuills.ID,
             RelicRosewoodLute.ID,
+            RelicSharkskinSheath.ID,
             RelicTamtam.ID,
             RelicTridentHead.ID,
             RelicTuningFork.ID,

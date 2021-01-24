@@ -227,6 +227,13 @@
       "Upon pickup, becomes a copy of a random relic you already have."
     ]
   },
+  "reliquary:SharkskinSheath": {
+    "NAME": "Sharkskin Sheath",
+    "FLAVOR": "It's a sheath.",
+    "DESCRIPTIONS": [
+      "Whenever you end your turn with no [E] and no cards in hand, gain [E] and draw a card next turn."
+    ]
+  },
   "reliquary:ShortFuse": {
     "NAME": "Short Fuse",
     "FLAVOR": "It's a fuse.",

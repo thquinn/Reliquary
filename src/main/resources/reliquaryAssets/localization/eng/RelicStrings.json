@@ -1,7 +1,7 @@
 {
   "reliquary:Aerogel": {
     "NAME": "Aerogel",
-    "FLAVOR": "It's some aerated gel.",
+    "FLAVOR": "Weighs next to nothing, and makes a great insulator against bad luck.",
     "DESCRIPTIONS": [
       "Upon pickup, choose a card. Whenever you shuffle your draw pile with this card in it, it will end up on top.",
       "Whenever you shuffle your draw pile with the chosen ",
@@ -10,56 +10,56 @@
   },
   "reliquary:BallBearing": {
     "NAME": "Ball Bearing",
-    "FLAVOR": "It's a bearing.",
+    "FLAVOR": "Keeps things running smooth.",
     "DESCRIPTIONS": [
       "Whenever you shuffle your draw pile, shuffle in a #yFlash #yof #ySteel or #yFinesse, chosen randomly."
     ]
   },
   "reliquary:BoilingFlask": {
     "NAME": "Boiling Flask",
-    "FLAVOR": "It's a flask.",
+    "FLAVOR": "A round-bottom boiling flask, five thousand milliliters!",
     "DESCRIPTIONS": [
       "At the start of each combat, if your potion slots are full, choose a #yVapor card and add it into your hand."
     ]
   },
   "reliquary:Bookmark": {
     "NAME": "Bookmark",
-    "FLAVOR": "It's a bookmark.",
+    "FLAVOR": "\"Now, where was I...\"",
     "DESCRIPTIONS": [
       "At the start of each combat, draw an extra card for each #yInnate card in your deck."
     ]
   },
   "reliquary:Boomerang": {
     "NAME": "Boomerang",
-    "FLAVOR": "It's a boomerang.",
+    "FLAVOR": "If you love something, let it go. Or just frickin' chuck it.",
     "DESCRIPTIONS": [
       "Put the first card you play each turn on top of your draw pile."
     ]
   },
   "reliquary:BrokenClock": {
     "NAME": "Broken Clock",
-    "FLAVOR": "It's a clock.",
+    "FLAVOR": "This one is only wrong twice a day, somehow, and right the rest of the time.",
     "DESCRIPTIONS": [
       "Each combat starts with two player turns, then two enemy turns."
     ]
   },
   "reliquary:Buckler": {
     "NAME": "Buckler",
-    "FLAVOR": "It's a shield.",
+    "FLAVOR": "Emblazoned with the famous cygnet signet of Merek.",
     "DESCRIPTIONS": [
       "The next #b2 times you play an upgradeable card that's in your deck, #yUpgrade it permanently."
     ]
   },
   "reliquary:Ember": {
     "NAME": "Ember",
-    "FLAVOR": "It's an ember.",
+    "FLAVOR": "Hachi machi, that's hot!",
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. Take #b1 damage for each [E] beyond the third you spend each turn."
     ]
   },
   "reliquary:ExpiredCoupon": {
     "NAME": "Expired Coupon",
-    "FLAVOR": "It's a coupon.",
+    "FLAVOR": "Good for 10% off an \"ass-beating.\" Who printed this thing, anyway?",
     "DESCRIPTIONS": [
       "Whenever you reach #b",
       " or more total unblocked damage dealt in a combat, deal #b",
@@ -68,7 +68,7 @@
   },
   "reliquary:FeatherDuster": {
     "NAME": "Feather Duster",
-    "FLAVOR": "It's a duster.",
+    "FLAVOR": "\"My life's mistakes, they lay about me like so much dust.\" - Cademo",
     "DESCRIPTIONS": [
       "Upon pickup, remove any number of cards from your deck except Strike, Defend, and #rCurse cards.",
       "Select any number of cards to remove."
@@ -76,21 +76,21 @@
   },
   "reliquary:Firecrackers": {
     "NAME": "Firecrackers",
-    "FLAVOR": "It's an explosive.",
+    "FLAVOR": "Makes quite a racket. Keep it down out there, y'dang kids!",
     "DESCRIPTIONS": [
       "Overkill damage is dealt to a random enemy."
     ]
   },
   "reliquary:HotPoker": {
     "NAME": "Hot Poker",
-    "FLAVOR": "It's a poker.",
+    "FLAVOR": "Wouldn't want to be caught at the business end of this thing.",
     "DESCRIPTIONS": [
       "Whenever you draw a card during your turn, deal damage equal to its cost to a random enemy."
     ]
   },
   "reliquary:IridiumChain": {
     "NAME": "Iridium Chain",
-    "FLAVOR": "It's a chain.",
+    "FLAVOR": "You try to count the links, but never come up with the same number twice.",
     "DESCRIPTIONS": [
       "Whenever you play a #yPower card, put an #yEthereal copy into your hand that costs #b1 more.",
       "Ethereal. NL "
@@ -98,49 +98,49 @@
   },
   "reliquary:IvoryTrinket": {
     "NAME": "Ivory Trinket",
-    "FLAVOR": "It's a trinket.",
+    "FLAVOR": "Someone cut the tusk from an elephant, just to whittle it into a smaller tusk. But why?",
     "DESCRIPTIONS": [
       "Every #b10th time you #yRetain a #yMiracle, add a #yMiracle into your hand."
     ]
   },
   "reliquary:JackalopeAntler": {
     "NAME": "Jackalope Antler",
-    "FLAVOR": "It's an antler.",
+    "FLAVOR": "Whatever creature this came from must be running around lopsided.",
     "DESCRIPTIONS": [
       "Whenever an enemy dies, refund the Energy cost of the last card you played."
     ]
   },
   "reliquary:KillPill": {
     "NAME": "Kill Pill",
-    "FLAVOR": "It's a pill.",
+    "FLAVOR": "Would look pretty cool on the back of a leather jacket.",
     "DESCRIPTIONS": [
       "Whenever you apply #yPoison, it triggers immediately."
     ]
   },
   "reliquary:KinkedSpring": {
     "NAME": "Kinked Spring",
-    "FLAVOR": "It's a spring.",
+    "FLAVOR": "Someone overwound this thing, and it ain't comin' back.",
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. Your discard pile can't shuffle into your draw pile during your turn."
     ]
   },
   "reliquary:Knoch": {
     "NAME": "Knoch",
-    "FLAVOR": "It's a knoch.",
+    "FLAVOR": "It keeps sinking to the bottom of your pack.",
     "DESCRIPTIONS": [
       "Enemies with #b25% or less health are #yWeak."
     ]
   },
   "reliquary:LoveEmittingDiode": {
     "NAME": "Love-Emitting Diode",
-    "FLAVOR": "It's a diode.",
+    "FLAVOR": "Spread the love, pursuant to the principles of the inverse-square law.",
     "DESCRIPTIONS": [
       "Positive #yFocus triply affects your rightmost Orb."
     ]
   },
   "reliquary:MedicineBall": {
     "NAME": "Medicine Ball",
-    "FLAVOR": "It's a ball.",
+    "FLAVOR": "If only you had someone to toss this around with...",
     "DESCRIPTIONS": [
       "You have additional #yStrength equal to your enemies' combined #yStrength."
     ]
@@ -154,31 +154,31 @@
   },
   "reliquary:OuijaBoard": {
     "NAME": "Ouija Board",
-    "FLAVOR": "It's a game board.",
+    "FLAVOR": "Only as mysterious as you make it.",
     "DESCRIPTIONS": [
       "Once each turn, play a card from your discard pile with random targets and shuffle it into your draw pile. It costs #b1 more.",
-      "I already used that this turn.",
+      "I've already used that this turn.",
       "My discard pile is #rempty.",
       "I don't have enough Energy for the cards in my discard pile."
     ]
   },
   "reliquary:PartyBalloon": {
     "NAME": "Party Balloon",
-    "FLAVOR": "It's a balloon.",
+    "FLAVOR": "Hold on to that string, or you'll never see it again!",
     "DESCRIPTIONS": [
       "#yPower cards start each combat in the top half of your draw pile."
     ]
   },
   "reliquary:PorcupineQuills": {
     "NAME": "Porcupine Quills",
-    "FLAVOR": "It's some quills.",
+    "FLAVOR": "If these get ya, you must have really deserved it.",
     "DESCRIPTIONS": [
       "Whenever you receive #b12 or more unblocked damage, deal that much damage back."
     ]
   },
   "reliquary:PurpleTingedLeaf": {
     "NAME": "Purple-Tinged Leaf",
-    "FLAVOR": "This leaf has the unusual appearance, unique in all the plant kingdom, of having been drawn by a grade schooler.",
+    "FLAVOR": "This leaf has the appearance, unique in all the plant kingdom, of having been drawn by a grade schooler.",
     "DESCRIPTIONS": [
       "Upon pickup, choose a card. Whenever you play this card, heal #b1 HP.",
       "Whenever you play the chosen ",
@@ -187,91 +187,91 @@
   },
   "reliquary:QuartzCube": {
     "NAME": "Quartz Cube",
-    "FLAVOR": "It's a cube.",
+    "FLAVOR": "It's like an ice cube that never melts, but also isn't cold.",
     "DESCRIPTIONS": [
       "At the start of each combat with #b2 or more enemies, apply #b2 #yStunned to one. It can't be damaged while #yStunned."
     ]
   },
   "reliquary:RadioactivePellet": {
     "NAME": "Radioactive Pellet",
-    "FLAVOR": "It's a pellet.",
+    "FLAVOR": "The secret weapon of the world's most dastardly villains.",
     "DESCRIPTIONS": [
       "#yPoison doesn't decrement."
     ]
   },
   "reliquary:RedCape": {
     "NAME": "Red Cape",
-    "FLAVOR": "It's a cape.",
+    "FLAVOR": "Who wants the horns?",
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. Whenever you #yAttack a single enemy, other enemies can't be targeted until it dies."
     ]
   },
   "reliquary:RedPaperclip": {
     "NAME": "Red Paperclip",
-    "FLAVOR": "It's a paperclip.",
+    "FLAVOR": "A powerful symbol of barter.",
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. Replaces a random #bUncommon relic."
     ]
   },
   "reliquary:RoseTintedGlasses": {
     "NAME": "Rose-Tinted Glasses",
-    "FLAVOR": "It's a pair of glasses.",
+    "FLAVOR": "You know what? Things aren't so bad.",
     "DESCRIPTIONS": [
       "The first #b2 times you draw a #yStatus each combat, #yExhaust it and draw a card."
     ]
   },
   "reliquary:RosewoodLute": {
     "NAME": "Rosewood Lute",
-    "FLAVOR": "It's a lute.",
+    "FLAVOR": "Anyway, here's \"Wonderspire.\"",
     "DESCRIPTIONS": [
       "Whenever you block damage exactly, gain [E] next turn."
     ]
   },
   "reliquary:SculptingSteel": {
     "NAME": "Sculpting Steel",
-    "FLAVOR": "It's a lump of steel.",
+    "FLAVOR": "Malleable as clay one second, hard as stone the next.",
     "DESCRIPTIONS": [
       "Upon pickup, becomes a copy of a random relic you already have."
     ]
   },
   "reliquary:SharkskinSheath": {
     "NAME": "Sharkskin Sheath",
-    "FLAVOR": "It's a sheath.",
+    "FLAVOR": "If only you had a sharkskin knife to put in it.",
     "DESCRIPTIONS": [
-      "Whenever you end your turn with no [E] and no cards in hand, gain [E] and draw a card next turn."
+      "Whenever you end your turn with no Energy or cards in hand, gain [E] and draw a card next turn."
     ]
   },
   "reliquary:ShortFuse": {
     "NAME": "Short Fuse",
-    "FLAVOR": "It's a fuse.",
+    "FLAVOR": "It might blow at any moment.",
     "DESCRIPTIONS": [
       "Your #yLightning Orbs target the enemy with the least HP."
     ]
   },
   "reliquary:SilkGlove": {
     "NAME": "Silk Glove",
-    "FLAVOR": "It's a glove.",
+    "FLAVOR": "Left behind by a fancy lady who doesn't mess around.",
     "DESCRIPTIONS": [
       "Whenever you would discard a single card at the end of your turn, #yRetain it."
     ]
   },
   "reliquary:Stiletto": {
     "NAME": "Stiletto",
-    "FLAVOR": "It's a dagger.",
+    "FLAVOR": "Designed to slip between the plates and links of most any armor.",
     "DESCRIPTIONS": [
       "Enemies gain #b50% less #yBlock."
     ]
   },
   "reliquary:Tamtam": {
     "NAME": "Tam-Tam",
-    "FLAVOR": "It's a gong.",
+    "FLAVOR": "GONG.",
     "DESCRIPTIONS": [
       "Whenever you completely block an attack, gain #b2 #yStrength and ALL enemies gain #b1 #yStrength."
     ]
   },
   "reliquary:TatteredRug": {
     "NAME": "Tattered Rug",
-    "FLAVOR": "It's a rug.",
+    "FLAVOR": "What, you think anyone can just set up shop?",
     "DESCRIPTIONS": [
       "You can sell potions to the Merchant.",
       "Sell for ",
@@ -301,7 +301,7 @@
   },
   "reliquary:WritOfMandamus": {
     "NAME": "Writ of Mandamus",
-    "FLAVOR": "It's a writ.",
+    "FLAVOR": "It begins, \"Whatever you're thinking about doing: hold it, mister.\"",
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. At the end of your turn, you lose #b",
       " #yBlock."

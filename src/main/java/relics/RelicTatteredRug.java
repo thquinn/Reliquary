@@ -2,6 +2,8 @@ package relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
@@ -13,6 +15,11 @@ public class RelicTatteredRug extends CustomRelic {
 
     public RelicTatteredRug() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT);
+    }
+
+    @Override
+    public boolean canSpawn() {
+        return Settings.isEndless || AbstractDungeon.floorNum <= 48;
     }
 
     // implemented in PatchTatteredRug

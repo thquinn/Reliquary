@@ -4,9 +4,7 @@ import basemod.abstracts.CustomBottleRelic;
 import basemod.abstracts.CustomRelic;
 import basemod.abstracts.CustomSavable;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
-import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -41,14 +39,6 @@ public class RelicAerogel extends CustomRelic implements CustomBottleRelic, Cust
                 addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
                 return;
             }
-        }
-    }
-
-    public void onUseCard(AbstractCard targetCard, UseCardAction useCardAction) {
-        if (PatchAerogel.PatchAerogelField.inAerogel.get(targetCard)) {
-            if (AbstractDungeon.player.getRelic(ID) != this) return; // Prevent multiple triggers from one play.
-            addToTop(new HealAction(AbstractDungeon.player, AbstractDungeon.player, 1));
-            addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         }
     }
 

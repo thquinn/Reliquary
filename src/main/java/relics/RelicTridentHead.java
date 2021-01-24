@@ -17,7 +17,7 @@ public class RelicTridentHead extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/tridentHead.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/tridentHead.png");
 
-    private static boolean usedThisCombat = false;
+    private boolean usedThisCombat = false;
 
     public RelicTridentHead() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.SOLID);

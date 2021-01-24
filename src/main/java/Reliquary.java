@@ -28,6 +28,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
                 .packageFilter(RelicBoilingFlask.class)
                 .setDefaultSeen(true);
         BaseMod.addRelic(new RelicAerogel(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicBallBearing(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBoilingFlask(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBookmark(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBoomerang(), RelicType.SHARED);
@@ -66,6 +67,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addRelic(new RelicTuningFork(), RelicType.SHARED);
         BaseMod.addRelic(new RelicWritOfMandamus(), RelicType.SHARED);
         UnlockTracker.markRelicAsSeen(RelicAerogel.ID);
+        UnlockTracker.markRelicAsSeen(RelicBallBearing.ID);
         UnlockTracker.markRelicAsSeen(RelicBoilingFlask.ID);
         UnlockTracker.markRelicAsSeen(RelicBookmark.ID);
         UnlockTracker.markRelicAsSeen(RelicBoomerang.ID);

@@ -1,14 +1,23 @@
 package patches;
 
+import basemod.devcommands.relic.Relic;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.unique.PoisonLoseHpAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import javassist.*;
 import relics.RelicKillPill;
+import relics.RelicRadioactivePellet;
+
+import javax.swing.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class PatchKillPill {
     @SpirePatch(
@@ -44,10 +53,22 @@ public class PatchKillPill {
     }
 
     public static void Impl(PoisonPower instance, AbstractCreature source) {
-        RelicKillPill killPill = (RelicKillPill) AbstractDungeon.player.getRelic(RelicKillPill.ID);
-        if (killPill != null && instance.amount > 0) {
-            AbstractDungeon.actionManager.addToTop(new PoisonLoseHpAction(instance.owner, source, instance.amount, AbstractGameAction.AttackEffect.POISON));
-            AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(instance.owner, killPill));
+        if (instance.amount <= 0) return;
+        int damage = instance.amount;
+        List<AbstractGameAction> actions = new ArrayList<>();
+        for (AbstractRelic relic : AbstractDungeon.player.relics) {
+            if (relic.relicId.equals(RelicKillPill.ID)) {
+                actions.add(new RelicAboveCreatureAction(instance.owner, relic));
+                actions.add(new PoisonLoseHpAction(instance.owner, source, damage, AbstractGameAction.AttackEffect.POISON));
+                if (!AbstractDungeon.player.hasRelic(RelicRadioactivePellet.ID)) {
+                    damage--;
+                }
+            }
+        }
+        // Put the actions on top in reverse order.
+        Collections.reverse(actions);
+        for (AbstractGameAction action : actions) {
+            AbstractDungeon.actionManager.addToTop(action);
         }
     }
 }

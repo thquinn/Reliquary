@@ -7,9 +7,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.*;
 import util.TextureLoader;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class RelicSculptingSteel extends CustomRelic {
     public static final String ID = "reliquary:SculptingSteel";
@@ -32,19 +31,14 @@ public class RelicSculptingSteel extends CustomRelic {
 
     @Override
     public void onEquip() {
-        int count = (int)AbstractDungeon.player.relics.stream().filter(r -> COPYABLE_RELICS.contains(r.relicId)).count();
-        int selector = MathUtils.random(count - 1);
-        for (AbstractRelic relic : AbstractDungeon.player.relics) {
-            if (COPYABLE_RELICS.contains(relic.relicId)) {
-                if (selector == 0) {
-                    AbstractRelic copy = relic.makeCopy();
-                    copy.instantObtain();
-                    copy.flash();
-                    break;
-                }
-                selector--;
-            }
+        List<AbstractRelic> copyables = AbstractDungeon.player.relics.stream().filter(r -> COPYABLE_RELICS.contains(r.relicId)).collect(Collectors.toList());
+        if (copyables.isEmpty()) {
+            return;
         }
+        Collections.shuffle(copyables);
+        AbstractRelic copy = copyables.get(0).makeCopy();
+        copy.instantObtain();
+        copy.flash();
         AbstractDungeon.player.loseRelic(ID);
     }
 
@@ -60,19 +54,23 @@ public class RelicSculptingSteel extends CustomRelic {
 
     private final Set<String> COPYABLE_RELICS = new HashSet<>(Arrays.asList(
             // Reliquary
+            RelicBallBearing.ID,
             RelicBoilingFlask.ID,
             RelicBookmark.ID,
             RelicBoomerang.ID,
+            RelicEmber.ID,
             RelicExpiredCoupon.ID,
             RelicFirecrackers.ID,
             RelicHotPoker.ID,
             RelicIvoryTrinket.ID,
             RelicJackalopeAntler.ID,
+            RelicKillPill.ID,
             RelicMedicineBall.ID,
             RelicOuijaBoard.ID,
             RelicPorcupineQuills.ID,
             RelicRosewoodLute.ID,
             RelicTamtam.ID,
+            RelicTridentHead.ID,
             RelicTuningFork.ID,
             RelicWritOfMandamus.ID,
             // base game

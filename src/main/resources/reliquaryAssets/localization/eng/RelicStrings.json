@@ -8,6 +8,13 @@
       " in it, it will end up on top."
     ]
   },
+  "reliquary:BallBearing": {
+    "NAME": "Ball Bearing",
+    "FLAVOR": "It's a bearing.",
+    "DESCRIPTIONS": [
+      "Whenever you shuffle your draw pile, shuffle in a #yFlash #yof #ySteel or #yFinesse, chosen randomly."
+    ]
+  },
   "reliquary:BoilingFlask": {
     "NAME": "Boiling Flask",
     "FLAVOR": "It's a flask.",
@@ -189,7 +196,7 @@
     "NAME": "Red Cape",
     "FLAVOR": "It's a cape.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. Whenever you #yAttack a single enemy, other enemies can't be targeted until that enemy dies."
+      "Gain [E] at the start of your turn. Whenever you #yAttack a single enemy, other enemies can't be targeted until it dies."
     ]
   },
   "reliquary:RedPaperclip": {

@@ -14,7 +14,7 @@ public class RelicBookmark extends CustomRelic {
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/bookmark.png");
 
     public RelicBookmark() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.FLAT);
+        super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.FLAT);
     }
 
     public void atBattleStart() {

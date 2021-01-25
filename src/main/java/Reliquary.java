@@ -51,6 +51,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addRelic(new RelicOuijaBoard(), RelicType.SHARED);
         BaseMod.addRelic(new RelicPartyBalloon(), RelicType.SHARED);
         BaseMod.addRelic(new RelicPorcupineQuills(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicPrincelyHelmet(), RelicType.SHARED);
         BaseMod.addRelic(new RelicPurpleTingedLeaf(), RelicType.SHARED);
         BaseMod.addRelic(new RelicRadioactivePellet(), RelicType.GREEN);
         BaseMod.addRelic(new RelicRedCape(), RelicType.SHARED);
@@ -92,6 +93,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         UnlockTracker.markRelicAsSeen(RelicOuijaBoard.ID);
         UnlockTracker.markRelicAsSeen(RelicPartyBalloon.ID);
         UnlockTracker.markRelicAsSeen(RelicPorcupineQuills.ID);
+        UnlockTracker.markRelicAsSeen(RelicPrincelyHelmet.ID);
         UnlockTracker.markRelicAsSeen(RelicPurpleTingedLeaf.ID);
         UnlockTracker.markRelicAsSeen(RelicRadioactivePellet.ID);
         UnlockTracker.markRelicAsSeen(RelicRedCape.ID);
@@ -115,7 +117,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
     public void receiveEditCards() {
         new AutoAdd(ID)
             .packageFilter(CardVaporAmbrosia.class)
-            .setDefaultSeen(true)
+            .setDefaultSeen(false)
             .cards();
     }
 

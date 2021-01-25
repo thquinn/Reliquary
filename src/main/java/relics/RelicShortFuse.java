@@ -11,7 +11,7 @@ public class RelicShortFuse extends CustomRelic {
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/shortFuse.png");
 
     public RelicShortFuse() {
-        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.CLINK);
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.CLINK);
     }
 
     // implemented in PatchShortFuse

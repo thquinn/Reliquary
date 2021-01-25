@@ -126,7 +126,7 @@
     "NAME": "Kinked Spring",
     "FLAVOR": "Someone overwound this thing, and it ain't comin' back.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. Your discard pile can't shuffle into your draw pile during your turn."
+      "Gain [E] at the start of your turn. Your discard pile will only shuffle into your draw pile if your draw pile is empty at the end of your turn."
     ]
   },
   "reliquary:Knoch": {
@@ -149,7 +149,7 @@
     "NAME": "Medicine Ball",
     "FLAVOR": "If only you had someone to toss this around with...",
     "DESCRIPTIONS": [
-      "You have additional #yStrength equal to your enemies' combined #yStrength."
+      "You have additional #yStrength equal to the highest #yStrength among enemies (#b0 minimum)."
     ]
   },
   "reliquary:MudwinsCradle": {
@@ -157,8 +157,8 @@
     "FLAVOR": "Most popular desk toy.",
     "DESCRIPTIONS": [
       "Whenever you exit #yDivinity, gain #b",
-      " #yMantra for each time you entered #yDivinity this combat (up to a max of #b",
-      ")."
+      " #yMantra for each time you entered #yDivinity this combat (#b",
+      " maximum)."
     ]
   },
   "reliquary:OuijaBoard": {
@@ -186,11 +186,18 @@
       " or more unblocked damage, deal that much damage back."
     ]
   },
+  "reliquary:PrincelyHelmet": {
+    "NAME": "Princely Helmet",
+    "FLAVOR": "Way too small to fit on your head. If it were Ours, We'd make it much bigger.",
+    "DESCRIPTIONS": [
+      "Double the first X #yBlock you receive each combat, where X is the floor you're on."
+    ]
+  },
   "reliquary:PurpleTingedLeaf": {
     "NAME": "Purple-Tinged Leaf",
     "FLAVOR": "This leaf has the appearance, unique in all the plant kingdom, of having been drawn by a grade schooler.",
     "DESCRIPTIONS": [
-      "Upon pickup, choose a card. Whenever you play this card, heal #b1 HP.",
+      "Upon pickup, choose an #Attack. Whenever you play this card, heal #b1 HP.",
       "Choose a card for ",
       "Whenever you play the chosen ",
       ", heal #b1 HP."
@@ -201,7 +208,8 @@
     "FLAVOR": "It's like an ice cube that never melts, but also isn't cold.",
     "DESCRIPTIONS": [
       "At the start of each combat with #b2 or more enemies, apply #b",
-      " #yStunned to one. It can't be damaged while #yStunned."
+      " #yStunned and #b",
+      " #yIntangible to one."
     ]
   },
   "reliquary:RadioactivePellet": {
@@ -222,7 +230,8 @@
     "NAME": "Red Paperclip",
     "FLAVOR": "A powerful symbol of barter.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. Replaces a random #bUncommon relic."
+      "Gain [E] at the start of your turn. Replaces #b",
+      " random Common or #bUncommon relics."
     ]
   },
   "reliquary:RoseTintedGlasses": {
@@ -280,7 +289,7 @@
     "NAME": "Tam-Tam",
     "FLAVOR": "GONG.",
     "DESCRIPTIONS": [
-      "Whenever you completely block an attack, gain #b2 #yStrength and ALL enemies gain #b1 #yStrength."
+      "Whenever you start your turn with #yBlock, gain #b2 #yStrength and ALL enemies gain #b1 #yStrength."
     ]
   },
   "reliquary:TatteredRug": {

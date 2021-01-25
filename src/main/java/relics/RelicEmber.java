@@ -18,7 +18,7 @@ public class RelicEmber extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/ember.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/ember.png");
 
-    static int DAMAGE  = 1;
+    static int DAMAGE  = 2;
 
     public RelicEmber() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.SOLID);
@@ -36,6 +36,11 @@ public class RelicEmber extends CustomRelic {
     }
 
     @Override
+    public void atBattleStartPreDraw() {
+        flash();
+    }
+
+    @Override
     public void atTurnStart() {
         counter = 0;
     }
@@ -45,7 +50,7 @@ public class RelicEmber extends CustomRelic {
         AbstractPlayer p = AbstractDungeon.player;
         int cost = c.cost == -1 ? c.energyOnUse : c.costForTurn;
         counter += cost;
-        int damage = Math.min(counter - 3, cost);
+        int damage = Math.min(counter - 3, cost) * DAMAGE;
         if (damage <= 0) {
             return;
         }

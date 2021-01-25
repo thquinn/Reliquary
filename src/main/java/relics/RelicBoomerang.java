@@ -21,7 +21,9 @@ public class RelicBoomerang extends CustomRelic {
     @Override
     public void atTurnStart() {
         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ReboundPower(AbstractDungeon.player)));
+        ReboundPower reboundPower = new ReboundPower(AbstractDungeon.player);
+        reboundPower.onAfterUseCard(null, null); // the rebound power ignores the first card so it doesn't trigger from the card that creates it, Rebound
+        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, reboundPower));
     }
 
     @Override

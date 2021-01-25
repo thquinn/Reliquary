@@ -14,7 +14,7 @@ public class RelicIvoryTrinket extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/ivoryTrinket.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/ivoryTrinket.png");
 
-    static int NTH = 10;
+    static int NTH = 5;
 
     public RelicIvoryTrinket() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.SOLID);

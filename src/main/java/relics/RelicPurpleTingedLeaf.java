@@ -34,6 +34,9 @@ public class RelicPurpleTingedLeaf extends CustomRelic implements CustomBottleRe
 
     @Override
     public boolean canSpawn() {
+        if (CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck).getAttacks().isEmpty()) {
+            return false;
+        }
         return Settings.isEndless || AbstractDungeon.floorNum <= 48;
     }
 
@@ -66,7 +69,7 @@ public class RelicPurpleTingedLeaf extends CustomRelic implements CustomBottleRe
     @Override
     public void onEquip() { // 1. When we acquire the relic
         cardSelected = false;
-        CardGroup group = CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck);
+        CardGroup group = CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck).getAttacks();
         if (group.isEmpty()) {
             cardSelected = true;
         } else {

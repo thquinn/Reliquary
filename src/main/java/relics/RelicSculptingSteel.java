@@ -20,12 +20,7 @@ public class RelicSculptingSteel extends CustomRelic {
 
     @Override
     public boolean canSpawn() {
-        for (AbstractRelic r : AbstractDungeon.player.relics) {
-            if (COPYABLE_RELICS.contains(r.relicId)) {
-                return true;
-            }
-        }
-        return false;
+        return AbstractDungeon.player.relics.stream().anyMatch(r -> COPYABLE_RELICS.contains(r.relicId));
     }
 
     @Override

@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.IntangiblePower;
 import com.megacrit.cardcrawl.powers.InvinciblePower;
 import com.megacrit.cardcrawl.powers.MinionPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
@@ -77,7 +78,9 @@ public class RelicQuartzCube extends CustomRelic {
                 return;
             }
             addToBot(new ApplyPowerAction(target, AbstractDungeon.player, new StunMonsterPower(target, DURATION)));
-            addToBot(new ApplyPowerAction(target, AbstractDungeon.player, new InvinciblePower(target, 0)));
+            IntangiblePower intangiblePower = new IntangiblePower(target, DURATION);
+            intangiblePower.atEndOfTurn(false); // trick Intangible into decrementing immediately
+            addToBot(new ApplyPowerAction(target, AbstractDungeon.player, intangiblePower));
         }
     }
 
@@ -102,7 +105,7 @@ public class RelicQuartzCube extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0] + DURATION + DESCRIPTIONS[1];
+        return DESCRIPTIONS[0] + DURATION + DESCRIPTIONS[1] + DURATION + DESCRIPTIONS[2];
     }
     @Override
     public AbstractRelic makeCopy()

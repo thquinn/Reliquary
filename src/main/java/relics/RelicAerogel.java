@@ -28,6 +28,11 @@ public class RelicAerogel extends CustomRelic implements CustomBottleRelic, Cust
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
     }
 
+    @Override
+    public boolean canSpawn() {
+        return !CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck).isEmpty();
+    }
+
     // event implemented in PatchAerogel
 
     public void afterShuffle() {

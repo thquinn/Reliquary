@@ -13,7 +13,7 @@ public class RelicWritOfMandamus extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/writOfMandamus.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/writOfMandamus.png");
 
-    private static final int BLOCK = 3;
+    private static final int BLOCK = 5;
 
     public RelicWritOfMandamus() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.FLAT);

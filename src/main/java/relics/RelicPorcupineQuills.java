@@ -15,6 +15,8 @@ public class RelicPorcupineQuills extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/porcupineQuills.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/porcupineQuills.png");
 
+    static int THRESHOLD = 12;
+
     public RelicPorcupineQuills() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT);
     }
@@ -22,7 +24,7 @@ public class RelicPorcupineQuills extends CustomRelic {
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
         int unblocked = damageAmount - AbstractDungeon.player.currentBlock;
-        if (unblocked >= 12) {
+        if (unblocked >= THRESHOLD) {
             addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             addToBot(new DamageAction(
                     info.owner,
@@ -35,7 +37,7 @@ public class RelicPorcupineQuills extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0];
+        return DESCRIPTIONS[0] + THRESHOLD + DESCRIPTIONS[1];
     }
     @Override
     public AbstractRelic makeCopy()

@@ -63,6 +63,7 @@
                             <target>
                                 <copy file="target/Reliquary.jar" tofile="../lib/Reliquary.jar"/>
                                 <copy file="target/Reliquary.jar" tofile="C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/mods/Reliquary.jar"/>
+                                <copy file="target/Reliquary.jar" tofile="C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/reliquary/content/Reliquary.jar"/>
                             </target>
                         </configuration>
                         <goals>

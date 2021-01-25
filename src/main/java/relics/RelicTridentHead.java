@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import util.TextureLoader;
 
 public class RelicTridentHead extends CustomRelic {
@@ -24,13 +23,9 @@ public class RelicTridentHead extends CustomRelic {
     }
 
     @Override
-    public void justEnteredRoom(AbstractRoom room) {
-        grayscale = false;
-    }
-
-    @Override
     public void atPreBattle() {
         usedThisCombat = false;
+        grayscale = false;
         if (AreThereMultipleEnemies()) {
             pulse = true;
             beginPulse();

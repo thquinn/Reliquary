@@ -14,6 +14,8 @@ public class RelicIvoryTrinket extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/ivoryTrinket.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/ivoryTrinket.png");
 
+    static int NTH = 10;
+
     public RelicIvoryTrinket() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.SOLID);
     }
@@ -31,16 +33,16 @@ public class RelicIvoryTrinket extends CustomRelic {
             counter += miracles;
             flash();
         }
-        while (counter >= 10) {
+        while (counter >= NTH) {
             addToTop(new MakeTempCardInHandAction(new Miracle(), 1, false));
             addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-            counter -= 10;
+            counter -= NTH;
         }
     }
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0];
+        return DESCRIPTIONS[0] + NTH + DESCRIPTIONS[1];
     }
     @Override
     public AbstractRelic makeCopy()

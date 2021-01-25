@@ -16,6 +16,8 @@ public class RelicTuningFork extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/tuningFork.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/tuningFork.png");
 
+    static int DAMAGE = 10;
+
     public RelicTuningFork() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
     }
@@ -27,7 +29,7 @@ public class RelicTuningFork extends CustomRelic {
             addToBot(new RelicAboveCreatureAction(target, this));
             addToBot(new DamageAction(
                     target,
-                    new DamageInfo(AbstractDungeon.player, 10, DamageInfo.DamageType.THORNS),
+                    new DamageInfo(AbstractDungeon.player, DAMAGE, DamageInfo.DamageType.THORNS),
                     AbstractGameAction.AttackEffect.BLUNT_HEAVY
             ));
         }
@@ -35,7 +37,7 @@ public class RelicTuningFork extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0];
+        return DESCRIPTIONS[0] + DAMAGE + DESCRIPTIONS[1];
     }
     @Override
     public AbstractRelic makeCopy()

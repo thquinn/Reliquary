@@ -10,6 +10,8 @@ public class RelicLoveEmittingDiode extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/loveEmittingDiode.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/loveEmittingDiode.png");
 
+    public static int MULTIPLIER = 3;
+
     public RelicLoveEmittingDiode() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
     }
@@ -18,7 +20,7 @@ public class RelicLoveEmittingDiode extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0];
+        return DESCRIPTIONS[0] + MULTIPLIER + DESCRIPTIONS[1];
     }
     @Override
     public AbstractRelic makeCopy()

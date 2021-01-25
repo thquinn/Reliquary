@@ -15,18 +15,21 @@ public class RelicRoseTintedGlasses extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/roseTintedGlasses.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/roseTintedGlasses.png");
 
+    static int USES = 2;
+
     public RelicRoseTintedGlasses() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT);
     }
 
     @Override
     public void onEquip() {
-        counter = 2;
+        counter = USES;
     }
 
     @Override
     public void atBattleStart() {
-        counter = 2;
+        counter = USES;
+        grayscale = false;
     }
 
     @Override
@@ -36,12 +39,15 @@ public class RelicRoseTintedGlasses extends CustomRelic {
             addToBot(new ExhaustSpecificCardAction(drawnCard, AbstractDungeon.player.hand));
             addToBot(new DrawCardAction(AbstractDungeon.player, 1));
             counter--;
+            if (counter == 0) {
+                grayscale = true;
+            }
         }
     }
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0];
+        return DESCRIPTIONS[0] + USES + DESCRIPTIONS[1];
     }
     @Override
     public AbstractRelic makeCopy()

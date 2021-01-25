@@ -10,6 +10,8 @@ public class RelicStiletto extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/stiletto.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/stiletto.png");
 
+    public static int PERCENT = 50;
+
     public RelicStiletto() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT);
     }
@@ -18,7 +20,7 @@ public class RelicStiletto extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0];
+        return DESCRIPTIONS[0] + PERCENT + DESCRIPTIONS[1];
     }
     @Override
     public AbstractRelic makeCopy()

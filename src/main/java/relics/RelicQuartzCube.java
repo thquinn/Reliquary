@@ -26,6 +26,8 @@ public class RelicQuartzCube extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/quartzCube.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/quartzCube.png");
 
+    static int DURATION = 2;
+
     boolean activated = false, added = false, removed = false;
     AbstractMonster target;
 
@@ -74,7 +76,7 @@ public class RelicQuartzCube extends CustomRelic {
                 addToBot(new TriggerArtifactAction(target));
                 return;
             }
-            addToBot(new ApplyPowerAction(target, AbstractDungeon.player, new StunMonsterPower(target, 2)));
+            addToBot(new ApplyPowerAction(target, AbstractDungeon.player, new StunMonsterPower(target, DURATION)));
             addToBot(new ApplyPowerAction(target, AbstractDungeon.player, new InvinciblePower(target, 0)));
         }
     }
@@ -100,7 +102,7 @@ public class RelicQuartzCube extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0];
+        return DESCRIPTIONS[0] + DURATION + DESCRIPTIONS[1];
     }
     @Override
     public AbstractRelic makeCopy()

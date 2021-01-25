@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.PowerTip;
+import com.megacrit.cardcrawl.localization.LocalizedStrings;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import patches.PatchPurpleTingedLeaf;
 import util.TextureLoader;
@@ -75,7 +76,7 @@ public class RelicPurpleTingedLeaf extends CustomRelic implements CustomBottleRe
                 AbstractDungeon.previousScreen = AbstractDungeon.screen;
             }
             AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.INCOMPLETE;
-            AbstractDungeon.gridSelectScreen.open(group, 1, DESCRIPTIONS[0], false, false, false, false);
+            AbstractDungeon.gridSelectScreen.open(group, 1, DESCRIPTIONS[1] + name + LocalizedStrings.PERIOD, false, false, false, false);
         }
     }
 
@@ -112,7 +113,7 @@ public class RelicPurpleTingedLeaf extends CustomRelic implements CustomBottleRe
     }
 
     public void setDescriptionAfterLoading() {
-        this.description = DESCRIPTIONS[1] + FontHelper.colorString(card.name, "y") + DESCRIPTIONS[2];
+        this.description = DESCRIPTIONS[2] + FontHelper.colorString(card.name, "y") + DESCRIPTIONS[3];
         this.tips.clear();
         this.tips.add(new PowerTip(this.name, this.description));
         this.initializeTips();

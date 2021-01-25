@@ -2,6 +2,8 @@ package relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
@@ -12,6 +14,11 @@ public class RelicPartyBalloon extends CustomRelic {
 
     public RelicPartyBalloon() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.MAGICAL);
+    }
+
+    @Override
+    public void atBattleStart() {
+        addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
     }
 
     // implemented in PatchPartyBalloon

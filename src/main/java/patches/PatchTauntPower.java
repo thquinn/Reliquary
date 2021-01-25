@@ -14,8 +14,11 @@ import java.util.Optional;
         clz= AbstractCard.class,
         method="canUse"
 )
-public class PatchRedCape {
+public class PatchTauntPower {
     public static SpireReturn<Boolean> Prefix(AbstractCard __instance, AbstractPlayer p, AbstractMonster m) {
+        if (__instance.target != AbstractCard.CardTarget.ENEMY) {
+            return SpireReturn.Continue();
+        }
         Optional<AbstractMonster> taunter = AbstractDungeon.getMonsters().monsters.stream().filter(mo -> mo.hasPower(TauntPower.POWER_ID)).findAny();
         if (taunter.isPresent() && m != taunter.get()) {
             return SpireReturn.Return(false);

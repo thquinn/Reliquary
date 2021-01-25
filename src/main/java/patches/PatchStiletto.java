@@ -29,7 +29,7 @@ public class PatchStiletto {
             if (tmp[0] >= 1) {
                 AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(__instance, stiletto));
             }
-            tmp[0] /= 2;
+            tmp[0] = tmp[0] * RelicStiletto.PERCENT / 100;
         }
     }
 

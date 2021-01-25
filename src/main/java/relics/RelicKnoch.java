@@ -21,6 +21,8 @@ public class RelicKnoch extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/knoch.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/knoch.png");
 
+    static int PERCENT = 25;
+
     Set<AbstractMonster> monsters = new HashSet<>();
 
     public RelicKnoch() {
@@ -43,7 +45,7 @@ public class RelicKnoch extends CustomRelic {
             if (monster.hasPower(ArtifactPower.POWER_ID)) {
                 continue;
             }
-            if (monster.isDeadOrEscaped() || monster.currentHealth > monster.maxHealth / 4) {
+            if (monster.isDeadOrEscaped() || monster.currentHealth > monster.maxHealth / 100f * PERCENT) {
                 monsters.remove(monster);
                 continue;
             }
@@ -70,7 +72,7 @@ public class RelicKnoch extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0];
+        return DESCRIPTIONS[0] + PERCENT + DESCRIPTIONS[1];
     }
     @Override
     public AbstractRelic makeCopy()

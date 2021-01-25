@@ -47,14 +47,18 @@
     "NAME": "Buckler",
     "FLAVOR": "Emblazoned with the famous cygnet signet of Merek.",
     "DESCRIPTIONS": [
-      "The next #b2 times you play an upgradeable card that's in your deck, #yUpgrade it permanently."
+      "The next #b",
+      " times you play an upgradeable card that's in your deck, #yUpgrade it permanently.",
+      "The next time you play an upgradeable card that's in your deck, #yUpgrade it permanently.",
+      "This relic has been used up."
     ]
   },
   "reliquary:Ember": {
     "NAME": "Ember",
     "FLAVOR": "Hachi machi, that's hot!",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. Take #b1 damage for each [E] beyond the third you spend each turn."
+      "Gain [E] at the start of your turn. Take #b",
+      " damage for each Energy beyond the third you spend each turn."
     ]
   },
   "reliquary:ExpiredCoupon": {
@@ -100,7 +104,8 @@
     "NAME": "Ivory Trinket",
     "FLAVOR": "Someone cut the tusk from an elephant, just to whittle it into a smaller tusk. But why?",
     "DESCRIPTIONS": [
-      "Every #b10th time you #yRetain a #yMiracle, add a #yMiracle into your hand."
+      "Every #b",
+      "th time you #yRetain a #yMiracle, add a #yMiracle into your hand."
     ]
   },
   "reliquary:JackalopeAntler": {
@@ -128,14 +133,16 @@
     "NAME": "Knoch",
     "FLAVOR": "It keeps sinking to the bottom of your pack.",
     "DESCRIPTIONS": [
-      "Enemies with #b25% or less health are #yWeak."
+      "Enemies with #b",
+      "% or less health are #yWeak."
     ]
   },
   "reliquary:LoveEmittingDiode": {
     "NAME": "Love-Emitting Diode",
     "FLAVOR": "Spread the love, pursuant to the principles of the inverse-square law.",
     "DESCRIPTIONS": [
-      "Positive #yFocus triply affects your rightmost Orb."
+      "Positive #yFocus affects your rightmost Orb #b",
+      " times."
     ]
   },
   "reliquary:MedicineBall": {
@@ -149,7 +156,9 @@
     "NAME": "Mudwin's Cradle",
     "FLAVOR": "Most popular desk toy.",
     "DESCRIPTIONS": [
-      "Whenever you exit #yDivinity, gain #b2 #yMantra for each time you entered #yDivinity this combat (up to a max of #b9)."
+      "Whenever you exit #yDivinity, gain #b",
+      " #yMantra for each time you entered #yDivinity this combat (up to a max of #b",
+      ")."
     ]
   },
   "reliquary:OuijaBoard": {
@@ -173,7 +182,8 @@
     "NAME": "Porcupine Quills",
     "FLAVOR": "If these get ya, you must have really deserved it.",
     "DESCRIPTIONS": [
-      "Whenever you receive #b12 or more unblocked damage, deal that much damage back."
+      "Whenever you receive #b",
+      " or more unblocked damage, deal that much damage back."
     ]
   },
   "reliquary:PurpleTingedLeaf": {
@@ -181,6 +191,7 @@
     "FLAVOR": "This leaf has the appearance, unique in all the plant kingdom, of having been drawn by a grade schooler.",
     "DESCRIPTIONS": [
       "Upon pickup, choose a card. Whenever you play this card, heal #b1 HP.",
+      "Choose a card for ",
       "Whenever you play the chosen ",
       ", heal #b1 HP."
     ]
@@ -189,7 +200,8 @@
     "NAME": "Quartz Cube",
     "FLAVOR": "It's like an ice cube that never melts, but also isn't cold.",
     "DESCRIPTIONS": [
-      "At the start of each combat with #b2 or more enemies, apply #b2 #yStunned to one. It can't be damaged while #yStunned."
+      "At the start of each combat with #b2 or more enemies, apply #b",
+      " #yStunned to one. It can't be damaged while #yStunned."
     ]
   },
   "reliquary:RadioactivePellet": {
@@ -217,7 +229,8 @@
     "NAME": "Rose-Tinted Glasses",
     "FLAVOR": "You know what? Things aren't so bad.",
     "DESCRIPTIONS": [
-      "The first #b2 times you draw a #yStatus each combat, #yExhaust it and draw a card."
+      "The first #b",
+      " times you draw a #yStatus each combat, #yExhaust it and draw a card."
     ]
   },
   "reliquary:RosewoodLute": {
@@ -259,7 +272,8 @@
     "NAME": "Stiletto",
     "FLAVOR": "Designed to slip between the plates and links of most any armor.",
     "DESCRIPTIONS": [
-      "Enemies gain #b50% less #yBlock."
+      "Enemies gain #b",
+      "% less #yBlock."
     ]
   },
   "reliquary:Tamtam": {
@@ -296,7 +310,8 @@
     "NAME": "Tuning Fork",
     "FLAVOR": "If you try eating with it, you're liable to break a tooth.",
     "DESCRIPTIONS": [
-      "Whenever you break an enemy's #yBlock exactly, deal #b10 damage to it."
+      "Whenever you break an enemy's #yBlock exactly, deal #b",
+      " damage to it."
     ]
   },
   "reliquary:WritOfMandamus": {

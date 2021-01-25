@@ -18,6 +18,8 @@ public class RelicEmber extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/ember.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/ember.png");
 
+    static int DAMAGE  = 1;
+
     public RelicEmber() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.SOLID);
     }
@@ -53,7 +55,7 @@ public class RelicEmber extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0];
+        return DESCRIPTIONS[0] + DAMAGE + DESCRIPTIONS[1];
     }
     @Override
     public AbstractRelic makeCopy()

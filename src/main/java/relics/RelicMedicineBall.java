@@ -25,7 +25,7 @@ public class RelicMedicineBall extends CustomRelic {
     }
 
     @Override
-    public void atBattleStart() {
+    public void justEnteredRoom(AbstractRoom room) {
         lastStrength = 0;
         firstPerBattle = true;
     }
@@ -45,13 +45,13 @@ public class RelicMedicineBall extends CustomRelic {
                 totalStrength += p.amount;
         }
         if (totalStrength != lastStrength) {
-            addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, totalStrength - lastStrength)));
             if (firstPerBattle) {
                 addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
                 firstPerBattle = false;
             } else {
                 flash();
             }
+            addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, totalStrength - lastStrength)));
             counter = totalStrength;
             lastStrength = totalStrength;
         }

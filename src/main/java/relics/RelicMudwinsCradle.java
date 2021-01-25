@@ -12,10 +12,15 @@ import com.megacrit.cardcrawl.stances.AbstractStance;
 import com.megacrit.cardcrawl.stances.DivinityStance;
 import util.TextureLoader;
 
+import java.awt.dnd.DragSourceEvent;
+
 public class RelicMudwinsCradle extends CustomRelic {
     public static final String ID = "reliquary:MudwinsCradle";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/mudwinsCradle.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/mudwinsCradle.png");
+
+    static int BOOST = 2;
+    static int MAX = 9;
 
     public RelicMudwinsCradle() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.SOLID);
@@ -34,16 +39,16 @@ public class RelicMudwinsCradle extends CustomRelic {
     @Override
     public void onChangeStance(AbstractStance prevStance, AbstractStance newStance) {
         if (newStance.ID.equals(DivinityStance.STANCE_ID)) {
-            if (counter != 9) {
+            if (counter < MAX) {
                 flash();
             }
-            counter = Math.min(counter + 2, 9);
+            counter = Math.min(counter + BOOST, MAX);
         } else if (prevStance.ID.equals(DivinityStance.STANCE_ID)) {
             int toGain = counter;
             AbstractPower mantraPower = AbstractDungeon.player.getPower(MantraPower.POWER_ID);
-            if (mantraPower != null && mantraPower.amount + toGain > 9) {
+            if (mantraPower != null && mantraPower.amount + toGain > MAX) {
                 // Don't bring mantra back to 10 immediately.
-                toGain -= mantraPower.amount + toGain - 9;
+                toGain -= mantraPower.amount + toGain - MAX;
             }
             addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new MantraPower(AbstractDungeon.player, toGain)));
@@ -53,7 +58,7 @@ public class RelicMudwinsCradle extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0];
+        return DESCRIPTIONS[0] + BOOST + DESCRIPTIONS[1] + MAX + DESCRIPTIONS[2];
     }
     @Override
     public AbstractRelic makeCopy()

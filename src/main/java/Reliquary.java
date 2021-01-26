@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import powers.LesserDuplicationPower;
+import powers.ReduceColorlessCostPower;
 import powers.TauntPower;
 import relics.*;
 
@@ -68,6 +69,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addRelic(new RelicTatteredRug(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTridentHead(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTuningFork(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicWeakTea(), RelicType.SHARED);
         BaseMod.addRelic(new RelicWritOfMandamus(), RelicType.SHARED);
         UnlockTracker.markRelicAsSeen(RelicAerogel.ID);
         UnlockTracker.markRelicAsSeen(RelicBallBearing.ID);
@@ -110,6 +112,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         UnlockTracker.markRelicAsSeen(RelicTatteredRug.ID);
         UnlockTracker.markRelicAsSeen(RelicTridentHead.ID);
         UnlockTracker.markRelicAsSeen(RelicTuningFork.ID);
+        UnlockTracker.markRelicAsSeen(RelicWeakTea.ID);
         UnlockTracker.markRelicAsSeen(RelicWritOfMandamus.ID);
     }
 
@@ -137,6 +140,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
     @Override
     public void receivePostInitialize() {
         BaseMod.addPower(LesserDuplicationPower.class, LesserDuplicationPower.POWER_ID);
+        BaseMod.addPower(ReduceColorlessCostPower.class, ReduceColorlessCostPower.POWER_ID);
         BaseMod.addPower(TauntPower.class, TauntPower.POWER_ID);
     }
 

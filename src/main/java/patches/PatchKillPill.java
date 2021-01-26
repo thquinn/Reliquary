@@ -54,7 +54,7 @@ public class PatchKillPill {
         int damage = instance.amount;
         List<AbstractGameAction> actions = new ArrayList<>();
         for (AbstractRelic relic : AbstractDungeon.player.relics) {
-            if (relic.relicId.equals(RelicKillPill.ID)) {
+            if (relic.relicId.equals(RelicKillPill.ID) && ((RelicKillPill)relic).shouldTrigger(instance.owner)) {
                 actions.add(new RelicAboveCreatureAction(instance.owner, relic));
                 actions.add(new PoisonLoseHpAction(instance.owner, source, damage, AbstractGameAction.AttackEffect.POISON));
                 if (!AbstractDungeon.player.hasRelic(RelicRadioactivePellet.ID)) {

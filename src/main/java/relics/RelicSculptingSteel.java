@@ -68,6 +68,7 @@ public class RelicSculptingSteel extends CustomRelic {
             RelicTamtam.ID,
             RelicTridentHead.ID,
             RelicTuningFork.ID,
+            RelicWeakTea.ID,
             RelicWritOfMandamus.ID,
             // base game
             Abacus.ID,

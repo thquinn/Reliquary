@@ -1,15 +1,15 @@
 package patches;
 
-import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
-import com.evacipated.cardcrawl.modthespire.lib.SpireReturn;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.GameActionManager;
+import com.evacipated.cardcrawl.modthespire.lib.*;
+import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
 import com.megacrit.cardcrawl.actions.common.*;
-import com.megacrit.cardcrawl.actions.defect.ScrapeAction;
-import com.megacrit.cardcrawl.actions.defect.ScrapeFollowUpAction;
 import com.megacrit.cardcrawl.actions.watcher.PathVictoryAction;
+import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
+import javassist.CannotCompileException;
+import javassist.CtBehavior;
 import relics.RelicKinkedSpring;
 import util.ReliquaryLogger;
 
@@ -20,6 +20,27 @@ import java.util.stream.Collectors;
 public class PatchKinkedSpring {
     @SpirePatch(
             clz= EmptyDeckShuffleAction.class,
+            method=SpirePatch.CONSTRUCTOR
+    )
+    public static class PatchKinkedSpringMoveTriggers {
+        @SpireInsertPatch(
+                locator= Locator.class
+        )
+        public static SpireReturn Insert() {
+            // Prevent relic onShuffle triggers from happening in the constructor.
+            return SpireReturn.Return(null);
+        }
+
+        private static class Locator extends SpireInsertLocator {
+            public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {
+                Matcher matcher = new Matcher.FieldAccessMatcher(AbstractPlayer.class, "relics");
+                return LineFinder.findInOrder(ctMethodToPatch, matcher);
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= EmptyDeckShuffleAction.class,
             method="update"
     )
     public static class PatchKinkedSpringNoShuffle {
@@ -27,13 +48,13 @@ public class PatchKinkedSpring {
                 DrawCardAction.class,
                 FastDrawCardAction.class,
                 PlayTopCardAction.class,
-                ScrapeAction.class,
                 PathVictoryAction.class
         }).collect(Collectors.toSet());
 
         public static SpireReturn Prefix(EmptyDeckShuffleAction __instance) {
             RelicKinkedSpring kinkedSpring = (RelicKinkedSpring) AbstractDungeon.player.getRelic(RelicKinkedSpring.ID);
             if (kinkedSpring == null || __instance.amount == RelicKinkedSpring.ID.hashCode()) {
+                ReliquaryLogger.log("Shuffle allowed by Kinked Spring.");
                 return SpireReturn.Continue();
             }
             // Remove all actions from the queue that may have requested this shuffle — they will just try to shuffle again.
@@ -43,6 +64,24 @@ public class PatchKinkedSpring {
             kinkedSpring.flash();
             ReliquaryLogger.log("Shuffle aborted by Kinked Spring.");
             return SpireReturn.Return(null);
+        }
+
+        @SpireInsertPatch(
+                locator= Locator.class
+        )
+        public static void Insert() {
+            // Now that the shuffle has actually been performed, let's trigger onShuffle.
+            ReliquaryLogger.log("onShuffle triggers.");
+            for (AbstractRelic r : AbstractDungeon.player.relics) {
+                r.onShuffle();
+            }
+        }
+
+        private static class Locator extends SpireInsertLocator {
+            public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {
+                Matcher matcher = new Matcher.MethodCallMatcher(CardGroup.class, "shuffle");
+                return LineFinder.findInOrder(ctMethodToPatch, matcher);
+            }
         }
     }
 

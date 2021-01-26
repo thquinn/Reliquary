@@ -119,8 +119,9 @@
     "NAME": "Kill Pill",
     "FLAVOR": "Would look pretty cool on the back of a leather jacket.",
     "DESCRIPTIONS": [
-      "Whenever you apply #yPoison, it triggers immediately."
-    ]
+      "The first time you apply #yPoison to each enemy each turn, it triggers immediately."
+    ],
+    "TRANSLATION_NOTE": "This is the symbol of the motorcycle gang from Akira."
   },
   "reliquary:KinkedSpring": {
     "NAME": "Kinked Spring",
@@ -135,7 +136,8 @@
     "DESCRIPTIONS": [
       "Enemies with #b",
       "% or less health are #yWeak."
-    ]
+    ],
+    "TRANSLATION_NOTE": "A knoch is just a fishing sinker: https://en.wikipedia.org/wiki/Fishing_sinker"
   },
   "reliquary:LoveEmittingDiode": {
     "NAME": "Love-Emitting Diode",
@@ -143,13 +145,14 @@
     "DESCRIPTIONS": [
       "Positive #yFocus affects your rightmost Orb #b",
       " times."
-    ]
+    ],
+    "TRANSLATION_NOTE": "This is a play on light-emitting diodes, or LEDs."
   },
   "reliquary:MedicineBall": {
     "NAME": "Medicine Ball",
     "FLAVOR": "If only you had someone to toss this around with...",
     "DESCRIPTIONS": [
-      "You have additional #yStrength equal to the highest #yStrength among enemies (#b0 minimum)."
+      "You have additional #yStrength equal to the highest #yStrength among enemies (0 minimum)."
     ]
   },
   "reliquary:MudwinsCradle": {
@@ -157,9 +160,10 @@
     "FLAVOR": "Most popular desk toy.",
     "DESCRIPTIONS": [
       "Whenever you exit #yDivinity, gain #b",
-      " #yMantra for each time you entered #yDivinity this combat (#b",
+      " #yMantra for each time you entered #yDivinity this combat (",
       " maximum)."
-    ]
+    ],
+    "TRANSLATION_NOTE": "This is a Newton's Cradle. 'Mudwin' is just a dumb name made up to sound like 'Newton.'"
   },
   "reliquary:OuijaBoard": {
     "NAME": "Ouija Board",
@@ -190,14 +194,15 @@
     "NAME": "Princely Helmet",
     "FLAVOR": "Way too small to fit on your head. If it were Ours, We'd make it much bigger.",
     "DESCRIPTIONS": [
-      "Double the first X #yBlock you receive each combat, where X is the floor you're on."
-    ]
+      "Double the first X #yBlock you gain each combat, where X is the floor you're on."
+    ],
+    "TRANSLATION_NOTE": "This is the headgear of the Prince of All Cosmos from the Katamari Damacy series."
   },
   "reliquary:PurpleTingedLeaf": {
     "NAME": "Purple-Tinged Leaf",
     "FLAVOR": "This leaf has the appearance, unique in all the plant kingdom, of having been drawn by a grade schooler.",
     "DESCRIPTIONS": [
-      "Upon pickup, choose an #Attack. Whenever you play this card, heal #b1 HP.",
+      "Upon pickup, choose an #yAttack. Whenever you play this card, heal #b1 HP.",
       "Choose a card for ",
       "Whenever you play the chosen ",
       ", heal #b1 HP."
@@ -254,7 +259,8 @@
     "FLAVOR": "Malleable as clay one second, hard as stone the next.",
     "DESCRIPTIONS": [
       "Upon pickup, becomes a copy of a random relic you already have."
-    ]
+    ],
+    "TRANSLATION_NOTE": "This is a reference to the Magic card Sculpting Steel, which has some existing translations: https://scryfall.com/search?q=%21%E2%80%9CSculpting+Steel%E2%80%9D+set%3A2xm+lang%3Aany&unique=prints"
   },
   "reliquary:SharkskinSheath": {
     "NAME": "Sharkskin Sheath",
@@ -323,12 +329,20 @@
       " damage to it."
     ]
   },
+  "reliquary:WeakTea": {
+    "NAME": "Weak Tea",
+    "FLAVOR": "If you can sleep after drinking it, what's the point?",
+    "DESCRIPTIONS": [
+      "The first Colorless card you play each combat costs #b1 less."
+    ]
+  },
   "reliquary:WritOfMandamus": {
     "NAME": "Writ of Mandamus",
     "FLAVOR": "It begins, \"Whatever you're thinking about doing: hold it, mister.\"",
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. At the end of your turn, you lose #b",
       " #yBlock."
-    ]
+    ],
+    "TRANSLATION_NOTE": "'Mandamus' is just a made-up name."
   }
 }

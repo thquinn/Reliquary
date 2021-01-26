@@ -15,6 +15,11 @@ public class RelicPrincelyHelmet extends CustomRelic {
         super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.SOLID);
     }
 
+    @Override
+    public void onEquip() {
+        counter = AbstractDungeon.floorNum;
+    }
+
     public void atBattleStart() {
         flash();
         counter = AbstractDungeon.floorNum;

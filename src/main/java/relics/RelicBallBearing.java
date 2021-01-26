@@ -22,8 +22,8 @@ public class RelicBallBearing extends CustomRelic {
 
     @Override
     public void onShuffle() {
-        addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        addToBot(new MakeTempCardInDrawPileAction(MathUtils.randomBoolean() ? new Finesse() : new FlashOfSteel(), 1, true, true));
+        addToTop(new MakeTempCardInDrawPileAction(MathUtils.randomBoolean() ? new Finesse() : new FlashOfSteel(), 1, true, true));
+        addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
     }
 
     @Override

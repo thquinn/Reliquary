@@ -7,10 +7,19 @@
       " cost 0 or 1 cards are played twice this turn."
     ]
   },
+  "reliquary:ReduceColorlessCost": {
+    "NAME": "Pallor",
+    "DESCRIPTIONS": [
+      "The next Colorless card you play costs #b1 less.",
+      "The next #b",
+      " Colorless cards you play cost #b1 less."
+    ]
+  },
   "reliquary:Taunt": {
     "NAME": "Taunt",
     "DESCRIPTIONS": [
-      "Other enemies can't be targeted until this enemy dies."
+      "Other enemies can't be targeted until this enemy dies.",
+      "Another enemy is #r@Taunting@ me!"
     ]
   }
 }

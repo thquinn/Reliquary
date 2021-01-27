@@ -1,0 +1,344 @@
+{
+  "reliquary:Aerogel": {
+    "NAME": "气凝胶",
+    "FLAVOR": "它能轻而易举地让你跟霉运绝缘。",
+    "DESCRIPTIONS": [
+      "拾起时，选择一张牌。每当你将抽牌堆洗牌时，若这张牌在抽牌堆中，它会出现在抽牌堆的顶部。",
+      "每当你将抽牌堆洗牌时，若 ",
+      " 在抽牌堆中，它会出现在抽牌堆的顶部。"
+    ]
+  },
+  "reliquary:BallBearing": {
+    "NAME": "滚珠轴承",
+    "FLAVOR": "让一切顺滑地运转。",
+    "DESCRIPTIONS": [
+      "每当你将抽牌堆洗牌时，随机洗入一张 #y亮剑 或 #y妙计 。"
+    ]
+  },
+  "reliquary:BoilingFlask": {
+    "NAME": "沸腾的烧瓶",
+    "FLAVOR": "一只沸腾的圆底烧瓶，容量5000毫升！",
+    "DESCRIPTIONS": [
+      "在每场战斗开始时，如果你的药水栏位为满，根据你所拥有的药水，选择一张 #y蒸汽 牌并加入你的手牌。"
+    ]
+  },
+  "reliquary:Bookmark": {
+    "NAME": "书签",
+    "FLAVOR": "“现在，我读到哪里了呢......”",
+    "DESCRIPTIONS": [
+      "在每场战斗开始时，你的牌组中每有一张 #y固有 牌，额外抽1张牌。"
+    ]
+  },
+  "reliquary:Boomerang": {
+    "NAME": "回旋镖",
+    "FLAVOR": "爱它就放手。说难听点，你就是把它甩了也好啊。",
+    "DESCRIPTIONS": [
+      "将你每回合打出的第一张牌放到抽牌堆的顶部。",
+      "",
+      "",
+      "将你每回合打出的第四张牌放到抽牌堆的顶部。"
+    ]
+  },
+  "reliquary:BrokenClock": {
+    "NAME": "破损时钟",
+    "FLAVOR": "不知怎的，这玩意一天只有两次走得不对，剩下的时间都没问题。",
+    "DESCRIPTIONS": [
+      "每场战斗开始时，你行动两个回合，然后敌人行动两个回合。"
+    ]
+  },
+  "reliquary:Buckler": {
+    "NAME": "小圆盾",
+    "FLAVOR": "雕饰有著名的Merek幼天鹅纹样。",
+    "DESCRIPTIONS": [
+      "你打出的下 #b",
+      " 张牌组中的可升级牌将会被永久 #y升级 。",
+      "你打出的下一张牌组中的可升级牌将会被永久 #y升级 。",
+      "这件遗物的效果已经使用完毕。"
+    ]
+  },
+  "reliquary:Ember": {
+    "NAME": "余烬",
+    "FLAVOR": "爹啊娘啊，烫死偶啦！",
+    "DESCRIPTIONS": [
+      "每回合开始时获得 [E] 。每个回合中，你每花费超过3点能量的1点能量，受到 #b",
+      " 点伤害。"
+    ]
+  },
+  "reliquary:ExpiredCoupon": {
+    "NAME": "失效的优惠券",
+    "FLAVOR": "“股折啦！”这不才打9折吗？哪个天才把这句话写上去的？",
+    "DESCRIPTIONS": [
+      "每当你在一场战斗中造成的未被 #y格挡 的伤害总计达到 #b",
+      " 点或更多，对所有敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "reliquary:FeatherDuster": {
+    "NAME": "鸡毛掸子",
+    "FLAVOR": "“我生命中的错误，像灰尘一样向我袭来。”——Cademo",
+    "DESCRIPTIONS": [
+      "拾起时，移除牌组中任意张牌。这些牌不能是打击，防御，或 #r诅咒 牌。",
+      "选择任意张牌移除。"
+    ]
+  },
+  "reliquary:Firecrackers": {
+    "NAME": "鞭炮",
+    "FLAVOR": "这响声，吵死人了。你们这些臭屁孩，小点声赶紧爬！",
+    "DESCRIPTIONS": [
+      "过量伤害将给予一名随机敌人。"
+    ]
+  },
+  "reliquary:HotPoker": {
+    "NAME": "红烫的拨火棍",
+    "FLAVOR": "没人会想去捏住这玩意近火的那一端。",
+    "DESCRIPTIONS": [
+      "每当你在你的回合中抽一张牌，对一个随机敌人造成等于其耗能的伤害。"
+    ]
+  },
+  "reliquary:IridiumChain": {
+    "NAME": "铱链",
+    "FLAVOR": "一环扣一环，数不完，理还乱。",
+    "DESCRIPTIONS": [
+      "每当你打出一张 #y能力 牌，将它的一张耗能增加 #b1 点并具有 #y虚无 的复制加入你的手牌。",
+      "虚无 。 NL "
+    ]
+  },
+  "reliquary:IvoryTrinket": {
+    "NAME": "象牙饰品",
+    "FLAVOR": "有些人从大象身上割下象牙，只是为了把它削成更小的象牙。这是何必呢？",
+    "DESCRIPTIONS": [
+      "每当你第 #b",
+      " 次 #y保留 一张 #y奇迹 ，将一张 #y奇迹 加入你的手牌。"
+    ]
+  },
+  "reliquary:JackalopeAntler": {
+    "NAME": "鹿角兔的鹿角",
+    "FLAVOR": "不管这个东西取自何种生物，那个生物肯定在东奔西跑，一角长，一角短。",
+    "DESCRIPTIONS": [
+      "每当一名敌人死亡，返还你打出的上一张牌所花费的能量。"
+    ]
+  },
+  "reliquary:KillPill": {
+    "NAME": "要完药丸",
+    "FLAVOR": "放在皮夹克的背面的话，看上去想必歪瑞酷。",
+    "DESCRIPTIONS": [
+      "每当你给予 #y中毒 ，立即触发它的伤害效果。每回合每名敌人限一次。"
+    ]
+  },
+  "reliquary:KinkedSpring": {
+    "NAME": "扭绞弹簧",
+    "FLAVOR": "有人把它掰弯过头了，它弹不回来了。",
+    "DESCRIPTIONS": [
+      "每回合开始时获得 [E] 。只有在你的回合结束且抽牌堆为空时，你的弃牌堆才会洗入抽牌堆。"
+    ]
+  },
+  "reliquary:Knoch": {
+    "NAME": "沉子",
+    "FLAVOR": "它总是沉到你背包的最底下。",
+    "DESCRIPTIONS": [
+      "生命值低于或等于 #b",
+      "% 的敌人具有 #y虚弱 。"
+    ]
+  },
+  "reliquary:LoveEmittingDiode": {
+    "NAME": "发爱二极管",
+    "FLAVOR": "传播爱，遵循平方反比原则。",
+    "DESCRIPTIONS": [
+      "正值的 #y集中 影响你最右边的充能球 #b",
+      " 次。"
+    ]
+  },
+  "reliquary:MedicineBall": {
+    "NAME": "健身球",
+    "FLAVOR": "但愿你能找到人和你来回扔......",
+    "DESCRIPTIONS": [
+      "你额外拥有 #y力量 ，数值等于所有敌人中力量的最高值（最小为 #b0 ）。"
+    ]
+  },
+  "reliquary:MudwinsCradle": {
+    "NAME": "马顿摆",
+    "FLAVOR": "最流行的桌上玩具。",
+    "DESCRIPTIONS": [
+     "每当你离开 #y神格 时，本场战斗中你每进入过一次 #y神格 ，获得 #b",
+     " 层 #y真言 （最多",
+     "层）。"
+    ]
+  },
+  "reliquary:OuijaBoard": {
+    "NAME": "显灵板",
+    "FLAVOR": "也没多么神秘，你玩玩便知。",
+    "DESCRIPTIONS": [
+      "每回合限一次，从你的弃牌堆中打出一张牌（目标随机而定），然后将其洗入你的抽牌堆。注意，使用这件遗物打出牌需要 #r额外 消耗 #b1 点能量。",
+      "我在这回合已经用过这件遗物了。",
+      "我的弃牌堆是空的。",
+      "我没有足够的能量来打出我弃牌堆中的任何牌。"
+    ]
+  },
+  "reliquary:PartyBalloon": {
+    "NAME": "派对气球",
+    "FLAVOR": "捏好那根绳子，否则它就飞走不见了！",
+    "DESCRIPTIONS": [
+      "每场战斗开始时， #y能力 牌总是出现在抽牌堆的上半部分。"
+    ]
+  },
+  "reliquary:PorcupineQuills": {
+    "NAME": "箭猪刺",
+    "FLAVOR": "如果这些刺伤到了你，那你完全是在自作自受。",
+    "DESCRIPTIONS": [
+      "每当你受到大于等于 #b",
+      " 点的未被 #y格挡 的伤害，造成等量的反伤。"
+    ]
+  },
+  "reliquary:PrincelyHelmet": {
+    "NAME": "王子头盔",
+    "FLAVOR": "太太太小了，你的头戴不上。如果换成我们来戴，我们会把它做得大很多。",
+    "DESCRIPTIONS": [
+      "每场战斗中，你的前X点 #y格挡 的获得量将会翻倍，其中X等于你所在的楼层数。"
+    ]
+  },
+  "reliquary:PurpleTingedLeaf": {
+    "NAME": "微紫树叶",
+    "FLAVOR": "这片树叶的样子在整个植物王国中独一无二，那是由一个小学生画出来的王国。",
+    "DESCRIPTIONS": [
+      "拾起时，选择一张 #y攻击 牌。每当你打出这张牌，回复 #b1 点生命。",
+      "选择一张攻击牌，",
+      "每当你打出选定的这张 ",
+      " ，回复 #b1 点生命。"
+    ]
+  },
+  "reliquary:QuartzCube": {
+    "NAME": "石英立方体",
+    "FLAVOR": "它看上去像一块从不融化的冰立方，不过也不冰人。",
+    "DESCRIPTIONS": [
+      "每场战斗开始时，如果有 #b2 个或更多的敌人，随机给予一个敌人 #b",
+      " 层 #y击晕 和 #b",
+      " 层 #y无实体 。"
+    ]
+  },
+  "reliquary:RadioactivePellet": {
+    "NAME": "放射小球",
+    "FLAVOR": "世界上最卑鄙恶棍的秘密武器。",
+    "DESCRIPTIONS": [
+      "#y中毒 层数不会下降。"
+    ]
+  },
+  "reliquary:RedCape": {
+    "NAME": "红披风",
+    "FLAVOR": "这些牛角谁想要啊？",
+    "DESCRIPTIONS": [
+      "每回合开始获得 [E] 。每当你 #y攻击 某个单个敌人，直到该敌人死亡，其他敌人不能被选作目标。"
+    ]
+  },
+  "reliquary:RedPaperclip": {
+    "NAME": "红色回形针",
+    "FLAVOR": "以物易物的有力象征。",
+    "DESCRIPTIONS": [
+      "每回合开始获得 [E] 。它会随机替换掉你的 #b",
+      " 个 #y普通 或 #y罕见 遗物。"
+    ]
+  },
+  "reliquary:RoseTintedGlasses": {
+    "NAME": "玫瑰色眼镜",
+    "FLAVOR": "你知道吗？事情并没有那么糟。",
+    "DESCRIPTIONS": [
+      "每场战斗中，前 #b",
+      " 次你抽到 #y状态 牌时， #y消耗 它并抽一张牌。"
+    ]
+  },
+  "reliquary:RosewoodLute": {
+    "NAME": "红木诗琴",
+    "FLAVOR": "不管怎么说，欢迎来到“惊奇尖塔”。",
+    "DESCRIPTIONS": [
+      "每当你恰好 #y格挡 伤害，下回合获得 [E] 。"
+    ]
+  },
+  "reliquary:SculptingSteel": {
+    "NAME": "塑型钢",
+    "FLAVOR": "何意绕指柔，化为百炼钢。",
+    "DESCRIPTIONS": [
+      "拾起时，随机变为你拥有的一件遗物的复制。"
+    ]
+  },
+  "reliquary:SharkskinSheath": {
+    "NAME": "鲨鱼皮鞘",
+    "FLAVOR": "但愿你有一把鲨鱼皮刀放在里面。",
+    "DESCRIPTIONS": [
+      "每当你在没有剩余能量也没有手牌的情况下结束回合，下回合获得 [E] ，抽一张牌。"
+    ]
+  },
+  "reliquary:ShortFuse": {
+    "NAME": "短路熔断器",
+    "FLAVOR": "可能在任何时刻熔断。",
+    "DESCRIPTIONS": [
+      "你的 #y闪电 充能球 总是会以生命值最低的敌人为目标。"
+    ]
+  },
+  "reliquary:SilkGlove": {
+    "NAME": "丝制手套",
+    "FLAVOR": "这是一位从不游手好闲的华美女士留下来的。",
+    "DESCRIPTIONS": [
+      "每当你在回合结束时将要丢弃恰好一张牌， #y保留 它。"
+    ]
+  },
+  "reliquary:Stiletto": {
+    "NAME": "短剑",
+    "FLAVOR": "设计出来就是为了能在大部分盔甲的鳞片和系带之间游刃有余。",
+    "DESCRIPTIONS": [
+      "敌人获得的 #y格挡 值减少 #b",
+      "% 。"
+    ]
+  },
+  "reliquary:Tamtam": {
+    "NAME": "铜锣",
+    "FLAVOR": "轰。",
+    "DESCRIPTIONS": [
+      "每当你在有 #y格挡 的情况下开始回合，你获得 #b2 点 #y力量，所有敌人获得 #b1 点 #y力量 。"
+    ]
+  },
+  "reliquary:TatteredRug": {
+    "NAME": "破烂地毯",
+    "FLAVOR": "什么，你以为商店是谁想开就能开的吗？",
+    "DESCRIPTIONS": [
+      "你现在可以向商人出售药水了。",
+      "可以卖 ",
+      " 金币",
+      "好，我要了！",
+      "成交！",
+      "~你想~ ~卖~ ~哪一样呢？~",
+      "给我！",
+      "啊！我要出高价把它给买了！",
+      "我要是 @不@ 买，我就是个傻子。",
+      "你还真能讨教还价呢......"
+    ]
+  },
+  "reliquary:TridentHead": {
+    "NAME": "三叉戟的头",
+    "FLAVOR": "它是著名的波浪王所持武器的一部分。",
+    "DESCRIPTIONS": [
+      "每场战斗中，你打出的第一张以单个敌人为目标的牌会向所有敌人打出。"
+    ]
+  },
+  "reliquary:TuningFork": {
+    "NAME": "音叉",
+    "FLAVOR": "想着用它吃饭的人怕是要把牙打碎。",
+    "DESCRIPTIONS": [
+      "每当你恰好突破一名敌人的 #y格挡 ，对其造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "reliquary:WeakTea": {
+    "NAME": "淡茶",
+    "FLAVOR": "如果你喝下它还能睡着，那还有什么意义呢？",
+    "DESCRIPTIONS": [
+      "每场战斗中，你打出的第一张无色牌的耗能减少 #b1 点。"
+    ]
+  },
+  "reliquary:WritOfMandamus": {
+    "NAME": "强制执行令",
+    "FLAVOR": "它的开头总是写着“不管你在想做什么好：把它拿着，先生。”",
+    "DESCRIPTIONS": [
+      "每回合开始获得 [E] 。每回合结束时，你失去 #b",
+      " 点 #y格挡 。"
+    ]
+  }
+}

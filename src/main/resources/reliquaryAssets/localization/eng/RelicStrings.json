@@ -33,7 +33,10 @@
     "NAME": "Boomerang",
     "FLAVOR": "If you love something, let it go. Or just frickin' chuck it.",
     "DESCRIPTIONS": [
-      "Put the first card you play each turn on top of your draw pile."
+      "Put the first card you play each turn on top of your draw pile.",
+      "",
+      "",
+      "Put the fourth card you play each turn on top of your draw pile."
     ]
   },
   "reliquary:BrokenClock": {

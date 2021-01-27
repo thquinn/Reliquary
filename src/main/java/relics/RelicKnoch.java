@@ -23,15 +23,8 @@ public class RelicKnoch extends CustomRelic {
 
     static int PERCENT = 25;
 
-    Set<AbstractMonster> monsters = new HashSet<>();
-
     public RelicKnoch() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.HEAVY);
-    }
-
-    @Override
-    public void atBattleStart() {
-        monsters.clear();
     }
 
     @Override
@@ -40,33 +33,20 @@ public class RelicKnoch extends CustomRelic {
         if (!isObtained || AbstractDungeon.getCurrRoom() == null || AbstractDungeon.getCurrRoom().phase != AbstractRoom.RoomPhase.COMBAT) {
             return;
         }
+        if (AbstractDungeon.actionManager.currentAction instanceof ApplyPowerAction || AbstractDungeon.actionManager.actions.stream().anyMatch(a -> a instanceof ApplyPowerAction)) {
+            // Wait for queued ApplyPowerActions to finish before attempting to apply Weak.
+            return;
+        }
 
         for (AbstractMonster monster : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            if (monster.hasPower(ArtifactPower.POWER_ID)) {
+            if (monster.hasPower(ArtifactPower.POWER_ID) || monster.hasPower(WeakPower.POWER_ID)) {
                 continue;
             }
             if (monster.isDeadOrEscaped() || monster.currentHealth > monster.maxHealth / 100f * PERCENT) {
-                monsters.remove(monster);
                 continue;
             }
-            if (monsters.contains(monster)) {
-                continue;
-            }
-            if (!monster.hasPower(WeakPower.POWER_ID)) {
-                boolean alreadyApplied = false;
-                for (AbstractGameAction action : AbstractDungeon.actionManager.actions) {
-                    if (action instanceof ApplyPowerAction && action.actionType == AbstractGameAction.ActionType.POWER && action.amount == 1 && action.target == monster) {
-                        alreadyApplied = true;
-                        break;
-                    }
-                }
-                if (alreadyApplied) {
-                    continue;
-                }
-                addToBot(new RelicAboveCreatureAction(monster, this));
-                addToBot(new ApplyPowerAction(monster, AbstractDungeon.player, new WeakPower(monster, 1, false)));
-                monsters.add(monster);
-            }
+            addToBot(new RelicAboveCreatureAction(monster, this));
+            addToBot(new ApplyPowerAction(monster, AbstractDungeon.player, new WeakPower(monster, 1, false)));
         }
     }
 

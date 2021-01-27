@@ -1,0 +1,206 @@
+{
+  "reliquary:VaporAmbrosia": {
+    "NAME": "仙馔蒸汽",
+    "DESCRIPTION": "保留 。 NL 获得 !M! 层 真言 。 NL 消耗 。"
+  },
+  "reliquary:VaporAncientPotion": {
+    "NAME": "古代蒸汽",
+    "DESCRIPTION": "保留 。 NL 移除一名目标敌人的 人工制品 1层。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 移除所有敌人的 人工制品 1层。 NL 消耗 。"
+  },
+  "reliquary:VaporAttackPotion": {
+    "NAME": "烦人蒸汽",
+    "DESCRIPTION": "保留 。 NL 将1张随机攻击牌加入你的手牌。这张牌在本回合耗能变为0。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 将1张随机攻击牌的 !M! 份复制加入你的手牌。这些牌在本回合耗能变为0。 NL 消耗 。"
+  },
+  "reliquary:VaporBlessingOfTheForge": {
+    "NAME": "止渴蒸汽",
+    "DESCRIPTION": "保留 。 NL 在本场战斗中随机 升级 手牌中的一张牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 在本场战斗中随机 升级 手牌中一半的牌（向上取整）。 NL 消耗 。"
+  },
+  "reliquary:VaporBlockPotion": {
+    "NAME": "掩蔽蒸汽",
+    "DESCRIPTION": "保留 。 NL 获得 !B! 点 格挡 。 NL 消耗 。"
+  },
+  "reliquary:VaporBloodPotion": {
+    "NAME": "鲜血蒸汽",
+    "DESCRIPTION": "保留 。 NL 回复最大生命值的 !M! %。 NL 消耗 。"
+  },
+  "reliquary:VaporBottledMiracle": {
+    "NAME": "奇迹蒸汽",
+    "DESCRIPTION": "保留 。 NL 将一张 *奇迹 加入你的手牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 将一张 *奇迹+ 加入你的手牌。 NL 消耗 。"
+  },
+  "reliquary:VaporColorlessPotion": {
+    "NAME": "透明蒸汽",
+    "DESCRIPTION": "保留 。 NL 将1张随机无色牌加入你的手牌。这张牌在本回合耗能变为0。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 将1张随机无色牌的 !M! 份复制加入你的手牌。这些牌在本回合耗能变为0。 NL 消耗 。"
+  },
+  "reliquary:VaporCultistPotion": {
+    "NAME": "仪式蒸汽",
+    "DESCRIPTION": "保留 。 NL 获得1点仪式并失去 !M! 点 力量 。"
+  },
+  "reliquary:VaporCunningPotion": {
+    "NAME": "欺诈蒸汽",
+    "DESCRIPTION": "保留 。 NL 将1张 *小刀+ 加入你的手牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 将 !M! 张 *小刀+ 加入你的手牌。 NL 消耗 。"
+  },
+  "reliquary:VaporDexterityPotion": {
+    "NAME": "回旋蒸汽",
+    "DESCRIPTION": "保留 。 NL 获得 !M! 点 敏捷 。"
+  },
+  "reliquary:VaporDistilledChaos": {
+    "NAME": "混沌蒸汽",
+    "DESCRIPTION": "保留 。 NL 打出你抽牌堆顶部的1张牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 打出你抽牌堆顶部的!M!张牌。 NL 消耗 。"
+  },
+  "reliquary:VaporDuplicationPotion": {
+    "NAME": "争气蒸汽",
+    "DESCRIPTION": "保留 。 NL 本回合你的下一张耗能为0点或1点的牌将被打出两次。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 本回合你的下 !M! 张耗能为0点或1点的牌将被打出两次。 NL 消耗 。"
+  },
+  "reliquary:VaporElixir": {
+    "NAME": "净化蒸汽",
+    "DESCRIPTION": "保留 。 NL 随机 消耗 你手牌中的一张 状态牌 或 诅咒 牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 消耗 你手牌中的所有 状态牌 或 诅咒 牌。 NL 消耗 。"
+  },
+  "reliquary:VaporEnergyPotion": {
+    "NAME": "能量蒸汽",
+    "DESCRIPTION": "保留 。 NL 获得 [W] 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 获得 [E] [E] 。 NL 消耗 。"
+  },
+  "reliquary:VaporEntropicBrew": {
+    "NAME": "无序蒸汽",
+    "DESCRIPTION": "保留 。 NL 随机将你的一瓶药水变成新的药水。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 将你的每一瓶药水变成新的药水。 NL 消耗 。"
+  },
+  "reliquary:VaporEssenceOfDarkness": {
+    "NAME": "黑暗蒸汽",
+    "DESCRIPTION": "保留 。 NL 使用所有 黑暗 充能球的被动能力。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 使用所有 黑暗 充能球的被动能力 !M! 次。 NL 消耗 。"
+  },
+  "reliquary:VaporEssenceOfSteel": {
+    "NAME": "钢之蒸汽",
+    "DESCRIPTION": "保留 。 NL 获得 !M! 层 *多层护甲 。"
+  },
+  "reliquary:VaporExplosivePotion": {
+    "NAME": "爆炸蒸汽",
+    "DESCRIPTION": "保留 。 NL 对所有敌人造成 !D! 点伤害。 NL 消耗 。"
+  },
+  "reliquary:VaporFairyInABottle": {
+    "NAME": "绝缘蒸汽",
+    "DESCRIPTION": "保留 。 NL 阻止下一次你受到的生命值损伤。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 阻止下 !M! 次你受到的生命值损伤。 NL 消耗 。"
+  },
+  "reliquary:VaporFearPotion": {
+    "NAME": "恐吓蒸汽",
+    "DESCRIPTION": "保留 。 NL 给予 !M! 层 易伤 。 NL 消耗 。"
+  },
+  "reliquary:VaporFirePotion": {
+    "NAME": "火焰蒸汽",
+    "DESCRIPTION": "保留 。 NL 造成 !D! 点伤害。 NL 消耗 。"
+  },
+  "reliquary:VaporFlexPotion": {
+    "NAME": "强壮蒸汽",
+    "DESCRIPTION": "保留 。 NL 获得 !M! 点 力量 。在你的回合结束时，失去 !M! 点 力量 。 NL 消耗 。"
+  },
+  "reliquary:VaporFocusPotion": {
+    "NAME": "专注蒸汽",
+    "DESCRIPTION": "保留 。 NL 获得 !M! 点 集中 。"
+  },
+  "reliquary:VaporFruitJuice": {
+    "NAME": "果之蒸汽",
+    "DESCRIPTION": "保留 。 NL 获得 !M! 点最大生命值。 NL 消耗 。"
+  },
+  "reliquary:VaporGamblersBrew": {
+    "NAME": "迁移蒸汽",
+    "DESCRIPTION": "保留 。 NL 随机丢弃1张牌，然后抽1张牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 丢弃所有手牌，然后抽相同数量张牌。 NL 消耗 。"
+  },
+  "reliquary:VaporGhostInAJar": {
+    "NAME": "幽灵蒸汽",
+    "DESCRIPTION": "保留 。 NL 有 !M! %的概率获得1层 无实体 。 NL 消耗 。"
+  },
+  "reliquary:VaporHeartOfIron": {
+    "NAME": "闪耀蒸汽",
+    "DESCRIPTION": "保留 。 NL 获得 !M! 层 *金属化 。"
+  },
+  "reliquary:VaporLiquidBronze": {
+    "NAME": "多刺蒸汽",
+    "DESCRIPTION": "保留 。 NL 获得 !M! 点 荆棘 。"
+  },
+  "reliquary:VaporLiquidMemories": {
+    "NAME": "追昔蒸汽",
+    "DESCRIPTION": "保留 。 NL 随机将弃牌中的一张牌放入你的手牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 随机将弃牌中的 !M! 张牌放入你的手牌。 NL 消耗 。"
+  },
+  "reliquary:VaporPoisonPotion": {
+    "NAME": "毒之蒸汽",
+    "DESCRIPTION": "保留 。 NL 给予 !M! 层 中毒 。 NL 消耗 。"
+  },
+  "reliquary:VaporPotionOfCapacity": {
+    "NAME": "翻涌蒸汽",
+    "DESCRIPTION": "保留 。 NL 获得1个充能球栏位。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 获得 !M! 个充能球栏位。"
+  },
+  "reliquary:VaporPowerPotion": {
+    "NAME": "强能蒸汽",
+    "DESCRIPTION": "保留 。 NL 将1张随机能力牌加入你的手牌。这张牌在本回合耗能变为0。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 将1张随机攻击牌的 !M! 份复制加入你的手牌。这些牌在本回合耗能变为0。 NL 消耗 。"
+  },
+  "reliquary:VaporRegenPotion": {
+    "NAME": "弥散蒸汽",
+    "DESCRIPTION": "保留 。 NL 获得 !M! 层 再生 。"
+  },
+  "reliquary:VaporSkillPotion": {
+    "NAME": "发光蒸汽",
+    "DESCRIPTION": "保留 。 NL 将1张随机技能牌加入你的手牌。这张牌在本回合耗能变为0。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 将1张随机技能牌的 !M! 份复制加入你的手牌。这些牌在本回合耗能变为0。 NL 消耗 。"
+  },
+  "reliquary:VaporSmokeBomb": {
+    "NAME": "烟锁蒸汽",
+    "DESCRIPTION": "保留 。 NL 花费 !M! 金币以从一场非首领战斗中逃离，不获得任何奖励。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "我的金币不够，没法让他们分心！",
+      "我被包围了！",
+      "它太强了！",
+      "它们太强了！"
+    ]
+  },
+  "reliquary:VaporSneckoOil": {
+    "NAME": "咝咝蒸汽",
+    "DESCRIPTION": "保留 。 NL 随机化你一半手牌（向上取整）的耗能。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 随机化你手牌的耗能。 NL 消耗 。"
+  },
+  "reliquary:VaporSpeedPotion": {
+    "NAME": "飒爽蒸汽",
+    "DESCRIPTION": "保留 。 NL 获得 !M! 点 敏捷 。在你的回合结束时，失去 !M! 点 敏捷 。 NL 消耗 。"
+  },
+  "reliquary:VaporStancePotion": {
+    "NAME": "处子蒸汽",
+    "DESCRIPTION": "保留 。 NL 如果你不在任何 姿态 中，随机进入 平静 或 愤怒 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 平静 或 愤怒 ：进入 两者中的另一种 姿态 。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "我现在在姿态中，不能那样做。",
+      "我现在不在平静或愤怒姿态中，不能那样做。"
+    ]
+  },
+  "reliquary:VaporStrengthPotion": {
+    "NAME": "强力蒸汽",
+    "DESCRIPTION": "保留 。 NL 获得 !M! 点 力量 。"
+  },
+  "reliquary:VaporSwiftPotion": {
+    "NAME": "迅捷蒸汽",
+    "DESCRIPTION": "保留 。 NL 抽一张牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 抽 !M! 张牌。 NL 消耗 。"
+  },
+  "reliquary:VaporUnknownPotion": {
+    "NAME": "未知蒸汽",
+    "DESCRIPTION": "保留 。 NL 随机将一张蒸汽牌加入你的手牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 随机将 !M! 张蒸汽牌加入你的手牌。 NL 消耗 。"
+  },
+  "reliquary:VaporWeakPotion": {
+    "NAME": "病恹蒸汽",
+    "DESCRIPTION": "保留 。 NL 给予 !M! 层 虚弱 。 NL 消耗 。"
+  }
+}

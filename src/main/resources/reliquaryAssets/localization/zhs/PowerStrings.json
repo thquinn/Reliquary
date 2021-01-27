@@ -1,0 +1,25 @@
+{
+  "reliquary:LesserDuplication": {
+    "NAME": "低配复制",
+    "DESCRIPTIONS": [
+      "本回合你的下一张耗能为0点或1点的牌将被打出两次。",
+      "本回合你的下 #b",
+      " 张耗能为0点或1点的牌将被打出两次。"
+    ]
+  },
+ "reliquary:ReduceColorlessCost": {
+    "NAME": "脸色苍白",
+    "DESCRIPTIONS": [
+      "你打出的下一张无色牌的耗能减少 #b1 点。",
+      "打出的下 #b",
+      " 张无色牌的耗能减少 #b1 点。"
+    ]
+  },
+  "reliquary:Taunt": {
+    "NAME": "嘲讽",
+    "DESCRIPTIONS": [
+      "直到该敌人死亡，其他敌人不能被选作目标。",
+      "有另一名敌人正在 #r@嘲讽@ 我！"
+    ]
+  }
+}

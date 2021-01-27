@@ -7,9 +7,7 @@ import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
-import com.megacrit.cardcrawl.powers.EnergizedPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import util.TextureLoader;
 
 public class RelicSharkskinSheath extends CustomRelic {
@@ -24,9 +22,8 @@ public class RelicSharkskinSheath extends CustomRelic {
     @Override
     public void onPlayerEndTurn() {
         AbstractPlayer p = AbstractDungeon.player;
-        if (p.hand.size() == 0 && EnergyPanel.getCurrentEnergy() == 0) {
+        if (p.hand.isEmpty()) {
             addToBot(new RelicAboveCreatureAction(p, this));
-            addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 1)));
             addToBot(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, 1)));
         }
     }

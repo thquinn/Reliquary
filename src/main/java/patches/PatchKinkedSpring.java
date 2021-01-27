@@ -11,7 +11,6 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
 import relics.RelicKinkedSpring;
-import util.ReliquaryLogger;
 
 import java.util.Arrays;
 import java.util.Set;
@@ -54,7 +53,6 @@ public class PatchKinkedSpring {
         public static SpireReturn Prefix(EmptyDeckShuffleAction __instance) {
             RelicKinkedSpring kinkedSpring = (RelicKinkedSpring) AbstractDungeon.player.getRelic(RelicKinkedSpring.ID);
             if (kinkedSpring == null || __instance.amount == RelicKinkedSpring.ID.hashCode()) {
-                ReliquaryLogger.log("Shuffle allowed by Kinked Spring.");
                 return SpireReturn.Continue();
             }
             // Remove all actions from the queue that may have requested this shuffle — they will just try to shuffle again.
@@ -62,7 +60,6 @@ public class PatchKinkedSpring {
             AbstractDungeon.actionManager.actions.removeIf(a -> SHUFFLE_ACTION_CLASSES.contains(a.getClass()));
             __instance.isDone = true;
             kinkedSpring.flash();
-            ReliquaryLogger.log("Shuffle aborted by Kinked Spring.");
             return SpireReturn.Return(null);
         }
 
@@ -71,7 +68,6 @@ public class PatchKinkedSpring {
         )
         public static void Insert() {
             // Now that the shuffle has actually been performed, let's trigger onShuffle.
-            ReliquaryLogger.log("onShuffle triggers.");
             for (AbstractRelic r : AbstractDungeon.player.relics) {
                 r.onShuffle();
             }

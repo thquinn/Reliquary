@@ -79,7 +79,25 @@
     "DESCRIPTIONS": [
       "Upon pickup, remove any number of cards from your deck except Strike, Defend, and #rCurse cards.",
       "Select any number of cards to remove."
-    ]
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a made-up quote by a made-up person."
+  },
+  "reliquary:FerryPass": {
+    "NAME": "Ferry Pass",
+    "FLAVOR": "It reads, \"Enjoy your trip to Lastcel Isle!\"",
+    "DESCRIPTIONS": [
+      "When you play every unique card in your deck in one combat, lose this and add a #yRare relic to that combat's reward.",
+      "Play all #b",
+      " unique cards in your deck this combat to exchange this for a #yRare relic.",
+      "Play #b",
+      " more unique cards this combat to exchange this for a #yRare relic.",
+      "Play ",
+      ", and ",
+      " and ",
+      " to exchange this for a #yRare relic.",
+      " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]show [#2aecd7]unplayed [#2aecd7]cards [#2aecd7]in [#2aecd7]hand.[]"
+    ],
+    "NOTE_FOR_TRANSLATORS": "'Every unique card' means every card with a different name. The upgradedness doesn't matter, i.e. 'Strike' and 'Strike+' are the same unique card."
   },
   "reliquary:Firecrackers": {
     "NAME": "Firecrackers",
@@ -124,7 +142,7 @@
     "DESCRIPTIONS": [
       "The first time you apply #yPoison to each enemy each turn, it triggers immediately."
     ],
-    "TRANSLATION_NOTE": "This is the symbol of the motorcycle gang from Akira."
+    "NOTE_FOR_TRANSLATORS": "This is the symbol of the motorcycle gang from Akira."
   },
   "reliquary:KinkedSpring": {
     "NAME": "Kinked Spring",
@@ -140,7 +158,7 @@
       "Enemies with #b",
       "% or less health are #yWeak."
     ],
-    "TRANSLATION_NOTE": "A knoch is just a fishing sinker: https://en.wikipedia.org/wiki/Fishing_sinker"
+    "NOTE_FOR_TRANSLATORS": "A knoch is just a fishing sinker: https://en.wikipedia.org/wiki/Fishing_sinker"
   },
   "reliquary:LoveEmittingDiode": {
     "NAME": "Love-Emitting Diode",
@@ -149,7 +167,7 @@
       "Positive #yFocus affects your rightmost Orb #b",
       " times."
     ],
-    "TRANSLATION_NOTE": "This is a play on light-emitting diodes, or LEDs."
+    "NOTE_FOR_TRANSLATORS": "This is a play on light-emitting diodes, or LEDs."
   },
   "reliquary:MedicineBall": {
     "NAME": "Medicine Ball",
@@ -166,7 +184,7 @@
       " #yMantra for each time you entered #yDivinity this combat (",
       " maximum)."
     ],
-    "TRANSLATION_NOTE": "This is a Newton's Cradle. 'Mudwin' is just a dumb name made up to sound like 'Newton.'"
+    "NOTE_FOR_TRANSLATORS": "This is a Newton's Cradle. 'Mudwin' is just a dumb name made up to sound like 'Newton.'"
   },
   "reliquary:OuijaBoard": {
     "NAME": "Ouija Board",
@@ -199,7 +217,7 @@
     "DESCRIPTIONS": [
       "Double the first X #yBlock you gain each combat, where X is the floor you're on."
     ],
-    "TRANSLATION_NOTE": "This is the headgear of the Prince of All Cosmos from the Katamari Damacy series."
+    "NOTE_FOR_TRANSLATORS": "This is the headgear of the Prince of All Cosmos from the Katamari Damacy series."
   },
   "reliquary:PurpleTingedLeaf": {
     "NAME": "Purple-Tinged Leaf",
@@ -255,21 +273,22 @@
     "FLAVOR": "Anyway, here's \"Wonderspire.\"",
     "DESCRIPTIONS": [
       "Whenever you block damage exactly, gain [E] next turn."
-    ]
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the song 'Wonderwall' by Oasis."
   },
   "reliquary:SculptingSteel": {
     "NAME": "Sculpting Steel",
     "FLAVOR": "Malleable as clay one second, hard as stone the next.",
     "DESCRIPTIONS": [
-      "Upon pickup, becomes a copy of a random relic you already have."
+      "Upon pickup, becomes a copy of a random Common, #bUncommon, #yRare, or #yShop relic you already have."
     ],
-    "TRANSLATION_NOTE": "This is a reference to the Magic card Sculpting Steel, which has some existing translations: https://scryfall.com/search?q=%21%E2%80%9CSculpting+Steel%E2%80%9D+set%3A2xm+lang%3Aany&unique=prints"
+    "NOTE_FOR_TRANSLATORS": "This is a reference to the Magic card Sculpting Steel, which has some existing translations: https://scryfall.com/search?q=%21%E2%80%9CSculpting+Steel%E2%80%9D+set%3A2xm+lang%3Aany&unique=prints"
   },
   "reliquary:SharkskinSheath": {
     "NAME": "Sharkskin Sheath",
     "FLAVOR": "If only you had a sharkskin knife to put in it.",
     "DESCRIPTIONS": [
-      "Whenever you end your turn with no Energy or cards in hand, gain [E] and draw a card next turn."
+      "Whenever you end your turn with no cards in hand, draw a card next turn."
     ]
   },
   "reliquary:ShortFuse": {
@@ -277,7 +296,8 @@
     "FLAVOR": "It might blow at any moment.",
     "DESCRIPTIONS": [
       "Your #yLightning Orbs target the enemy with the least HP."
-    ]
+    ],
+    "NOTE_FOR_TRANSLATORS": "To have a 'short fuse' means you get angry easily."
   },
   "reliquary:SilkGlove": {
     "NAME": "Silk Glove",
@@ -315,7 +335,8 @@
       "Gimme!",
       "I'd be a fool @not@ to buy it!",
       "You drive a hard bargain..."
-    ]
+    ],
+    "NOTE_FOR_TRANSLATORS": "A couple of these are voice lines from the merchant in Resident Evil 4."
   },
   "reliquary:TridentHead": {
     "NAME": "Trident Head",
@@ -346,6 +367,6 @@
       "Gain [E] at the start of your turn. At the end of your turn, you lose #b",
       " #yBlock."
     ],
-    "TRANSLATION_NOTE": "'Mandamus' is just a made-up name."
+    "NOTE_FOR_TRANSLATORS": "'Mandamus' is just a made-up name."
   }
 }

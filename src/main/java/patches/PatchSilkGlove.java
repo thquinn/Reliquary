@@ -11,7 +11,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
 import relics.RelicSilkGlove;
-import util.ReliquaryLogger;
 
 @SpirePatch(
         clz= DiscardAtEndOfTurnAction.class,
@@ -28,7 +27,6 @@ public class PatchSilkGlove {
         }
         int discards = p.hand.size();
         discards -= p.hand.group.stream().filter(c -> c.selfRetain || c.retain || c.isEthereal).count();
-        ReliquaryLogger.log("Silk Glove discards: "  + discards);
         if (discards == 1) {
             AbstractDungeon.actionManager.actions.removeIf(a -> a instanceof RetainCardsAction);
             for (AbstractCard c : p.hand.group) {

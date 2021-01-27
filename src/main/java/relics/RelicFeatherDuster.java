@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
-import util.ReliquaryLogger;
 import util.TextureLoader;
 
 public class RelicFeatherDuster extends CustomRelic {
@@ -68,7 +67,6 @@ public class RelicFeatherDuster extends CustomRelic {
             }
             AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.COMPLETE;
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
-            ReliquaryLogger.log("clearing...");
         }
     }
 

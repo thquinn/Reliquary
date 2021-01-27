@@ -1,5 +1,7 @@
 package actions;
 
+import basemod.helpers.CardModifierManager;
+import cardmods.CardModShuffleBackOnce;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.utility.NewQueueCardAction;
 import com.megacrit.cardcrawl.actions.utility.UnlimboAction;
@@ -57,7 +59,7 @@ public class OuijaBoardAction extends AbstractGameAction {
         p.loseEnergy(card.costForTurn);
         p.discardPile.removeCard(card);
         p.limbo.addToBottom(card);
-        card.shuffleBackIntoDrawPile = true;
+        CardModifierManager.addModifier(card, new CardModShuffleBackOnce());
         card.current_y = -200.0F * Settings.scale;
         card.target_x = Settings.WIDTH / 2.0F + 200.0F * Settings.xScale;
         card.target_y = Settings.HEIGHT / 2.0F;

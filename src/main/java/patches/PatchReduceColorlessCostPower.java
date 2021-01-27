@@ -4,24 +4,13 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
-import com.megacrit.cardcrawl.actions.GameActionManager;
-import com.megacrit.cardcrawl.actions.common.*;
-import com.megacrit.cardcrawl.actions.watcher.PathVictoryAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
 import powers.ReduceColorlessCostPower;
-import relics.RelicKinkedSpring;
-import util.ReliquaryLogger;
-
-import java.util.Arrays;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 public class PatchReduceColorlessCostPower {
     @SpirePatch(
@@ -118,6 +107,9 @@ public class PatchReduceColorlessCostPower {
     }
 
     public static boolean isEligible(AbstractCard card) {
+        if (AbstractDungeon.player == null) {
+            return false;
+        }
         return AbstractDungeon.player.hasPower(ReduceColorlessCostPower.POWER_ID) && card.color == AbstractCard.CardColor.COLORLESS && card.costForTurn > 0;
     }
 }

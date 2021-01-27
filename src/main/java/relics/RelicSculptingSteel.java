@@ -20,12 +20,12 @@ public class RelicSculptingSteel extends CustomRelic {
 
     @Override
     public boolean canSpawn() {
-        return AbstractDungeon.player.relics.stream().anyMatch(r -> COPYABLE_RELICS.contains(r.relicId));
+        return AbstractDungeon.player.relics.stream().anyMatch(r -> isAppropriateRarity(r) && COPYABLE_RELICS.contains(r.relicId));
     }
 
     @Override
     public void onEquip() {
-        List<AbstractRelic> copyables = AbstractDungeon.player.relics.stream().filter(r -> COPYABLE_RELICS.contains(r.relicId)).collect(Collectors.toList());
+        List<AbstractRelic> copyables = AbstractDungeon.player.relics.stream().filter(r -> isAppropriateRarity(r) && COPYABLE_RELICS.contains(r.relicId)).collect(Collectors.toList());
         if (copyables.isEmpty()) {
             return;
         }
@@ -34,6 +34,10 @@ public class RelicSculptingSteel extends CustomRelic {
         copy.instantObtain();
         copy.flash();
         AbstractDungeon.player.loseRelic(ID);
+    }
+
+    static boolean isAppropriateRarity(AbstractRelic relic) {
+        return relic.tier == RelicTier.COMMON || relic.tier == RelicTier.UNCOMMON || relic.tier == RelicTier.RARE || relic.tier == RelicTier.SHOP;
     }
 
     @Override
@@ -46,6 +50,10 @@ public class RelicSculptingSteel extends CustomRelic {
         return new RelicSculptingSteel();
     }
 
+    // This is a set of all Reliquary and base-game relics that:
+    //      - function correctly and straightforwardly in multiples, and
+    //      - if they have downsides, it is a compounding downside (gets more punishing in multiples)
+    // Not all of these will actually be copied by Sculpting Steel; they are filtered further in canSpawn and onEquip.
     private final Set<String> COPYABLE_RELICS = new HashSet<>(Arrays.asList(
             // Reliquary
             RelicBallBearing.ID,

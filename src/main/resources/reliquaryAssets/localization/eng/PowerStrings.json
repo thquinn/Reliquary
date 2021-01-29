@@ -29,5 +29,13 @@
       "Other enemies can't be targeted until this enemy dies.",
       "Another enemy is #r@Taunting@ me!"
     ]
+  },
+  "reliquary:Triumph": {
+    "NAME": "Triumph",
+    "DESCRIPTIONS": [
+      "#yDivinity's damage multiplier is increased by #b",
+      ", to #b",
+      "."
+    ]
   }
 }

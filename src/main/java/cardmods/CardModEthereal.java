@@ -11,6 +11,11 @@ public class CardModEthereal extends AbstractCardModifier {
     }
 
     @Override
+    public boolean shouldApply(AbstractCard card) {
+        return !card.selfRetain;
+    }
+
+    @Override
     public void onInitialApplication(AbstractCard card) {
         card.isEthereal = true;
         card.selfRetain = false;

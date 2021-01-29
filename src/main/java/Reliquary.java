@@ -11,10 +11,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import powers.InvincibleTurnsPower;
-import powers.LesserDuplicationPower;
-import powers.ReduceColorlessCostPower;
-import powers.TauntPower;
+import powers.*;
 import relics.*;
 
 @SpireInitializer
@@ -38,6 +35,8 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addRelic(new RelicBrokenClock(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBuckler(), RelicType.SHARED);
         BaseMod.addRelic(new RelicConveyor(), RelicType.BLUE);
+        BaseMod.addRelic(new RelicCrutches(), RelicType.RED);
+        BaseMod.addRelic(new RelicDhvaja(), RelicType.SHARED);
         BaseMod.addRelic(new RelicEmber(), RelicType.SHARED);
         BaseMod.addRelic(new RelicExpiredCoupon(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFeatherDuster(), RelicType.SHARED);
@@ -83,6 +82,8 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         UnlockTracker.markRelicAsSeen(RelicBrokenClock.ID);
         UnlockTracker.markRelicAsSeen(RelicBuckler.ID);
         UnlockTracker.markRelicAsSeen(RelicConveyor.ID);
+        UnlockTracker.markRelicAsSeen(RelicCrutches.ID);
+        UnlockTracker.markRelicAsSeen(RelicDhvaja.ID);
         UnlockTracker.markRelicAsSeen(RelicEmber.ID);
         UnlockTracker.markRelicAsSeen(RelicExpiredCoupon.ID);
         UnlockTracker.markRelicAsSeen(RelicFeatherDuster.ID);
@@ -156,6 +157,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addPower(LesserDuplicationPower.class, LesserDuplicationPower.POWER_ID);
         BaseMod.addPower(ReduceColorlessCostPower.class, ReduceColorlessCostPower.POWER_ID);
         BaseMod.addPower(TauntPower.class, TauntPower.POWER_ID);
+        BaseMod.addPower(TriumphPower.class, TriumphPower.POWER_ID);
     }
 
     @Override

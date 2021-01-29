@@ -58,12 +58,28 @@
   },
   "reliquary:Conveyor": {
     "NAME": "Conveyor",
-    "FLAVOR": "",
+    "FLAVOR": "Takes you where you want to go.",
     "DESCRIPTIONS": [
       "At the start of your turn, #yChannel a type of Orb of which you have #b",
       " or more #yChanneled."
     ],
     "NOTE_FOR_TRANSLATORS": "This is a conveyor block from the game Infinifactory."
+  },
+  "reliquary:Crutches": {
+    "NAME": "Crutches",
+    "FLAVOR": "You're not the one that's gonna need these.",
+    "DESCRIPTIONS": [
+      "Whenever you get a #yStatus, enemies lose #b",
+      " #yStrength during their next turn."
+    ]
+  },
+  "reliquary:Dhvaja": {
+    "NAME": "Dhvaja",
+    "FLAVOR": "Victory shall be yours... eventually.",
+    "DESCRIPTIONS": [
+      "Whenever you exit #yDivinity, #yDivinity's damage multiplier increases by #b1 this combat."
+    ],
+    "NOTE_FOR_TRANSLATORS": "https://en.wikipedia.org/wiki/Dhvaja"
   },
   "reliquary:Ember": {
     "NAME": "Ember",
@@ -199,7 +215,7 @@
     "NAME": "Ouija Board",
     "FLAVOR": "Only as mysterious as you make it.",
     "DESCRIPTIONS": [
-      "Once each turn, play a card from your discard pile with random targets and shuffle it into your draw pile. It costs #b1 more.",
+      "Once per turn, pay the cost of a card in your discard pile plus #b1 to play it and shuffle it into your draw pile.",
       "I've already used that this turn.",
       "My discard pile is #rempty.",
       "I don't have enough Energy for the cards in my discard pile."

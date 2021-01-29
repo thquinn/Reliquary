@@ -38,6 +38,29 @@ public class PatchReduceColorlessCostPower {
 
     @SpirePatch(
             clz= AbstractCard.class,
+            method="renderEnergy"
+    )
+    public static class PatchReduceColorlessCostPowerRenderEnergy {
+        @SpireInsertPatch(
+                locator= Locator.class,
+                localvars = {"costColor"}
+        )
+        public static void Insert(AbstractCard __instance, SpriteBatch sb, Color ___ENERGY_COST_MODIFIED_COLOR, @ByRef Color[] costColor) {
+            if (PatchReduceColorlessCostPower.isEligible(__instance)) {
+                costColor[0] = ___ENERGY_COST_MODIFIED_COLOR;
+            }
+        }
+
+        private static class Locator extends SpireInsertLocator {
+            public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {
+                Matcher matcher = new Matcher.FieldAccessMatcher(AbstractCard.class, "transparency");
+                return LineFinder.findInOrder(ctMethodToPatch, matcher);
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= AbstractCard.class,
             method="hasEnoughEnergy"
     )
     public static class PatchReduceColorlessCostPowerHasEnoughEnergy {
@@ -56,52 +79,6 @@ public class PatchReduceColorlessCostPower {
                 Matcher matcher = new Matcher.FieldAccessMatcher(AbstractCard.class, "cantUseMessage");
                 int[] matches = LineFinder.findAllInOrder(ctMethodToPatch, matcher);
                 return new int[]{matches[matches.length - 1]};
-            }
-        }
-    }
-
-
-    @SpirePatch(
-            clz= AbstractPlayer.class,
-            method="useCard"
-    )
-    public static class PatchReduceColorlessCostPowerUseCard {
-        @SpireInsertPatch(
-                locator= Locator.class
-        )
-        public static void Insert(AbstractPlayer __instance, AbstractCard c) {
-            if (PatchReduceColorlessCostPower.isEligible(c)) {
-                c.costForTurn--;
-            }
-        }
-
-        private static class Locator extends SpireInsertLocator {
-            public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {
-                Matcher matcher = new Matcher.FieldAccessMatcher(AbstractCard.class, "costForTurn");
-                return LineFinder.findInOrder(ctMethodToPatch, matcher);
-            }
-        }
-    }
-
-    @SpirePatch(
-            clz= AbstractCard.class,
-            method="renderEnergy"
-    )
-    public static class PatchReduceColorlessCostPowerRenderEnergy {
-        @SpireInsertPatch(
-                locator= Locator.class,
-                localvars = {"costColor"}
-        )
-        public static void Insert(AbstractCard __instance, SpriteBatch sb, Color ___ENERGY_COST_MODIFIED_COLOR, @ByRef Color[] costColor) {
-            if (PatchReduceColorlessCostPower.isEligible(__instance)) {
-                costColor[0] = ___ENERGY_COST_MODIFIED_COLOR;
-            }
-        }
-
-        private static class Locator extends SpireInsertLocator {
-            public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {
-                Matcher matcher = new Matcher.FieldAccessMatcher(AbstractCard.class, "transparency");
-                return LineFinder.findInOrder(ctMethodToPatch, matcher);
             }
         }
     }

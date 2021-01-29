@@ -7,6 +7,8 @@ import com.evacipated.cardcrawl.mod.stslib.powers.StunMonsterPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.IntangiblePower;
@@ -14,6 +16,7 @@ import com.megacrit.cardcrawl.powers.InvinciblePower;
 import com.megacrit.cardcrawl.powers.MinionPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import powers.InvincibleTurnsPower;
 import util.TextureLoader;
 
 import java.util.Collections;
@@ -27,6 +30,7 @@ public class RelicQuartzCube extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/quartzCube.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/quartzCube.png");
 
+    static int NUM_ENEMIES = 3;
     static int DURATION = 2;
 
     boolean activated = false, added = false, removed = false;
@@ -38,7 +42,7 @@ public class RelicQuartzCube extends CustomRelic {
 
     @Override
     public void atBattleStart() {
-        activated = false;
+        activated = AbstractDungeon.getMonsters().monsters.size() < NUM_ENEMIES;
         target = null;
         added = false;
         removed = false;
@@ -50,18 +54,12 @@ public class RelicQuartzCube extends CustomRelic {
 
         if (!isObtained || AbstractDungeon.getCurrRoom() == null || AbstractDungeon.getCurrRoom().phase != AbstractRoom.RoomPhase.COMBAT)
             return;
-
-        if (target != null && activated) {
-            boolean invincible = target.hasPower(StunMonsterPower.POWER_ID);
-            if (invincible) {
-                added = true;
-            } else if (added && !removed) {
-                addToBot(new RemoveSpecificPowerAction(target, target, InvinciblePower.POWER_ID));
-                removed = true;
+        if (activated) {
+            if (target != null && !target.hasPower(StunMonsterPower.POWER_ID)) {
+                target = null;
             }
-        }
-        if (activated)
             return;
+        }
         if (target == null) {
             if (AbstractDungeon.getCurrRoom().monsters.monsters.size() <= 1) {
                 activated = true;
@@ -78,9 +76,7 @@ public class RelicQuartzCube extends CustomRelic {
                 return;
             }
             addToBot(new ApplyPowerAction(target, AbstractDungeon.player, new StunMonsterPower(target, DURATION)));
-            IntangiblePower intangiblePower = new IntangiblePower(target, DURATION);
-            intangiblePower.atEndOfTurn(false); // trick Intangible into decrementing immediately
-            addToBot(new ApplyPowerAction(target, AbstractDungeon.player, intangiblePower));
+            addToBot(new ApplyPowerAction(target, AbstractDungeon.player, new InvincibleTurnsPower(target, DURATION)));
         }
     }
 
@@ -105,7 +101,7 @@ public class RelicQuartzCube extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0] + DURATION + DESCRIPTIONS[1] + DURATION + DESCRIPTIONS[2];
+        return DESCRIPTIONS[0] + NUM_ENEMIES + DESCRIPTIONS[1] + DURATION + DESCRIPTIONS[2] + DURATION + DESCRIPTIONS[3];
     }
     @Override
     public AbstractRelic makeCopy()

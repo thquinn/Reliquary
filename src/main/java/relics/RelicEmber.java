@@ -47,6 +47,9 @@ public class RelicEmber extends CustomRelic {
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
+        if (c.freeToPlay()) {
+            return;
+        }
         AbstractPlayer p = AbstractDungeon.player;
         int cost = c.cost == -1 ? c.energyOnUse : c.costForTurn;
         counter += cost;

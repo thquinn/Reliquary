@@ -25,7 +25,7 @@ public class RelicTamtam extends CustomRelic {
         AbstractPlayer p = AbstractDungeon.player;
         if (p.currentBlock > 0) {
             addToBot(new RelicAboveCreatureAction(p, this));
-            addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 2)));
+            addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 1)));
             for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
                 addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, 1)));
             }

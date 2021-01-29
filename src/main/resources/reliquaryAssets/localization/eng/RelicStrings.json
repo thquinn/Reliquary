@@ -56,6 +56,15 @@
       "This relic has been used up."
     ]
   },
+  "reliquary:Conveyor": {
+    "NAME": "Conveyor",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "At the start of your turn, #yChannel a type of Orb of which you have #b",
+      " or more #yChanneled."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a conveyor block from the game Infinifactory."
+  },
   "reliquary:Ember": {
     "NAME": "Ember",
     "FLAVOR": "Hachi machi, that's hot!",
@@ -215,7 +224,8 @@
     "NAME": "Princely Helmet",
     "FLAVOR": "Way too small to fit on your head. If it were Ours, We'd make it much bigger.",
     "DESCRIPTIONS": [
-      "Double the first X #yBlock you gain each combat, where X is the floor you're on."
+      "Double the first X #yBlock you gain each combat, where X is #b",
+      " times the current Act."
     ],
     "NOTE_FOR_TRANSLATORS": "This is the headgear of the Prince of All Cosmos from the Katamari Damacy series."
   },
@@ -233,9 +243,10 @@
     "NAME": "Quartz Cube",
     "FLAVOR": "It's like an ice cube that never melts, but also isn't cold.",
     "DESCRIPTIONS": [
-      "At the start of each combat with #b2 or more enemies, apply #b",
+      "At the start of each combat with #b",
+      " or more enemies, apply #b",
       " #yStunned and #b",
-      " #yIntangible to one."
+      " #yInvincible to one."
     ]
   },
   "reliquary:RadioactivePellet": {
@@ -318,7 +329,7 @@
     "NAME": "Tam-Tam",
     "FLAVOR": "GONG.",
     "DESCRIPTIONS": [
-      "Whenever you start your turn with #yBlock, gain #b2 #yStrength and ALL enemies gain #b1 #yStrength."
+      "Whenever you start your turn with #yBlock, you and ALL enemies gain #b1 #yStrength."
     ]
   },
   "reliquary:TatteredRug": {

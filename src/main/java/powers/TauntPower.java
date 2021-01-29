@@ -20,6 +20,7 @@ public class TauntPower extends AbstractPower {
     public TauntPower(AbstractCreature owner) {
         name = powerStrings.NAME;
         ID = POWER_ID;
+        type = PowerType.BUFF;
         region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
         region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.owner = owner;

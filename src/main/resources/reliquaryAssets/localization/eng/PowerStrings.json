@@ -1,4 +1,12 @@
 {
+  "reliquary:InvincibleTurns": {
+    "NAME": "Invincible",
+    "DESCRIPTIONS": [
+      "Can't be harmed this turn.",
+      "Can't be harmed for the next #b",
+      " turns."
+    ]
+  },
   "reliquary:LesserDuplication": {
     "NAME": "Lesser Duplication",
     "DESCRIPTIONS": [

@@ -11,18 +11,20 @@ public class RelicPrincelyHelmet extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/princelyHelmet.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/princelyHelmet.png");
 
+    static int MULTIPLIER = 8;
+
     public RelicPrincelyHelmet() {
-        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.SOLID);
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.SOLID);
     }
 
     @Override
     public void onEquip() {
-        counter = AbstractDungeon.floorNum;
+        atBattleStart();
     }
 
     public void atBattleStart() {
         flash();
-        counter = AbstractDungeon.floorNum;
+        counter = AbstractDungeon.actNum * MULTIPLIER;
         grayscale = false;
     }
 
@@ -42,7 +44,7 @@ public class RelicPrincelyHelmet extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0];
+        return DESCRIPTIONS[0] + MULTIPLIER + DESCRIPTIONS[1];
     }
     @Override
     public AbstractRelic makeCopy()

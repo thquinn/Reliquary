@@ -1,8 +1,11 @@
 import basemod.AutoAdd;
 import basemod.BaseMod;
+import basemod.ModPanel;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import cards.colorless.vapor.CardVaporAmbrosia;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -13,6 +16,7 @@ import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import powers.*;
 import relics.*;
+import util.TextureLoader;
 
 @SpireInitializer
 public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber, EditStringsSubscriber, PostInitializeSubscriber, PostUpdateSubscriber {
@@ -66,6 +70,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addRelic(new RelicSculptingSteel(), RelicType.SHARED);
         BaseMod.addRelic(new RelicSharkskinSheath(), RelicType.SHARED);
         BaseMod.addRelic(new RelicShortFuse(), RelicType.BLUE);
+        BaseMod.addRelic(new RelicSideboard(), RelicType.SHARED);
         BaseMod.addRelic(new RelicSilkGlove(), RelicType.SHARED);
         BaseMod.addRelic(new RelicStiletto(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTamtam(), RelicType.RED);
@@ -113,6 +118,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         UnlockTracker.markRelicAsSeen(RelicSculptingSteel.ID);
         UnlockTracker.markRelicAsSeen(RelicSharkskinSheath.ID);
         UnlockTracker.markRelicAsSeen(RelicShortFuse.ID);
+        UnlockTracker.markRelicAsSeen(RelicSideboard.ID);
         UnlockTracker.markRelicAsSeen(RelicSilkGlove.ID);
         UnlockTracker.markRelicAsSeen(RelicStiletto.ID);
         UnlockTracker.markRelicAsSeen(RelicTamtam.ID);
@@ -153,6 +159,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
 
     @Override
     public void receivePostInitialize() {
+        BaseMod.registerModBadge(new Texture("reliquaryAssets/images/badge.png"), "Reliquary", "thquinn", "A collection of relics.", new ModPanel());
         BaseMod.addPower(InvincibleTurnsPower.class, InvincibleTurnsPower.POWER_ID);
         BaseMod.addPower(LesserDuplicationPower.class, LesserDuplicationPower.POWER_ID);
         BaseMod.addPower(ReduceColorlessCostPower.class, ReduceColorlessCostPower.POWER_ID);

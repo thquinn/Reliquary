@@ -2,12 +2,14 @@ package patches;
 
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
+import com.megacrit.cardcrawl.actions.ClearCardQueueAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.watcher.PathVictoryAction;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
 import relics.RelicKinkedSpring;
@@ -82,11 +84,14 @@ public class PatchKinkedSpring {
     }
 
     @SpirePatch(
-            clz= DiscardAtEndOfTurnAction.class,
-            method="update"
+            clz= AbstractRoom.class,
+            method="endTurn"
     )
     public static class PatchKinkedSpringShuffle {
-        public static void Postfix() {
+        @SpireInsertPatch(
+                locator= Locator.class
+        )
+        public static void Insert() {
             RelicKinkedSpring kinkedSpring = (RelicKinkedSpring) AbstractDungeon.player.getRelic(RelicKinkedSpring.ID);
             if (kinkedSpring == null) {
                 return;
@@ -97,6 +102,13 @@ public class PatchKinkedSpring {
                 // Set a ~secret~ value on the shuffle action telling our previous patch to let it through.
                 shuffle.amount = RelicKinkedSpring.ID.hashCode();
                 AbstractDungeon.actionManager.addToBottom(shuffle);
+            }
+        }
+
+        private static class Locator extends SpireInsertLocator {
+            public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {
+                Matcher matcher = new Matcher.FieldAccessMatcher(AbstractPlayer.class, "drawPile");
+                return LineFinder.findInOrder(ctMethodToPatch, matcher);
             }
         }
     }

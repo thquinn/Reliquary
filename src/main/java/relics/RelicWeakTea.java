@@ -15,6 +15,8 @@ public class RelicWeakTea extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/weakTea.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/weakTea.png");
 
+    static int amount = 2;
+
     public RelicWeakTea() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT);
     }
@@ -23,12 +25,12 @@ public class RelicWeakTea extends CustomRelic {
     public void atBattleStart() {
         AbstractPlayer p = AbstractDungeon.player;
         addToBot(new RelicAboveCreatureAction(p, this));
-        addToBot(new ApplyPowerAction(p, p, new ReduceColorlessCostPower(p, 1)));
+        addToBot(new ApplyPowerAction(p, p, new ReduceColorlessCostPower(p, amount)));
     }
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0];
+        return DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
     @Override
     public AbstractRelic makeCopy()

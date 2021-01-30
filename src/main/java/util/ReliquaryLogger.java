@@ -9,4 +9,7 @@ public class ReliquaryLogger {
     public static void log(String s) {
         logger.info(s);
     }
+    public static void error(String s) {
+        logger.error(s);
+    }
 }

@@ -326,6 +326,23 @@
     ],
     "NOTE_FOR_TRANSLATORS": "To have a 'short fuse' means you get angry easily."
   },
+  "reliquary:Sideboard": {
+    "NAME": "Sideboard",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "Chosen card rewards go into a separate pile. You can move cards from that pile to your deck between combats.",
+      "Sideboard",
+      "Add cards from your sideboard into your deck between combats.",
+      " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]toggle [#2aecd7]off.[]",
+      " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]toggle [#2aecd7]on.[]",
+      "Choose a card to add into your deck."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "This is a reference to 'sideboards' in Magic the Gathering. It's a wooden board... this pun may not translate.",
+      "You may find the term used for sideboards in other languages here: https://blogs.magicjudges.org/translatedrules/",
+      "in the Comprehensive Rules, rule 100.4. The complete rules document might be on the second page."
+    ]
+  },
   "reliquary:SilkGlove": {
     "NAME": "Silk Glove",
     "FLAVOR": "Left behind by a fancy lady who doesn't mess around.",
@@ -384,7 +401,8 @@
     "NAME": "Weak Tea",
     "FLAVOR": "If you can sleep after drinking it, what's the point?",
     "DESCRIPTIONS": [
-      "The first Colorless card you play each combat costs #b1 less."
+      "The first #b",
+      " Colorless cards you play each combat cost #b1 less."
     ]
   },
   "reliquary:WritOfMandamus": {

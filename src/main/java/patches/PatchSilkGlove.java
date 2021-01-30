@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.actions.unique.RetainCardsAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.relics.RunicPyramid;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
 import relics.RelicSilkGlove;
@@ -22,7 +23,7 @@ public class PatchSilkGlove {
     )
     public static void Insert() {
         AbstractPlayer p = AbstractDungeon.player;
-        if (!p.hasRelic(RelicSilkGlove.ID)) {
+        if (!p.hasRelic(RelicSilkGlove.ID) || p.hasRelic(RunicPyramid.ID)) {
             return;
         }
         int discards = p.hand.size();

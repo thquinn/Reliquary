@@ -16,7 +16,7 @@ public class RelicExpiredCoupon extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/expiredCoupon.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/expiredCoupon.png");
 
-    private static final int THRESHOLD = 80;
+    private static final int THRESHOLD = 70;
     private static final int DAMAGE = 10;
 
     public RelicExpiredCoupon() {

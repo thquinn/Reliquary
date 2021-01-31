@@ -65,6 +65,13 @@
     ],
     "NOTE_FOR_TRANSLATORS": "This is a conveyor block from the game Infinifactory."
   },
+  "reliquary:Craggleroot": {
+    "NAME": "Craggleroot",
+    "FLAVOR": "This root has seen some hard times. Maybe it will see you through hard times as well?",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. The first card you draw each turn costs #b1 more this combat."
+    ]
+  },
   "reliquary:Crutches": {
     "NAME": "Crutches",
     "FLAVOR": "You're not the one that's gonna need these.",
@@ -211,6 +218,14 @@
     ],
     "NOTE_FOR_TRANSLATORS": "This is a Newton's Cradle. 'Mudwin' is just a dumb name made up to sound like 'Newton.'"
   },
+  "reliquary:NewFriend": {
+    "NAME": "New Friend",
+    "FLAVOR": "This little guy won't stop following you... and boy is he hungry.",
+    "DESCRIPTIONS": [
+      "Strikes and Defends #yExhaust #b",
+      "% of the time."
+    ]
+  },
   "reliquary:OuijaBoard": {
     "NAME": "Ouija Board",
     "FLAVOR": "Only as mysterious as you make it.",
@@ -253,6 +268,13 @@
       "Choose a card for ",
       "Whenever you play the chosen ",
       ", heal #b1 HP."
+    ]
+  },
+  "reliquary:Pushpin": {
+    "NAME": "Pushpin",
+    "FLAVOR": "Sometimes used to solve murders, but the most skilled assassins can use them to commit one.",
+    "DESCRIPTIONS": [
+      "The cards in your opening hand #yRetain for the rest of combat."
     ]
   },
   "reliquary:QuartzCube": {
@@ -328,7 +350,7 @@
   },
   "reliquary:Sideboard": {
     "NAME": "Sideboard",
-    "FLAVOR": "",
+    "FLAVOR": "A board for you to keep cards... on? In?",
     "DESCRIPTIONS": [
       "Chosen card rewards go into a separate pile. You can move cards from that pile to your deck between combats.",
       "Sideboard",

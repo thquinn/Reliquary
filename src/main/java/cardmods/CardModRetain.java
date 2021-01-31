@@ -4,21 +4,20 @@ import basemod.abstracts.AbstractCardModifier;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 
-public class CardModEthereal extends AbstractCardModifier {
-    public static final String ID = "reliquary:CardModEthereal";
+public class CardModRetain extends AbstractCardModifier {
+    public static final String ID = "reliquary:CardModRetain";
 
-    public CardModEthereal() {
+    public CardModRetain() {
     }
 
     @Override
     public boolean shouldApply(AbstractCard card) {
-        return !card.isEthereal;
+        return !card.selfRetain && !card.isEthereal;
     }
 
     @Override
     public void onInitialApplication(AbstractCard card) {
-        card.isEthereal = true;
-        card.selfRetain = false;
+        card.selfRetain = true;
     }
 
     @Override
@@ -28,6 +27,6 @@ public class CardModEthereal extends AbstractCardModifier {
 
     @Override
     public AbstractCardModifier makeCopy() {
-        return new CardModEthereal();
+        return new CardModRetain();
     }
 }

@@ -39,8 +39,9 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addRelic(new RelicBrokenClock(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBuckler(), RelicType.SHARED);
         BaseMod.addRelic(new RelicConveyor(), RelicType.BLUE);
+        BaseMod.addRelic(new RelicCraggleroot(), RelicType.SHARED);
         BaseMod.addRelic(new RelicCrutches(), RelicType.RED);
-        BaseMod.addRelic(new RelicDhvaja(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicDhvaja(), RelicType.PURPLE);
         BaseMod.addRelic(new RelicEmber(), RelicType.SHARED);
         BaseMod.addRelic(new RelicExpiredCoupon(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFeatherDuster(), RelicType.SHARED);
@@ -56,11 +57,13 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addRelic(new RelicLoveEmittingDiode(), RelicType.BLUE);
         BaseMod.addRelic(new RelicMedicineBall(), RelicType.RED);
         BaseMod.addRelic(new RelicMudwinsCradle(), RelicType.PURPLE);
+        BaseMod.addRelic(new RelicNewFriend(), RelicType.SHARED);
         BaseMod.addRelic(new RelicOuijaBoard(), RelicType.SHARED);
         BaseMod.addRelic(new RelicPartyBalloon(), RelicType.SHARED);
         BaseMod.addRelic(new RelicPorcupineQuills(), RelicType.SHARED);
         BaseMod.addRelic(new RelicPrincelyHelmet(), RelicType.SHARED);
         BaseMod.addRelic(new RelicPurpleTingedLeaf(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicPushpin(), RelicType.GREEN);
         BaseMod.addRelic(new RelicRadioactivePellet(), RelicType.GREEN);
         BaseMod.addRelic(new RelicRedCape(), RelicType.SHARED);
         BaseMod.addRelic(new RelicRedPaperclip(), RelicType.SHARED);
@@ -87,6 +90,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         UnlockTracker.markRelicAsSeen(RelicBrokenClock.ID);
         UnlockTracker.markRelicAsSeen(RelicBuckler.ID);
         UnlockTracker.markRelicAsSeen(RelicConveyor.ID);
+        UnlockTracker.markRelicAsSeen(RelicCraggleroot.ID);
         UnlockTracker.markRelicAsSeen(RelicCrutches.ID);
         UnlockTracker.markRelicAsSeen(RelicDhvaja.ID);
         UnlockTracker.markRelicAsSeen(RelicEmber.ID);
@@ -104,11 +108,13 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         UnlockTracker.markRelicAsSeen(RelicLoveEmittingDiode.ID);
         UnlockTracker.markRelicAsSeen(RelicMedicineBall.ID);
         UnlockTracker.markRelicAsSeen(RelicMudwinsCradle.ID);
+        UnlockTracker.markRelicAsSeen(RelicNewFriend.ID);
         UnlockTracker.markRelicAsSeen(RelicOuijaBoard.ID);
         UnlockTracker.markRelicAsSeen(RelicPartyBalloon.ID);
         UnlockTracker.markRelicAsSeen(RelicPorcupineQuills.ID);
         UnlockTracker.markRelicAsSeen(RelicPrincelyHelmet.ID);
         UnlockTracker.markRelicAsSeen(RelicPurpleTingedLeaf.ID);
+        UnlockTracker.markRelicAsSeen(RelicPushpin.ID);
         UnlockTracker.markRelicAsSeen(RelicRadioactivePellet.ID);
         UnlockTracker.markRelicAsSeen(RelicRedCape.ID);
         UnlockTracker.markRelicAsSeen(RelicRedPaperclip.ID);

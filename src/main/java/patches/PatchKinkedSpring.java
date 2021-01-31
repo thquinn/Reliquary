@@ -2,8 +2,10 @@ package patches;
 
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
-import com.megacrit.cardcrawl.actions.ClearCardQueueAction;
-import com.megacrit.cardcrawl.actions.common.*;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
+import com.megacrit.cardcrawl.actions.common.FastDrawCardAction;
+import com.megacrit.cardcrawl.actions.common.PlayTopCardAction;
 import com.megacrit.cardcrawl.actions.watcher.PathVictoryAction;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;

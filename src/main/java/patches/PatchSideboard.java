@@ -3,19 +3,11 @@ package patches;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.CardGroup;
-import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.cards.Soul;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.screens.CardRewardScreen;
-import com.megacrit.cardcrawl.vfx.FastCardObtainEffect;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
 import relics.RelicSideboard;
-import relics.RelicTuningFork;
-import util.ReliquaryLogger;
 import vfx.FastCardToSideboardEffect;
 
 @SpirePatch(

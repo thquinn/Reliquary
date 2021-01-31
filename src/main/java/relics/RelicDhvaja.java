@@ -2,23 +2,14 @@ package relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
-import com.megacrit.cardcrawl.powers.watcher.MantraPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.stances.AbstractStance;
 import com.megacrit.cardcrawl.stances.DivinityStance;
 import powers.TriumphPower;
 import util.TextureLoader;
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
 
 public class RelicDhvaja extends CustomRelic {
     public static final String ID = "reliquary:Dhvaja";

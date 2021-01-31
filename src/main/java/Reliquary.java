@@ -5,7 +5,6 @@ import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import cards.colorless.vapor.CardVaporAmbrosia;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -16,7 +15,6 @@ import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import powers.*;
 import relics.*;
-import util.TextureLoader;
 
 @SpireInitializer
 public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber, EditStringsSubscriber, PostInitializeSubscriber, PostUpdateSubscriber {

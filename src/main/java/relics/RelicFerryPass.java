@@ -13,6 +13,8 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import util.TextureLoader;
 
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -33,9 +35,13 @@ public class RelicFerryPass extends CustomRelic implements ClickableRelic {
         trigger = false;
     }
 
+    String[] getCardIDs() {
+        return AbstractDungeon.player.masterDeck.group.stream().filter(c -> c.type != AbstractCard.CardType.CURSE).map(c -> c.cardID).toArray(String[]::new);
+    }
+
     @Override
     public boolean canSpawn() {
-        int numNamesInDeck = (int) AbstractDungeon.player.masterDeck.group.stream().map(c -> c.cardID).count();
+        int numNamesInDeck = getCardIDs().length;
         return numNamesInDeck >= SPAWN_MIN_UNIQUES;
     }
 
@@ -47,7 +53,7 @@ public class RelicFerryPass extends CustomRelic implements ClickableRelic {
     @Override
     public void atBattleStart() {
         allUnplayed = true;
-        unplayed = AbstractDungeon.player.masterDeck.group.stream().map(c -> c.cardID).collect(Collectors.toSet());
+        unplayed = new HashSet<>(Arrays.asList(getCardIDs()));
         counter = unplayed.size();
         setDescription();
         flash();

@@ -118,9 +118,9 @@
     "NAME": "Ferry Pass",
     "FLAVOR": "It reads, \"Enjoy your trip to Lastcel Isle!\"",
     "DESCRIPTIONS": [
-      "When you play every unique card in your deck in one combat, lose this and add a #yRare relic to that combat's reward.",
+      "When you play every unique non #rCurse card in your deck in one combat, lose this and add a #yRare relic to that combat's reward.",
       "Play all #b",
-      " unique cards in your deck this combat to exchange this for a #yRare relic.",
+      " unique non #rCurse cards in your deck this combat to exchange this for a #yRare relic.",
       "Play #b",
       " more unique cards this combat to exchange this for a #yRare relic.",
       "Play ",

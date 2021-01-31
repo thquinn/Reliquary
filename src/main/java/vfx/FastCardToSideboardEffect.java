@@ -1,6 +1,5 @@
 package vfx;
 
-import basemod.devcommands.relic.Relic;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
@@ -17,7 +16,6 @@ import util.ReliquaryLogger;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.util.Iterator;
 import java.util.List;
 
 public class FastCardToSideboardEffect extends AbstractGameEffect {

@@ -56,6 +56,36 @@
       "这件遗物的效果已经使用完毕。"
     ]
   },
+  "reliquary:Conveyor": {
+    "NAME": "Conveyor",
+    "FLAVOR": "Takes you where you want to go.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, #yChannel a type of Orb of which you have #b",
+      " or more #yChanneled."
+    ]
+  },
+  "reliquary:Craggleroot": {
+    "NAME": "Craggleroot",
+    "FLAVOR": "This root has seen some hard times. Maybe it will see you through hard times as well?",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. The first card you draw each turn costs #b1 more this combat."
+    ]
+  },
+  "reliquary:Crutches": {
+    "NAME": "Crutches",
+    "FLAVOR": "You're not the one that's gonna need these.",
+    "DESCRIPTIONS": [
+      "Whenever you get a #yStatus, enemies lose #b",
+      " #yStrength during their next turn."
+    ]
+  },
+  "reliquary:Dhvaja": {
+    "NAME": "Dhvaja",
+    "FLAVOR": "Victory shall be yours... eventually.",
+    "DESCRIPTIONS": [
+      "Whenever you exit #yDivinity, #yDivinity's damage multiplier increases by #b1 this combat."
+    ]
+  },
   "reliquary:Ember": {
     "NAME": "余烬",
     "FLAVOR": "爹啊娘啊，烫死偶啦！",
@@ -79,6 +109,22 @@
     "DESCRIPTIONS": [
       "拾起时，移除牌组中任意张牌。这些牌不能是打击，防御，或 #r诅咒 牌。",
       "选择任意张牌移除。"
+    ]
+  },
+  "reliquary:FerryPass": {
+    "NAME": "Ferry Pass",
+    "FLAVOR": "It reads, \"Enjoy your trip to Lastcel Isle!\"",
+    "DESCRIPTIONS": [
+      "When you play every unique card in your deck in one combat, lose this and add a #yRare relic to that combat's reward.",
+      "Play all #b",
+      " unique cards in your deck this combat to exchange this for a #yRare relic.",
+      "Play #b",
+      " more unique cards this combat to exchange this for a #yRare relic.",
+      "Play ",
+      ", and ",
+      " and ",
+      " to exchange this for a #yRare relic.",
+      " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]show [#2aecd7]unplayed [#2aecd7]cards [#2aecd7]in [#2aecd7]hand.[]"
     ]
   },
   "reliquary:Firecrackers": {
@@ -164,6 +210,14 @@
      "层）。"
     ]
   },
+  "reliquary:NewFriend": {
+    "NAME": "New Friend",
+    "FLAVOR": "This little guy won't stop following you... and boy is he hungry.",
+    "DESCRIPTIONS": [
+      "Strikes and Defends #yExhaust #b",
+      "% of the time."
+    ]
+  },
   "reliquary:OuijaBoard": {
     "NAME": "显灵板",
     "FLAVOR": "也没多么神秘，你玩玩便知。",
@@ -193,7 +247,8 @@
     "NAME": "王子头盔",
     "FLAVOR": "太太太小了，你的头戴不上。如果换成我们来戴，我们会把它做得大很多。",
     "DESCRIPTIONS": [
-      "每场战斗中，你的前X点 #y格挡 的获得量将会翻倍，其中X等于你所在的楼层数。"
+      "Double the first X #yBlock you gain each combat, where X is #b",
+      " times the current Act."
     ]
   },
   "reliquary:PurpleTingedLeaf": {
@@ -206,13 +261,21 @@
       " ，回复 #b1 点生命。"
     ]
   },
+  "reliquary:Pushpin": {
+    "NAME": "Pushpin",
+    "FLAVOR": "Sometimes used to solve murders, but the most skilled assassins can use them to commit one.",
+    "DESCRIPTIONS": [
+      "The cards in your opening hand #yRetain for the rest of combat."
+    ]
+  },
   "reliquary:QuartzCube": {
     "NAME": "石英立方体",
     "FLAVOR": "它看上去像一块从不融化的冰立方，不过也不冰人。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，如果有 #b2 个或更多的敌人，随机给予一个敌人 #b",
-      " 层 #y击晕 和 #b",
-      " 层 #y无实体 。"
+      "At the start of each combat with #b",
+      " or more enemies, apply #b",
+      " #yStunned and #b",
+      " #yInvincible to one."
     ]
   },
   "reliquary:RadioactivePellet": {
@@ -256,14 +319,14 @@
     "NAME": "塑型钢",
     "FLAVOR": "何意绕指柔，化为百炼钢。",
     "DESCRIPTIONS": [
-      "拾起时，随机变为你拥有的一件遗物的复制。"
+      "Upon pickup, becomes a copy of a random Common, #bUncommon, #yRare, or #yShop relic you already have."
     ]
   },
   "reliquary:SharkskinSheath": {
     "NAME": "鲨鱼皮鞘",
     "FLAVOR": "但愿你有一把鲨鱼皮刀放在里面。",
     "DESCRIPTIONS": [
-      "每当你在没有剩余能量也没有手牌的情况下结束回合，下回合获得 [E] ，抽一张牌。"
+      "Whenever you end your turn with no cards in hand, draw a card next turn."
     ]
   },
   "reliquary:ShortFuse": {
@@ -271,6 +334,18 @@
     "FLAVOR": "可能在任何时刻熔断。",
     "DESCRIPTIONS": [
       "你的 #y闪电 充能球 总是会以生命值最低的敌人为目标。"
+    ]
+  },
+  "reliquary:Sideboard": {
+    "NAME": "Sideboard",
+    "FLAVOR": "A board for you to keep cards... on? In?",
+    "DESCRIPTIONS": [
+      "Chosen card rewards go into a separate pile. You can move cards from that pile to your deck between combats.",
+      "Sideboard",
+      "Add cards from your sideboard into your deck between combats.",
+      " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]toggle [#2aecd7]off.[]",
+      " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]toggle [#2aecd7]on.[]",
+      "Choose a card to add into your deck."
     ]
   },
   "reliquary:SilkGlove": {
@@ -292,7 +367,7 @@
     "NAME": "铜锣",
     "FLAVOR": "轰。",
     "DESCRIPTIONS": [
-      "每当你在有 #y格挡 的情况下开始回合，你获得 #b2 点 #y力量，所有敌人获得 #b1 点 #y力量 。"
+      "Whenever you start your turn with #yBlock, you and ALL enemies gain #b1 #yStrength."
     ]
   },
   "reliquary:TatteredRug": {
@@ -330,7 +405,9 @@
     "NAME": "淡茶",
     "FLAVOR": "如果你喝下它还能睡着，那还有什么意义呢？",
     "DESCRIPTIONS": [
-      "每场战斗中，你打出的第一张无色牌的耗能减少 #b1 点。"
+      "每场战斗中，你打出的第一张无色牌的耗能减少 #b1 点。",
+      "The first #b",
+      " Colorless cards you play each combat cost #b1 less."
     ]
   },
   "reliquary:WritOfMandamus": {

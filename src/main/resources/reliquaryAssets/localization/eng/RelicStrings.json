@@ -423,6 +423,7 @@
     "NAME": "Weak Tea",
     "FLAVOR": "If you can sleep after drinking it, what's the point?",
     "DESCRIPTIONS": [
+      "The first Colorless card you play each combat costs #b1 less.",
       "The first #b",
       " Colorless cards you play each combat cost #b1 less."
     ]

@@ -1,4 +1,4 @@
-这是一个超过40个遗物（现有43个）的合集。
+这是一个超过50个遗物（现有51个）的合集。
 
 遗物列表和改动日志请见：thquinn.github.io/projects/reliquary.html
 源代码请见： github.com/thquinn/Reliquary

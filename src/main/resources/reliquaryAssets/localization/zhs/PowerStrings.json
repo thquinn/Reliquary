@@ -1,4 +1,12 @@
 {
+  "reliquary:InvincibleTurns": {
+    "NAME": "Invincible",
+    "DESCRIPTIONS": [
+      "Can't be harmed this turn.",
+      "Can't be harmed for the next #b",
+      " turns."
+    ]
+  },
   "reliquary:LesserDuplication": {
     "NAME": "低配复制",
     "DESCRIPTIONS": [
@@ -20,6 +28,14 @@
     "DESCRIPTIONS": [
       "直到该敌人死亡，其他敌人不能被选作目标。",
       "有另一名敌人正在 #r@嘲讽@ 我！"
+    ]
+  },
+  "reliquary:Triumph": {
+    "NAME": "Triumph",
+    "DESCRIPTIONS": [
+      "#yDivinity's damage multiplier is increased by #b",
+      ", to #b",
+      "."
     ]
   }
 }

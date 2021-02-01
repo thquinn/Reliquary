@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import relics.RelicOuijaBoard;
 
 public class OuijaBoardAction extends AbstractGameAction {
@@ -55,8 +56,6 @@ public class OuijaBoardAction extends AbstractGameAction {
 
     void PlayToDrawPile(AbstractCard card) {
         AbstractPlayer p = AbstractDungeon.player;
-        card.setCostForTurn(card.costForTurn + costChange);
-        p.loseEnergy(card.costForTurn);
         p.discardPile.removeCard(card);
         p.limbo.addToBottom(card);
         CardModifierManager.addModifier(card, new CardModShuffleBackOnce());
@@ -68,7 +67,15 @@ public class OuijaBoardAction extends AbstractGameAction {
         card.drawScale = 0.12F;
         card.targetDrawScale = 0.75F;
         card.applyPowers();
-        addToTop(new NewQueueCardAction(card, true, false, true));
+        if (card.cost == -1) {
+            card.energyOnUse = EnergyPanel.totalCount - 1;
+            p.loseEnergy(EnergyPanel.totalCount);
+            addToTop(new OuijaBoardQueueXAction(card));
+        } else {
+            card.setCostForTurn(card.costForTurn + costChange);
+            p.loseEnergy(card.costForTurn);
+            addToTop(new NewQueueCardAction(card, true, false, true));
+        }
         addToTop(new UnlimboAction(card));
     }
 }

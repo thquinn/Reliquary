@@ -355,6 +355,42 @@
       "每当你在回合结束时将要丢弃恰好一张牌， #y保留 它。"
     ]
   },
+  "reliquary:Solitaire": {
+    "NAME": "Solitaire",
+    "FLAVOR": "You dreamed of it, once. How it crossed over into reality is a mystery.",
+    "DESCRIPTIONS": [
+      "You may upgrade #pPurple cards a second time.",
+      "Innate. NL Shuffle a *Beta+ into your draw pile. NL Exhaust.",
+      "Innate. NL At the start of each turn, add a *Smite+ into your hand.",
+      "Retain. NL Enter Divinity. NL Die in !M! turns. NL Exhaust.",
+      "Deal !D! damage. NL Add a *Smite+ into your hand.",
+      "Put a *Miracle+ into your hand at the start of your next X+2 turns. NL Exhaust.",
+      "Shuffle an *Expunger+ with X+1 into your draw pile. NL Exhaust.",
+      "Retain. NL If you are in Wrath, gain !M! Strength this turn, otherwise enter Wrath. NL Exhaust.",
+      "Gain !B! Block. NL Add a *Safety+ into NL your hand.",
+      "Innate. NL At the start of your turn, gain [W] NL and increase this gain by !M!.",
+      "Retain. NL Deal !D! damage !M! times.",
+      "Choose 1 of 3 Attacks of any color and add !M! copies to your hand. NL They cost 0 this turn. NL Exhaust.",
+      "Deal !D! damage. NL If Fatal, Upgrade a random card in your deck twice. NL Exhaust.",
+      "Innate. NL Whenever a card is created during combat, Upgrade it.",
+      "Put !M! cards from your discard pile into your hand and Retain them. NL Enter Calm. NL End your turn.",
+      "Choose a card in your draw pile. NL Play the chosen card !M! times and exhaust it. NL Exhaust.",
+      "Deal !D! damage. NL Shuffle a NL *Through *Violence+ into your draw pile.",
+      "Retain. NL Deal !D! damage. NL When Retained, lower its cost by !M! this combat.",
+      "Scry !M!. NL Draw cards until your hand is full. NL Exhaust.",
+      "At the end of your turn, shuffle an *Insight+ into your draw pile.",
+      "Gain !B! Block. NL The next Attack you play costs 0 and deals !M! additional damage.",
+      "Retain. NL Enter Calm.",
+      "Next turn, draw !M! card. Take an extra turn after this one. NL End your turn. NL Exhaust.",
+      "Retain. NL Gain !M! Mantra. When Retained, increase Mantra gained by %d (max %d)."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "YOU DON'T HAVE TO TRANSLATE THESE NOTES, and you can delete them when you've read them.",
+      "These are second upgrades, so all but the first string are slight variants of Watcher cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicSolitaire.java",
+      "to see which string corresponds to which Watcher card."
+    ]
+  },
   "reliquary:Stiletto": {
     "NAME": "短剑",
     "FLAVOR": "设计出来就是为了能在大部分盔甲的鳞片和系带之间游刃有余。",

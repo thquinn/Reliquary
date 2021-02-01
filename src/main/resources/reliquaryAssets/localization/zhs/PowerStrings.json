@@ -1,4 +1,11 @@
 {
+  "reliquary:InNTurnsDeath": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "In #b",
+      " turns, die."
+    ]
+  },
   "reliquary:InvincibleTurns": {
     "NAME": "Invincible",
     "DESCRIPTIONS": [
@@ -21,6 +28,13 @@
       "你打出的下一张无色牌的耗能减少 #b1 点。",
       "打出的下 #b",
       " 张无色牌的耗能减少 #b1 点。"
+    ]
+  },
+  "reliquary:StudyPlus": {
+    "NAME": "Cram",
+    "DESCRIPTIONS": [
+      "At the end of your turn, shuffle #b",
+      " #yInsight+ into your draw pile."
     ]
   },
   "reliquary:Taunt": {

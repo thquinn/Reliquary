@@ -400,6 +400,11 @@
       "Retain. NL Enter Calm.",
       "Next turn, draw !M! card. Take an extra turn after this one. NL End your turn. NL Exhaust.",
       "Retain. NL Gain !M! Mantra. When Retained, increase Mantra gained by %d (max %d)."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "These are second upgrades, so all but the first string are slight variants of Watcher cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicSolitaire.java",
+      "to see which string corresponds to which Watcher card."
     ]
   },
   "reliquary:Stiletto": {

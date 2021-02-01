@@ -1,4 +1,11 @@
 {
+  "reliquary:InNTurnsDeath": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "In #b",
+      " turns, die."
+    ]
+  },
   "reliquary:InvincibleTurns": {
     "NAME": "Invincible",
     "DESCRIPTIONS": [
@@ -21,6 +28,13 @@
       "The next Colorless card you play costs #b1 less.",
       "The next #b",
       " Colorless cards you play cost #b1 less."
+    ]
+  },
+  "reliquary:StudyPlus": {
+    "NAME": "Cram",
+    "DESCRIPTIONS": [
+      "At the end of your turn, shuffle #b",
+      " #yInsight+ into your draw pile."
     ]
   },
   "reliquary:Taunt": {

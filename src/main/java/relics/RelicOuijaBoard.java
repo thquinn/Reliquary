@@ -50,6 +50,7 @@ public class RelicOuijaBoard extends CustomRelic implements ClickableRelic {
             AbstractDungeon.effectList.add(new ThoughtBubble(p.dialogX, p.dialogY, 3.0F, DESCRIPTIONS[p.discardPile.isEmpty() ? 2 : 3], true));
             return;
         }
+        // this can probably be replaced with a SelectCardsAction
         addToBot(new OuijaBoardAction(1));
         usedThisTurn = true;
         stopPulse();

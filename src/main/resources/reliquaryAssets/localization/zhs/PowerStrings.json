@@ -1,4 +1,19 @@
 {
+  "reliquary:InNTurnsDeath": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "#b",
+      " 回合后，死亡。"
+    ]
+  },
+  "reliquary:InvincibleTurns": {
+    "NAME": "免疫",
+    "DESCRIPTIONS": [
+      "本回合不会受到伤害。",
+      "接下来 #b",
+      " 个回合不会受到伤害。"
+    ]
+  },
   "reliquary:LesserDuplication": {
     "NAME": "低配复制",
     "DESCRIPTIONS": [
@@ -8,11 +23,18 @@
     ]
   },
  "reliquary:ReduceColorlessCost": {
-    "NAME": "脸色苍白",
+    "NAME": "面色苍白",
     "DESCRIPTIONS": [
       "你打出的下一张无色牌的耗能减少 #b1 点。",
       "打出的下 #b",
       " 张无色牌的耗能减少 #b1 点。"
+    ]
+  },
+  "reliquary:StudyPlus": {
+    "NAME": "考前突击",
+    "DESCRIPTIONS": [
+      "在你的回合结束时，将 #b",
+      " 张 #y预见+ 放入你的抽牌堆。"
     ]
   },
   "reliquary:Taunt": {
@@ -20,6 +42,14 @@
     "DESCRIPTIONS": [
       "直到该敌人死亡，其他敌人不能被选作目标。",
       "有另一名敌人正在 #r@嘲讽@ 我！"
+    ]
+  },
+  "reliquary:Triumph": {
+    "NAME": "完胜",
+    "DESCRIPTIONS": [
+      "#y神格 的伤害增益系数增加 #b",
+      "，现在为 #b",
+      "。"
     ]
   }
 }

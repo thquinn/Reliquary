@@ -2,9 +2,11 @@ package relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.mod.stslib.relics.OnAfterUseCardRelic;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
+import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -13,7 +15,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicEmber extends CustomRelic {
+public class RelicEmber extends CustomRelic implements OnAfterUseCardRelic {
     public static final String ID = "reliquary:Ember";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/ember.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/ember.png");
@@ -46,7 +48,7 @@ public class RelicEmber extends CustomRelic {
     }
 
     @Override
-    public void onPlayCard(AbstractCard c, AbstractMonster m) {
+    public void onAfterUseCard(AbstractCard c, UseCardAction useCardAction) {
         if (c.freeToPlay()) {
             return;
         }
@@ -57,8 +59,8 @@ public class RelicEmber extends CustomRelic {
         if (damage <= 0) {
             return;
         }
-        addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        addToBot(new DamageAction(AbstractDungeon.player, new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
+        addToBot(new RelicAboveCreatureAction(p, this));
+        addToBot(new DamageAction(p, new DamageInfo(p, damage, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
     }
 
     @Override

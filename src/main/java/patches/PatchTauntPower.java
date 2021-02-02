@@ -20,7 +20,7 @@ public class PatchTauntPower {
         if (__instance.target != AbstractCard.CardTarget.ENEMY || m == null || __instance.isInAutoplay) {
             return SpireReturn.Continue();
         }
-        Optional<AbstractMonster> taunter = AbstractDungeon.getMonsters().monsters.stream().filter(mo -> mo.hasPower(TauntPower.POWER_ID)).findAny();
+        Optional<AbstractMonster> taunter = AbstractDungeon.getMonsters().monsters.stream().filter(mo -> !mo.halfDead && mo.hasPower(TauntPower.POWER_ID)).findAny();
         if (taunter.isPresent() && m != taunter.get()) {
             __instance.cantUseMessage = CardCrawlGame.languagePack.getPowerStrings(TauntPower.POWER_ID).DESCRIPTIONS[1];
             return SpireReturn.Return(false);

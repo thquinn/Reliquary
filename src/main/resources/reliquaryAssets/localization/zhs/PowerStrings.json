@@ -2,16 +2,16 @@
   "reliquary:InNTurnsDeath": {
     "NAME": "",
     "DESCRIPTIONS": [
-      "In #b",
-      " turns, die."
+      "#b",
+      " 回合后，死亡。"
     ]
   },
   "reliquary:InvincibleTurns": {
-    "NAME": "Invincible",
+    "NAME": "免疫",
     "DESCRIPTIONS": [
-      "Can't be harmed this turn.",
-      "Can't be harmed for the next #b",
-      " turns."
+      "本回合不会受到伤害。",
+      "接下来 #b",
+      " 个回合不会受到伤害。"
     ]
   },
   "reliquary:LesserDuplication": {
@@ -23,7 +23,7 @@
     ]
   },
  "reliquary:ReduceColorlessCost": {
-    "NAME": "脸色苍白",
+    "NAME": "面色苍白",
     "DESCRIPTIONS": [
       "你打出的下一张无色牌的耗能减少 #b1 点。",
       "打出的下 #b",
@@ -31,10 +31,10 @@
     ]
   },
   "reliquary:StudyPlus": {
-    "NAME": "Cram",
+    "NAME": "考前突击",
     "DESCRIPTIONS": [
-      "At the end of your turn, shuffle #b",
-      " #yInsight+ into your draw pile."
+      "在你的回合结束时，将 #b",
+      " 张 #y预见+ 放入你的抽牌堆。"
     ]
   },
   "reliquary:Taunt": {
@@ -45,11 +45,11 @@
     ]
   },
   "reliquary:Triumph": {
-    "NAME": "Triumph",
+    "NAME": "完胜",
     "DESCRIPTIONS": [
-      "#yDivinity's damage multiplier is increased by #b",
-      ", to #b",
-      "."
+      "#y神格 的伤害增益系数增加 #b",
+      "，现在为 #b",
+      "。"
     ]
   }
 }

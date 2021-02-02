@@ -57,33 +57,33 @@
     ]
   },
   "reliquary:Conveyor": {
-    "NAME": "Conveyor",
-    "FLAVOR": "Takes you where you want to go.",
+    "NAME": "传送带",
+    "FLAVOR": "可以把你带到任何你想去的地方。",
     "DESCRIPTIONS": [
-      "At the start of your turn, #yChannel a type of Orb of which you have #b",
-      " or more #yChanneled."
+      "在你的回合开始时，如果你拥有至少 #b",
+      " 个同种充能球， #y生成 一个该种类的充能球。"
     ]
   },
   "reliquary:Craggleroot": {
-    "NAME": "Craggleroot",
-    "FLAVOR": "This root has seen some hard times. Maybe it will see you through hard times as well?",
+    "NAME": "嶙峋之根",
+    "FLAVOR": "疾风知劲根。",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. The first card you draw each turn costs #b1 more this combat."
+      "回合开始时获得 [E] 。你每回合抽到的第一张牌在本场战斗中的耗能增加 #b1 点。"
     ]
   },
   "reliquary:Crutches": {
-    "NAME": "Crutches",
-    "FLAVOR": "You're not the one that's gonna need these.",
+    "NAME": "拐杖",
+    "FLAVOR": "你不是将要需要它的那个人。",
     "DESCRIPTIONS": [
-      "Whenever you get a #yStatus, enemies lose #b",
-      " #yStrength during their next turn."
+      "每当你获得一张 #y状态 牌，敌人在它们的下个回合失去 #b",
+      " 点 #y力量 。"
     ]
   },
   "reliquary:Dhvaja": {
-    "NAME": "Dhvaja",
-    "FLAVOR": "Victory shall be yours... eventually.",
+    "NAME": "经幢",
+    "FLAVOR": "胜利会是你的......不过要到最后。",
     "DESCRIPTIONS": [
-      "Whenever you exit #yDivinity, #yDivinity's damage multiplier increases by #b1 this combat."
+      "每当你退出 #y神格 ， 本场战斗中你在 #y神格 姿态中所造成伤害的增益系数增加 #b1 。"
     ]
   },
   "reliquary:Ember": {
@@ -112,19 +112,19 @@
     ]
   },
   "reliquary:FerryPass": {
-    "NAME": "Ferry Pass",
-    "FLAVOR": "It reads, \"Enjoy your trip to Lastcel Isle!\"",
+    "NAME": "船票",
+    "FLAVOR": "上面写道，“移舟泊烟渚，日暮客愁新。”",
     "DESCRIPTIONS": [
-      "When you play every unique non #rCurse card in your deck in one combat, lose this and add a #yRare relic to that combat's reward.",
-      "Play all #b",
-      " unique non #rCurse cards in your deck this combat to exchange this for a #yRare relic.",
-      "Play #b",
-      " more unique cards this combat to exchange this for a #yRare relic.",
-      "Play ",
-      ", and ",
-      " and ",
-      " to exchange this for a #yRare relic.",
-      " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]show [#2aecd7]unplayed [#2aecd7]cards [#2aecd7]in [#2aecd7]hand.[]"
+      "一场战斗中，如果你打出了你牌组中每张独一无二（不考虑 #y升级 与否）的非 #r诅咒 牌，失去这件遗物，并在本次战斗奖励中增加一件 #y稀有 遗物。",
+      "本场战斗中，打出你牌组中共 #b",
+      " 张独一无二的非 #r诅咒 牌来用一件 #y稀有 遗物换掉这件遗物。",
+      "本场战斗中，再打出 #b",
+      " 张独一无二的牌来用一件 #y稀有 遗物换掉这件遗物",
+      "打出 ",
+      "，",
+      "和",
+      "来用一件 #y稀有 遗物换掉这件遗物。",
+      " NL [#2aecd7]右击以显示手牌中还未被打出过的牌。[]"
     ]
   },
   "reliquary:Firecrackers": {
@@ -211,11 +211,11 @@
     ]
   },
   "reliquary:NewFriend": {
-    "NAME": "New Friend",
-    "FLAVOR": "This little guy won't stop following you... and boy is he hungry.",
+    "NAME": "新朋友",
+    "FLAVOR": "这个饥肠辘辘的小家伙一直在跟着你。",
     "DESCRIPTIONS": [
-      "Strikes and Defends #yExhaust #b",
-      "% of the time."
+      "打击和防御现在有 #b",
+      "% 几率 #y消耗 。"
     ]
   },
   "reliquary:OuijaBoard": {
@@ -247,8 +247,8 @@
     "NAME": "王子头盔",
     "FLAVOR": "太太太小了，你的头戴不上。如果换成我们来戴，我们会把它做得大很多。",
     "DESCRIPTIONS": [
-      "Double the first X #yBlock you gain each combat, where X is #b",
-      " times the current Act."
+      "每场战斗中，你获得的前X点 #y格挡 将会被翻倍，其中X等于当前幕数的 #b",
+      " 倍。"
     ]
   },
   "reliquary:PurpleTingedLeaf": {
@@ -262,20 +262,20 @@
     ]
   },
   "reliquary:Pushpin": {
-    "NAME": "Pushpin",
-    "FLAVOR": "Sometimes used to solve murders, but the most skilled assassins can use them to commit one.",
+    "NAME": "图钉",
+    "FLAVOR": "有时候被用来侦破谋杀案，但是最娴熟的刺客可以用它们来制造谋杀案。",
     "DESCRIPTIONS": [
-      "The cards in your opening hand #yRetain for the rest of combat."
+      "本场战斗中，你开局的手牌具有 #y保留 。"
     ]
   },
   "reliquary:QuartzCube": {
     "NAME": "石英立方体",
     "FLAVOR": "它看上去像一块从不融化的冰立方，不过也不冰人。",
     "DESCRIPTIONS": [
-      "At the start of each combat with #b",
-      " or more enemies, apply #b",
-      " #yStunned and #b",
-      " #yInvincible to one."
+      "每场战斗开始时，如果至少有 #b",
+      " 名敌人，给予一名敌人 #b",
+      " 层 #y击晕 和 #b",
+      " 层 #y免疫 。"
     ]
   },
   "reliquary:RadioactivePellet": {
@@ -319,33 +319,33 @@
     "NAME": "塑型钢",
     "FLAVOR": "何意绕指柔，化为百炼钢。",
     "DESCRIPTIONS": [
-      "Upon pickup, becomes a copy of a random Common, #bUncommon, #yRare, or #yShop relic you already have."
+      "拾起时，随机变为你拥有的一件普通， #b罕见 ， #y稀有 或 #y商店 遗物的复制。"
     ]
   },
   "reliquary:SharkskinSheath": {
     "NAME": "鲨鱼皮鞘",
     "FLAVOR": "但愿你有一把鲨鱼皮刀放在里面。",
     "DESCRIPTIONS": [
-      "Whenever you end your turn with no cards in hand, draw a card next turn."
+      "如果你在没有手牌的情况下结束回合，下回合抽一张牌。"
     ]
   },
   "reliquary:ShortFuse": {
-    "NAME": "短路熔断器",
+    "NAME": "短颅熔断器",
     "FLAVOR": "可能在任何时刻熔断。",
     "DESCRIPTIONS": [
       "你的 #y闪电 充能球 总是会以生命值最低的敌人为目标。"
     ]
   },
   "reliquary:Sideboard": {
-    "NAME": "Sideboard",
-    "FLAVOR": "A board for you to keep cards... on? In?",
+    "NAME": "备牌板",
+    "FLAVOR": "这板子给你，你可以把卡牌存在它的......上面呢？还是里面呢？",
     "DESCRIPTIONS": [
-      "Chosen card rewards go into a separate pile. You can move cards from that pile to your deck between combats.",
-      "Sideboard",
-      "Add cards from your sideboard into your deck between combats.",
-      " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]toggle [#2aecd7]off.[]",
-      " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]toggle [#2aecd7]on.[]",
-      "Choose a card to add into your deck."
+      "选择的卡牌奖励现在会进入另一个单独的牌堆。战斗外，你可以将卡牌从此牌堆移动到你的牌组。",
+      "备牌板",
+      "战斗外，将卡牌从备牌板移动到你的牌组。",
+      " NL [#2aecd7]右击以关闭。[]",
+      " NL [#2aecd7]右击以打开。[]",
+      "选择一张牌，加入你的牌组。"
     ]
   },
   "reliquary:SilkGlove": {
@@ -356,39 +356,33 @@
     ]
   },
   "reliquary:Solitaire": {
-    "NAME": "Solitaire",
-    "FLAVOR": "You dreamed of it, once. How it crossed over into reality is a mystery.",
+    "NAME": "单粒宝石",
+    "FLAVOR": "你曾经梦见过它。它是怎么跨越梦境来到现实的是个谜。",
     "DESCRIPTIONS": [
-      "You may upgrade #pPurple cards a second time.",
-      "Innate. NL Shuffle a *Beta+ into your draw pile. NL Exhaust.",
-      "Innate. NL At the start of each turn, add a *Smite+ into your hand.",
-      "Retain. NL Enter Divinity. NL Die in !M! turns. NL Exhaust.",
-      "Deal !D! damage. NL Add a *Smite+ into your hand.",
-      "Put a *Miracle+ into your hand at the start of your next X+2 turns. NL Exhaust.",
-      "Shuffle an *Expunger+ with X+1 into your draw pile. NL Exhaust.",
-      "Retain. NL If you are in Wrath, gain !M! Strength this turn, otherwise enter Wrath. NL Exhaust.",
-      "Gain !B! Block. NL Add a *Safety+ into NL your hand.",
-      "Innate. NL At the start of your turn, gain [W] NL and increase this gain by !M!.",
-      "Retain. NL Deal !D! damage !M! times.",
-      "Choose 1 of 3 Attacks of any color and add !M! copies to your hand. NL They cost 0 this turn. NL Exhaust.",
-      "Deal !D! damage. NL If Fatal, Upgrade a random card in your deck twice. NL Exhaust.",
-      "Innate. NL Whenever a card is created during combat, Upgrade it.",
-      "Put !M! cards from your discard pile into your hand and Retain them. NL Enter Calm. NL End your turn.",
-      "Choose a card in your draw pile. NL Play the chosen card !M! times and exhaust it. NL Exhaust.",
-      "Deal !D! damage. NL Shuffle a NL *Through *Violence+ into your draw pile.",
-      "Retain. NL Deal !D! damage. NL When Retained, lower its cost by !M! this combat.",
-      "Scry !M!. NL Draw cards until your hand is full. NL Exhaust.",
-      "At the end of your turn, shuffle an *Insight+ into your draw pile.",
-      "Gain !B! Block. NL The next Attack you play costs 0 and deals !M! additional damage.",
-      "Retain. NL Enter Calm.",
-      "Next turn, draw !M! card. Take an extra turn after this one. NL End your turn. NL Exhaust.",
-      "Retain. NL Gain !M! Mantra. When Retained, increase Mantra gained by %d (max %d)."
-    ],
-    "NOTE_FOR_TRANSLATORS": [
-      "YOU DON'T HAVE TO TRANSLATE THESE NOTES, and you can delete them when you've read them.",
-      "These are second upgrades, so all but the first string are slight variants of Watcher cards.",
-      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicSolitaire.java",
-      "to see which string corresponds to which Watcher card."
+      " #p紫色 牌可以被升级两次。",
+      "固有 。 NL 将一张 *贝塔+ 放入你的抽牌堆中。 NL 消耗 。",
+      "固有 。 NL 在每回合开始时，将一张 *惩恶+ 加入你的手牌。",
+      "保留 。 NL 进入 神格 。 NL !M! 回合后死亡。 NL 消耗 。",
+      "造成 !D! 点伤害。 NL 将一张 *惩恶+ 加入你的手牌。",
+      "在你的下X+2个回合开始时，增加一张 *奇迹+ 到你的手牌。 消耗 。",
+      "将一张X数值+1的 *灭除之刃+ 放入你的抽牌堆中。 NL 消耗 。",
+      "保留 。 NL 愤怒 ：本回合获得 !M! 点 力量。 NL 否则，进入 愤怒 。 NL 消耗 。",
+      "获得 !B! 点 格挡 。 NL 将一张 *平安+ 加入你的手牌。",
+      "固有。 NL 在你的回合开始时获得 [W] ，每回合增加 !M! 点。",
+      "保留 。 NL 造成 !D! 点 伤害 !M! 次。",
+      "从3张任意颜色的攻击牌中选择1张，将它的 !M! 份复制加入你的手牌。 NL 这些牌在本回合耗能变为0。 NL 消耗 。",
+      "造成 !D! 点伤害。 NL 斩杀 时， 升级 你牌组中的一张随机牌两次。 NL 消耗 。",
+      "固有 。 NL 所有在战斗中临时增加的牌将被 升级 。",
+      "将弃牌堆中的 !M! 张牌放入你的手牌，并将它们 保留 。 NL 进入 平静 。 NL 结束你的回合。",
+      "选择你抽牌堆中的一张牌。 NL 将这张牌打出 !M! 次然后 消耗 。 NL 消耗 。",
+      "造成 !D! 点伤害。 NL 在你的抽牌堆中加入1张 *以暴易暴+ 。",
+      "保留 。 NL 造成 !D! 点伤害。 NL 每当这张牌被 保留 时，将其在本场战斗中的耗能减少 !M! 。",
+      "预见 !M! 。 NL 抽牌直到将手牌抽满。 NL 消耗 。", 
+      "在你的回合结束时，在你的抽牌堆中加入一张 *洞见+ 。",
+      "获得 !B! 点 格挡 。 NL 你打出的下一张攻击牌耗能变为0且额外造成 !M! 点伤害。",
+      "保留 。 NL 进入 平静 。",
+      "在下一回合多抽 !M! 张牌。在本回合结束后，额外获得一回合。 NL 结束你的回合。 NL 消耗 。",
+      "保留 。 NL 获得 !M! 层 真言 。 每当这张牌被保留时，将其在本场战斗的 真言 获得量增加 %d 点（最多 %d 点）。"
     ]
   },
   "reliquary:Stiletto": {
@@ -403,7 +397,7 @@
     "NAME": "铜锣",
     "FLAVOR": "轰。",
     "DESCRIPTIONS": [
-      "Whenever you start your turn with #yBlock, you and ALL enemies gain #b1 #yStrength."
+      "每当你在有 #y格挡 的情况下开始回合，你和所有敌人获得 #b1 点 #y力量 。"
     ]
   },
   "reliquary:TatteredRug": {
@@ -426,7 +420,7 @@
     "NAME": "三叉戟的头",
     "FLAVOR": "它是著名的波浪王所持武器的一部分。",
     "DESCRIPTIONS": [
-      "每场战斗中，你打出的第一张以单个敌人为目标的牌会向所有敌人打出。"
+      "如果有多个敌人，你打出的以单个敌人为目标的牌会向所有敌人打出（每场战斗限一次）。"
     ]
   },
   "reliquary:TuningFork": {
@@ -442,8 +436,8 @@
     "FLAVOR": "如果你喝下它还能睡着，那还有什么意义呢？",
     "DESCRIPTIONS": [
       "每场战斗中，你打出的第一张无色牌的耗能减少 #b1 点。",
-      "The first #b",
-      " Colorless cards you play each combat cost #b1 less."
+      "每场战斗中，你打出的前 #b",
+      " 张无色牌的耗能减少 #b1 点。"
     ]
   },
   "reliquary:WritOfMandamus": {

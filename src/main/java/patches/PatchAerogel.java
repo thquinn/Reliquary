@@ -4,6 +4,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireField;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import relics.RelicAerogel;
 
@@ -40,6 +41,17 @@ public class PatchAerogel {
             if (aerogel != null) {
                 aerogel.afterShuffle();
             }
+        }
+    }
+
+    @SpirePatch(
+            clz= AbstractPlayer.class,
+            method="bottledCardUpgradeCheck"
+    )
+    public static class BottledCardUpgradeCheck {
+        public static void Postfix(AbstractPlayer __instance, AbstractCard c) {
+            if (PatchAerogelField.inAerogel.get(c) && __instance.hasRelic(RelicAerogel.ID))
+                ((RelicAerogel) __instance.getRelic(RelicAerogel.ID)).setDescriptionAfterLoading();
         }
     }
 }

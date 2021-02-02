@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
 public class ReduceColorlessCostPower extends AbstractPower {
@@ -21,6 +20,7 @@ public class ReduceColorlessCostPower extends AbstractPower {
     public ReduceColorlessCostPower(AbstractCreature owner, int amount) {
         name = powerStrings.NAME;
         ID = POWER_ID;
+        type = PowerType.BUFF;
         region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
         region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.owner = owner;
@@ -39,9 +39,14 @@ public class ReduceColorlessCostPower extends AbstractPower {
     @Override
     public void onPlayCard(AbstractCard card, AbstractMonster m) {
         if (card.color == AbstractCard.CardColor.COLORLESS && card.costForTurn > 0) {
+            card.setCostForTurn(card.costForTurn - 1);
+            flash();
             amount--;
-            if (amount == 0)
+            if (amount <= 0) {
                 addToBot(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
+            } else {
+                updateDescription();
+            }
         }
     }
 }

@@ -1,5 +1,7 @@
 package actions;
 
+import basemod.helpers.CardModifierManager;
+import cardmods.CardModShuffleBackOnce;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.utility.NewQueueCardAction;
 import com.megacrit.cardcrawl.actions.utility.UnlimboAction;
@@ -9,6 +11,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import relics.RelicOuijaBoard;
 
 public class OuijaBoardAction extends AbstractGameAction {
@@ -53,11 +56,9 @@ public class OuijaBoardAction extends AbstractGameAction {
 
     void PlayToDrawPile(AbstractCard card) {
         AbstractPlayer p = AbstractDungeon.player;
-        card.setCostForTurn(card.costForTurn + costChange);
-        p.loseEnergy(card.costForTurn);
         p.discardPile.removeCard(card);
         p.limbo.addToBottom(card);
-        card.shuffleBackIntoDrawPile = true;
+        CardModifierManager.addModifier(card, new CardModShuffleBackOnce());
         card.current_y = -200.0F * Settings.scale;
         card.target_x = Settings.WIDTH / 2.0F + 200.0F * Settings.xScale;
         card.target_y = Settings.HEIGHT / 2.0F;
@@ -66,7 +67,15 @@ public class OuijaBoardAction extends AbstractGameAction {
         card.drawScale = 0.12F;
         card.targetDrawScale = 0.75F;
         card.applyPowers();
-        addToTop(new NewQueueCardAction(card, true, false, true));
+        if (card.cost == -1) {
+            card.energyOnUse = EnergyPanel.totalCount - 1;
+            p.loseEnergy(EnergyPanel.totalCount);
+            addToTop(new OuijaBoardQueueXAction(card));
+        } else {
+            card.setCostForTurn(card.costForTurn + costChange);
+            p.loseEnergy(card.costForTurn);
+            addToTop(new NewQueueCardAction(card, true, false, true));
+        }
         addToTop(new UnlimboAction(card));
     }
 }

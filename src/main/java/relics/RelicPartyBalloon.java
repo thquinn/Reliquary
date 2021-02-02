@@ -3,6 +3,7 @@ package relics;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
@@ -18,7 +19,9 @@ public class RelicPartyBalloon extends CustomRelic {
 
     @Override
     public void atBattleStart() {
-        addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+        if (AbstractDungeon.player.drawPile.group.stream().anyMatch(c -> c.type == AbstractCard.CardType.POWER)) {
+            addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+        }
     }
 
     // implemented in PatchPartyBalloon

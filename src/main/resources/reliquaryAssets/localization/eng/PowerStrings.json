@@ -1,4 +1,19 @@
 {
+  "reliquary:InNTurnsDeath": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "In #b",
+      " turns, die."
+    ]
+  },
+  "reliquary:InvincibleTurns": {
+    "NAME": "Invincible",
+    "DESCRIPTIONS": [
+      "Can't be harmed this turn.",
+      "Can't be harmed for the next #b",
+      " turns."
+    ]
+  },
   "reliquary:LesserDuplication": {
     "NAME": "Lesser Duplication",
     "DESCRIPTIONS": [
@@ -15,11 +30,26 @@
       " Colorless cards you play cost #b1 less."
     ]
   },
+  "reliquary:StudyPlus": {
+    "NAME": "Cram",
+    "DESCRIPTIONS": [
+      "At the end of your turn, shuffle #b",
+      " #yInsight+ into your draw pile."
+    ]
+  },
   "reliquary:Taunt": {
     "NAME": "Taunt",
     "DESCRIPTIONS": [
       "Other enemies can't be targeted until this enemy dies.",
       "Another enemy is #r@Taunting@ me!"
+    ]
+  },
+  "reliquary:Triumph": {
+    "NAME": "Triumph",
+    "DESCRIPTIONS": [
+      "#yDivinity's damage multiplier is increased by #b",
+      ", to #b",
+      "."
     ]
   }
 }

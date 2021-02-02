@@ -50,6 +50,7 @@ public class RelicOuijaBoard extends CustomRelic implements ClickableRelic {
             AbstractDungeon.effectList.add(new ThoughtBubble(p.dialogX, p.dialogY, 3.0F, DESCRIPTIONS[p.discardPile.isEmpty() ? 2 : 3], true));
             return;
         }
+        // this can probably be replaced with a SelectCardsAction
         addToBot(new OuijaBoardAction(1));
         usedThisTurn = true;
         stopPulse();
@@ -63,6 +64,13 @@ public class RelicOuijaBoard extends CustomRelic implements ClickableRelic {
         }
         validTargets.clear();
         for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
+            if (c.cost == -1 && EnergyPanel.totalCount < 1) {
+                // Only allow X cost cards to be played with 1 or more energy, i.e. X >= 0.
+                continue;
+            }
+            if (!c.canUse(AbstractDungeon.player, null) || !c.hasEnoughEnergy()) {
+                continue;
+            }
             if (c.costForTurn + 1 <= EnergyPanel.totalCount) {
                 validTargets.addToBottom(c);
             }

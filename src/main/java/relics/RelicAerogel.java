@@ -25,7 +25,7 @@ public class RelicAerogel extends CustomRelic implements CustomBottleRelic, Cust
     private boolean cardSelected = true;
 
     public RelicAerogel() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.MAGICAL);
     }
 
     @Override

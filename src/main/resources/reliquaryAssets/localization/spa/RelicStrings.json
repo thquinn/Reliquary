@@ -1,32 +1,32 @@
 {
   "reliquary:Aerogel": {
     "NAME": "Aerogel",
-    "FLAVOR": "Weighs next to nothing, and makes a great insulator against bad luck.",
+    "FLAVOR": "No pesa casi nada y es un buen aislante contra la mala suerte.",
     "DESCRIPTIONS": [
-      "Upon pickup, choose a card. Whenever you shuffle your draw pile with this card in it, it will end up on top.",
-      "Whenever you shuffle your draw pile with the chosen ",
-      " in it, it will end up on top."
+      "Al recoger, escoge una carta. Siempre que barajes tu pila de extracción con esta carta, estará en tope.",
+      "Siempre que barajes tu pila de extracción con ",
+      ", estará en tope."
     ]
   },
   "reliquary:BallBearing": {
-    "NAME": "Ball Bearing",
-    "FLAVOR": "Keeps things running smooth.",
+    "NAME": "Rodamientos de Bolas",
+    "FLAVOR": "Mantiene todo funcionando fluidamente.",
     "DESCRIPTIONS": [
-      "Whenever you shuffle your draw pile, shuffle in a #yFlash #yof #ySteel or #yFinesse, chosen randomly."
+      "Siempre que barajes tu pila de extracción, añade un #yDestello #yde #yAcero o #ySutileza, elegido al azar."
     ]
   },
   "reliquary:BoilingFlask": {
-    "NAME": "Boiling Flask",
-    "FLAVOR": "A round-bottom boiling flask, five thousand milliliters!",
+    "NAME": "Frasco para Hervir",
+    "FLAVOR": "¡Un frasco redondo para hervir de cinco mil mililitros!",
     "DESCRIPTIONS": [
-      "At the start of each combat, if your potion slots are full, choose a #yVapor card and add it into your hand."
+      "Al comienzo de cada combate, si tus espacios para pociones son llenos, elige una carta de #yVapor y añádela a tu mano."
     ]
   },
   "reliquary:Bookmark": {
-    "NAME": "Bookmark",
-    "FLAVOR": "\"Now, where was I...\"",
+    "NAME": "Marcapáginas",
+    "FLAVOR": "\"Entonces, ¿Dónde estaba yo...?\"",
     "DESCRIPTIONS": [
-      "At the start of each combat, draw an extra card for each #yInnate card in your deck."
+      "Al comienzo de cada combate, draw an extra card for each #yInnate card in your deck."
     ]
   },
   "reliquary:Boomerang": {

@@ -28,9 +28,7 @@ public class RelicIridiumChain extends CustomRelic {
             return;
         AbstractCard copy = c.makeStatEquivalentCopy();
         CardModifierManager.addModifier(copy, new CardModIncreaseCost(1));
-        if (!copy.isEthereal) {
-            CardModifierManager.addModifier(copy, new CardModEthereal());
-        }
+        CardModifierManager.addModifier(copy, new CardModEthereal());
         copy.initializeDescription();
         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         addToBot(new MakeTempCardInHandAction(copy));

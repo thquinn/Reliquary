@@ -53,7 +53,7 @@ public class PatchSolitaire {
                                   __instance.cardID.equals(BecomeAlmighty.ID) ||
                                   __instance.cardID.equals(FameAndFortune.ID) ||
                                   __instance.cardID.equals(LiveForever.ID);
-            if (watcherCard && __instance.timesUpgraded < 2 && AbstractDungeon.player.hasRelic(RelicSolitaire.ID)) {
+            if (watcherCard && __instance.timesUpgraded < 2 && AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(RelicSolitaire.ID)) {
                 return SpireReturn.Return(true);
             }
             return SpireReturn.Continue();
@@ -164,6 +164,9 @@ public class PatchSolitaire {
     @SpirePatch(clz=WreathOfFlame.class, method="upgrade")
     public static class PatchSolitaireUpgrade {
         public static SpireReturn Prefix(AbstractCard __instance) {
+            if (AbstractDungeon.player == null) {
+                return SpireReturn.Continue();
+            }
             RelicSolitaire solitaire = (RelicSolitaire) AbstractDungeon.player.getRelic(RelicSolitaire.ID);
             if (__instance.timesUpgraded == 1 && solitaire != null) {
                 solitaire.upgradeCard(__instance);

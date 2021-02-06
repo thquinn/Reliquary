@@ -8,6 +8,7 @@ import util.TextureLoader;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 import java.util.stream.Collectors;
 
 public class RelicRedPaperclip extends CustomRelic {
@@ -31,7 +32,7 @@ public class RelicRedPaperclip extends CustomRelic {
     @Override
     public void onEquip() {
         List<AbstractRelic> removables = AbstractDungeon.player.relics.stream().filter(r -> r.tier == RelicTier.COMMON || r.tier == RelicTier.UNCOMMON).collect(Collectors.toList());
-        Collections.shuffle(removables);
+        Collections.shuffle(removables, new Random(AbstractDungeon.miscRng.randomLong()));
         toRemove = removables.subList(0, Math.min(removables.size(), REPLACES));
         AbstractDungeon.player.energy.energyMaster += 1;
     }

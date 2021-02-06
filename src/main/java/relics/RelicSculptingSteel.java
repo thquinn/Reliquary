@@ -29,7 +29,7 @@ public class RelicSculptingSteel extends CustomRelic {
         if (copyables.isEmpty()) {
             return;
         }
-        Collections.shuffle(copyables);
+        Collections.shuffle(copyables, new Random(AbstractDungeon.miscRng.randomLong()));
         AbstractRelic copy = copyables.get(0).makeCopy();
         copy.instantObtain();
         copy.flash();

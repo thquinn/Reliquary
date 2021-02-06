@@ -4,17 +4,18 @@ import basemod.ModPanel;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import cards.colorless.vapor.CardVaporAmbrosia;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.localization.CardStrings;
-import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.localization.RelicStrings;
-import com.megacrit.cardcrawl.localization.UIStrings;
+import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import powers.*;
 import relics.*;
+
+import java.nio.charset.StandardCharsets;
 
 @SpireInitializer
 public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber, EditStringsSubscriber, PostInitializeSubscriber, PostUpdateSubscriber {
@@ -145,7 +146,17 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
 
     @Override
     public void receiveEditKeywords() {
-        BaseMod.addKeyword(new String[]{ "vapor" },"Vapors are cards with minor effects derived from your potions. They Retain and Exhaust.");
+        String path = "reliquaryAssets/localization/eng/KeywordStrings.json";
+
+        Gson gson = new Gson();
+        String json = Gdx.files.internal(path).readString(String.valueOf(StandardCharsets.UTF_8));
+        Keyword[] keywords = gson.fromJson(json, Keyword[].class);
+
+        if (keywords != null) {
+            for (Keyword keyword : keywords) {
+                BaseMod.addKeyword(keyword.NAMES, keyword.DESCRIPTION);
+            }
+        }
     }
 
     @Override

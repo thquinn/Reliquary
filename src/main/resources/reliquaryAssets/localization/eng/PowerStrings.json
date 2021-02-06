@@ -4,6 +4,11 @@
     "DESCRIPTIONS": [
       "In #b",
       " turns, die."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "This is an alternate version of the Watcher's Blasphemy debuff.",
+      "Instead of killing you at the end of the current turn (1 turn), it kills you in N turns.",
+      "It takes the name ('Blasphemer,' in English) from the existing debuff, so you don't need to translate that."
     ]
   },
   "reliquary:InvincibleTurns": {

@@ -60,7 +60,7 @@ public class RelicEmber extends CustomRelic implements OnAfterUseCardRelic {
             return;
         }
         addToBot(new RelicAboveCreatureAction(p, this));
-        addToBot(new DamageAction(p, new DamageInfo(p, damage, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
+        addToBot(new DamageAction(p, new DamageInfo(null, damage, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
     }
 
     @Override

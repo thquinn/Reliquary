@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import powers.*;
 import relics.*;
+import util.ReliquaryLogger;
 
 import java.nio.charset.StandardCharsets;
 

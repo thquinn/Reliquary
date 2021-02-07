@@ -26,34 +26,34 @@
     "NAME": "Marcapáginas",
     "FLAVOR": "\"Entonces, ¿Dónde estaba yo...?\"",
     "DESCRIPTIONS": [
-      "Al comienzo de cada combate, draw an extra card for each #yInnate card in your deck."
+      "Al comienzo de cada combate, roba una carta adicional por cada carta #yInnata en tu mazo."
     ]
   },
   "reliquary:Boomerang": {
-    "NAME": "Boomerang",
-    "FLAVOR": "If you love something, let it go. Or just frickin' chuck it.",
+    "NAME": "Búmeran",
+    "FLAVOR": "Si amas algo, déjalo ir. O simplemente lánzalo.",
     "DESCRIPTIONS": [
-      "Put the first card you play each turn on top of your draw pile.",
+      "La primera carta jugada cada turno se colocará encima de pila de robado.",
       "",
       "",
-      "Put the fourth card you play each turn on top of your draw pile."
+      "La cuarta carta jugada cada turno se colocará encima de pila de robado."
     ]
   },
   "reliquary:BrokenClock": {
-    "NAME": "Broken Clock",
-    "FLAVOR": "This one is only wrong twice a day, somehow, and right the rest of the time.",
+    "NAME": "Reloj Roto",
+    "FLAVOR": "De algún modo da la hora equivocada dos veces al día, y da bien la hora el resto.",
     "DESCRIPTIONS": [
-      "Each combat starts with two player turns, then two enemy turns."
+      "Cada combate comienza con dos turnos del jugador, entonces dos turnos enemigos."
     ]
   },
   "reliquary:Buckler": {
-    "NAME": "Buckler",
-    "FLAVOR": "Emblazoned with the famous cygnet signet of Merek.",
+    "NAME": "Broquel",
+    "FLAVOR": "Engalanado con el famoso sello del cisne de Mérek.",
     "DESCRIPTIONS": [
-      "The next #b",
-      " times you play an upgradeable card that's in your deck, #yUpgrade it permanently.",
-      "The next time you play an upgradeable card that's in your deck, #yUpgrade it permanently.",
-      "This relic has been used up."
+      "Las próximas #b",
+      " veces que juegas una carta mejorable en tu mazo, #yMejórala permanentemente.",
+      "Las próxima vez que juegas una carta mejorable en tu mazo, #yMejórala permanentemente",
+      "Esta reliquia se ha usado por completo."
     ]
   },
   "reliquary:Conveyor": {

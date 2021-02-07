@@ -410,7 +410,7 @@
     "NOTE_FOR_TRANSLATORS": [
       "These are second upgrades, so all but the first string are slight variants of Watcher cards.",
       "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicSolitaire.java",
-      "to see which string corresponds to which Watcher card."
+      "to see which string corresponds to which Watcher card. Indices start at 0!"
     ]
   },
   "reliquary:Stiletto": {

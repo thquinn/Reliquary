@@ -1,0 +1,208 @@
+{
+  "reliquary:VaporAmbrosia": {
+    "NAME": "Божественные испарения",
+    "DESCRIPTION": "Оставляется. NL Даёт !M! Мантры. NL Сжигается.",
+    "NOTE_FOR_TRANSLATORS": "Each of these 'Vapor' cards corresponds to one of the 42 potions in the game."
+  },
+  "reliquary:VaporAncientPotion": {
+    "NAME": "Древние испарения",
+    "DESCRIPTION": "Оставляется. NL Снимает 1 Артефакт у врага. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Снимает 1 Артефакт у ВСЕХ врагов. NL Сжигается."
+  },
+  "reliquary:VaporAttackPotion": {
+    "NAME": "Бешеные испарения",
+    "DESCRIPTION": "Оставляется. NL Добавляет случайную Атаку в руку. Она стоит 0 в этом ходу. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Добавляет !M! копий случайной Атаки в руку. Они стоят 0 в этом ходу. NL Сжигается."
+  },
+  "reliquary:VaporBlessingOfTheForge": {
+    "NAME": "Закаляющие испарения",
+    "DESCRIPTION": "Оставляется. NL Улучшает случайную карту в руке до конца боя. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Улучшается половину карт в руке до конца боя, случайно. NL Сжигается."
+  },
+  "reliquary:VaporBlockPotion": {
+    "NAME": "Защищающие испарения",
+    "DESCRIPTION": "Оставляется. NL Даёт !B! Защиты. NL Сжигается."
+  },
+  "reliquary:VaporBloodPotion": {
+    "NAME": "Кровавые испарения",
+    "DESCRIPTION": "Оставляется. NL Восстанавливает !M!% от NL Макс ОЗ. NL Сжигается."
+  },
+  "reliquary:VaporBottledMiracle": {
+    "NAME": "Чудесные испарения",
+    "DESCRIPTION": "Оставляется. NL Добавляет *Чудо в руку. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Добавляет *Чудо+ в руку. NL Сжигается."
+  },
+  "reliquary:VaporColorlessPotion": {
+    "NAME": "Бесцветные испарения",
+    "DESCRIPTION": "Оставляется. NL Добавляет случайную Бесцветную карту в руку. Она стоит 0 в этому ходу. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Добавляет !M! копий случайной Бесцветной карты в руку. Они стоят 0 в этом ходу. NL Сжигается."
+  },
+  "reliquary:VaporCultistPotion": {
+    "NAME": "Ритуальные испарения",
+    "DESCRIPTION": "Оставляется. NL Даёт 1 Ритуала и отнимает !M! Силы."
+  },
+  "reliquary:VaporCunningPotion": {
+    "NAME": "Обманчивые испарения",
+    "DESCRIPTION": "Оставляется. NL Добавляется *Заточку+ в руку. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Добавляется !M! *Заточку+ в руку. NL Сжигается."
+  },
+  "reliquary:VaporDexterityPotion": {
+    "NAME": "Ловкие испарения",
+    "DESCRIPTION": "Оставляется. NL Даёт !M! Ловкости."
+  },
+  "reliquary:VaporDistilledChaos": {
+    "NAME": "Хаотичные испарения",
+    "DESCRIPTION": "Оставляется. NL Вы разыгрываете самую верхную карту со стопки добора. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Вы разыгрываете !M! карты с верха стопки добора. NL Сжигается."
+  },
+  "reliquary:VaporDuplicationPotion": {
+    "NAME": "Парообразные испарения",
+    "DESCRIPTION": "Оставляется. NL След. карта со стоимостью 0 или 1, разыгранная в этом ходу, разгрывается дважды. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL След. !M! карты со стоимостью 0 или 1, разыгранная в этом ходу, разгрывается дважды. NL Сжигается."
+  },
+  "reliquary:VaporElixir": {
+    "NAME": "Очищающие испарения",
+    "DESCRIPTION": "Оставляется. NL Сжигает случайный Статус или Проклятие в руке. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Сжигает ВСЕ Статусы и Проклятия в руке. NL Сжигается."
+  },
+  "reliquary:VaporEnergyPotion": {
+    "NAME": "Энергичные испарения",
+    "DESCRIPTION": "Оставляется. NL Даёт [W]. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Даёт [E] [E]. NL Сжигается."
+  },
+  "reliquary:VaporEntropicBrew": {
+    "NAME": "Энтропийные испарения",
+    "DESCRIPTION": "Оставляется. NL Заменяет случайное зелье со слота для зельев на новое. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Заменяет все зелья со слота для зельев на новые. NL Сжигается."
+  },
+  "reliquary:VaporEssenceOfDarkness": {
+    "NAME": "Тёмные испарения",
+    "DESCRIPTION": "Оставляется. NL Активирует пассивные эффект всех Сфер Тьмы. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Активирует пассивные эффект всех Сфер Тьмы !M! раз. NL Сжигается."
+  },
+  "reliquary:VaporEssenceOfSteel": {
+    "NAME": "Стальные испарения",
+    "DESCRIPTION": "Оставляется. NL Даёт !M! Панциря."
+  },
+  "reliquary:VaporExplosivePotion": {
+    "NAME": "Взрывные испарения",
+    "DESCRIPTION": "Оставляется. NL Наносит !D! урона ВСЕМ врагам. NL Сжигается."
+  },
+  "reliquary:VaporFairyInABottle": {
+    "NAME": "Буферные испарения",
+    "DESCRIPTION": "Оставляется. NL Предотвращает след. потерю ОЗ. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Предотвращает !M! след. потери ОЗ. NL Сжигается."
+  },
+  "reliquary:VaporFearPotion": {
+    "NAME": "Ужасающие испарения",
+    "DESCRIPTION": "Оставляется. NL Накладывает !M! Уязвимости. NL Сжигается."
+  },
+  "reliquary:VaporFirePotion": {
+    "NAME": "Огненные испарения",
+    "DESCRIPTION": "Оставляется. NL Наносит !D! урона. NL Сжигается."
+  },
+  "reliquary:VaporFlexPotion": {
+    "NAME": "Богатырские испарения",
+    "DESCRIPTION": "Оставляется. NL Даёт !M! Силы. NL Забирает !M! Силы в конце хода. NL Сжигается."
+  },
+  "reliquary:VaporFocusPotion": {
+    "NAME": "Сфокусированные испарения",
+    "DESCRIPTION": "Оставляется. NL Даёт !M! Фокуса. NL Сжигается."
+  },
+  "reliquary:VaporFruitJuice": {
+    "NAME": "Фруктовые испарения",
+    "DESCRIPTION": "Оставляется. NL Даёт !M! Макс. ОЗ. NL Сжигается."
+  },
+  "reliquary:VaporGamblersBrew": {
+    "NAME": "Настраивающие испарения",
+    "DESCRIPTION": "Оставляется. NL Сбрасывает случайную карту в руке, затем берёт одну карту из стопки добора. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Сбрасывает все карты в руке, берёт столько же карт из стопки добора, сколько сбросилось. NL Сжигается."
+  },
+  "reliquary:VaporGhostInAJar": {
+    "NAME": "Призрачные испарения",
+    "DESCRIPTION": "Оставляется. NL !M!% шанс получить 1 Призрачности. NL Сжигается."
+  },
+  "reliquary:VaporHeartOfIron": {
+    "NAME": "Сияющие испарения",
+    "DESCRIPTION": "Оставляется. NL Даёт !M! Металлизации."
+  },
+  "reliquary:VaporLiquidBronze": {
+    "NAME": "Колющие испарения",
+    "DESCRIPTION": "Оставляется. NL Даёт !M! Шипов."
+  },
+  "reliquary:VaporLiquidMemories": {
+    "NAME": "Памятные испарения",
+    "DESCRIPTION": "Оставляется. NL Положите случайную карту из стопки сброса в руку. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Положите !M! случайных карт из стопки сброса в руку. NL Сжигается."
+  },
+  "reliquary:VaporPoisonPotion": {
+    "NAME": "Ядовитые испарения",
+    "DESCRIPTION": "Оставляется. NL Накладывает !M! Яда. NL Сжигается."
+  },
+  "reliquary:VaporPotionOfCapacity": {
+    "NAME": "Ёмкостные испарения",
+    "DESCRIPTION": "Оставляется. NL Даёт 1 слот для сфер.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Даёт !M! слота для сфер."
+  },
+  "reliquary:VaporPowerPotion": {
+    "NAME": "Талантливы испарения",
+    "DESCRIPTION": "Оставляется. NL Добавляет случайный Талант в руку. Он стоит 0 в этому ходу. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляет. NL Добавляет !M! копий случайного Таланта в руку. Они стоят 0 в этом ходу. NL Сжигается."
+  },
+  "reliquary:VaporRegenPotion": {
+    "NAME": "Оздоровительные испарения",
+    "DESCRIPTION": "Оставляется. NL Даёт !M! Регенерации."
+  },
+  "reliquary:VaporSkillPotion": {
+    "NAME": "Мастерские испарения",
+    "DESCRIPTION": "Оставляется. NL Добавляет случайный Навык в руку. Он стоит 0 в этому ходу. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Добавляет !M! копий случайного Навыка в руку. Они стоят 0 в этом ходу. NL Сжигается."
+  },
+  "reliquary:VaporSmokeBomb": {
+    "NAME": "Дымовые испарения",
+    "DESCRIPTION": "Оставляется. NL Тратит !M! Золота для побега из боя, не получая наград. Не работает на боссов. NL Сжигается.",
+    "EXTENDED_DESCRIPTION": [
+      "У меня недостаточно Золота, чтобы отвлечь их",
+      "Я окружен",
+      "Это слишком мощно!",
+      "Они слишком мощные!"
+    ]
+  },
+  "reliquary:VaporSneckoOil": {
+    "NAME": "Шипящие испарения",
+    "DESCRIPTION": "Оставляется. NL Половина карт в руке получают случайную стоимость. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL ВСЕ карты в руке получают случайную стоимость. NL Сжигается."
+  },
+  "reliquary:VaporSpeedPotion": {
+    "NAME": "Проворные испарения",
+    "DESCRIPTION": "Оставляется. NL Даёт !M! Ловкости. NL Забирает !M! Ловкости в конце хода. NL Сжигается."
+  },
+  "reliquary:VaporStancePotion": {
+    "NAME": "Стойкие испарения",
+    "DESCRIPTION": "Оставляется. NL Переводит случайно в Спокойствие или Гнев, если вы не в Стойке. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Переводит в Гнев, если вы в Спокойствие. Переводит в Спокойствие, если вы в Гневе. NL Сжигается.",
+    "EXTENDED_DESCRIPTION": [
+      "Я не могу сделать это, пока я в Стойке.",
+      "Я должен быть в Спокойствие или в Гневе, чтобы сделать это."
+    ]
+  },
+  "reliquary:VaporStrengthPotion": {
+    "NAME": "Сильные испарения",
+    "DESCRIPTION": "Оставляется. NL Даёт !M! Силы."
+  },
+  "reliquary:VaporSwiftPotion": {
+    "NAME": "Скоростные испарения",
+    "DESCRIPTION": "Оставляется. NL Вы берёте 1 карту. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Вы берёте !M! карты. NL Сжигается."
+  },
+  "reliquary:VaporUnknownPotion": {
+    "NAME": "Неизвестные испарения",
+    "DESCRIPTION": "Оставляется. NL Добавляет случайное Испарение в руку. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Добавляет !M! случайных Испарения в руку. NL Сжигается.",
+    "NOTE_FOR_TRANSLATORS": "This Vapor is generated by potions from other mods."
+  },
+  "reliquary:VaporWeakPotion": {
+    "NAME": "Слабые испарения",
+    "DESCRIPTION": "Оставляется. NL Накладывает !M! Слабости. NL Сжигается."
+  }
+}

@@ -146,7 +146,14 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
 
     @Override
     public void receiveEditKeywords() {
-        String path = "reliquaryAssets/localization/eng/KeywordStrings.json";
+        String path;
+        if (Settings.language == Settings.GameLanguage.RUS) {
+            path = "reliquaryAssets/localization/rus/KeywordStrings.json";
+        } else if (Settings.language == Settings.GameLanguage.ZHS) {
+            path = "reliquaryAssets/localization/zhs/KeywordStrings.json";
+        } else {
+            path = "reliquaryAssets/localization/eng/KeywordStrings.json";
+        }
 
         Gson gson = new Gson();
         String json = Gdx.files.internal(path).readString(String.valueOf(StandardCharsets.UTF_8));
@@ -161,7 +168,12 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
 
     @Override
     public void receiveEditStrings() {
-        if (Settings.language == Settings.GameLanguage.ZHS) {
+        if (Settings.language == Settings.GameLanguage.RUS) {
+            BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/rus/CardStrings.json");
+            BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/rus/PowerStrings.json");
+            BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/rus/RelicStrings.json");
+            BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/rus/UIStrings.json");
+        } else if (Settings.language == Settings.GameLanguage.ZHS) {
             BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/zhs/CardStrings.json");
             BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/zhs/PowerStrings.json");
             BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/zhs/RelicStrings.json");

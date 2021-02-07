@@ -60,7 +60,7 @@
     "NAME": "Конвейер",
     "FLAVOR": "Бери с собой куда захочешь.",
     "DESCRIPTIONS": [
-      "В начале вашего хода, #yЗаряжает тот тип сфер, которых #yЗаряжено #b",
+      "В начале вашего хода, #yЗаряжает тот тип сфер, которых Заряжено #b",
       " или более."
     ],
     "NOTE_FOR_TRANSLATORS": "This is a conveyor block from the game Infinifactory."

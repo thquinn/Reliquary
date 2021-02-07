@@ -305,7 +305,8 @@
     "FLAVOR": "Who wants the horns?",
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. Whenever you #yAttack a single enemy, other enemies can't be targeted until it dies."
-    ]
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a matador's cape."
   },
   "reliquary:RedPaperclip": {
     "NAME": "Red Paperclip",

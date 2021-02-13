@@ -509,6 +509,17 @@
       " damage to it."
     ]
   },
+  "reliquary:Vitrine": {
+    "NAME": "Vitrine",
+    "FLAVOR": "The perfect place to present your most prized possessions.",
+    "DESCRIPTIONS": [
+      "Upon pickup, remove a card from your deck. You may choose to shuffle it into your draw pile any time during combat.",
+      "Choose a card to remove.",
+      "[#2aecd7]Right [#2aecd7]click[] to shuffle ",
+      " into your draw pile.",
+      " will return here after combat."
+    ]
+  },
   "reliquary:WeakTea": {
     "NAME": "Weak Tea",
     "FLAVOR": "If you can sleep after drinking it, what's the point?",

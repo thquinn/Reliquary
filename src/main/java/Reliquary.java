@@ -86,6 +86,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         BaseMod.addRelic(new RelicThirdArm(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTridentHead(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTuningFork(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicVitrine(), RelicType.SHARED);
         BaseMod.addRelic(new RelicWeakTea(), RelicType.SHARED);
         BaseMod.addRelic(new RelicWritOfMandamus(), RelicType.SHARED);
         UnlockTracker.markRelicAsSeen(RelicAerogel.ID);
@@ -143,6 +144,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         UnlockTracker.markRelicAsSeen(RelicThirdArm.ID);
         UnlockTracker.markRelicAsSeen(RelicTridentHead.ID);
         UnlockTracker.markRelicAsSeen(RelicTuningFork.ID);
+        UnlockTracker.markRelicAsSeen(RelicVitrine.ID);
         UnlockTracker.markRelicAsSeen(RelicWeakTea.ID);
         UnlockTracker.markRelicAsSeen(RelicWritOfMandamus.ID);
     }

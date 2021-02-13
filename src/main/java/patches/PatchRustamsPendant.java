@@ -66,6 +66,18 @@ public class PatchRustamsPendant {
     }
 
     @SpirePatch(
+            clz= AbstractPower.class,
+            method="stackPower"
+    )
+    public static class PatchRustamsPendantDevotionStack {
+        public static void Postfix(AbstractPower __instance) {
+            if (__instance.ID == DevotionPower.POWER_ID && __instance.amount == 0) {
+                AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(__instance.owner, __instance.owner, __instance.ID));
+            }
+        }
+    }
+
+    @SpirePatch(
             clz= DevotionPower.class,
             method="updateDescription"
     )

@@ -137,6 +137,13 @@
       "Lastcel is a made-up name... I think? It's our wonderful ZHS translator's Github username."
     ]
   },
+  "reliquary:FingerTrap": {
+    "NAME": "Finger Trap",
+    "FLAVOR": "Maybe if you chilled out for a second, you could get it off.",
+    "DESCRIPTIONS": [
+      "You can't lose HP during your turn."
+    ]
+  },
   "reliquary:Firecrackers": {
     "NAME": "Firecrackers",
     "FLAVOR": "Makes quite a racket. Keep it down out there, y'dang kids!",

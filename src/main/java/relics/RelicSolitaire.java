@@ -42,9 +42,10 @@ public class RelicSolitaire extends CustomRelic {
     private final static int DESC_INDEX_TRANQUILITY = 21;
     private final static int DESC_INDEX_VAULT = 22;
     private final static int DESC_INDEX_WORSHIP = 23;
+    private final static int DESC_INDEX_ERUPTION = 24;
 
     public RelicSolitaire() {
-        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.CLINK);
+        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
     }
 
     @SuppressWarnings("DuplicateBranchesInSwitch")
@@ -141,7 +142,7 @@ public class RelicSolitaire extends CustomRelic {
                 card.magicNumber += 1;
                 break;
             case Eruption.ID:
-                card.baseDamage += 4;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_ERUPTION];
                 break;
             case Establishment.ID:
                 card.baseMagicNumber += 2;

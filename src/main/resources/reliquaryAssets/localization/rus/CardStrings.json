@@ -1,8 +1,7 @@
 {
   "reliquary:VaporAmbrosia": {
     "NAME": "Божественные испарения",
-    "DESCRIPTION": "Оставляется. NL Даёт !M! Мантры. NL Сжигается.",
-    "NOTE_FOR_TRANSLATORS": "Each of these 'Vapor' cards corresponds to one of the 42 potions in the game."
+    "DESCRIPTION": "Оставляется. NL Даёт !M! Мантры. NL Сжигается."
   },
   "reliquary:VaporAncientPotion": {
     "NAME": "Древние испарения",

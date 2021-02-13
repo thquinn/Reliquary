@@ -62,8 +62,7 @@
     "DESCRIPTIONS": [
       "В начале вашего хода, #yЗаряжает тот тип сфер, которых Заряжено #b",
       " или более."
-    ],
-    "NOTE_FOR_TRANSLATORS": "This is a conveyor block from the game Infinifactory."
+    ]
   },
   "reliquary:Craggleroot": {
     "NAME": "Корень Крэггла",
@@ -85,8 +84,7 @@
     "FLAVOR": "Победа будет за вами... в конце концов.",
     "DESCRIPTIONS": [
       "Множитель урона #yБожественности повышается на #b1 до конца боя каждый раз при выходе из #yБожественности."
-    ],
-    "NOTE_FOR_TRANSLATORS": "https://en.wikipedia.org/wiki/Dhvaja"
+    ]
   },
   "reliquary:Ember": {
     "NAME": "Горячий уголёк",
@@ -111,8 +109,7 @@
     "DESCRIPTIONS": [
       "При получении вы удалите любое количество выбранных карт, кроме Ударов, Оборон и #rПроклятий.",
       "Выберите любое количество карт для удаления."
-    ],
-    "NOTE_FOR_TRANSLATORS": "The flavor text is a made-up quote by a made-up person."
+    ]
   },
   "reliquary:FerryPass": {
     "NAME": "Билет на паром",
@@ -128,8 +125,7 @@
       " и ",
       " , чтобы обменять его на #yРедкую реликвию.",
       " NL [#2aecd7]Нажмите [#2aecd7]Правой [#2aecd7]кнопкой [#2aecd7]мыши [#2aecd7], [#2aecd7]чтобы [#2aecd7]показать [#2aecd7]несыгранные [#2aecd7]уникальные [#2aecd7]карты.[]"
-    ],
-    "NOTE_FOR_TRANSLATORS": "'Every unique card' means every card with a different name. The upgradedness doesn't matter, i.e. 'Strike' and 'Strike+' are the same unique card."
+    ]
   },
   "reliquary:Firecrackers": {
     "NAME": "Петарды",
@@ -173,8 +169,7 @@
     "FLAVOR": "Смотрелось бы круто сзади кожанной куртки.",
     "DESCRIPTIONS": [
       "#yЯд срабатывает сразу, когда вы накладываете #yЯд первый раз за ход на врага."
-    ],
-    "NOTE_FOR_TRANSLATORS": "This is the symbol of the motorcycle gang from Akira."
+    ]
   },
   "reliquary:KinkedSpring": {
     "NAME": "Перекрученная пружина",
@@ -189,8 +184,7 @@
     "DESCRIPTIONS": [
       "Накладывает на врага #yСлабость, если у врага здоровье #b",
       "% или меньше."
-    ],
-    "NOTE_FOR_TRANSLATORS": "A knoch is just a fishing sinker: https://en.wikipedia.org/wiki/Fishing_sinker"
+    ]
   },
   "reliquary:LoveEmittingDiode": {
     "NAME": "Любвоизлучающий диод",
@@ -198,8 +192,7 @@
     "DESCRIPTIONS": [
       "Положительный #yФокус действует на самую правую сферу #b",
       " раза."
-    ],
-    "NOTE_FOR_TRANSLATORS": "This is a play on light-emitting diodes, or LEDs."
+    ]
   },
   "reliquary:MedicineBall": {
     "NAME": "Медицинский мяч",
@@ -215,8 +208,7 @@
       "Каждый раз, при выходе из #yБожественности, дает #b",
       " #yМантры за каждый вход в #yБожественность в этом бою (макс. - ",
       " )."
-    ],
-    "NOTE_FOR_TRANSLATORS": "This is a Newton's Cradle. 'Mudwin' is just a dumb name made up to sound like 'Newton.'"
+    ]
   },
   "reliquary:NewFriend": {
     "NAME": "Новый друг",
@@ -257,8 +249,7 @@
     "DESCRIPTIONS": [
       "Удвавивает первые X получаемой #yЗащиты в каждом бою, где X это #b",
       " умноженное на номер текущего Акта."
-    ],
-    "NOTE_FOR_TRANSLATORS": "This is the headgear of the Prince of All Cosmos from the Katamari Damacy series."
+    ]
   },
   "reliquary:PurpleTingedLeaf": {
     "NAME": "Лист с пурпурным оттенком",
@@ -322,16 +313,14 @@
     "FLAVOR": "Варлоку заплатите чеканной монетой",
     "DESCRIPTIONS": [
       "Даёт [E] на следующий ход, если ваша #yЗащита ровно заблокирует Атаку ВСЕХ врагов."
-    ],
-    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the song 'Wonderwall' by Oasis."
+    ]
   },
   "reliquary:SculptingSteel": {
     "NAME": "Стальная скульптура",
     "FLAVOR": "Тягучая как клей и тяжелая как камень.",
     "DESCRIPTIONS": [
       "При получении становится копией случайной Обычной, #bНеобычной, #yРедкой, или реликвии #yТорговца, среди тех, которые у вас уже есть."
-    ],
-    "NOTE_FOR_TRANSLATORS": "This is a reference to the Magic card Sculpting Steel, which has some existing translations: https://scryfall.com/search?q=%21%E2%80%9CSculpting+Steel%E2%80%9D+set%3A2xm+lang%3Aany&unique=prints"
+    ]
   },
   "reliquary:SharkskinSheath": {
     "NAME": "Ножна из акульей кожи",
@@ -345,8 +334,7 @@
     "FLAVOR": "Он может взорваться в любой момент.",
     "DESCRIPTIONS": [
       "Сферы #yМолнии бьют по врагу с наименьшим ОЗ."
-    ],
-    "NOTE_FOR_TRANSLATORS": "To have a 'short fuse' means you get angry easily."
+    ]
   },
   "reliquary:Sideboard": {
     "NAME": "Дополнительная колода",
@@ -358,11 +346,6 @@
       " NL [#2aecd7]Нажмите [#2aecd7]Правой [#2aecd7]кнопкой [#2aecd7]мыши [#2aecd7]для [#2aecd7]отключения [#2aecd7]действия [#2aecd7]реликвии .[]",
       " NL [#2aecd7]Нажмите [#2aecd7]Правой [#2aecd7]кнопкой [#2aecd7]мыши [#2aecd7]для [#2aecd7]включения [#2aecd7]действия [#2aecd7]реликвии.[]",
       "Выберите карту для добавления в вашу основную колоду."
-    ],
-    "NOTE_FOR_TRANSLATORS": [
-      "This is a reference to 'sideboards' in Magic the Gathering. It's a wooden board... this pun may not translate.",
-      "You may find the term used for sideboards in other languages here: https://blogs.magicjudges.org/translatedrules/",
-      "in the Comprehensive Rules, rule 100.4. The complete rules document might be on the second page."
     ]
   },
   "reliquary:SilkGlove": {
@@ -400,11 +383,6 @@
       "Остааляется. NL Перейти в Спокойствие.",
       "Вы берёте !M! доп. карту на следующий ход. Вы получаете дополнительный ход. NL Завершает ваш ход. NL Сжигается.",
       "Оставляется. NL Даёт !M! Мантры и повышает это кол-во на %d (макс. %d) в этом бою, когда Оставляется."
-    ],
-    "NOTE_FOR_TRANSLATORS": [
-      "These are second upgrades, so all but the first string are slight variants of Watcher cards.",
-      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicSolitaire.java",
-      "to see which string corresponds to which Watcher card."
     ]
   },
   "reliquary:Stiletto": {
@@ -436,8 +414,7 @@
       "Отдай мне!",
       "Я был бы глупцом, если @не@ купил это!",
       "У тебя жёсткие условия сделок..."
-    ],
-    "NOTE_FOR_TRANSLATORS": "A couple of these are voice lines from the merchant in Resident Evil 4."
+    ]
   },
   "reliquary:TridentHead": {
     "NAME": "Голова трезубца",
@@ -469,7 +446,6 @@
     "DESCRIPTIONS": [
       "Даёт [E] в начале вашего хода. В конце хода вы теряете #b",
       " #yЗащиты."
-    ],
-    "NOTE_FOR_TRANSLATORS": "'Mandamus' is just a made-up name."
+    ]
   }
 }

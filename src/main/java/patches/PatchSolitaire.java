@@ -7,6 +7,7 @@ import actions.SolitaireLessonLearnedAction;
 import basemod.helpers.CardModifierManager;
 import cardmods.CardModIncreaseMagicToLimit;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -31,8 +32,10 @@ import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.CollectPower;
 import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
+import com.megacrit.cardcrawl.powers.watcher.CannotChangeStancePower;
 import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 import com.megacrit.cardcrawl.stances.DivinityStance;
+import com.megacrit.cardcrawl.stances.WrathStance;
 import com.megacrit.cardcrawl.vfx.combat.AnimatedSlashEffect;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
@@ -226,6 +229,25 @@ public class PatchSolitaire {
         public static SpireReturn Prefix(Crescendo __instance) {
             if (__instance.timesUpgraded == 2) {
                 AbstractDungeon.actionManager.addToBottom(new SolitaireCrescendoAction(__instance.magicNumber));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+    }
+
+    @SpirePatch(
+            clz=Eruption.class,
+            method="use"
+    )
+    public static class PatchSolitaireEruption {
+        public static SpireReturn Prefix(Eruption __instance, AbstractPlayer p, AbstractMonster m) {
+            if (__instance.timesUpgraded == 2) {
+                int damage = __instance.damage;
+                if (!p.stance.ID.equals(WrathStance.STANCE_ID) && !p.hasPower(CannotChangeStancePower.POWER_ID)) {
+                    damage = MathUtils.floor(new WrathStance().atDamageGive(damage, __instance.damageTypeForTurn));
+                }
+                AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(WrathStance.STANCE_ID));
+                AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, __instance.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
                 return SpireReturn.Return(null);
             }
             return SpireReturn.Continue();

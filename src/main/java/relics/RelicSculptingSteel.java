@@ -77,6 +77,7 @@ public class RelicSculptingSteel extends CustomRelic {
             RelicPorcupineQuills.ID,
             RelicRosewoodLute.ID,
             RelicSharkskinSheath.ID,
+            RelicSpinner.ID,
             RelicTamtam.ID,
             RelicTridentHead.ID,
             RelicTuningFork.ID,

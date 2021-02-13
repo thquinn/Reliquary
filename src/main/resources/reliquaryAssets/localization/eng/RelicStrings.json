@@ -144,6 +144,13 @@
       "Overkill damage is dealt to a random enemy."
     ]
   },
+  "reliquary:GummyVitamins": {
+    "NAME": "Gummy Vitamins",
+    "FLAVOR": "Mmm, chewy!",
+    "DESCRIPTIONS": [
+      "Draw a card, then shuffle a #rSlimed into your draw pile."
+    ]
+  },
   "reliquary:HotPoker": {
     "NAME": "Hot Poker",
     "FLAVOR": "Wouldn't want to be caught at the business end of this thing.",
@@ -332,6 +339,22 @@
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the song 'Wonderwall' by Oasis."
   },
+  "reliquary:RustamsPendant": {
+    "NAME": "Rustam's Pendant",
+    "FLAVOR": "It's just a hunk of metal, but it seems to know something about you.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Has a different drawback for each character.",
+      "Gain [E] at the start of your turn. Start each combat with #b",
+      " #yStrength.",
+      " #yDexterity.",
+      " #yFocus.",
+      " #yDevotion. When you obtain #b",
+      " #yMantra, enter #yAtonement.",
+      "At the start of your turn, lose #b",
+      " #yMantra."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This relic is named after our wonderful RUS translator!"
+  },
   "reliquary:SculptingSteel": {
     "NAME": "Sculpting Steel",
     "FLAVOR": "Malleable as clay one second, hard as stone the next.",
@@ -406,12 +429,21 @@
       "Gain !B! Block. NL The next Attack you play costs 0 and deals !M! additional damage.",
       "Retain. NL Enter Calm.",
       "Next turn, draw !M! card. Take an extra turn after this one. NL End your turn. NL Exhaust.",
-      "Retain. NL Gain !M! Mantra. When Retained, increase Mantra gained by %d (max %d)."
+      "Retain. NL Gain !M! Mantra. When Retained, increase Mantra gained by %d (max %d).",
+      "Enter Wrath. NL Deal !D! damage."
     ],
     "NOTE_FOR_TRANSLATORS": [
       "These are second upgrades, so all but the first string are slight variants of Watcher cards.",
       "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicSolitaire.java",
       "to see which string corresponds to which Watcher card. Indices start at 0!"
+    ]
+  },
+  "reliquary:Spinner": {
+    "NAME": "Spinner",
+    "FLAVOR": "Please don't land on red, please don't land on red... son of a—!",
+    "DESCRIPTIONS": [
+      "Whenever you play a card of a different type than the previous that turn, gain #b",
+      " #yBlock."
     ]
   },
   "reliquary:Stiletto": {
@@ -445,6 +477,15 @@
       "You drive a hard bargain..."
     ],
     "NOTE_FOR_TRANSLATORS": "A couple of these are voice lines from the merchant in Resident Evil 4."
+  },
+  "reliquary:ThirdArm": {
+    "NAME": "Third Arm",
+    "FLAVOR": "It's tiny, and it doesn't even have fingers.",
+    "DESCRIPTIONS": [
+      "Start each combat with a cost #b",
+      " #yPower in your draw pile that gives you [E] every turn."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the arm from a wooden figure-drawing manikin."
   },
   "reliquary:TridentHead": {
     "NAME": "Trident Head",

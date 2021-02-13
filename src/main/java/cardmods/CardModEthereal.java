@@ -3,7 +3,6 @@ package cardmods;
 import basemod.abstracts.AbstractCardModifier;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import util.ReliquaryLogger;
 
 public class CardModEthereal extends AbstractCardModifier {
     public static final String ID = "reliquary:CardModEthereal";

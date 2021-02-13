@@ -3,7 +3,7 @@ import basemod.BaseMod;
 import basemod.ModPanel;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
-import cards.colorless.vapor.CardVaporAmbrosia;
+import cards.colorless.CardVim;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
@@ -14,12 +14,12 @@ import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import powers.*;
 import relics.*;
-import util.ReliquaryLogger;
+import stances.AtonementStance;
 
 import java.nio.charset.StandardCharsets;
 
 @SpireInitializer
-public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber, EditStringsSubscriber, PostInitializeSubscriber, PostUpdateSubscriber {
+public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber, EditStringsSubscriber, PostInitializeSubscriber, PostUpdateSubscriber {
     public static final String ID = "reliquary";
 
     public static void initialize() {
@@ -47,6 +47,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addRelic(new RelicFeatherDuster(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFerryPass(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFirecrackers(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicGummyVitamins(), RelicType.SHARED);
         BaseMod.addRelic(new RelicHotPoker(), RelicType.SHARED);
         BaseMod.addRelic(new RelicIridiumChain(), RelicType.SHARED);
         BaseMod.addRelic(new RelicIvoryTrinket(), RelicType.PURPLE);
@@ -69,6 +70,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addRelic(new RelicRedPaperclip(), RelicType.SHARED);
         BaseMod.addRelic(new RelicRoseTintedGlasses(), RelicType.SHARED);
         BaseMod.addRelic(new RelicRosewoodLute(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicRustamsPendant(), RelicType.SHARED);
         BaseMod.addRelic(new RelicQuartzCube(), RelicType.SHARED);
         BaseMod.addRelic(new RelicSculptingSteel(), RelicType.SHARED);
         BaseMod.addRelic(new RelicSharkskinSheath(), RelicType.SHARED);
@@ -76,9 +78,11 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addRelic(new RelicSideboard(), RelicType.SHARED);
         BaseMod.addRelic(new RelicSilkGlove(), RelicType.SHARED);
         BaseMod.addRelic(new RelicSolitaire(), RelicType.PURPLE);
+        BaseMod.addRelic(new RelicSpinner(), RelicType.SHARED);
         BaseMod.addRelic(new RelicStiletto(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTamtam(), RelicType.RED);
         BaseMod.addRelic(new RelicTatteredRug(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicThirdArm(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTridentHead(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTuningFork(), RelicType.SHARED);
         BaseMod.addRelic(new RelicWeakTea(), RelicType.SHARED);
@@ -99,6 +103,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         UnlockTracker.markRelicAsSeen(RelicFeatherDuster.ID);
         UnlockTracker.markRelicAsSeen(RelicFerryPass.ID);
         UnlockTracker.markRelicAsSeen(RelicFirecrackers.ID);
+        UnlockTracker.markRelicAsSeen(RelicGummyVitamins.ID);
         UnlockTracker.markRelicAsSeen(RelicHotPoker.ID);
         UnlockTracker.markRelicAsSeen(RelicIridiumChain.ID);
         UnlockTracker.markRelicAsSeen(RelicIvoryTrinket.ID);
@@ -121,16 +126,19 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         UnlockTracker.markRelicAsSeen(RelicRedPaperclip.ID);
         UnlockTracker.markRelicAsSeen(RelicRoseTintedGlasses.ID);
         UnlockTracker.markRelicAsSeen(RelicRosewoodLute.ID);
+        UnlockTracker.markRelicAsSeen(RelicRustamsPendant.ID);
         UnlockTracker.markRelicAsSeen(RelicQuartzCube.ID);
         UnlockTracker.markRelicAsSeen(RelicSculptingSteel.ID);
         UnlockTracker.markRelicAsSeen(RelicSharkskinSheath.ID);
         UnlockTracker.markRelicAsSeen(RelicShortFuse.ID);
         UnlockTracker.markRelicAsSeen(RelicSideboard.ID);
         UnlockTracker.markRelicAsSeen(RelicSilkGlove.ID);
+        UnlockTracker.markRelicAsSeen(RelicSpinner.ID);
         UnlockTracker.markRelicAsSeen(RelicStiletto.ID);
         UnlockTracker.markRelicAsSeen(RelicSolitaire.ID);
         UnlockTracker.markRelicAsSeen(RelicTamtam.ID);
         UnlockTracker.markRelicAsSeen(RelicTatteredRug.ID);
+        UnlockTracker.markRelicAsSeen(RelicThirdArm.ID);
         UnlockTracker.markRelicAsSeen(RelicTridentHead.ID);
         UnlockTracker.markRelicAsSeen(RelicTuningFork.ID);
         UnlockTracker.markRelicAsSeen(RelicWeakTea.ID);
@@ -140,7 +148,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
     @Override
     public void receiveEditCards() {
         new AutoAdd(ID)
-            .packageFilter(CardVaporAmbrosia.class)
+            .packageFilter(CardVim.class)
             .setDefaultSeen(false)
             .cards();
     }
@@ -183,8 +191,15 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
             BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/eng/CardStrings.json");
             BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/eng/PowerStrings.json");
             BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/eng/RelicStrings.json");
+            BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/eng/StanceStrings.json");
             BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/eng/UIStrings.json");
         }
+    }
+
+    @Override
+    public void receiveAddAudio() {
+        BaseMod.addAudio(AtonementStance.SFX_ENTER_ID, "reliquaryAssets/audio/sound/atonement_enter.ogg");
+        BaseMod.addAudio(AtonementStance.SFX_LOOP_ID, "reliquaryAssets/audio/sound/atonement_loop.ogg");
     }
 
     @Override
@@ -195,6 +210,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addPower(ReduceColorlessCostPower.class, ReduceColorlessCostPower.POWER_ID);
         BaseMod.addPower(TauntPower.class, TauntPower.POWER_ID);
         BaseMod.addPower(TriumphPower.class, TriumphPower.POWER_ID);
+        BaseMod.addPower(VimPower.class, VimPower.POWER_ID);
     }
 
     @Override

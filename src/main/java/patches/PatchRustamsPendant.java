@@ -4,11 +4,14 @@ import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpireReturn;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.watcher.ChangeStanceAction;
+import com.megacrit.cardcrawl.cards.red.Anger;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.watcher.DevotionPower;
 import com.megacrit.cardcrawl.powers.watcher.MantraPower;
+import javassist.*;
 import relics.RelicRustamsPendant;
 import stances.AtonementStance;
 
@@ -66,14 +69,27 @@ public class PatchRustamsPendant {
     }
 
     @SpirePatch(
-            clz= AbstractPower.class,
-            method="stackPower"
+            clz= DevotionPower.class,
+            method=SpirePatch.CONSTRUCTOR
     )
     public static class PatchRustamsPendantDevotionStack {
-        public static void Postfix(AbstractPower __instance) {
-            if (__instance.ID == DevotionPower.POWER_ID && __instance.amount == 0) {
-                AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(__instance.owner, __instance.owner, __instance.ID));
-            }
+        public static void Raw(CtBehavior ctMethodToPatch) throws NotFoundException, CannotCompileException {
+            CtClass ctClass = ctMethodToPatch.getDeclaringClass();
+            CtMethod method = CtNewMethod.make(
+                    CtClass.voidType, // Return
+                    "stackPower", // Method name
+                    new CtClass[]{ CtClass.intType },
+                    null, // Exceptions
+                    "{" +
+                        "super.stackPower($1);" +
+                        PatchRustamsPendantDevotionStack.class.getName() + ".removeZeroDevotion(this);" +
+                    "}",
+                    ctClass
+            );
+            ctClass.addMethod(method);
+        }
+        public static void removeZeroDevotion(DevotionPower __instance) {
+            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(__instance.owner, __instance.owner, __instance.ID));
         }
     }
 

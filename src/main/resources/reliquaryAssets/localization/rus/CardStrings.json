@@ -5,8 +5,8 @@
   },
   "reliquary:VaporAncientPotion": {
     "NAME": "Древние испарения",
-    "DESCRIPTION": "Оставляется. NL Снимает 1 Артефакт у врага. NL Сжигается.",
-    "UPGRADE_DESCRIPTION": "Оставляется. NL Снимает 1 Артефакт у ВСЕХ врагов. NL Сжигается."
+    "DESCRIPTION": "Оставляется. NL Враг теряет 1 Артефакт. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL ВСЕ враги теряют 1 Артефакт. NL Сжигается."
   },
   "reliquary:VaporAttackPotion": {
     "NAME": "Бешеные испарения",
@@ -51,7 +51,7 @@
   },
   "reliquary:VaporDistilledChaos": {
     "NAME": "Хаотичные испарения",
-    "DESCRIPTION": "Оставляется. NL Вы разыгрываете самую верхную карту со стопки добора. NL Сжигается.",
+    "DESCRIPTION": "Оставляется. NL Вы разыгрываете самую верхнюю карту со стопки добора. NL Сжигается.",
     "UPGRADE_DESCRIPTION": "Оставляется. NL Вы разыгрываете !M! карты с верха стопки добора. NL Сжигается."
   },
   "reliquary:VaporDuplicationPotion": {

@@ -64,6 +64,11 @@ public class RelicVitrine extends CustomRelic implements CustomSavable<CardSave>
     }
 
     @Override
+    public void atBattleStart() {
+        beginLongPulse();
+    }
+
+    @Override
     public void onVictory() {
         grayscale = false;
         setDescriptionAfterLoading();
@@ -77,6 +82,7 @@ public class RelicVitrine extends CustomRelic implements CustomSavable<CardSave>
         if (!grayscale) {
             AbstractDungeon.effectList.add(new ShowRealCardAndAddToDrawPileEffect(card.makeSameInstanceOf(), Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F, true, true, false));
             grayscale = true;
+            stopPulse();
             setDescriptionAfterLoading();
         }
     }
@@ -108,6 +114,7 @@ public class RelicVitrine extends CustomRelic implements CustomSavable<CardSave>
         tips.clear();
         tips.add(new PowerTip(name, description));
         initializeTips();
+        tips.subList(1, tips.size()).clear(); // remove keyword tips from words in the card's name
     }
 
     @Override

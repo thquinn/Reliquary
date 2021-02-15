@@ -389,7 +389,7 @@ public class RelicSolitaire extends CustomRelic {
         card.initializeDescription();
     }
 
-    static void upgradeBaseCost(AbstractCard card, int newBaseCost) {
+    public static void upgradeBaseCost(AbstractCard card, int newBaseCost) {
         int diff = card.costForTurn - card.cost;
         card.cost = newBaseCost;
         if (card.costForTurn > 0)

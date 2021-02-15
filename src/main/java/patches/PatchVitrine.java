@@ -25,6 +25,7 @@ public class PatchVitrine {
     public static void Insert(UUID uuid, HashSet<AbstractCard> cards) {
         RelicVitrine vitrine = (RelicVitrine) AbstractDungeon.player.getRelic(RelicVitrine.ID);
         if (vitrine != null && vitrine.card != null && vitrine.card.uuid.equals(uuid)) {
+            // Make sure UUID-based upgrades like Genetic Algorithm and Ritual Dagger upgrade the vitrined card.
             cards.add(vitrine.card);
         }
     }

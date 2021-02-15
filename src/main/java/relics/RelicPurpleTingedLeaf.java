@@ -116,10 +116,11 @@ public class RelicPurpleTingedLeaf extends CustomRelic implements CustomBottleRe
     }
 
     public void setDescriptionAfterLoading() {
-        this.description = DESCRIPTIONS[2] + FontHelper.colorString(card.name, "y") + DESCRIPTIONS[3];
-        this.tips.clear();
-        this.tips.add(new PowerTip(this.name, this.description));
-        this.initializeTips();
+        description = DESCRIPTIONS[2] + FontHelper.colorString(card.name, "y") + DESCRIPTIONS[3];
+        tips.clear();
+        tips.add(new PowerTip(name, description));
+        initializeTips();
+        tips.subList(1, tips.size()).clear(); // remove keyword tips from words in the card's name
     }
 
     @Override

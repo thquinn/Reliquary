@@ -4,6 +4,7 @@ import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.*;
+import util.ReliquaryLogger;
 import util.TextureLoader;
 
 import java.util.*;
@@ -27,6 +28,7 @@ public class RelicSculptingSteel extends CustomRelic {
     public void onEquip() {
         List<AbstractRelic> copyables = AbstractDungeon.player.relics.stream().filter(r -> isAppropriateRarity(r) && COPYABLE_RELICS.contains(r.relicId)).collect(Collectors.toList());
         if (copyables.isEmpty()) {
+            ReliquaryLogger.log("no copyables");
             return;
         }
         Collections.shuffle(copyables, new Random(AbstractDungeon.miscRng.randomLong()));
@@ -81,6 +83,7 @@ public class RelicSculptingSteel extends CustomRelic {
             RelicTamtam.ID,
             RelicTridentHead.ID,
             RelicTuningFork.ID,
+            RelicVitrine.ID,
             RelicWeakTea.ID,
             RelicWritOfMandamus.ID,
             // base game
@@ -100,7 +103,6 @@ public class RelicSculptingSteel extends CustomRelic {
             CallingBell.ID,
             CaptainsWheel.ID,
             Cauldron.ID,
-            CentennialPuzzle.ID,
             CeramicFish.ID,
             ChampionsBelt.ID,
             CharonsAshes.ID,

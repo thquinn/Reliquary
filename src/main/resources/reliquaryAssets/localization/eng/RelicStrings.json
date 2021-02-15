@@ -15,6 +15,44 @@
       "Whenever you shuffle your draw pile, shuffle in a #yFlash #yof #ySteel or #yFinesse, chosen randomly."
     ]
   },
+  "reliquary:BigHammer": {
+    "NAME": "Big Hammer",
+    "FLAVOR": "Truly, it is the biggest hammer you have ever seen.",
+    "DESCRIPTIONS": [
+      "You may upgrade #rRed cards a second time.",
+      "Deal !D! damage. NL Add a copy of this card into your discard pile. NL Deals !M! additional damage for each Anger in your discard pile.",
+      "Gain !B! Block. NL Upgrade all cards in your hand twice for the rest of combat.",
+      "Innate. NL Block is not removed at the start of your turn.",
+      "Gain !M! Vulnerable next turn. NL At the start of your turn, gain [R].",
+      "Lose 3 HP. NL Gain [R] [R] [R] [R].",
+      "Deal damage equal to %d%% of your Block.",
+      "Innate. NL At the start of your turn, lose !M! HP and draw !M! cards.",
+      "At the end of your turn, lose 1 HP, deal !M! damage to ALL enemies, then increase this damage by %d.",
+      "Innate. NL Skills cost 0. NL Whenever you play a Skill, Exhaust it.",
+      "Whenever a card is Exhausted or you play a Power card, draw 1 card.",
+      "Deal !D! damage. If the enemy has Vulnerable, gain [R] and draw 1 card, otherwise apply 1 Vulnerable.",
+      "Choose an Attack or Power card. Add !M! copies of that card into your hand.",
+      "Triple your Block.",
+      "Increase your max hand size by %d. NL Whenever you draw a Status card, draw !M! cards.",
+      "Put a card from your exhaust pile into your hand and Upgrade it. NL Exhaust.",
+      "Gain !M! Strength. NL At the end of %d turns, lose !M! Strength.",
+      "Play the top !M! cards of your draw pile and Exhaust them.",
+      "Add a random Attack into your hand. NL It costs 0 this turn.",
+      "Triple your Strength.",
+      "Lose 6 HP. NL Gain [R] [R] [R]. NL Draw !M! cards. NL Exhaust.",
+      "Deal !D! damage. NL Add a *Dazed into your discard pile.",
+      "Gain [R] [R] [R]. NL Exhaust.",
+      "Gain !B! Block. NL If this card is Exhausted, gain NL [R] [R] [R] and draw !M! cards.",
+      "Deal !D! damage and apply !M! Vulnerable to ALL enemies.",
+      "Gain !B! Block. NL Exhaust between 1 and !M! cards.",
+      "Deal !D! damage to ALL enemies X+%d times."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "These are second upgrades, so all but the first string are slight variants of Ironclad cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicBigHammer.java",
+      "to see which string corresponds to which Ironclad card. Indices start at 0!"
+    ]
+  },
   "reliquary:BoilingFlask": {
     "NAME": "Boiling Flask",
     "FLAVOR": "A round-bottom boiling flask, five thousand milliliters!",
@@ -54,6 +92,14 @@
       " times you play an upgradeable card that's in your deck, #yUpgrade it permanently.",
       "The next time you play an upgradeable card that's in your deck, #yUpgrade it permanently.",
       "This relic has been used up."
+    ]
+  },
+  "reliquary:CitrusReamer": {
+    "NAME": "Citrus Reamer",
+    "FLAVOR": "Why squeeze when you can ream?",
+    "DESCRIPTIONS": [
+      "The first time each turn you have #b",
+      " cards in hand, gain [E] ."
     ]
   },
   "reliquary:Conveyor": {
@@ -408,6 +454,15 @@
     "DESCRIPTIONS": [
       "Whenever you would discard a single card at the end of your turn, #yRetain it."
     ]
+  },
+  "reliquary:Sod": {
+    "NAME": "Sod",
+    "FLAVOR": "Contrary to popular belief, it's not greener on the other side; it's brown.",
+    "DESCRIPTIONS": [
+      "Every #b",
+      "th time you play an unupgraded card, put an #yUpgraded copy of it into your hand."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a joke about the saying 'the grass is always greener on the other side.'"
   },
   "reliquary:Solitaire": {
     "NAME": "Solitaire",

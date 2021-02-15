@@ -41,6 +41,7 @@ import javassist.CannotCompileException;
 import javassist.CtBehavior;
 import powers.InNTurnsDeathPower;
 import powers.SolitaireStudyPower;
+import relics.RelicBigHammer;
 import relics.RelicSolitaire;
 
 import java.util.ArrayList;
@@ -72,8 +73,11 @@ public class PatchSolitaire {
                 locator= Locator.class
         )
         public static void Insert(CardCrawlGame __instance, AbstractPlayer p) {
-            // We must load the player's Solitaire before loading cards, since whether they can be upgraded a second
-            // time depends on whether they have a Solitaire.
+            // We must load the player's Solitaire-like relic before loading cards, since whether they can be upgraded a
+            // second time depends on whether they have a Solitaire.
+            if (CardCrawlGame.saveFile.relics.contains(RelicBigHammer.ID)) {
+                RelicLibrary.getRelic(RelicBigHammer.ID).instantObtain(p, 0, false);
+            }
             if (CardCrawlGame.saveFile.relics.contains(RelicSolitaire.ID)) {
                 RelicLibrary.getRelic(RelicSolitaire.ID).instantObtain(p, 0, false);
             }
@@ -199,14 +203,13 @@ public class PatchSolitaire {
             method="use"
     )
     public static class PatchSolitaireCollect {
-        public static SpireReturn Postfix(Collect __instance, AbstractPlayer p) {
+        public static void Postfix(Collect __instance, AbstractPlayer p) {
             if (__instance.timesUpgraded == 2) {
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new CollectPower(p, 1), 1));
-                return SpireReturn.Return(null);
             }
-            return SpireReturn.Continue();
         }
     }
+
     @SpirePatch(
             clz=ConjureBlade.class,
             method="use"

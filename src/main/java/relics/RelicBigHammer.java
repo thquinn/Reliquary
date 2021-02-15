@@ -3,13 +3,9 @@ package relics;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.purple.Defend_Watcher;
-import com.megacrit.cardcrawl.cards.purple.Strike_Purple;
 import com.megacrit.cardcrawl.cards.red.*;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import patches.PatchBigHammer;
-import patches.PatchSolitaire;
 import util.ReliquaryLogger;
 import util.TextureLoader;
 

@@ -3,12 +3,8 @@ package powers;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.cards.Soul;
-import com.megacrit.cardcrawl.cards.SoulGroup;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.localization.LocalizedStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.BerserkPower;
@@ -17,7 +13,6 @@ import util.ReliquaryLogger;
 import util.TextureLoader;
 
 import java.lang.reflect.Field;
-import java.util.List;
 
 public class ChainReactionPower extends AbstractPower {
     public static final String POWER_ID = "reliquary:ChainReaction";

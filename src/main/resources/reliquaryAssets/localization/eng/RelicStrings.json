@@ -201,7 +201,8 @@
     "NAME": "Gummy Vitamins",
     "FLAVOR": "Mmm, chewy!",
     "DESCRIPTIONS": [
-      "Draw a card, then shuffle a #rSlimed into your draw pile."
+      "Once per turn, you may draw a card, then shuffle a #rSlimed into your draw pile.",
+      "I've already used that this turn."
     ]
   },
   "reliquary:HotPoker": {

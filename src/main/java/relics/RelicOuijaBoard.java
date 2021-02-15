@@ -9,9 +9,9 @@ import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.ThoughtBubble;
+import util.StaticHelpers;
 import util.TextureLoader;
 
 public class RelicOuijaBoard extends CustomRelic implements ClickableRelic {
@@ -28,7 +28,7 @@ public class RelicOuijaBoard extends CustomRelic implements ClickableRelic {
 
     @Override
     public void atTurnStart() {
-        usedThisTurn = false;
+        CanUseThisTurn();
     }
     public void CanUseThisTurn() {
         usedThisTurn = false;
@@ -38,7 +38,7 @@ public class RelicOuijaBoard extends CustomRelic implements ClickableRelic {
 
     @Override
     public void onRightClick() {
-        if (IsInappropriate()) {
+        if (!StaticHelpers.CanClickRelic(this)) {
             return;
         }
         AbstractPlayer p = AbstractDungeon.player;
@@ -59,7 +59,7 @@ public class RelicOuijaBoard extends CustomRelic implements ClickableRelic {
     @Override
     public void update() {
         super.update();
-        if (IsInappropriate() || usedThisTurn) {
+        if (!StaticHelpers.CanClickRelic(this) || usedThisTurn) {
             return;
         }
         validTargets.clear();
@@ -80,10 +80,6 @@ public class RelicOuijaBoard extends CustomRelic implements ClickableRelic {
         } else if (validTargets.size() > 0 && !pulse) {
             beginLongPulse();
         }
-    }
-
-    private boolean IsInappropriate() {
-        return !isObtained || AbstractDungeon.getCurrRoom() == null || AbstractDungeon.getCurrRoom().phase != AbstractRoom.RoomPhase.COMBAT || AbstractDungeon.actionManager.turnHasEnded || !AbstractDungeon.actionManager.actions.isEmpty();
     }
 
     @Override

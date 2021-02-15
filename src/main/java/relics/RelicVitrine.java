@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
+import util.StaticHelpers;
 import util.TextureLoader;
 import vfx.ShowRealCardAndAddToDrawPileEffect;
 
@@ -76,7 +77,7 @@ public class RelicVitrine extends CustomRelic implements CustomSavable<CardSave>
 
     @Override
     public void onRightClick() {
-        if (IsInappropriate()) {
+        if (!StaticHelpers.CanClickRelic(this)) {
             return;
         }
         if (!grayscale) {
@@ -85,9 +86,6 @@ public class RelicVitrine extends CustomRelic implements CustomSavable<CardSave>
             stopPulse();
             setDescriptionAfterLoading();
         }
-    }
-    private boolean IsInappropriate() {
-        return !isObtained || AbstractDungeon.getCurrRoom() == null || AbstractDungeon.getCurrRoom().phase != AbstractRoom.RoomPhase.COMBAT || AbstractDungeon.actionManager.turnHasEnded || !AbstractDungeon.actionManager.actions.isEmpty();
     }
 
     @Override

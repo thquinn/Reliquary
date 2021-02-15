@@ -460,8 +460,8 @@
     "NAME": "Sod",
     "FLAVOR": "Contrary to popular belief, it's not greener on the other side; it's brown.",
     "DESCRIPTIONS": [
-      "Every #b",
-      "th time you play an unupgraded card, put an #yUpgraded copy of it into your hand."
+      "Put an #yUpgraded copy of every #b",
+      "th unupgraded card you play into your hand."
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a joke about the saying 'the grass is always greener on the other side.'"
   },

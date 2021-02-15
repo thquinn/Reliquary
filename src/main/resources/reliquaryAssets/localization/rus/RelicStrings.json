@@ -15,6 +15,44 @@
       "Добавляет в колоду #yОтблеск\u00a0стали или #yЛовкость\u00a0рук при каждой перетасовке."
     ]
   },
+  "reliquary:BigHammer": {
+    "NAME": "Big Hammer",
+    "FLAVOR": "Truly, it is the biggest hammer you have ever seen.",
+    "DESCRIPTIONS": [
+      "You may upgrade #rRed cards a second time.",
+      "Deal !D! damage. NL Add a copy of this card into your discard pile. NL Deals !M! additional damage for each Anger in your discard pile.",
+      "Gain !B! Block. NL Upgrade all cards in your hand twice for the rest of combat.",
+      "Innate. NL Block is not removed at the start of your turn.",
+      "Gain !M! Vulnerable next turn. NL At the start of your turn, gain [R].",
+      "Lose 3 HP. NL Gain [R] [R] [R] [R].",
+      "Deal damage equal to %d%% of your Block.",
+      "Innate. NL At the start of your turn, lose !M! HP and draw !M! cards.",
+      "At the end of your turn, lose 1 HP, deal !M! damage to ALL enemies, then increase this damage by %d.",
+      "Innate. NL Skills cost 0. NL Whenever you play a Skill, Exhaust it.",
+      "Whenever a card is Exhausted or you play a Power card, draw 1 card.",
+      "Deal !D! damage. If the enemy has Vulnerable, gain [R] and draw 1 card, otherwise apply 1 Vulnerable.",
+      "Choose an Attack or Power card. Add !M! copies of that card into your hand.",
+      "Triple your Block.",
+      "Increase your max hand size by %d. NL Whenever you draw a Status card, draw !M! cards.",
+      "Put a card from your exhaust pile into your hand and Upgrade it. NL Exhaust.",
+      "Gain !M! Strength. NL At the end of %d turns, lose !M! Strength.",
+      "Play the top !M! cards of your draw pile and Exhaust them.",
+      "Add a random Attack into your hand. NL It costs 0 this turn.",
+      "Triple your Strength.",
+      "Lose 6 HP. NL Gain [R] [R] [R]. NL Draw !M! cards. NL Exhaust.",
+      "Deal !D! damage. NL Add a *Dazed into your discard pile.",
+      "Gain [R] [R] [R]. NL Exhaust.",
+      "Gain !B! Block. NL If this card is Exhausted, gain NL [R] [R] [R] and draw !M! cards.",
+      "Deal !D! damage and apply !M! Vulnerable to ALL enemies.",
+      "Gain !B! Block. NL Exhaust between 1 and !M! cards.",
+      "Deal !D! damage to ALL enemies X+%d times."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "These are second upgrades, so all but the first string are slight variants of Ironclad cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicBigHammer.java",
+      "to see which string corresponds to which Ironclad card. Indices start at 0!"
+    ]
+  },
   "reliquary:BoilingFlask": {
     "NAME": "Кипящая колба",
     "FLAVOR": "Кипящая колба с закругленным дном, пять тысяч миллиметров!",
@@ -54,6 +92,14 @@
       " раза при разыгрывание карты, которую можно улучшить, #yУлучшает её навсегда.",
       "Следующая разыгранная карта, которую можно улучшить, #yУлучшится навсегда.",
       "Эта реликвия израходована."
+    ]
+  },
+  "reliquary:CitrusReamer": {
+    "NAME": "Citrus Reamer",
+    "FLAVOR": "Why squeeze when you can ream?",
+    "DESCRIPTIONS": [
+      "The first time each turn you have #b",
+      " cards in hand, gain [E] ."
     ]
   },
   "reliquary:Conveyor": {
@@ -127,11 +173,26 @@
       " NL [#2aecd7]Нажмите [#2aecd7]Правой [#2aecd7]кнопкой [#2aecd7]мыши [#2aecd7], [#2aecd7]чтобы [#2aecd7]показать [#2aecd7]несыгранные [#2aecd7]уникальные [#2aecd7]карты.[]"
     ]
   },
+  "reliquary:FingerTrap": {
+    "NAME": "Finger Trap",
+    "FLAVOR": "Maybe if you chilled out for a second, you could get it off.",
+    "DESCRIPTIONS": [
+      "You can't lose HP during your turn."
+    ]
+  },
   "reliquary:Firecrackers": {
     "NAME": "Петарды",
     "FLAVOR": "Создают настоящий взрыв. Дети, держите их подальше отсюда!",
     "DESCRIPTIONS": [
       "Урон, от которого враг погибает, наносится так же и случайному врагу."
+    ]
+  },
+  "reliquary:GummyVitamins": {
+    "NAME": "Gummy Vitamins",
+    "FLAVOR": "Mmm, chewy!",
+    "DESCRIPTIONS": [
+      "Once per turn, you may draw a card, then shuffle a #rSlimed into your draw pile.",
+      "I've already used that this turn."
     ]
   },
   "reliquary:HotPoker": {
@@ -315,6 +376,22 @@
       "Даёт [E] на следующий ход, если ваша #yЗащита ровно заблокирует Атаку ВСЕХ врагов."
     ]
   },
+  "reliquary:RustamsPendant": {
+    "NAME": "Rustam's Pendant",
+    "FLAVOR": "It's just a hunk of metal, but it seems to know something about you.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Has a different drawback for each character.",
+      "Gain [E] at the start of your turn. Start each combat with #b",
+      " #yStrength.",
+      " #yDexterity.",
+      " #yFocus.",
+      " #yDevotion. When you obtain #b",
+      " #yMantra, enter #yAtonement.",
+      "At the start of your turn, lose #b",
+      " #yMantra."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This relic is named after our wonderful RUS translator!"
+  },
   "reliquary:SculptingSteel": {
     "NAME": "Стальная скульптура",
     "FLAVOR": "Тягучая как клей и тяжелая как камень.",
@@ -355,6 +432,15 @@
       "Если в конце хода остается в руке одна карта, то она не сбрасывается, а #yОставляется."
     ]
   },
+  "reliquary:Sod": {
+    "NAME": "Sod",
+    "FLAVOR": "Contrary to popular belief, it's not greener on the other side; it's brown.",
+    "DESCRIPTIONS": [
+      "Put an #yUpgraded copy of every #b",
+      "th unupgraded card you play into your hand."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a joke about the saying 'the grass is always greener on the other side.'"
+  },
   "reliquary:Solitaire": {
     "NAME": "Солитер",
     "FLAVOR": "Вы мечтали об этом. Теперь ваша мечта чудесным образом воплотилась в реальность.",
@@ -382,7 +468,16 @@
       "Даёт !B! Защиты. NL След. разыгранная Атака стоит 0 и наносит на !M! больше урона.",
       "Остааляется. NL Перейти в Спокойствие.",
       "Вы берёте !M! доп. карту на следующий ход. Вы получаете дополнительный ход. NL Завершает ваш ход. NL Сжигается.",
-      "Оставляется. NL Даёт !M! Мантры и повышает это кол-во на %d (макс. %d) в этом бою, когда Оставляется."
+      "Оставляется. NL Даёт !M! Мантры и повышает это кол-во на %d (макс. %d) в этом бою, когда Оставляется.",
+      "Enter Wrath. NL Deal !D! damage."
+    ]
+  },
+  "reliquary:Spinner": {
+    "NAME": "Spinner",
+    "FLAVOR": "Please don't land on red, please don't land on red... son of a—!",
+    "DESCRIPTIONS": [
+      "Whenever you play a card of a different type than the previous that turn, gain #b",
+      " #yBlock."
     ]
   },
   "reliquary:Stiletto": {
@@ -416,6 +511,15 @@
       "У тебя жёсткие условия сделок..."
     ]
   },
+  "reliquary:ThirdArm": {
+    "NAME": "Third Arm",
+    "FLAVOR": "It's tiny, and it doesn't even have fingers.",
+    "DESCRIPTIONS": [
+      "Start each combat with a cost #b",
+      " #yPower in your draw pile that gives you [E] every turn."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the arm from a wooden figure-drawing manikin."
+  },
   "reliquary:TridentHead": {
     "NAME": "Голова трезубца",
     "FLAVOR": "Часть оружия легендарного Короля волн.",
@@ -429,6 +533,17 @@
     "DESCRIPTIONS": [
       "Наносит #b",
       " урона врагу, если ваша #yЗащита ровно заблокирует его Атаку."
+    ]
+  },
+  "reliquary:Vitrine": {
+    "NAME": "Vitrine",
+    "FLAVOR": "The perfect place to present your most prized possessions.",
+    "DESCRIPTIONS": [
+      "Upon pickup, remove a card from your deck. You may choose to shuffle it into your draw pile any time during combat.",
+      "Choose a card to remove.",
+      "[#2aecd7]Right [#2aecd7]click[] to shuffle ",
+      " into your draw pile.",
+      " will return here after combat."
     ]
   },
   "reliquary:WeakTea": {

@@ -1,0 +1,8 @@
+{
+  "reliquary:Atonement": {
+    "NAME": "Atonement",
+    "DESCRIPTION": [
+      "Upon entering this #yStance, lose [W] [W] . You can't change #yStances. Exit this #yStance at the start of your next turn."
+    ]
+  }
+}

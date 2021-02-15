@@ -203,5 +203,10 @@
   "reliquary:VaporWeakPotion": {
     "NAME": "Слабые испарения",
     "DESCRIPTION": "Оставляется. NL Накладывает !M! Слабости. NL Сжигается."
+  },
+  "reliquary:Vim": {
+    "NAME": "Vim",
+    "DESCRIPTION": "Gain [E] at the start of your turn.",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] at the start of your turn."
   }
 }

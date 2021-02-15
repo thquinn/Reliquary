@@ -15,6 +15,44 @@
       "每当你将抽牌堆洗牌时，随机洗入一张 #y亮剑 或 #y妙计 。"
     ]
   },
+  "reliquary:BigHammer": {
+    "NAME": "Big Hammer",
+    "FLAVOR": "Truly, it is the biggest hammer you have ever seen.",
+    "DESCRIPTIONS": [
+      "You may upgrade #rRed cards a second time.",
+      "Deal !D! damage. NL Add a copy of this card into your discard pile. NL Deals !M! additional damage for each Anger in your discard pile.",
+      "Gain !B! Block. NL Upgrade all cards in your hand twice for the rest of combat.",
+      "Innate. NL Block is not removed at the start of your turn.",
+      "Gain !M! Vulnerable next turn. NL At the start of your turn, gain [R].",
+      "Lose 3 HP. NL Gain [R] [R] [R] [R].",
+      "Deal damage equal to %d%% of your Block.",
+      "Innate. NL At the start of your turn, lose !M! HP and draw !M! cards.",
+      "At the end of your turn, lose 1 HP, deal !M! damage to ALL enemies, then increase this damage by %d.",
+      "Innate. NL Skills cost 0. NL Whenever you play a Skill, Exhaust it.",
+      "Whenever a card is Exhausted or you play a Power card, draw 1 card.",
+      "Deal !D! damage. If the enemy has Vulnerable, gain [R] and draw 1 card, otherwise apply 1 Vulnerable.",
+      "Choose an Attack or Power card. Add !M! copies of that card into your hand.",
+      "Triple your Block.",
+      "Increase your max hand size by %d. NL Whenever you draw a Status card, draw !M! cards.",
+      "Put a card from your exhaust pile into your hand and Upgrade it. NL Exhaust.",
+      "Gain !M! Strength. NL At the end of %d turns, lose !M! Strength.",
+      "Play the top !M! cards of your draw pile and Exhaust them.",
+      "Add a random Attack into your hand. NL It costs 0 this turn.",
+      "Triple your Strength.",
+      "Lose 6 HP. NL Gain [R] [R] [R]. NL Draw !M! cards. NL Exhaust.",
+      "Deal !D! damage. NL Add a *Dazed into your discard pile.",
+      "Gain [R] [R] [R]. NL Exhaust.",
+      "Gain !B! Block. NL If this card is Exhausted, gain NL [R] [R] [R] and draw !M! cards.",
+      "Deal !D! damage and apply !M! Vulnerable to ALL enemies.",
+      "Gain !B! Block. NL Exhaust between 1 and !M! cards.",
+      "Deal !D! damage to ALL enemies X+%d times."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "These are second upgrades, so all but the first string are slight variants of Ironclad cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicBigHammer.java",
+      "to see which string corresponds to which Ironclad card. Indices start at 0!"
+    ]
+  },
   "reliquary:BoilingFlask": {
     "NAME": "沸腾的烧瓶",
     "FLAVOR": "一只沸腾的圆底烧瓶，容量5000毫升！",
@@ -54,6 +92,14 @@
       " 张牌组中的可升级牌将会被永久 #y升级 。",
       "你打出的下一张牌组中的可升级牌将会被永久 #y升级 。",
       "这件遗物的效果已经使用完毕。"
+    ]
+  },
+  "reliquary:CitrusReamer": {
+    "NAME": "Citrus Reamer",
+    "FLAVOR": "Why squeeze when you can ream?",
+    "DESCRIPTIONS": [
+      "The first time each turn you have #b",
+      " cards in hand, gain [E] ."
     ]
   },
   "reliquary:Conveyor": {
@@ -127,11 +173,26 @@
       " NL [#2aecd7]右击以显示手牌中还未被打出过的牌。[]"
     ]
   },
+  "reliquary:FingerTrap": {
+    "NAME": "Finger Trap",
+    "FLAVOR": "Maybe if you chilled out for a second, you could get it off.",
+    "DESCRIPTIONS": [
+      "You can't lose HP during your turn."
+    ]
+  },
   "reliquary:Firecrackers": {
     "NAME": "鞭炮",
     "FLAVOR": "这响声，吵死人了。你们这些臭屁孩，小点声赶紧爬！",
     "DESCRIPTIONS": [
       "过量伤害将给予一名随机敌人。"
+    ]
+  },
+  "reliquary:GummyVitamins": {
+    "NAME": "Gummy Vitamins",
+    "FLAVOR": "Mmm, chewy!",
+    "DESCRIPTIONS": [
+      "Once per turn, you may draw a card, then shuffle a #rSlimed into your draw pile.",
+      "I've already used that this turn."
     ]
   },
   "reliquary:HotPoker": {
@@ -315,6 +376,22 @@
       "每当你恰好 #y格挡 伤害，下回合获得 [E] 。"
     ]
   },
+  "reliquary:RustamsPendant": {
+    "NAME": "Rustam's Pendant",
+    "FLAVOR": "It's just a hunk of metal, but it seems to know something about you.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Has a different drawback for each character.",
+      "Gain [E] at the start of your turn. Start each combat with #b",
+      " #yStrength.",
+      " #yDexterity.",
+      " #yFocus.",
+      " #yDevotion. When you obtain #b",
+      " #yMantra, enter #yAtonement.",
+      "At the start of your turn, lose #b",
+      " #yMantra."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This relic is named after our wonderful RUS translator!"
+  },
   "reliquary:SculptingSteel": {
     "NAME": "塑型钢",
     "FLAVOR": "何意绕指柔，化为百炼钢。",
@@ -355,6 +432,15 @@
       "每当你在回合结束时将要丢弃恰好一张牌， #y保留 它。"
     ]
   },
+  "reliquary:Sod": {
+    "NAME": "Sod",
+    "FLAVOR": "Contrary to popular belief, it's not greener on the other side; it's brown.",
+    "DESCRIPTIONS": [
+      "Put an #yUpgraded copy of every #b",
+      "th unupgraded card you play into your hand."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a joke about the saying 'the grass is always greener on the other side.'"
+  },
   "reliquary:Solitaire": {
     "NAME": "单粒宝石",
     "FLAVOR": "你曾经梦见过它。它是怎么跨越梦境来到现实的是个谜。",
@@ -382,7 +468,16 @@
       "获得 !B! 点 格挡 。 NL 你打出的下一张攻击牌耗能变为0且额外造成 !M! 点伤害。",
       "保留 。 NL 进入 平静 。",
       "在下一回合多抽 !M! 张牌。在本回合结束后，额外获得一回合。 NL 结束你的回合。 NL 消耗 。",
-      "保留 。 NL 获得 !M! 层 真言 。 每当这张牌被保留时，将其在本场战斗的 真言 获得量增加 %d 点（最多 %d 点）。"
+      "保留 。 NL 获得 !M! 层 真言 。 每当这张牌被保留时，将其在本场战斗的 真言 获得量增加 %d 点（最多 %d 点）。",
+      "Enter Wrath. NL Deal !D! damage."
+    ]
+  },
+  "reliquary:Spinner": {
+    "NAME": "Spinner",
+    "FLAVOR": "Please don't land on red, please don't land on red... son of a—!",
+    "DESCRIPTIONS": [
+      "Whenever you play a card of a different type than the previous that turn, gain #b",
+      " #yBlock."
     ]
   },
   "reliquary:Stiletto": {
@@ -416,6 +511,15 @@
       "你还真能讨教还价呢......"
     ]
   },
+  "reliquary:ThirdArm": {
+    "NAME": "Third Arm",
+    "FLAVOR": "It's tiny, and it doesn't even have fingers.",
+    "DESCRIPTIONS": [
+      "Start each combat with a cost #b",
+      " #yPower in your draw pile that gives you [E] every turn."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the arm from a wooden figure-drawing manikin."
+  },
   "reliquary:TridentHead": {
     "NAME": "三叉戟的头",
     "FLAVOR": "它是著名的波浪王所持武器的一部分。",
@@ -429,6 +533,17 @@
     "DESCRIPTIONS": [
       "每当你恰好突破一名敌人的 #y格挡 ，对其造成 #b",
       " 点伤害。"
+    ]
+  },
+  "reliquary:Vitrine": {
+    "NAME": "Vitrine",
+    "FLAVOR": "The perfect place to present your most prized possessions.",
+    "DESCRIPTIONS": [
+      "Upon pickup, remove a card from your deck. You may choose to shuffle it into your draw pile any time during combat.",
+      "Choose a card to remove.",
+      "[#2aecd7]Right [#2aecd7]click[] to shuffle ",
+      " into your draw pile.",
+      " will return here after combat."
     ]
   },
   "reliquary:WeakTea": {

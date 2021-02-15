@@ -202,5 +202,10 @@
   "reliquary:VaporWeakPotion": {
     "NAME": "病恹蒸汽",
     "DESCRIPTION": "保留 。 NL 给予 !M! 层 虚弱 。 NL 消耗 。"
+  },
+  "reliquary:Vim": {
+    "NAME": "Vim",
+    "DESCRIPTION": "Gain [E] at the start of your turn.",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] at the start of your turn."
   }
 }

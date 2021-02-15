@@ -1,6 +1,33 @@
 [
   {
     "NAMES": [
+      "reliquary:translation_note"
+    ],
+    "DESCRIPTION": "No need to translate this.",
+    "NOTE_FOR_TRANSLATORS": "FOR ALL KEYWORDS: If your language has cases, the keyword NAMES must be lower case, or they won't match!"
+  },
+  {
+    "NAMES": [
+      "atonement"
+    ],
+    "DESCRIPTION": "Upon entering this #yStance, lose [W] [W] . You can't change #yStances. Exit this #yStance at the start of your next turn."
+  },
+  {
+    "NAMES": [
+      "devotion"
+    ],
+    "DESCRIPTION": "You gain #yMantra at the start of your turn.",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Devotion power from the base game."
+  },
+  {
+    "NAMES": [
+      "slimed"
+    ],
+    "DESCRIPTION": "Slimed is a cost 1 #yStatus card.",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Slimed curse from the base game."
+  },
+  {
+    "NAMES": [
       "蒸汽"
     ],
     "DESCRIPTION": "Vapors are cards with minor effects derived from your potions. They Retain and Exhaust."

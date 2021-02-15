@@ -1,4 +1,29 @@
 {
+  "reliquary:ChainReaction": {
+    "NAME": "Chain Reaction",
+    "DESCRIPTIONS": [
+      "At the end of your turn, gain #b",
+      " #yCombust."
+    ],
+    "NOTE_FOR_TRANSLATORS": "Combust is an existing power in the base game."
+  },
+  "reliquary:HandSize": {
+    "NAME": "Hand Size Up",
+    "DESCRIPTIONS": [
+      "Hand Size Down",
+      "Your maximum hand size is increased by #b",
+      "Your maximum hand size is decreased by #b",
+      "."
+    ]
+  },
+  "reliquary:Hydrated": {
+    "NAME": "Hydrated",
+    "DESCRIPTIONS": [
+      "Delays #yStrength #yDown for #b",
+      " turn.",
+      " turns."
+    ]
+  },
   "reliquary:InNTurnsDeath": {
     "NAME": "",
     "DESCRIPTIONS": [
@@ -50,6 +75,22 @@
       "Множитель урона #yБожественности повышен на #b",
       ", и теперь составляет #b",
       "."
+    ]
+  },
+  "reliquary:Vim": {
+    "NAME": "Envimmed",
+    "DESCRIPTIONS": [],
+    "NOTE_FOR_TRANSLATORS": [
+      "'Envimmed' isn't a real word, it's an adjective I made up to mean 'infused with vim,' as 'invigorated' means 'infused with vigor.'",
+      "Feel free to use anything that means invigorated, or make one up...?",
+      "This uses the description strings from the Berserk power."
+    ]
+  },
+  "reliquary:VulnerableNextTurn": {
+    "NAME": "Vulnerable Next Turn",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " #yVulnerable next turn."
     ]
   }
 }

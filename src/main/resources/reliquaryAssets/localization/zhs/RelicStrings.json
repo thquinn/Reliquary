@@ -46,11 +46,6 @@
       "对所有敌人造成 !D! 点伤害，给予 !M! 层 易伤 。",
       "获得 !B! 点 格挡 。 NL 消耗 最多 !M! 张 手牌。",
       "对所有敌人造成 !D! 点伤害 X+ %d 次。"
-    ],
-    "NOTE_FOR_TRANSLATORS": [
-      "These are second upgrades, so all but the first string are slight variants of Ironclad cards.",
-      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicBigHammer.java",
-      "to see which string corresponds to which Ironclad card. Indices start at 0!"
     ]
   },
   "reliquary:BoilingFlask": {
@@ -389,8 +384,7 @@
       " 层 #y真言 ，进入 #y赎罪 。",
       "在你的回合开始时，失去 #b",
       " 层 #y真言 。"
-    ],
-    "NOTE_FOR_TRANSLATORS": "This relic is named after our wonderful RUS translator!"
+    ]
   },
   "reliquary:SculptingSteel": {
     "NAME": "塑型钢",
@@ -438,8 +432,7 @@
     "DESCRIPTIONS": [
       "你每打出第 #b",
       " 张未 #y升级 的牌，将它的一张已 #y升级 的复制加入你的手牌。"
-    ],
-    "NOTE_FOR_TRANSLATORS": "The flavor text is a joke about the saying 'the grass is always greener on the other side.'"
+    ]
   },
   "reliquary:Solitaire": {
     "NAME": "单粒宝石",
@@ -517,8 +510,7 @@
     "DESCRIPTIONS": [
       "每场战斗开始时，将一张耗能为 #b",
       " 的 #y能力 牌放入你的抽牌堆。这张能力牌每回合给予你 [E] 。"
-    ],
-    "NOTE_FOR_TRANSLATORS": "This is the arm from a wooden figure-drawing manikin."
+    ]
   },
   "reliquary:TridentHead": {
     "NAME": "三叉戟的头",

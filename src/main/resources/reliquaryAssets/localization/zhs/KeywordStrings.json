@@ -1,0 +1,35 @@
+[
+  {
+    "NAMES": [
+      "reliquary:translation_note"
+    ],
+    "DESCRIPTION": "No need to translate this.",
+    "NOTE_FOR_TRANSLATORS": "FOR ALL KEYWORDS: If your language has cases, the keyword NAMES must be lower case, or they won't match!"
+  },
+  {
+    "NAMES": [
+      "赎罪"
+    ],
+    "DESCRIPTION": "进入这一 #y姿态 时，失去 [W] [W] 。你不能改变 #y姿态 。你在下回合开始时自动离开这一 #y姿态 。"
+  },
+  {
+    "NAMES": [
+      "虔诚"
+    ],
+    "DESCRIPTION": "回合开始时，获得 #y真言 。",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Devotion power from the base game."
+  },
+  {
+    "NAMES": [
+      "黏液"
+    ],
+    "DESCRIPTION": "黏液是耗能为1的 #y状态牌 。",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Slimed curse from the base game."
+  },
+  {
+    "NAMES": [
+      "蒸汽"
+    ],
+    "DESCRIPTION": "蒸汽牌取材自你的药水，但效果较微弱。它们具有 保留 和 消耗 。"
+  }
+]

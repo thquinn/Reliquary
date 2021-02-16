@@ -202,5 +202,10 @@
   "reliquary:VaporWeakPotion": {
     "NAME": "病恹蒸汽",
     "DESCRIPTION": "保留 。 NL 给予 !M! 层 虚弱 。 NL 消耗 。"
+  },
+  "reliquary:Vim": {
+    "NAME": "冷酿",
+    "DESCRIPTION": "每回合开始获得 [E] 。",
+    "UPGRADE_DESCRIPTION": "每回合开始获得 [E] [E] 。"
   }
 }

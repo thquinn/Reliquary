@@ -161,9 +161,9 @@
     "NAME": "船票",
     "FLAVOR": "上面写道，“移舟泊烟渚，日暮客愁新。”",
     "DESCRIPTIONS": [
-      "一场战斗中，如果你打出了你牌组中每张独一无二（不考虑 #y升级 与否）的非 #r诅咒 牌，失去这件遗物，并在本次战斗奖励中增加一件 #y稀有 遗物。",
-      "本场战斗中，打出你牌组中共 #b",
-      " 张独一无二的非 #r诅咒 牌来用一件 #y稀有 遗物换掉这件遗物。",
+      "When you play every unique playable card in your deck in one combat, lose this and add a #yRare relic to that combat's reward.",
+      "Play all #b",
+      " unique playable cards in your deck this combat to exchange this for a #yRare relic.",
       "本场战斗中，再打出 #b",
       " 张独一无二的牌来用一件 #y稀有 遗物换掉这件遗物",
       "打出 ",

@@ -36,7 +36,7 @@ public class RelicFerryPass extends CustomRelic implements ClickableRelic {
     }
 
     String[] getCardIDs() {
-        return AbstractDungeon.player.masterDeck.group.stream().filter(c -> c.type != AbstractCard.CardType.CURSE).map(c -> c.cardID).distinct().toArray(String[]::new);
+        return AbstractDungeon.player.masterDeck.group.stream().filter(c -> c.cost != -2).map(c -> c.cardID).distinct().toArray(String[]::new);
     }
 
     @Override

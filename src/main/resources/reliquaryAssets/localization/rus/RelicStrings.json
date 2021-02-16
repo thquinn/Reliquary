@@ -161,9 +161,9 @@
     "NAME": "Билет на паром",
     "FLAVOR": "Здесь написано: \"Наслаждайтесь путешествием на Остров Рустама!\"",
     "DESCRIPTIONS": [
-      "Когда вы сыграете все уникальные карты, кроме #rПроклятий, в вашей колоде, за один бой, то эта реликивия уничтожится и в наградах за этот бой вам будет доступна #yРедкая реликвия.",
-      "Сыграйте все #b",
-      " уникальные карты, кроме #rПроклятий, в вашей колоде, чтобы обменять его на #yРедкую реликвию.",
+      "When you play every unique playable card in your deck in one combat, lose this and add a #yRare relic to that combat's reward.",
+      "Play all #b",
+      " unique playable cards in your deck this combat to exchange this for a #yRare relic.",
       "Сыграйте #b",
       " ещё уникальных карт в этом бою, чтобы обменять его на #yРедкую реликвию.",
       "Сыграйте ",

@@ -1,0 +1,96 @@
+{
+  "reliquary:ChainReaction": {
+    "NAME": "Chain Reaction",
+    "DESCRIPTIONS": [
+      "At the end of your turn, gain #b",
+      " #yCombust."
+    ],
+    "NOTE_FOR_TRANSLATORS": "Combust is an existing power in the base game."
+  },
+  "reliquary:HandSize": {
+    "NAME": "Hand Size Up",
+    "DESCRIPTIONS": [
+      "Hand Size Down",
+      "Your maximum hand size is increased by #b",
+      "Your maximum hand size is decreased by #b",
+      "."
+    ]
+  },
+  "reliquary:Hydrated": {
+    "NAME": "Hydrated",
+    "DESCRIPTIONS": [
+      "Delays #yStrength #yDown for #b",
+      " turn.",
+      " turns."
+    ]
+  },
+  "reliquary:InNTurnsDeath": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "In #b",
+      " turns, die."
+    ]
+  },
+  "reliquary:InvincibleTurns": {
+    "NAME": "Непобедимость",
+    "DESCRIPTIONS": [
+      "Не получает урона в этом ходу.",
+      "Не получает урона следующие #b",
+      " хода."
+    ]
+  },
+  "reliquary:LesserDuplication": {
+    "NAME": "Услабленное удвоение",
+    "DESCRIPTIONS": [
+      "Следующая разыгранная карта, со стоимостью 0 или 1, в этом ходу, будет разыграна дважды.",
+      "Следующие #b",
+      " разыгранные карты, со стоимостью 0 или 1, в этом ходу, будут разыграны дважды."
+    ]
+  },
+  "reliquary:ReduceColorlessCost": {
+    "NAME": "Бледность",
+    "DESCRIPTIONS": [
+      "Следующая разыгранная Бесцветная карта будет стоить на #b1 меньше.",
+      "Следующие #b",
+      " разыгранные Бесцветные карты стоят на #b1 меньше."
+    ]
+  },
+  "reliquary:StudyPlus": {
+    "NAME": "Обучение",
+    "DESCRIPTIONS": [
+      "В конце хода замешивает #b",
+      " #yОзарение+ в стопку добору."
+    ]
+  },
+  "reliquary:Taunt": {
+    "NAME": "Насмешка",
+    "DESCRIPTIONS": [
+      "Остальные враги не могут стать целью ваших карт пока этот враг не умрёт.",
+      "Другой враг #r@насмехается@ надо мной!"
+    ]
+  },
+  "reliquary:Triumph": {
+    "NAME": "Триумф",
+    "DESCRIPTIONS": [
+      "Множитель урона #yБожественности повышен на #b",
+      ", и теперь составляет #b",
+      "."
+    ]
+  },
+  "reliquary:Vim": {
+    "NAME": "Envimmed",
+    "DESCRIPTIONS": [],
+    "NOTE_FOR_TRANSLATORS": [
+      "'Envimmed' isn't a real word, it's an adjective I made up to mean 'infused with vim,' as 'invigorated' means 'infused with vigor.'",
+      "Feel free to use anything that means invigorated, or make one up...?",
+      "This uses the description strings from the Berserk power."
+    ]
+  },
+  "reliquary:VulnerableNextTurn": {
+    "NAME": "Vulnerable Next Turn",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " #yVulnerable next turn."
+    ]
+  }
+}

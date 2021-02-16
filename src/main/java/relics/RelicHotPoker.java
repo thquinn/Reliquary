@@ -27,15 +27,19 @@ public class RelicHotPoker extends CustomRelic {
             // If the End Turn button is disabled, it's a start-of-turn draw.
             return;
         }
-        if (drawnCard.costForTurn > 0) {
-            AbstractMonster target = AbstractDungeon.getCurrRoom().monsters.getRandomMonster(true);
-            addToBot(new RelicAboveCreatureAction(target, this));
-            addToBot(new DamageAction(
-                    target,
-                    new DamageInfo(AbstractDungeon.player, drawnCard.cost, DamageInfo.DamageType.THORNS),
-                    AbstractGameAction.AttackEffect.FIRE
-            ));
+        if (drawnCard.costForTurn < 1) {
+            return;
         }
+        AbstractMonster target = AbstractDungeon.getCurrRoom().monsters.getRandomMonster(true);
+        if (target == null) {
+            return;
+        }
+        addToBot(new RelicAboveCreatureAction(target, this));
+        addToBot(new DamageAction(
+                target,
+                new DamageInfo(AbstractDungeon.player, drawnCard.cost, DamageInfo.DamageType.THORNS),
+                AbstractGameAction.AttackEffect.FIRE
+        ));
     }
 
     @Override

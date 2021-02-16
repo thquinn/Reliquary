@@ -24,6 +24,11 @@ public class RelicFeatherDuster extends CustomRelic {
     }
 
     @Override
+    public boolean canSpawn() {
+        return AbstractDungeon.floorNum > 20;
+    }
+
+    @Override
     public void onEquip() {
         CardGroup tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         for (AbstractCard card : AbstractDungeon.player.masterDeck.getPurgeableCards().group) {

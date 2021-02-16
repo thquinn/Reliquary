@@ -3,21 +3,23 @@ import basemod.BaseMod;
 import basemod.ModPanel;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
-import cards.colorless.vapor.CardVaporAmbrosia;
+import cards.colorless.CardVim;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.localization.CardStrings;
-import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.localization.RelicStrings;
-import com.megacrit.cardcrawl.localization.UIStrings;
+import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import powers.*;
 import relics.*;
+import stances.AtonementStance;
+
+import java.nio.charset.StandardCharsets;
 
 @SpireInitializer
-public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber, EditStringsSubscriber, PostInitializeSubscriber, PostUpdateSubscriber {
+public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber, EditStringsSubscriber, PostInitializeSubscriber, PostUpdateSubscriber {
     public static final String ID = "reliquary";
 
     public static void initialize() {
@@ -31,11 +33,13 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
                 .setDefaultSeen(true);
         BaseMod.addRelic(new RelicAerogel(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBallBearing(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicBigHammer(), RelicType.RED);
         BaseMod.addRelic(new RelicBoilingFlask(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBookmark(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBoomerang(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBrokenClock(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBuckler(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicCitrusReamer(), RelicType.SHARED);
         BaseMod.addRelic(new RelicConveyor(), RelicType.BLUE);
         BaseMod.addRelic(new RelicCraggleroot(), RelicType.SHARED);
         BaseMod.addRelic(new RelicCrutches(), RelicType.RED);
@@ -44,7 +48,9 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addRelic(new RelicExpiredCoupon(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFeatherDuster(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFerryPass(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicFingerTrap(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFirecrackers(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicGummyVitamins(), RelicType.SHARED);
         BaseMod.addRelic(new RelicHotPoker(), RelicType.SHARED);
         BaseMod.addRelic(new RelicIridiumChain(), RelicType.SHARED);
         BaseMod.addRelic(new RelicIvoryTrinket(), RelicType.PURPLE);
@@ -67,27 +73,34 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addRelic(new RelicRedPaperclip(), RelicType.SHARED);
         BaseMod.addRelic(new RelicRoseTintedGlasses(), RelicType.SHARED);
         BaseMod.addRelic(new RelicRosewoodLute(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicRustamsPendant(), RelicType.SHARED);
         BaseMod.addRelic(new RelicQuartzCube(), RelicType.SHARED);
         BaseMod.addRelic(new RelicSculptingSteel(), RelicType.SHARED);
         BaseMod.addRelic(new RelicSharkskinSheath(), RelicType.SHARED);
         BaseMod.addRelic(new RelicShortFuse(), RelicType.BLUE);
         BaseMod.addRelic(new RelicSideboard(), RelicType.SHARED);
         BaseMod.addRelic(new RelicSilkGlove(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicSod(), RelicType.SHARED);
         BaseMod.addRelic(new RelicSolitaire(), RelicType.PURPLE);
+        BaseMod.addRelic(new RelicSpinner(), RelicType.SHARED);
         BaseMod.addRelic(new RelicStiletto(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTamtam(), RelicType.RED);
         BaseMod.addRelic(new RelicTatteredRug(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicThirdArm(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTridentHead(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTuningFork(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicVitrine(), RelicType.SHARED);
         BaseMod.addRelic(new RelicWeakTea(), RelicType.SHARED);
         BaseMod.addRelic(new RelicWritOfMandamus(), RelicType.SHARED);
         UnlockTracker.markRelicAsSeen(RelicAerogel.ID);
         UnlockTracker.markRelicAsSeen(RelicBallBearing.ID);
+        UnlockTracker.markRelicAsSeen(RelicBigHammer.ID);
         UnlockTracker.markRelicAsSeen(RelicBoilingFlask.ID);
         UnlockTracker.markRelicAsSeen(RelicBookmark.ID);
         UnlockTracker.markRelicAsSeen(RelicBoomerang.ID);
         UnlockTracker.markRelicAsSeen(RelicBrokenClock.ID);
         UnlockTracker.markRelicAsSeen(RelicBuckler.ID);
+        UnlockTracker.markRelicAsSeen(RelicCitrusReamer.ID);
         UnlockTracker.markRelicAsSeen(RelicConveyor.ID);
         UnlockTracker.markRelicAsSeen(RelicCraggleroot.ID);
         UnlockTracker.markRelicAsSeen(RelicCrutches.ID);
@@ -96,7 +109,9 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         UnlockTracker.markRelicAsSeen(RelicExpiredCoupon.ID);
         UnlockTracker.markRelicAsSeen(RelicFeatherDuster.ID);
         UnlockTracker.markRelicAsSeen(RelicFerryPass.ID);
+        UnlockTracker.markRelicAsSeen(RelicFingerTrap.ID);
         UnlockTracker.markRelicAsSeen(RelicFirecrackers.ID);
+        UnlockTracker.markRelicAsSeen(RelicGummyVitamins.ID);
         UnlockTracker.markRelicAsSeen(RelicHotPoker.ID);
         UnlockTracker.markRelicAsSeen(RelicIridiumChain.ID);
         UnlockTracker.markRelicAsSeen(RelicIvoryTrinket.ID);
@@ -119,18 +134,23 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         UnlockTracker.markRelicAsSeen(RelicRedPaperclip.ID);
         UnlockTracker.markRelicAsSeen(RelicRoseTintedGlasses.ID);
         UnlockTracker.markRelicAsSeen(RelicRosewoodLute.ID);
+        UnlockTracker.markRelicAsSeen(RelicRustamsPendant.ID);
         UnlockTracker.markRelicAsSeen(RelicQuartzCube.ID);
         UnlockTracker.markRelicAsSeen(RelicSculptingSteel.ID);
         UnlockTracker.markRelicAsSeen(RelicSharkskinSheath.ID);
         UnlockTracker.markRelicAsSeen(RelicShortFuse.ID);
         UnlockTracker.markRelicAsSeen(RelicSideboard.ID);
         UnlockTracker.markRelicAsSeen(RelicSilkGlove.ID);
+        UnlockTracker.markRelicAsSeen(RelicSpinner.ID);
         UnlockTracker.markRelicAsSeen(RelicStiletto.ID);
+        UnlockTracker.markRelicAsSeen(RelicSod.ID);
         UnlockTracker.markRelicAsSeen(RelicSolitaire.ID);
         UnlockTracker.markRelicAsSeen(RelicTamtam.ID);
         UnlockTracker.markRelicAsSeen(RelicTatteredRug.ID);
+        UnlockTracker.markRelicAsSeen(RelicThirdArm.ID);
         UnlockTracker.markRelicAsSeen(RelicTridentHead.ID);
         UnlockTracker.markRelicAsSeen(RelicTuningFork.ID);
+        UnlockTracker.markRelicAsSeen(RelicVitrine.ID);
         UnlockTracker.markRelicAsSeen(RelicWeakTea.ID);
         UnlockTracker.markRelicAsSeen(RelicWritOfMandamus.ID);
     }
@@ -138,19 +158,41 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
     @Override
     public void receiveEditCards() {
         new AutoAdd(ID)
-            .packageFilter(CardVaporAmbrosia.class)
+            .packageFilter(CardVim.class)
             .setDefaultSeen(false)
             .cards();
     }
 
     @Override
     public void receiveEditKeywords() {
-        BaseMod.addKeyword(new String[]{ "vapor" },"Vapors are cards with minor effects derived from your potions. They Retain and Exhaust.");
+        String path;
+        if (Settings.language == Settings.GameLanguage.RUS) {
+            path = "reliquaryAssets/localization/rus/KeywordStrings.json";
+        } else if (Settings.language == Settings.GameLanguage.ZHS) {
+            path = "reliquaryAssets/localization/zhs/KeywordStrings.json";
+        } else {
+            path = "reliquaryAssets/localization/eng/KeywordStrings.json";
+        }
+
+        Gson gson = new Gson();
+        String json = Gdx.files.internal(path).readString(String.valueOf(StandardCharsets.UTF_8));
+        Keyword[] keywords = gson.fromJson(json, Keyword[].class);
+
+        if (keywords != null) {
+            for (Keyword keyword : keywords) {
+                BaseMod.addKeyword(keyword.NAMES, keyword.DESCRIPTION);
+            }
+        }
     }
 
     @Override
     public void receiveEditStrings() {
-        if (Settings.language == Settings.GameLanguage.ZHS) {
+        if (Settings.language == Settings.GameLanguage.RUS) {
+            BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/rus/CardStrings.json");
+            BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/rus/PowerStrings.json");
+            BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/rus/RelicStrings.json");
+            BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/rus/UIStrings.json");
+        } else if (Settings.language == Settings.GameLanguage.ZHS) {
             BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/zhs/CardStrings.json");
             BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/zhs/PowerStrings.json");
             BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/zhs/RelicStrings.json");
@@ -159,8 +201,15 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
             BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/eng/CardStrings.json");
             BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/eng/PowerStrings.json");
             BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/eng/RelicStrings.json");
+            BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/eng/StanceStrings.json");
             BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/eng/UIStrings.json");
         }
+    }
+
+    @Override
+    public void receiveAddAudio() {
+        BaseMod.addAudio(AtonementStance.SFX_ENTER_ID, "reliquaryAssets/audio/sound/atonement_enter.ogg");
+        BaseMod.addAudio(AtonementStance.SFX_LOOP_ID, "reliquaryAssets/audio/sound/atonement_loop.ogg");
     }
 
     @Override
@@ -171,6 +220,7 @@ public class Reliquary implements EditCardsSubscriber, EditKeywordsSubscriber, E
         BaseMod.addPower(ReduceColorlessCostPower.class, ReduceColorlessCostPower.POWER_ID);
         BaseMod.addPower(TauntPower.class, TauntPower.POWER_ID);
         BaseMod.addPower(TriumphPower.class, TriumphPower.POWER_ID);
+        BaseMod.addPower(VimPower.class, VimPower.POWER_ID);
     }
 
     @Override

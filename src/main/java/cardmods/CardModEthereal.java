@@ -7,23 +7,15 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 public class CardModEthereal extends AbstractCardModifier {
     public static final String ID = "reliquary:CardModEthereal";
 
-    public CardModEthereal() {
-    }
-
     @Override
-    public boolean shouldApply(AbstractCard card) {
-        return !card.isEthereal;
-    }
-
-    @Override
-    public void onInitialApplication(AbstractCard card) {
-        card.isEthereal = true;
-        card.selfRetain = false;
-    }
-
-    @Override
-    public String modifyDescription(String rawDescription, AbstractCard card) {
-        return CardCrawlGame.languagePack.getUIString(ID).TEXT[0] + rawDescription;
+    public void onUpdate(AbstractCard card) {
+        // doing this here instead of onInitialApplication because of interactions with card upgrades removing Ethereal
+        if (!card.isEthereal) {
+            card.isEthereal = true;
+            card.selfRetain = false;
+            card.rawDescription = CardCrawlGame.languagePack.getUIString(ID).TEXT[0] + card.rawDescription;
+            card.initializeDescription();
+        }
     }
 
     @Override

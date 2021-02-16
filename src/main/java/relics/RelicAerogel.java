@@ -116,10 +116,11 @@ public class RelicAerogel extends CustomRelic implements CustomBottleRelic, Cust
     }
 
     public void setDescriptionAfterLoading() {
-        this.description = DESCRIPTIONS[1] + FontHelper.colorString(card.name, "y") + DESCRIPTIONS[2];
-        this.tips.clear();
-        this.tips.add(new PowerTip(this.name, this.description));
-        this.initializeTips();
+        description = DESCRIPTIONS[1] + FontHelper.colorString(card.name, "y") + DESCRIPTIONS[2];
+        tips.clear();
+        tips.add(new PowerTip(name, description));
+        initializeTips();
+        tips.subList(1, tips.size()).clear(); // remove keyword tips from words in the card's name
     }
 
     @Override

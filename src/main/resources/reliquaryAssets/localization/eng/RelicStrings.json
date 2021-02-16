@@ -15,6 +15,44 @@
       "Whenever you shuffle your draw pile, shuffle in a #yFlash #yof #ySteel or #yFinesse, chosen randomly."
     ]
   },
+  "reliquary:BigHammer": {
+    "NAME": "Big Hammer",
+    "FLAVOR": "Truly, it is the biggest hammer you have ever seen.",
+    "DESCRIPTIONS": [
+      "You may upgrade #rRed cards a second time.",
+      "Deal !D! damage. NL Add a copy of this card into your discard pile. NL Deals !M! additional damage for each Anger in your discard pile.",
+      "Gain !B! Block. NL Upgrade all cards in your hand twice for the rest of combat.",
+      "Innate. NL Block is not removed at the start of your turn.",
+      "Gain !M! Vulnerable next turn. NL At the start of your turn, gain [R].",
+      "Lose 3 HP. NL Gain [R] [R] [R] [R].",
+      "Deal damage equal to %d%% of your Block.",
+      "Innate. NL At the start of your turn, lose !M! HP and draw !M! cards.",
+      "At the end of your turn, lose 1 HP, deal !M! damage to ALL enemies, then increase this damage by %d.",
+      "Innate. NL Skills cost 0. NL Whenever you play a Skill, Exhaust it.",
+      "Whenever a card is Exhausted or you play a Power card, draw 1 card.",
+      "Deal !D! damage. If the enemy has Vulnerable, gain [R] and draw 1 card, otherwise apply 1 Vulnerable.",
+      "Choose an Attack or Power card. Add !M! copies of that card into your hand.",
+      "Triple your Block.",
+      "Increase your max hand size by %d. NL Whenever you draw a Status card, draw !M! cards.",
+      "Put a card from your exhaust pile into your hand and Upgrade it. NL Exhaust.",
+      "Gain !M! Strength. NL At the end of %d turns, lose !M! Strength.",
+      "Play the top !M! cards of your draw pile and Exhaust them.",
+      "Add a random Attack into your hand. NL It costs 0 this turn.",
+      "Triple your Strength.",
+      "Lose 6 HP. NL Gain [R] [R] [R]. NL Draw !M! cards. NL Exhaust.",
+      "Deal !D! damage. NL Add a *Dazed into your discard pile.",
+      "Gain [R] [R] [R]. NL Exhaust.",
+      "Gain !B! Block. NL If this card is Exhausted, gain NL [R] [R] [R] and draw !M! cards.",
+      "Deal !D! damage and apply !M! Vulnerable to ALL enemies.",
+      "Gain !B! Block. NL Exhaust between 1 and !M! cards.",
+      "Deal !D! damage to ALL enemies X+%d times."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "These are second upgrades, so all but the first string are slight variants of Ironclad cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicBigHammer.java",
+      "to see which string corresponds to which Ironclad card. Indices start at 0!"
+    ]
+  },
   "reliquary:BoilingFlask": {
     "NAME": "Boiling Flask",
     "FLAVOR": "A round-bottom boiling flask, five thousand milliliters!",
@@ -54,6 +92,14 @@
       " times you play an upgradeable card that's in your deck, #yUpgrade it permanently.",
       "The next time you play an upgradeable card that's in your deck, #yUpgrade it permanently.",
       "This relic has been used up."
+    ]
+  },
+  "reliquary:CitrusReamer": {
+    "NAME": "Citrus Reamer",
+    "FLAVOR": "Why squeeze when you can ream?",
+    "DESCRIPTIONS": [
+      "The first time each turn you have #b",
+      " cards in hand, gain [E] ."
     ]
   },
   "reliquary:Conveyor": {
@@ -118,9 +164,9 @@
     "NAME": "Ferry Pass",
     "FLAVOR": "It reads, \"Enjoy your trip to Lastcel Isle!\"",
     "DESCRIPTIONS": [
-      "When you play every unique non #rCurse card in your deck in one combat, lose this and add a #yRare relic to that combat's reward.",
+      "When you play every unique playable card in your deck in one combat, lose this and add a #yRare relic to that combat's reward.",
       "Play all #b",
-      " unique non #rCurse cards in your deck this combat to exchange this for a #yRare relic.",
+      " unique playable cards in your deck this combat to exchange this for a #yRare relic.",
       "Play #b",
       " more unique cards this combat to exchange this for a #yRare relic.",
       "Play ",
@@ -129,13 +175,34 @@
       " to exchange this for a #yRare relic.",
       " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]show [#2aecd7]unplayed [#2aecd7]cards [#2aecd7]in [#2aecd7]hand.[]"
     ],
-    "NOTE_FOR_TRANSLATORS": "'Every unique card' means every card with a different name. The upgradedness doesn't matter, i.e. 'Strike' and 'Strike+' are the same unique card."
+    "NOTE_FOR_TRANSLATORS": [
+      "'Every unique card' means every card with a different name. The upgradedness doesn't matter, i.e. 'Strike' and 'Strike+' are the same unique card.",
+      "A couple examples of what those last few strings will look like once assembled:",
+      "Play Bash, Defend, and Strike to exchange this for a Rare relic.",
+      "Play Strike and Defend to exchange this for a Rare relic.",
+      "Lastcel is a made-up name... I think? It's our wonderful ZHS translator's Github username."
+    ]
+  },
+  "reliquary:FingerTrap": {
+    "NAME": "Finger Trap",
+    "FLAVOR": "Maybe if you chilled out for a second, you could get it off.",
+    "DESCRIPTIONS": [
+      "You can't lose HP during your turn."
+    ]
   },
   "reliquary:Firecrackers": {
     "NAME": "Firecrackers",
     "FLAVOR": "Makes quite a racket. Keep it down out there, y'dang kids!",
     "DESCRIPTIONS": [
       "Overkill damage is dealt to a random enemy."
+    ]
+  },
+  "reliquary:GummyVitamins": {
+    "NAME": "Gummy Vitamins",
+    "FLAVOR": "Mmm, chewy!",
+    "DESCRIPTIONS": [
+      "Once per turn, you may draw a card, then shuffle a #rSlimed into your draw pile.",
+      "I've already used that this turn."
     ]
   },
   "reliquary:HotPoker": {
@@ -180,7 +247,7 @@
     "NAME": "Kinked Spring",
     "FLAVOR": "Someone overwound this thing, and it ain't comin' back.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. Your discard pile will only shuffle into your draw pile if your draw pile is empty at the end of your turn."
+      "Gain [E] at the start of your turn. Your discard pile only shuffles into your draw pile when your draw pile is empty at the end of your turn."
     ]
   },
   "reliquary:Knoch": {
@@ -299,7 +366,8 @@
     "FLAVOR": "Who wants the horns?",
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. Whenever you #yAttack a single enemy, other enemies can't be targeted until it dies."
-    ]
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a matador's cape."
   },
   "reliquary:RedPaperclip": {
     "NAME": "Red Paperclip",
@@ -324,6 +392,22 @@
       "Whenever you block damage exactly, gain [E] next turn."
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the song 'Wonderwall' by Oasis."
+  },
+  "reliquary:RustamsPendant": {
+    "NAME": "Rustam's Pendant",
+    "FLAVOR": "It's just a hunk of metal, but it seems to know something about you.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Has a different drawback for each character.",
+      "Gain [E] at the start of your turn. Start each combat with #b",
+      " #yStrength.",
+      " #yDexterity.",
+      " #yFocus.",
+      " #yDevotion. When you obtain #b",
+      " #yMantra, enter #yAtonement.",
+      "At the start of your turn, lose #b",
+      " #yMantra."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This relic is named after our wonderful RUS translator!"
   },
   "reliquary:SculptingSteel": {
     "NAME": "Sculpting Steel",
@@ -372,6 +456,15 @@
       "Whenever you would discard a single card at the end of your turn, #yRetain it."
     ]
   },
+  "reliquary:Sod": {
+    "NAME": "Sod",
+    "FLAVOR": "Contrary to popular belief, it's not greener on the other side; it's brown.",
+    "DESCRIPTIONS": [
+      "Put an #yUpgraded copy of every #b",
+      "th unupgraded card you play into your hand."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a joke about the saying 'the grass is always greener on the other side.'"
+  },
   "reliquary:Solitaire": {
     "NAME": "Solitaire",
     "FLAVOR": "You dreamed of it, once. How it crossed over into reality is a mystery.",
@@ -399,12 +492,21 @@
       "Gain !B! Block. NL The next Attack you play costs 0 and deals !M! additional damage.",
       "Retain. NL Enter Calm.",
       "Next turn, draw !M! card. Take an extra turn after this one. NL End your turn. NL Exhaust.",
-      "Retain. NL Gain !M! Mantra. When Retained, increase Mantra gained by %d (max %d)."
+      "Retain. NL Gain !M! Mantra. When Retained, increase Mantra gained by %d (max %d).",
+      "Enter Wrath. NL Deal !D! damage."
     ],
     "NOTE_FOR_TRANSLATORS": [
       "These are second upgrades, so all but the first string are slight variants of Watcher cards.",
       "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicSolitaire.java",
-      "to see which string corresponds to which Watcher card."
+      "to see which string corresponds to which Watcher card. Indices start at 0!"
+    ]
+  },
+  "reliquary:Spinner": {
+    "NAME": "Spinner",
+    "FLAVOR": "Please don't land on red, please don't land on red... son of a—!",
+    "DESCRIPTIONS": [
+      "Whenever you play a card of a different type than the previous that turn, gain #b",
+      " #yBlock."
     ]
   },
   "reliquary:Stiletto": {
@@ -439,6 +541,15 @@
     ],
     "NOTE_FOR_TRANSLATORS": "A couple of these are voice lines from the merchant in Resident Evil 4."
   },
+  "reliquary:ThirdArm": {
+    "NAME": "Third Arm",
+    "FLAVOR": "It's tiny, and it doesn't even have fingers.",
+    "DESCRIPTIONS": [
+      "Start each combat with a cost #b",
+      " #yPower in your draw pile that gives you [E] every turn."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the arm from a wooden figure-drawing manikin."
+  },
   "reliquary:TridentHead": {
     "NAME": "Trident Head",
     "FLAVOR": "A part of the weapon wielded by the fabled Wave King.",
@@ -452,6 +563,17 @@
     "DESCRIPTIONS": [
       "Whenever you break an enemy's #yBlock exactly, deal #b",
       " damage to it."
+    ]
+  },
+  "reliquary:Vitrine": {
+    "NAME": "Vitrine",
+    "FLAVOR": "The perfect place to present your most prized possessions.",
+    "DESCRIPTIONS": [
+      "Upon pickup, remove a card from your deck. You may choose to shuffle it into your draw pile any time during combat.",
+      "Choose a card to remove.",
+      "[#2aecd7]Right [#2aecd7]click[] to shuffle ",
+      " into your draw pile.",
+      " will return here after combat."
     ]
   },
   "reliquary:WeakTea": {

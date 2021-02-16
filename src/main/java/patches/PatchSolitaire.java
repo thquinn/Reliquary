@@ -7,6 +7,7 @@ import actions.SolitaireLessonLearnedAction;
 import basemod.helpers.CardModifierManager;
 import cardmods.CardModIncreaseMagicToLimit;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -31,13 +32,16 @@ import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.CollectPower;
 import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
+import com.megacrit.cardcrawl.powers.watcher.CannotChangeStancePower;
 import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 import com.megacrit.cardcrawl.stances.DivinityStance;
+import com.megacrit.cardcrawl.stances.WrathStance;
 import com.megacrit.cardcrawl.vfx.combat.AnimatedSlashEffect;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
 import powers.InNTurnsDeathPower;
 import powers.SolitaireStudyPower;
+import relics.RelicBigHammer;
 import relics.RelicSolitaire;
 
 import java.util.ArrayList;
@@ -53,7 +57,7 @@ public class PatchSolitaire {
                                   __instance.cardID.equals(BecomeAlmighty.ID) ||
                                   __instance.cardID.equals(FameAndFortune.ID) ||
                                   __instance.cardID.equals(LiveForever.ID);
-            if (watcherCard && __instance.timesUpgraded < 2 && AbstractDungeon.player.hasRelic(RelicSolitaire.ID)) {
+            if (watcherCard && __instance.timesUpgraded < 2 && AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(RelicSolitaire.ID)) {
                 return SpireReturn.Return(true);
             }
             return SpireReturn.Continue();
@@ -69,8 +73,11 @@ public class PatchSolitaire {
                 locator= Locator.class
         )
         public static void Insert(CardCrawlGame __instance, AbstractPlayer p) {
-            // We must load the player's Solitaire before loading cards, since whether they can be upgraded a second
-            // time depends on whether they have a Solitaire.
+            // We must load the player's Solitaire-like relic before loading cards, since whether they can be upgraded a
+            // second time depends on whether they have a Solitaire.
+            if (CardCrawlGame.saveFile.relics.contains(RelicBigHammer.ID)) {
+                RelicLibrary.getRelic(RelicBigHammer.ID).instantObtain(p, 0, false);
+            }
             if (CardCrawlGame.saveFile.relics.contains(RelicSolitaire.ID)) {
                 RelicLibrary.getRelic(RelicSolitaire.ID).instantObtain(p, 0, false);
             }
@@ -164,6 +171,9 @@ public class PatchSolitaire {
     @SpirePatch(clz=WreathOfFlame.class, method="upgrade")
     public static class PatchSolitaireUpgrade {
         public static SpireReturn Prefix(AbstractCard __instance) {
+            if (AbstractDungeon.player == null) {
+                return SpireReturn.Continue();
+            }
             RelicSolitaire solitaire = (RelicSolitaire) AbstractDungeon.player.getRelic(RelicSolitaire.ID);
             if (__instance.timesUpgraded == 1 && solitaire != null) {
                 solitaire.upgradeCard(__instance);
@@ -193,14 +203,13 @@ public class PatchSolitaire {
             method="use"
     )
     public static class PatchSolitaireCollect {
-        public static SpireReturn Postfix(Collect __instance, AbstractPlayer p) {
+        public static void Postfix(Collect __instance, AbstractPlayer p) {
             if (__instance.timesUpgraded == 2) {
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new CollectPower(p, 1), 1));
-                return SpireReturn.Return(null);
             }
-            return SpireReturn.Continue();
         }
     }
+
     @SpirePatch(
             clz=ConjureBlade.class,
             method="use"
@@ -223,6 +232,25 @@ public class PatchSolitaire {
         public static SpireReturn Prefix(Crescendo __instance) {
             if (__instance.timesUpgraded == 2) {
                 AbstractDungeon.actionManager.addToBottom(new SolitaireCrescendoAction(__instance.magicNumber));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+    }
+
+    @SpirePatch(
+            clz=Eruption.class,
+            method="use"
+    )
+    public static class PatchSolitaireEruption {
+        public static SpireReturn Prefix(Eruption __instance, AbstractPlayer p, AbstractMonster m) {
+            if (__instance.timesUpgraded == 2) {
+                int damage = __instance.damage;
+                if (!p.stance.ID.equals(WrathStance.STANCE_ID) && !p.hasPower(CannotChangeStancePower.POWER_ID)) {
+                    damage = MathUtils.floor(new WrathStance().atDamageGive(damage, __instance.damageTypeForTurn));
+                }
+                AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(WrathStance.STANCE_ID));
+                AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, __instance.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
                 return SpireReturn.Return(null);
             }
             return SpireReturn.Continue();

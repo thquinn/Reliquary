@@ -204,5 +204,10 @@
   "reliquary:VaporWeakPotion": {
     "NAME": "Sickly Vapor",
     "DESCRIPTION": "Retain. NL Apply !M! Weak. NL Exhaust."
+  },
+  "reliquary:Vim": {
+    "NAME": "Vim",
+    "DESCRIPTION": "Gain [E] at the start of your turn.",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] at the start of your turn."
   }
 }

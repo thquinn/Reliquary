@@ -62,11 +62,11 @@ public class RelicSideboard extends CustomRelic implements CustomSavable<List<Ca
     }
 
     public void onClickTopPanelItem() {
-        if (AbstractDungeon.getCurrRoom() != null && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
+        if (AbstractDungeon.screen == AbstractDungeon.CurrentScreen.GRID) {
             return;
         }
-        if (!cardSelected) {
-            return; // The sideboard is already open.
+        if (AbstractDungeon.getCurrRoom() != null && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
+            return; // Can't use during combat.
         }
         cardSelected = false;
         if (cards.isEmpty()) {
@@ -77,7 +77,6 @@ public class RelicSideboard extends CustomRelic implements CustomSavable<List<Ca
                 AbstractDungeon.overlayMenu.cancelButton.hide();
                 AbstractDungeon.previousScreen = AbstractDungeon.screen;
             }
-            AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.INCOMPLETE;
             AbstractDungeon.gridSelectScreen.open(cards, 1, DESCRIPTIONS[5], false, false, true, false);
             AbstractDungeon.overlayMenu.cancelButton.show("Cancel");
         }
@@ -92,13 +91,11 @@ public class RelicSideboard extends CustomRelic implements CustomSavable<List<Ca
             AbstractCard card = AbstractDungeon.gridSelectScreen.selectedCards.get(0);
             cards.removeCard(card);
             AbstractDungeon.effectsQueue.add(new FastCardObtainEffect(card, card.current_x, card.current_y));
-            AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.COMPLETE;
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
         }
         if (!cardSelected && AbstractDungeon.screen != AbstractDungeon.CurrentScreen.GRID) {
             // Canceled.
             cardSelected = true;
-            AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.COMPLETE;
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
         }
     }

@@ -1,0 +1,481 @@
+{
+  "reliquary:Aerogel": {
+    "NAME": "Aerogel",
+    "FLAVOR": "No pesa casi nada y es un buen aislante contra la mala suerte.",
+    "DESCRIPTIONS": [
+      "Al recoger, escoge una carta. Siempre que barajes tu pila de extracción con esta carta, estará en tope.",
+      "Siempre que barajes tu pila de extracción con ",
+      ", estará en tope."
+    ]
+  },
+  "reliquary:BallBearing": {
+    "NAME": "Rodamientos de Bolas",
+    "FLAVOR": "Mantiene todo funcionando fluidamente.",
+    "DESCRIPTIONS": [
+      "Siempre que barajes tu pila de extracción, añade un #yDestello #yde #yAcero o #ySutileza, elegido al azar."
+    ]
+  },
+  "reliquary:BoilingFlask": {
+    "NAME": "Frasco para Hervir",
+    "FLAVOR": "¡Un frasco redondo para hervir de cinco mil mililitros!",
+    "DESCRIPTIONS": [
+      "Al comienzo de cada combate, si tus espacios para pociones son llenos, elige una carta de #yVapor y añádela a tu mano."
+    ]
+  },
+  "reliquary:Bookmark": {
+    "NAME": "Marcapáginas",
+    "FLAVOR": "\"Entonces, ¿Dónde estaba yo...?\"",
+    "DESCRIPTIONS": [
+      "Al comienzo de cada combate, roba una carta adicional por cada carta #yInnata en tu mazo."
+    ]
+  },
+  "reliquary:Boomerang": {
+    "NAME": "Búmeran",
+    "FLAVOR": "Si amas algo, déjalo ir. O simplemente lánzalo.",
+    "DESCRIPTIONS": [
+      "La primera carta jugada cada turno se colocará encima de pila de robado.",
+      "",
+      "",
+      "La cuarta carta jugada cada turno se colocará encima de pila de robado."
+    ]
+  },
+  "reliquary:BrokenClock": {
+    "NAME": "Reloj Roto",
+    "FLAVOR": "De algún modo da la hora equivocada dos veces al día, y da bien la hora el resto.",
+    "DESCRIPTIONS": [
+      "Cada combate comienza con dos turnos del jugador, entonces dos turnos enemigos."
+    ]
+  },
+  "reliquary:Buckler": {
+    "NAME": "Broquel",
+    "FLAVOR": "Engalanado con el famoso sello del cisne de Mérek.",
+    "DESCRIPTIONS": [
+      "Las próximas #b",
+      " veces que juegas una carta mejorable en tu mazo, #yMejórala permanentemente.",
+      "Las próxima vez que juegas una carta mejorable en tu mazo, #yMejórala permanentemente",
+      "Esta reliquia se ha usado por completo."
+    ]
+  },
+  "reliquary:Conveyor": {
+    "NAME": "Conveyor",
+    "FLAVOR": "Takes you where you want to go.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, #yChannel a type of Orb of which you have #b",
+      " or more #yChanneled."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a conveyor block from the game Infinifactory."
+  },
+  "reliquary:Craggleroot": {
+    "NAME": "Craggleroot",
+    "FLAVOR": "This root has seen some hard times. Maybe it will see you through hard times as well?",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. The first card you draw each turn costs #b1 more this combat."
+    ]
+  },
+  "reliquary:Crutches": {
+    "NAME": "Crutches",
+    "FLAVOR": "You're not the one that's gonna need these.",
+    "DESCRIPTIONS": [
+      "Whenever you get a #yStatus, enemies lose #b",
+      " #yStrength during their next turn."
+    ]
+  },
+  "reliquary:Dhvaja": {
+    "NAME": "Dhvaja",
+    "FLAVOR": "Victory shall be yours... eventually.",
+    "DESCRIPTIONS": [
+      "Whenever you exit #yDivinity, #yDivinity's damage multiplier increases by #b1 this combat."
+    ],
+    "NOTE_FOR_TRANSLATORS": "https://en.wikipedia.org/wiki/Dhvaja"
+  },
+  "reliquary:Ember": {
+    "NAME": "Ember",
+    "FLAVOR": "Hachi machi, that's hot!",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Take #b",
+      " damage for each Energy beyond the third you spend each turn."
+    ]
+  },
+  "reliquary:ExpiredCoupon": {
+    "NAME": "Expired Coupon",
+    "FLAVOR": "Good for 10% off an \"ass-beating.\" Who printed this thing, anyway?",
+    "DESCRIPTIONS": [
+      "Whenever you reach #b",
+      " or more total unblocked damage dealt in a combat, deal #b",
+      " damage to ALL enemies."
+    ]
+  },
+  "reliquary:FeatherDuster": {
+    "NAME": "Feather Duster",
+    "FLAVOR": "\"My life's mistakes, they lay about me like so much dust.\" - Cademo",
+    "DESCRIPTIONS": [
+      "Upon pickup, remove any number of cards from your deck except Strike, Defend, and #rCurse cards.",
+      "Select any number of cards to remove."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a made-up quote by a made-up person."
+  },
+  "reliquary:FerryPass": {
+    "NAME": "Ferry Pass",
+    "FLAVOR": "It reads, \"Enjoy your trip to Lastcel Isle!\"",
+    "DESCRIPTIONS": [
+      "When you play every unique non #rCurse card in your deck in one combat, lose this and add a #yRare relic to that combat's reward.",
+      "Play all #b",
+      " unique non #rCurse cards in your deck this combat to exchange this for a #yRare relic.",
+      "Play #b",
+      " more unique cards this combat to exchange this for a #yRare relic.",
+      "Play ",
+      ", and ",
+      " and ",
+      " to exchange this for a #yRare relic.",
+      " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]show [#2aecd7]unplayed [#2aecd7]cards [#2aecd7]in [#2aecd7]hand.[]"
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "'Every unique card' means every card with a different name. The upgradedness doesn't matter, i.e. 'Strike' and 'Strike+' are the same unique card.",
+      "A couple examples of what those last few strings will look like once assembled:",
+      "Play Bash, Defend, and Strike to exchange this for a Rare relic.",
+      "Play Strike and Defend to exchange this for a Rare relic.",
+      "Lastcel is a made-up name... I think? It's our wonderful ZHS translator's Github username."
+    ]
+  },
+  "reliquary:Firecrackers": {
+    "NAME": "Firecrackers",
+    "FLAVOR": "Makes quite a racket. Keep it down out there, y'dang kids!",
+    "DESCRIPTIONS": [
+      "Overkill damage is dealt to a random enemy."
+    ]
+  },
+  "reliquary:HotPoker": {
+    "NAME": "Hot Poker",
+    "FLAVOR": "Wouldn't want to be caught at the business end of this thing.",
+    "DESCRIPTIONS": [
+      "Whenever you draw a card during your turn, deal damage equal to its cost to a random enemy."
+    ]
+  },
+  "reliquary:IridiumChain": {
+    "NAME": "Iridium Chain",
+    "FLAVOR": "You try to count the links, but never come up with the same number twice.",
+    "DESCRIPTIONS": [
+      "Whenever you play a #yPower card, put an #yEthereal copy into your hand that costs #b1 more.",
+      "Ethereal. NL "
+    ]
+  },
+  "reliquary:IvoryTrinket": {
+    "NAME": "Ivory Trinket",
+    "FLAVOR": "Someone cut the tusk from an elephant, just to whittle it into a smaller tusk. But why?",
+    "DESCRIPTIONS": [
+      "Every #b",
+      "th time you #yRetain a #yMiracle, add a #yMiracle into your hand."
+    ]
+  },
+  "reliquary:JackalopeAntler": {
+    "NAME": "Jackalope Antler",
+    "FLAVOR": "Whatever creature this came from must be running around lopsided.",
+    "DESCRIPTIONS": [
+      "Whenever an enemy dies, refund the Energy cost of the last card you played."
+    ]
+  },
+  "reliquary:KillPill": {
+    "NAME": "Kill Pill",
+    "FLAVOR": "Would look pretty cool on the back of a leather jacket.",
+    "DESCRIPTIONS": [
+      "The first time you apply #yPoison to each enemy each turn, it triggers immediately."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the symbol of the motorcycle gang from Akira."
+  },
+  "reliquary:KinkedSpring": {
+    "NAME": "Kinked Spring",
+    "FLAVOR": "Someone overwound this thing, and it ain't comin' back.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Your discard pile only shuffles into your draw pile when your draw pile is empty at the end of your turn."
+    ]
+  },
+  "reliquary:Knoch": {
+    "NAME": "Knoch",
+    "FLAVOR": "It keeps sinking to the bottom of your pack.",
+    "DESCRIPTIONS": [
+      "Enemies with #b",
+      "% or less health are #yWeak."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A knoch is just a fishing sinker: https://en.wikipedia.org/wiki/Fishing_sinker"
+  },
+  "reliquary:LoveEmittingDiode": {
+    "NAME": "Love-Emitting Diode",
+    "FLAVOR": "Spread the love, pursuant to the principles of the inverse-square law.",
+    "DESCRIPTIONS": [
+      "Positive #yFocus affects your rightmost Orb #b",
+      " times."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a play on light-emitting diodes, or LEDs."
+  },
+  "reliquary:MedicineBall": {
+    "NAME": "Medicine Ball",
+    "FLAVOR": "If only you had someone to toss this around with...",
+    "DESCRIPTIONS": [
+      "You have additional #yStrength equal to the highest #yStrength among enemies (0 minimum)."
+    ]
+  },
+  "reliquary:MudwinsCradle": {
+    "NAME": "Mudwin's Cradle",
+    "FLAVOR": "Most popular desk toy.",
+    "DESCRIPTIONS": [
+      "Whenever you exit #yDivinity, gain #b",
+      " #yMantra for each time you entered #yDivinity this combat (max ",
+      " )."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a Newton's Cradle. 'Mudwin' is just a dumb name made up to sound like 'Newton.'"
+  },
+  "reliquary:NewFriend": {
+    "NAME": "New Friend",
+    "FLAVOR": "This little guy won't stop following you... and boy is he hungry.",
+    "DESCRIPTIONS": [
+      "Strikes and Defends #yExhaust #b",
+      "% of the time."
+    ]
+  },
+  "reliquary:OuijaBoard": {
+    "NAME": "Ouija Board",
+    "FLAVOR": "Only as mysterious as you make it.",
+    "DESCRIPTIONS": [
+      "Once per turn, pay the cost of a card in your discard pile plus #b1 to play it and shuffle it into your draw pile.",
+      "I've already used that this turn.",
+      "My discard pile is #rempty.",
+      "I don't have enough Energy for the cards in my discard pile."
+    ]
+  },
+  "reliquary:PartyBalloon": {
+    "NAME": "Party Balloon",
+    "FLAVOR": "Hold on to that string, or you'll never see it again!",
+    "DESCRIPTIONS": [
+      "#yPower cards start each combat in the top half of your draw pile."
+    ]
+  },
+  "reliquary:PorcupineQuills": {
+    "NAME": "Porcupine Quills",
+    "FLAVOR": "If these get ya, you must have really deserved it.",
+    "DESCRIPTIONS": [
+      "Whenever you receive #b",
+      " or more unblocked damage, deal that much damage back."
+    ]
+  },
+  "reliquary:PrincelyHelmet": {
+    "NAME": "Princely Helmet",
+    "FLAVOR": "Way too small to fit on your head. If it were Ours, We'd make it much bigger.",
+    "DESCRIPTIONS": [
+      "Double the first X #yBlock you gain each combat, where X is #b",
+      " times the current Act."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the headgear of the Prince of All Cosmos from the Katamari Damacy series."
+  },
+  "reliquary:PurpleTingedLeaf": {
+    "NAME": "Purple-Tinged Leaf",
+    "FLAVOR": "This leaf has the appearance, unique in all the plant kingdom, of having been drawn by a grade schooler.",
+    "DESCRIPTIONS": [
+      "Upon pickup, choose an #yAttack. Whenever you play this card, heal #b1 HP.",
+      "Choose a card for ",
+      "Whenever you play the chosen ",
+      ", heal #b1 HP."
+    ]
+  },
+  "reliquary:Pushpin": {
+    "NAME": "Pushpin",
+    "FLAVOR": "Sometimes used to solve murders, but the most skilled assassins can use them to commit one.",
+    "DESCRIPTIONS": [
+      "The cards in your opening hand #yRetain for the rest of combat."
+    ]
+  },
+  "reliquary:QuartzCube": {
+    "NAME": "Quartz Cube",
+    "FLAVOR": "It's like an ice cube that never melts, but also isn't cold.",
+    "DESCRIPTIONS": [
+      "At the start of each combat with #b",
+      " or more enemies, apply #b",
+      " #yStunned and #b",
+      " #yInvincible to one."
+    ]
+  },
+  "reliquary:RadioactivePellet": {
+    "NAME": "Radioactive Pellet",
+    "FLAVOR": "The secret weapon of the world's most dastardly villains.",
+    "DESCRIPTIONS": [
+      "#yPoison doesn't decrement."
+    ]
+  },
+  "reliquary:RedCape": {
+    "NAME": "Red Cape",
+    "FLAVOR": "Who wants the horns?",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Whenever you #yAttack a single enemy, other enemies can't be targeted until it dies."
+    ]
+  },
+  "reliquary:RedPaperclip": {
+    "NAME": "Red Paperclip",
+    "FLAVOR": "A powerful symbol of barter.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Replaces #b",
+      " random Common or #bUncommon relics."
+    ]
+  },
+  "reliquary:RoseTintedGlasses": {
+    "NAME": "Rose-Tinted Glasses",
+    "FLAVOR": "You know what? Things aren't so bad.",
+    "DESCRIPTIONS": [
+      "The first #b",
+      " times you draw a #yStatus each combat, #yExhaust it and draw a card."
+    ]
+  },
+  "reliquary:RosewoodLute": {
+    "NAME": "Rosewood Lute",
+    "FLAVOR": "Anyway, here's \"Wonderspire.\"",
+    "DESCRIPTIONS": [
+      "Whenever you block damage exactly, gain [E] next turn."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the song 'Wonderwall' by Oasis."
+  },
+  "reliquary:SculptingSteel": {
+    "NAME": "Sculpting Steel",
+    "FLAVOR": "Malleable as clay one second, hard as stone the next.",
+    "DESCRIPTIONS": [
+      "Upon pickup, becomes a copy of a random Common, #bUncommon, #yRare, or #yShop relic you already have."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a reference to the Magic card Sculpting Steel, which has some existing translations: https://scryfall.com/search?q=%21%E2%80%9CSculpting+Steel%E2%80%9D+set%3A2xm+lang%3Aany&unique=prints"
+  },
+  "reliquary:SharkskinSheath": {
+    "NAME": "Sharkskin Sheath",
+    "FLAVOR": "If only you had a sharkskin knife to put in it.",
+    "DESCRIPTIONS": [
+      "Whenever you end your turn with no cards in hand, draw a card next turn."
+    ]
+  },
+  "reliquary:ShortFuse": {
+    "NAME": "Short Fuse",
+    "FLAVOR": "It might blow at any moment.",
+    "DESCRIPTIONS": [
+      "Your #yLightning Orbs target the enemy with the least HP."
+    ],
+    "NOTE_FOR_TRANSLATORS": "To have a 'short fuse' means you get angry easily."
+  },
+  "reliquary:Sideboard": {
+    "NAME": "Sideboard",
+    "FLAVOR": "A board for you to keep cards... on? In?",
+    "DESCRIPTIONS": [
+      "Chosen card rewards go into a separate pile. You can move cards from that pile to your deck between combats.",
+      "Sideboard",
+      "Add cards from your sideboard into your deck between combats.",
+      " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]toggle [#2aecd7]off.[]",
+      " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]toggle [#2aecd7]on.[]",
+      "Choose a card to add into your deck."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "This is a reference to 'sideboards' in Magic the Gathering. It's a wooden board... this pun may not translate.",
+      "You may find the term used for sideboards in other languages here: https://blogs.magicjudges.org/translatedrules/",
+      "in the Comprehensive Rules, rule 100.4. The complete rules document might be on the second page."
+    ]
+  },
+  "reliquary:SilkGlove": {
+    "NAME": "Silk Glove",
+    "FLAVOR": "Left behind by a fancy lady who doesn't mess around.",
+    "DESCRIPTIONS": [
+      "Whenever you would discard a single card at the end of your turn, #yRetain it."
+    ]
+  },
+  "reliquary:Solitaire": {
+    "NAME": "Solitaire",
+    "FLAVOR": "You dreamed of it, once. How it crossed over into reality is a mystery.",
+    "DESCRIPTIONS": [
+      "You may upgrade #pPurple cards a second time.",
+      "Innate. NL Shuffle a *Beta+ into your draw pile. NL Exhaust.",
+      "Innate. NL At the start of each turn, add a *Smite+ into your hand.",
+      "Retain. NL Enter Divinity. NL Die in !M! turns. NL Exhaust.",
+      "Deal !D! damage. NL Add a *Smite+ into your hand.",
+      "Put a *Miracle+ into your hand at the start of your next X+2 turns. NL Exhaust.",
+      "Shuffle an *Expunger+ with X+1 into your draw pile. NL Exhaust.",
+      "Retain. NL If you are in Wrath, gain !M! Strength this turn, otherwise enter Wrath. NL Exhaust.",
+      "Gain !B! Block. NL Add a *Safety+ into NL your hand.",
+      "Innate. NL At the start of your turn, gain [W] NL and increase this gain by !M!.",
+      "Retain. NL Deal !D! damage !M! times.",
+      "Choose 1 of 3 Attacks of any color and add !M! copies to your hand. NL They cost 0 this turn. NL Exhaust.",
+      "Deal !D! damage. NL If Fatal, Upgrade a random card in your deck twice. NL Exhaust.",
+      "Innate. NL Whenever a card is created during combat, Upgrade it.",
+      "Put !M! cards from your discard pile into your hand and Retain them. NL Enter Calm. NL End your turn.",
+      "Choose a card in your draw pile. NL Play the chosen card !M! times and exhaust it. NL Exhaust.",
+      "Deal !D! damage. NL Shuffle a NL *Through *Violence+ into your draw pile.",
+      "Retain. NL Deal !D! damage. NL When Retained, lower its cost by !M! this combat.",
+      "Scry !M!. NL Draw cards until your hand is full. NL Exhaust.",
+      "At the end of your turn, shuffle an *Insight+ into your draw pile.",
+      "Gain !B! Block. NL The next Attack you play costs 0 and deals !M! additional damage.",
+      "Retain. NL Enter Calm.",
+      "Next turn, draw !M! card. Take an extra turn after this one. NL End your turn. NL Exhaust.",
+      "Retain. NL Gain !M! Mantra. When Retained, increase Mantra gained by %d (max %d)."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "These are second upgrades, so all but the first string are slight variants of Watcher cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicSolitaire.java",
+      "to see which string corresponds to which Watcher card."
+    ]
+  },
+  "reliquary:Stiletto": {
+    "NAME": "Stiletto",
+    "FLAVOR": "Designed to slip between the plates and links of most any armor.",
+    "DESCRIPTIONS": [
+      "Enemies gain #b",
+      "% less #yBlock."
+    ]
+  },
+  "reliquary:Tamtam": {
+    "NAME": "Tam-Tam",
+    "FLAVOR": "GONG.",
+    "DESCRIPTIONS": [
+      "Whenever you start your turn with #yBlock, you and ALL enemies gain #b1 #yStrength."
+    ]
+  },
+  "reliquary:TatteredRug": {
+    "NAME": "Tattered Rug",
+    "FLAVOR": "What, you think anyone can just set up shop?",
+    "DESCRIPTIONS": [
+      "You can sell potions to the Merchant.",
+      "Sell for ",
+      " Gold",
+      "I'll take it!",
+      "You got yourself a deal!",
+      "~What're~ ~ya~ ~sellin'?~",
+      "Ah! I'll buy it at a high price!",
+      "Gimme!",
+      "I'd be a fool @not@ to buy it!",
+      "You drive a hard bargain..."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A couple of these are voice lines from the merchant in Resident Evil 4."
+  },
+  "reliquary:TridentHead": {
+    "NAME": "Trident Head",
+    "FLAVOR": "A part of the weapon wielded by the fabled Wave King.",
+    "DESCRIPTIONS": [
+      "The first card you play on a single enemy each combat is copied to all other enemies."
+    ]
+  },
+  "reliquary:TuningFork": {
+    "NAME": "Tuning Fork",
+    "FLAVOR": "If you try eating with it, you're liable to break a tooth.",
+    "DESCRIPTIONS": [
+      "Whenever you break an enemy's #yBlock exactly, deal #b",
+      " damage to it."
+    ]
+  },
+  "reliquary:WeakTea": {
+    "NAME": "Weak Tea",
+    "FLAVOR": "If you can sleep after drinking it, what's the point?",
+    "DESCRIPTIONS": [
+      "The first Colorless card you play each combat costs #b1 less.",
+      "The first #b",
+      " Colorless cards you play each combat cost #b1 less."
+    ]
+  },
+  "reliquary:WritOfMandamus": {
+    "NAME": "Writ of Mandamus",
+    "FLAVOR": "It begins, \"Whatever you're thinking about doing: hold it, mister.\"",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. At the end of your turn, you lose #b",
+      " #yBlock."
+    ],
+    "NOTE_FOR_TRANSLATORS": "'Mandamus' is just a made-up name."
+  }
+}

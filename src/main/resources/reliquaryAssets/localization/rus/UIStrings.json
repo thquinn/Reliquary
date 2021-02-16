@@ -1,0 +1,12 @@
+{
+  "reliquary:CardModEthereal": {
+    "TEXT": [
+      "Эфирная. NL "
+    ]
+  },
+  "reliquary:CardModRetain": {
+    "TEXT": [
+      "Оставляется. NL "
+    ]
+  }
+}

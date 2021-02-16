@@ -12,40 +12,40 @@
     "NAME": "滚珠轴承",
     "FLAVOR": "让一切顺滑地运转。",
     "DESCRIPTIONS": [
-      "每当你将抽牌堆洗牌时，随机洗入一张 #y亮剑 或 #y妙计 。"
+      "每当你将抽牌堆洗牌时，随机放入一张 #y亮剑 或 #y妙计 。"
     ]
   },
   "reliquary:BigHammer": {
-    "NAME": "Big Hammer",
-    "FLAVOR": "Truly, it is the biggest hammer you have ever seen.",
+    "NAME": "大锤",
+    "FLAVOR": "真的，这绝对是你见过的最大的锤子。",
     "DESCRIPTIONS": [
-      "You may upgrade #rRed cards a second time.",
-      "Deal !D! damage. NL Add a copy of this card into your discard pile. NL Deals !M! additional damage for each Anger in your discard pile.",
-      "Gain !B! Block. NL Upgrade all cards in your hand twice for the rest of combat.",
-      "Innate. NL Block is not removed at the start of your turn.",
-      "Gain !M! Vulnerable next turn. NL At the start of your turn, gain [R].",
-      "Lose 3 HP. NL Gain [R] [R] [R] [R].",
-      "Deal damage equal to %d%% of your Block.",
-      "Innate. NL At the start of your turn, lose !M! HP and draw !M! cards.",
-      "At the end of your turn, lose 1 HP, deal !M! damage to ALL enemies, then increase this damage by %d.",
-      "Innate. NL Skills cost 0. NL Whenever you play a Skill, Exhaust it.",
-      "Whenever a card is Exhausted or you play a Power card, draw 1 card.",
-      "Deal !D! damage. If the enemy has Vulnerable, gain [R] and draw 1 card, otherwise apply 1 Vulnerable.",
-      "Choose an Attack or Power card. Add !M! copies of that card into your hand.",
-      "Triple your Block.",
-      "Increase your max hand size by %d. NL Whenever you draw a Status card, draw !M! cards.",
-      "Put a card from your exhaust pile into your hand and Upgrade it. NL Exhaust.",
-      "Gain !M! Strength. NL At the end of %d turns, lose !M! Strength.",
-      "Play the top !M! cards of your draw pile and Exhaust them.",
-      "Add a random Attack into your hand. NL It costs 0 this turn.",
-      "Triple your Strength.",
-      "Lose 6 HP. NL Gain [R] [R] [R]. NL Draw !M! cards. NL Exhaust.",
-      "Deal !D! damage. NL Add a *Dazed into your discard pile.",
-      "Gain [R] [R] [R]. NL Exhaust.",
-      "Gain !B! Block. NL If this card is Exhausted, gain NL [R] [R] [R] and draw !M! cards.",
-      "Deal !D! damage and apply !M! Vulnerable to ALL enemies.",
-      "Gain !B! Block. NL Exhaust between 1 and !M! cards.",
-      "Deal !D! damage to ALL enemies X+%d times."
+      "#r红色 牌可以被 #y升级 两次。",
+      "造成 !D! 点伤害。 NL 在弃牌堆放入一张此牌的复制品。 NL 弃牌堆每有一张愤怒，额外造成 !M! 点伤害。",
+      "获得 !B! 点 格挡 。 NL 在本场战斗中 升级 手牌中的所有牌两次。",
+      "固有 。 NL 格挡 不再在你的回合开始时消失。",
+      "下回合获得 !M! 层 易伤 。 NL 在每回合开始时获得 [R] 。",
+      "失去3点生命. NL 获得 [R] [R] [R] [R] 。",
+      "造成你当前 格挡 值的 %d%% 的伤害。",
+      "固有 。 NL 在你的回合开始时，你失去 !M! 点生命，抽 !M! 张牌。",
+      "在你的回合结束时，你失去1点生命，对所有敌人造成 !M! 点伤害，然后将此伤害增加 %d 。",
+      "固有 。 NL 所有技能牌耗能变为0。 NL 所有技能牌在被打出时被 消耗 。",
+      "每有一张牌被 消耗 或每有一张能力牌被打出时，抽一张牌。",
+      "造成 !D! 点伤害。如果敌人有 易伤 状态，获得 [R] 并且抽1张牌。否则，给予1层 易伤 。",
+      "将你手牌中的一张攻击或能力牌复制 !M! 张。",
+      "将你的 格挡 翻三倍。",
+      "将你的手牌上限增加 %d 。 NL 每当你抽到一张 状态牌 时，抽 !M! 张牌。",
+      "选择一张已 消耗 的牌，将其放入你的手牌并 升级 。 NL 消耗 。",
+      "获得 !M! 点 力量 。 NL 此后的第 %d 个回合结束时，失去 !M! 点 力量 。",
+      "打出抽牌堆顶部的 !M! 张牌，将其 消耗 。",
+      "增加一张随机攻击牌到你的手牌。 NL 这张牌在本回合耗能变为0。",
+      "将你的 力量 翻三倍。",
+      "失去6点生命。 NL 获得 [R] [R] [R] 。 NL 抽 !M! 张牌。 NL 消耗 。",
+      "造成 !D! 点伤害。 NL 将一张 *晕眩 放入你的弃牌堆。",
+      "获得 [R] [R] [R] 。 NL 消耗 。",
+      "获得 !B! 点 格挡 。 NL 如果这张牌被 消耗 ，获得 NL [R] [R] [R] 并且抽 !M! 张牌。",
+      "对所有敌人造成 !D! 点伤害，给予 !M! 层 易伤 。",
+      "获得 !B! 点 格挡 。 NL 消耗 最多 !M! 张 手牌。",
+      "对所有敌人造成 !D! 点伤害 X+ %d 次。"
     ],
     "NOTE_FOR_TRANSLATORS": [
       "These are second upgrades, so all but the first string are slight variants of Ironclad cards.",
@@ -95,11 +95,11 @@
     ]
   },
   "reliquary:CitrusReamer": {
-    "NAME": "Citrus Reamer",
-    "FLAVOR": "Why squeeze when you can ream?",
+    "NAME": "柑橘铰刀",
+    "FLAVOR": "能铰为什么要捏呢？",
     "DESCRIPTIONS": [
-      "The first time each turn you have #b",
-      " cards in hand, gain [E] ."
+      "每回合，当你第一次拥有 #b",
+      " 张手牌时，获得 [E] 。"
     ]
   },
   "reliquary:Conveyor": {
@@ -121,7 +121,7 @@
     "NAME": "拐杖",
     "FLAVOR": "你不是将要需要它的那个人。",
     "DESCRIPTIONS": [
-      "每当你获得一张 #y状态 牌，敌人在它们的下个回合失去 #b",
+      "每当你获得一张 #y状态牌 ，敌人在它们的下个回合失去 #b",
       " 点 #y力量 。"
     ]
   },
@@ -161,11 +161,11 @@
     "NAME": "船票",
     "FLAVOR": "上面写道，“移舟泊烟渚，日暮客愁新。”",
     "DESCRIPTIONS": [
-      "When you play every unique playable card in your deck in one combat, lose this and add a #yRare relic to that combat's reward.",
-      "Play all #b",
-      " unique playable cards in your deck this combat to exchange this for a #yRare relic.",
+      "一场战斗中，如果你打出过你牌组中每种名称不同（ #y升级 后的牌视作同名牌）的非 #r诅咒 牌，失去这件遗物，并在本次战斗奖励中增加一件 #y稀有 遗物。",
+      "本场战斗中，打出你牌组中共 #b",
+      " 种名称不同的非 #r诅咒 牌来用一件 #y稀有 遗物换掉这件遗物。",
       "本场战斗中，再打出 #b",
-      " 张独一无二的牌来用一件 #y稀有 遗物换掉这件遗物",
+      " 种名称不同的牌来用一件 #y稀有 遗物换掉这件遗物。",
       "打出 ",
       "，",
       "和",
@@ -174,10 +174,10 @@
     ]
   },
   "reliquary:FingerTrap": {
-    "NAME": "Finger Trap",
-    "FLAVOR": "Maybe if you chilled out for a second, you could get it off.",
+    "NAME": "手指夹",
+    "FLAVOR": "说不定你冷静一下就能把手拿出来。",
     "DESCRIPTIONS": [
-      "You can't lose HP during your turn."
+      "你在自己的回合中不会失去生命值。"
     ]
   },
   "reliquary:Firecrackers": {
@@ -188,18 +188,18 @@
     ]
   },
   "reliquary:GummyVitamins": {
-    "NAME": "Gummy Vitamins",
-    "FLAVOR": "Mmm, chewy!",
+    "NAME": "胶黏维生素",
+    "FLAVOR": "呣呣，好难嚼！",
     "DESCRIPTIONS": [
-      "Once per turn, you may draw a card, then shuffle a #rSlimed into your draw pile.",
-      "I've already used that this turn."
+      "每回合限一次，你可以抽一张牌，然后将一张 #r黏液 放入你的抽牌堆中。",
+      "我在这回合已经使用过这件遗物了。"
     ]
   },
   "reliquary:HotPoker": {
     "NAME": "红烫的拨火棍",
     "FLAVOR": "没人会想去捏住这玩意近火的那一端。",
     "DESCRIPTIONS": [
-      "每当你在你的回合中抽一张牌，对一个随机敌人造成等于其耗能的伤害。"
+      "每当你在你的回合中抽一张牌，对一个随机敌人造成等于其耗能的伤害。（回合开始时的抽牌不生效。）"
     ]
   },
   "reliquary:IridiumChain": {
@@ -284,7 +284,7 @@
     "FLAVOR": "也没多么神秘，你玩玩便知。",
     "DESCRIPTIONS": [
       "每回合限一次，从你的弃牌堆中打出一张牌（目标随机而定），然后将其洗入你的抽牌堆。注意，使用这件遗物打出牌需要 #r额外 消耗 #b1 点能量。",
-      "我在这回合已经用过这件遗物了。",
+      "我在这回合已经使用过这件遗物了。",
       "我的弃牌堆是空的。",
       "我没有足够的能量来打出我弃牌堆中的任何牌。"
     ]
@@ -366,7 +366,7 @@
     "FLAVOR": "你知道吗？事情并没有那么糟。",
     "DESCRIPTIONS": [
       "每场战斗中，前 #b",
-      " 次你抽到 #y状态 牌时， #y消耗 它并抽一张牌。"
+      " 次你抽到 #y状态牌 时， #y消耗 它并抽一张牌。"
     ]
   },
   "reliquary:RosewoodLute": {
@@ -377,18 +377,18 @@
     ]
   },
   "reliquary:RustamsPendant": {
-    "NAME": "Rustam's Pendant",
-    "FLAVOR": "It's just a hunk of metal, but it seems to know something about you.",
+    "NAME": "Rustam的吊坠",
+    "FLAVOR": "它只是一篇薄薄的金属，却好像知道你的一些事情。",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. Has a different drawback for each character.",
-      "Gain [E] at the start of your turn. Start each combat with #b",
-      " #yStrength.",
-      " #yDexterity.",
-      " #yFocus.",
-      " #yDevotion. When you obtain #b",
-      " #yMantra, enter #yAtonement.",
-      "At the start of your turn, lose #b",
-      " #yMantra."
+      "每回合开始获得 [E] 。不同的角色对应不同的负面效果。",
+      "每回合开始获得 [E] 。每场战斗开始时，获得 #b",
+      " 点 #y力量 。",
+      " 点 #y敏捷 。",
+      " 点 #y集中 。",
+      " 点 #y虔信 。每当你获得 #b",
+      " 层 #y真言 ，进入 #y赎罪 。",
+      "在你的回合开始时，失去 #b",
+      " 层 #y真言 。"
     ],
     "NOTE_FOR_TRANSLATORS": "This relic is named after our wonderful RUS translator!"
   },
@@ -396,7 +396,7 @@
     "NAME": "塑型钢",
     "FLAVOR": "何意绕指柔，化为百炼钢。",
     "DESCRIPTIONS": [
-      "拾起时，随机变为你拥有的一件普通， #b罕见 ， #y稀有 或 #y商店 遗物的复制。"
+      "拾起时，随机变为你拥有的一件未失效的普通， #b罕见 ， #y稀有 或 #y商店 遗物的复制。"
     ]
   },
   "reliquary:SharkskinSheath": {
@@ -433,11 +433,11 @@
     ]
   },
   "reliquary:Sod": {
-    "NAME": "Sod",
-    "FLAVOR": "Contrary to popular belief, it's not greener on the other side; it's brown.",
+    "NAME": "草皮",
+    "FLAVOR": "与大众的认知相反，它的另一面（side）没有更绿，反而是棕色的。",
     "DESCRIPTIONS": [
-      "Put an #yUpgraded copy of every #b",
-      "th unupgraded card you play into your hand."
+      "你每打出第 #b",
+      " 张未 #y升级 的牌，将它的一张已 #y升级 的复制加入你的手牌。"
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a joke about the saying 'the grass is always greener on the other side.'"
   },
@@ -445,7 +445,7 @@
     "NAME": "单粒宝石",
     "FLAVOR": "你曾经梦见过它。它是怎么跨越梦境来到现实的是个谜。",
     "DESCRIPTIONS": [
-      " #p紫色 牌可以被升级两次。",
+      " #p紫色 牌可以被 #y升级 两次。",
       "固有 。 NL 将一张 *贝塔+ 放入你的抽牌堆中。 NL 消耗 。",
       "固有 。 NL 在每回合开始时，将一张 *惩恶+ 加入你的手牌。",
       "保留 。 NL 进入 神格 。 NL !M! 回合后死亡。 NL 消耗 。",
@@ -454,7 +454,7 @@
       "将一张X数值+1的 *灭除之刃+ 放入你的抽牌堆中。 NL 消耗 。",
       "保留 。 NL 愤怒 ：本回合获得 !M! 点 力量。 NL 否则，进入 愤怒 。 NL 消耗 。",
       "获得 !B! 点 格挡 。 NL 将一张 *平安+ 加入你的手牌。",
-      "固有。 NL 在你的回合开始时获得 [W] ，每回合增加 !M! 点。",
+      "固有 。 NL 在你的回合开始时获得 [W] ，每回合增加 !M! 点。",
       "保留 。 NL 造成 !D! 点 伤害 !M! 次。",
       "从3张任意颜色的攻击牌中选择1张，将它的 !M! 份复制加入你的手牌。 NL 这些牌在本回合耗能变为0。 NL 消耗 。",
       "造成 !D! 点伤害。 NL 斩杀 时， 升级 你牌组中的一张随机牌两次。 NL 消耗 。",
@@ -469,15 +469,15 @@
       "保留 。 NL 进入 平静 。",
       "在下一回合多抽 !M! 张牌。在本回合结束后，额外获得一回合。 NL 结束你的回合。 NL 消耗 。",
       "保留 。 NL 获得 !M! 层 真言 。 每当这张牌被保留时，将其在本场战斗的 真言 获得量增加 %d 点（最多 %d 点）。",
-      "Enter Wrath. NL Deal !D! damage."
+      "进入 愤怒 。 NL 造成 !D! 点伤害。"
     ]
   },
   "reliquary:Spinner": {
-    "NAME": "Spinner",
-    "FLAVOR": "Please don't land on red, please don't land on red... son of a—!",
+    "NAME": "轮盘",
+    "FLAVOR": "千万不要停在红色上面，千万不要停在红色上面......儿来！",
     "DESCRIPTIONS": [
-      "Whenever you play a card of a different type than the previous that turn, gain #b",
-      " #yBlock."
+      "每当你打出的牌跟上一张类型不同，获得 #b",
+      " 点 #y格挡 。"
     ]
   },
   "reliquary:Stiletto": {
@@ -512,11 +512,11 @@
     ]
   },
   "reliquary:ThirdArm": {
-    "NAME": "Third Arm",
-    "FLAVOR": "It's tiny, and it doesn't even have fingers.",
+    "NAME": "第三臂",
+    "FLAVOR": "小而无指。",
     "DESCRIPTIONS": [
-      "Start each combat with a cost #b",
-      " #yPower in your draw pile that gives you [E] every turn."
+      "每场战斗开始时，将一张耗能为 #b",
+      " 的 #y能力 牌放入你的抽牌堆。这张能力牌每回合给予你 [E] 。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is the arm from a wooden figure-drawing manikin."
   },
@@ -536,14 +536,14 @@
     ]
   },
   "reliquary:Vitrine": {
-    "NAME": "Vitrine",
-    "FLAVOR": "The perfect place to present your most prized possessions.",
+    "NAME": "陈列柜",
+    "FLAVOR": "展示你最珍贵的物品的绝佳场所。",
     "DESCRIPTIONS": [
-      "Upon pickup, remove a card from your deck. You may choose to shuffle it into your draw pile any time during combat.",
-      "Choose a card to remove.",
-      "[#2aecd7]Right [#2aecd7]click[] to shuffle ",
-      " into your draw pile.",
-      " will return here after combat."
+      "拾起时，从你的牌组中移除一张牌。每场战斗的任意时刻，你可以将这张牌放入你的抽牌堆中。",
+      "选择一张要移除的牌。",
+      "[#2aecd7]右击[] 以将 ",
+      " 放入你的抽牌堆中。",
+      " 会在战斗结束后回到这里。"
     ]
   },
   "reliquary:WeakTea": {

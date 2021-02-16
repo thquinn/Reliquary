@@ -1,27 +1,27 @@
 {
   "reliquary:ChainReaction": {
-    "NAME": "Chain Reaction",
+    "NAME": "链式反应",
     "DESCRIPTIONS": [
-      "At the end of your turn, gain #b",
-      " #yCombust."
+      "在你的回合结束时，获得 #b",
+      " 层 #y自燃 。"
     ],
     "NOTE_FOR_TRANSLATORS": "Combust is an existing power in the base game."
   },
   "reliquary:HandSize": {
-    "NAME": "Hand Size Up",
+    "NAME": "手牌上限增加",
     "DESCRIPTIONS": [
-      "Hand Size Down",
-      "Your maximum hand size is increased by #b",
-      "Your maximum hand size is decreased by #b",
-      "."
+      "手牌上限减少",
+      "你的手牌上限增加 #b",
+      "你的手牌上限减少 #b",
+      "。"
     ]
   },
   "reliquary:Hydrated": {
-    "NAME": "Hydrated",
+    "NAME": "充水",
     "DESCRIPTIONS": [
-      "Delays #yStrength #yDown for #b",
-      " turn.",
-      " turns."
+      "延迟 #y力量下降 的结算#b",
+      " 个回合。",
+      " 个回合。"
     ]
   },
   "reliquary:InNTurnsDeath": {
@@ -78,7 +78,7 @@
     ]
   },
   "reliquary:Vim": {
-    "NAME": "Envimmed",
+    "NAME": "充满冷酿",
     "DESCRIPTIONS": [],
     "NOTE_FOR_TRANSLATORS": [
       "'Envimmed' isn't a real word, it's an adjective I made up to mean 'infused with vim,' as 'invigorated' means 'infused with vigor.'",
@@ -87,10 +87,10 @@
     ]
   },
   "reliquary:VulnerableNextTurn": {
-    "NAME": "Vulnerable Next Turn",
+    "NAME": "下回合易伤",
     "DESCRIPTIONS": [
-      "Gain #b",
-      " #yVulnerable next turn."
+      "下回合，获得#b",
+      " 点 #y易伤 。"
     ]
   }
 }

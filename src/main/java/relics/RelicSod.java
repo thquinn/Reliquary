@@ -33,12 +33,15 @@ public class RelicSod extends CustomRelic {
         }
         flash();
         counter++;
-        if (counter >= NTH) {
+        if (counter == NTH - 1) {
+            beginPulse();
+        } else if (counter >= NTH) {
             AbstractCard copy = c.makeStatEquivalentCopy();
             copy.upgrade();
             addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             addToBot(new MakeTempCardInHandAction(copy));
             counter -= NTH;
+            stopPulse();
         }
     }
 

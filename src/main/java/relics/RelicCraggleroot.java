@@ -44,7 +44,7 @@ public class RelicCraggleroot extends CustomRelic {
 
     @Override
     public void onCardDraw(AbstractCard drawnCard) {
-        if (!activated) {
+        if (!activated && drawnCard.cost != -1) {
             CardModifierManager.addModifier(drawnCard, new CardModIncreaseCost(1));
             drawnCard.flash(Color.RED);
             addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));

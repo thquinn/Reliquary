@@ -17,7 +17,6 @@ public class RelicBoomerang extends CustomRelic {
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/boomerang.png");
 
     static int NUMBER = 4;
-    int cardsThisTurn = 0;
 
     public RelicBoomerang() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT);
@@ -25,7 +24,8 @@ public class RelicBoomerang extends CustomRelic {
 
     @Override
     public void atTurnStart() {
-        cardsThisTurn = 0;
+        counter = 0;
+        stopPulse();
         if (NUMBER == 1) {
             addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             ReboundPower reboundPower = new ReboundPower(AbstractDungeon.player);
@@ -36,10 +36,15 @@ public class RelicBoomerang extends CustomRelic {
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
-        cardsThisTurn++;
-        if (cardsThisTurn == NUMBER - 1) {
+        if (counter < NUMBER) {
+            counter++;
+        }
+        if (counter == NUMBER - 1) {
             addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ReboundPower(AbstractDungeon.player)));
+            beginLongPulse();
+        } else if (counter == NUMBER) {
+            stopPulse();
         }
     }
 

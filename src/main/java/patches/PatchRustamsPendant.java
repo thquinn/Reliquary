@@ -1,5 +1,6 @@
 package patches;
 
+import com.evacipated.cardcrawl.modthespire.lib.ByRef;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpireReturn;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -9,6 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.watcher.DevotionPower;
 import com.megacrit.cardcrawl.powers.watcher.MantraPower;
+import com.megacrit.cardcrawl.stances.DivinityStance;
 import javassist.*;
 import relics.RelicRustamsPendant;
 import stances.AtonementStance;
@@ -33,7 +35,13 @@ public class PatchRustamsPendant {
             method="stackPower"
     )
     public static class PatchRustamsPendantMantraStack {
-        public static void Postfix(MantraPower __instance) {
+        // using a Replace patch here to prevent super.stackPower from being called, which treats a value of -1 as unstackable
+        public static void Replace(MantraPower __instance, int stackAmount) {
+            __instance.amount += stackAmount;
+            if (__instance.amount >= 10) {
+                AbstractDungeon.actionManager.addToTop(new ChangeStanceAction(DivinityStance.STANCE_ID));
+                __instance.amount -= 10;
+            }
             if (__instance.amount <= -10) {
                 AbstractDungeon.actionManager.addToTop(new ChangeStanceAction(new AtonementStance()));
                 __instance.amount += 10;
@@ -79,15 +87,17 @@ public class PatchRustamsPendant {
                     new CtClass[]{ CtClass.intType },
                     null, // Exceptions
                     "{" +
-                        "super.stackPower($1);" +
-                        PatchRustamsPendantDevotionStack.class.getName() + ".removeZeroDevotion(this);" +
+                        PatchRustamsPendantDevotionStack.class.getName() + ".stackPower(this, $1);" +
                     "}",
                     ctClass
             );
             ctClass.addMethod(method);
         }
-        public static void removeZeroDevotion(DevotionPower __instance) {
-            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(__instance.owner, __instance.owner, __instance.ID));
+        public static void stackPower(DevotionPower __instance, int stackAmount) {
+            __instance.amount += stackAmount;
+            if (__instance.amount == 0) {
+                AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(__instance.owner, __instance.owner, __instance.ID));
+            }
         }
     }
 

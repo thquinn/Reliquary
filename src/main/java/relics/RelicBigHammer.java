@@ -272,6 +272,9 @@ public class RelicBigHammer extends CustomRelic {
             case RecklessCharge.ID:
                 card.rawDescription = DESCRIPTIONS[DESC_INDEX_RECKLESS_CHARGE];
                 break;
+            case Rupture.ID:
+                RelicSolitaire.upgradeBaseCost(card, 0);
+                break;
             case SecondWind.ID:
                 card.baseBlock += 2;
                 break;

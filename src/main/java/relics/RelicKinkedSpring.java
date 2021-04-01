@@ -4,7 +4,6 @@ import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import util.ReliquaryLogger;
 import util.TextureLoader;
 
 public class RelicKinkedSpring extends CustomRelic {

@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
@@ -23,12 +24,16 @@ public class RelicPorcupineQuills extends CustomRelic {
 
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
-        int unblocked = damageAmount - AbstractDungeon.player.currentBlock;
+        AbstractPlayer p = AbstractDungeon.player;
+        if (info.owner == p) {
+            return damageAmount;
+        }
+        int unblocked = damageAmount - p.currentBlock;
         if (unblocked >= THRESHOLD) {
-            addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+            addToBot(new RelicAboveCreatureAction(p, this));
             addToBot(new DamageAction(
                     info.owner,
-                    new DamageInfo(AbstractDungeon.player, unblocked, DamageInfo.DamageType.THORNS),
+                    new DamageInfo(p, unblocked, DamageInfo.DamageType.THORNS),
                     AbstractGameAction.AttackEffect.SLASH_VERTICAL
             ));
         }

@@ -9,7 +9,9 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.rooms.ShopRoom;
 import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
+import util.ReliquaryLogger;
 import util.TextureLoader;
 
 public class RelicFeatherDuster extends CustomRelic {
@@ -18,6 +20,7 @@ public class RelicFeatherDuster extends CustomRelic {
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/featherDuster.png");
 
     private boolean cardsSelected = true;
+    private AbstractDungeon.CurrentScreen prevScreen;
 
     public RelicFeatherDuster() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
@@ -25,7 +28,7 @@ public class RelicFeatherDuster extends CustomRelic {
 
     @Override
     public boolean canSpawn() {
-        return AbstractDungeon.floorNum > 20;
+        return AbstractDungeon.floorNum > 20 && !(AbstractDungeon.getCurrRoom() instanceof ShopRoom);
     }
 
     @Override
@@ -46,13 +49,14 @@ public class RelicFeatherDuster extends CustomRelic {
             AbstractDungeon.previousScreen = AbstractDungeon.screen;
         }
         AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.INCOMPLETE;
+        prevScreen = AbstractDungeon.screen;
         AbstractDungeon.gridSelectScreen.open(tmp, tmp.size(), true, this.DESCRIPTIONS[1]);
     }
 
     @Override
     public void update() {
         super.update();
-        if (!cardsSelected && AbstractDungeon.screen != AbstractDungeon.CurrentScreen.GRID) {
+        if (!cardsSelected && AbstractDungeon.screen == prevScreen) {
             cardsSelected = true;
             int numCards = AbstractDungeon.gridSelectScreen.selectedCards.size();
             float sigmoid = 1 / (1 + (float)Math.pow(Math.E, -numCards * .4)) - .5f;

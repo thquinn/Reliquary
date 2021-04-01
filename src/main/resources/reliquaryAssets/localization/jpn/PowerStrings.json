@@ -1,0 +1,101 @@
+﻿{
+  "reliquary:ChainReaction": {
+    "NAME": "連鎖反応",
+    "DESCRIPTIONS": [
+      "ターン終了時、 #y燃焼 #b",
+      " を得る。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "Combust is an existing power in the base game."
+  },
+  "reliquary:HandSize": {
+    "NAME": "手札容量増加",
+    "DESCRIPTIONS": [
+      "手札容量減少",
+      "手札の最大数 #b+ #b",
+      "手札の最大数 #b- #b",
+      " 。"
+    ]
+  },
+  "reliquary:Hydrated": {
+    "NAME": "水分補給",
+    "DESCRIPTIONS": [
+      "#y筋力 の #y減少 を #b",
+      " ターン遅らせる。",
+      " ターン遅らせる。"
+    ]
+  },
+  "reliquary:InNTurnsDeath": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "#b",
+      " ターン後、あなたは死ぬ。"
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "This is an alternate version of the Watcher's Blasphemy debuff.",
+      "Instead of killing you at the end of the current turn (1 turn), it kills you in N turns.",
+      "It takes the name ('Blasphemer,' in English) from the existing debuff, so you don't need to translate that."
+    ]
+  },
+  "reliquary:InvincibleTurns": {
+    "NAME": "無敵",
+    "DESCRIPTIONS": [
+      "このターン、ダメージを受けない。",
+      "#b",
+      " ターンの間、ダメージを受けない。"
+    ]
+  },
+  "reliquary:LesserDuplication": {
+    "NAME": "複製（弱）",
+    "DESCRIPTIONS": [
+      "このターン、次のコスト0か1のカードを2回プレイする。",
+      "このターン、次のコスト0か1のカード #b",
+      " 枚を2回プレイする。"
+    ]
+  },
+  "reliquary:ReduceColorlessCost": {
+    "NAME": "蒼白",
+    "DESCRIPTIONS": [
+      "次にプレイする無色のカードのコストを #b1 減らす。",
+      "次にプレイする #b",
+      " 枚の無色のカードのコストを #b1 減らす。"
+    ]
+  },
+  "reliquary:StudyPlus": {
+    "NAME": "詰め込み学習",
+    "DESCRIPTIONS": [
+      "ターン終了時、 #y洞察+ を #b",
+      " 枚山札に加える。"
+    ]
+  },
+  "reliquary:Taunt": {
+    "NAME": "挑発",
+    "DESCRIPTIONS": [
+      "この敵が死亡するまで他の敵を攻撃できない。",
+      "他の敵に #r@挑発@ されている！"
+    ]
+  },
+  "reliquary:Triumph": {
+    "NAME": "征服",
+    "DESCRIPTIONS": [
+      "#y神聖 のダメージ倍率が #b",
+      " 増加する。現在は #b",
+      " 倍。"
+    ]
+  },
+  "reliquary:Vim": {
+    "NAME": "力",
+    "DESCRIPTIONS": [],
+    "NOTE_FOR_TRANSLATORS": [
+      "'Envimmed' isn't a real word, it's an adjective I made up to mean 'infused with vim,' as 'invigorated' means 'infused with vigor.'",
+      "Feel free to use anything that means invigorated, or make one up...?",
+      "This uses the description strings from the Berserk power."
+    ]
+  },
+  "reliquary:VulnerableNextTurn": {
+    "NAME": "次のターンに弱体",
+    "DESCRIPTIONS": [
+      "次のターン、 #y弱体 #b",
+      " を得る。"
+    ]
+  }
+}

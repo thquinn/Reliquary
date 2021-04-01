@@ -166,7 +166,9 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
     @Override
     public void receiveEditKeywords() {
         String path;
-        if (Settings.language == Settings.GameLanguage.RUS) {
+        if (Settings.language == Settings.GameLanguage.JPN) {
+            path = "reliquaryAssets/localization/jpn/KeywordStrings.json";
+        } else if (Settings.language == Settings.GameLanguage.RUS) {
             path = "reliquaryAssets/localization/rus/KeywordStrings.json";
         } else if (Settings.language == Settings.GameLanguage.ZHS) {
             path = "reliquaryAssets/localization/zhs/KeywordStrings.json";
@@ -187,7 +189,13 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
 
     @Override
     public void receiveEditStrings() {
-        if (Settings.language == Settings.GameLanguage.RUS) {
+        if (Settings.language == Settings.GameLanguage.JPN) {
+            BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/jpn/CardStrings.json");
+            BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/jpn/PowerStrings.json");
+            BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/jpn/RelicStrings.json");
+            BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/jpn/StanceStrings.json");
+            BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/jpn/UIStrings.json");
+        } else if (Settings.language == Settings.GameLanguage.RUS) {
             BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/rus/CardStrings.json");
             BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/rus/PowerStrings.json");
             BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/rus/RelicStrings.json");
@@ -228,7 +236,6 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
     @Override
     public void receivePostUpdate() {
         if (AbstractDungeon.player == null) return;
-        if (AbstractDungeon.player.hasRelic(RelicFerryPass.ID)) ((RelicFerryPass)AbstractDungeon.player.getRelic(RelicFerryPass.ID)).postUpdate();
         if (AbstractDungeon.player.hasRelic(RelicRedPaperclip.ID)) ((RelicRedPaperclip)AbstractDungeon.player.getRelic(RelicRedPaperclip.ID)).postUpdate();
     }
 }

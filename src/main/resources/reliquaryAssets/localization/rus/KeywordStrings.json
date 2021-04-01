@@ -8,22 +8,22 @@
   },
   {
     "NAMES": [
-      "atonement"
+      "искупление"
     ],
-    "DESCRIPTION": "Upon entering this #yStance, lose [W] [W] . You can't change #yStances. Exit this #yStance at the start of your next turn."
+    "DESCRIPTION": "Вы теряте [W] [W] при входите в эту #yСтойку. Вы не можете менять #yСтойки. Вы выйдите из этой #yСтойки в начале вашего следующего хода."
   },
   {
     "NAMES": [
-      "devotion"
+      "преданность"
     ],
-    "DESCRIPTION": "You gain #yMantra at the start of your turn.",
+    "DESCRIPTION": "Даёт #yМантры в начале вашего хода.",
     "NOTE_FOR_TRANSLATORS": "This is a keyword for the Devotion power from the base game."
   },
   {
     "NAMES": [
-      "slimed"
+      "слизь"
     ],
-    "DESCRIPTION": "Slimed is a cost 1 #yStatus card.",
+    "DESCRIPTION": "Слизь эта карта #yСтатус со стоимостью 1.",
     "NOTE_FOR_TRANSLATORS": "This is a keyword for the Slimed curse from the base game."
   },
   {

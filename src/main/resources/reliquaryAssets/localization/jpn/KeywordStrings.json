@@ -1,0 +1,35 @@
+﻿[
+  {
+    "NAMES": [
+      "reliquary:translation_note"
+    ],
+    "DESCRIPTION": "No need to translate this.",
+    "NOTE_FOR_TRANSLATORS": "FOR ALL KEYWORDS: If your language has cases, the keyword NAMES must be lower case, or they won't match!"
+  },
+  {
+    "NAMES": [
+      "贖罪"
+    ],
+    "DESCRIPTION": "この #yスタンス に入ったとき、 [W] [W] を失う。 #yスタンス を変更できない。次のターン開始時、この #yスタンス を解除する。"
+  },
+  {
+    "NAMES": [
+      "信心"
+    ],
+    "DESCRIPTION": "ターン開始時、 #yマントラ を得る。",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Devotion power from the base game."
+  },
+  {
+    "NAMES": [
+      "粘液"
+    ],
+    "DESCRIPTION": "1コストの #y状態異常 カード。",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Slimed curse from the base game."
+  },
+  {
+    "NAMES": [
+      "香り"
+    ],
+    "DESCRIPTION": "香りはポーションから派生する弱い効果を持つカード。 #y保留 と #y廃棄 がついている。"
+  }
+]

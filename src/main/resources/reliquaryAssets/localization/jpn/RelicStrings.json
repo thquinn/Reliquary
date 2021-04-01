@@ -1,0 +1,597 @@
+﻿{
+  "reliquary:Aerogel": {
+    "NAME": "エアロゲル",
+    "FLAVOR": "重さはほとんどなく、不運に対する優れた絶縁体になる。",
+    "DESCRIPTIONS": [
+      "獲得時にカードを #b1 枚選択する。このカードが入った山札をシャッフルするたび、それを山札の一番上に置く。",
+      "選択した ",
+      " が入った山札をシャッフルするたび、それを山札の一番上に置く。"
+    ]
+  },
+  "reliquary:BallBearing": {
+    "NAME": "ボールベアリング",
+    "FLAVOR": "何かを円滑に回し続ける。",
+    "DESCRIPTIONS": [
+      "デッキをシャッフルするたび、 #y技巧 か #y剣の一閃 をランダムに #b1 枚山札に加える。"
+    ]
+  },
+  "reliquary:BigHammer": {
+    "NAME": "巨大なハンマー",
+    "FLAVOR": "今まで見た中で最大のハンマー。",
+    "DESCRIPTIONS": [
+      "#rレッド カードを2回アップグレードすることができる。",
+      "!D! ダメージを与える。 NL このカードの複製を NL 捨て札に加える。 NL 捨て札にある怒りの枚数ｘ !M! の追加ダメージを与える。",
+      "!B! ブロック を得る。 NL 戦闘終了まで手札のカードすべてを2回 アップグレード する。",
+      "天賦 NL ターン開始時にブロック値を失わない。",
+      "次のターン、 弱体 !M! を得る。 NL ターン開始時、 [R] を得る。",
+      "[R] [R] [R] [R] を得る。 NL HPを3失う。",
+      "現在のブロック値の NL %d%% のダメージを与える。",
+      "天賦 NL ターン開始時、HPを !M! 失いカードを !M! 枚引く。",
+      "ターン終了時にHPを1失い、敵全体に !M! ダメージを与え、このダメージを2増加する。",
+      "天賦 NL スキルがエナジーを消費しない。 NL プレイしたスキルは 廃棄 する。",
+      "カードを 廃棄 またはパワーをプレイするたび、カードを1枚引く。",
+      "!D! ダメージを与える。敵が 弱体 を受けている場合は [R] を得てカードを 1 枚引く。そうでない場合、 弱体 1を与える。",
+      "手札にあるアタックかパワーを複製し、 !M! 枚手札に加える。",
+      "現在のブロックの値を3倍にする。",
+      "手札の最大数を %d 増やす。 NL 状態異常を引くたび、カードを !M! 枚引く。",
+      "廃棄 したカードから1枚選んで手札に加え、それを アップグレード する。 廃棄",
+      "筋力 !M! を得る。 %d ターン後に 筋力 !M! を失う。",
+      "山札のカードを上から !M! 枚プレイする。 NL そのカードを 廃棄 する。",
+      "ランダムなアタックを1枚手札に加える。 NL このターン、そのコストは0。",
+      "筋力 を3倍にする。",
+      "HPを6失う。 NL [R] [R] [R] を得る。 NL カードを !M! 枚引く。 NL 廃棄",
+      "!D! ダメージを与える。 NL *めまい を1枚捨て札に加える。",
+      "[R] [R] [R] を得る。 NL 廃棄",
+      "!B! ブロック を得る。 NL このカードを 廃棄 したとき、 NL [R] [R] [R] を得てカードを !M! 枚引く。",
+      "敵全体に !D! ダメージと 弱体 !M! を与える。",
+      "!B! ブロック を得る。 NL 手札を1枚から3枚の間で 廃棄 する。",
+      "敵全体に !D! ダメージを X+%d 回与える。"
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "These are second upgrades, so all but the first string are slight variants of Ironclad cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicBigHammer.java",
+      "to see which string corresponds to which Ironclad card. Indices start at 0!"
+    ]
+  },
+  "reliquary:BoilingFlask": {
+    "NAME": "煮沸フラスコ",
+    "FLAVOR": "丸底沸騰フラスコ、5000ミリリットル！",
+    "DESCRIPTIONS": [
+      "戦闘開始時にポーションスロットが一杯の場合、 #y香り カードを #b1 枚選び、手札に加える。"
+    ]
+  },
+  "reliquary:Bookmark": {
+    "NAME": "栞",
+    "FLAVOR": "「さて、どこまで読んだっけ…」",
+    "DESCRIPTIONS": [
+      "戦闘開始時、デッキの #y天賦 1枚につき、カードを追加で #b1 枚引く。"
+    ]
+  },
+  "reliquary:Boomerang": {
+    "NAME": "ブーメラン",
+    "FLAVOR": "あなたが何かを愛しているのならそれを手放そう。それか捨てちまえ。",
+    "DESCRIPTIONS": [
+      "毎ターン、最初にプレイしたカードを山札の一番上に置く。",
+      "",
+      "",
+      "毎ターン、 #b4 枚目にプレイしたカードを山札の一番上に置く。"
+    ]
+  },
+  "reliquary:BrokenClock": {
+    "NAME": "壊れた時計",
+    "FLAVOR": "どういうわけか1日に2回おかしくなるが、それ以外は正常だ。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、プレイヤーが2ターン、次に敵が2ターンの順で行動する。"
+    ]
+  },
+  "reliquary:Buckler": {
+    "NAME": "バックラー",
+    "FLAVOR": "メレクの有名な若い白鳥の刻印で飾られている。",
+    "DESCRIPTIONS": [
+      "次にプレイする #b",
+      " 枚のアップグレード可能なカードを、永久に #yアップグレード する。",
+      "次にプレイするアップグレード可能なカードを、永久に #yアップグレード する。",
+      "この能力は使い切った。"
+    ]
+  },
+  "reliquary:CitrusReamer": {
+    "NAME": "シトラスリーマー",
+    "FLAVOR": "くり抜けばいいのに何故絞るんだ？",
+    "DESCRIPTIONS": [
+      "毎ターン、初めて手札が #b",
+      " 枚になったとき、 [E] を得る。"
+    ]
+  },
+  "reliquary:Conveyor": {
+    "NAME": "コンベア",
+    "FLAVOR": "あなたの行きたいところにあなたを連れて行く。",
+    "DESCRIPTIONS": [
+      "ターン開始時、オーブスロットに #b",
+      " つ以上生成している種類のオーブを、ランダムに #b1 つ生成する。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a conveyor block from the game Infinifactory."
+  },
+  "reliquary:Craggleroot": {
+    "NAME": "ごつごつした根",
+    "FLAVOR": "この根はいくつもの困難な時代を見てきた。あなたのことも同じように見ているのだろうか？",
+    "DESCRIPTIONS": [
+      "ターン開始時に、 [E] を得る。毎ターン、最初に引いたカードのコストがこの戦闘中 #b1 増加する。"
+    ]
+  },
+  "reliquary:Crutches": {
+    "NAME": "松葉杖",
+    "FLAVOR": "あなたには必要の無いものだ。",
+    "DESCRIPTIONS": [
+      "状態異常を得るたび、全ての敵はターン終了まで、 #y筋力 #b",
+      " を失う。"
+    ]
+  },
+  "reliquary:Dhvaja": {
+    "NAME": "ダーヴァジャ",
+    "FLAVOR": "勝利はあなたのものになるだろう…最終的には。",
+    "DESCRIPTIONS": [
+      "#y神聖 を解除するたび、 #y神聖 のダメージ倍率が #b1 増加する。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "https://en.wikipedia.org/wiki/Dhvaja"
+  },
+  "reliquary:Ember": {
+    "NAME": "残り火",
+    "FLAVOR": "ハチマチ、熱い！",
+    "DESCRIPTIONS": [
+      "ターン開始時に、 [E] を得る。毎ターン #b3 を超えて消費したエナジーにつき #b",
+      " ダメージを受ける。"
+    ]
+  },
+  "reliquary:ExpiredCoupon": {
+    "NAME": "期限切れのクーポン",
+    "FLAVOR": "「尻叩き」が10％オフ！それで、これを書いた奴は誰だ？",
+    "DESCRIPTIONS": [
+      "戦闘中に与えたブロックされていないダメージが #b",
+      " 以上に達したとき、敵全体に #b",
+      " ダメージを与える。"
+    ]
+  },
+  "reliquary:FeatherDuster": {
+    "NAME": "羽ぼうき",
+    "FLAVOR": "「私の人生の過ち、彼らは私の周りでほこりのように横たわっていた。」-カデモ",
+    "DESCRIPTIONS": [
+      "獲得時に「ストライク」と「防御」と #r呪い 以外のカードを好きな枚数デッキから削除する。",
+      "削除するカードを好きな枚数選ぶ。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a made-up quote by a made-up person."
+  },
+  "reliquary:FerryPass": {
+    "NAME": "フェリーパス",
+    "FLAVOR": "「ラストセル島の旅を楽しんできてください！」と書かれている。",
+    "DESCRIPTIONS": [
+      "一度の戦闘中で、デッキ内の全ての種類のカードをプレイしたとき、このレリックを失い報酬に #yレアレリック を追加する。",
+      "この戦闘中、デッキ内の #b",
+      " 種類のカードを全てプレイしたとき、このレリックを失い報酬に #yレアレリック を追加する。",
+      "この戦闘中、デッキ内の #b",
+      " 種類のカードをプレイしたとき、このレリックを失い報酬に #yレアレリック を追加する。",
+      " ",
+      "、 ",
+      "、 ",
+      " をプレイしたとき、このレリックを失い報酬に #yレアレリック を追加する。",
+      " NL [#2aecd7]右クリックで手札にある NL [#2aecd7]未プレイのカードを表示。[]"
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "'Every unique card' means every card with a different name. The upgradedness doesn't matter, i.e. 'Strike' and 'Strike+' are the same unique card.",
+      "A couple examples of what those last few strings will look like once assembled:",
+      "Play Bash, Defend, and Strike to exchange this for a Rare relic.",
+      "Play Strike and Defend to exchange this for a Rare relic.",
+      "Lastcel is a made-up name... I think? It's our wonderful ZHS translator's Github username."
+    ]
+  },
+  "reliquary:FingerTrap": {
+    "NAME": "フィンガートラップ",
+    "FLAVOR": "多分少し冷静になれば、気持ちが楽になる。",
+    "DESCRIPTIONS": [
+      "あなたのターン中、あなたはHPを失わなくなる。"
+    ]
+  },
+  "reliquary:Firecrackers": {
+    "NAME": "爆竹",
+    "FLAVOR": "かなりやかましい。子供はそこで静かにしてろ！",
+    "DESCRIPTIONS": [
+      "敵を倒したとき、超過したダメージをランダムな敵に与える。"
+    ]
+  },
+  "reliquary:GummyVitamins": {
+    "NAME": "ビタミングミ",
+    "FLAVOR": "うーん、いい歯ごたえ！",
+    "DESCRIPTIONS": [
+      "1ターンに一度、カードを1枚引き、山札に #r粘液 を加えることができる。",
+      "このターン既にこの能力を使用した。"
+    ]
+  },
+  "reliquary:HotPoker": {
+    "NAME": "焼けた火かき棒",
+    "FLAVOR": "これで捕まえられるのは嫌だ。",
+    "DESCRIPTIONS": [
+      "ターン中にカードを引くたび、そのコストに等しいダメージをランダムな敵に与える。"
+    ]
+  },
+  "reliquary:IridiumChain": {
+    "NAME": "イリジウムの鎖",
+    "FLAVOR": "鎖を順に数えても、同じ鎖には決して辿り着かない。",
+    "DESCRIPTIONS": [
+      "#yパワー をプレイするたび、 #yエセリアル でコストが #b1 増加した複製を、1枚手札に加える。",
+      "エセリアル NL "
+    ]
+  },
+  "reliquary:IvoryTrinket": {
+    "NAME": "象牙の像",
+    "FLAVOR": "象牙から小さな象牙を削り出してある。しかし、何のために？",
+    "DESCRIPTIONS": [
+      "#y奇跡 を #b",
+      " 回 #y保留 すると、 #y奇跡 を #b1 枚手札に加える。"
+    ]
+  },
+  "reliquary:JackalopeAntler": {
+    "NAME": "ジャッカロープの角",
+    "FLAVOR": "角の持ち主がどのような生き物であれ、不揃いな角のまま走り続けるのだろう。",
+    "DESCRIPTIONS": [
+      "敵を倒すたび、最後にプレイしたカードのエナジーが返還される。"
+    ]
+  },
+  "reliquary:KillPill": {
+    "NAME": "毒薬",
+    "FLAVOR": "革のジャケットに忍ばせておくとかっこいい。",
+    "DESCRIPTIONS": [
+      "毎ターン、それぞれの敵に初めて毒を与えたとき、毒の効果が発動する。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the symbol of the motorcycle gang from Akira."
+  },
+  "reliquary:KinkedSpring": {
+    "NAME": "ねじれたバネ",
+    "FLAVOR": "誰かがひねって元に戻らなくなった。",
+    "DESCRIPTIONS": [
+      "ターン開始時に、 [E] を得る。山札が空でターンを終了した時にのみ、捨て札がシャッフルされるようになる。"
+    ]
+  },
+  "reliquary:Knoch": {
+    "NAME": "オモリ",
+    "FLAVOR": "いつもバッグの底に埋もれている。",
+    "DESCRIPTIONS": [
+      "HPが #b",
+      "% 以下の敵に #y脱力 を与える。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "A knoch is just a fishing sinker: https://en.wikipedia.org/wiki/Fishing_sinker"
+  },
+  "reliquary:LoveEmittingDiode": {
+    "NAME": "発愛ダイオード",
+    "FLAVOR": "逆二乗の法則に従い愛を発する。",
+    "DESCRIPTIONS": [
+      "正の #y集中力 が右端のオーブに #b",
+      " 倍影響する。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a play on light-emitting diodes, or LEDs."
+  },
+  "reliquary:MedicineBall": {
+    "NAME": "メディシンボール",
+    "FLAVOR": "これを投げ合える人がいれば…",
+    "DESCRIPTIONS": [
+      "最も筋力の高い敵に等しい筋力を追加で得る。この値の最小値は0。"
+    ]
+  },
+  "reliquary:MudwinsCradle": {
+    "NAME": "ミュートンのゆりかご",
+    "FLAVOR": "最も人気のある卓上玩具。",
+    "DESCRIPTIONS": [
+      "#y神聖 を解除するたび、 #yマントラ #b",
+      " を得る。得られる #yマントラ は #y神聖 に入るたび #b3 増加する。この値の最大値は",
+      " 。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a Newton's Cradle. 'Mudwin' is just a dumb name made up to sound like 'Newton.'"
+  },
+  "reliquary:NewFriend": {
+    "NAME": "新たな友達",
+    "FLAVOR": "この小さな男の子はあなたにずっと付いてくる…どうやらお腹が空いているようだ。",
+    "DESCRIPTIONS": [
+      "「ストライク」か「防御」をプレイしたとき、 #b",
+      "% の確率で #y廃棄 される。"
+    ]
+  },
+  "reliquary:OuijaBoard": {
+    "NAME": "ウィジャボード",
+    "FLAVOR": "あなたがそうするのと同じぐらい神秘的。",
+    "DESCRIPTIONS": [
+      "1ターンに一度、捨て札のカードにコストを #b1 加えてプレイし、それを山札に加える。",
+      "このターン既にこの能力を使用した。",
+      "捨て札が #r空 だ。",
+      "捨て札のカードをプレイするのに十分なエナジーが無い。"
+    ]
+  },
+  "reliquary:PartyBalloon": {
+    "NAME": "パーティーバルーン",
+    "FLAVOR": "ちゃんと握ってないと二度と会えなくなる！",
+    "DESCRIPTIONS": [
+      "#yパワー が山札の上半分にある状態で戦闘を開始する。"
+    ]
+  },
+  "reliquary:PorcupineQuills": {
+    "NAME": "ヤマアラシの針",
+    "FLAVOR": "あなたは身体中を棘だらけにするほどこれが欲しかったのだろう。",
+    "DESCRIPTIONS": [
+      "ブロックされていないダメージを一度に #b",
+      " 以上受けるたび、同等のダメージを与える。"
+    ]
+  },
+  "reliquary:PrincelyHelmet": {
+    "NAME": "王子のヘルメット",
+    "FLAVOR": "小さすぎて入らない。恐らく我々のために作られた物ではないだろう。",
+    "DESCRIPTIONS": [
+      "戦闘中初めて得るX #yブロック を2倍にする。このXは現在のレベルの #b",
+      " 倍。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the headgear of the Prince of All Cosmos from the Katamari Damacy series."
+  },
+  "reliquary:PurpleTingedLeaf": {
+    "NAME": "紫がかった葉",
+    "FLAVOR": "この小学生に描かれたような葉は、植物界全体の中でも独特だ。",
+    "DESCRIPTIONS": [
+      "獲得時に #yアタック を #b1 枚選択する。このカードをプレイするたび、HPを #b1 回復する。",
+      "カードを1枚選択 ",
+      "選択した ",
+      " をプレイするたび、HPを #b1 回復する。"
+    ]
+  },
+  "reliquary:Pushpin": {
+    "NAME": "画鋲",
+    "FLAVOR": "殺人事件を解決するために使用されることもあるが、熟練の暗殺者はこれを殺人に使用することもできる。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、手札のカード全てに #y保留 を追加する。"
+    ]
+  },
+  "reliquary:QuartzCube": {
+    "NAME": "水晶キューブ",
+    "FLAVOR": "溶けないし冷たくもない角氷のようなもの。",
+    "DESCRIPTIONS": [
+      "戦闘開始時に #b",
+      " 体以上の敵がいる場合、そのうちの1体に #yスタン #b",
+      " と #y無敵 #b",
+      " を与える。"
+    ]
+  },
+  "reliquary:RadioactivePellet": {
+    "NAME": "放射性ペレット",
+    "FLAVOR": "世界で最も卑劣な悪役の秘密兵器。",
+    "DESCRIPTIONS": [
+      "#y毒 が減少しなくなる。"
+    ]
+  },
+  "reliquary:RedCape": {
+    "NAME": "赤いマント",
+    "FLAVOR": "角の欲しい人は？",
+    "DESCRIPTIONS": [
+      "ターン開始時に、 [E] を得る。敵に単体の #yアタック を行うと、その敵が死亡するまで他の敵を攻撃できなくなる。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a matador's cape."
+  },
+  "reliquary:RedPaperclip": {
+    "NAME": "赤いペーパークリップ",
+    "FLAVOR": "物々交換の強力な象徴。",
+    "DESCRIPTIONS": [
+      "ターン開始時に、 [E] を得る。 #b",
+      " 個のランダムなノーマルまたは #bアンコモン のレリックと置き換える。"
+    ]
+  },
+  "reliquary:RoseTintedGlasses": {
+    "NAME": "薔薇色の眼鏡",
+    "FLAVOR": "あのな、物事はそんなに悪くない。",
+    "DESCRIPTIONS": [
+      "戦闘中に #y状態異常 を引く最初の #b",
+      " 回は、それを #y廃棄 してカードを #b1 枚引く。"
+    ]
+  },
+  "reliquary:RosewoodLute": {
+    "NAME": "ローズウッドのリュート",
+    "FLAVOR": "とにかくこれが「ワンダースパイア」。",
+    "DESCRIPTIONS": [
+      "ダメージと同じ値でブロックをするたび、次ターン開始時、 [E] を得る。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the song 'Wonderwall' by Oasis."
+  },
+  "reliquary:RustamsPendant": {
+    "NAME": "ルスタムのペンダント",
+    "FLAVOR": "ただの金属の塊だが、あなたの何かを知っている。",
+    "DESCRIPTIONS": [
+      "ターン開始時に、 [E] を得る。キャラクターごとにデメリットが違う。",
+      "ターン開始時に、 [E] を得る。戦闘開始時、 #b",
+      " #y筋力 。",
+      " #y敏捷性 。",
+      " #y集中力 。",
+      " #y信心 。 #b",
+      " #yマントラ に達すると、 #y贖罪 の スタンス に入る。",
+      "ターン開始時、 #yマントラ #b",
+      " を失う。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This relic is named after our wonderful RUS translator!"
+  },
+  "reliquary:SculptingSteel": {
+    "NAME": "彫り込み鋼",
+    "FLAVOR": "1秒間は粘土のような可鍛性あり、その後硬化する。",
+    "DESCRIPTIONS": [
+      "獲得時、既に所持しているランダムなノーマル、 #bアンコモン 、 #yレア 、 #yショップ レリックのいずれかの複製に変化する。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a reference to the Magic card Sculpting Steel, which has some existing translations: https://scryfall.com/search?q=%21%E2%80%9CSculpting+Steel%E2%80%9D+set%3A2xm+lang%3Aany&unique=prints"
+  },
+  "reliquary:SharkskinSheath": {
+    "NAME": "シャークスキンシース",
+    "FLAVOR": "これに入れるシャークスキンのナイフでもあれば。",
+    "DESCRIPTIONS": [
+      "手札が空の状態でターンを終了すると、次のターン開始時、カードを追加で #b1 枚引く。"
+    ]
+  },
+  "reliquary:ShortFuse": {
+    "NAME": "ショートヒューズ",
+    "FLAVOR": "いつ飛ぶことやら。",
+    "DESCRIPTIONS": [
+      " #yライトニング が最もHPの低い敵を狙うようになる。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "To have a 'short fuse' means you get angry easily."
+  },
+  "reliquary:Sideboard": {
+    "NAME": "サイドボード",
+    "FLAVOR": "カードを置いておくためのボード…どうやって使うんだ？",
+    "DESCRIPTIONS": [
+      "カード報酬を選択するとデッキとは別の山に保持される。非戦闘時にその山からデッキにカードを移すことができる。",
+      "サイドボード",
+      "非戦闘時にサイドボードからデッキにカードを移す。",
+      " NL [#2aecd7]右クリックでオフ。[]",
+      " NL [#2aecd7]右クリックでオン。[]",
+      "デッキに加えるカードを選択。"
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "This is a reference to 'sideboards' in Magic the Gathering. It's a wooden board... this pun may not translate.",
+      "You may find the term used for sideboards in other languages here: https://blogs.magicjudges.org/translatedrules/",
+      "in the Comprehensive Rules, rule 100.4. The complete rules document might be on the second page."
+    ]
+  },
+  "reliquary:SilkGlove": {
+    "NAME": "シルク手袋",
+    "FLAVOR": "派手な淑女の忘れ物。",
+    "DESCRIPTIONS": [
+      "ターン終了時に手札が #b1 枚の場合、それを #y保留 する。"
+    ]
+  },
+  "reliquary:Sod": {
+    "NAME": "芝生",
+    "FLAVOR": "芝生の側面は緑ではなく茶色だ。",
+    "DESCRIPTIONS": [
+      "アップグレードされていないカードを #b",
+      " 枚プレイするごとに、アップグレードされたそのカードの複製を手札に加える。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a joke about the saying 'the grass is always greener on the other side.'"
+  },
+  "reliquary:Solitaire": {
+    "NAME": "ソリティア",
+    "FLAVOR": "一度は夢見た。まさか現実になるとは。",
+    "DESCRIPTIONS": [
+      "#pパープル カードを2回アップグレードすることができる。",
+      "天賦 NL *ベータ+ を1枚山札に加える。 NL 廃棄",
+      "天賦 NL ターン開始時、 *スマイト+ を手札に加える。",
+      "保留 NL 神聖 の スタンス に入る。 NL !M! ターン後、 NL あなたは死ぬ。 NL 廃棄",
+      "!D! ダメージを与える。 NL *スマイト+ を手札に加える。",
+      "次のターン開始時、 *奇跡+ を1枚手札に加える。 NL この効果はX+2ターン続く。 NL 廃棄",
+      "*抹殺の剣+ をX+2にして1枚山札に加える。 NL 廃棄",
+      "保留 NL 憤怒 ならば、 筋力 !M! を得て、ターン終了時に失う。そうでなければ 憤怒 の スタンス に入る。 NL 廃棄",
+      "!B! ブロックを得る。 NL *退避+ を手札に加える。",
+      "天賦 NL ターン開始時、 [W] を得る。この効果は毎ターン !M! 増加する。",
+      "保留 NL !D! ダメージを !M! 回与える。",
+      "3枚のアタックから1枚選んで !M! 枚手札に加える。これらのカードはすべてのクラスから出現する。 NL このターンそのコストは0。 NL 廃棄",
+      "!D! ダメージを与える。 NL 致命 時、デッキのランダムなカードを2回 アップグレード する。 NL 廃棄",
+      "天賦 NL カードが戦闘中に作られるたび、それを アップグレード する。",
+      "捨て札のカードを !M! 枚手札に戻し、 NL 保留 する。 NL 平静 の スタンス に入る。 NL ターンを終了する。",
+      "山札から1枚カードを選ぶ。 NL 選ばれたカードを !M! 回プレイして廃棄する。 NL 廃棄",
+      "!D! ダメージを与える。 NL *蹂躙+ を山札に加える。",
+      "保留 NL !D! ダメージを与える。 NL このカードを 保留 するたび、そのコストを !M! 減らす。",
+      "占術 !M! NL 手札が一杯になるまでカードを引く。 NL 廃棄",
+      "ターン終了時、 *洞察+ を1枚山札に加える。",
+      "!B! ブロックを得る。 NL 次にプレイするアタックのコストは0で、 !M! の追加ダメージを与える。",
+      "保留 NL 平静 の スタンス に入る。",
+      "次のターン開始時、カードを !M! 枚引く。このターンに続いて追加の１ターンを行う。 NL ターンを終了する。 NL 廃棄",
+      "保留 NL マントラ !M! を得る。このカードを保留するたび、得られる マントラが %d 増加する。（最大 %d）",
+      "憤怒 の スタンス に入る。 NL !D! ダメージを与える。"
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "These are second upgrades, so all but the first string are slight variants of Watcher cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicSolitaire.java",
+      "to see which string corresponds to which Watcher card. Indices start at 0!"
+    ]
+  },
+  "reliquary:Spinner": {
+    "NAME": "スピナー",
+    "FLAVOR": "赤はやめて、赤はやめて…あっ！",
+    "DESCRIPTIONS": [
+      "ターン中、前回プレイしたカードと異なるタイプのカードをプレイするたび、 #b",
+      " #yブロック を得る。"
+    ]
+  },
+  "reliquary:Stiletto": {
+    "NAME": "錐刀",
+    "FLAVOR": "鎧の接合部を滑るように設計されている。",
+    "DESCRIPTIONS": [
+      "敵が得る #yブロック が #b",
+      "% 減少する。"
+    ]
+  },
+  "reliquary:Tamtam": {
+    "NAME": "タムタム",
+    "FLAVOR": "ゴーン。",
+    "DESCRIPTIONS": [
+      "ターン開始時にあなたの #yブロック が残っている場合、あなたと全ての敵は #y筋力 #b1 を得る。"
+    ]
+  },
+  "reliquary:TatteredRug": {
+    "NAME": "ボロの敷物",
+    "FLAVOR": "これさえあれば誰でも店を構えられると思うか？",
+    "DESCRIPTIONS": [
+      "商人にポーションを売却することができる。",
+      " ",
+      " ゴールドで売却",
+      "買った！",
+      "取引成立だ！",
+      "~なんで売ろうと思ったんだ？~",
+      "いいね！高値で買うよ！",
+      "くれ！",
+      "これを @買わない@ 奴はバカだね！",
+      "足元見すぎだよ…"
+    ],
+    "NOTE_FOR_TRANSLATORS": "A couple of these are voice lines from the merchant in Resident Evil 4."
+  },
+  "reliquary:ThirdArm": {
+    "NAME": "第三の腕",
+    "FLAVOR": "それは小さく、指さえついていない。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、ターン開始時に [E] を得るコスト #b",
+      " の #yパワー を山札に追加する。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the arm from a wooden figure-drawing manikin."
+  },
+  "reliquary:TridentHead": {
+    "NAME": "トライデントヘッド",
+    "FLAVOR": "伝説の海神が使用する武器の一部。",
+    "DESCRIPTIONS": [
+      "戦闘中、最初に単体の敵を指定するカードが、他の全ての敵に対して複製される。"
+    ]
+  },
+  "reliquary:TuningFork": {
+    "NAME": "音叉",
+    "FLAVOR": "これをフォークに使ったら歯が折れる。",
+    "DESCRIPTIONS": [
+      "敵の #yブロック を丁度の値で壊すたび、 #b",
+      " ダメージを与える。"
+    ]
+  },
+  "reliquary:Vitrine": {
+    "NAME": "ヴィトリン",
+    "FLAVOR": "貴重な所有品を展示するのに最適。",
+    "DESCRIPTIONS": [
+      "獲得時に #b1 枚のカードを選択し、デッキから削除する。戦闘中、好きなときにそのカードを山札に加えることができる。",
+      "削除するカードを1枚選択。",
+      "[#2aecd7]右クリック で ",
+      " を山札に加える。",
+      " は戦闘後ここに戻る。"
+    ]
+  },
+  "reliquary:WeakTea": {
+    "NAME": "薄茶",
+    "FLAVOR": "飲んだ後でもよく眠れる。なんの役に立つんだ？",
+    "DESCRIPTIONS": [
+      "戦闘中、最初にプレイする無色のカードのコストを #b1 減らす。",
+      "戦闘中、最初にプレイする #b",
+      " 枚の無色のカードのコストを #b1 減らす。"
+    ]
+  },
+  "reliquary:WritOfMandamus": {
+    "NAME": "マンダマスの令状",
+    "FLAVOR": "それは「何かするつもりならちょっと待て。」から始まる。",
+    "DESCRIPTIONS": [
+      "ターン開始時に、 [E] を得る。ターン終了時、 #b",
+      " #yブロック を失う。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "'Mandamus' is just a made-up name."
+  }
+}

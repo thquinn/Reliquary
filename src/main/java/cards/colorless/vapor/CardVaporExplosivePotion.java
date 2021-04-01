@@ -37,7 +37,7 @@ public class CardVaporExplosivePotion extends CustomCard {
                 addToBot(new VFXAction(new ExplosionSmallEffect(mo.hb.cX, mo.hb.cY), 0.1F));
         }
         addToBot(new WaitAction(0.5F));
-        addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(baseDamage, true), DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.NONE));
+        addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(damage, true), DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.NONE));
     }
 
     @Override

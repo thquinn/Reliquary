@@ -124,7 +124,8 @@
     "DESCRIPTIONS": [
       "Whenever you get a #yStatus, enemies lose #b",
       " #yStrength during their next turn."
-    ]
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text implies that your enemies are the ones that will need the crutches."
   },
   "reliquary:Dhvaja": {
     "NAME": "Dhvaja",
@@ -140,13 +141,14 @@
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. Take #b",
       " damage for each Energy beyond the third you spend each turn."
-    ]
+    ],
+    "NOTE_FOR_TRANSLATORS": "'Hachi machi' is a slang exclamation expressing surprise or pain."
   },
   "reliquary:ExpiredCoupon": {
     "NAME": "Expired Coupon",
     "FLAVOR": "Good for 10% off an \"ass-beating.\" Who printed this thing, anyway?",
     "DESCRIPTIONS": [
-      "Whenever you reach #b",
+      "When you reach #b",
       " or more total unblocked damage dealt in a combat, deal #b",
       " damage to ALL enemies."
     ]
@@ -173,7 +175,8 @@
       ", and ",
       " and ",
       " to exchange this for a #yRare relic.",
-      " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]show [#2aecd7]unplayed [#2aecd7]cards [#2aecd7]in [#2aecd7]hand.[]"
+      " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]show [#2aecd7]unplayed [#2aecd7]cards [#2aecd7]in [#2aecd7]hand.[]",
+      "This relic has been used up."
     ],
     "NOTE_FOR_TRANSLATORS": [
       "'Every unique card' means every card with a different name. The upgradedness doesn't matter, i.e. 'Strike' and 'Strike+' are the same unique card.",
@@ -247,7 +250,7 @@
     "NAME": "Kinked Spring",
     "FLAVOR": "Someone overwound this thing, and it ain't comin' back.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. Your discard pile only shuffles into your draw pile when your draw pile is empty at the end of your turn."
+      "Gain [E] at the start of your turn. Your discard pile only shuffles into your draw pile when you end your turn with an empty draw pile."
     ]
   },
   "reliquary:Knoch": {
@@ -305,7 +308,7 @@
   },
   "reliquary:PartyBalloon": {
     "NAME": "Party Balloon",
-    "FLAVOR": "Hold on to that string, or you'll never see it again!",
+    "FLAVOR": "Once you pop, the fun immediately stops.",
     "DESCRIPTIONS": [
       "#yPower cards start each combat in the top half of your draw pile."
     ]
@@ -441,7 +444,8 @@
       "Add cards from your sideboard into your deck between combats.",
       " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]toggle [#2aecd7]off.[]",
       " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]toggle [#2aecd7]on.[]",
-      "Choose a card to add into your deck."
+      "Choose a card to add into your deck.",
+      "Cancel"
     ],
     "NOTE_FOR_TRANSLATORS": [
       "This is a reference to 'sideboards' in Magic the Gathering. It's a wooden board... this pun may not translate.",
@@ -475,7 +479,7 @@
       "Retain. NL Enter Divinity. NL Die in !M! turns. NL Exhaust.",
       "Deal !D! damage. NL Add a *Smite+ into your hand.",
       "Put a *Miracle+ into your hand at the start of your next X+2 turns. NL Exhaust.",
-      "Shuffle an *Expunger+ with X+1 into your draw pile. NL Exhaust.",
+      "Shuffle an *Expunger+ with X+2 into your draw pile. NL Exhaust.",
       "Retain. NL If you are in Wrath, gain !M! Strength this turn, otherwise enter Wrath. NL Exhaust.",
       "Gain !B! Block. NL Add a *Safety+ into NL your hand.",
       "Innate. NL At the start of your turn, gain [W] NL and increase this gain by !M!.",

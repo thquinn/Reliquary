@@ -15,8 +15,11 @@ public class MultiplyStrengthAction extends AbstractGameAction {
     }
 
     public void update() {
-        int strAmt = (target.getPower(StrengthPower.POWER_ID)).amount * (multiplier - 1);
-        addToTop(new ApplyPowerAction(target, target, new StrengthPower(target, strAmt), strAmt));
         isDone = true;
+        if (!target.hasPower(StrengthPower.POWER_ID)) {
+            return;
+        }
+        int strAmt = target.getPower(StrengthPower.POWER_ID).amount * (multiplier - 1);
+        addToTop(new ApplyPowerAction(target, target, new StrengthPower(target, strAmt), strAmt));
     }
 }

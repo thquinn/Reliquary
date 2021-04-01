@@ -144,9 +144,9 @@
     "UPGRADE_DESCRIPTION": "Оставляется. NL Даёт !M! слота для сфер."
   },
   "reliquary:VaporPowerPotion": {
-    "NAME": "Талантливы испарения",
+    "NAME": "Талантливые испарения",
     "DESCRIPTION": "Оставляется. NL Добавляет случайный Талант в руку. Он стоит 0 в этому ходу. NL Сжигается.",
-    "UPGRADE_DESCRIPTION": "Оставляет. NL Добавляет !M! копий случайного Таланта в руку. Они стоят 0 в этом ходу. NL Сжигается."
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Добавляет !M! копий случайного Таланта в руку. Они стоят 0 в этом ходу. NL Сжигается."
   },
   "reliquary:VaporRegenPotion": {
     "NAME": "Оздоровительные испарения",
@@ -205,8 +205,8 @@
     "DESCRIPTION": "Оставляется. NL Накладывает !M! Слабости. NL Сжигается."
   },
   "reliquary:Vim": {
-    "NAME": "Vim",
-    "DESCRIPTION": "Gain [E] at the start of your turn.",
-    "UPGRADE_DESCRIPTION": "Gain [E] [E] at the start of your turn."
+    "NAME": "Энергичность",
+    "DESCRIPTION": "Даёт [E] в начале вашего хода.",
+    "UPGRADE_DESCRIPTION": "Даёт [E] [E] в начале вашего хода."
   }
 }

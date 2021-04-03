@@ -1,24 +1,12 @@
 package patches;
 
-import basemod.helpers.CardModifierManager;
-import cardmods.CardModIridiumCopy;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.evacipated.cardcrawl.modthespire.lib.*;
-import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
-import com.megacrit.cardcrawl.actions.utility.UseCardAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.core.Settings;
+import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
-import com.megacrit.cardcrawl.relics.MummifiedHand;
 import com.megacrit.cardcrawl.rewards.RewardItem;
-import javassist.CannotCompileException;
-import javassist.CtBehavior;
 import relics.RelicRunicRemote;
 import util.TextureLoader;
-
-import javax.rmi.CORBA.Util;
-import java.util.ArrayList;
 
 @SpirePatch(
         clz= RewardItem.class,

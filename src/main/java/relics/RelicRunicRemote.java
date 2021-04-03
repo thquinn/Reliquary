@@ -1,20 +1,20 @@
 package relics;
 
-import actions.AddCardModToHandAction;
 import basemod.abstracts.CustomRelic;
-import cardmods.CardModRetain;
 import cards.colorless.CardVim;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.blue.*;
-import com.megacrit.cardcrawl.cards.colorless.*;
+import com.megacrit.cardcrawl.cards.colorless.BandageUp;
+import com.megacrit.cardcrawl.cards.colorless.HandOfGreed;
 import com.megacrit.cardcrawl.cards.green.*;
 import com.megacrit.cardcrawl.cards.purple.*;
 import com.megacrit.cardcrawl.cards.red.*;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.dungeons.Exordium;
+import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.monsters.beyond.*;
@@ -24,6 +24,7 @@ import com.megacrit.cardcrawl.monsters.ending.SpireSpear;
 import com.megacrit.cardcrawl.monsters.exordium.*;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rewards.RewardItem;
+import util.ReliquaryLogger;
 import util.TextureLoader;
 
 import java.util.HashSet;
@@ -38,7 +39,7 @@ public class RelicRunicRemote extends CustomRelic {
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/runicRemote.png");
 
     public boolean perfect = true;
-    Set<String> dropIDs = new HashSet<String>();
+    Set<String> dropIDs = new HashSet<>();
 
     public RelicRunicRemote() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.SOLID);
@@ -46,11 +47,13 @@ public class RelicRunicRemote extends CustomRelic {
 
     @Override
     public boolean canSpawn() {
-        return Settings.isEndless || AbstractDungeon.floorNum <= 48;
+        // Only spawn in the first two acts, and not in custom acts since we don't have cards for the monsters there.
+        return Settings.isEndless || AbstractDungeon.id.equals(Exordium.ID) || AbstractDungeon.id.equals(TheCity.ID);
     }
 
     @Override
     public void atBattleStart() {
+        ReliquaryLogger.log(AbstractDungeon.id);
         perfect = true;
         dropIDs.clear();
         beginLongPulse();

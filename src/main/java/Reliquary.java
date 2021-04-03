@@ -8,9 +8,11 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import powers.*;
 import relics.*;
@@ -19,7 +21,7 @@ import stances.AtonementStance;
 import java.nio.charset.StandardCharsets;
 
 @SpireInitializer
-public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber, EditStringsSubscriber, PostInitializeSubscriber, PostUpdateSubscriber {
+public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber, EditStringsSubscriber, PostInitializeSubscriber, PostUpdateSubscriber, OnStartBattleSubscriber, OnCardUseSubscriber {
     public static final String ID = "reliquary";
 
     public static void initialize() {
@@ -87,6 +89,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         BaseMod.addRelic(new RelicStiletto(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTamtam(), RelicType.RED);
         BaseMod.addRelic(new RelicTatteredRug(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicThinkingCap(), RelicType.SHARED);
         BaseMod.addRelic(new RelicThirdArm(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTridentHead(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTuningFork(), RelicType.SHARED);
@@ -149,6 +152,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         UnlockTracker.markRelicAsSeen(RelicSolitaire.ID);
         UnlockTracker.markRelicAsSeen(RelicTamtam.ID);
         UnlockTracker.markRelicAsSeen(RelicTatteredRug.ID);
+        UnlockTracker.markRelicAsSeen(RelicThinkingCap.ID);
         UnlockTracker.markRelicAsSeen(RelicThirdArm.ID);
         UnlockTracker.markRelicAsSeen(RelicTridentHead.ID);
         UnlockTracker.markRelicAsSeen(RelicTuningFork.ID);
@@ -239,5 +243,15 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
     public void receivePostUpdate() {
         if (AbstractDungeon.player == null) return;
         if (AbstractDungeon.player.hasRelic(RelicRedPaperclip.ID)) ((RelicRedPaperclip)AbstractDungeon.player.getRelic(RelicRedPaperclip.ID)).postUpdate();
+    }
+
+    @Override
+    public void receiveOnBattleStart(AbstractRoom abstractRoom) {
+        RelicThinkingCap.onStartBattleStatic();
+    }
+
+    @Override
+    public void receiveCardUsed(AbstractCard abstractCard) {
+        RelicThinkingCap.onCardUseStatic(abstractCard);
     }
 }

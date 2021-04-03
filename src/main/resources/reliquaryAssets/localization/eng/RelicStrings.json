@@ -554,6 +554,14 @@
     ],
     "NOTE_FOR_TRANSLATORS": "A couple of these are voice lines from the merchant in Resident Evil 4."
   },
+  "reliquary:ThinkingCap": {
+    "NAME": "Thinking Cap",
+    "FLAVOR": "With this big ol' cone on your head, everyone can see how smart you are.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, draw the second-to-last card you played last combat. (Only cards in your deck count.)"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a dunce cap."
+  },
   "reliquary:ThirdArm": {
     "NAME": "Third Arm",
     "FLAVOR": "It's tiny, and it doesn't even have fingers.",
@@ -563,7 +571,7 @@
     ],
     "NOTE_FOR_TRANSLATORS": "This is the arm from a wooden figure-drawing manikin."
   },
-  "reliquary:TridentHead": {
+  "reliquary:TridentHead": {re
     "NAME": "Trident Head",
     "FLAVOR": "A part of the weapon wielded by the fabled Wave King.",
     "DESCRIPTIONS": [

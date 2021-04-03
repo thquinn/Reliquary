@@ -11,7 +11,6 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.rooms.ShopRoom;
 import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
-import util.ReliquaryLogger;
 import util.TextureLoader;
 
 public class RelicFeatherDuster extends CustomRelic {

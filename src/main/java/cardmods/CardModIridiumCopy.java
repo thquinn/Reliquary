@@ -2,7 +2,6 @@ package cardmods;
 
 import basemod.abstracts.AbstractCardModifier;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
 
 public class CardModIridiumCopy extends AbstractCardModifier {
     public static final String ID = "reliquary:CardModIridiumCopy";

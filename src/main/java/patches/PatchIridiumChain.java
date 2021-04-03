@@ -1,30 +1,16 @@
 package patches;
 
-import basemod.abstracts.AbstractCardModifier;
 import basemod.helpers.CardModifierManager;
-import cardmods.CardModEthereal;
 import cardmods.CardModIridiumCopy;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
-import com.megacrit.cardcrawl.actions.common.DiscardAtEndOfTurnAction;
-import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
-import com.megacrit.cardcrawl.actions.unique.RetainCardsAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.MummifiedHand;
-import com.megacrit.cardcrawl.relics.RunicPyramid;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
-import relics.RelicQuartzCube;
-import relics.RelicSilkGlove;
-import util.ReliquaryLogger;
 
-import javax.smartcardio.Card;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
 
 @SpirePatch(
         clz= MummifiedHand.class,

@@ -19,7 +19,7 @@
     "NAME": "Big Hammer",
     "FLAVOR": "Truly, it is the biggest hammer you have ever seen.",
     "DESCRIPTIONS": [
-      "You may upgrade #rRed cards a second time.",
+      "You may upgrade #rRed cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
       "Deal !D! damage. NL Add a copy of this card into your discard pile. NL Deals !M! additional damage for each Anger in your discard pile.",
       "Gain !B! Block. NL Upgrade all cards in your hand twice for the rest of combat.",
       "Innate. NL Block is not removed at the start of your turn.",
@@ -396,6 +396,15 @@
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the song 'Wonderwall' by Oasis."
   },
+  "reliquary:RunicRemote": {
+    "NAME": "Runic Remote",
+    "FLAVOR": "Take hold of your destiny.",
+    "DESCRIPTIONS": [
+      "Whenever you win a combat without taking damage, you may choose a card corresponding to a defeated enemy.",
+      "The remote vibrates..."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a Wii controller, in honor of our wonderful JPN translator!"
+  },
   "reliquary:RustamsPendant": {
     "NAME": "Rustam's Pendant",
     "FLAVOR": "It's just a hunk of metal, but it seems to know something about you.",
@@ -473,7 +482,7 @@
     "NAME": "Solitaire",
     "FLAVOR": "You dreamed of it, once. How it crossed over into reality is a mystery.",
     "DESCRIPTIONS": [
-      "You may upgrade #pPurple cards a second time.",
+      "You may upgrade #pPurple cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
       "Innate. NL Shuffle a *Beta+ into your draw pile. NL Exhaust.",
       "Innate. NL At the start of each turn, add a *Smite+ into your hand.",
       "Retain. NL Enter Divinity. NL Die in !M! turns. NL Exhaust.",

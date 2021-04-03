@@ -14,7 +14,7 @@ import util.TextureLoader;
 
 import java.lang.reflect.Method;
 
-public class RelicSolitaire extends CustomRelic {
+public class RelicSolitaire extends RelicSolitaireBase {
     public static final String ID = "reliquary:Solitaire";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/solitaire.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/solitaire.png");

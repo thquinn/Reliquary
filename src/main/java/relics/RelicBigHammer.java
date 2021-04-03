@@ -11,7 +11,7 @@ import util.TextureLoader;
 
 import java.lang.reflect.Method;
 
-public class RelicBigHammer extends CustomRelic {
+public class RelicBigHammer extends RelicSolitaireBase {
     public static final String ID = "reliquary:BigHammer";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/bigHammer.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/bigHammer.png");

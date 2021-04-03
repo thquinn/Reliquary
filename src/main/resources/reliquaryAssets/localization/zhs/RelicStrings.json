@@ -376,7 +376,7 @@
     "NAME": "Runic Remote",
     "FLAVOR": "Take hold of your destiny.",
     "DESCRIPTIONS": [
-      "Whenever you win a combat without taking damage, you may choose a card corresponding to a defeated enemy.",
+      "Whenever you win a combat without taking damage, you may add a card corresponding to a defeated enemy into your deck.",
       "The remote vibrates..."
     ],
     "NOTE_FOR_TRANSLATORS": "This is a Wii controller, in honor of our wonderful JPN translator!"

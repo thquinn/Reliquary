@@ -19,7 +19,7 @@
     "NAME": "大锤",
     "FLAVOR": "真的，这绝对是你见过的最大的锤子。",
     "DESCRIPTIONS": [
-      "#r红色 牌可以被 #y升级 两次。",
+      "You may upgrade #rRed cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
       "造成 !D! 点伤害。 NL 在弃牌堆放入一张此牌的复制品。 NL 弃牌堆每有一张愤怒，额外造成 !M! 点伤害。",
       "获得 !B! 点 格挡 。 NL 在本场战斗中 升级 手牌中的所有牌两次。",
       "固有 。 NL 格挡 不再在你的回合开始时消失。",
@@ -156,16 +156,17 @@
     "NAME": "船票",
     "FLAVOR": "上面写道，“移舟泊烟渚，日暮客愁新。”",
     "DESCRIPTIONS": [
-      "一场战斗中，如果你打出过你牌组中每种名称不同（ #y升级 后的牌视作同名牌）的非 #r诅咒 牌，失去这件遗物，并在本次战斗奖励中增加一件 #y稀有 遗物。",
-      "本场战斗中，打出你牌组中共 #b",
-      " 种名称不同的非 #r诅咒 牌来用一件 #y稀有 遗物换掉这件遗物。",
+      "When you play every unique playable card in your deck in one combat, lose this and add a #yRare relic to that combat's reward.",
+      "Play all #b",
+      " unique playable cards in your deck this combat to exchange this for a #yRare relic.",
       "本场战斗中，再打出 #b",
       " 种名称不同的牌来用一件 #y稀有 遗物换掉这件遗物。",
       "打出 ",
       "，",
       "和",
       "来用一件 #y稀有 遗物换掉这件遗物。",
-      " NL [#2aecd7]右击以显示手牌中还未被打出过的牌。[]"
+      " NL [#2aecd7]右击以显示手牌中还未被打出过的牌。[]",
+      "This relic has been used up."
     ]
   },
   "reliquary:FingerTrap": {
@@ -371,6 +372,15 @@
       "每当你恰好 #y格挡 伤害，下回合获得 [E] 。"
     ]
   },
+  "reliquary:RunicRemote": {
+    "NAME": "Runic Remote",
+    "FLAVOR": "Take hold of your destiny.",
+    "DESCRIPTIONS": [
+      "Whenever you win a combat without taking damage, you may choose a card corresponding to a defeated enemy.",
+      "The remote vibrates..."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a Wii controller, in honor of our wonderful JPN translator!"
+  },
   "reliquary:RustamsPendant": {
     "NAME": "Rustam的吊坠",
     "FLAVOR": "它只是一篇薄薄的金属，却好像知道你的一些事情。",
@@ -438,7 +448,7 @@
     "NAME": "单粒宝石",
     "FLAVOR": "你曾经梦见过它。它是怎么跨越梦境来到现实的是个谜。",
     "DESCRIPTIONS": [
-      " #p紫色 牌可以被 #y升级 两次。",
+      "You may upgrade #pPurple cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
       "固有 。 NL 将一张 *贝塔+ 放入你的抽牌堆中。 NL 消耗 。",
       "固有 。 NL 在每回合开始时，将一张 *惩恶+ 加入你的手牌。",
       "保留 。 NL 进入 神格 。 NL !M! 回合后死亡。 NL 消耗 。",
@@ -503,6 +513,14 @@
       "我要是 @不@ 买，我就是个傻子。",
       "你还真能讨教还价呢......"
     ]
+  },
+  "reliquary:ThinkingCap": {
+    "NAME": "Thinking Cap",
+    "FLAVOR": "With this big ol' cone on your head, everyone can see how smart you are.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, draw the second-to-last card you played last combat. (Only cards in your deck count.)"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a dunce cap."
   },
   "reliquary:ThirdArm": {
     "NAME": "第三臂",

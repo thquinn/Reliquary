@@ -19,7 +19,7 @@
     "NAME": "巨大なハンマー",
     "FLAVOR": "今まで見た中で最大のハンマー。",
     "DESCRIPTIONS": [
-      "#rレッド カードを2回アップグレードすることができる。",
+      "You may upgrade #rRed cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
       "!D! ダメージを与える。 NL このカードの複製を NL 捨て札に加える。 NL 捨て札にある怒りの枚数ｘ !M! の追加ダメージを与える。",
       "!B! ブロック を得る。 NL 戦闘終了まで手札のカードすべてを2回 アップグレード する。",
       "天賦 NL ターン開始時にブロック値を失わない。",
@@ -164,16 +164,17 @@
     "NAME": "フェリーパス",
     "FLAVOR": "「ラストセル島の旅を楽しんできてください！」と書かれている。",
     "DESCRIPTIONS": [
-      "一度の戦闘中で、デッキ内の全ての種類のカードをプレイしたとき、このレリックを失い報酬に #yレアレリック を追加する。",
-      "この戦闘中、デッキ内の #b",
-      " 種類のカードを全てプレイしたとき、このレリックを失い報酬に #yレアレリック を追加する。",
+      "When you play every unique playable card in your deck in one combat, lose this and add a #yRare relic to that combat's reward.",
+      "Play all #b",
+      " unique playable cards in your deck this combat to exchange this for a #yRare relic.",
       "この戦闘中、デッキ内の #b",
       " 種類のカードをプレイしたとき、このレリックを失い報酬に #yレアレリック を追加する。",
       " ",
       "、 ",
       "、 ",
       " をプレイしたとき、このレリックを失い報酬に #yレアレリック を追加する。",
-      " NL [#2aecd7]右クリックで手札にある NL [#2aecd7]未プレイのカードを表示。[]"
+      " NL [#2aecd7]右クリックで手札にある NL [#2aecd7]未プレイのカードを表示。[]",
+      "This relic has been used up."
     ],
     "NOTE_FOR_TRANSLATORS": [
       "'Every unique card' means every card with a different name. The upgradedness doesn't matter, i.e. 'Strike' and 'Strike+' are the same unique card.",
@@ -393,6 +394,15 @@
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the song 'Wonderwall' by Oasis."
   },
+  "reliquary:RunicRemote": {
+    "NAME": "Runic Remote",
+    "FLAVOR": "Take hold of your destiny.",
+    "DESCRIPTIONS": [
+      "Whenever you win a combat without taking damage, you may choose a card corresponding to a defeated enemy.",
+      "The remote vibrates..."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a Wii controller, in honor of our wonderful JPN translator!"
+  },
   "reliquary:RustamsPendant": {
     "NAME": "ルスタムのペンダント",
     "FLAVOR": "ただの金属の塊だが、あなたの何かを知っている。",
@@ -469,7 +479,7 @@
     "NAME": "ソリティア",
     "FLAVOR": "一度は夢見た。まさか現実になるとは。",
     "DESCRIPTIONS": [
-      "#pパープル カードを2回アップグレードすることができる。",
+      "You may upgrade #pPurple cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
       "天賦 NL *ベータ+ を1枚山札に加える。 NL 廃棄",
       "天賦 NL ターン開始時、 *スマイト+ を手札に加える。",
       "保留 NL 神聖 の スタンス に入る。 NL !M! ターン後、 NL あなたは死ぬ。 NL 廃棄",
@@ -540,6 +550,14 @@
       "足元見すぎだよ…"
     ],
     "NOTE_FOR_TRANSLATORS": "A couple of these are voice lines from the merchant in Resident Evil 4."
+  },
+  "reliquary:ThinkingCap": {
+    "NAME": "Thinking Cap",
+    "FLAVOR": "With this big ol' cone on your head, everyone can see how smart you are.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, draw the second-to-last card you played last combat. (Only cards in your deck count.)"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a dunce cap."
   },
   "reliquary:ThirdArm": {
     "NAME": "第三の腕",

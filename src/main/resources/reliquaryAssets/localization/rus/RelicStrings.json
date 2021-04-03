@@ -19,7 +19,7 @@
     "NAME": "Big Hammer",
     "FLAVOR": "Truly, it is the biggest hammer you have ever seen.",
     "DESCRIPTIONS": [
-      "You may upgrade #rRed cards a second time.",
+      "You may upgrade #rRed cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
       "Deal !D! damage. NL Add a copy of this card into your discard pile. NL Deals !M! additional damage for each Anger in your discard pile.",
       "Gain !B! Block. NL Upgrade all cards in your hand twice for the rest of combat.",
       "Innate. NL Block is not removed at the start of your turn.",
@@ -161,16 +161,17 @@
     "NAME": "Билет на паром",
     "FLAVOR": "Здесь написано: \"Наслаждайтесь путешествием на Остров Рустама!\"",
     "DESCRIPTIONS": [
-      "Обменивается на #yРедкую реликвию в конце боя, если в течение боя вы сыграете все уникальные играбельные карты в вашей колоде.",
-      "В этом бою сыграйте все #b",
-      " уникальные играбельные карты в вашей колоде, чтобы обменять его на #yРедкую реликвию.",
+      "When you play every unique playable card in your deck in one combat, lose this and add a #yRare relic to that combat's reward.",
+      "Play all #b",
+      " unique playable cards in your deck this combat to exchange this for a #yRare relic.",
       "Сыграйте #b",
       " ещё уникальных играбельных карт в этом бою, чтобы обменять его на #yРедкую реликвию.",
       "Сыграйте ",
       ", и ",
       " и ",
       " , чтобы обменять его на #yРедкую реликвию.",
-      " NL [#2aecd7]Нажмите [#2aecd7]Правой [#2aecd7]кнопкой [#2aecd7]мыши [#2aecd7], [#2aecd7]чтобы [#2aecd7]показать [#2aecd7]несыгранные [#2aecd7]уникальные [#2aecd7]карты.[]"
+      " NL [#2aecd7]Нажмите [#2aecd7]Правой [#2aecd7]кнопкой [#2aecd7]мыши [#2aecd7], [#2aecd7]чтобы [#2aecd7]показать [#2aecd7]несыгранные [#2aecd7]уникальные [#2aecd7]карты.[]",
+      "This relic has been used up."
     ]
   },
   "reliquary:FingerTrap": {
@@ -376,6 +377,15 @@
       "Даёт [E] на следующий ход, если ваша #yЗащита ровно заблокирует Атаку ВСЕХ врагов."
     ]
   },
+  "reliquary:RunicRemote": {
+    "NAME": "Runic Remote",
+    "FLAVOR": "Take hold of your destiny.",
+    "DESCRIPTIONS": [
+      "Whenever you win a combat without taking damage, you may choose a card corresponding to a defeated enemy.",
+      "The remote vibrates..."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a Wii controller, in honor of our wonderful JPN translator!"
+  },
   "reliquary:RustamsPendant": {
     "NAME": "Бриллиантовая сова Рустама",
     "FLAVOR": "Казалось, что это обычная награда, однако она явно что-то знает о тебе",
@@ -445,7 +455,7 @@
     "NAME": "Солитер",
     "FLAVOR": "Вы мечтали об этом. Теперь ваша мечта чудесным образом воплотилась в реальность.",
     "DESCRIPTIONS": [
-      "Позволяет улучшать #pФиолетовые карты второй раз.",
+      "You may upgrade #pPurple cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
       "Начальная. NL Добавляет карту *Бета+ в стопку добора. NL Сжигается.",
       "Начальная. NL Добавляет карту *Кара+ в руку в начале каждого вашего хода.",
       "Оставляется. NL Перейти в Божественность. NL Вы умрёте через !M! хода. NL Сжигается.",
@@ -510,6 +520,14 @@
       "Я был бы глупцом, если @не@ купил это!",
       "У тебя жёсткие условия сделок..."
     ]
+  },
+  "reliquary:ThinkingCap": {
+    "NAME": "Thinking Cap",
+    "FLAVOR": "With this big ol' cone on your head, everyone can see how smart you are.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, draw the second-to-last card you played last combat. (Only cards in your deck count.)"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a dunce cap."
   },
   "reliquary:ThirdArm": {
     "NAME": "Third Arm",

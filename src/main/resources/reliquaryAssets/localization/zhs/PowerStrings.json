@@ -1,4 +1,12 @@
 {
+  "reliquary:BattleHymnPlus": {
+    "NAME": "Battle Anthem",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b",
+      " #ySmite+ into your hand."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Battle Hymn power."
+  },
   "reliquary:ChainReaction": {
     "NAME": "链式反应",
     "DESCRIPTIONS": [

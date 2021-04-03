@@ -166,23 +166,23 @@
     "NAME": "Ferry Pass",
     "FLAVOR": "It reads, \"Enjoy your trip to Lastcel Isle!\"",
     "DESCRIPTIONS": [
-      "When you play every unique playable card in your deck in one combat, lose this and add a #yRare relic to that combat's reward.",
+      "The next time you play every unique playable card in your deck in one combat, add a #yRare relic to that combat's reward.",
       "Play all #b",
-      " unique playable cards in your deck this combat to exchange this for a #yRare relic.",
+      " unique playable cards in your deck this combat to gain a #yRare relic.",
       "Play #b",
-      " more unique cards this combat to exchange this for a #yRare relic.",
+      " more unique cards this combat to gain a #yRare relic.",
       "Play ",
       ", and ",
       " and ",
-      " to exchange this for a #yRare relic.",
+      " to gain a #yRare relic.",
       " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]show [#2aecd7]unplayed [#2aecd7]cards [#2aecd7]in [#2aecd7]hand.[]",
       "This relic has been used up."
     ],
     "NOTE_FOR_TRANSLATORS": [
-      "'Every unique card' means every card with a different name. The upgradedness doesn't matter, i.e. 'Strike' and 'Strike+' are the same unique card.",
+      "'Every unique card' means every card with a different name. The upgradedness doesn't matter, e.g. 'Strike' and 'Strike+' are the same unique card.",
       "A couple examples of what those last few strings will look like once assembled:",
-      "Play Bash, Defend, and Strike to exchange this for a Rare relic.",
-      "Play Strike and Defend to exchange this for a Rare relic.",
+      "Play Bash, Defend, and Strike to gain a Rare relic.",
+      "Play Strike and Defend to gain a Rare relic.",
       "Lastcel is a made-up name... I think? It's our wonderful ZHS translator's Github username."
     ]
   },

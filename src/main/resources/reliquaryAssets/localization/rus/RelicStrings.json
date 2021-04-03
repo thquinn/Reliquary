@@ -161,15 +161,15 @@
     "NAME": "Билет на паром",
     "FLAVOR": "Здесь написано: \"Наслаждайтесь путешествием на Остров Рустама!\"",
     "DESCRIPTIONS": [
-      "When you play every unique playable card in your deck in one combat, lose this and add a #yRare relic to that combat's reward.",
+      "The next time you play every unique playable card in your deck in one combat, add a #yRare relic to that combat's reward.",
       "Play all #b",
-      " unique playable cards in your deck this combat to exchange this for a #yRare relic.",
-      "Сыграйте #b",
-      " ещё уникальных играбельных карт в этом бою, чтобы обменять его на #yРедкую реликвию.",
-      "Сыграйте ",
-      ", и ",
-      " и ",
-      " , чтобы обменять его на #yРедкую реликвию.",
+      " unique playable cards in your deck this combat to gain a #yRare relic.",
+      "Play #b",
+      " more unique cards this combat to gain a #yRare relic.",
+      "Play ",
+      ", and ",
+      " and ",
+      " to gain a #yRare relic.",
       " NL [#2aecd7]Нажмите [#2aecd7]Правой [#2aecd7]кнопкой [#2aecd7]мыши [#2aecd7], [#2aecd7]чтобы [#2aecd7]показать [#2aecd7]несыгранные [#2aecd7]уникальные [#2aecd7]карты.[]",
       "This relic has been used up."
     ]

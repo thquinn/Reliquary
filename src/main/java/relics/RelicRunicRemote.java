@@ -166,7 +166,7 @@ public class RelicRunicRemote extends CustomRelic {
             // Beyond
             { AwakenedOne.ID, new String[]{ CreativeAI.ID + '+' } },
             { Darkling.ID, new String[]{ Reaper.ID } },
-            { Deca.ID, new String[]{ CardVim.ID + '+' } },
+            { Deca.ID, new String[]{ CardVim.ID } },
             { Donu.ID, new String[]{ Wish.ID + '+' } },
             { Exploder.ID, new String[]{ Hemokinesis.ID } },
             { GiantHead.ID, new String[]{ BulletTime.ID } },

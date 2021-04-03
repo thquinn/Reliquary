@@ -156,15 +156,15 @@
     "NAME": "船票",
     "FLAVOR": "上面写道，“移舟泊烟渚，日暮客愁新。”",
     "DESCRIPTIONS": [
-      "When you play every unique playable card in your deck in one combat, lose this and add a #yRare relic to that combat's reward.",
+      "The next time you play every unique playable card in your deck in one combat, add a #yRare relic to that combat's reward.",
       "Play all #b",
-      " unique playable cards in your deck this combat to exchange this for a #yRare relic.",
-      "本场战斗中，再打出 #b",
-      " 种名称不同的牌来用一件 #y稀有 遗物换掉这件遗物。",
-      "打出 ",
-      "，",
-      "和",
-      "来用一件 #y稀有 遗物换掉这件遗物。",
+      " unique playable cards in your deck this combat to gain a #yRare relic.",
+      "Play #b",
+      " more unique cards this combat to gain a #yRare relic.",
+      "Play ",
+      ", and ",
+      " and ",
+      " to gain a #yRare relic.",
       " NL [#2aecd7]右击以显示手牌中还未被打出过的牌。[]",
       "This relic has been used up."
     ]

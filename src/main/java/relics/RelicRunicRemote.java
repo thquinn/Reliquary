@@ -3,11 +3,11 @@ package relics;
 import basemod.abstracts.CustomRelic;
 import cards.colorless.CardVim;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.blue.*;
-import com.megacrit.cardcrawl.cards.colorless.BandageUp;
-import com.megacrit.cardcrawl.cards.colorless.HandOfGreed;
+import com.megacrit.cardcrawl.cards.colorless.*;
 import com.megacrit.cardcrawl.cards.green.*;
 import com.megacrit.cardcrawl.cards.purple.*;
 import com.megacrit.cardcrawl.cards.red.*;
@@ -27,8 +27,10 @@ import com.megacrit.cardcrawl.rewards.RewardItem;
 import util.ReliquaryLogger;
 import util.TextureLoader;
 
+import javax.swing.text.html.Option;
 import java.util.HashSet;
 import java.util.Map;
+import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -40,6 +42,7 @@ public class RelicRunicRemote extends CustomRelic {
 
     public boolean perfect = true;
     Set<String> dropIDs = new HashSet<>();
+    static String RANDOM_COLORLESS = "random_colorless";
 
     public RelicRunicRemote() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.SOLID);
@@ -56,6 +59,10 @@ public class RelicRunicRemote extends CustomRelic {
         ReliquaryLogger.log(AbstractDungeon.id);
         perfect = true;
         dropIDs.clear();
+        Optional<AbstractMonster> slimeBoss = AbstractDungeon.getMonsters().monsters.stream().filter(m -> m.id.equals(SlimeBoss.ID)).findAny();
+        if (slimeBoss.isPresent()) {
+            onMonsterDeath(slimeBoss.get());
+        }
         beginLongPulse();
     }
     @Override
@@ -71,6 +78,7 @@ public class RelicRunicRemote extends CustomRelic {
     public void onMonsterDeath(AbstractMonster m) {
         String[] cardIDs = ENEMY_TO_CARDS.get(m.id);
         if (cardIDs == null) {
+            dropIDs.add(RANDOM_COLORLESS);
             return;
         }
         for (String id : cardIDs) {
@@ -95,12 +103,42 @@ public class RelicRunicRemote extends CustomRelic {
         reward.text = DESCRIPTIONS[1];
         reward.cards.clear();
         for (String id : dropIDs) {
-            String lookupID = id.endsWith("+") ? id.substring(0, id.length() - 1) : id;
-            AbstractCard card = CardLibrary.getCopy(lookupID);
-            if (id.endsWith("+")) {
-                card.upgrade();
+            if (id.equals(RANDOM_COLORLESS)) {
+                // The player has killed an unknown enemy.
+                float rareChance, upgradeChance;
+                if (AbstractDungeon.actNum == 1) {
+                    rareChance = .1f;
+                    upgradeChance = .1f;
+                } else if (AbstractDungeon.actNum == 2) {
+                    rareChance = .2f;
+                    upgradeChance = .2f;
+                } else if (AbstractDungeon.actNum == 3) {
+                    rareChance = .3f;
+                    upgradeChance = .3f;
+                } else {
+                    rareChance = .4f;
+                    upgradeChance = .4f;
+                }
+                AbstractCard card;
+                float selector = MathUtils.random();
+                if (selector < rareChance) {
+                    card = AbstractDungeon.getColorlessCardFromPool(AbstractCard.CardRarity.RARE);
+                } else {
+                    card = AbstractDungeon.getColorlessCardFromPool(AbstractCard.CardRarity.UNCOMMON);
+                }
+                card = card.makeCopy();
+                if (MathUtils.random() < upgradeChance) {
+                    card.upgrade();
+                }
+                reward.cards.add(card);
+            } else {
+                String lookupID = id.endsWith("+") ? id.substring(0, id.length() - 1) : id;
+                AbstractCard card = CardLibrary.getCopy(lookupID);
+                if (id.endsWith("+")) {
+                    card.upgrade();
+                }
+                reward.cards.add(card);
             }
-            reward.cards.add(card);
         }
         AbstractDungeon.getCurrRoom().addCardReward(reward);
     }
@@ -184,5 +222,81 @@ public class RelicRunicRemote extends CustomRelic {
             // Ending
             { SpireShield.ID, new String[]{ Impervious.ID + '+' } },
             { SpireSpear.ID, new String[]{ PhantasmalKiller.ID + '+' } },
+            // Gensokyo Act 1
+            { "Gensokyo:Aya", new String[]{ AfterImage.ID } },
+            { "Gensokyo:Cirno", new String[]{ Chill.ID + '+' } },
+            { "Gensokyo:CorruptedTreant", new String[]{ PoisonedStab.ID } },
+            { "Gensokyo:EarthOrb", new String[]{ } },
+            { "Gensokyo:FireOrb", new String[]{ } },
+            { "Gensokyo:MetalOrb", new String[]{ } },
+            { "Gensokyo:GreaterFairy", new String[]{ Flex.ID } },
+            { "Gensokyo:GreyKodama", new String[]{ CloakAndDagger.ID } },
+            { "Gensokyo:Gryphon", new String[]{ GoForTheEyes.ID } },
+            { "Gensokyo:Kitsune", new String[]{ TrueGrit.ID } },
+            { "Gensokyo:Kokoro", new String[]{ Mayhem.ID } },
+            { "Gensokyo:Komachi", new String[]{ Reaper.ID } },
+            { "Gensokyo:LivingMonolith", new String[]{ ConserveBattery.ID } },
+            { "Gensokyo:MaidFairy", new String[]{ Deflect.ID } },
+            { "Gensokyo:Mamizou", new String[]{ "Gensokyo:MenInBlack" } },
+            { "Gensokyo:MoonRabbit", new String[]{ "Gensokyo:BrilliantDragonBullet" } },
+            { "Gensokyo:Patchouli", new String[]{ Rainbow.ID + '+' } },
+            { "Gensokyo:Python", new String[]{ DeadlyPoison.ID } },
+            { "Gensokyo:RedKodama", new String[]{ Overclock.ID } },
+            { "Gensokyo:Reimu", new String[]{ "Gensokyo:GapWoman" } },
+            { "Gensokyo:Sumireko", new String[]{ "Gensokyo:Doppelganger+" } },
+            { "Gensokyo:SunflowerFairy", new String[]{ ThunderClap.ID } },
+            { "Gensokyo:VengefulSpirit", new String[]{ FireBreathing.ID } },
+            { "Gensokyo:WaterOrb", new String[]{ } },
+            { "Gensokyo:WhiteKodama", new String[]{ ShrugItOff.ID } },
+            { "Gensokyo:WoodOrb", new String[]{ } },
+            { "Gensokyo:YellowKodama", new String[]{ BallLightning.ID } },
+            { "Gensokyo:YinYangOrb", new String[]{ } },
+            { "Gensokyo:Yukari", new String[]{ "Gensokyo:TekeTeke" } },
+            { "Gensokyo:ZombieFairy", new String[]{ SuckerPunch.ID } },
+            // Gensokyo Act 2
+            { "Gensokyo:AngelMirror", new String[]{ FlameBarrier.ID } },
+            { "Gensokyo:BigMudSlime", new String[]{ Rampage.ID } },
+            { "Gensokyo:Byakuren", new String[]{ "Gensokyo:TurboGranny" } },
+            { "Gensokyo:Chomper", new String[]{ Choke.ID } },
+            { "Gensokyo:CosmicMonolith", new String[]{ Meditate.ID } },
+            { "Gensokyo:Eiki", new String[]{ Judgement.ID } },
+            { "Gensokyo:Gloop", new String[]{ Shockwave.ID } },
+            { "Gensokyo:Kaguya", new String[]{ "Gensokyo:RisingWorld" } },
+            { "Gensokyo:Koishi", new String[]{ "Gensokyo:MissMary" } },
+            { "Gensokyo:Kune", new String[]{ "Gensokyo:SalamanderShield" } },
+            { "Gensokyo:Miko", new String[]{ "Gensokyo:RedCapeBlueCape" } },
+            { "Gensokyo:Mirror", new String[]{ Hologram.ID + '+' } },
+            { "Gensokyo:Reisen", new String[]{ "Gensokyo:Kunekune" } },
+            { "Gensokyo:SlimeBunny", new String[]{ Panacea.ID } },
+            { "Gensokyo:Swordslinger", new String[]{ Tantrum.ID } },
+            { "Gensokyo:TanukiDog", new String[]{ Pummel.ID + '+' } },
+            { "Gensokyo:Tenshi", new String[]{ "Gensokyo:HAARP" } },
+            { "Gensokyo:Wraith", new String[]{ Apparition.ID } },
+            // Gensokyo Act 3
+            { "Gensokyo:Alice", new String[]{ ForeignInfluence.ID + '+' } },
+            { "Gensokyo:AncientGuardian", new String[]{ Entrench.ID + '+' } },
+            { "Gensokyo:AtlasGolem", new String[]{ Wallop.ID + '+' } },
+            { "Gensokyo:BlueSoul", new String[]{ Tranquility.ID + '+' } },
+            { "Gensokyo:Doll", new String[]{ } },
+            { "Gensokyo:Doremy", new String[]{ Nightmare.ID } },
+            { "Gensokyo:Duskaxe", new String[]{ Inflame.ID } },
+            { "Gensokyo:FeralBat", new String[]{ NoxiousFumes.ID } },
+            { "Gensokyo:Flandre", new String[]{ "Gensokyo:FourOfAKind+" } },
+            { "Gensokyo:Kasen", new String[]{ "Gensokyo:MonkeysPaw" } },
+            { "Gensokyo:Kume", new String[]{ BowlingBash.ID } },
+            { "Gensokyo:LoudBat", new String[]{ PiercingWail.ID } },
+            { "Gensokyo:MadBoulder", new String[]{ Perseverance.ID } },
+            { "Gensokyo:Marisa", new String[]{ "Gensokyo:SevenSchoolMysteries" } },
+            { "Gensokyo:Mokou", new String[]{ "Gensokyo:SpontaneousHumanCombustion" } },
+            { "Gensokyo:PurpleSoul", new String[]{ Crescendo.ID + '+' } },
+            { "Gensokyo:Rafflesia", new String[]{ CripplingPoison.ID + '+' } },
+            { "Gensokyo:Remilia", new String[]{ } },
+            { "Gensokyo:Sariel", new String[]{ Worship.ID + '+' } },
+            { "Gensokyo:SeedOfUnknown", new String[]{ WellLaidPlans.ID } },
+            { "Gensokyo:Sharpion", new String[]{ Evolve.ID } },
+            { "Gensokyo:Shinki", new String[]{ DemonForm.ID + '+' } },
+            { "Gensokyo:VampireBat", new String[]{ Bite.ID } },
+            { "Gensokyo:Yumeko", new String[]{ StaticDischarge.ID + '+' } },
+            { "Gensokyo:Yuyuko", new String[]{ WraithForm.ID + '+' } },
     }).collect(Collectors.toMap(data -> (String)data[0], data -> (String[])data[1]));
 }

@@ -1,9 +1,9 @@
 ﻿{
   "reliquary:BattleHymnPlus": {
-    "NAME": "Battle Anthem",
+    "NAME": "戦いの聖歌",
     "DESCRIPTIONS": [
-      "At the start of your turn, add #b",
-      " #ySmite+ into your hand."
+      "ターン開始時、 #yスマイト+ を #b",
+      " 枚手札に加える。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Battle Hymn power."
   },
@@ -58,7 +58,8 @@
       "このターン、次のコスト0か1のカードを2回プレイする。",
       "このターン、次のコスト0か1のカード #b",
       " 枚を2回プレイする。"
-    ]
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an weaker version of the base game's Duplication power."
   },
   "reliquary:ReduceColorlessCost": {
     "NAME": "蒼白",
@@ -73,7 +74,8 @@
     "DESCRIPTIONS": [
       "ターン終了時、 #y洞察+ を #b",
       " 枚山札に加える。"
-    ]
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Study power."
   },
   "reliquary:Taunt": {
     "NAME": "挑発",

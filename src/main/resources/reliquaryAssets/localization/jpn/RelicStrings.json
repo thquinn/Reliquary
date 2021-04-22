@@ -19,7 +19,7 @@
     "NAME": "巨大なハンマー",
     "FLAVOR": "今まで見た中で最大のハンマー。",
     "DESCRIPTIONS": [
-      "You may upgrade #rRed cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
+      "#rレッド カードを2回 #yアップグレード できるようになる。獲得時、 #yアップグレード されたカードを #1 枚 #yアップグレード する。",
       "!D! ダメージを与える。 NL このカードの複製を NL 捨て札に加える。 NL 捨て札にある怒りの枚数ｘ !M! の追加ダメージを与える。",
       "!B! ブロック を得る。 NL 戦闘終了まで手札のカードすべてを2回 アップグレード する。",
       "天賦 NL ターン開始時にブロック値を失わない。",
@@ -124,7 +124,8 @@
     "DESCRIPTIONS": [
       "状態異常を得るたび、全ての敵はターン終了まで、 #y筋力 #b",
       " を失う。"
-    ]
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text implies that your enemies are the ones that will need the crutches."
   },
   "reliquary:Dhvaja": {
     "NAME": "ダーヴァジャ",
@@ -140,7 +141,8 @@
     "DESCRIPTIONS": [
       "ターン開始時に、 [E] を得る。毎ターン #b3 を超えて消費したエナジーにつき #b",
       " ダメージを受ける。"
-    ]
+    ],
+    "NOTE_FOR_TRANSLATORS": "'Hachi machi' is a slang exclamation expressing surprise or pain."
   },
   "reliquary:ExpiredCoupon": {
     "NAME": "期限切れのクーポン",
@@ -164,23 +166,23 @@
     "NAME": "フェリーパス",
     "FLAVOR": "「ラストセル島の旅を楽しんできてください！」と書かれている。",
     "DESCRIPTIONS": [
-      "The next time you play every unique playable card in your deck in one combat, add a #yRare relic to that combat's reward.",
-      "Play all #b",
-      " unique playable cards in your deck this combat to gain a #yRare relic.",
-      "Play #b",
-      " more unique cards this combat to gain a #yRare relic.",
-      "Play ",
-      ", and ",
-      " and ",
-      " to gain a #yRare relic.",
+      "一度の戦闘中で、デッキ内の全ての種類のカードをプレイしたとき、報酬に #yレアレリック を追加する。",
+      "この戦闘中、デッキ内の #b",
+      " 種類のカードを全てプレイしたとき、報酬に #yレアレリック を追加する。",
+      "この戦闘中、デッキ内の #b",
+      " 種類のカードをプレイしたとき、報酬に #yレアレリック を追加する。",
+      " ",
+      "、 ",
+      "、 ",
+      " をプレイしたとき、報酬に #yレアレリック を追加する。",
       " NL [#2aecd7]右クリックで手札にある NL [#2aecd7]未プレイのカードを表示。[]",
-      "This relic has been used up."
+      "この能力は使い切った。"
     ],
     "NOTE_FOR_TRANSLATORS": [
-      "'Every unique card' means every card with a different name. The upgradedness doesn't matter, i.e. 'Strike' and 'Strike+' are the same unique card.",
+      "'Every unique card' means every card with a different name. The upgradedness doesn't matter, e.g. 'Strike' and 'Strike+' are the same unique card.",
       "A couple examples of what those last few strings will look like once assembled:",
-      "Play Bash, Defend, and Strike to exchange this for a Rare relic.",
-      "Play Strike and Defend to exchange this for a Rare relic.",
+      "Play Bash, Defend, and Strike to gain a Rare relic.",
+      "Play Strike and Defend to gain a Rare relic.",
       "Lastcel is a made-up name... I think? It's our wonderful ZHS translator's Github username."
     ]
   },
@@ -306,7 +308,7 @@
   },
   "reliquary:PartyBalloon": {
     "NAME": "パーティーバルーン",
-    "FLAVOR": "ちゃんと握ってないと二度と会えなくなる！",
+    "FLAVOR": "破裂したら楽しくない。",
     "DESCRIPTIONS": [
       "#yパワー が山札の上半分にある状態で戦闘を開始する。"
     ]
@@ -395,11 +397,11 @@
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the song 'Wonderwall' by Oasis."
   },
   "reliquary:RunicRemote": {
-    "NAME": "Runic Remote",
-    "FLAVOR": "Take hold of your destiny.",
+    "NAME": "ルーニックリモコン",
+    "FLAVOR": "運命を掴み取れ。",
     "DESCRIPTIONS": [
-      "Whenever you win a combat without taking damage, you may add a card corresponding to a defeated enemy into your deck.",
-      "The remote vibrates..."
+      "ダメージを受けずに戦闘に勝利するたび、倒した敵に対応したカードを報酬に追加する。",
+      "リモコンが振動する…"
     ],
     "NOTE_FOR_TRANSLATORS": "This is a Wii controller, in honor of our wonderful JPN translator!"
   },
@@ -451,7 +453,8 @@
       "非戦闘時にサイドボードからデッキにカードを移す。",
       " NL [#2aecd7]右クリックでオフ。[]",
       " NL [#2aecd7]右クリックでオン。[]",
-      "デッキに加えるカードを選択。"
+      "デッキに加えるカードを選択。",
+      "戻る"
     ],
     "NOTE_FOR_TRANSLATORS": [
       "This is a reference to 'sideboards' in Magic the Gathering. It's a wooden board... this pun may not translate.",
@@ -479,7 +482,7 @@
     "NAME": "ソリティア",
     "FLAVOR": "一度は夢見た。まさか現実になるとは。",
     "DESCRIPTIONS": [
-      "You may upgrade #pPurple cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
+      "#pパープル カードを2回 #yアップグレード できるようになる。獲得時、 #yアップグレード されたカードを #1 枚 #yアップグレード する。",
       "天賦 NL *ベータ+ を1枚山札に加える。 NL 廃棄",
       "天賦 NL ターン開始時、 *スマイト+ を手札に加える。",
       "保留 NL 神聖 の スタンス に入る。 NL !M! ターン後、 NL あなたは死ぬ。 NL 廃棄",
@@ -552,10 +555,10 @@
     "NOTE_FOR_TRANSLATORS": "A couple of these are voice lines from the merchant in Resident Evil 4."
   },
   "reliquary:ThinkingCap": {
-    "NAME": "Thinking Cap",
-    "FLAVOR": "With this big ol' cone on your head, everyone can see how smart you are.",
+    "NAME": "学帽",
+    "FLAVOR": "この円錐を被っているだけで、賢く見える。",
     "DESCRIPTIONS": [
-      "At the start of each combat, draw the second-to-last card you played last combat. (Only cards in your deck count.)"
+      "戦闘開始時、前回の戦闘で最後から2番目にプレイしたカードを最初に #b1 枚引く。（デッキにあるカードのみを数える。）"
     ],
     "NOTE_FOR_TRANSLATORS": "This is a dunce cap."
   },

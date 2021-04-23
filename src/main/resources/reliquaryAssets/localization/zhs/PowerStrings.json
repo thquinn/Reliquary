@@ -1,9 +1,9 @@
 {
   "reliquary:BattleHymnPlus": {
-    "NAME": "Battle Anthem",
+    "NAME": "战颂",
     "DESCRIPTIONS": [
-      "At the start of your turn, add #b",
-      " #ySmite+ into your hand."
+      "回合开始时，将一张 #b",
+      "#y惩恶+ 加入你的手牌。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Battle Hymn power."
   },

@@ -19,7 +19,7 @@
     "NAME": "大锤",
     "FLAVOR": "真的，这绝对是你见过的最大的锤子。",
     "DESCRIPTIONS": [
-      "You may upgrade #rRed cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
+      "#r红色 牌可以被 #y升级 两次。拾起时，选择并 #y升级 一张 #y已升级 的 #r红色 牌。",
       "造成 !D! 点伤害。 NL 在弃牌堆放入一张此牌的复制品。 NL 弃牌堆每有一张愤怒，额外造成 !M! 点伤害。",
       "获得 !B! 点 格挡 。 NL 在本场战斗中 升级 手牌中的所有牌两次。",
       "固有 。 NL 格挡 不再在你的回合开始时消失。",
@@ -109,7 +109,7 @@
     "NAME": "嶙峋之根",
     "FLAVOR": "疾风知劲根。",
     "DESCRIPTIONS": [
-      "回合开始时获得 [E] 。你每回合抽到的第一张牌在本场战斗中的耗能增加 #b1 点。"
+      "回合开始时获得 [E] 。你每回合抽到的第一张牌在本场战斗中的耗能增加 #b1 点（耗能为X的牌不受影响）。"
     ]
   },
   "reliquary:Crutches": {
@@ -156,17 +156,17 @@
     "NAME": "船票",
     "FLAVOR": "上面写道，“移舟泊烟渚，日暮客愁新。”",
     "DESCRIPTIONS": [
-      "The next time you play every unique playable card in your deck in one combat, add a #yRare relic to that combat's reward.",
-      "Play all #b",
-      " unique playable cards in your deck this combat to gain a #yRare relic.",
-      "Play #b",
-      " more unique cards this combat to gain a #yRare relic.",
-      "Play ",
-      ", and ",
-      " and ",
-      " to gain a #yRare relic.",
+      "一场战斗中，如果你打出过你牌组中每种名称不同（ #y升级 后的牌视作同名牌）的可打出牌，在本次战斗奖励中增加一件 #y稀有 遗物，然后本遗物失效。",
+      "本场战斗中，打出你牌组中共 #b",
+      " 种名称不同的可打出牌来获得一件 #y稀有 遗物。",
+      "本场战斗中，再打出 #b",
+      " 种名称不同的牌来获得一件 #y稀有 遗物。",
+      "打出 ",
+      "，",
+      "和",
+      "来获得一件 #y稀有 遗物。",
       " NL [#2aecd7]右击以显示手牌中还未被打出过的牌。[]",
-      "This relic has been used up."
+      "这件遗物的效果已经使用完毕。"
     ]
   },
   "reliquary:FingerTrap": {
@@ -279,7 +279,7 @@
     "NAME": "显灵板",
     "FLAVOR": "也没多么神秘，你玩玩便知。",
     "DESCRIPTIONS": [
-      "每回合限一次，从你的弃牌堆中打出一张牌（目标随机而定），然后将其洗入你的抽牌堆。注意，使用这件遗物打出牌需要 #r额外 消耗 #b1 点能量。",
+      "每回合限一次，从你的弃牌堆中打出一张牌（目标随机而定），然后将其放入你的抽牌堆。注意，使用这件遗物打出牌需要 #r额外 消耗 #b1 点能量。",
       "我在这回合已经使用过这件遗物了。",
       "我的弃牌堆是空的。",
       "我没有足够的能量来打出我弃牌堆中的任何牌。"
@@ -296,7 +296,7 @@
     "NAME": "箭猪刺",
     "FLAVOR": "如果这些刺伤到了你，那你完全是在自作自受。",
     "DESCRIPTIONS": [
-      "每当你受到大于等于 #b",
+      "每当你受到来自敌人的大于等于 #b",
       " 点的未被 #y格挡 的伤害，造成等量的反伤。"
     ]
   },
@@ -330,7 +330,7 @@
     "FLAVOR": "它看上去像一块从不融化的冰立方，不过也不冰人。",
     "DESCRIPTIONS": [
       "每场战斗开始时，如果至少有 #b",
-      " 名敌人，给予一名敌人 #b",
+      " 名敌人，随机给予一名敌人 #b",
       " 层 #y击晕 和 #b",
       " 层 #y免疫 。"
     ]
@@ -373,11 +373,11 @@
     ]
   },
   "reliquary:RunicRemote": {
-    "NAME": "Runic Remote",
-    "FLAVOR": "Take hold of your destiny.",
+    "NAME": "天命控制器",
+    "FLAVOR": "我命任我不任天。",
     "DESCRIPTIONS": [
-      "Whenever you win a combat without taking damage, you may add a card corresponding to a defeated enemy into your deck.",
-      "The remote vibrates..."
+      "每当你不受伤害赢得一场战斗，将随机展示若干张任意颜色的牌，数量等于本次打败的敌人数量。你可以选择任意张牌加入你的牌组。",
+      "控制器振动了......"
     ],
     "NOTE_FOR_TRANSLATORS": "This is a Wii controller, in honor of our wonderful JPN translator!"
   },
@@ -448,7 +448,7 @@
     "NAME": "单粒宝石",
     "FLAVOR": "你曾经梦见过它。它是怎么跨越梦境来到现实的是个谜。",
     "DESCRIPTIONS": [
-      "You may upgrade #pPurple cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
+      "#p紫色 牌可以被 #y升级 两次。拾起时，选择并 #y升级 一张 #y已升级 的 #p紫色 牌。",
       "固有 。 NL 将一张 *贝塔+ 放入你的抽牌堆中。 NL 消耗 。",
       "固有 。 NL 在每回合开始时，将一张 *惩恶+ 加入你的手牌。",
       "保留 。 NL 进入 神格 。 NL !M! 回合后死亡。 NL 消耗 。",
@@ -515,10 +515,10 @@
     ]
   },
   "reliquary:ThinkingCap": {
-    "NAME": "Thinking Cap",
-    "FLAVOR": "With this big ol' cone on your head, everyone can see how smart you are.",
+    "NAME": "思萎帽",
+    "FLAVOR": "头上戴着这个大圆锥，每个人就都能知道你有多聪明了。",
     "DESCRIPTIONS": [
-      "At the start of each combat, draw the second-to-last card you played last combat. (Only cards in your deck count.)"
+      "每场对战开始时，抽取你上一场对战中打出的倒数第二张牌。（仅计算你牌组中的牌。）"
     ],
     "NOTE_FOR_TRANSLATORS": "This is a dunce cap."
   },

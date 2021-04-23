@@ -46,4 +46,9 @@ public class InNTurnsDeathPower extends AbstractPower {
         addToBot(new LoseHPAction(owner, owner, 99999));
         addToBot(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
     }
+
+    @Override
+    public void stackPower(int stackAmount) {
+        return;
+    }
 }

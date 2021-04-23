@@ -1,42 +1,42 @@
-{
+﻿{
   "reliquary:BattleHymnPlus": {
-    "NAME": "Battle Anthem",
+    "NAME": "戦いの聖歌",
     "DESCRIPTIONS": [
-      "At the start of your turn, add #b",
-      " #ySmite+ into your hand."
+      "ターン開始時、 #yスマイト+ を #b",
+      " 枚手札に加える。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Battle Hymn power."
   },
   "reliquary:ChainReaction": {
-    "NAME": "Chain Reaction",
+    "NAME": "連鎖反応",
     "DESCRIPTIONS": [
-      "At the end of your turn, gain #b",
-      " #yCombust."
+      "ターン終了時、 #y燃焼 #b",
+      " を得る。"
     ],
     "NOTE_FOR_TRANSLATORS": "Combust is an existing power in the base game."
   },
   "reliquary:HandSize": {
-    "NAME": "Hand Size Up",
+    "NAME": "手札容量増加",
     "DESCRIPTIONS": [
-      "Hand Size Down",
-      "Your maximum hand size is increased by #b",
-      "Your maximum hand size is decreased by #b",
-      "."
+      "手札容量減少",
+      "手札の最大数 #b+ #b",
+      "手札の最大数 #b- #b",
+      " 。"
     ]
   },
   "reliquary:Hydrated": {
-    "NAME": "Hydrated",
+    "NAME": "水分補給",
     "DESCRIPTIONS": [
-      "Delays #yStrength #yDown for #b",
-      " turn.",
-      " turns."
+      "#y筋力 の #y減少 を #b",
+      " ターン遅らせる。",
+      " ターン遅らせる。"
     ]
   },
   "reliquary:InNTurnsDeath": {
     "NAME": "",
     "DESCRIPTIONS": [
-      "In #b",
-      " turns, die."
+      "#b",
+      " ターン後、あなたは死ぬ。"
     ],
     "NOTE_FOR_TRANSLATORS": [
       "This is an alternate version of the Watcher's Blasphemy debuff.",
@@ -45,55 +45,55 @@
     ]
   },
   "reliquary:InvincibleTurns": {
-    "NAME": "Invincible",
+    "NAME": "無敵",
     "DESCRIPTIONS": [
-      "Can't be harmed this turn.",
-      "Can't be harmed for the next #b",
-      " turns."
+      "このターン、ダメージを受けない。",
+      "#b",
+      " ターンの間、ダメージを受けない。"
     ]
   },
   "reliquary:LesserDuplication": {
-    "NAME": "Lesser Duplication",
+    "NAME": "複製（弱）",
     "DESCRIPTIONS": [
-      "Your next cost 0 or 1 card is played twice this turn.",
-      "Your next #b",
-      " cost 0 or 1 cards are played twice this turn."
+      "このターン、次のコスト0か1のカードを2回プレイする。",
+      "このターン、次のコスト0か1のカード #b",
+      " 枚を2回プレイする。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is an weaker version of the base game's Duplication power."
   },
   "reliquary:ReduceColorlessCost": {
-    "NAME": "Pallor",
+    "NAME": "蒼白",
     "DESCRIPTIONS": [
-      "The next Colorless card you play costs #b1 less.",
-      "The next #b",
-      " Colorless cards you play cost #b1 less."
+      "次にプレイする無色のカードのコストを #b1 減らす。",
+      "次にプレイする #b",
+      " 枚の無色のカードのコストを #b1 減らす。"
     ]
   },
   "reliquary:StudyPlus": {
-    "NAME": "Cram",
+    "NAME": "詰め込み学習",
     "DESCRIPTIONS": [
-      "At the end of your turn, shuffle #b",
-      " #yInsight+ into your draw pile."
+      "ターン終了時、 #y洞察+ を #b",
+      " 枚山札に加える。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Study power."
   },
   "reliquary:Taunt": {
-    "NAME": "Taunt",
+    "NAME": "挑発",
     "DESCRIPTIONS": [
-      "Other enemies can't be targeted until this enemy dies.",
-      "Another enemy is #r@Taunting@ me!"
+      "この敵が死亡するまで他の敵を攻撃できない。",
+      "他の敵に #r@挑発@ されている！"
     ]
   },
   "reliquary:Triumph": {
-    "NAME": "Triumph",
+    "NAME": "征服",
     "DESCRIPTIONS": [
-      "#yDivinity's damage multiplier is increased by #b",
-      ", to #b",
-      "."
+      "#y神聖 のダメージ倍率が #b",
+      " 増加する。現在は #b",
+      " 倍。"
     ]
   },
   "reliquary:Vim": {
-    "NAME": "Envimmed",
+    "NAME": "力",
     "DESCRIPTIONS": [],
     "NOTE_FOR_TRANSLATORS": [
       "'Envimmed' isn't a real word, it's an adjective I made up to mean 'infused with vim,' as 'invigorated' means 'infused with vigor.'",
@@ -102,10 +102,10 @@
     ]
   },
   "reliquary:VulnerableNextTurn": {
-    "NAME": "Vulnerable Next Turn",
+    "NAME": "次のターンに弱体",
     "DESCRIPTIONS": [
-      "Gain #b",
-      " #yVulnerable next turn."
+      "次のターン、 #y弱体 #b",
+      " を得る。"
     ]
   }
 }

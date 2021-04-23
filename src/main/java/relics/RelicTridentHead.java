@@ -34,7 +34,10 @@ public class RelicTridentHead extends CustomRelic {
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
-        if (!AreThereMultipleEnemies() || usedThisCombat || c.target != AbstractCard.CardTarget.ENEMY) {
+        if (!AreThereMultipleEnemies() || usedThisCombat) {
+            return;
+        }
+        if (c.target != AbstractCard.CardTarget.ENEMY && c.target != AbstractCard.CardTarget.SELF_AND_ENEMY) {
             return;
         }
         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));

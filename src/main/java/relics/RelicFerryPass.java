@@ -28,11 +28,9 @@ public class RelicFerryPass extends CustomRelic implements ClickableRelic {
 
     boolean allUnplayed;
     Set<String> unplayed;
-    boolean trigger;
 
     public RelicFerryPass() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT);
-        trigger = false;
     }
 
     String[] getCardIDs() {
@@ -51,7 +49,16 @@ public class RelicFerryPass extends CustomRelic implements ClickableRelic {
     }
 
     @Override
+    public void onMasterDeckChange() {
+        atBattleStart();
+    }
+
+    @Override
     public void atBattleStart() {
+        if (counter == -2) {
+            setDescription();
+            return;
+        }
         allUnplayed = true;
         unplayed = new HashSet<>(Arrays.asList(getCardIDs()));
         counter = unplayed.size();
@@ -61,12 +68,17 @@ public class RelicFerryPass extends CustomRelic implements ClickableRelic {
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
+        if (counter == -2) {
+            return;
+        }
         if (unplayed.contains(c.cardID)) {
             allUnplayed = false;
             unplayed.remove(c.cardID);
             counter--;
             if (counter == 0) {
-                trigger = true;
+                AbstractDungeon.getCurrRoom().addRelicToRewards(RelicTier.RARE);
+                counter = -2;
+                setDescription();
             }
             setDescription();
             flash();
@@ -75,17 +87,13 @@ public class RelicFerryPass extends CustomRelic implements ClickableRelic {
 
     @Override
     public void onRightClick() {
+        if (counter == -2) {
+            return;
+        }
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
             if (unplayed.contains(c.cardID)) {
                 c.flash();
             }
-        }
-    }
-
-    public void postUpdate() {
-        if (trigger) {
-            AbstractDungeon.player.loseRelic(ID);
-            AbstractDungeon.getCurrRoom().addRelicToRewards(RelicTier.RARE);
         }
     }
 
@@ -98,6 +106,10 @@ public class RelicFerryPass extends CustomRelic implements ClickableRelic {
 
     @Override
     public String getUpdatedDescription() {
+        if (counter == -2) {
+            grayscale = true;
+            return DESCRIPTIONS[10];
+        }
         if (!isObtained || AbstractDungeon.currMapNode == null || AbstractDungeon.getCurrRoom() == null || AbstractDungeon.getCurrRoom().phase != AbstractRoom.RoomPhase.COMBAT) {
             return DESCRIPTIONS[0];
         }

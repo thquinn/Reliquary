@@ -13,6 +13,11 @@ public class CardModIncreaseCost extends AbstractCardModifier {
     }
 
     @Override
+    public boolean shouldApply(AbstractCard card) {
+        return card.cost != -1;
+    }
+
+    @Override
     public void onInitialApplication(AbstractCard card) {
         card.updateCost(amount);
     }

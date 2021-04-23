@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.rooms.ShopRoom;
 import util.TextureLoader;
 
 public class RelicTatteredRug extends CustomRelic {
@@ -19,6 +20,9 @@ public class RelicTatteredRug extends CustomRelic {
 
     @Override
     public boolean canSpawn() {
+        if (AbstractDungeon.getCurrRoom() instanceof ShopRoom) {
+            return false;
+        }
         return Settings.isEndless || AbstractDungeon.floorNum <= 48;
     }
 

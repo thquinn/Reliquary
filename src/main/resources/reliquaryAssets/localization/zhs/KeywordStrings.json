@@ -9,15 +9,13 @@
     "NAMES": [
       "虔诚"
     ],
-    "DESCRIPTION": "回合开始时，获得 #y真言 。",
-    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Devotion power from the base game."
+    "DESCRIPTION": "回合开始时，获得 #y真言 。"
   },
   {
     "NAMES": [
       "黏液"
     ],
-    "DESCRIPTION": "黏液是耗能为1的 #y状态牌 。",
-    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Slimed curse from the base game."
+    "DESCRIPTION": "黏液是耗能为1的 #y状态牌 。"
   },
   {
     "NAMES": [

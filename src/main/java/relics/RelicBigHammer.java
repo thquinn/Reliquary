@@ -1,6 +1,5 @@
 package relics;
 
-import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.red.*;
@@ -11,7 +10,7 @@ import util.TextureLoader;
 
 import java.lang.reflect.Method;
 
-public class RelicBigHammer extends CustomRelic {
+public class RelicBigHammer extends RelicSolitaireBase {
     public static final String ID = "reliquary:BigHammer";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/bigHammer.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/bigHammer.png");
@@ -271,6 +270,9 @@ public class RelicBigHammer extends CustomRelic {
                 break;
             case RecklessCharge.ID:
                 card.rawDescription = DESCRIPTIONS[DESC_INDEX_RECKLESS_CHARGE];
+                break;
+            case Rupture.ID:
+                RelicSolitaire.upgradeBaseCost(card, 0);
                 break;
             case SecondWind.ID:
                 card.baseBlock += 2;

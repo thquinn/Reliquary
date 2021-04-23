@@ -78,7 +78,7 @@ public class RelicSideboard extends CustomRelic implements CustomSavable<List<Ca
                 AbstractDungeon.previousScreen = AbstractDungeon.screen;
             }
             AbstractDungeon.gridSelectScreen.open(cards, 1, DESCRIPTIONS[5], false, false, true, false);
-            AbstractDungeon.overlayMenu.cancelButton.show("Cancel");
+            AbstractDungeon.overlayMenu.cancelButton.show(DESCRIPTIONS[6]);
         }
     }
 

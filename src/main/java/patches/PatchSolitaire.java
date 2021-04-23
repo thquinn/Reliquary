@@ -40,6 +40,7 @@ import com.megacrit.cardcrawl.vfx.combat.AnimatedSlashEffect;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
 import powers.InNTurnsDeathPower;
+import powers.SolitaireBattleHymnPower;
 import powers.SolitaireStudyPower;
 import relics.RelicBigHammer;
 import relics.RelicSolitaire;
@@ -177,6 +178,20 @@ public class PatchSolitaire {
             RelicSolitaire solitaire = (RelicSolitaire) AbstractDungeon.player.getRelic(RelicSolitaire.ID);
             if (__instance.timesUpgraded == 1 && solitaire != null) {
                 solitaire.upgradeCard(__instance);
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+    }
+
+    @SpirePatch(
+            clz=BattleHymn.class,
+            method="use"
+    )
+    public static class PatchSolitaireBattleHymn {
+        public static SpireReturn Prefix(BattleHymn __instance, AbstractPlayer p) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new SolitaireBattleHymnPower(p, __instance.magicNumber), __instance.magicNumber));
                 return SpireReturn.Return(null);
             }
             return SpireReturn.Continue();

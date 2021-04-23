@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import util.TextureLoader;
 
 public class RelicFingerTrap extends CustomRelic {
@@ -18,7 +19,7 @@ public class RelicFingerTrap extends CustomRelic {
 
     @Override
     public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
-        if (AbstractDungeon.actionManager.turnHasEnded) {
+        if (AbstractDungeon.getCurrRoom().phase != AbstractRoom.RoomPhase.COMBAT || AbstractDungeon.actionManager.turnHasEnded) {
             return damageAmount;
         }
         flash();

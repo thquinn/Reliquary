@@ -4,6 +4,7 @@ import basemod.abstracts.CustomRelic;
 import basemod.helpers.CardModifierManager;
 import cardmods.CardModEthereal;
 import cardmods.CardModIncreaseCost;
+import cardmods.CardModIridiumCopy;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
@@ -29,6 +30,7 @@ public class RelicIridiumChain extends CustomRelic {
         AbstractCard copy = c.makeStatEquivalentCopy();
         CardModifierManager.addModifier(copy, new CardModIncreaseCost(1));
         CardModifierManager.addModifier(copy, new CardModEthereal());
+        CardModifierManager.addModifier(copy, new CardModIridiumCopy());
         copy.initializeDescription();
         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         addToBot(new MakeTempCardInHandAction(copy));

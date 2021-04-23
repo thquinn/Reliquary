@@ -19,7 +19,7 @@
     "NAME": "Big Hammer",
     "FLAVOR": "Truly, it is the biggest hammer you have ever seen.",
     "DESCRIPTIONS": [
-      "You may upgrade #rRed cards a second time.",
+      "You may upgrade #rRed cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
       "Deal !D! damage. NL Add a copy of this card into your discard pile. NL Deals !M! additional damage for each Anger in your discard pile.",
       "Gain !B! Block. NL Upgrade all cards in your hand twice for the rest of combat.",
       "Innate. NL Block is not removed at the start of your turn.",
@@ -124,7 +124,8 @@
     "DESCRIPTIONS": [
       "Whenever you get a #yStatus, enemies lose #b",
       " #yStrength during their next turn."
-    ]
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text implies that your enemies are the ones that will need the crutches."
   },
   "reliquary:Dhvaja": {
     "NAME": "Dhvaja",
@@ -140,13 +141,14 @@
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. Take #b",
       " damage for each Energy beyond the third you spend each turn."
-    ]
+    ],
+    "NOTE_FOR_TRANSLATORS": "'Hachi machi' is a slang exclamation expressing surprise or pain."
   },
   "reliquary:ExpiredCoupon": {
     "NAME": "Expired Coupon",
     "FLAVOR": "Good for 10% off an \"ass-beating.\" Who printed this thing, anyway?",
     "DESCRIPTIONS": [
-      "Whenever you reach #b",
+      "When you reach #b",
       " or more total unblocked damage dealt in a combat, deal #b",
       " damage to ALL enemies."
     ]
@@ -164,22 +166,23 @@
     "NAME": "Ferry Pass",
     "FLAVOR": "It reads, \"Enjoy your trip to Lastcel Isle!\"",
     "DESCRIPTIONS": [
-      "When you play every unique playable card in your deck in one combat, lose this and add a #yRare relic to that combat's reward.",
+      "The next time you play every unique playable card in your deck in one combat, add a #yRare relic to that combat's reward.",
       "Play all #b",
-      " unique playable cards in your deck this combat to exchange this for a #yRare relic.",
+      " unique playable cards in your deck this combat to gain a #yRare relic.",
       "Play #b",
-      " more unique cards this combat to exchange this for a #yRare relic.",
+      " more unique cards this combat to gain a #yRare relic.",
       "Play ",
       ", and ",
       " and ",
-      " to exchange this for a #yRare relic.",
-      " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]show [#2aecd7]unplayed [#2aecd7]cards [#2aecd7]in [#2aecd7]hand.[]"
+      " to gain a #yRare relic.",
+      " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]show [#2aecd7]unplayed [#2aecd7]cards [#2aecd7]in [#2aecd7]hand.[]",
+      "This relic has been used up."
     ],
     "NOTE_FOR_TRANSLATORS": [
-      "'Every unique card' means every card with a different name. The upgradedness doesn't matter, i.e. 'Strike' and 'Strike+' are the same unique card.",
+      "'Every unique card' means every card with a different name. The upgradedness doesn't matter, e.g. 'Strike' and 'Strike+' are the same unique card.",
       "A couple examples of what those last few strings will look like once assembled:",
-      "Play Bash, Defend, and Strike to exchange this for a Rare relic.",
-      "Play Strike and Defend to exchange this for a Rare relic.",
+      "Play Bash, Defend, and Strike to gain a Rare relic.",
+      "Play Strike and Defend to gain a Rare relic.",
       "Lastcel is a made-up name... I think? It's our wonderful ZHS translator's Github username."
     ]
   },
@@ -247,7 +250,7 @@
     "NAME": "Kinked Spring",
     "FLAVOR": "Someone overwound this thing, and it ain't comin' back.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. Your discard pile only shuffles into your draw pile when your draw pile is empty at the end of your turn."
+      "Gain [E] at the start of your turn. Your discard pile only shuffles into your draw pile when you end your turn with an empty draw pile."
     ]
   },
   "reliquary:Knoch": {
@@ -305,7 +308,7 @@
   },
   "reliquary:PartyBalloon": {
     "NAME": "Party Balloon",
-    "FLAVOR": "Hold on to that string, or you'll never see it again!",
+    "FLAVOR": "Once you pop, the fun immediately stops.",
     "DESCRIPTIONS": [
       "#yPower cards start each combat in the top half of your draw pile."
     ]
@@ -393,6 +396,15 @@
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the song 'Wonderwall' by Oasis."
   },
+  "reliquary:RunicRemote": {
+    "NAME": "Runic Remote",
+    "FLAVOR": "Take hold of your destiny.",
+    "DESCRIPTIONS": [
+      "Whenever you win a combat without taking damage, you may add a card corresponding to a defeated enemy into your deck.",
+      "The remote vibrates..."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a Wii controller, in honor of our wonderful JPN translator!"
+  },
   "reliquary:RustamsPendant": {
     "NAME": "Rustam's Pendant",
     "FLAVOR": "It's just a hunk of metal, but it seems to know something about you.",
@@ -441,7 +453,8 @@
       "Add cards from your sideboard into your deck between combats.",
       " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]toggle [#2aecd7]off.[]",
       " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]toggle [#2aecd7]on.[]",
-      "Choose a card to add into your deck."
+      "Choose a card to add into your deck.",
+      "Cancel"
     ],
     "NOTE_FOR_TRANSLATORS": [
       "This is a reference to 'sideboards' in Magic the Gathering. It's a wooden board... this pun may not translate.",
@@ -469,13 +482,13 @@
     "NAME": "Solitaire",
     "FLAVOR": "You dreamed of it, once. How it crossed over into reality is a mystery.",
     "DESCRIPTIONS": [
-      "You may upgrade #pPurple cards a second time.",
+      "You may upgrade #pPurple cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
       "Innate. NL Shuffle a *Beta+ into your draw pile. NL Exhaust.",
       "Innate. NL At the start of each turn, add a *Smite+ into your hand.",
       "Retain. NL Enter Divinity. NL Die in !M! turns. NL Exhaust.",
       "Deal !D! damage. NL Add a *Smite+ into your hand.",
       "Put a *Miracle+ into your hand at the start of your next X+2 turns. NL Exhaust.",
-      "Shuffle an *Expunger+ with X+1 into your draw pile. NL Exhaust.",
+      "Shuffle an *Expunger+ with X+2 into your draw pile. NL Exhaust.",
       "Retain. NL If you are in Wrath, gain !M! Strength this turn, otherwise enter Wrath. NL Exhaust.",
       "Gain !B! Block. NL Add a *Safety+ into NL your hand.",
       "Innate. NL At the start of your turn, gain [W] NL and increase this gain by !M!.",
@@ -540,6 +553,14 @@
       "You drive a hard bargain..."
     ],
     "NOTE_FOR_TRANSLATORS": "A couple of these are voice lines from the merchant in Resident Evil 4."
+  },
+  "reliquary:ThinkingCap": {
+    "NAME": "Thinking Cap",
+    "FLAVOR": "With this big ol' cone on your head, everyone can see how smart you are.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, draw the second-to-last card you played last combat. (Only cards in your deck count.)"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a dunce cap."
   },
   "reliquary:ThirdArm": {
     "NAME": "Third Arm",

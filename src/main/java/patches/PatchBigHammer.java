@@ -23,6 +23,7 @@ import com.megacrit.cardcrawl.powers.BrutalityPower;
 import com.megacrit.cardcrawl.powers.HeatsinkPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.screens.select.HandCardSelectScreen;
 import javassist.*;
 import powers.ChainReactionPower;
 import powers.HandSizePower;
@@ -501,6 +502,18 @@ public class PatchBigHammer {
             public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {
                 Matcher matcher = new Matcher.FieldAccessMatcher(TrueGrit.class, "upgraded");
                 return LineFinder.findInOrder(ctMethodToPatch, matcher);
+            }
+        }
+    }
+    @SpirePatch(
+            clz = HandCardSelectScreen.class,
+            method= "refreshSelectedCards"
+    )
+    public static class HandCardSelectScreenPatch {
+        // This is a fix for the basegame behavior (thanks to Github user Rita-Bernstein for an example).
+        public static void Postfix(HandCardSelectScreen __instance, boolean ___anyNumber) {
+            if (__instance.selectedCards.size() >= 1 && ___anyNumber && !__instance.canPickZero){
+                __instance.button.enable();
             }
         }
     }

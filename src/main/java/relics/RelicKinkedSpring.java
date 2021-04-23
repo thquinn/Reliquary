@@ -16,6 +16,16 @@ public class RelicKinkedSpring extends CustomRelic {
     }
 
     @Override
+    public boolean canSpawn() {
+        int mod5 = AbstractDungeon.player.masterDeck.size() % 5;
+        if (mod5 > 0 && mod5 < 3 && AbstractDungeon.floorNum == 0) {
+            // Neow boss relic swapping into Kinked Spring is a death sentence with an off-sized deck.
+            return false;
+        }
+        return true;
+    }
+
+    @Override
     public void onEquip() {
         AbstractDungeon.player.energy.energyMaster += 1;
     }

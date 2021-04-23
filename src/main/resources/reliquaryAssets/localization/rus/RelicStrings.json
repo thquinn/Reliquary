@@ -19,7 +19,7 @@
     "NAME": "Big Hammer",
     "FLAVOR": "Truly, it is the biggest hammer you have ever seen.",
     "DESCRIPTIONS": [
-      "You may upgrade #rRed cards a second time.",
+      "You may upgrade #rRed cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
       "Deal !D! damage. NL Add a copy of this card into your discard pile. NL Deals !M! additional damage for each Anger in your discard pile.",
       "Gain !B! Block. NL Upgrade all cards in your hand twice for the rest of combat.",
       "Innate. NL Block is not removed at the start of your turn.",
@@ -81,7 +81,7 @@
     "NAME": "Сломанные часы",
     "FLAVOR": "Это неправильно только два раза в день, но почему-то в остальное время это правильно.",
     "DESCRIPTIONS": [
-      "Каждый бой начинается с двух ваших ходов, а потом у врагов два хода."
+      "Каждый бой вы и враги начинаете с дополнительным ходом."
     ]
   },
   "reliquary:Buckler": {
@@ -144,8 +144,8 @@
     "NAME": "Истёкший купон",
     "FLAVOR": "Хорошая 10% скидка на, чтобы \"надрать задницу.\" Кто вообще это напечатал?",
     "DESCRIPTIONS": [
-      "Каждый раз, когда вы получаете #b",
-      " или больше незаблокированного урона за бой, наносит #b",
+      "Каждый раз, когда вы наносите #b",
+      " или больше незаблокированного урона по ОЗ, наносит #b",
       " урона ВСЕМ врагам."
     ]
   },
@@ -161,16 +161,17 @@
     "NAME": "Билет на паром",
     "FLAVOR": "Здесь написано: \"Наслаждайтесь путешествием на Остров Рустама!\"",
     "DESCRIPTIONS": [
-      "When you play every unique playable card in your deck in one combat, lose this and add a #yRare relic to that combat's reward.",
+      "The next time you play every unique playable card in your deck in one combat, add a #yRare relic to that combat's reward.",
       "Play all #b",
-      " unique playable cards in your deck this combat to exchange this for a #yRare relic.",
-      "Сыграйте #b",
-      " ещё уникальных карт в этом бою, чтобы обменять его на #yРедкую реликвию.",
-      "Сыграйте ",
-      ", и ",
-      " и ",
-      " , чтобы обменять его на #yРедкую реликвию.",
-      " NL [#2aecd7]Нажмите [#2aecd7]Правой [#2aecd7]кнопкой [#2aecd7]мыши [#2aecd7], [#2aecd7]чтобы [#2aecd7]показать [#2aecd7]несыгранные [#2aecd7]уникальные [#2aecd7]карты.[]"
+      " unique playable cards in your deck this combat to gain a #yRare relic.",
+      "Play #b",
+      " more unique cards this combat to gain a #yRare relic.",
+      "Play ",
+      ", and ",
+      " and ",
+      " to gain a #yRare relic.",
+      " NL [#2aecd7]Нажмите [#2aecd7]Правой [#2aecd7]кнопкой [#2aecd7]мыши [#2aecd7], [#2aecd7]чтобы [#2aecd7]показать [#2aecd7]несыгранные [#2aecd7]уникальные [#2aecd7]карты.[]",
+      "This relic has been used up."
     ]
   },
   "reliquary:FingerTrap": {
@@ -188,11 +189,11 @@
     ]
   },
   "reliquary:GummyVitamins": {
-    "NAME": "Gummy Vitamins",
-    "FLAVOR": "Mmm, chewy!",
+    "NAME": "Жевательные витаминки",
+    "FLAVOR": "Очень липкие",
     "DESCRIPTIONS": [
-      "Once per turn, you may draw a card, then shuffle a #rSlimed into your draw pile.",
-      "I've already used that this turn."
+      "Один раз за ход, вы можете взять карту, затем замешивает #rСлизь в стопку добора.",
+      "Я уже использовал это в этом ходу."
     ]
   },
   "reliquary:HotPoker": {
@@ -376,19 +377,28 @@
       "Даёт [E] на следующий ход, если ваша #yЗащита ровно заблокирует Атаку ВСЕХ врагов."
     ]
   },
-  "reliquary:RustamsPendant": {
-    "NAME": "Rustam's Pendant",
-    "FLAVOR": "It's just a hunk of metal, but it seems to know something about you.",
+  "reliquary:RunicRemote": {
+    "NAME": "Runic Remote",
+    "FLAVOR": "Take hold of your destiny.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. Has a different drawback for each character.",
-      "Gain [E] at the start of your turn. Start each combat with #b",
-      " #yStrength.",
-      " #yDexterity.",
-      " #yFocus.",
-      " #yDevotion. When you obtain #b",
-      " #yMantra, enter #yAtonement.",
-      "At the start of your turn, lose #b",
-      " #yMantra."
+      "Whenever you win a combat without taking damage, you may add a card corresponding to a defeated enemy into your deck.",
+      "The remote vibrates..."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a Wii controller, in honor of our wonderful JPN translator!"
+  },
+  "reliquary:RustamsPendant": {
+    "NAME": "Бриллиантовая сова Рустама",
+    "FLAVOR": "Казалось, что это обычная награда, однако она явно что-то знает о тебе",
+    "DESCRIPTIONS": [
+      "Даёт [E] в начале вашего хода. Для каждого персонажа имеет различные эффекты.",
+      "Даёт [E] в начале вашего хода. Вы начинаете каждой бой с #b",
+      " #yСилы.",
+      " #yЛовковсти.",
+      " #yФокуса.",
+      " #yПреданности. Когда вы накапливаете #b",
+      " #yМантры, вы переходите в #yИскупление.",
+      "В начале вашего хода, отнимает #b",
+      " #yМантры."
     ],
     "NOTE_FOR_TRANSLATORS": "This relic is named after our wonderful RUS translator!"
   },
@@ -433,11 +443,11 @@
     ]
   },
   "reliquary:Sod": {
-    "NAME": "Sod",
-    "FLAVOR": "Contrary to popular belief, it's not greener on the other side; it's brown.",
+    "NAME": "Кусочек земли",
+    "FLAVOR": "Вопреки ожиданиям, трава не становится зеленее, если её перевернуть.",
     "DESCRIPTIONS": [
-      "Put an #yUpgraded copy of every #b",
-      "th unupgraded card you play into your hand."
+      "Добавляет в руку #yУлучшенную копию каждой #b",
+      "-ой неулучшенной разыгранной карты."
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a joke about the saying 'the grass is always greener on the other side.'"
   },
@@ -445,13 +455,13 @@
     "NAME": "Солитер",
     "FLAVOR": "Вы мечтали об этом. Теперь ваша мечта чудесным образом воплотилась в реальность.",
     "DESCRIPTIONS": [
-      "Позволяет улучшать #pФиолетовые карты второй раз.",
+      "You may upgrade #pPurple cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
       "Начальная. NL Добавляет карту *Бета+ в стопку добора. NL Сжигается.",
       "Начальная. NL Добавляет карту *Кара+ в руку в начале каждого вашего хода.",
       "Оставляется. NL Перейти в Божественность. NL Вы умрёте через !M! хода. NL Сжигается.",
       "Наносит !D! урона. NL Добавляет карту *Кара+ в руку.",
       "В начале X+2 ваших след. ходов добавляет карту *Чудо+ в руку. NL Сжигается.",
-      "Добавляет карту *Изничтожитель+ с X+1 в стопку добора. NL Сжигается.",
+      "Добавляет карту *Изничтожитель+ с X+2 в стопку добора. NL Сжигается.",
       "Оставляется. NL Перейти в Гнев. NL В Гневе: даёт !M! Силы до конца хода. NL Сжигается.",
       "Даёт !B! Защиты. NL Добавляет карту NL *Пристанище+ в руку.",
       "Начальная. NL Даёт [W] и повышает даваемое кол-во на !M! в начале каждого вашего хода.",
@@ -473,11 +483,11 @@
     ]
   },
   "reliquary:Spinner": {
-    "NAME": "Spinner",
-    "FLAVOR": "Please don't land on red, please don't land on red... son of a—!",
+    "NAME": "Спиннер",
+    "FLAVOR": "Только не на красное, пожалуйста, только не на красное... Вот чёрт!",
     "DESCRIPTIONS": [
-      "Whenever you play a card of a different type than the previous that turn, gain #b",
-      " #yBlock."
+      "Даёт #b",
+      " #yЗащиты, когда вы разыгрываете карту, которая отличается от предыдущей."
     ]
   },
   "reliquary:Stiletto": {
@@ -511,6 +521,14 @@
       "У тебя жёсткие условия сделок..."
     ]
   },
+  "reliquary:ThinkingCap": {
+    "NAME": "Thinking Cap",
+    "FLAVOR": "With this big ol' cone on your head, everyone can see how smart you are.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, draw the second-to-last card you played last combat. (Only cards in your deck count.)"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a dunce cap."
+  },
   "reliquary:ThirdArm": {
     "NAME": "Third Arm",
     "FLAVOR": "It's tiny, and it doesn't even have fingers.",
@@ -524,7 +542,7 @@
     "NAME": "Голова трезубца",
     "FLAVOR": "Часть оружия легендарного Короля волн.",
     "DESCRIPTIONS": [
-      "В каждом бою первая карта, которая играется на одного врага, также играется на остальных врагов."
+      "В каждом бою первая карта, которая играется на одного врага, так же играется на остальных врагов."
     ]
   },
   "reliquary:TuningFork": {
@@ -536,14 +554,14 @@
     ]
   },
   "reliquary:Vitrine": {
-    "NAME": "Vitrine",
-    "FLAVOR": "The perfect place to present your most prized possessions.",
+    "NAME": "Витрина",
+    "FLAVOR": "Идеальное место, чтобы представить свои самые ценные вещи.",
     "DESCRIPTIONS": [
-      "Upon pickup, remove a card from your deck. You may choose to shuffle it into your draw pile any time during combat.",
-      "Choose a card to remove.",
-      "[#2aecd7]Right [#2aecd7]click[] to shuffle ",
-      " into your draw pile.",
-      " will return here after combat."
+      "При получении удалите карту из колоды. Во время боя вы можете замешать эту карту в стопку добора.",
+      "Выберите картку для удаления",
+      "[#2aecd7]Нажмите [#2aecd7]Правой [#2aecd7]кнопкой [#2aecd7]мыши, чтобы замешать",
+      " в стопку добора.",
+      " вернётся обратно сюда после боя."
     ]
   },
   "reliquary:WeakTea": {

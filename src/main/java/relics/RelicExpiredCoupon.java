@@ -31,15 +31,16 @@ public class RelicExpiredCoupon extends CustomRelic {
     @Override
     public void atBattleStart() {
         counter = 0;
+        grayscale = false;
     }
 
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        if (counter == THRESHOLD) {
+        if (counter == -1) {
             return;
         }
-        counter = Math.min(THRESHOLD, counter + damageAmount);
-        if (counter == THRESHOLD) {
+        counter += damageAmount;
+        if (counter >= THRESHOLD) {
             addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             addToBot(new DamageAllEnemiesAction(
                     AbstractDungeon.player,
@@ -48,7 +49,8 @@ public class RelicExpiredCoupon extends CustomRelic {
                     AbstractGameAction.AttackEffect.BLUNT_LIGHT,
                     true
             ));
-            flash();
+            counter = -1;
+            grayscale = true;
         }
     }
 

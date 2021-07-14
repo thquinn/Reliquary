@@ -42,6 +42,7 @@ public abstract class RelicSolitaireBase extends CustomRelic {
     public void update() {
         super.update();
         if (!this.cardsSelected && AbstractDungeon.gridSelectScreen.selectedCards.size() > 0) {
+            cardsSelected = true;
             AbstractCard c = AbstractDungeon.gridSelectScreen.selectedCards.get(0);
             AbstractDungeon.effectsQueue.add(new UpgradeShineEffect(Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
             c.upgrade();

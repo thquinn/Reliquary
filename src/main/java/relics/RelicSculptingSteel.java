@@ -147,7 +147,6 @@ public class RelicSculptingSteel extends CustomRelic {
             OddlySmoothStone.ID,
             OldCoin.ID,
             OrnamentalFan.ID,
-            Orrery.ID,
             Pantograph.ID,
             Pear.ID,
             PenNib.ID,

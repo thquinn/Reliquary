@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.rooms.MonsterRoom;
 import util.TextureLoader;
 
 public class RelicExpiredCoupon extends CustomRelic {
@@ -37,6 +38,9 @@ public class RelicExpiredCoupon extends CustomRelic {
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         if (counter == -1) {
+            return;
+        }
+        if (!(AbstractDungeon.getCurrRoom() instanceof MonsterRoom)) {
             return;
         }
         counter += damageAmount;

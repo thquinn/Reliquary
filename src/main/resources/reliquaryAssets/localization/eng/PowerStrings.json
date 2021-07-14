@@ -15,6 +15,13 @@
     ],
     "NOTE_FOR_TRANSLATORS": "Combust is an existing power in the base game."
   },
+  "reliquary:FocusDown": {
+    "NAME": "Focus Down",
+    "DESCRIPTIONS": [
+      "At the end of this turn, lose #b",
+      " #yFocus."
+    ]
+  },
   "reliquary:HandSize": {
     "NAME": "Hand Size Up",
     "DESCRIPTIONS": [

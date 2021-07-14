@@ -27,7 +27,6 @@ import com.megacrit.cardcrawl.rewards.RewardItem;
 import util.ReliquaryLogger;
 import util.TextureLoader;
 
-import javax.swing.text.html.Option;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Optional;

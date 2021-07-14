@@ -1,0 +1,10 @@
+{
+  "reliquary:Data": {
+    "NAME": "Data",
+    "DESCRIPTION": [
+      "#yPassive: At the start of turn, gain #b",
+      " #yFocus this turn. NL #yEvoke: Gain #b",
+      " #yFocus this turn. NL Unaffected by #yFocus."
+    ]
+  }
+}

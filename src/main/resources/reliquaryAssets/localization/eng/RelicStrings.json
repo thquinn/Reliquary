@@ -303,7 +303,8 @@
       "Once per turn, pay the cost of a card in your discard pile plus #b1 to play it and shuffle it into your draw pile.",
       "I've already used that this turn.",
       "My discard pile is #rempty.",
-      "I don't have enough Energy for the cards in my discard pile."
+      "I don't have enough Energy for the cards in my discard pile.",
+      "Cancel"
     ]
   },
   "reliquary:PartyBalloon": {

@@ -215,6 +215,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
             BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/zhs/UIStrings.json");
         } else {
             BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/eng/CardStrings.json");
+            BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/eng/OrbStrings.json");
             BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/eng/PowerStrings.json");
             BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/eng/RelicStrings.json");
             BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/eng/StanceStrings.json");

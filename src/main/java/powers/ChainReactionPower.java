@@ -19,7 +19,7 @@ public class ChainReactionPower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     private static final PowerStrings berserkStrings = CardCrawlGame.languagePack.getPowerStrings(BerserkPower.POWER_ID);
     private static final Texture tex32 = TextureLoader.getTexture("reliquaryAssets/images/powers/chainReaction32.png");
-    private static final Texture tex84 = TextureLoader.getTexture("reliquaryAssets/images/powers/chainReaction84.png");
+private static final Texture tex84 = TextureLoader.getTexture("reliquaryAssets/images/powers/chainReaction84.png");
 
     public ChainReactionPower(AbstractCreature owner, int amount) {
         name = powerStrings.NAME;

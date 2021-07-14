@@ -18,6 +18,7 @@ public class RelicBookmark extends CustomRelic {
     }
 
     public void atBattleStart() {
+        updateCounter();
         if (counter > 0) {
             addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             addToBot(new DrawCardAction(AbstractDungeon.player, counter));

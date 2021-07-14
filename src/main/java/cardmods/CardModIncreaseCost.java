@@ -19,7 +19,12 @@ public class CardModIncreaseCost extends AbstractCardModifier {
 
     @Override
     public void onInitialApplication(AbstractCard card) {
-        card.updateCost(amount);
+        if (card.freeToPlayOnce) {
+            card.freeToPlayOnce = false;
+            card.setCostForTurn(1);
+        } else {
+            card.updateCost(amount);
+        }
     }
 
     @Override

@@ -68,6 +68,25 @@
     ],
     "NOTE_FOR_TRANSLATORS": "This is an weaker version of the base game's Duplication power."
   },
+  "reliquary:MrofOhce": {
+    "NAME": "Mrof Ohce",
+    "DESCRIPTIONS": [
+      "The last card you play each turn is played twice.",
+      "The last #b",
+      " cards you play each turn are played twice."
+    ],
+    "NOTE_FOR_TRANSLATORS": "Mrof Ohce is Echo Form backwards."
+  },
+  "reliquary:QuantumAI": {
+    "NAME": "Quantum AI",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b1 of #b2 random #yPower cards into your hand.",
+      "At the start of your turn, add #b1 of #b2 random #yPower cards into your hand twice.",
+      "At the start of your turn, add #b1 of #b2 random #yPower cards into your hand #b",
+      " times."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Study power."
+  },
   "reliquary:ReduceColorlessCost": {
     "NAME": "Pallor",
     "DESCRIPTIONS": [

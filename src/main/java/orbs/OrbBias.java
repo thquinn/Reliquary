@@ -9,45 +9,29 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.FocusPower;
-import powers.LoseFocusPower;
 
-public class OrbData extends OrbDataBase {
-    public static String ORB_ID = "reliquary:Data";
+public class OrbBias extends OrbDataBase {
+    public static String ORB_ID = "reliquary:Bias";
     private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ORB_ID);
     public static final String NAME = orbStrings.NAME;
     public static final String[] DESCRIPTION = orbStrings.DESCRIPTION;
     static final int PASSIVE_AMOUNT = 1;
-    static final int EVOKE_AMOUNT = 3;
-    private boolean channeled;
 
-    public OrbData() {
+    public OrbBias() {
         this.ID = ORB_ID;
         this.name = NAME;
         updateDescription();
     }
 
     @Override
-    public void update() {
-        super.update();
-        if (!channeled) {
-            onStartOfTurn();
-            channeled = true;
-        }
-    }
-
-    @Override
     public void onStartOfTurn() {
-        super.onStartOfTurn(Color.LIME, Color.GREEN);
+        super.onStartOfTurn(Color.SALMON, Color.RED);
         AbstractPlayer p = AbstractDungeon.player;
-        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new LoseFocusPower(p, PASSIVE_AMOUNT)));
-        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new FocusPower(p, PASSIVE_AMOUNT)));
+        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new FocusPower(p, -PASSIVE_AMOUNT)));
     }
 
     @Override
     public void onEvoke() {
-        AbstractPlayer p = AbstractDungeon.player;
-        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new LoseFocusPower(p, EVOKE_AMOUNT)));
-        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new FocusPower(p, EVOKE_AMOUNT)));
         // TODO: Evoke animation.
     }
 
@@ -59,27 +43,26 @@ public class OrbData extends OrbDataBase {
     @Override
     public void updateDescription() {
         applyFocus();
-        description = DESCRIPTION[0] + passiveAmount + DESCRIPTION[1] + evokeAmount + DESCRIPTION[2];
+        description = DESCRIPTION[0] + passiveAmount + DESCRIPTION[1];
     }
 
     @Override
     public void applyFocus() {
         passiveAmount = PASSIVE_AMOUNT;
-        evokeAmount = EVOKE_AMOUNT;
     }
 
     @Override
     public void updateAnimation() {
-        super.updateAnimation(new Color(.5f, 1, 0.5f, 1), new Color(0, .75f, 0, 1), false);
+        super.updateAnimation(new Color(1, .5f, .5f, 1), new Color(.75f, 0, 0, 1), true);
     }
 
     @Override
     public void render(SpriteBatch sb) {
-        super.render(sb, new Color(.3f, 1, .3f, .75f), new Color(.5f, 1, .5f, .33f));
+        super.render(sb, new Color(1, .3f, .3f, .75f), new Color(1, .5f, .5f, .33f));
     }
 
     @Override
     public AbstractOrb makeCopy() {
-        return new OrbData();
+        return new OrbBias();
     }
 }

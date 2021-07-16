@@ -129,7 +129,7 @@
     "NAME": "Дхваджа",
     "FLAVOR": "Победа будет за вами... в конце концов.",
     "DESCRIPTIONS": [
-      "Множитель урона #yБожественности повышается на #b1 до конца боя каждый раз при выходе из #yБожественности."
+      "Whenever you enter #yDivinity, #yDivinity's damage multiplier increases by #b1 this combat."
     ]
   },
   "reliquary:Ember": {

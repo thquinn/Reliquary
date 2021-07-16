@@ -124,7 +124,7 @@
     "NAME": "经幢",
     "FLAVOR": "胜利会是你的......不过要到最后。",
     "DESCRIPTIONS": [
-      "每当你退出 #y神格 ， 本场战斗中你在 #y神格 姿态中所造成伤害的增益系数增加 #b1 。"
+      "Whenever you enter #yDivinity, #yDivinity's damage multiplier increases by #b1 this combat."
     ]
   },
   "reliquary:Ember": {

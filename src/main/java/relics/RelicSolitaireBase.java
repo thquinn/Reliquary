@@ -51,4 +51,14 @@ public abstract class RelicSolitaireBase extends CustomRelic {
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
         }
     }
+
+    public static void changeBaseCost(AbstractCard card, int newBaseCost) {
+        int diff = card.costForTurn - card.cost;
+        card.cost = newBaseCost;
+        if (card.costForTurn > 0)
+            card.costForTurn = card.cost + diff;
+        if (card.costForTurn < 0)
+            card.costForTurn = 0;
+        card.upgradedCost = true;
+    }
 }

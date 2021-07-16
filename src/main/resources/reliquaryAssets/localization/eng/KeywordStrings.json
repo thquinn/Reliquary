@@ -14,6 +14,18 @@
   },
   {
     "NAMES": [
+      "bias"
+    ],
+    "DESCRIPTION": "Orb: Lose 1 Focus each turn."
+  },
+  {
+    "NAMES": [
+      "data"
+    ],
+    "DESCRIPTION": "Orb: Gains #yFocus."
+  },
+  {
+    "NAMES": [
       "devotion"
     ],
     "DESCRIPTION": "You gain #yMantra at the start of your turn.",

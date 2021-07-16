@@ -131,7 +131,7 @@
     "NAME": "Dhvaja",
     "FLAVOR": "Victory shall be yours... eventually.",
     "DESCRIPTIONS": [
-      "Whenever you exit #yDivinity, #yDivinity's damage multiplier increases by #b1 this combat."
+      "Whenever you enter #yDivinity, #yDivinity's damage multiplier increases by #b1 this combat."
     ],
     "NOTE_FOR_TRANSLATORS": "https://en.wikipedia.org/wiki/Dhvaja"
   },
@@ -356,6 +356,31 @@
       " or more enemies, apply #b",
       " #yStunned and #b",
       " #yInvincible to one."
+    ]
+  },
+  "reliquary:RabbitEars": {
+    "NAME": "Rabbit Ears",
+    "FLAVOR": "\"You're listening to 98.7 FM: The Fever. Don't touch that dial!\"",
+    "DESCRIPTIONS": [
+      "You may upgrade #bBlue cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
+      "Gain [B] for every !M! cards in your draw and discard piles.",
+      "Channel 1 Data. NL Channel 1 Lightning. NL Channel 1 Frost. NL Channel 1 Dark.",
+      "Deal !D! damage for each Channeled Orb, plus !M! if you have no empty slots.",
+      "Gain !M! Focus. NL Channel 1 Bias.",
+      "Innate. NL Retain. NL Gain !B! Block. NL Exhaust.",
+      "Gain !B! Block. NL Next turn, gain [B] and draw 1 card.",
+      "Innate. NL Channel !M! Frost for each enemy in combat plus 1. NL Exhaust.",
+      "Deal !D! damage. Channel !M! Frost. NL Trigger the passive ability of all Frost orbs.",
+      "At the start of your turn, add 1 of 2 random Power cards into your hand.",
+      "Channel !M! Dark. NL Trigger the passive ability of all Dark orbs.",
+      "Double your Energy.",
+      "Evoke your next Orb !M! times.",
+      "The first and last cards you play each turn are played twice."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "These are second upgrades, so all but the first string are slight variants of Defect cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicRabbitEars.java",
+      "to see which string corresponds to which Defect card. Indices start at 0!"
     ]
   },
   "reliquary:RadioactivePellet": {

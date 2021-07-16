@@ -76,7 +76,7 @@ public class RelicSolitaire extends RelicSolitaireBase {
                 card.baseDamage += 3;
                 break;
             case Brilliance.ID:
-                upgradeBaseCost(card, 0);
+                changeBaseCost(card, 0);
                 break;
             case CarveReality.ID:
                 card.cardsToPreview.upgrade();
@@ -134,7 +134,7 @@ public class RelicSolitaire extends RelicSolitaireBase {
                 card.baseBlock += 3;
                 break;
             case EmptyFist.ID:
-                upgradeBaseCost(card, 0);
+                changeBaseCost(card, 0);
                 break;
             case EmptyMind.ID:
                 card.baseMagicNumber += 1;
@@ -336,13 +336,13 @@ public class RelicSolitaire extends RelicSolitaireBase {
                 card.rawDescription = DESCRIPTIONS[DESC_INDEX_VAULT];
                 break;
             case Vigilance.ID:
-                upgradeBaseCost(card, 1);
+                changeBaseCost(card, 1);
                 break;
             case Wallop.ID:
                 card.baseDamage += 3;
                 break;
             case WaveOfTheHand.ID:
-                upgradeBaseCost(card, 0);
+                changeBaseCost(card, 0);
                 break;
             case Weave.ID:
                 card.baseDamage += 2;
@@ -386,16 +386,6 @@ public class RelicSolitaire extends RelicSolitaireBase {
                 ReliquaryLogger.error("RelicSolitaire tried to upgrade unknown card with ID: " + card.cardID);
         }
         card.initializeDescription();
-    }
-
-    public static void upgradeBaseCost(AbstractCard card, int newBaseCost) {
-        int diff = card.costForTurn - card.cost;
-        card.cost = newBaseCost;
-        if (card.costForTurn > 0)
-            card.costForTurn = card.cost + diff;
-        if (card.costForTurn < 0)
-            card.costForTurn = 0;
-        card.upgradedCost = true;
     }
 
     @Override

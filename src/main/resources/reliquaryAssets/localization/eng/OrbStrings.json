@@ -1,8 +1,15 @@
 {
+  "reliquary:Bias": {
+    "NAME": "Bias",
+    "DESCRIPTION": [
+      "#yPassive: At the start of turn, lose #b",
+      " #yFocus. NL Evoke: No effect. NL Unaffected by #yFocus."
+    ]
+  },
   "reliquary:Data": {
     "NAME": "Data",
     "DESCRIPTION": [
-      "#yPassive: At the start of turn, gain #b",
+      "#yPassive: On #yChannel and at the start of turn, gain #b",
       " #yFocus this turn. NL #yEvoke: Gain #b",
       " #yFocus this turn. NL Unaffected by #yFocus."
     ]

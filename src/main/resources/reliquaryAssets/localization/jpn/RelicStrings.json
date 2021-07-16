@@ -131,7 +131,7 @@
     "NAME": "ダーヴァジャ",
     "FLAVOR": "勝利はあなたのものになるだろう…最終的には。",
     "DESCRIPTIONS": [
-      "#y神聖 を解除するたび、 #y神聖 のダメージ倍率が #b1 増加する。"
+      "Whenever you enter #yDivinity, #yDivinity's damage multiplier increases by #b1 this combat."
     ],
     "NOTE_FOR_TRANSLATORS": "https://en.wikipedia.org/wiki/Dhvaja"
   },

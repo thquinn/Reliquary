@@ -203,13 +203,13 @@ public class RelicBigHammer extends RelicSolitaireBase {
                 card.magicNumber += 2;
                 break;
             case Hemokinesis.ID:
-                RelicSolitaire.upgradeBaseCost(card, 0);
+                changeBaseCost(card, 0);
                 break;
             case Immolate.ID:
                 card.baseDamage += 7;
                 break;
             case Impervious.ID:
-                RelicSolitaire.upgradeBaseCost(card, 1);
+                changeBaseCost(card, 1);
                 break;
             case InfernalBlade.ID:
                 card.exhaust = false;
@@ -266,13 +266,13 @@ public class RelicBigHammer extends RelicSolitaireBase {
                 card.magicNumber += 3;
                 break;
             case Reaper.ID:
-                RelicSolitaire.upgradeBaseCost(card, 1);
+                changeBaseCost(card, 1);
                 break;
             case RecklessCharge.ID:
                 card.rawDescription = DESCRIPTIONS[DESC_INDEX_RECKLESS_CHARGE];
                 break;
             case Rupture.ID:
-                RelicSolitaire.upgradeBaseCost(card, 0);
+                changeBaseCost(card, 0);
                 break;
             case SecondWind.ID:
                 card.baseBlock += 2;
@@ -290,7 +290,7 @@ public class RelicBigHammer extends RelicSolitaireBase {
                 card.baseDamage += 6;
                 break;
             case Shockwave.ID:
-                RelicSolitaire.upgradeBaseCost(card, 1);
+                changeBaseCost(card, 1);
                 break;
             case ShrugItOff.ID:
                 card.baseBlock += 3;
@@ -319,7 +319,7 @@ public class RelicBigHammer extends RelicSolitaireBase {
                 card.rawDescription = DESCRIPTIONS[DESC_INDEX_TRUE_GRIT];
                 break;
             case TwinStrike.ID:
-                RelicSolitaire.upgradeBaseCost(card, 0);
+                changeBaseCost(card, 0);
                 break;
             case Uppercut.ID:
                 card.baseMagicNumber += 1;

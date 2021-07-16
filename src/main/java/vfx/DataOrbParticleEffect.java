@@ -6,16 +6,17 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
-import orbs.OrbData;
+import orbs.OrbDataBase;
 import util.TextureLoader;
 
 public class DataOrbParticleEffect extends AbstractGameEffect {
     private static float SPAWN_DISTANCE = 60;
     private Texture img;
-    private OrbData orb;
+    private OrbDataBase orb;
     private float cX, cY, x, y, t, scale, alpha, angle;
+    private Color color;
 
-    public DataOrbParticleEffect(OrbData orb, float angle) {
+    public DataOrbParticleEffect(OrbDataBase orb, float angle, Color color) {
         img = TextureLoader.getTexture("reliquaryAssets/images/orbs/dataDiamond.png");
         this.orb = orb;
         cX = orb.cX;
@@ -26,6 +27,7 @@ public class DataOrbParticleEffect extends AbstractGameEffect {
         scale = .1f;
         alpha = 0;
         this.angle = (float)Math.toDegrees(angle);
+        this.color = color;
         renderBehind = true;
     }
 
@@ -48,7 +50,8 @@ public class DataOrbParticleEffect extends AbstractGameEffect {
     }
 
     public void render(SpriteBatch sb) {
-        sb.setColor(new Color(0.66f, 0.66f, 0.66f, alpha));
+        color.a = alpha;
+        sb.setColor(color);
         float size = 96 * scale;
         float halfSize = size / 2;
         sb.draw(img, x - halfSize, y - halfSize, halfSize, halfSize, size, size, scale, scale, angle, 0, 0, 96, 96,  false, false);

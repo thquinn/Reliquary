@@ -3,15 +3,15 @@
     "NAME": "Bias",
     "DESCRIPTION": [
       "#yPassive: At the start of turn, lose #b",
-      " #yFocus. NL Evoke: No effect. NL Unaffected by #yFocus."
+      " #yFocus. NL Evoke: No effect. NL Bias is unaffected by #yFocus."
     ]
   },
   "reliquary:Data": {
     "NAME": "Data",
     "DESCRIPTION": [
-      "#yPassive: On #yChannel and at the start of turn, gain #b",
+      "#yPassive: When #yChanneled and at the start of turn, gain #b",
       " #yFocus this turn. NL #yEvoke: Gain #b",
-      " #yFocus this turn. NL Unaffected by #yFocus."
+      " #yFocus this turn. NL Data is unaffected by #yFocus."
     ]
   }
 }

@@ -1,16 +1,16 @@
 package patches;
 
-import actions.FrostImpulseAction;
-import actions.RabbitEarsAggregateAction;
-import actions.RabbitEarsBarrageAction;
+import actions.*;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.GameActionManager;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.defect.AnimateOrbAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.actions.defect.DarkImpulseAction;
 import com.megacrit.cardcrawl.actions.defect.EvokeWithoutRemovingOrbAction;
+import com.megacrit.cardcrawl.actions.unique.MulticastAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.blue.*;
@@ -20,15 +20,22 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.Dark;
 import com.megacrit.cardcrawl.orbs.Frost;
+import com.megacrit.cardcrawl.orbs.Plasma;
 import com.megacrit.cardcrawl.powers.BiasPower;
 import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
+import com.megacrit.cardcrawl.powers.HeatsinkPower;
+import com.megacrit.cardcrawl.powers.LockOnPower;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
 import orbs.OrbBias;
 import orbs.OrbData;
 import powers.MrofOhcePower;
 import powers.RabbitEarsCreativeAIPower;
+import powers.RabbitEarsHelloPower;
+import powers.ThermalPastePower;
 import relics.RelicRabbitEars;
+
+import java.util.function.Consumer;
 
 public class PatchRabbitEars {
     static String[] DESCRIPTIONS = CardCrawlGame.languagePack.getRelicStrings(RelicRabbitEars.ID).DESCRIPTIONS;
@@ -206,7 +213,7 @@ public class PatchRabbitEars {
     public static class PatchRabbitEarsColdSnap {
         public static void Postfix(ColdSnap __instance) {
             if (__instance.timesUpgraded == 2) {
-                AbstractDungeon.actionManager.addToBottom(new FrostImpulseAction());
+                AbstractDungeon.actionManager.addToBottom(new OrbImpulseAction(Frost.ORB_ID));
             }
         }
     }
@@ -360,6 +367,174 @@ public class PatchRabbitEars {
         )
         public static void Insert(GameActionManager __instance) {
             MrofOhcePower.cardsPlayedThisTurnTargets.clear();
+        }
+    }
+
+    @SpirePatch(
+            clz= Electrodynamics.class,
+            method="use"
+    )
+    public static class PatchRabbitEarsElectrodynamics {
+        public static void Postfix(Electrodynamics __instance) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractPlayer p = AbstractDungeon.player;
+                AbstractMonster m = AbstractDungeon.getRandomMonster();
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerToRandomEnemyAction(p, new LockOnPower(m, 99)));
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= Fusion.class,
+            method="use"
+    )
+    public static class PatchRabbitEarsFusion {
+        public static void Prefix(Fusion __instance) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new MoveOrbsLeftAction(Plasma.ORB_ID));
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= GoForTheEyes.class,
+            method="use"
+    )
+    public static class PatchRabbitEarsGoForTheEyes {
+        public static void Postfix(GoForTheEyes __instance, AbstractPlayer p, AbstractMonster m) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new RabbitEarsForTheEyesAction(1, m));
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= Heatsinks.class,
+            method="use"
+    )
+    public static class PatchRabbitEarsHeatsinks {
+        public static void Postfix(Heatsinks __instance, AbstractPlayer p) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ThermalPastePower(p)));
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= HeatsinkPower.class,
+            method="onUseCard"
+    )
+    public static class PatchRabbitEarsHeatsinksThermalPaste {
+        @SpireInsertPatch(
+                locator= PatchRabbitEars.PatchRabbitEarsHeatsinksThermalPaste.Locator.class
+        )
+        public static SpireReturn Insert(HeatsinkPower __instance) {
+            if (__instance.owner.hasPower(ThermalPastePower.POWER_ID)) {
+                AbstractDungeon.actionManager.addToBottom(new PreferentialDrawCardAction(__instance.amount, c -> c.type == AbstractCard.CardType.POWER));
+                return SpireReturn.Return();
+            }
+            return SpireReturn.Continue();
+        }
+        private static class Locator extends SpireInsertLocator {
+            public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {
+                Matcher matcher = new Matcher.NewExprMatcher(DrawCardAction.class);
+                return LineFinder.findInOrder(ctMethodToPatch, matcher);
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= HelloWorld.class,
+            method="use"
+    )
+    public static class PatchRabbitEarsHelloWorld {
+        public static SpireReturn Prefix(HelloWorld __instance, AbstractPlayer p) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new RabbitEarsHelloPower(p, 1)));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+    }
+
+    @SpirePatch(
+            clz= Hologram.class,
+            method="use"
+    )
+    public static class PatchRabbitEarsHologram {
+        @SpireInsertPatch(
+                locator= PatchRabbitEars.PatchRabbitEarsHologram.Locator.class
+        )
+        public static SpireReturn Insert(Hologram __instance) {
+            if (__instance.timesUpgraded == 2) {
+                Consumer<AbstractCard> consumer = c -> c.retain = true;
+                AbstractDungeon.actionManager.addToBottom(new BetterDiscardPileToHandWithConsumerAction(1, false, consumer));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+        private static class Locator extends SpireInsertLocator {
+            public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {
+                Matcher matcher = new Matcher.NewExprMatcher(BetterDiscardPileToHandAction.class);
+                return LineFinder.findInOrder(ctMethodToPatch, matcher);
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= LockOn.class,
+            method="use"
+    )
+    public static class PatchRabbitEarsLockOn {
+        public static void Postfix(LockOn __instance, AbstractPlayer p, AbstractMonster m) {
+            if (__instance.timesUpgraded == 2) {
+                for (AbstractMonster otherM : AbstractDungeon.getMonsters().monsters) {
+                    if (otherM != m && !otherM.isDying && !otherM.isDead) {
+                        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(otherM, p, new LockOnPower(otherM, 1), 1));
+                    }
+                }
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= Melter.class,
+            method="use"
+    )
+    public static class PatchRabbitEarsMelter {
+        public static SpireReturn Prefix(Melter __instance, AbstractPlayer p, AbstractMonster m) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new StealAllBlockAction(m, p));
+                AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, __instance.damage, __instance.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+    }
+
+    @SpirePatch(
+            clz= MeteorStrike.class,
+            method="use"
+    )
+    public static class PatchRabbitEarsMeteorStrike {
+        public static void Postfix(MeteorStrike __instance) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new ChannelUntilFullAction(new Plasma()));
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= MultiCast.class,
+            method="use"
+    )
+    public static class PatchRabbitEarsMultiCast {
+        public static SpireReturn Prefix(MultiCast __instance, AbstractPlayer p) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new VariableMulticastAction(2, __instance.energyOnUse, __instance.freeToPlayOnce));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
         }
     }
 

@@ -31,6 +31,14 @@
       "."
     ]
   },
+  "reliquary:HelloPlus": {
+    "NAME": "Fizzbuzz",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b",
+      " random Uncommon card into your hand.",
+      " random Uncommon cards into your hand."
+    ]
+  },
   "reliquary:Hydrated": {
     "NAME": "Hydrated",
     "DESCRIPTIONS": [
@@ -109,6 +117,13 @@
       "Other enemies can't be targeted until this enemy dies.",
       "Another enemy is #r@Taunting@ me!"
     ]
+  },
+  "reliquary:ThermalPaste": {
+    "NAME": "Thermal Paste",
+    "DESCRIPTIONS": [
+      "#yHeatsink will draw #yPower cards when possible."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This power augments the behavior of the Defect's Heatsinks power."
   },
   "reliquary:Triumph": {
     "NAME": "Triumph",

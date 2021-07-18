@@ -25,6 +25,7 @@ public class RabbitEarsBarrageAction extends AbstractGameAction {
             return;
         }
         if (orbCount == p.orbs.size()) {
+            // TODO: Find a way to make Strength affect this last hit.
             addToTop(new DamageAction(target, fullInfo, AttackEffect.BLUNT_HEAVY));
         }
         for (int i = 0; i < orbCount; i++) {

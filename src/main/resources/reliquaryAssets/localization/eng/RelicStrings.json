@@ -364,7 +364,6 @@
     "DESCRIPTIONS": [
       "You may upgrade #bBlue cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
       "Gain [B] for every !M! cards in your draw and discard piles.",
-      "Channel 1 Data. NL Channel 1 Lightning. NL Channel 1 Frost. NL Channel 1 Dark.",
       "Deal !D! damage for each Channeled Orb, plus !M! if you have no empty slots.",
       "Gain !M! Focus. NL Channel 1 Bias.",
       "Innate. NL Retain. NL Gain !B! Block. NL Exhaust.",
@@ -375,7 +374,19 @@
       "Channel !M! Dark. NL Trigger the passive ability of all Dark orbs.",
       "Double your Energy.",
       "Evoke your next Orb !M! times.",
-      "The first and last cards you play each turn are played twice."
+      "The first and last cards you play each turn are played twice.",
+      "Lightning now hits ALL enemies. NL Channel !M! Lightning. NL Apply 99 Lock-On to a random enemy.",
+      "Evoke all your Orbs. Gain [B] and draw !M! card for each Orb Evoked.",
+      "Shift all Plasma orbs all the way left. NL Channel !M! Plasma.",
+      "Deal !D! damage. NL If the enemy intends to attack, apply !M! Weak, otherwise gain [B].",
+      "Whenever you play a Power card, draw !M! cards (Power cards when possible).",
+      "Innate. NL At the start of your turn, add a random Uncommon card into your hand.",
+      "Gain !B! Block. NL Put a card from your discard pile into your hand and Retain it this turn.",
+      "Deal !D! damage. NL Apply !M! Lock-On. NL Apply 1 Lock-On to all other enemies.",
+      "Steal all Block from the enemy. NL Deal !D! damage.",
+      "Deal !D! damage. NL Channel !M! Plasma, then Channel Plasma until you have no empty Orb slots.",
+      "Evoke your next Orb 2X times.",
+      "Channel 1 Data. NL Channel 1 Lightning. NL Channel 1 Frost. NL Channel 1 Dark."
     ],
     "NOTE_FOR_TRANSLATORS": [
       "These are second upgrades, so all but the first string are slight variants of Defect cards.",

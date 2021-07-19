@@ -44,6 +44,7 @@ import powers.SolitaireBattleHymnPower;
 import powers.SolitaireStudyPower;
 import relics.RelicBigHammer;
 import relics.RelicRabbitEars;
+import relics.RelicSkeletonKey;
 import relics.RelicSolitaire;
 
 import java.util.ArrayList;
@@ -79,6 +80,9 @@ public class PatchSolitaire {
             // second time depends on whether they have a Solitaire.
             if (CardCrawlGame.saveFile.relics.contains(RelicBigHammer.ID)) {
                 RelicLibrary.getRelic(RelicBigHammer.ID).instantObtain(p, 0, false);
+            }
+            if (CardCrawlGame.saveFile.relics.contains(RelicSkeletonKey.ID)) {
+                RelicLibrary.getRelic(RelicSkeletonKey.ID).instantObtain(p, 0, false);
             }
             if (CardCrawlGame.saveFile.relics.contains(RelicRabbitEars.ID)) {
                 RelicLibrary.getRelic(RelicRabbitEars.ID).instantObtain(p, 0, false);

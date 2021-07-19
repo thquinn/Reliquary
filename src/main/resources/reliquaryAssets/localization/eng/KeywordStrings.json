@@ -33,6 +33,12 @@
   },
   {
     "NAMES": [
+      "ion"
+    ],
+    "DESCRIPTION": "When you have #b2 #yIon, lose #b2 #yIon and #yChannel #b1 #yLightning."
+  },
+  {
+    "NAMES": [
       "slimed"
     ],
     "DESCRIPTION": "Slimed is a cost 1 #yStatus card.",

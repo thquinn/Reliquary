@@ -22,6 +22,12 @@
       " #yFocus."
     ]
   },
+  "reliquary:HalfLightning": {
+    "NAME": "Ion",
+    "DESCRIPTIONS": [
+      "When you have #b2 #yIon, lose #b2 #yIon and #yChannel #b1 #yLightning."
+    ]
+  },
   "reliquary:HandSize": {
     "NAME": "Hand Size Up",
     "DESCRIPTIONS": [
@@ -37,7 +43,8 @@
       "At the start of your turn, add #b",
       " random Uncommon card into your hand.",
       " random Uncommon cards into your hand."
-    ]
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Hello power."
   },
   "reliquary:Hydrated": {
     "NAME": "Hydrated",
@@ -83,7 +90,7 @@
       "The last #b",
       " cards you play each turn are played twice."
     ],
-    "NOTE_FOR_TRANSLATORS": "Mrof Ohce is Echo Form backwards."
+    "NOTE_FOR_TRANSLATORS": "This is an alternate version of the base game's Echo Form power. Mrof Ohce is Echo Form backwards."
   },
   "reliquary:QuantumAI": {
     "NAME": "Quantum AI",
@@ -95,6 +102,15 @@
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Study power."
   },
+  "reliquary:ReboundPlus": {
+    "NAME": "Resound",
+    "DESCRIPTIONS": [
+      "The next card you play this turn is placed into your hand.",
+      "The next #b",
+      " cards you play this turn are placed into your hand."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Rebound power."
+  },
   "reliquary:ReduceColorlessCost": {
     "NAME": "Pallor",
     "DESCRIPTIONS": [
@@ -102,6 +118,15 @@
       "The next #b",
       " Colorless cards you play cost #b1 less."
     ]
+  },
+  "reliquary:StormPlus": {
+    "NAME": "Superstorm",
+    "DESCRIPTIONS": [
+      "Whenever you play a #yPower card, #yChannel #b",
+      " #yLightning for each [B] it cost (at least #b",
+      ")."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Storm power."
   },
   "reliquary:StudyPlus": {
     "NAME": "Cram",

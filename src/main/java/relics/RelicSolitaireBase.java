@@ -18,6 +18,11 @@ public abstract class RelicSolitaireBase extends CustomRelic {
     }
 
     @Override
+    public boolean canSpawn() {
+        return AbstractDungeon.player.masterDeck.group.stream().anyMatch(c -> c.color != AbstractCard.CardColor.COLORLESS && c.upgraded);
+    }
+
+    @Override
     public void onEquip() {
         cardsSelected = false;
         CardGroup tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);

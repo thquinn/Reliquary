@@ -3,45 +3,58 @@ package relics;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.blue.*;
+import com.megacrit.cardcrawl.powers.ReboundPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.sun.org.apache.xpath.internal.operations.Mult;
 import util.ReliquaryLogger;
 import util.TextureLoader;
 
 import java.lang.reflect.Method;
+import java.util.stream.Stream;
 
 public class RelicRabbitEars extends RelicSolitaireBase {
     public static final String ID = "reliquary:RabbitEars";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/rabbitEars.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/rabbitEars.png");
 
-    private final static int DESC_INDEX_AGGREGATE = 1;
-    private final static int DESC_INDEX_BARRAGE = 2;
-    private final static int DESC_INDEX_BIASED_COGNITION = 3;
-    private final static int DESC_INDEX_BOOT_SEQUENCE = 4;
-    private final static int DESC_INDEX_CHARGE_BATTERY = 5;
-    private final static int DESC_INDEX_CHILL = 6;
-    private final static int DESC_INDEX_COLD_SNAP = 7;
-    private final static int DESC_INDEX_CREATIVE_AI = 8;
-    private final static int DESC_INDEX_DARKNESS = 9;
-    private final static int DESC_INDEX_DOUBLE_ENERGY = 10;
-    private final static int DESC_INDEX_DUALCAST = 11;
-    private final static int DESC_INDEX_ECHO_FORM = 12;
-    private final static int DESC_INDEX_ELECTRODYNAMICS = 13;
-    private final static int DESC_INDEX_FISSION = 14;
-    private final static int DESC_INDEX_FUSION = 15;
-    private final static int DESC_INDEX_GO_FOR_THE_EYES = 16;
-    private final static int DESC_INDEX_HEATSINKS = 17;
-    private final static int DESC_INDEX_HELLO_WORLD = 18;
-    private final static int DESC_INDEX_HOLOGRAM = 19;
-    private final static int DESC_INDEX_LOCK_ON = 20;
-    private final static int DESC_INDEX_MELTER = 21;
-    private final static int DESC_INDEX_METEOR_STRIKE = 22;
-    private final static int DESC_INDEX_MULTICAST = 23;
-    private final static int DESC_INDEX_RAINBOW = 24;
+    public final static int DESC_INDEX_AGGREGATE = 1;
+    public final static int DESC_INDEX_BARRAGE = 2;
+    public final static int DESC_INDEX_BIASED_COGNITION = 3;
+    public final static int DESC_INDEX_BOOT_SEQUENCE = 4;
+    public final static int DESC_INDEX_CHARGE_BATTERY = 5;
+    public final static int DESC_INDEX_CHILL = 6;
+    public final static int DESC_INDEX_COLD_SNAP = 7;
+    public final static int DESC_INDEX_CREATIVE_AI = 8;
+    public final static int DESC_INDEX_DARKNESS = 9;
+    public final static int DESC_INDEX_DOUBLE_ENERGY = 10;
+    public final static int DESC_INDEX_DUALCAST = 11;
+    public final static int DESC_INDEX_ECHO_FORM = 12;
+    public final static int DESC_INDEX_ELECTRODYNAMICS = 13;
+    public final static int DESC_INDEX_FISSION = 14;
+    public final static int DESC_INDEX_FUSION = 15;
+    public final static int DESC_INDEX_GO_FOR_THE_EYES = 16;
+    public final static int DESC_INDEX_HEATSINKS = 17;
+    public final static int DESC_INDEX_HELLO_WORLD = 18;
+    public final static int DESC_INDEX_HOLOGRAM = 19;
+    public final static int DESC_INDEX_LOCK_ON = 20;
+    public final static int DESC_INDEX_MELTER = 21;
+    public final static int DESC_INDEX_METEOR_STRIKE = 22;
+    public final static int DESC_INDEX_MULTICAST = 23;
+    public final static int DESC_INDEX_RAINBOW = 24;
+    public final static int DESC_INDEX_REBOUND = 25;
+    public final static int DESC_INDEX_RECURSION = 26;
+    public final static int DESC_INDEX_RECYCLE = 27;
+    public final static int DESC_INDEX_STACK = 28;
+    public final static int DESC_INDEX_STORM = 29;
+    public final static int DESC_INDEX_SUNDER = 30;
+    public final static int DESC_INDEX_SWEEPING_BEAM = 31;
+    public final static int DESC_INDEX_TEMPEST = 32;
+    public final static int DESC_INDEX_TURBO = 33;
+    public final static int DESC_INDEX_WHITE_NOISE = 34;
+    public final static int DESC_INDEX_ZAP = 35;
 
     public RelicRabbitEars() {
-        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
+        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.SOLID);
     }
 
     @SuppressWarnings("DuplicateBranchesInSwitch")
@@ -71,6 +84,7 @@ public class RelicRabbitEars extends RelicSolitaireBase {
             case BallLightning.ID:
                 card.baseMagicNumber += 1;
                 card.magicNumber += 1;
+                card.upgradedMagicNumber = true;
                 break;
             case Barrage.ID:
                 card.baseMagicNumber = 10;
@@ -113,6 +127,7 @@ public class RelicRabbitEars extends RelicSolitaireBase {
             case Claw.ID:
                 card.baseMagicNumber += 1;
                 card.magicNumber += 1;
+                card.upgradedMagicNumber = true;
                 break;
             case ColdSnap.ID:
                 card.rawDescription = DESCRIPTIONS[DESC_INDEX_COLD_SNAP];
@@ -134,6 +149,7 @@ public class RelicRabbitEars extends RelicSolitaireBase {
             case CoreSurge.ID:
                 card.baseMagicNumber += 1;
                 card.magicNumber += 1;
+                card.upgradedMagicNumber = true;
                 break;
             case CreativeAI.ID:
                 card.rawDescription = DESCRIPTIONS[DESC_INDEX_CREATIVE_AI];
@@ -151,6 +167,7 @@ public class RelicRabbitEars extends RelicSolitaireBase {
             case DoomAndGloom.ID:
                 card.baseMagicNumber += 1;
                 card.magicNumber += 1;
+                card.upgradedMagicNumber = true;
                 break;
             case DoubleEnergy.ID:
                 card.exhaust = false;
@@ -193,6 +210,7 @@ public class RelicRabbitEars extends RelicSolitaireBase {
             case Glacier.ID:
                 card.baseMagicNumber += 1;
                 card.magicNumber += 1;
+                card.upgradedMagicNumber = true;
                 break;
             case GoForTheEyes.ID:
                 card.rawDescription = DESCRIPTIONS[DESC_INDEX_GO_FOR_THE_EYES];
@@ -209,6 +227,7 @@ public class RelicRabbitEars extends RelicSolitaireBase {
             case Hyperbeam.ID:
                 card.baseMagicNumber -= 1;
                 card.magicNumber -= 1;
+                card.upgradedMagicNumber = true;
                 break;
             case Leap.ID:
                 card.baseBlock += 3;
@@ -238,6 +257,90 @@ public class RelicRabbitEars extends RelicSolitaireBase {
                 break;
             case Rainbow.ID:
                 card.rawDescription = DESCRIPTIONS[DESC_INDEX_RAINBOW];
+                break;
+            case Reboot.ID:
+                card.baseMagicNumber += 2;
+                card.magicNumber += 2;
+                break;
+            case Rebound.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_REBOUND];
+                break;
+            case Recursion.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_RECURSION];
+                break;
+            case Recycle.ID:
+                card.baseMagicNumber = 2;
+                card.magicNumber = 2;
+                card.upgradedMagicNumber = true;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_RECYCLE];
+                break;
+            case ReinforcedBody.ID:
+                card.baseBlock += 3;
+                break;
+            case Reprogram.ID:
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                break;
+            case RipAndTear.ID:
+                card.baseDamage += 2;
+                break;
+            case Scrape.ID:
+                card.baseDamage += 3;
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                break;
+            case Seek.ID:
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                break;
+            case SelfRepair.ID:
+                card.baseMagicNumber += 3;
+                card.magicNumber += 3;
+                break;
+            case Skim.ID:
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                break;
+            case Stack.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_STACK];
+                break;
+            case StaticDischarge.ID:
+                changeBaseCost(card, 0);
+                break;
+            case SteamBarrier.ID:
+                card.baseBlock += 2;
+                break;
+            case Storm.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_STORM];
+                break;
+            case Streamline.ID:
+                card.baseDamage += 5;
+                break;
+            case Strike_Blue.ID:
+                card.baseDamage += 5;
+                break;
+            case Sunder.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_SUNDER];
+                break;
+            case SweepingBeam.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_SWEEPING_BEAM];
+                break;
+            case Tempest.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_TEMPEST];
+                break;
+            case ThunderStrike.ID:
+                changeBaseCost(card, 2);
+                break;
+            case Turbo.ID:
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_TURBO];
+                break;
+            case WhiteNoise.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_WHITE_NOISE];
+                break;
+            case Zap.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_ZAP];
                 break;
             default:
                 ReliquaryLogger.error("RelicRabbitEars tried to upgrade unknown card with ID: " + card.cardID);

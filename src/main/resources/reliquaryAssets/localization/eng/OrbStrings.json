@@ -3,7 +3,7 @@
     "NAME": "Bias",
     "DESCRIPTION": [
       "#yPassive: At the start of turn, lose #b",
-      " #yFocus. NL Evoke: No effect. NL Bias is unaffected by #yFocus."
+      " #yFocus. NL #yEvoke: No effect. NL Bias is unaffected by #yFocus."
     ]
   },
   "reliquary:Data": {

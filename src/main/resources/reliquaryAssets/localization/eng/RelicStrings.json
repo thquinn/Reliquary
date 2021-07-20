@@ -253,6 +253,13 @@
       "Gain [E] at the start of your turn. Your discard pile only shuffles into your draw pile when you end your turn with an empty draw pile."
     ]
   },
+  "reliquary:KnifeBlock": {
+    "NAME": "Knife Block",
+    "FLAVOR": "\"Who could ever need this many knives?\" asked the world's stupidest person.",
+    "DESCRIPTIONS": [
+      "Whenever you create #yShivs, create an additional one."
+    ]
+  },
   "reliquary:Knoch": {
     "NAME": "Knoch",
     "FLAVOR": "It keeps sinking to the bottom of your pack.",
@@ -519,7 +526,7 @@
   },
   "reliquary:SkeletonKey": {
     "NAME": "Skeleton Key",
-    "FLAVOR": "Sends shivers down your spine.",
+    "FLAVOR": "What does it unlock? You.",
     "DESCRIPTIONS": [
       "You may upgrade #gGreen cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
     ],

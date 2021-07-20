@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.FocusPower;
 import powers.LoseFocusPower;
+import util.ReliquaryLogger;
 
 public class OrbData extends OrbDataBase {
     public static String ORB_ID = "reliquary:Data";
@@ -20,10 +21,14 @@ public class OrbData extends OrbDataBase {
     static final int EVOKE_AMOUNT = 3;
     private boolean channeled;
 
-    public OrbData() {
+    public OrbData(boolean channeled) {
         this.ID = ORB_ID;
         this.name = NAME;
+        this.channeled = channeled;
         updateDescription();
+    }
+    public OrbData() {
+        this(false);
     }
 
     @Override

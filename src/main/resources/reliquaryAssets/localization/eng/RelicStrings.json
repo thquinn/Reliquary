@@ -638,6 +638,14 @@
     ],
     "NOTE_FOR_TRANSLATORS": "This is the arm from a wooden figure-drawing manikin."
   },
+  "reliquary:ThumbDrive": {
+    "NAME": "Thumb Drive",
+    "FLAVOR": "Who's got three thumbs and a backup copy of the ancient Internet? This AI.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, #yChannel #b1 #yData."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the classic bad joke structure, 'Who's got two thumbs and <insert detail about self>? This guy.'"
+  },
   "reliquary:TridentHead": {
     "NAME": "Trident Head",
     "FLAVOR": "A part of the weapon wielded by the fabled Wave King.",

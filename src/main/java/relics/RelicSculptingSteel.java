@@ -58,6 +58,7 @@ public class RelicSculptingSteel extends CustomRelic {
     // Not all of these will actually be copied by Sculpting Steel; they are filtered further in canSpawn and onEquip.
     private final Set<String> COPYABLE_RELICS = new HashSet<>(Arrays.asList(
             // Reliquary
+            RelicAluminiumFoil.ID,
             RelicBallBearing.ID,
             RelicBoilingFlask.ID,
             RelicBookmark.ID,

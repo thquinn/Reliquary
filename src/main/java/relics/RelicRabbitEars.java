@@ -3,14 +3,11 @@ package relics;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.blue.*;
-import com.megacrit.cardcrawl.powers.ReboundPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import com.sun.org.apache.xpath.internal.operations.Mult;
 import util.ReliquaryLogger;
 import util.TextureLoader;
 
 import java.lang.reflect.Method;
-import java.util.stream.Stream;
 
 public class RelicRabbitEars extends RelicSolitaireBase {
     public static final String ID = "reliquary:RabbitEars";

@@ -2,7 +2,7 @@ package relics;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.blue.*;
+import com.megacrit.cardcrawl.cards.green.*;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.ReliquaryLogger;
 import util.TextureLoader;
@@ -13,6 +13,12 @@ public class RelicSkeletonKey extends RelicSolitaireBase {
     public static final String ID = "reliquary:SkeletonKey";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/skeletonKey.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/skeletonKey.png");
+
+    private final static int DESC_INDEX_A_THOUSAND_CUTS = 1;
+    private final static int DESC_INDEX_ACCURACY = 2;
+    private final static int DESC_INDEX_ADRENALINE = 3;
+    private final static int DESC_INDEX_AFTER_IMAGE = 4;
+    private final static int DESC_INDEX_ALCHEMIZE = 5;
 
     public RelicSkeletonKey() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
@@ -29,6 +35,27 @@ public class RelicSkeletonKey extends RelicSolitaireBase {
             ReliquaryLogger.error("RelicSkeletonKey failed to call upgradeName().");
         }
         switch (card.cardID) {
+            case AThousandCuts.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_A_THOUSAND_CUTS];
+                break;
+            case Accuracy.ID:
+                card.baseMagicNumber += 2;
+                card.magicNumber += 2;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_ACCURACY];
+                break;
+            case Acrobatics.ID:
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                break;
+            case Adrenaline.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_ADRENALINE];
+                break;
+            case AfterImage.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_AFTER_IMAGE];
+                break;
+            case Alchemize.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_ALCHEMIZE];
+                break;
             default:
                 ReliquaryLogger.error("RelicSkeletonKey tried to upgrade unknown card with ID: " + card.cardID);
         }

@@ -1,4 +1,12 @@
 {
+  "reliquary:AfterGlow": {
+    "NAME": "After Glow",
+    "DESCRIPTIONS": [
+      "#yAfter #yImage triggers twice on #ySkills.",
+      "#yAfter #yImage triggers #b",
+      " times on #ySkills."
+    ]
+  },
   "reliquary:BattleHymnPlus": {
     "NAME": "Battle Anthem",
     "DESCRIPTIONS": [
@@ -14,6 +22,14 @@
       " #yCombust."
     ],
     "NOTE_FOR_TRANSLATORS": "Combust is an existing power in the base game."
+  },
+  "reliquary:CutAbove": {
+    "NAME": "A Cut Above",
+    "DESCRIPTIONS": [
+      "#yThousand #yCuts triggers twice on #ySkills.",
+      "#yThousand #yCuts triggers #b",
+      " times on #ySkills."
+    ]
   },
   "reliquary:FocusDown": {
     "NAME": "Focus Down",

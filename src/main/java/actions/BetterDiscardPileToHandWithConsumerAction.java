@@ -7,8 +7,8 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+
 import java.util.ArrayList;
-import java.util.concurrent.Callable;
 import java.util.function.Consumer;
 
 public class BetterDiscardPileToHandWithConsumerAction extends AbstractGameAction {

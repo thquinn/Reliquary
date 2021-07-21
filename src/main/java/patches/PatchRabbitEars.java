@@ -2,19 +2,16 @@ package patches;
 
 import actions.*;
 import basemod.helpers.SuperclassFinder;
-import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.defect.*;
-import com.megacrit.cardcrawl.actions.unique.MulticastAction;
 import com.megacrit.cardcrawl.actions.unique.TempestAction;
 import com.megacrit.cardcrawl.actions.utility.HandCheckAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.blue.*;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -26,7 +23,6 @@ import com.megacrit.cardcrawl.orbs.Dark;
 import com.megacrit.cardcrawl.orbs.Frost;
 import com.megacrit.cardcrawl.orbs.Plasma;
 import com.megacrit.cardcrawl.powers.*;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
 import orbs.OrbBias;
@@ -35,7 +31,6 @@ import powers.*;
 import relics.RelicRabbitEars;
 import util.ReliquaryLogger;
 
-import javax.smartcardio.Card;
 import java.lang.reflect.Method;
 import java.util.function.Consumer;
 

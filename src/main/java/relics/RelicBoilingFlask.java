@@ -43,7 +43,7 @@ public class RelicBoilingFlask extends CustomRelic {
             if (potion instanceof PotionSlot) {
                 return;
             }
-            AbstractCard vapor = POTION_TO_VAPOR.getOrDefault(potion.ID, UNKNOWN_VAPOR);
+            AbstractCard vapor = POTION_TO_VAPOR.getOrDefault(potion.ID, UNKNOWN_VAPOR).makeCopy();
             if (vapors.group.stream().anyMatch(c -> c.cardID.equals(vapor.cardID))) {
                 continue;
             }

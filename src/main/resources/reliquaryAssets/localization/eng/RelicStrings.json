@@ -8,6 +8,14 @@
       " in it, it will end up on top."
     ]
   },
+  "reliquary:AluminiumFoil": {
+    "NAME": "Aluminium Foil",
+    "FLAVOR": "If you could apply this onto your cards, you'd be unstoppable.",
+    "DESCRIPTIONS": [
+      "Card rewards tend to be #yUpgraded and of a higher rarity."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to 'foil' or 'shiny' trading cards."
+  },
   "reliquary:BallBearing": {
     "NAME": "Ball Bearing",
     "FLAVOR": "Keeps things running smooth.",
@@ -529,6 +537,11 @@
     "FLAVOR": "What does it unlock? You.",
     "DESCRIPTIONS": [
       "You may upgrade #gGreen cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
+      "Whenever you play a card, deal !M! damage to ALL enemies. Triggers twice on Skills.",
+      "*Shivs deal !M! additional damage. NL Add a *Shiv into your hand.",
+      "Gain [G] [G] [G]. NL Draw 2 cards. NL Exhaust.",
+      "Innate. NL Whenever you play a card, gain 1 Block. Triggers twice on Skills.",
+      "Obtain a random potion. NL Put its Vapor into your hand. NL Exhaust."
     ],
     "NOTE_FOR_TRANSLATORS": [
       "These are second upgrades, so all but the first string are slight variants of Silent cards.",
@@ -538,7 +551,7 @@
   },
   "reliquary:Sod": {
     "NAME": "Sod",
-    "FLAVOR": "Contrary to popular belief, it's not greener on the other side; it's brown.",
+    "FLAVOR": "Contrary to popular belief, it's not greener on the other side. It's brown.",
     "DESCRIPTIONS": [
       "Put an #yUpgraded copy of every #b",
       "th unupgraded card you play into your hand."

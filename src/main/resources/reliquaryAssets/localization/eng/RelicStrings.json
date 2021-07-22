@@ -10,7 +10,7 @@
   },
   "reliquary:AluminiumFoil": {
     "NAME": "Aluminium Foil",
-    "FLAVOR": "If you could apply this onto your cards, you'd be unstoppable.",
+    "FLAVOR": "Maybe if you put this on all your cards, people would like you.",
     "DESCRIPTIONS": [
       "Card rewards tend to be #yUpgraded and of a higher rarity."
     ],
@@ -541,7 +541,10 @@
       "*Shivs deal !M! additional damage. NL Add a *Shiv into your hand.",
       "Gain [G] [G] [G]. NL Draw 2 cards. NL Exhaust.",
       "Innate. NL Whenever you play a card, gain 1 Block. Triggers twice on Skills.",
-      "Obtain a random potion. NL Put its Vapor into your hand. NL Exhaust."
+      "Obtain a random potion. NL Put its Vapor into your hand. NL Exhaust.",
+      "Deal !D! damage to ALL enemies. NL Discard 1 card at random. If you discard a Skill, deal !D! damage to ALL enemies.",
+      "Innate. NL Deal !D! damage. NL If it's not your 1st turn, deal !D! damage again. NL Exhaust.",
+      "Deal !D! damage. NL If the enemy has Poison, deal !D! damage twice more."
     ],
     "NOTE_FOR_TRANSLATORS": [
       "These are second upgrades, so all but the first string are slight variants of Silent cards.",
@@ -601,6 +604,16 @@
       "Whenever you play a card of a different type than the previous that turn, gain #b",
       " #yBlock."
     ]
+  },
+  "reliquary:SpireOfHannoy": {
+    "NAME": "Spire of Hannoy",
+    "FLAVOR": "This puzzle's namesake Spire must have been even deadlier and more perplexing than this one.",
+    "DESCRIPTIONS": [
+      "#yWeak and #yVulnerable are #b",
+      "% more effective against enemies for every stack past the 1st (max ",
+      "%)."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a Tower of Hanoi puzzle."
   },
   "reliquary:Stiletto": {
     "NAME": "Stiletto",
@@ -678,7 +691,7 @@
     "NAME": "Vitrine",
     "FLAVOR": "The perfect place to present your most prized possessions.",
     "DESCRIPTIONS": [
-      "Upon pickup, remove a card from your deck. You may choose to shuffle it into your draw pile any time during combat.",
+      "Upon pickup, remove a card from your deck. You may shuffle it into your draw pile anytime during your turn.",
       "Choose a card to remove.",
       "[#2aecd7]Right [#2aecd7]click[] to shuffle ",
       " into your draw pile.",

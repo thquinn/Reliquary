@@ -5,6 +5,7 @@ import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.random.Random;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
 import relics.RelicAluminiumFoil;
@@ -39,6 +40,11 @@ public class PatchAluminiumFoil {
             }
             int max = Arrays.stream(rarities).max().getAsInt();
             rarity[0] = intToRarity(max);
+            for (AbstractRelic r : AbstractDungeon.player.relics) {
+                if (r.relicId.equals(RelicAluminiumFoil.ID)) {
+                    r.flash();
+                }
+            }
         }
         private static class Locator extends SpireInsertLocator {
             public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {

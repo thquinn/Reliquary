@@ -1,14 +1,17 @@
 package patches;
 
+import actions.BetterDiscardAction;
+import actions.SkeletonKeyAllOutAttackAction;
 import actions.SkeletonKeyObtainPotionAction;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.GameActionManager;
+import com.megacrit.cardcrawl.actions.common.*;
+import com.megacrit.cardcrawl.actions.unique.BaneAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.green.*;
 import com.megacrit.cardcrawl.cards.red.Berserk;
 import com.megacrit.cardcrawl.cards.red.TrueGrit;
@@ -16,6 +19,7 @@ import com.megacrit.cardcrawl.cards.tempCards.Shiv;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.AfterImagePower;
 import com.megacrit.cardcrawl.powers.BerserkPower;
@@ -242,6 +246,53 @@ public class PatchSkeletonKey {
                 return SpireReturn.Return(null);
             }
             return SpireReturn.Continue();
+        }
+    }
+
+    @SpirePatch(
+            clz= AllOutAttack.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyAllOutAttack {
+        @SpireInsertPatch(
+                locator= PatchSkeletonKey.PatchSkeletonKeyAllOutAttack.Locator.class
+        )
+        public static SpireReturn Insert(AllOutAttack __instance) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new BetterDiscardAction(1, true, new SkeletonKeyAllOutAttackAction(__instance)));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+        private static class Locator extends SpireInsertLocator {
+            public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {
+                Matcher matcher = new Matcher.NewExprMatcher(DiscardAction.class);
+                return LineFinder.findInOrder(ctMethodToPatch, matcher);
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= Backstab.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyBackstab {
+        public static void Postfix(Backstab __instance, AbstractPlayer p, AbstractMonster m) {
+            if (__instance.timesUpgraded == 2 && GameActionManager.turn > 1) {
+                AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, __instance.damage, __instance.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= Bane.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyBane {
+        public static void Postfix(Bane __instance, AbstractPlayer p, AbstractMonster m) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new BaneAction(m, new DamageInfo(p, __instance.damage, __instance.damageTypeForTurn)));
+            }
         }
     }
 }

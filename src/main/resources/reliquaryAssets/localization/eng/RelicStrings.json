@@ -227,8 +227,8 @@
     "NAME": "Ice Cube Tray",
     "FLAVOR": "Everyone who knew how to use this thing died a long time ago.",
     "DESCRIPTIONS": [
-      "Every #b",
-      " cards you add to your deck, remove a card from your deck."
+      "For every #b",
+      " cards you add to your deck, you may remove a card from your deck."
     ]
   },
   "reliquary:IridiumChain": {
@@ -341,7 +341,8 @@
     "FLAVOR": "Once you pop, the fun immediately stops.",
     "DESCRIPTIONS": [
       "#yPower cards start each combat in the top half of your draw pile."
-    ]
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a parody of the old Pringles advertising slogan."
   },
   "reliquary:PorcupineQuills": {
     "NAME": "Porcupine Quills",
@@ -349,6 +350,13 @@
     "DESCRIPTIONS": [
       "Whenever you receive #b",
       " or more unblocked damage, deal that much damage back."
+    ]
+  },
+  "reliquary:PrayerBox": {
+    "NAME": "PrayerBox",
+    "FLAVOR": "It's the perfect shape to hold your square prayers.",
+    "DESCRIPTIONS": [
+      "You keep your #yMantra between combats."
     ]
   },
   "reliquary:PrincelyHelmet": {

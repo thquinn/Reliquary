@@ -16,37 +16,15 @@ public class RelicMudwinsCradle extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/mudwinsCradle.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/mudwinsCradle.png");
 
-    static int BOOST = 3;
-    static int MAX = 6;
+    public static int REDUCTION = 3;
 
     public RelicMudwinsCradle() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.SOLID);
     }
 
     @Override
-    public void onEquip() {
-        counter = 0;
-    }
-
-    @Override
-    public void atBattleStart() {
-        counter = 0;
-    }
-
-    @Override
-    public void onChangeStance(AbstractStance prevStance, AbstractStance newStance) {
-        if (newStance.ID.equals(DivinityStance.STANCE_ID) && counter < MAX) {
-            flash();
-            counter = Math.min(counter + BOOST, MAX);
-        } else if (prevStance.ID.equals(DivinityStance.STANCE_ID)) {
-            addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-            addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new MantraPower(AbstractDungeon.player, counter)));
-        }
-    }
-
-    @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0] + BOOST + DESCRIPTIONS[1] + MAX + DESCRIPTIONS[2];
+        return DESCRIPTIONS[0] + REDUCTION + DESCRIPTIONS[1];
     }
     @Override
     public AbstractRelic makeCopy()

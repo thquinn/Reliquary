@@ -223,6 +223,14 @@
       "Whenever you draw a card during your turn, deal damage equal to its cost to a random enemy."
     ]
   },
+  "reliquary:IceCubeTray": {
+    "NAME": "Ice Cube Tray",
+    "FLAVOR": "Everyone who knew how to use this thing died a long time ago.",
+    "DESCRIPTIONS": [
+      "Every #b",
+      " cards you add to your deck, remove a card from your deck."
+    ]
+  },
   "reliquary:IridiumChain": {
     "NAME": "Iridium Chain",
     "FLAVOR": "You try to count the links, but never come up with the same number twice.",
@@ -297,9 +305,8 @@
     "NAME": "Mudwin's Cradle",
     "FLAVOR": "Most popular desk toy.",
     "DESCRIPTIONS": [
-      "Whenever you exit #yDivinity, gain #b",
-      " #yMantra for each time you entered #yDivinity this combat (max ",
-      " )."
+      "Entering #yDivinity requires #b",
+      " less #yMantra."
     ],
     "NOTE_FOR_TRANSLATORS": "This is a Newton's Cradle. 'Mudwin' is just a dumb name made up to sound like 'Newton.'"
   },

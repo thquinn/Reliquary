@@ -26,6 +26,10 @@ public class CardModIncreaseMagicToLimit extends AbstractCardModifier {
     }
 
     @Override
+    public String identifier(AbstractCard card) {
+        return ID;
+    }
+    @Override
     public AbstractCardModifier makeCopy() {
         return new CardModIncreaseMagicToLimit(amount, limit);
     }

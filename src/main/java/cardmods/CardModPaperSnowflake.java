@@ -2,29 +2,31 @@ package cardmods;
 
 import basemod.abstracts.AbstractCardModifier;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import util.ReliquaryLogger;
 
-public class CardModIncreaseCost extends AbstractCardModifier {
-    public static final String ID = "reliquary:CardModIncreaseCost";
+public class CardModPaperSnowflake extends AbstractCardModifier {
+    public static final String ID = "reliquary:CardModPaperSnowflake";
 
     int amount;
 
-    public CardModIncreaseCost(int amount) {
+    public CardModPaperSnowflake(int amount) {
         this.amount = amount;
     }
 
     @Override
     public boolean shouldApply(AbstractCard card) {
-        return card.cost != -1;
+        return card.cost >= amount;
     }
 
     @Override
     public void onInitialApplication(AbstractCard card) {
-        if (card.freeToPlayOnce) {
-            card.freeToPlayOnce = false;
-            card.setCostForTurn(1);
-        } else {
-            card.updateCost(amount);
-        }
+        card.updateCost(-amount);
+    }
+
+    @Override
+    public void onRemove(AbstractCard card) {
+        card.updateCost(amount);
+        card.isCostModified = false;
     }
 
     @Override
@@ -33,6 +35,6 @@ public class CardModIncreaseCost extends AbstractCardModifier {
     }
     @Override
     public AbstractCardModifier makeCopy() {
-        return new CardModIncreaseCost(amount);
+        return new CardModPaperSnowflake(amount);
     }
 }

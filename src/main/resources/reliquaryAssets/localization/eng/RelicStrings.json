@@ -329,6 +329,13 @@
       "Cancel"
     ]
   },
+  "reliquary:PaperSnowflake": {
+    "NAME": "Paper Snowflake",
+    "FLAVOR": "Is this what this is supposed to look like?",
+    "DESCRIPTIONS": [
+      "The newest card in your deck that costs #b1 or more costs #b1 less."
+    ]
+  },
   "reliquary:PartyBalloon": {
     "NAME": "Party Balloon",
     "FLAVOR": "Once you pop, the fun immediately stops.",

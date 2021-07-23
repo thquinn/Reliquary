@@ -17,6 +17,10 @@ import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
 import powers.TriumphPower;
 import util.TextureLoader;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
 public class RelicIceCubeTray extends CustomRelic {
     public static final String ID = "reliquary:IceCubeTray";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/iceCubeTray.png");
@@ -43,17 +47,17 @@ public class RelicIceCubeTray extends CustomRelic {
         int delta = count - lastCount;
         if (lastCount > 0 && delta > 0) {
             counter += delta;
-            AbstractRoom.RoomPhase phase = AbstractDungeon.getCurrRoom().phase;
-            if (counter >= N && phase != AbstractRoom.RoomPhase.INCOMPLETE && phase != AbstractRoom.RoomPhase.COMBAT) {
-                counter -= N;
-                AbstractDungeon.gridSelectScreen.open(AbstractDungeon.player.masterDeck.getPurgeableCards(), 1, UI_TEXT[0], false, false, true, true);
-                AbstractDungeon.dynamicBanner.hide();
-                beginLongPulse();
-                cardsSelected = false;
-                AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.INCOMPLETE;
-            }
         }
         lastCount = count;
+        AbstractRoom.RoomPhase phase = AbstractDungeon.getCurrRoom().phase;
+        if (cardsSelected && counter >= N && phase != AbstractRoom.RoomPhase.INCOMPLETE && phase != AbstractRoom.RoomPhase.COMBAT && VALID_SCREENS.contains(AbstractDungeon.screen)) {
+            counter -= N;
+            AbstractDungeon.gridSelectScreen.open(AbstractDungeon.player.masterDeck.getPurgeableCards(), 1, UI_TEXT[0], false, false, true, true);
+            AbstractDungeon.dynamicBanner.hide();
+            beginLongPulse();
+            cardsSelected = false;
+            AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.INCOMPLETE;
+        }
         if (!cardsSelected && !AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
             cardsSelected = true;
             stopPulse();
@@ -65,6 +69,12 @@ public class RelicIceCubeTray extends CustomRelic {
                 displayCount += Settings.WIDTH / 6.0F;
                 AbstractDungeon.player.masterDeck.removeCard(card);
             }
+            AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.COMPLETE;
+            AbstractDungeon.gridSelectScreen.selectedCards.clear();
+        } else if (!cardsSelected && AbstractDungeon.screen != AbstractDungeon.CurrentScreen.GRID) {
+            // Canceled.
+            cardsSelected = true;
+            stopPulse();
             AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.COMPLETE;
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
         }
@@ -79,4 +89,12 @@ public class RelicIceCubeTray extends CustomRelic {
     {
         return new RelicIceCubeTray();
     }
+
+    private final Set<AbstractDungeon.CurrentScreen> VALID_SCREENS = new HashSet<AbstractDungeon.CurrentScreen>(Arrays.asList(
+            AbstractDungeon.CurrentScreen.COMBAT_REWARD,
+            AbstractDungeon.CurrentScreen.MAP,
+            AbstractDungeon.CurrentScreen.NONE,
+            AbstractDungeon.CurrentScreen.SHOP,
+            AbstractDungeon.CurrentScreen.VICTORY
+    ));
 }

@@ -52,34 +52,22 @@ public class MrofOhcePower extends AbstractPower {
 
     public boolean beforeEndOfTurn() {
         if (!triggered) {
-            ReliquaryLogger.log("setting variables. monsters are:");
-            for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
-                ReliquaryLogger.log(Integer.toString(m.hashCode()));
-            }
             triggered = true;
             triggers = amount;
             index = AbstractDungeon.actionManager.cardsPlayedThisTurn.size() - 1;
             flash();
         }
-        ReliquaryLogger.log("entered MrofOhce.atEndOfTurn. index is " + index + ", triggers is " + triggers);
         if (triggers <= 0) {
-            ReliquaryLogger.log("no more triggers.");
             return false;
         }
         for (; index >= 0; index--) {
             AbstractCard card = AbstractDungeon.actionManager.cardsPlayedThisTurn.get(index);
             if (card.purgeOnUse) {
-                ReliquaryLogger.log("card was purge: " + card.cardID);
                 continue;
             }
             AbstractMonster monster = cardsPlayedThisTurnTargets.get(index);
             if (monster != null && (monster.isDeadOrEscaped() || monster.halfDead)) {
-                ReliquaryLogger.log("monster " + monster.hashCode() + " was dead: " + card.cardID);
                 continue;
-            }
-            ReliquaryLogger.log("trying to mrof card: " + card.cardID);
-            if (monster != null) {
-                ReliquaryLogger.log("against monster: " + monster.hashCode() + " with " + monster.currentHealth + " HP.");
             }
             card = card.makeSameInstanceOf();
             AbstractDungeon.player.limbo.addToBottom(card);
@@ -92,7 +80,6 @@ public class MrofOhcePower extends AbstractPower {
             }
             return true;
         }
-        ReliquaryLogger.log("no more cards.");
         return false;
     }
 }

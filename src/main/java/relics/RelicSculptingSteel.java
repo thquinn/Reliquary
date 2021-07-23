@@ -28,7 +28,7 @@ public class RelicSculptingSteel extends CustomRelic {
     public void onEquip() {
         List<AbstractRelic> copyables = AbstractDungeon.player.relics.stream().filter(r -> isAppropriateRarity(r) && COPYABLE_RELICS.contains(r.relicId)).collect(Collectors.toList());
         if (copyables.isEmpty()) {
-            ReliquaryLogger.log("no copyables");
+            ReliquaryLogger.error("Sculpting Steel found nothing to copy.");
             return;
         }
         Collections.shuffle(copyables, new Random(AbstractDungeon.miscRng.randomLong()));

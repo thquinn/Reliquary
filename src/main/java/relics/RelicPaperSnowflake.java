@@ -35,19 +35,18 @@ public class RelicPaperSnowflake extends CustomRelic {
         repick();
     }
     public void repick() {
-
         CardGroup deck = AbstractDungeon.player.masterDeck;
         AbstractCard current = deck.group.stream().filter(c -> CardModifierManager.hasModifier(c, CardModPaperSnowflake.ID)).findFirst().orElse(null);
         CardModPaperSnowflake mod = new CardModPaperSnowflake(1);
         for (int i = deck.size() - 1; i >= 0; i--) {
             AbstractCard card = deck.group.get(i);
             if (mod.shouldApply(card)) {
-                ReliquaryLogger.log("found: " + card.cardID);
                 if (current != card) {
                     if (current != null) {
                         CardModifierManager.removeModifiersById(current, CardModPaperSnowflake.ID, true);
                     }
                     if (card != null) {
+                        flash();
                         CardModifierManager.addModifier(card, mod);
                     }
                 }

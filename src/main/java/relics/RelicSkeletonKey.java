@@ -22,6 +22,11 @@ public class RelicSkeletonKey extends RelicSolitaireBase {
     private final static int DESC_INDEX_ALL_OUT_ATTACK = 6;
     private final static int DESC_INDEX_BACKSTAB = 7;
     private final static int DESC_INDEX_BANE = 8;
+    private final static int DESC_INDEX_BLUR = 9;
+    private final static int DESC_INDEX_BULLET_TIME = 10;
+    private final static int DESC_INDEX_CALCULATED_GAMBLE = 11;
+    private final static int DESC_INDEX_CALTROPS = 12;
+    private final static int DESC_INDEX_CATALYST = 13;
 
     public RelicSkeletonKey() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
@@ -74,6 +79,29 @@ public class RelicSkeletonKey extends RelicSolitaireBase {
             case BladeDance.ID:
                 card.baseMagicNumber += 1;
                 card.magicNumber += 1;
+                break;
+            case Blur.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_BLUR];
+                break;
+            case BouncingFlask.ID:
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                break;
+            case BulletTime.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_BULLET_TIME];
+                break;
+            case Burst.ID:
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                break;
+            case CalculatedGamble.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_CALCULATED_GAMBLE];
+                break;
+            case Caltrops.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_CALTROPS];
+                break;
+            case Catalyst.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_CATALYST];
                 break;
             default:
                 ReliquaryLogger.error("RelicSkeletonKey tried to upgrade unknown card with ID: " + card.cardID);

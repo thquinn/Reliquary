@@ -1,6 +1,7 @@
 package patches;
 
 import actions.BetterDiscardAction;
+import actions.MultiplyPoisonAction;
 import actions.SkeletonKeyAllOutAttackAction;
 import actions.SkeletonKeyObtainPotionAction;
 import com.evacipated.cardcrawl.modthespire.lib.*;
@@ -8,7 +9,9 @@ import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.actions.common.*;
+import com.megacrit.cardcrawl.actions.unique.ApplyBulletTimeAction;
 import com.megacrit.cardcrawl.actions.unique.BaneAction;
+import com.megacrit.cardcrawl.actions.unique.GamblingChipAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -20,15 +23,10 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.AfterImagePower;
-import com.megacrit.cardcrawl.powers.BerserkPower;
-import com.megacrit.cardcrawl.powers.ThousandCutsPower;
+import com.megacrit.cardcrawl.powers.*;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
-import powers.AfterGlowPower;
-import powers.CutAbovePower;
-import powers.VulnerableNextTurnPower;
+import powers.*;
 import relics.RelicSkeletonKey;
 
 public class PatchSkeletonKey {
@@ -293,6 +291,134 @@ public class PatchSkeletonKey {
             if (__instance.timesUpgraded == 2) {
                 AbstractDungeon.actionManager.addToBottom(new BaneAction(m, new DamageInfo(p, __instance.damage, __instance.damageTypeForTurn)));
             }
+        }
+    }
+
+    @SpirePatch(
+            clz= Blur.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyBlur {
+        @SpireInsertPatch(
+                locator= PatchSkeletonKey.PatchSkeletonKeyBlur.Locator.class
+        )
+        public static SpireReturn Insert(Blur __instance, AbstractPlayer p) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new SkeletonKeyBlurPower(p, 1)));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+        private static class Locator extends SpireInsertLocator {
+            public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {
+                Matcher matcher = new Matcher.NewExprMatcher(BlurPower.class);
+                return LineFinder.findInOrder(ctMethodToPatch, matcher);
+            }
+        }
+    }
+    @SpirePatch(
+            clz= GameActionManager.class,
+            method="getNextAction"
+    )
+    public static class PatchSkeletonKeyBlurPower {
+        @SpireInsertPatch(
+                locator= PatchSkeletonKey.PatchSkeletonKeyBlurPower.Locator.class
+        )
+        public static SpireReturn Insert(GameActionManager __instance) {
+            AbstractPlayer p = AbstractDungeon.player;
+            if (!p.hasPower(SkeletonKeyBlurPower.POWER_ID)) {
+                return SpireReturn.Continue();
+            }
+            p.addBlock(p.currentBlock);
+            if (!AbstractDungeon.getCurrRoom().isBattleOver) {
+                AbstractDungeon.actionManager.addToBottom(new DrawCardAction(null, p.gameHandSize, true));
+                p.applyStartOfTurnPostDrawRelics();
+                p.applyStartOfTurnPostDrawPowers();
+                AbstractDungeon.actionManager.addToBottom(new EnableEndTurnButtonAction());
+            }
+            return SpireReturn.Return();
+        }
+        private static class Locator extends SpireInsertLocator {
+            public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {
+                Matcher matcher = new Matcher.MethodCallMatcher(AbstractPlayer.class, "hasPower");
+                return LineFinder.findInOrder(ctMethodToPatch, matcher);
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= BulletTime.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyBulletTime {
+        public static SpireReturn Prefix(BulletTime __instance) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyBulletTimeAction());
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+    }
+
+    @SpirePatch(
+            clz= CalculatedGamble.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyCalculatedGamble {
+        public static SpireReturn Prefix(CalculatedGamble __instance, AbstractPlayer p) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new GamblingChipAction(p, true));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+    }
+
+    @SpirePatch(
+            clz= Caltrops.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyCaltrops {
+        public static void Postfix(Caltrops __instance, AbstractPlayer p) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new AreaDenialPower(p)));
+            }
+        }
+    }
+    @SpirePatch(
+            clz= ThornsPower.class,
+            method="onAttacked"
+    )
+    public static class PatchSkeletonKeyCaltropsPower {
+        @SpireInsertPatch(
+                locator= PatchSkeletonKey.PatchSkeletonKeyCaltropsPower.Locator.class
+        )
+        public static SpireReturn Insert(ThornsPower __instance, DamageInfo info, int damageAmount) {
+            if (!__instance.owner.hasPower(AreaDenialPower.POWER_ID)) {
+                return SpireReturn.Continue();
+            }
+            AbstractDungeon.actionManager.addToTop(new DamageAllEnemiesAction(__instance.owner, DamageInfo.createDamageMatrix(__instance.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL, true));
+            return SpireReturn.Return(damageAmount);
+        }
+        private static class Locator extends SpireInsertLocator {
+            public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {
+                Matcher matcher = new Matcher.NewExprMatcher(DamageAction.class);
+                return LineFinder.findInOrder(ctMethodToPatch, matcher);
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= Catalyst.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyCatalyst {
+        public static SpireReturn Prefix(Catalyst __instance, AbstractPlayer p, AbstractMonster m) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new MultiplyPoisonAction(p, m, 4));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
         }
     }
 }

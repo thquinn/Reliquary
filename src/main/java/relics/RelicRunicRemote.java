@@ -55,7 +55,6 @@ public class RelicRunicRemote extends CustomRelic {
 
     @Override
     public void atBattleStart() {
-        ReliquaryLogger.log(AbstractDungeon.id);
         perfect = true;
         dropIDs.clear();
         Optional<AbstractMonster> slimeBoss = AbstractDungeon.getMonsters().monsters.stream().filter(m -> m.id.equals(SlimeBoss.ID)).findAny();

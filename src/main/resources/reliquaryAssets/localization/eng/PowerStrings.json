@@ -7,6 +7,13 @@
       " times on #ySkills."
     ]
   },
+  "reliquary:AreaDenial": {
+    "NAME": "Area Denial",
+    "DESCRIPTIONS": [
+      "#yThorns deals damage to ALL enemies."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This power augments the behavior of the base game's Thorns power."
+  },
   "reliquary:BattleHymnPlus": {
     "NAME": "Battle Anthem",
     "DESCRIPTIONS": [
@@ -14,6 +21,15 @@
       " #ySmite+ into your hand."
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Battle Hymn power."
+  },
+  "reliquary:BlurPlus": {
+    "NAME": "Double Vision",
+    "DESCRIPTIONS": [
+      "#yBlock is doubled rather than removed at the start of your next turn.",
+      "#yBlock is doubled rather than removed at the start of your next #b",
+      " turns."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Blur power."
   },
   "reliquary:ChainReaction": {
     "NAME": "Chain Reaction",

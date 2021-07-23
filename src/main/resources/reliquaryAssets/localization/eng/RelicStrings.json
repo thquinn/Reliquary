@@ -558,7 +558,12 @@
       "Obtain a random potion. NL Put its Vapor into your hand. NL Exhaust.",
       "Deal !D! damage to ALL enemies. NL Discard 1 card at random. If you discard a Skill, deal !D! damage to ALL enemies.",
       "Innate. NL Deal !D! damage. NL If it's not your 1st turn, deal !D! damage again. NL Exhaust.",
-      "Deal !D! damage. NL If the enemy has Poison, deal !D! damage twice more."
+      "Deal !D! damage. NL If the enemy has Poison, deal !D! damage twice more.",
+      "Gain !B! Block. NL Block doubles at the start of your next turn rather than being removed.",
+      "Reduce the cost of all cards in your hand to 0 this turn.",
+      "Discard any number of cards, then draw that many cards.",
+      "Whenever you are attacked, deal !M! damage back to ALL enemies.",
+      "Quadruple the enemy's Poison. NL Exhaust."
     ],
     "NOTE_FOR_TRANSLATORS": [
       "These are second upgrades, so all but the first string are slight variants of Silent cards.",

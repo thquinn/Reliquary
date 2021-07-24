@@ -33,6 +33,13 @@
   },
   {
     "NAMES": [
+      "injury", "injuries"
+    ],
+    "DESCRIPTION": "Injuries are unplayable #rCurse cards.",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Injury Curse card from the base game."
+  },
+  {
+    "NAMES": [
       "ion"
     ],
     "DESCRIPTION": "When you have #b2 #yIon, lose #b2 #yIon and #yChannel #b1 #yLightning."

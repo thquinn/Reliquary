@@ -10,7 +10,7 @@
   },
   "reliquary:AluminiumFoil": {
     "NAME": "Aluminium Foil",
-    "FLAVOR": "Maybe if you put this on all your cards, people would like you.",
+    "FLAVOR": "Maybe if you put this on all your cards, people would respect you.",
     "DESCRIPTIONS": [
       "Card rewards tend to be #yUpgraded and of a higher rarity."
     ],
@@ -151,6 +151,13 @@
       "Whenever you enter #yDivinity, #yDivinity's damage multiplier increases by #b1 this combat."
     ],
     "NOTE_FOR_TRANSLATORS": "https://en.wikipedia.org/wiki/Dhvaja"
+  },
+  "reliquary:ElizabethanCollar": {
+    "NAME": "Elizabethan Collar",
+    "FLAVOR": "If you'd just stop messing with it—!",
+    "DESCRIPTIONS": [
+      "Upon pickup, your #rCurses become #rInjuries. All #rCurses you obtain become #rInjuries."
+    ]
   },
   "reliquary:Ember": {
     "NAME": "Ember",
@@ -370,7 +377,7 @@
     ]
   },
   "reliquary:PrayerBox": {
-    "NAME": "PrayerBox",
+    "NAME": "Prayer Box",
     "FLAVOR": "It's the perfect shape to hold your square prayers.",
     "DESCRIPTIONS": [
       "You keep your #yMantra between combats."

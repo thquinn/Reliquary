@@ -37,6 +37,9 @@ public class RelicIceCubeTray extends CustomRelic {
     @Override
     public void update() {
         super.update();
+        if (!isObtained) {
+            return;
+        }
         int count = AbstractDungeon.player.masterDeck.size();
         int delta = count - lastCount;
         if (lastCount > 0 && delta > 0) {

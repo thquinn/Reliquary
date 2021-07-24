@@ -77,7 +77,7 @@ public class RelicVitrine extends CustomRelic implements CustomSavable<CardSave>
 
     @Override
     public void onRightClick() {
-        if (!StaticHelpers.CanClickRelic(this)) {
+        if (!StaticHelpers.canClickRelic(this)) {
             return;
         }
         if (!grayscale) {

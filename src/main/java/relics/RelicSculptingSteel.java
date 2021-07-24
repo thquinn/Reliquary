@@ -77,6 +77,7 @@ public class RelicSculptingSteel extends CustomRelic {
             RelicJackalopeAntler.ID,
             RelicKillPill.ID,
             RelicKnifeBlock.ID,
+            RelicLeadDart.ID,
             RelicMedicineBall.ID,
             RelicMudwinsCradle.ID,
             RelicOuijaBoard.ID,

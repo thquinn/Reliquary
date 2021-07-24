@@ -17,10 +17,7 @@ import com.megacrit.cardcrawl.actions.unique.GamblingChipAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.cards.blue.WhiteNoise;
 import com.megacrit.cardcrawl.cards.green.*;
-import com.megacrit.cardcrawl.cards.red.Berserk;
-import com.megacrit.cardcrawl.cards.red.TrueGrit;
 import com.megacrit.cardcrawl.cards.tempCards.Shiv;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -32,7 +29,6 @@ import javassist.CannotCompileException;
 import javassist.CtBehavior;
 import powers.*;
 import relics.RelicSkeletonKey;
-import util.ReliquaryLogger;
 
 public class PatchSkeletonKey {
     static String[] DESCRIPTIONS = CardCrawlGame.languagePack.getRelicStrings(RelicSkeletonKey.ID).DESCRIPTIONS;

@@ -23,6 +23,15 @@
       "Whenever you shuffle your draw pile, shuffle in a #yFlash #yof #ySteel or #yFinesse, chosen randomly."
     ]
   },
+  "reliquary:Bellows": {
+    "NAME": "Bellows",
+    "FLAVOR": "Boy, if this were bigger than an inch across, it could really come in handy.",
+    "DESCRIPTIONS": [
+      "Every #b",
+      " times you #yExhaust a card, shuffle a card from your exhaust pile into your draw pile.",
+      "Select a Card to Shuffle into Your Draw Pile"
+    ]
+  },
   "reliquary:BigHammer": {
     "NAME": "Big Hammer",
     "FLAVOR": "Truly, it is the biggest hammer you have ever seen.",

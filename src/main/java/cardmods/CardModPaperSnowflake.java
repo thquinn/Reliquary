@@ -2,7 +2,6 @@ package cardmods;
 
 import basemod.abstracts.AbstractCardModifier;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import util.ReliquaryLogger;
 
 public class CardModPaperSnowflake extends AbstractCardModifier {
     public static final String ID = "reliquary:CardModPaperSnowflake";

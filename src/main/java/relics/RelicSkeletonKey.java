@@ -3,8 +3,6 @@ package relics;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.green.*;
-import com.megacrit.cardcrawl.cards.red.Havoc;
-import com.megacrit.cardcrawl.daily.mods.Endless;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.ReliquaryLogger;
 import util.TextureLoader;

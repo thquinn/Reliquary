@@ -1,25 +1,14 @@
 package patches;
 
-import actions.SkeletonKeyObtainPotionAction;
-import com.evacipated.cardcrawl.modthespire.lib.*;
-import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
-import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
+import com.evacipated.cardcrawl.modthespire.lib.SpireReturn;
 import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.cards.green.Alchemize;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
-import com.megacrit.cardcrawl.random.Random;
-import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.relics.PaperCrane;
 import com.megacrit.cardcrawl.relics.PaperFrog;
-import javassist.CannotCompileException;
-import javassist.CtBehavior;
-import relics.RelicAluminiumFoil;
 import relics.RelicSpireOfHannoy;
-import util.ReliquaryLogger;
-
-import java.util.Arrays;
 
 public class PatchSpireOfHannoy {
     @SpirePatch(

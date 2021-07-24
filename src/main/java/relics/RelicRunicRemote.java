@@ -24,7 +24,6 @@ import com.megacrit.cardcrawl.monsters.ending.SpireSpear;
 import com.megacrit.cardcrawl.monsters.exordium.*;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rewards.RewardItem;
-import util.ReliquaryLogger;
 import util.TextureLoader;
 
 import java.util.HashSet;

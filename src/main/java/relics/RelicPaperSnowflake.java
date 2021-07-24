@@ -6,16 +6,9 @@ import cardmods.CardModPaperSnowflake;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
-import util.ReliquaryLogger;
 import util.TextureLoader;
-
-import java.util.List;
 
 public class RelicPaperSnowflake extends CustomRelic {
     public static final String ID = "reliquary:PaperSnowflake";

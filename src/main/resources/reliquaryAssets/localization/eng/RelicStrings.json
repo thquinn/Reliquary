@@ -678,6 +678,13 @@
       "% less #yBlock."
     ]
   },
+  "reliquary:Stimpack": {
+    "NAME": "Stimpack",
+    "FLAVOR": "The dogtags bear the initials \"T.O.P.\"",
+    "DESCRIPTIONS": [
+      "The first time your HP drops to #b50% or below each combat, your #yAttacks deal double damage for #b1 turn."
+    ]
+  },
   "reliquary:Tamtam": {
     "NAME": "Tam-Tam",
     "FLAVOR": "GONG.",

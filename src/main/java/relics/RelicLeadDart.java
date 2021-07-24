@@ -24,7 +24,7 @@ public class RelicLeadDart extends CustomRelic {
     }
 
     @Override
-    public void atBattleStart() {
+    public void justEnteredRoom(AbstractRoom room) {
         triggeredThisCombat = false;
         grayscale = false;
     }

@@ -177,7 +177,6 @@ public class RelicRabbitEars extends RelicSolitaireBase {
                 card.rawDescription = DESCRIPTIONS[DESC_INDEX_DUALCAST];
                 break;
             case EchoForm.ID:
-                changeBaseCost(card, 5);
                 card.rawDescription = DESCRIPTIONS[DESC_INDEX_ECHO_FORM];
                 break;
             case Electrodynamics.ID:

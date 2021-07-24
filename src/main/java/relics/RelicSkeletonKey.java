@@ -3,6 +3,8 @@ package relics;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.green.*;
+import com.megacrit.cardcrawl.cards.red.Havoc;
+import com.megacrit.cardcrawl.daily.mods.Endless;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.ReliquaryLogger;
 import util.TextureLoader;
@@ -27,6 +29,17 @@ public class RelicSkeletonKey extends RelicSolitaireBase {
     private final static int DESC_INDEX_CALCULATED_GAMBLE = 11;
     private final static int DESC_INDEX_CALTROPS = 12;
     private final static int DESC_INDEX_CATALYST = 13;
+    private final static int DESC_INDEX_CHOKE = 14;
+    private final static int DESC_INDEX_CONCENTRATE = 15;
+    private final static int DESC_INDEX_CRIPPLING_CLOUD = 16;
+    private final static int DESC_INDEX_DAGGER_SPRAY = 17;
+    private final static int DESC_INDEX_DAGGER_THROW = 18;
+    private final static int DESC_INDEX_DIE_DIE_DIE = 19;
+    private final static int DESC_INDEX_DISTRACTION = 20;
+    private final static int DESC_INDEX_DOPPELGANGER = 21;
+    private final static int DESC_INDEX_ENDLESS_AGONY = 22;
+    private final static int DESC_INDEX_ENVENOM = 23;
+    private final static int DESC_INDEX_EVISCERATE = 24;
 
     public RelicSkeletonKey() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
@@ -102,6 +115,87 @@ public class RelicSkeletonKey extends RelicSolitaireBase {
                 break;
             case Catalyst.ID:
                 card.rawDescription = DESCRIPTIONS[DESC_INDEX_CATALYST];
+                break;
+            case Choke.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_CHOKE];
+                break;
+            case CloakAndDagger.ID:
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                break;
+            case Concentrate.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_CONCENTRATE];
+                break;
+            case CorpseExplosion.ID:
+                changeBaseCost(card, 1);
+                break;
+            case CripplingPoison.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_CRIPPLING_CLOUD];
+                break;
+            case DaggerSpray.ID:
+                card.baseMagicNumber = 3;
+                card.magicNumber = 3;
+                card.upgradedMagicNumber = true;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_DAGGER_SPRAY];
+                break;
+            case DaggerThrow.ID:
+                card.baseMagicNumber = 2;
+                card.magicNumber = 2;
+                card.upgradedMagicNumber = true;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_DAGGER_THROW];
+                break;
+            case Dash.ID:
+                card.baseDamage += 3;
+                card.baseBlock += 3;
+                break;
+            case DeadlyPoison.ID:
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                break;
+            case Defend_Green.ID:
+                card.baseBlock += 4;
+                break;
+            case Deflect.ID:
+                card.baseBlock += 3;
+                break;
+            case DieDieDie.ID:
+                card.exhaust = false;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_DIE_DIE_DIE];
+                break;
+            case Distraction.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_DISTRACTION];
+                break;
+            case DodgeAndRoll.ID:
+                card.baseBlock += 2;
+                break;
+            case Doppelganger.ID:
+                card.selfRetain = true;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_DOPPELGANGER];
+                break;
+            case EndlessAgony.ID:
+                card.baseMagicNumber = 2;
+                card.magicNumber = 2;
+                card.upgradedMagicNumber = true;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_ENDLESS_AGONY];
+                break;
+            case Envenom.ID:
+                card.baseMagicNumber = 2;
+                card.magicNumber = 2;
+                card.upgradedMagicNumber = true;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_ENVENOM];
+                break;
+            case EscapePlan.ID:
+                card.baseBlock += 2;
+                break;
+            case Eviscerate.ID:
+                card.baseMagicNumber = 4;
+                card.magicNumber = 4;
+                card.upgradedMagicNumber = true;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_EVISCERATE];
+                break;
+            case Expertise.ID:
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
                 break;
             default:
                 ReliquaryLogger.error("RelicSkeletonKey tried to upgrade unknown card with ID: " + card.cardID);

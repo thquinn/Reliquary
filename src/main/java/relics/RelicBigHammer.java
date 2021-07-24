@@ -212,7 +212,6 @@ public class RelicBigHammer extends RelicSolitaireBase {
                 changeBaseCost(card, 1);
                 break;
             case InfernalBlade.ID:
-                card.exhaust = false;
                 card.rawDescription = DESCRIPTIONS[DESC_INDEX_INFERNAL_BLADE];
                 break;
             case Inflame.ID:

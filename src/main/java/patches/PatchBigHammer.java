@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.actions.unique.ArmamentsAction;
 import com.megacrit.cardcrawl.actions.unique.ExhumeAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.green.Distraction;
 import com.megacrit.cardcrawl.cards.red.*;
 import com.megacrit.cardcrawl.cards.status.Dazed;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -389,6 +390,24 @@ public class PatchBigHammer {
             for (int i = 1; i < __instance.magicNumber; i++) {
                 AbstractDungeon.actionManager.addToBottom(new PlayTopCardAction(AbstractDungeon.getCurrRoom().monsters.getRandomMonster(null, true, AbstractDungeon.cardRandomRng), true));
             }
+        }
+    }
+
+    @SpirePatch(
+            clz= InfernalBlade.class,
+            method="use"
+    )
+    public static class PatchBigHammerInfernalBlade {
+        public static SpireReturn Prefix(InfernalBlade __instance) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.ATTACK).makeCopy();
+                c.upgrade();
+                c.upgrade();
+                c.setCostForTurn(0);
+                AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c, true));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
         }
     }
 

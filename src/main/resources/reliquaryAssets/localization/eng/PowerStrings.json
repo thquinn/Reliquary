@@ -47,6 +47,14 @@
       " times on #ySkills."
     ]
   },
+  "reliquary:DoubleWindsor": {
+    "NAME": "Double Windsor",
+    "DESCRIPTIONS": [
+      "#yChoked triggers twice on #ySkills this turn.",
+      "#yChoked triggers #b",
+      " times on #ySkills this turn."
+    ]
+  },
   "reliquary:FocusDown": {
     "NAME": "Focus Down",
     "DESCRIPTIONS": [

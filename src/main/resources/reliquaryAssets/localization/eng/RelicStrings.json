@@ -135,6 +135,15 @@
       "Gain [E] at the start of your turn. The first card you draw each turn costs #b1 more this combat."
     ]
   },
+  "reliquary:Crucible": {
+    "NAME": "Crucible",
+    "FLAVOR": "As long as it can handle temps up to 451°F, it should do the job.",
+    "DESCRIPTIONS": [
+      "Whenever you remove an #yUpgraded card from your deck, #yUpgrade a random card in your deck.",
+      "Whenever you remove an #yUpgraded card from your deck, #yUpgrade #b",
+      " random cards in your deck."
+    ]
+  },
   "reliquary:Crutches": {
     "NAME": "Crutches",
     "FLAVOR": "You're not the one that's gonna need these.",

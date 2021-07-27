@@ -10,8 +10,8 @@
     "NAME": "Data",
     "DESCRIPTION": [
       "#yPassive: When #yChanneled and at the start of turn, gain #b",
-      " #yFocus this turn. NL #yEvoke: Gain #b",
-      " #yFocus this turn. NL Data is unaffected by #yFocus."
+      " temporary #yFocus. NL #yEvoke: Gain #b",
+      " temporary #yFocus. NL Data is unaffected by #yFocus."
     ]
   }
 }

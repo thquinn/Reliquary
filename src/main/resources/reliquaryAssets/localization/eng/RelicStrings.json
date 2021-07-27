@@ -615,7 +615,15 @@
       "Retain. NL Next turn, draw X+2 cards and gain X+2 [G]. NL Exhaust.",
       "Deal !D! damage. NL Whenever you draw this card, add !M! copies of it into your hand. NL Exhaust.",
       "Whenever an Attack deals unblocked damage, apply !M! Poison.",
-      "Costs 1 less [G] NL for each card discarded this turn. NL Deal !D! damage !M! times."
+      "Costs 1 less [G] NL for each card discarded this turn. NL Deal !D! damage !M! times.",
+      "Deal !D! damage twice. Decrease the damage of this card by !M! this combat.",
+      "Can only be played if there are !M! or fewer cards in your draw pile. NL Deal !D! damage to ALL enemies.",
+      "My draw pile must NL have ",
+      " or fewer cards.",
+      "Deal !D! damage. NL If the enemy has Weak or Poison, NL gain [G] and NL draw 1 card.",
+      "Innate. NL At the start of your turn, add !M! *Shivs into your hand.",
+      "Enemy loses 2X Strength. Apply 2X Weak. NL Exhaust.",
+      "Choose a card. NL Next turn, add !M! Upgraded copies of that card into your hand. Exhaust."
     ],
     "NOTE_FOR_TRANSLATORS": [
       "These are second upgrades, so all but the first string are slight variants of Silent cards.",

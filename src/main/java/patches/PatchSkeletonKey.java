@@ -1,19 +1,13 @@
 package patches;
 
-import actions.BetterDiscardAction;
-import actions.MultiplyPoisonAction;
-import actions.SkeletonKeyAllOutAttackAction;
-import actions.SkeletonKeyObtainPotionAction;
+import actions.*;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
-import com.megacrit.cardcrawl.actions.unique.ApplyBulletTimeAction;
-import com.megacrit.cardcrawl.actions.unique.BaneAction;
-import com.megacrit.cardcrawl.actions.unique.DoppelgangerAction;
-import com.megacrit.cardcrawl.actions.unique.GamblingChipAction;
+import com.megacrit.cardcrawl.actions.unique.*;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -602,6 +596,111 @@ public class PatchSkeletonKey {
                     AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, __instance.damage, __instance.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
                 }
             }
+        }
+    }
+
+    @SpirePatch(
+            clz= GlassKnife.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyGlassKnife {
+        @SpireInsertPatch(
+                locator= PatchSkeletonKey.PatchSkeletonKeyGlassKnife.Locator.class
+        )
+        public static SpireReturn Insert(GlassKnife __instance) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new ModifyDamageAction(__instance.uuid, -__instance.magicNumber));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+        private static class Locator extends SpireInsertLocator {
+            public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {
+                Matcher matcher = new Matcher.NewExprMatcher(ModifyDamageAction.class);
+                return LineFinder.findInOrder(ctMethodToPatch, matcher);
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= GrandFinale.class,
+            method="canUse"
+    )
+    public static class PatchSkeletonKeyGrandFinale {
+        @SpireInsertPatch(
+                locator= PatchSkeletonKey.PatchSkeletonKeyGrandFinale.Locator.class
+        )
+        public static SpireReturn<Boolean> Insert(GrandFinale __instance, AbstractPlayer p) {
+            if (__instance.timesUpgraded != 2) {
+                return SpireReturn.Continue();
+            }
+            if (p.drawPile.size() > __instance.magicNumber) {
+                __instance.cantUseMessage = DESCRIPTIONS[RelicSkeletonKey.DESC_INDEX_GRAND_FINALE + 1] + __instance.magicNumber + DESCRIPTIONS[RelicSkeletonKey.DESC_INDEX_GRAND_FINALE + 2];
+                return SpireReturn.Return(false);
+            }
+            return SpireReturn.Return(true);
+        }
+        private static class Locator extends SpireInsertLocator {
+            public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {
+                Matcher matcher = new Matcher.FieldAccessMatcher(AbstractPlayer.class, "drawPile");
+                return LineFinder.findInOrder(ctMethodToPatch, matcher);
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= HeelHook.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyHeelHook {
+        public static SpireReturn Prefix(HeelHook __instance, AbstractPlayer p, AbstractMonster m) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new SkeletonKeyHeelHookAction(m, new DamageInfo(p, __instance.damage, __instance.damageTypeForTurn)));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+    }
+
+    @SpirePatch(
+            clz= InfiniteBlades.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyInfiniteBlades {
+        public static SpireReturn Prefix(InfiniteBlades __instance, AbstractPlayer p) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new InfiniteBladesPower(p, __instance.magicNumber), __instance.magicNumber));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+    }
+
+    @SpirePatch(
+            clz= Malaise.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyMalaise {
+        public static SpireReturn Prefix(Malaise __instance, AbstractPlayer p, AbstractMonster m) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new MalaiseAction(p, m, false, __instance.freeToPlayOnce, __instance.energyOnUse * 2));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+    }
+
+    @SpirePatch(
+            clz= Nightmare.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyNightmare {
+        public static SpireReturn Prefix(Nightmare __instance) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new SkeletonKeyNightmareAction(__instance.magicNumber));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
         }
     }
 }

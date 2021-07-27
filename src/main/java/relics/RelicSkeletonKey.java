@@ -38,6 +38,13 @@ public class RelicSkeletonKey extends RelicSolitaireBase {
     private final static int DESC_INDEX_ENDLESS_AGONY = 22;
     private final static int DESC_INDEX_ENVENOM = 23;
     private final static int DESC_INDEX_EVISCERATE = 24;
+    private final static int DESC_INDEX_GLASS_KNIFE = 25;
+    public final static int DESC_INDEX_GRAND_FINALE = 26;
+    // 27-28 are UI strings for Grand Finale++
+    public final static int DESC_INDEX_HEEL_HOOK = 29;
+    public final static int DESC_INDEX_INFINITE_BLADES = 30;
+    public final static int DESC_INDEX_MALAISE = 31;
+    public final static int DESC_INDEX_NIGHTMARE = 32;
 
     public RelicSkeletonKey() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
@@ -194,6 +201,61 @@ public class RelicSkeletonKey extends RelicSolitaireBase {
             case Expertise.ID:
                 card.baseMagicNumber += 1;
                 card.magicNumber += 1;
+                break;
+            case Finisher.ID:
+                changeBaseCost(card, 0);
+                break;
+            case Flechettes.ID:
+                changeBaseCost(card, 0);
+                break;
+            case FlyingKnee.ID:
+                card.baseDamage += 3;
+                break;
+            case Footwork.ID:
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                break;
+            case GlassKnife.ID:
+                card.baseMagicNumber = 1;
+                card.magicNumber = 1;
+                card.upgradedMagicNumber = true;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_GLASS_KNIFE];
+                break;
+            case GrandFinale.ID:
+                card.baseDamage += 10;
+                card.baseMagicNumber = 1;
+                card.magicNumber = 1;
+                card.upgradedMagicNumber = true;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_GRAND_FINALE];
+                break;
+            case HeelHook.ID:
+                card.baseDamage += 3;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_HEEL_HOOK];
+                break;
+            case InfiniteBlades.ID:
+                card.baseMagicNumber = 1;
+                card.magicNumber = 1;
+                card.upgradedMagicNumber = true;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_INFINITE_BLADES];
+                break;
+            case LegSweep.ID:
+                card.baseBlock += 3;
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                break;
+            case Malaise.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_MALAISE];
+                break;
+            case MasterfulStab.ID:
+                card.baseDamage += 4;
+                break;
+            case Neutralize.ID:
+                card.baseDamage += 1;
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                break;
+            case Nightmare.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_NIGHTMARE];
                 break;
             default:
                 ReliquaryLogger.error("RelicSkeletonKey tried to upgrade unknown card with ID: " + card.cardID);

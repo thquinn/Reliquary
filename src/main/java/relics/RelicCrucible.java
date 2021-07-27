@@ -6,6 +6,7 @@ import com.evacipated.cardcrawl.mod.stslib.relics.OnRemoveCardFromMasterDeckReli
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -16,9 +17,11 @@ import com.megacrit.cardcrawl.vfx.UpgradeShineEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardBrieflyEffect;
 import powers.TriumphPower;
 import util.TextureLoader;
+import vfx.DelayEffect;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 import java.util.stream.Collectors;
 
 public class RelicCrucible extends CustomRelic implements OnRemoveCardFromMasterDeckRelic {
@@ -28,6 +31,11 @@ public class RelicCrucible extends CustomRelic implements OnRemoveCardFromMaster
 
     public RelicCrucible() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.HEAVY);
+    }
+
+    @Override
+    public boolean canSpawn() {
+        return Settings.isEndless || AbstractDungeon.floorNum <= 48;
     }
 
     @Override
@@ -42,7 +50,7 @@ public class RelicCrucible extends CustomRelic implements OnRemoveCardFromMaster
         }
         flash();
         if (upgradeableCards.size() > 1) {
-            Collections.shuffle(upgradeableCards);
+            Collections.shuffle(upgradeableCards, new Random(AbstractDungeon.miscRng.randomLong()));
         }
         for (int i = 0; i < 2 && i < upgradeableCards.size(); i++) {
             AbstractCard card = upgradeableCards.get(i);
@@ -52,9 +60,15 @@ public class RelicCrucible extends CustomRelic implements OnRemoveCardFromMaster
             if (i == 1) {
                 xOffset *= -1;
             }
-            AbstractDungeon.topLevelEffects.add(new ShowCardBrieflyEffect(card.makeStatEquivalentCopy(), Settings.WIDTH / 2.0F + xOffset, Settings.HEIGHT / 2.0F));
+            AbstractDungeon.effectList.add(new DelayEffect(
+                    new ShowCardBrieflyEffect(card.makeStatEquivalentCopy(), Settings.WIDTH / 2.0F + xOffset, Settings.HEIGHT / 2.0F),
+                    2
+            ));
         }
-        AbstractDungeon.topLevelEffects.add(new UpgradeShineEffect(Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
+        AbstractDungeon.effectList.add(new DelayEffect(
+                new UpgradeShineEffect(Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F),
+                2
+        ));
     }
 
     @Override

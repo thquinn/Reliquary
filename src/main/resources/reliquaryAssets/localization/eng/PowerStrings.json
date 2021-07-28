@@ -86,6 +86,13 @@
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Hello power."
   },
+  "reliquary:Hooked": {
+    "NAME": "Hooked",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " less [E] next turn."
+    ]
+  },
   "reliquary:Hydrated": {
     "NAME": "Hydrated",
     "DESCRIPTIONS": [

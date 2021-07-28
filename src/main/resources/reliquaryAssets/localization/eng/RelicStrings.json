@@ -233,6 +233,15 @@
       "Overkill damage is dealt to a random enemy."
     ]
   },
+  "reliquary:FishingReel": {
+    "NAME": "Fishing Reel",
+    "FLAVOR": "There's always the next sucker.",
+    "DESCRIPTIONS": [
+      "Each turn, you can pay for #b",
+      " card with next turn's #yEnergy."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to stealing from your future self."
+  },
   "reliquary:GummyVitamins": {
     "NAME": "Gummy Vitamins",
     "FLAVOR": "Mmm, chewy!",

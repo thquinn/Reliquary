@@ -144,6 +144,16 @@
       " random cards in your deck."
     ]
   },
+  "reliquary:CrusadersMap": {
+    "NAME": "Crusader's Map",
+    "FLAVOR": "Search for the truth.",
+    "DESCRIPTIONS": [
+      "Points the way to a fabled #yfont #yof #yimmortality.",
+      "You have found the Holy Grail.",
+      "~Good~ ~luck...~"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This relic is a reference to Indiana Jones and the Last Crusade."
+  },
   "reliquary:Crutches": {
     "NAME": "Crutches",
     "FLAVOR": "You're not the one that's gonna need these.",
@@ -249,6 +259,14 @@
       "Once per turn, you may draw a card, then shuffle a #rSlimed into your draw pile.",
       "I've already used that this turn."
     ]
+  },
+  "reliquary:HolyGrail": {
+    "NAME": "The Holy Grail",
+    "FLAVOR": "You have chosen... wisely.",
+    "DESCRIPTIONS": [
+      "The first time you would die each combat, die next turn instead."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a quote from Indiana Jones and the Last Crusade."
   },
   "reliquary:HotPoker": {
     "NAME": "Hot Poker",

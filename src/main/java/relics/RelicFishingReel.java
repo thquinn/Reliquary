@@ -9,11 +9,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import com.megacrit.cardcrawl.stances.AbstractStance;
-import com.megacrit.cardcrawl.stances.DivinityStance;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import powers.HookedPower;
-import powers.TriumphPower;
 import util.TextureLoader;
 
 public class RelicFishingReel extends CustomRelic implements AlternateCardCostModifier {

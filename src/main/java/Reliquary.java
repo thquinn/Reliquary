@@ -47,6 +47,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         BaseMod.addRelic(new RelicConveyor(), RelicType.BLUE);
         BaseMod.addRelic(new RelicCraggleroot(), RelicType.SHARED);
         BaseMod.addRelic(new RelicCrucible(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicCrusadersMap(), RelicType.SHARED);
         BaseMod.addRelic(new RelicCrutches(), RelicType.SHARED);
         BaseMod.addRelic(new RelicDhvaja(), RelicType.PURPLE);
         BaseMod.addRelic(new RelicElizabethanCollar(), RelicType.SHARED);
@@ -58,6 +59,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         BaseMod.addRelic(new RelicFirecrackers(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFishingReel(), RelicType.SHARED);
         BaseMod.addRelic(new RelicGummyVitamins(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicHolyGrail(), RelicType.SHARED);
         BaseMod.addRelic(new RelicHotPoker(), RelicType.SHARED);
         BaseMod.addRelic(new RelicIceCubeTray(), RelicType.SHARED);
         BaseMod.addRelic(new RelicIridiumChain(), RelicType.SHARED);
@@ -125,6 +127,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         UnlockTracker.markRelicAsSeen(RelicConveyor.ID);
         UnlockTracker.markRelicAsSeen(RelicCraggleroot.ID);
         UnlockTracker.markRelicAsSeen(RelicCrucible.ID);
+        UnlockTracker.markRelicAsSeen(RelicCrusadersMap.ID);
         UnlockTracker.markRelicAsSeen(RelicCrutches.ID);
         UnlockTracker.markRelicAsSeen(RelicDhvaja.ID);
         UnlockTracker.markRelicAsSeen(RelicElizabethanCollar.ID);
@@ -136,6 +139,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         UnlockTracker.markRelicAsSeen(RelicFirecrackers.ID);
         UnlockTracker.markRelicAsSeen(RelicFishingReel.ID);
         UnlockTracker.markRelicAsSeen(RelicGummyVitamins.ID);
+        UnlockTracker.markRelicAsSeen(RelicHolyGrail.ID);
         UnlockTracker.markRelicAsSeen(RelicHotPoker.ID);
         UnlockTracker.markRelicAsSeen(RelicIceCubeTray.ID);
         UnlockTracker.markRelicAsSeen(RelicIridiumChain.ID);

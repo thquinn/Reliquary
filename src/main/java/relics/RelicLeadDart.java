@@ -16,7 +16,8 @@ public class RelicLeadDart extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/leadDart.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/leadDart.png");
 
-    static final int N = 3;
+    static final int NUM_CARDS = 10;
+    static final int STRENGTH_AMOUNT = 3;
     boolean triggeredThisCombat;
 
     public RelicLeadDart() {
@@ -36,9 +37,9 @@ public class RelicLeadDart extends CustomRelic {
             return;
         }
         AbstractPlayer p = AbstractDungeon.player;
-        if (p.hand.size() >= 10) {
+        if (p.hand.size() >= NUM_CARDS) {
             addToBot(new RelicAboveCreatureAction(p, this));
-            addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, N)));
+            addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, STRENGTH_AMOUNT)));
             triggeredThisCombat = true;
             grayscale = true;
         }
@@ -46,7 +47,7 @@ public class RelicLeadDart extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0] + N + DESCRIPTIONS[1];
+        return DESCRIPTIONS[0] + NUM_CARDS + DESCRIPTIONS[1] + STRENGTH_AMOUNT + DESCRIPTIONS[2];
     }
     @Override
     public AbstractRelic makeCopy()

@@ -103,7 +103,7 @@
   },
   "reliquary:Buckler": {
     "NAME": "Buckler",
-    "FLAVOR": "Emblazoned with the famous cygnet signet of Merek.",
+    "FLAVOR": "Emblazoned with the famed cygnet signet of Merek.",
     "DESCRIPTIONS": [
       "The next #b",
       " times you play an upgradeable card that's in your deck, #yUpgrade it permanently.",
@@ -149,7 +149,7 @@
     "FLAVOR": "Search for the truth.",
     "DESCRIPTIONS": [
       "Points the way to a fabled #yfont #yof #yimmortality.",
-      "You have found the Holy Grail.",
+      "You found the Holy Grail.",
       "~Good~ ~luck...~"
     ],
     "NOTE_FOR_TRANSLATORS": "This relic is a reference to Indiana Jones and the Last Crusade."
@@ -341,7 +341,8 @@
     "NAME": "Lead Dart",
     "FLAVOR": "Form over function? Function over form? \"How about neither?\" it seems to ask.",
     "DESCRIPTIONS": [
-      "The first time you have #b10 cards in hand each combat, gain #b",
+      "The first time each combat you have #b",
+      " cards in hand, gain #b",
       " #yStrength."
     ]
   },
@@ -756,7 +757,12 @@
       "Ah! I'll buy it at a high price!",
       "Gimme!",
       "I'd be a fool @not@ to buy it!",
-      "You drive a hard bargain..."
+      "You drive a hard bargain...",
+      "NOTE FOR TRANSLATORS: The following lines are when the merchant declines to buy a potion.",
+      "Sorry, not interested.",
+      "All set on those, thanks.",
+      "Nah.",
+      "Not in the market for those right now."
     ],
     "NOTE_FOR_TRANSLATORS": "A couple of these are voice lines from the merchant in Resident Evil 4."
   },
@@ -784,6 +790,13 @@
       "At the start of each combat, #yChannel #b1 #yData."
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the classic bad joke structure, 'Who's got two thumbs and <insert detail about self>? This guy.'"
+  },
+  "reliquary:TrainingWheel": {
+    "NAME": "Training Wheel",
+    "FLAVOR": "Its exterior is pristine, but it's so rusted on the inside that it can barely turn.",
+    "DESCRIPTIONS": [
+      "Whenever you draw a hand with no #yAttacks or no #ySkills, put a random card of that type from your draw pile into your hand."
+    ]
   },
   "reliquary:TridentHead": {
     "NAME": "Trident Head",

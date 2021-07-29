@@ -651,7 +651,19 @@
       "Deal !D! damage. NL If the enemy has Weak or Poison, NL gain [G] and NL draw 1 card.",
       "Innate. NL At the start of your turn, add !M! *Shivs into your hand.",
       "Enemy loses 2X Strength. Apply 2X Weak. NL Exhaust.",
-      "Choose a card. NL Next turn, add !M! Upgraded copies of that card into your hand. Exhaust."
+      "Choose a card. NL Next turn, add !M! Upgraded copies of that card into your hand. Exhaust.",
+      "Next turn, NL gain [G] [G] [G] [G].",
+      "For the next !M! turns, your Attacks deal double damage.",
+      "ALL enemies lose !M! Strength this turn.",
+      "Deal !D! damage. NL Next turn, draw !M! additional cards.",
+      "Deal !D! damage !M! times.",
+      "Put !M! cards from your hand on top of your draw pile. NL They cost 0 until played.",
+      "If X is 5 or more, increase it by 2. NL Deal !D! damage X times.",
+      "Discard your hand. NL Add 1 *Shiv++ into your hand for each card discarded.",
+      "Unplayable. NL If this card is discarded from your hand, gain [G] [G] [G].",
+      "Apply 99 Vulnerable. NL Apply Slow. NL Exhaust.",
+      "At the start of your turn, draw !M! cards and discard !M! cards.",
+      "Deal !D! damage. NL Draw !M! cards, then discard all non-Attack cards in your hand."
     ],
     "NOTE_FOR_TRANSLATORS": [
       "These are second upgrades, so all but the first string are slight variants of Silent cards.",

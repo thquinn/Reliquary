@@ -3,6 +3,7 @@ package relics;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.green.*;
+import com.megacrit.cardcrawl.cards.tempCards.Shiv;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.ReliquaryLogger;
 import util.TextureLoader;
@@ -45,6 +46,18 @@ public class RelicSkeletonKey extends RelicSolitaireBase {
     public final static int DESC_INDEX_INFINITE_BLADES = 30;
     public final static int DESC_INDEX_MALAISE = 31;
     public final static int DESC_INDEX_NIGHTMARE = 32;
+    public final static int DESC_INDEX_OUTMANEUVER = 33;
+    public final static int DESC_INDEX_PHANTASMAL_KILLER = 34;
+    public final static int DESC_INDEX_PIERCING_WAIL = 35;
+    public final static int DESC_INDEX_PREDATOR = 36;
+    public final static int DESC_INDEX_RIDDLE_WITH_HOLES = 37;
+    public final static int DESC_INDEX_SETUP = 38;
+    public final static int DESC_INDEX_SKEWER = 39;
+    public final static int DESC_INDEX_STORM_OF_STEEL = 40;
+    public final static int DESC_INDEX_TACTICIAN = 41;
+    public final static int DESC_INDEX_TERROR = 42;
+    public final static int DESC_INDEX_TOOLS_OF_THE_TRADE = 43;
+    public final static int DESC_INDEX_UNLOAD = 44;
 
     public RelicSkeletonKey() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
@@ -256,6 +269,111 @@ public class RelicSkeletonKey extends RelicSolitaireBase {
                 break;
             case Nightmare.ID:
                 card.rawDescription = DESCRIPTIONS[DESC_INDEX_NIGHTMARE];
+                break;
+            case NoxiousFumes.ID:
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                break;
+            case Outmaneuver.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_OUTMANEUVER];
+                break;
+            case PhantasmalKiller.ID:
+                card.baseMagicNumber = 2;
+                card.magicNumber = 2;
+                card.upgradedMagicNumber = true;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_PHANTASMAL_KILLER];
+                break;
+            case PiercingWail.ID:
+                card.exhaust = false;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_PIERCING_WAIL];
+                break;
+            case PoisonedStab.ID:
+                card.baseDamage += 2;
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                break;
+            case Predator.ID:
+                card.baseDamage += 5;
+                card.baseMagicNumber = 3;
+                card.magicNumber = 3;
+                card.upgradedMagicNumber = true;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_PREDATOR];
+                break;
+            case Prepared.ID:
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                break;
+            case QuickSlash.ID:
+                card.baseDamage += 4;
+                break;
+            case Reflex.ID:
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                break;
+            case RiddleWithHoles.ID:
+                card.baseMagicNumber = 6;
+                card.magicNumber = 6;
+                card.upgradedMagicNumber = true;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_RIDDLE_WITH_HOLES];
+                break;
+            case Setup.ID:
+                card.baseMagicNumber = 2;
+                card.magicNumber = 2;
+                card.upgradedMagicNumber = true;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_SETUP];
+                break;
+            case Shiv.ID:
+                card.baseDamage += 2;
+                break;
+            case Skewer.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_SKEWER];
+                break;
+            case Slice.ID:
+                card.baseDamage += 3;
+                break;
+            case SneakyStrike.ID:
+                card.baseDamage += 4;
+                break;
+            case StormOfSteel.ID:
+                card.cardsToPreview.upgrade();
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_STORM_OF_STEEL];
+                break;
+            case Strike_Green.ID:
+                card.baseDamage += 5;
+                break;
+            case SuckerPunch.ID:
+                card.baseDamage += 2;
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                break;
+            case Survivor.ID:
+                card.baseBlock += 3;
+                break;
+            case Tactician.ID:
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_TACTICIAN];
+                break;
+            case Terror.ID:
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_TERROR];
+                break;
+            case ToolsOfTheTrade.ID:
+                card.baseMagicNumber = 2;
+                card.magicNumber = 2;
+                card.upgradedMagicNumber = true;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_TOOLS_OF_THE_TRADE];
+                break;
+            case Unload.ID:
+                card.baseMagicNumber = 2;
+                card.magicNumber = 2;
+                card.rawDescription = DESCRIPTIONS[DESC_INDEX_UNLOAD];
+                break;
+            case WellLaidPlans.ID:
+                card.baseMagicNumber += 1;
+                card.magicNumber += 1;
+                break;
+            case WraithForm.ID:
+                changeBaseCost(card, 2);
                 break;
             default:
                 ReliquaryLogger.error("RelicSkeletonKey tried to upgrade unknown card with ID: " + card.cardID);

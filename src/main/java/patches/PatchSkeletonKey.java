@@ -24,6 +24,8 @@ import javassist.CtBehavior;
 import powers.*;
 import relics.RelicSkeletonKey;
 
+import javax.tools.Tool;
+
 public class PatchSkeletonKey {
     static String[] DESCRIPTIONS = CardCrawlGame.languagePack.getRelicStrings(RelicSkeletonKey.ID).DESCRIPTIONS;
 
@@ -103,6 +105,7 @@ public class PatchSkeletonKey {
     @SpirePatch(clz=Reflex.class, method="upgrade")
     @SpirePatch(clz=RiddleWithHoles.class, method="upgrade")
     @SpirePatch(clz=Setup.class, method="upgrade")
+    @SpirePatch(clz=Shiv.class, method="upgrade")
     @SpirePatch(clz=Skewer.class, method="upgrade")
     @SpirePatch(clz=Slice.class, method="upgrade")
     @SpirePatch(clz=SneakyStrike.class, method="upgrade")
@@ -701,6 +704,160 @@ public class PatchSkeletonKey {
                 return SpireReturn.Return(null);
             }
             return SpireReturn.Continue();
+        }
+    }
+
+    @SpirePatch(
+            clz= Outmaneuver.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyOutmaneuver {
+        public static SpireReturn Prefix(Outmaneuver __instance, AbstractPlayer p) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new EnergizedPower(p, 4), 4));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+    }
+
+    @SpirePatch(
+            clz= PhantasmalKiller.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyPhantasmalKiller {
+        public static SpireReturn Prefix(PhantasmalKiller __instance, AbstractPlayer p) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new PhantasmalPower(p, __instance.magicNumber), __instance.magicNumber));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+    }
+
+    @SpirePatch(
+            clz= Predator.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyPredator {
+        @SpireInsertPatch(
+                locator= PatchSkeletonKey.PatchSkeletonKeyPredator.Locator.class
+        )
+        public static SpireReturn Insert(Predator __instance, AbstractPlayer p) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, __instance.magicNumber), __instance.magicNumber));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+        private static class Locator extends SpireInsertLocator {
+            public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {
+                Matcher matcher = new Matcher.NewExprMatcher(DrawCardNextTurnPower.class);
+                return LineFinder.findInOrder(ctMethodToPatch, matcher);
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= RiddleWithHoles.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyRiddleWithHoles {
+        public static void Postfix(RiddleWithHoles __instance, AbstractPlayer p, AbstractMonster m) {
+            if (__instance.timesUpgraded == 2) {
+                for (int i = 0; i < __instance.magicNumber - 5; i++) {
+                    AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, __instance.damage, __instance.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+                }
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= Setup.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeySetup {
+        public static void Postfix(Setup __instance) {
+            if (__instance.timesUpgraded == 2) {
+                for (int i = 0; i < __instance.magicNumber - 1; i++) {
+                    AbstractDungeon.actionManager.addToBottom(new SetupAction());
+                }
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= Skewer.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyPhantasmalSkewer {
+        public static SpireReturn Prefix(Skewer __instance, AbstractPlayer p, AbstractMonster m) {
+            if (__instance.timesUpgraded == 2 && __instance.energyOnUse >= 5) {
+                AbstractDungeon.actionManager.addToBottom(new SkewerAction(p, m, __instance.damage, __instance.damageTypeForTurn, __instance.freeToPlayOnce, __instance.energyOnUse + 2));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+    }
+
+    @SpirePatch(
+            clz= StormOfSteel.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyStormOfSteel {
+        public static SpireReturn Prefix(StormOfSteel __instance) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new SkeletonKeyStormOfSteelAction());
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+    }
+
+    @SpirePatch(
+            clz= Terror.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyTerror {
+        public static void Postfix(Terror __instance, AbstractPlayer p, AbstractMonster m) {
+            if (__instance.timesUpgraded == 2 && !m.hasPower(SlowPower.POWER_ID)) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new SlowPower(m, 0), 0));
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz= ToolsOfTheTrade.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyToolsOfTheTrade {
+        public static SpireReturn Prefix(ToolsOfTheTrade __instance, AbstractPlayer p) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ToolsOfTheTradePower(p, __instance.magicNumber), __instance.magicNumber));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
+        }
+    }
+
+    @SpirePatch(
+            clz= Unload.class,
+            method="use"
+    )
+    public static class PatchSkeletonKeyUnload {
+        @SpireInsertPatch(
+                locator= PatchSkeletonKey.PatchSkeletonKeyUnload.Locator.class
+        )
+        public static void Insert(Unload __instance) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractDungeon.actionManager.addToBottom(new DrawCardAction(__instance.magicNumber));
+            }
+        }
+        private static class Locator extends SpireInsertLocator {
+            public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {
+                Matcher matcher = new Matcher.NewExprMatcher(UnloadAction.class);
+                return LineFinder.findInOrder(ctMethodToPatch, matcher);
+            }
         }
     }
 }

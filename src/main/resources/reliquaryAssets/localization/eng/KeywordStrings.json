@@ -53,6 +53,13 @@
   },
   {
     "NAMES": [
+      "slow"
+    ],
+    "DESCRIPTION": "Slow creatures take #b10% more damage from Attacks for each previous card played that turn.",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Slow debuff from the base game."
+  },
+  {
+    "NAMES": [
       "vapor"
     ],
     "DESCRIPTION": "Vapors are cards with minor effects derived from your potions. They Retain and Exhaust."

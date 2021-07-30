@@ -23,6 +23,8 @@ public class RelicCrucible extends CustomRelic implements OnRemoveCardFromMaster
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/crucible.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/crucible.png");
 
+    static final int N = 2;
+
     public RelicCrucible() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.HEAVY);
     }
@@ -46,7 +48,7 @@ public class RelicCrucible extends CustomRelic implements OnRemoveCardFromMaster
         if (upgradeableCards.size() > 1) {
             Collections.shuffle(upgradeableCards, new Random(AbstractDungeon.miscRng.randomLong()));
         }
-        for (int i = 0; i < 2 && i < upgradeableCards.size(); i++) {
+        for (int i = 0; i < N && i < upgradeableCards.size(); i++) {
             AbstractCard card = upgradeableCards.get(i);
             card.upgrade();
             p.bottledCardUpgradeCheck(upgradeableCards.get(0));
@@ -67,7 +69,7 @@ public class RelicCrucible extends CustomRelic implements OnRemoveCardFromMaster
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0];
+        return N == 1 ? DESCRIPTIONS[0] : DESCRIPTIONS[1] + N + DESCRIPTIONS[2];
     }
     @Override
     public AbstractRelic makeCopy()

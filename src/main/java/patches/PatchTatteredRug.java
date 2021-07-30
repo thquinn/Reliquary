@@ -1,6 +1,5 @@
 package patches;
 
-import basemod.devcommands.relic.Relic;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.modthespire.lib.*;
@@ -19,7 +18,6 @@ import com.megacrit.cardcrawl.ui.panels.PotionPopUp;
 import com.megacrit.cardcrawl.vfx.SpeechBubble;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
-import relics.RelicQuartzCube;
 import relics.RelicTatteredRug;
 import util.ReliquaryLogger;
 

@@ -1,4 +1,19 @@
 {
+  "reliquary:AfterGlow": {
+    "NAME": "After Glow",
+    "DESCRIPTIONS": [
+      "#yAfter #yImage triggers twice on #ySkills.",
+      "#yAfter #yImage triggers #b",
+      " times on #ySkills."
+    ]
+  },
+  "reliquary:AreaDenial": {
+    "NAME": "Area Denial",
+    "DESCRIPTIONS": [
+      "#yThorns deals damage to ALL enemies."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This power augments the behavior of the base game's Thorns power."
+  },
   "reliquary:BattleHymnPlus": {
     "NAME": "Battle Anthem",
     "DESCRIPTIONS": [
@@ -6,6 +21,15 @@
       " #ySmite+ into your hand."
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Battle Hymn power."
+  },
+  "reliquary:BlurPlus": {
+    "NAME": "Double Vision",
+    "DESCRIPTIONS": [
+      "#yBlock is doubled rather than removed at the start of your next turn.",
+      "#yBlock is doubled rather than removed at the start of your next #b",
+      " turns."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Blur power."
   },
   "reliquary:ChainReaction": {
     "NAME": "Chain Reaction",
@@ -15,6 +39,35 @@
     ],
     "NOTE_FOR_TRANSLATORS": "Combust is an existing power in the base game."
   },
+  "reliquary:CutAbove": {
+    "NAME": "A Cut Above",
+    "DESCRIPTIONS": [
+      "#yThousand #yCuts triggers twice on #ySkills.",
+      "#yThousand #yCuts triggers #b",
+      " times on #ySkills."
+    ]
+  },
+  "reliquary:DoubleWindsor": {
+    "NAME": "Double Windsor",
+    "DESCRIPTIONS": [
+      "#yChoked triggers twice on #ySkills this turn.",
+      "#yChoked triggers #b",
+      " times on #ySkills this turn."
+    ]
+  },
+  "reliquary:FocusDown": {
+    "NAME": "Focus Down",
+    "DESCRIPTIONS": [
+      "At the end of this turn, lose #b",
+      " #yFocus."
+    ]
+  },
+  "reliquary:HalfLightning": {
+    "NAME": "Ion",
+    "DESCRIPTIONS": [
+      "When you have #b2 #yIon, lose #b2 #yIon and #yChannel #b1 #yLightning."
+    ]
+  },
   "reliquary:HandSize": {
     "NAME": "Hand Size Up",
     "DESCRIPTIONS": [
@@ -22,6 +75,22 @@
       "Your maximum hand size is increased by #b",
       "Your maximum hand size is decreased by #b",
       "."
+    ]
+  },
+  "reliquary:HelloPlus": {
+    "NAME": "Fizzbuzz",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b",
+      " random Uncommon card into your hand.",
+      " random Uncommon cards into your hand."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Hello power."
+  },
+  "reliquary:Hooked": {
+    "NAME": "Hooked",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " less [E] next turn."
     ]
   },
   "reliquary:Hydrated": {
@@ -55,6 +124,34 @@
       " разыгранные карты, со стоимостью 0 или 1, в этом ходу, будут разыграны дважды."
     ]
   },
+  "reliquary:MrofOhce": {
+    "NAME": "Mrof Ohce",
+    "DESCRIPTIONS": [
+      "The last card you play each turn is played twice.",
+      "The last #b",
+      " cards you play each turn are played twice."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an alternate version of the base game's Echo Form power. 'Mrof Ohce' is Echo Form backwards."
+  },
+  "reliquary:QuantumAI": {
+    "NAME": "Quantum AI",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b1 of #b2 random #yPower cards into your hand.",
+      "At the start of your turn, add #b1 of #b2 random #yPower cards into your hand twice.",
+      "At the start of your turn, add #b1 of #b2 random #yPower cards into your hand #b",
+      " times."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Study power."
+  },
+  "reliquary:ReboundPlus": {
+    "NAME": "Resound",
+    "DESCRIPTIONS": [
+      "The next card you play this turn is placed into your hand.",
+      "The next #b",
+      " cards you play this turn are placed into your hand."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Rebound power."
+  },
   "reliquary:ReduceColorlessCost": {
     "NAME": "Бледность",
     "DESCRIPTIONS": [
@@ -62,6 +159,15 @@
       "Следующие #b",
       " разыгранные Бесцветные карты стоят на #b1 меньше."
     ]
+  },
+  "reliquary:StormPlus": {
+    "NAME": "Superstorm",
+    "DESCRIPTIONS": [
+      "Whenever you play a #yPower card, #yChannel #b",
+      " #yLightning for each [B] it cost (at least #b",
+      ")."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Storm power."
   },
   "reliquary:StudyPlus": {
     "NAME": "Обучение",
@@ -76,6 +182,13 @@
       "Остальные враги не могут стать целью ваших карт пока этот враг не умрёт.",
       "Другой враг #r@насмехается@ надо мной!"
     ]
+  },
+  "reliquary:ThermalPaste": {
+    "NAME": "Thermal Paste",
+    "DESCRIPTIONS": [
+      "#yHeatsink will draw #yPower cards when possible."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This power augments the behavior of the Defect's Heatsinks power."
   },
   "reliquary:Triumph": {
     "NAME": "Триумф",

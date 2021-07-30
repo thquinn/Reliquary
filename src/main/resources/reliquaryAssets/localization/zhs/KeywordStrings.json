@@ -13,9 +13,41 @@
   },
   {
     "NAMES": [
+      "bias"
+    ],
+    "DESCRIPTION": "Orb: Lose 1 Focus each turn."
+  },
+  {
+    "NAMES": [
+      "data"
+    ],
+    "DESCRIPTION": "Orb: Gains #yFocus."
+  },
+  {
+    "NAMES": [
       "黏液"
     ],
     "DESCRIPTION": "黏液是耗能为1的 #y状态牌 。"
+  },
+  {
+    "NAMES": [
+      "injury", "injuries"
+    ],
+    "DESCRIPTION": "Injuries are unplayable #rCurse cards.",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Injury Curse card from the base game."
+  },
+  {
+    "NAMES": [
+      "ion"
+    ],
+    "DESCRIPTION": "When you have #b2 #yIon, lose #b2 #yIon and #yChannel #b1 #yLightning."
+  },
+  {
+    "NAMES": [
+      "slow"
+    ],
+    "DESCRIPTION": "Slow creatures take #b10% more damage from Attacks for each previous card played that turn.",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Slow debuff from the base game."
   },
   {
     "NAMES": [

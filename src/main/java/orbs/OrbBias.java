@@ -12,6 +12,8 @@ import com.megacrit.cardcrawl.powers.FocusPower;
 
 public class OrbBias extends OrbDataBase {
     public static String ORB_ID = "reliquary:Bias";
+    public static String SFX_CHANNEL = "reliquary:SFX_CHANNEL_BIAS";
+    public static String SFX_EVOKE = "reliquary:SFX_EVOKE_BIAS";
     private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ORB_ID);
     public static final String NAME = orbStrings.NAME;
     public static final String[] DESCRIPTION = orbStrings.DESCRIPTION;
@@ -31,13 +33,17 @@ public class OrbBias extends OrbDataBase {
     }
 
     @Override
-    public void onEvoke() {
-        // TODO: Evoke animation.
-    }
+    public void onEvoke() { }
 
     @Override
     public void playChannelSFX() {
-        // TODO: SFX.
+        CardCrawlGame.sound.play(SFX_CHANNEL, 0.1F);
+    }
+
+    @Override
+    public void triggerEvokeAnimation() {
+        super.triggerEvokeAnimation(Color.SALMON);
+        CardCrawlGame.sound.play(SFX_EVOKE, 0.1F);
     }
 
     @Override

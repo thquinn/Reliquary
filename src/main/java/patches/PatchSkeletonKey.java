@@ -24,8 +24,6 @@ import javassist.CtBehavior;
 import powers.*;
 import relics.RelicSkeletonKey;
 
-import javax.tools.Tool;
-
 public class PatchSkeletonKey {
     static String[] DESCRIPTIONS = CardCrawlGame.languagePack.getRelicStrings(RelicSkeletonKey.ID).DESCRIPTIONS;
 

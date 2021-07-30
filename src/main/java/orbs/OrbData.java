@@ -13,6 +13,8 @@ import powers.LoseFocusPower;
 
 public class OrbData extends OrbDataBase {
     public static String ORB_ID = "reliquary:Data";
+    public static String SFX_CHANNEL = "reliquary:SFX_CHANNEL_DATA";
+    public static String SFX_EVOKE = "reliquary:SFX_EVOKE_DATA";
     private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ORB_ID);
     public static final String NAME = orbStrings.NAME;
     public static final String[] DESCRIPTION = orbStrings.DESCRIPTION;
@@ -52,12 +54,17 @@ public class OrbData extends OrbDataBase {
         AbstractPlayer p = AbstractDungeon.player;
         AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new LoseFocusPower(p, EVOKE_AMOUNT)));
         AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new FocusPower(p, EVOKE_AMOUNT)));
-        // TODO: Evoke animation.
     }
 
     @Override
     public void playChannelSFX() {
-        // TODO: SFX.
+        CardCrawlGame.sound.play(SFX_CHANNEL, 0.1F);
+    }
+
+    @Override
+    public void triggerEvokeAnimation() {
+        super.triggerEvokeAnimation(Color.LIME);
+        CardCrawlGame.sound.play(SFX_EVOKE, 0.1F);
     }
 
     @Override

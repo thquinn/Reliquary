@@ -43,7 +43,14 @@ public class DataOrbParticleEffect extends AbstractGameEffect {
         y += (cY - y) * t * Gdx.graphics.getDeltaTime();
         scale += .6f * Gdx.graphics.getDeltaTime();
         scale = Math.min(scale, .4f);
-        alpha = Math.min(1, alpha + 1.2f * Gdx.graphics.getDeltaTime());
+        if (!orb.active) {
+            alpha -= .1f;
+            if (alpha <= 0) {
+                isDone = true;
+            }
+        } else {
+            alpha = Math.min(1, alpha + 1.2f * Gdx.graphics.getDeltaTime());
+        }
         if (Math.abs(x - cX) < 3) {
             isDone = true;
         }

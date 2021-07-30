@@ -14,6 +14,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
+import orbs.OrbBias;
+import orbs.OrbData;
 import powers.*;
 import relics.*;
 import stances.AtonementStance;
@@ -263,6 +265,11 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
     public void receiveAddAudio() {
         BaseMod.addAudio(AtonementStance.SFX_ENTER_ID, "reliquaryAssets/audio/sound/atonement_enter.ogg");
         BaseMod.addAudio(AtonementStance.SFX_LOOP_ID, "reliquaryAssets/audio/sound/atonement_loop.ogg");
+        BaseMod.addAudio(OrbBias.SFX_CHANNEL, "reliquaryAssets/audio/sound/orb_bias_channel.ogg");
+        BaseMod.addAudio(OrbBias.SFX_EVOKE, "reliquaryAssets/audio/sound/orb_bias_evoke.ogg");
+        BaseMod.addAudio(OrbData.SFX_CHANNEL, "reliquaryAssets/audio/sound/orb_data_channel.ogg");
+        BaseMod.addAudio(OrbData.SFX_EVOKE, "reliquaryAssets/audio/sound/orb_data_evoke.ogg");
+
     }
 
     @Override

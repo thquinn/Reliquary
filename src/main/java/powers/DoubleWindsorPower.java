@@ -22,6 +22,7 @@ public class DoubleWindsorPower extends AbstractPower {
         region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.owner = owner;
         this.amount = amount;
+        type = PowerType.DEBUFF;
         updateDescription();
     }
 

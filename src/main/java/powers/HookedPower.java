@@ -21,6 +21,7 @@ public class HookedPower extends AbstractPower {
         region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         owner = AbstractDungeon.player;
         this.amount = amount;
+        type = PowerType.DEBUFF;
         updateDescription();
     }
 

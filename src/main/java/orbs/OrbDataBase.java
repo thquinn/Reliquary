@@ -15,6 +15,7 @@ import util.ReliquaryLogger;
 import util.TextureLoader;
 import vfx.DataOrbDigitEffect;
 import vfx.DataOrbParticleEffect;
+import vfx.DataOrbRingEffect;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -23,17 +24,21 @@ import java.util.Collections;
 public abstract class OrbDataBase extends AbstractOrb {
     public static float TAU = (float)Math.PI * 2;
     public static float DIGIT_RATE = .25f;
+    public static Color ALPHA_WHITE = new Color(1, 1, 1, .15f);
 
-    private Texture img2;
+    private Texture img2, img3;
     float angle1, angle2, particleAngle, digitCounter;
     ArrayList<Integer> digitOffsets;
+    public boolean active;
 
     public OrbDataBase() {
         img = TextureLoader.getTexture("reliquaryAssets/images/orbs/data1.png");
         img2 = TextureLoader.getTexture("reliquaryAssets/images/orbs/data2.png");
+        img3 = TextureLoader.getTexture("reliquaryAssets/images/orbs/data3.png");
         angle1 = MathUtils.random(0, 360f);
         angle2 = MathUtils.random(0, 360f);
         particleAngle = MathUtils.random(0, TAU);
+        active = true;
     }
 
     public void onStartOfTurn(Color c1, Color c2) {
@@ -80,19 +85,33 @@ public abstract class OrbDataBase extends AbstractOrb {
             digitCounter -= DIGIT_RATE;
         }
     }
-    public float getBob() {
-        return bobEffect.y;
+
+    public void triggerEvokeAnimation(Color color) {
+        active = false;
+        float angle = angle1 = MathUtils.random(0, 360f);
+        AbstractDungeon.effectsQueue.add(new DataOrbRingEffect(this, angle, color));
+        angle += MathUtils.random(60f, 120f);
+        AbstractDungeon.effectsQueue.add(new DataOrbRingEffect(this, angle, color));
     }
 
     public void render(SpriteBatch sb, Color c1, Color c2) {
+        sb.setBlendFunction(GL20.GL_SRC_ALPHA, GL20.GL_ONE);
+        sb.setColor(new Color(c2.r, c2.g, c2.b, .3f));
+        sb.draw(img3, cX - 48, cY - 48 + bobEffect.y, 48, 48, 96, 96, scale * 1.2f, scale * 1.2f, angle2, 0, 0, 96, 96, false, false);
         sb.setBlendFunction(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
-
+        sb.setColor(new Color(c1.r, c1.g, c1.b, 1));
+        sb.draw(img, cX - 48, cY - 48 + bobEffect.y, 48, 48, 96, 96, scale * .85f, scale * .85f, angle1, 0, 0, 96, 96, false, false);
         sb.setColor(c1);
         sb.draw(img, cX - 48, cY - 48 + bobEffect.y, 48, 48, 96, 96, scale, scale, angle1, 0, 0, 96, 96, false, false);
         sb.setBlendFunction(GL20.GL_SRC_ALPHA, GL20.GL_ONE);
         sb.setColor(c2);
         sb.draw(img2, cX - 48, cY - 48 + bobEffect.y, 48, 48, 96, 96, scale * .85f, scale * .85f, angle2, 0, 0, 96, 96,  false, false);
+        sb.setColor(ALPHA_WHITE);
+        sb.draw(img3, cX - 48, cY - 48 + bobEffect.y, 48, 48, 96, 96, scale * .5f, scale * .5f, angle1 + 180, 0, 0, 96, 96, false, false);
         sb.setBlendFunction(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
-        // TODO: Opacity to block particles behind, more visual interest.
+    }
+
+    public float getBob() {
+        return bobEffect.y;
     }
 }

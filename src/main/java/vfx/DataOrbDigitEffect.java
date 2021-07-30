@@ -6,7 +6,6 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import orbs.OrbDataBase;
 import util.TextureLoader;
@@ -19,7 +18,7 @@ public class DataOrbDigitEffect extends AbstractGameEffect {
     private static int SPAWNS = 6;
     private static float SPAWN_T = -FADE_TIME * RATE * .5f;
     private Texture img;
-    private AbstractOrb orb;
+    private OrbDataBase orb;
     private float lastX, lastY, shiftX, shiftY;
     private float x, y, t;
     private int srcX, srcY;
@@ -36,7 +35,7 @@ public class DataOrbDigitEffect extends AbstractGameEffect {
              flip ? - SPAWNS : SPAWNS,
              color);
     }
-    public DataOrbDigitEffect(AbstractOrb orb, float x, float y, float shiftX, float shiftY, int spawnsLeft, Color color) {
+    public DataOrbDigitEffect(OrbDataBase orb, float x, float y, float shiftX, float shiftY, int spawnsLeft, Color color) {
         img = TextureLoader.getTexture("reliquaryAssets/images/orbs/dataDigits.png");
         this.orb = orb;
         lastX = orb.cX;
@@ -74,7 +73,7 @@ public class DataOrbDigitEffect extends AbstractGameEffect {
             }
             spawned = true;
         }
-        if (t > 1 + FADE_TIME * RATE) {
+        if (!orb.active || t > 1 + FADE_TIME * RATE) {
             isDone = true;
         }
     }

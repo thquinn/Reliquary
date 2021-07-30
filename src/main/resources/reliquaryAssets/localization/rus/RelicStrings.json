@@ -8,11 +8,28 @@
       " выбранная карта будет на верху стопки добора."
     ]
   },
+  "reliquary:AluminiumFoil": {
+    "NAME": "Aluminium Foil",
+    "FLAVOR": "Maybe if you put this on all your cards, people would respect you.",
+    "DESCRIPTIONS": [
+      "Card rewards tend to be #yUpgraded and of a higher rarity."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to 'foil' or 'shiny' trading cards."
+  },
   "reliquary:BallBearing": {
     "NAME": "Подшипник",
     "FLAVOR": "Обеспечивает бесперебойную работу.",
     "DESCRIPTIONS": [
       "Добавляет в колоду #yОтблеск\u00a0стали или #yЛовкость\u00a0рук при каждой перетасовке."
+    ]
+  },
+  "reliquary:Bellows": {
+    "NAME": "Bellows",
+    "FLAVOR": "Boy, if this were bigger than an inch across, it could really come in handy.",
+    "DESCRIPTIONS": [
+      "Every #b",
+      " times you #yExhaust a card, shuffle a card from your exhaust pile into your draw pile.",
+      "Select a Card to Shuffle into Your Draw Pile"
     ]
   },
   "reliquary:BigHammer": {
@@ -37,7 +54,7 @@
       "Put a card from your exhaust pile into your hand and Upgrade it. NL Exhaust.",
       "Gain !M! Strength. NL At the end of %d turns, lose !M! Strength.",
       "Play the top !M! cards of your draw pile and Exhaust them.",
-      "Add a random Attack into your hand. NL It costs 0 this turn.",
+      "Add a random double Upgraded Attack into your hand. NL It costs 0 this turn. NL Exhaust.",
       "Triple your Strength.",
       "Lose 6 HP. NL Gain [R] [R] [R]. NL Draw !M! cards. NL Exhaust.",
       "Deal !D! damage. NL Add a *Dazed into your discard pile.",
@@ -117,6 +134,25 @@
       "Даёт [E] в начале вашего хода. Каждый ход, первая карта, которая берётся из стопки добора, повышает свою стоимость на #b1 до конца боя."
     ]
   },
+  "reliquary:Crucible": {
+    "NAME": "Crucible",
+    "FLAVOR": "As long as it can handle temps up to 451°F, it should do the job.",
+    "DESCRIPTIONS": [
+      "Whenever you remove an #yUpgraded card from your deck, #yUpgrade a random card in your deck.",
+      "Whenever you remove an #yUpgraded card from your deck, #yUpgrade #b",
+      " random cards in your deck."
+    ]
+  },
+  "reliquary:CrusadersMap": {
+    "NAME": "Crusader's Map",
+    "FLAVOR": "Search for the truth.",
+    "DESCRIPTIONS": [
+      "Points the way to a fabled #yfont #yof #yimmortality.",
+      "You found the Holy Grail.",
+      "~Good~ ~luck...~"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This relic is a reference to Indiana Jones and the Last Crusade."
+  },
   "reliquary:Crutches": {
     "NAME": "Костыли",
     "FLAVOR": "Это тебе не понадобится.",
@@ -130,6 +166,13 @@
     "FLAVOR": "Победа будет за вами... в конце концов.",
     "DESCRIPTIONS": [
       "Whenever you enter #yDivinity, #yDivinity's damage multiplier increases by #b1 this combat."
+    ]
+  },
+  "reliquary:ElizabethanCollar": {
+    "NAME": "Elizabethan Collar",
+    "FLAVOR": "If you'd just stop messing with it—!",
+    "DESCRIPTIONS": [
+      "Upon pickup, your #rCurses become #rInjuries. All #rCurses you obtain become #rInjuries."
     ]
   },
   "reliquary:Ember": {
@@ -188,6 +231,15 @@
       "Урон, от которого враг погибает, наносится так же и случайному врагу."
     ]
   },
+  "reliquary:FishingReel": {
+    "NAME": "Fishing Reel",
+    "FLAVOR": "There's always the next sucker.",
+    "DESCRIPTIONS": [
+      "Each turn, you can pay for #b",
+      " card with next turn's #yEnergy."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to stealing from your future self."
+  },
   "reliquary:GummyVitamins": {
     "NAME": "Жевательные витаминки",
     "FLAVOR": "Очень липкие",
@@ -196,11 +248,27 @@
       "Я уже использовал это в этом ходу."
     ]
   },
+  "reliquary:HolyGrail": {
+    "NAME": "The Holy Grail",
+    "FLAVOR": "You have chosen... wisely.",
+    "DESCRIPTIONS": [
+      "The first time you would die each combat, die next turn instead."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a quote from Indiana Jones and the Last Crusade."
+  },
   "reliquary:HotPoker": {
     "NAME": "Горячая кочерга",
     "FLAVOR": "Не хотел бы быть пойманным на конец этой штуки.",
     "DESCRIPTIONS": [
       "Каждый раз, когда вы берёте карту, наносит урон, равный стоимости этой карты, случайному врагу."
+    ]
+  },
+  "reliquary:IceCubeTray": {
+    "NAME": "Ice Cube Tray",
+    "FLAVOR": "Everyone who knew how to use this thing died a long time ago.",
+    "DESCRIPTIONS": [
+      "For every #b",
+      " cards you add to your deck, you may remove a card from your deck."
     ]
   },
   "reliquary:IridiumChain": {
@@ -240,12 +308,28 @@
       "Даёт [E] в начале вашего хода. Ваша стопка сброса перетасовывается в стопку добора, только если стопка добора пуста в конце хода."
     ]
   },
+  "reliquary:KnifeBlock": {
+    "NAME": "Knife Block",
+    "FLAVOR": "\"Who could ever need this many knives?\" asked the world's stupidest person.",
+    "DESCRIPTIONS": [
+      "Whenever you create #yShivs, create an additional one."
+    ]
+  },
   "reliquary:Knoch": {
     "NAME": "Грузило",
     "FLAVOR": "Продолжает опускать на дно вашего рюкзака.",
     "DESCRIPTIONS": [
       "Накладывает на врага #yСлабость, если у врага здоровье #b",
       "% или меньше."
+    ]
+  },
+  "reliquary:LeadDart": {
+    "NAME": "Lead Dart",
+    "FLAVOR": "Form over function? Function over form? \"How about neither?\" it seems to ask.",
+    "DESCRIPTIONS": [
+      "The first time each combat you have #b",
+      " cards in hand, gain #b",
+      " #yStrength."
     ]
   },
   "reliquary:LoveEmittingDiode": {
@@ -267,9 +351,8 @@
     "NAME": "Колыбель Ньютона",
     "FLAVOR": "Популярная настольная игрушка.",
     "DESCRIPTIONS": [
-      "Каждый раз, при выходе из #yБожественности, дает #b",
-      " #yМантры за каждый вход в #yБожественность в этом бою (макс. - ",
-      " )."
+      "Entering #yDivinity requires #b",
+      " less #yMantra."
     ]
   },
   "reliquary:NewFriend": {
@@ -291,6 +374,13 @@
       "Отменить"
     ]
   },
+  "reliquary:PaperSnowflake": {
+    "NAME": "Paper Snowflake",
+    "FLAVOR": "Is this what this is supposed to look like?",
+    "DESCRIPTIONS": [
+      "The newest card in your deck that costs #b1 or more costs #b1 less."
+    ]
+  },
   "reliquary:PartyBalloon": {
     "NAME": "Праздничный шар",
     "FLAVOR": "Держите его за веревку или больше никогда не увидите!",
@@ -304,6 +394,13 @@
     "DESCRIPTIONS": [
       "Каждый раз при получении #b",
       " или более незаблокированного урона, наносит столько же урона обратно."
+    ]
+  },
+  "reliquary:PrayerBox": {
+    "NAME": "Prayer Box",
+    "FLAVOR": "It's the perfect shape to hold your square prayers.",
+    "DESCRIPTIONS": [
+      "You keep your #yMantra between combats."
     ]
   },
   "reliquary:PrincelyHelmet": {
@@ -339,6 +436,53 @@
       " или более врагами, накладывает #b",
       " #yОглушения и #b",
       " #yНепобедимости на одного."
+    ]
+  },
+  "reliquary:RabbitEars": {
+    "NAME": "Rabbit Ears",
+    "FLAVOR": "\"You're listening to 98.7 FM: The Fever. Don't touch that dial!\"",
+    "DESCRIPTIONS": [
+      "You may upgrade #bBlue cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
+      "Gain [B] for every !M! cards in your draw and discard piles.",
+      "Deal !D! damage for each Channeled Orb, plus !M! if you have no empty slots.",
+      "Gain !M! Focus. NL Channel 1 Bias.",
+      "Innate. NL Retain. NL Gain !B! Block. NL Exhaust.",
+      "Gain !B! Block. NL Next turn, gain [B] and draw 1 card.",
+      "Innate. NL Channel !M! Frost for each enemy in combat plus 1. NL Exhaust.",
+      "Deal !D! damage. Channel !M! Frost. NL Trigger the passive ability of all Frost orbs.",
+      "At the start of your turn, add 1 of 2 random Power cards into your hand.",
+      "Channel !M! Dark. NL Trigger the passive ability of all Dark orbs.",
+      "Double your Energy.",
+      "Evoke your next Orb !M! times.",
+      "The first and last cards you play each turn are played twice.",
+      "Lightning now hits ALL enemies. NL Channel !M! Lightning. NL Apply 99 Lock-On to a random enemy.",
+      "Evoke all your Orbs. Gain [B] and draw !M! card for each Orb Evoked.",
+      "Shift all Plasma orbs all the way left. NL Channel !M! Plasma.",
+      "Deal !D! damage. NL If the enemy intends to attack, apply !M! Weak, otherwise gain [B].",
+      "Whenever you play a Power card, draw !M! cards (Power cards when possible).",
+      "Innate. NL At the start of your turn, add a random Uncommon card into your hand.",
+      "Gain !B! Block. NL Put a card from your discard pile into your hand and Retain it this turn.",
+      "Deal !D! damage. NL Apply !M! Lock-On. NL Apply 1 Lock-On to all other enemies.",
+      "Steal all Block from the enemy. NL Deal !D! damage.",
+      "Deal !D! damage. NL Channel !M! Plasma, then Channel Plasma until you have no empty Orb slots.",
+      "Evoke your next Orb 2X times.",
+      "Channel 1 Data. NL Channel 1 Lightning. NL Channel 1 Frost. NL Channel 1 Dark.",
+      "Deal !D! damage. NL Put the next card you play this turn into your hand.",
+      "Trigger your next Orb's passive ability, then Evoke it. NL Channel the Orb that was just Evoked.",
+      "Exhaust up to !M! cards. NL Gain [B] equal to their combined cost.",
+      "Gain Block equal to twice the number of cards in your discard pile.",
+      "Innate. NL Whenever you play a Power card, Channel 1 Lightning for each [B] it cost (at least 1).",
+      "Deal !D! damage. NL If this kills an enemy, gain [B] [B] [B] [B].",
+      "Deal !D! damage to ALL enemies. Deals 1 more damage for each [B] you have. NL Draw !M! card.",
+      "Channel X+2 Lightning. NL Exhaust.",
+      "Gain [B] [B] [B] [B]. NL Add a *Void into your discard pile.",
+      "Add a random double Upgraded Power card into your hand. NL It costs 0 this turn. NL Exhaust.",
+      "Channel !M! Lightning. NL Gain 1 Ion."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "These are second upgrades, so all but the first string are slight variants of Defect cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicRabbitEars.java",
+      "to see which string corresponds to which Defect card. Indices start at 0!"
     ]
   },
   "reliquary:RadioactivePellet": {
@@ -444,6 +588,62 @@
       "Если в конце хода остается в руке одна карта, то она не сбрасывается, а #yОставляется."
     ]
   },
+  "reliquary:SkeletonKey": {
+    "NAME": "Skeleton Key",
+    "FLAVOR": "What does it unlock? You.",
+    "DESCRIPTIONS": [
+      "You may upgrade #gGreen cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
+      "Whenever you play a card, deal !M! damage to ALL enemies. Triggers twice on Skills.",
+      "*Shivs deal !M! additional damage. NL Add a *Shiv into your hand.",
+      "Gain [G] [G] [G]. NL Draw 2 cards. NL Exhaust.",
+      "Innate. NL Whenever you play a card, gain 1 Block. Triggers twice on Skills.",
+      "Obtain a random potion. NL Put its Vapor into your hand. NL Exhaust.",
+      "Deal !D! damage to ALL enemies. NL Discard 1 card at random. If you discard a Skill, deal !D! damage to ALL enemies.",
+      "Innate. NL Deal !D! damage. NL If it's not your 1st turn, deal !D! damage again. NL Exhaust.",
+      "Deal !D! damage. NL If the enemy has Poison, deal !D! damage twice more.",
+      "Gain !B! Block. NL Block doubles at the start of your next turn rather than being removed.",
+      "Reduce the cost of all cards in your hand to 0 this turn.",
+      "Discard any number of cards, then draw that many cards.",
+      "Whenever you are attacked, deal !M! damage back to ALL enemies.",
+      "Quadruple the enemy's Poison. NL Exhaust.",
+      "Deal !D! damage. NL Whenever you play a card this turn, the enemy loses !M! HP. Triggers twice on Skills.",
+      "Discard !M! cards. NL Gain [G] [G] [G].",
+      "Apply !M! Poison and 3 Weak to ALL enemies. NL Exhaust.",
+      "Deal !D! damage to ALL enemies !M! times.",
+      "Deal !D! damage. NL Draw !M! cards. NL Discard !M! cards.",
+      "Deal !D! damage to ALL enemies.",
+      "Add a random double Upgraded Skill into your hand. NL It costs 0 this turn. NL Exhaust.",
+      "Retain. NL Next turn, draw X+2 cards and gain X+2 [G]. NL Exhaust.",
+      "Deal !D! damage. NL Whenever you draw this card, add !M! copies of it into your hand. NL Exhaust.",
+      "Whenever an Attack deals unblocked damage, apply !M! Poison.",
+      "Costs 1 less [G] NL for each card discarded this turn. NL Deal !D! damage !M! times.",
+      "Deal !D! damage twice. Decrease the damage of this card by !M! this combat.",
+      "Can only be played if there are !M! or fewer cards in your draw pile. NL Deal !D! damage to ALL enemies.",
+      "My draw pile must NL have ",
+      " or fewer cards.",
+      "Deal !D! damage. NL If the enemy has Weak or Poison, NL gain [G] and NL draw 1 card.",
+      "Innate. NL At the start of your turn, add !M! *Shivs into your hand.",
+      "Enemy loses 2X Strength. Apply 2X Weak. NL Exhaust.",
+      "Choose a card. NL Next turn, add !M! Upgraded copies of that card into your hand. Exhaust.",
+      "Next turn, NL gain [G] [G] [G] [G].",
+      "For the next !M! turns, your Attacks deal double damage.",
+      "ALL enemies lose !M! Strength this turn.",
+      "Deal !D! damage. NL Next turn, draw !M! additional cards.",
+      "Deal !D! damage !M! times.",
+      "Put !M! cards from your hand on top of your draw pile. NL They cost 0 until played.",
+      "If X is 5 or more, increase it by 2. NL Deal !D! damage X times.",
+      "Discard your hand. NL Add 1 *Shiv++ into your hand for each card discarded.",
+      "Unplayable. NL If this card is discarded from your hand, gain [G] [G] [G].",
+      "Apply 99 Vulnerable. NL Apply Slow. NL Exhaust.",
+      "At the start of your turn, draw !M! cards and discard !M! cards.",
+      "Deal !D! damage. NL Draw !M! cards, then discard all non-Attack cards in your hand."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "These are second upgrades, so all but the first string are slight variants of Silent cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicSkeletonKey.java",
+      "to see which string corresponds to which Silent card. Indices start at 0!"
+    ]
+  },
   "reliquary:Sod": {
     "NAME": "Кусочек земли",
     "FLAVOR": "Вопреки ожиданиям, трава не становится зеленее, если её перевернуть.",
@@ -492,12 +692,29 @@
       " #yЗащиты, когда вы разыгрываете карту, которая отличается от предыдущей."
     ]
   },
+  "reliquary:SpireOfHannoy": {
+    "NAME": "Spire of Hannoy",
+    "FLAVOR": "This puzzle's namesake Spire must have been even deadlier and more perplexing than this one.",
+    "DESCRIPTIONS": [
+      "#yWeak and #yVulnerable are #b",
+      "% more effective against enemies for every stack past the 1st (max ",
+      "%)."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a Tower of Hanoi puzzle."
+  },
   "reliquary:Stiletto": {
     "NAME": "Стилет",
     "FLAVOR": "Отлично вонзается через звенья практически любой брони.",
     "DESCRIPTIONS": [
       "Враги получают на #b",
       "% меньше #yЗащиты."
+    ]
+  },
+  "reliquary:Stimpack": {
+    "NAME": "Stimpack",
+    "FLAVOR": "The dogtags bear the initials \"T.O.P.\"",
+    "DESCRIPTIONS": [
+      "The first time your HP drops to #b50% or below each combat, your #yAttacks deal double damage for #b1 turn."
     ]
   },
   "reliquary:Tamtam": {
@@ -520,7 +737,12 @@
       "Куплю за дорого!",
       "Отдай мне!",
       "Я был бы глупцом, если @не@ купил это!",
-      "У тебя жёсткие условия сделок..."
+      "У тебя жёсткие условия сделок...",
+      "NOTE FOR TRANSLATORS: The following lines are when the merchant declines to buy a potion.",
+      "Sorry, not interested.",
+      "All set on those, thanks.",
+      "Nah.",
+      "Not in the market for those right now."
     ]
   },
   "reliquary:ThinkingCap": {
@@ -539,6 +761,21 @@
       " #yPower in your draw pile that gives you [E] every turn."
     ],
     "NOTE_FOR_TRANSLATORS": "This is the arm from a wooden figure-drawing manikin."
+  },
+  "reliquary:ThumbDrive": {
+    "NAME": "Thumb Drive",
+    "FLAVOR": "Who's got three thumbs and a backup copy of the ancient Internet? This AI.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, #yChannel #b1 #yData."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the classic bad joke structure, 'Who's got two thumbs and <insert detail about self>? This guy.'"
+  },
+  "reliquary:TrainingWheel": {
+    "NAME": "Training Wheel",
+    "FLAVOR": "Its exterior is pristine, but it's so rusted on the inside that it can barely turn.",
+    "DESCRIPTIONS": [
+      "Whenever you draw a hand with no #yAttacks or no #ySkills, put a random card of that type from your draw pile into your hand."
+    ]
   },
   "reliquary:TridentHead": {
     "NAME": "Голова трезубца",

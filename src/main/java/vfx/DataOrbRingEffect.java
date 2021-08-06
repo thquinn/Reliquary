@@ -21,7 +21,7 @@ public class DataOrbRingEffect extends AbstractGameEffect {
         yScale = .2f;
         alpha = 1;
         this.angle = angle;
-        this.color = color;
+        this.color = color.cpy();
     }
 
     public void update() {

@@ -27,7 +27,7 @@ public class DataOrbParticleEffect extends AbstractGameEffect {
         scale = .1f;
         alpha = 0;
         this.angle = (float)Math.toDegrees(angle);
-        this.color = color;
+        this.color = color.cpy();
         renderBehind = true;
     }
 

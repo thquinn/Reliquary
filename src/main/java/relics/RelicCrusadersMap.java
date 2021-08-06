@@ -3,6 +3,7 @@ package relics;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.MathUtils;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
@@ -21,6 +22,11 @@ public class RelicCrusadersMap extends CustomRelic {
 
     public RelicCrusadersMap() {
         super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.FLAT);
+    }
+
+    @Override
+    public boolean canSpawn() {
+        return !Settings.isEndless && AbstractDungeon.floorNum > 24 && AbstractDungeon.floorNum <= 48;
     }
 
     @Override

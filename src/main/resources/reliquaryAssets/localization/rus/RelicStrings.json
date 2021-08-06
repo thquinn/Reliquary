@@ -451,7 +451,7 @@
       "Innate. NL Channel !M! Frost for each enemy in combat plus 1. NL Exhaust.",
       "Deal !D! damage. Channel !M! Frost. NL Trigger the passive ability of all Frost orbs.",
       "At the start of your turn, add 1 of 2 random Power cards into your hand.",
-      "Channel !M! Dark. NL Trigger the passive ability of all Dark orbs.",
+      "Channel !M! Dark. NL Trigger the passive ability of all Dark orbs twice.",
       "Double your Energy.",
       "Evoke your next Orb !M! times.",
       "The first and last cards you play each turn are played twice.",
@@ -482,7 +482,8 @@
     "NOTE_FOR_TRANSLATORS": [
       "These are second upgrades, so all but the first string are slight variants of Defect cards.",
       "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicRabbitEars.java",
-      "to see which string corresponds to which Defect card. Indices start at 0!"
+      "to see which string corresponds to which Defect card. Indices start at 0!",
+      "For the flavor text, the joke is: 98.7 is both a frequency for a radio station, and 0.1 greater than 98.6 Fahrenheit (body temperature). 98.7 Fahrenheit would be a slight fever."
     ]
   },
   "reliquary:RadioactivePellet": {

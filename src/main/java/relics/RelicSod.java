@@ -31,17 +31,22 @@ public class RelicSod extends CustomRelic {
         if (c.upgraded) {
             return;
         }
-        flash();
         counter++;
         if (counter == NTH - 1) {
             beginPulse();
         } else if (counter >= NTH) {
+            if (c.type == AbstractCard.CardType.CURSE || c.type == AbstractCard.CardType.STATUS) {
+                counter--;
+                return;
+            }
             AbstractCard copy = c.makeStatEquivalentCopy();
             copy.upgrade();
             addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             addToBot(new MakeTempCardInHandAction(copy));
             counter -= NTH;
             stopPulse();
+        } else {
+            flash();
         }
     }
 

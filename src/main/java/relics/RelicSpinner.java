@@ -82,6 +82,7 @@ public class RelicSpinner extends CustomRelic {
                 s = "???";
                 color = Color.WHITE;
         }
+        color.a = 1; // sometimes the base game screws up these colors (?!)
         FontHelper.renderFontRightTopAligned(sb,
                                              FontHelper.topPanelInfoFont,
                                              s, hb.cX - ((hb.x - hb.cX)/2) + 30f * Settings.scale,

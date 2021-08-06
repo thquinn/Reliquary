@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.monsters.beyond.*;
 import com.megacrit.cardcrawl.monsters.city.*;
+import com.megacrit.cardcrawl.monsters.ending.CorruptHeart;
 import com.megacrit.cardcrawl.monsters.ending.SpireShield;
 import com.megacrit.cardcrawl.monsters.ending.SpireSpear;
 import com.megacrit.cardcrawl.monsters.exordium.*;
@@ -49,13 +50,16 @@ public class RelicRunicRemote extends CustomRelic {
     @Override
     public boolean canSpawn() {
         // Only spawn in the first two acts, and not in custom acts since we don't have cards for the monsters there.
-        return Settings.isEndless || AbstractDungeon.id.equals(Exordium.ID) || AbstractDungeon.id.equals(TheCity.ID);
+        return AbstractDungeon.id.equals(Exordium.ID) || AbstractDungeon.id.equals(TheCity.ID);
     }
 
     @Override
     public void atBattleStart() {
         perfect = true;
         dropIDs.clear();
+        if (AbstractDungeon.getMonsters().monsters.stream().anyMatch(m -> m.id.equals(CorruptHeart.ID))) {
+            return;
+        }
         Optional<AbstractMonster> slimeBoss = AbstractDungeon.getMonsters().monsters.stream().filter(m -> m.id.equals(SlimeBoss.ID)).findAny();
         if (slimeBoss.isPresent()) {
             onMonsterDeath(slimeBoss.get());
@@ -203,7 +207,7 @@ public class RelicRunicRemote extends CustomRelic {
             { Darkling.ID, new String[]{ Reaper.ID } },
             { Deca.ID, new String[]{ CardVim.ID } },
             { Donu.ID, new String[]{ Wish.ID + '+' } },
-            { Exploder.ID, new String[]{ Hemokinesis.ID } },
+            { Exploder.ID, new String[]{ CorpseExplosion.ID } },
             { GiantHead.ID, new String[]{ BulletTime.ID } },
             { Maw.ID, new String[]{ Amplify.ID } },
             { Nemesis.ID, new String[]{ WraithForm.ID } },

@@ -33,6 +33,11 @@ public class RelicFishingReel extends CustomRelic implements AlternateCardCostMo
     }
 
     @Override
+    public boolean canSplitCost(AbstractCard card) {
+        return true;
+    }
+
+    @Override
     public int spendAlternateCost(AbstractCard abstractCard, int i) {
         if (i > 0) {
             AbstractPlayer p = AbstractDungeon.player;

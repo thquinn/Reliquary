@@ -246,8 +246,8 @@ public class RelicSkeletonKey extends RelicSolitaireBase {
                 card.rawDescription = DESCRIPTIONS[DESC_INDEX_HEEL_HOOK];
                 break;
             case InfiniteBlades.ID:
-                card.baseMagicNumber = 1;
-                card.magicNumber = 1;
+                card.baseMagicNumber = 2;
+                card.magicNumber = 2;
                 card.upgradedMagicNumber = true;
                 card.rawDescription = DESCRIPTIONS[DESC_INDEX_INFINITE_BLADES];
                 break;

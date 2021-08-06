@@ -48,7 +48,7 @@ public class DataOrbDigitEffect extends AbstractGameEffect {
         srcX = MathUtils.random.nextInt(2) * 64;
         srcY = 0;
         this.spawnsLeft = spawnsLeft;
-        this.color = color;
+        this.color = color.cpy();
     }
 
     public void update() {

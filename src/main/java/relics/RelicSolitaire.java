@@ -11,8 +11,6 @@ import patches.PatchSolitaire;
 import util.ReliquaryLogger;
 import util.TextureLoader;
 
-import java.lang.reflect.Method;
-
 public class RelicSolitaire extends RelicSolitaireBase {
     public static final String ID = "reliquary:Solitaire";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/solitaire.png");
@@ -47,16 +45,9 @@ public class RelicSolitaire extends RelicSolitaireBase {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
     }
 
+    @Override
     @SuppressWarnings("DuplicateBranchesInSwitch")
     public void upgradeCard(AbstractCard card) {
-        flash();
-        try {
-            Method upgradeName = AbstractCard.class.getDeclaredMethod("upgradeName");
-            upgradeName.setAccessible(true);
-            upgradeName.invoke(card);
-        } catch (Exception e) {
-            ReliquaryLogger.error("RelicSolitaire failed to call upgradeName().");
-        }
         switch (card.cardID) {
             case Alpha.ID:
                 card.cardsToPreview.upgrade();
@@ -384,8 +375,9 @@ public class RelicSolitaire extends RelicSolitaireBase {
                 break;
             default:
                 ReliquaryLogger.error("RelicSolitaire tried to upgrade unknown card with ID: " + card.cardID);
+                return;
         }
-        card.initializeDescription();
+        super.upgradeCard(card);
     }
 
     @Override

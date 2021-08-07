@@ -1,7 +1,9 @@
 package patches;
 
 import actions.*;
+import basemod.helpers.CardModifierManager;
 import basemod.helpers.SuperclassFinder;
+import cardmods.CardModSolitairized;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -17,6 +19,7 @@ import com.megacrit.cardcrawl.cards.blue.*;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.Dark;
@@ -45,7 +48,9 @@ public class PatchRabbitEars {
     public static class PatchRabbitEarsCanUpgrade {
         public static SpireReturn<Boolean> Prefix(AbstractCard __instance) {
             boolean defectCard = __instance.color == AbstractCard.CardColor.BLUE;
-            if (defectCard && __instance.timesUpgraded < 2 && AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(RelicRabbitEars.ID)) {
+            boolean hasSolitaire = AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(RelicRabbitEars.ID);
+            boolean isSolitairized = CardModifierManager.hasModifier(__instance, CardModSolitairized.ID);
+            if (defectCard && __instance.timesUpgraded == 1 && (hasSolitaire || isSolitairized)) {
                 return SpireReturn.Return(true);
             }
             return SpireReturn.Continue();
@@ -129,15 +134,18 @@ public class PatchRabbitEars {
     @SpirePatch(clz= Zap.class, method="upgrade")
     public static class PatchRabbitEarsUpgrade {
         public static SpireReturn Prefix(AbstractCard __instance) {
-            if (AbstractDungeon.player == null) {
+            if (__instance.timesUpgraded != 1) {
                 return SpireReturn.Continue();
             }
-            RelicRabbitEars ears = (RelicRabbitEars) AbstractDungeon.player.getRelic(RelicRabbitEars.ID);
-            if (__instance.timesUpgraded == 1 && ears != null) {
-                ears.upgradeCard(__instance);
-                return SpireReturn.Return(null);
+            RelicRabbitEars rabbitEars = AbstractDungeon.player == null ? null : (RelicRabbitEars) AbstractDungeon.player.getRelic(RelicRabbitEars.ID);
+            if (rabbitEars == null && !CardModifierManager.hasModifier(__instance, CardModSolitairized.ID)) {
+                return SpireReturn.Continue();
             }
-            return SpireReturn.Continue();
+            if (rabbitEars == null) {
+                rabbitEars = (RelicRabbitEars) RelicLibrary.getRelic(RelicRabbitEars.ID).makeCopy();
+            }
+            rabbitEars.upgradeCard(__instance);
+            return SpireReturn.Return(null);
         }
     }
 

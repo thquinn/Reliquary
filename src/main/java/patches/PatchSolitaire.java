@@ -6,6 +6,7 @@ import actions.SolitaireForeignInfluenceAction;
 import actions.SolitaireLessonLearnedAction;
 import basemod.helpers.CardModifierManager;
 import cardmods.CardModIncreaseMagicToLimit;
+import cardmods.CardModSolitairized;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.modthespire.lib.*;
@@ -60,7 +61,9 @@ public class PatchSolitaire {
                                   __instance.cardID.equals(BecomeAlmighty.ID) ||
                                   __instance.cardID.equals(FameAndFortune.ID) ||
                                   __instance.cardID.equals(LiveForever.ID);
-            if (watcherCard && __instance.timesUpgraded < 2 && AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(RelicSolitaire.ID)) {
+            boolean hasSolitaire = AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(RelicSolitaire.ID);
+            boolean isSolitairized = CardModifierManager.hasModifier(__instance, CardModSolitairized.ID);
+            if (watcherCard && __instance.timesUpgraded == 1 && (hasSolitaire || isSolitairized)) {
                 return SpireReturn.Return(true);
             }
             return SpireReturn.Continue();
@@ -180,15 +183,18 @@ public class PatchSolitaire {
     @SpirePatch(clz=WreathOfFlame.class, method="upgrade")
     public static class PatchSolitaireUpgrade {
         public static SpireReturn Prefix(AbstractCard __instance) {
-            if (AbstractDungeon.player == null) {
+            if (__instance.timesUpgraded != 1) {
                 return SpireReturn.Continue();
             }
-            RelicSolitaire solitaire = (RelicSolitaire) AbstractDungeon.player.getRelic(RelicSolitaire.ID);
-            if (__instance.timesUpgraded == 1 && solitaire != null) {
-                solitaire.upgradeCard(__instance);
-                return SpireReturn.Return(null);
+            RelicSolitaire solitaire = AbstractDungeon.player == null ? null : (RelicSolitaire) AbstractDungeon.player.getRelic(RelicSolitaire.ID);
+            if (solitaire == null && !CardModifierManager.hasModifier(__instance, CardModSolitairized.ID)) {
+                return SpireReturn.Continue();
             }
-            return SpireReturn.Continue();
+            if (solitaire == null) {
+                solitaire = (RelicSolitaire) RelicLibrary.getRelic(RelicSolitaire.ID).makeCopy();
+            }
+            solitaire.upgradeCard(__instance);
+            return SpireReturn.Return(null);
         }
     }
 

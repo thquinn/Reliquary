@@ -1,6 +1,8 @@
 package patches;
 
 import actions.*;
+import basemod.helpers.CardModifierManager;
+import cardmods.CardModSolitairized;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -16,6 +18,7 @@ import com.megacrit.cardcrawl.cards.tempCards.Shiv;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.vfx.combat.DaggerSprayEffect;
@@ -34,7 +37,9 @@ public class PatchSkeletonKey {
     public static class PatchSkeletonKeyCanUpgrade {
         public static SpireReturn<Boolean> Prefix(AbstractCard __instance) {
             boolean silentCard = __instance.color == AbstractCard.CardColor.GREEN;
-            if (silentCard && __instance.timesUpgraded < 2 && AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(RelicSkeletonKey.ID)) {
+            boolean hasSolitaire = AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(RelicSkeletonKey.ID);
+            boolean isSolitairized = CardModifierManager.hasModifier(__instance, CardModSolitairized.ID);
+            if (silentCard && __instance.timesUpgraded == 2 && (hasSolitaire || isSolitairized)) {
                 return SpireReturn.Return(true);
             }
             return SpireReturn.Continue();
@@ -119,15 +124,18 @@ public class PatchSkeletonKey {
     @SpirePatch(clz=WraithForm.class, method="upgrade")
     public static class PatchSkeletonKeyUpgrade {
         public static SpireReturn Prefix(AbstractCard __instance) {
-            if (AbstractDungeon.player == null) {
+            if (__instance.timesUpgraded != 1) {
                 return SpireReturn.Continue();
             }
-            RelicSkeletonKey key = (RelicSkeletonKey) AbstractDungeon.player.getRelic(RelicSkeletonKey.ID);
-            if (__instance.timesUpgraded == 1 && key != null) {
-                key.upgradeCard(__instance);
-                return SpireReturn.Return(null);
+            RelicSkeletonKey skeletonKey = AbstractDungeon.player == null ? null : (RelicSkeletonKey) AbstractDungeon.player.getRelic(RelicSkeletonKey.ID);
+            if (skeletonKey == null && !CardModifierManager.hasModifier(__instance, CardModSolitairized.ID)) {
+                return SpireReturn.Continue();
             }
-            return SpireReturn.Continue();
+            if (skeletonKey == null) {
+                skeletonKey = (RelicSkeletonKey) RelicLibrary.getRelic(RelicSkeletonKey.ID).makeCopy();
+            }
+            skeletonKey.upgradeCard(__instance);
+            return SpireReturn.Return(null);
         }
     }
 

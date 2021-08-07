@@ -7,8 +7,6 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.ReliquaryLogger;
 import util.TextureLoader;
 
-import java.lang.reflect.Method;
-
 public class RelicRabbitEars extends RelicSolitaireBase {
     public static final String ID = "reliquary:RabbitEars";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/rabbitEars.png");
@@ -54,16 +52,9 @@ public class RelicRabbitEars extends RelicSolitaireBase {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.SOLID);
     }
 
+    @Override
     @SuppressWarnings("DuplicateBranchesInSwitch")
     public void upgradeCard(AbstractCard card) {
-        flash();
-        try {
-            Method upgradeName = AbstractCard.class.getDeclaredMethod("upgradeName");
-            upgradeName.setAccessible(true);
-            upgradeName.invoke(card);
-        } catch (Exception e) {
-            ReliquaryLogger.error("RelicRabbitEars failed to call upgradeName().");
-        }
         switch (card.cardID) {
             case Aggregate.ID:
                 card.rawDescription = DESCRIPTIONS[DESC_INDEX_AGGREGATE];
@@ -340,8 +331,9 @@ public class RelicRabbitEars extends RelicSolitaireBase {
                 break;
             default:
                 ReliquaryLogger.error("RelicRabbitEars tried to upgrade unknown card with ID: " + card.cardID);
+                return;
         }
-        card.initializeDescription();
+        super.upgradeCard(card);
     }
 
     @Override

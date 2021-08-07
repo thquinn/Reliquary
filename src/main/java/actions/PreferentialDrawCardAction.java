@@ -1,6 +1,5 @@
 package actions;
 
-import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
@@ -9,7 +8,10 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.NoDrawPower;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 
+import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 public class PreferentialDrawCardAction extends AbstractGameAction {
@@ -41,6 +43,22 @@ public class PreferentialDrawCardAction extends AbstractGameAction {
                 AbstractDungeon.actionManager.addToTop(new EmptyDeckShuffleAction());
             }
         }
-        AbstractDungeon.actionManager.addToTop(new MoveCardsAction(p.hand, p.drawPile, predicate, Math.min(matches, amount)));
+        AbstractDungeon.actionManager.addToTop(new BetterDrawPileToHandWithConsumerAction(Math.min(matches, amount), AbstractCard.CardType.POWER, GetConsumer()));
+    }
+
+    Consumer<List<AbstractCard>> GetConsumer() {
+        return list -> {
+            AbstractPlayer p = AbstractDungeon.player;
+            p.onCardDrawOrDiscard();
+            for (AbstractCard c : list) {
+                c.triggerWhenDrawn();
+                for (AbstractPower pow : p.powers) {
+                    pow.onCardDraw(c);
+                }
+                for (AbstractRelic r : p.relics) {
+                    r.onCardDraw(c);
+                }
+            }
+        };
     }
 }

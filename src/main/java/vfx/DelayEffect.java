@@ -14,10 +14,10 @@ public class DelayEffect extends AbstractGameEffect {
     }
 
     public void update() {
-        this.duration -= Gdx.graphics.getDeltaTime();
-        if (this.duration < 0.0F) {
+        duration -= Gdx.graphics.getDeltaTime();
+        if (duration < 0.0F) {
             AbstractDungeon.topLevelEffects.add(effect);
-            this.isDone = true;
+            isDone = true;
         }
     }
 

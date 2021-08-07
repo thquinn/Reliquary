@@ -18,6 +18,8 @@ public class RabbitEarsReboundPower extends AbstractPower {
     private static final Texture tex32 = TextureLoader.getTexture("reliquaryAssets/images/powers/reboundPlus32.png");
     private static final Texture tex84 = TextureLoader.getTexture("reliquaryAssets/images/powers/reboundPlus84.png");
 
+    private boolean justEvoked = true;
+
     public RabbitEarsReboundPower(AbstractCreature owner, int amount) {
         name = powerStrings.NAME;
         ID = POWER_ID;
@@ -31,7 +33,11 @@ public class RabbitEarsReboundPower extends AbstractPower {
     }
 
     @Override
-    public void onUseCard(AbstractCard card, UseCardAction action) {
+    public void onAfterUseCard(AbstractCard card, UseCardAction action) {
+        if (justEvoked) {
+            justEvoked = false;
+            return;
+        }
         if (card.type != AbstractCard.CardType.POWER) {
             flash();
             action.returnToHand = true;

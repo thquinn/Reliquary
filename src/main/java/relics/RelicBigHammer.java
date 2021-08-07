@@ -8,8 +8,6 @@ import patches.PatchBigHammer;
 import util.ReliquaryLogger;
 import util.TextureLoader;
 
-import java.lang.reflect.Method;
-
 public class RelicBigHammer extends RelicSolitaireBase {
     public static final String ID = "reliquary:BigHammer";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/bigHammer.png");
@@ -46,16 +44,9 @@ public class RelicBigHammer extends RelicSolitaireBase {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.HEAVY);
     }
 
+    @Override
     @SuppressWarnings("DuplicateBranchesInSwitch")
     public void upgradeCard(AbstractCard card) {
-        flash();
-        try {
-            Method upgradeName = AbstractCard.class.getDeclaredMethod("upgradeName");
-            upgradeName.setAccessible(true);
-            upgradeName.invoke(card);
-        } catch (Exception e) {
-            ReliquaryLogger.error("RelicBigHammer failed to call upgradeName().");
-        }
         switch (card.cardID) {
             case Anger.ID:
                 card.baseMagicNumber = 1;
@@ -336,8 +327,9 @@ public class RelicBigHammer extends RelicSolitaireBase {
                 break;
             default:
                 ReliquaryLogger.error("RelicBigHammer tried to upgrade unknown card with ID: " + card.cardID);
+                return;
         }
-        card.initializeDescription();
+        super.upgradeCard(card);
     }
 
     @Override

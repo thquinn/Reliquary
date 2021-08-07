@@ -1,6 +1,8 @@
 package relics;
 
 import basemod.abstracts.CustomRelic;
+import basemod.helpers.CardModifierManager;
+import cardmods.CardModSolitairized;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
@@ -9,6 +11,9 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.vfx.UpgradeShineEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardBrieflyEffect;
+import util.ReliquaryLogger;
+
+import java.lang.reflect.Method;
 
 public abstract class RelicSolitaireBase extends CustomRelic {
     private boolean cardsSelected = true;
@@ -41,6 +46,19 @@ public abstract class RelicSolitaireBase extends CustomRelic {
         }
         String upgradeText = CardCrawlGame.languagePack.getUIString("CampfireSmithEffect").TEXT[0];
         AbstractDungeon.gridSelectScreen.open(tmp, 1, upgradeText, true, false, false, false);
+    }
+
+    public void upgradeCard(AbstractCard card) {
+        flash();
+        try {
+            Method upgradeName = AbstractCard.class.getDeclaredMethod("upgradeName");
+            upgradeName.setAccessible(true);
+            upgradeName.invoke(card);
+        } catch (Exception e) {
+            ReliquaryLogger.error( relicId + " failed to call upgradeName().");
+        }
+        card.initializeDescription();
+        CardModifierManager.addModifier(card, new CardModSolitairized());
     }
 
     @Override

@@ -1,17 +1,17 @@
 {
   "reliquary:Bias": {
-    "NAME": "Bias",
+    "NAME": "バイアス",
     "DESCRIPTION": [
-      "#yPassive: At the start of turn, lose #b",
-      " #yFocus. NL #yEvoke: No effect. NL Bias is unaffected by #yFocus."
+      "#y自動効果: ターン開始時、 #y集中力 #b",
+      " を失う。 NL #y解放: 効果無し。 NL バイアスは #y集中力 の影響を受けない。"
     ]
   },
   "reliquary:Data": {
-    "NAME": "Data",
+    "NAME": "データ",
     "DESCRIPTION": [
-      "#yPassive: When #yChanneled and at the start of turn, gain #b",
-      " temporary #yFocus. NL #yEvoke: Gain #b",
-      " temporary #yFocus. NL Data is unaffected by #yFocus."
+      "#y自動効果: #y生成 時とターン開始時、一時的な #y集中力 を #b",
+      " 得る。 NL #y解放: 一時的な #y集中力 を #b",
+      " 得る。 NL データは #y集中力 の影響を受けない。"
     ]
   }
 }

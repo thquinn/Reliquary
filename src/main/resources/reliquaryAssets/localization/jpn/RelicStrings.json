@@ -3,40 +3,40 @@
     "NAME": "エアロゲル",
     "FLAVOR": "重さはほとんどなく、不運に対する優れた絶縁体になる。",
     "DESCRIPTIONS": [
-      "獲得時にカードを1枚選択する。このカードが入った山札をシャッフルするたび、それを山札の一番上に置く。",
+      "獲得時にカードを1枚選択する。このカードが入った山札をシャッフルするたび、それを山札の1番上に置く。",
       "選択した ",
-      " が入った山札をシャッフルするたび、それを山札の一番上に置く。"
+      " が入った山札をシャッフルするたび、それを山札の1番上に置く。"
     ]
   },
   "reliquary:AluminiumFoil": {
-    "NAME": "Aluminium Foil",
-    "FLAVOR": "Maybe if you put this on all your cards, people would respect you.",
+    "NAME": "アルミホイル",
+    "FLAVOR": "これですべてのカードをキラカードにすれば人気者になれる。",
     "DESCRIPTIONS": [
-      "Card rewards tend to be #yUpgraded and of a higher rarity."
+      "報酬のカードが #yアップグレード されやすくなり、レアカードが出やすくなる。"
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to 'foil' or 'shiny' trading cards."
   },
   "reliquary:BallBearing": {
     "NAME": "ボールベアリング",
-    "FLAVOR": "何かを円滑に回し続ける。",
+    "FLAVOR": "物事を円滑に回し続ける。",
     "DESCRIPTIONS": [
       "デッキをシャッフルするたび、 #y技巧 か #y剣の一閃 をランダムに #b1 枚山札に加える。"
     ]
   },
   "reliquary:Bellows": {
-    "NAME": "Bellows",
-    "FLAVOR": "Boy, if this were bigger than an inch across, it could really come in handy.",
+    "NAME": "ふいご",
+    "FLAVOR": "もしこれに1インチ以上の大きさがあれば役に立ったろうな少年よ。",
     "DESCRIPTIONS": [
-      "Every #b",
-      " times you #yExhaust a card, shuffle a card from your exhaust pile into your draw pile.",
-      "Select a Card to Shuffle into Your Draw Pile"
+      "カードを #b",
+      " 枚 #y廃棄 するたび、 #y廃棄 したカードから #b1 枚選んで山札に加える。",
+      "山札に加えるカードを1枚選択。"
     ]
   },
   "reliquary:BigHammer": {
     "NAME": "巨大なハンマー",
     "FLAVOR": "今まで見た中で最大のハンマー。",
     "DESCRIPTIONS": [
-      "#rレッド カードを2回 #yアップグレード できるようになる。獲得時、 #yアップグレード されたカードを #1 枚 #yアップグレード する。",
+      "#rレッド カードを2回 #yアップグレード できるようになる。獲得時、 #yアップグレード されたカードを #b1 枚 #yアップグレード する。",
       "!D! ダメージを与える。 NL このカードの複製を NL 捨て札に加える。 NL 捨て札にある怒りの枚数ｘ !M! の追加ダメージを与える。",
       "!B! ブロック を得る。 NL 戦闘終了まで手札のカードすべてを2回 アップグレード する。",
       "天賦 NL ターン開始時にブロック値を失わない。",
@@ -54,7 +54,7 @@
       "廃棄 したカードから1枚選んで手札に加え、それを アップグレード する。 廃棄",
       "筋力 !M! を得る。 %d ターン後に 筋力 !M! を失う。",
       "山札のカードを上から !M! 枚プレイする。 NL そのカードを 廃棄 する。",
-      "Add a random double Upgraded Attack into your hand. NL It costs 0 this turn. NL Exhaust.",
+      "ランダムな2回 アップグレード されたアタックを1枚手札に加える。 NL このターン、そのコストは0。 NL 廃棄",
       "筋力 を3倍にする。",
       "HPを6失う。 NL [R] [R] [R] を得る。 NL カードを !M! 枚引く。 NL 廃棄",
       "!D! ダメージを与える。 NL *めまい を1枚捨て札に加える。",
@@ -86,17 +86,17 @@
   },
   "reliquary:Boomerang": {
     "NAME": "ブーメラン",
-    "FLAVOR": "あなたが何かを愛しているのならそれを手放そう。それか捨てちまえ。",
+    "FLAVOR": "何かを愛しているのなら手放そう。それか捨てちまえ。",
     "DESCRIPTIONS": [
-      "毎ターン、最初にプレイしたカードを山札の一番上に置く。",
+      "毎ターン、最初にプレイしたカードを山札の1番上に置く。",
       "",
       "",
-      "毎ターン、 #b4 枚目にプレイしたカードを山札の一番上に置く。"
+      "毎ターン、 #b4 枚目にプレイしたカードを山札の1番上に置く。"
     ]
   },
   "reliquary:BrokenClock": {
     "NAME": "壊れた時計",
-    "FLAVOR": "どういうわけか1日に2回おかしくなるが、それ以外は正常だ。",
+    "FLAVOR": "何故か1日に2回おかしくなるが、それ以外は正常だ。",
     "DESCRIPTIONS": [
       "戦闘開始時、プレイヤーが2ターン、次に敵が2ターンの順で行動する。"
     ]
@@ -136,21 +136,21 @@
     ]
   },
   "reliquary:Crucible": {
-    "NAME": "Crucible",
-    "FLAVOR": "As long as it can handle temps up to 451°F, it should do the job.",
+    "NAME": "るつぼ",
+    "FLAVOR": "華氏451度まで処理できるなら、それで十分だろう。",
     "DESCRIPTIONS": [
-      "Whenever you remove an #yUpgraded card from your deck, #yUpgrade a random card in your deck.",
-      "Whenever you remove an #yUpgraded card from your deck, #yUpgrade #b",
-      " random cards in your deck."
+      "#yアップグレード されたカードを #b1 枚削除するたび、デッキのランダムなカードが #b1 枚アップグレードされる。",
+      "#yアップグレード されたカードを #b1 枚削除するたび、デッキのランダムなカードが #b",
+      " 枚 #yアップグレード される。"
     ]
   },
   "reliquary:CrusadersMap": {
-    "NAME": "Crusader's Map",
-    "FLAVOR": "Search for the truth.",
+    "NAME": "十字軍の地図",
+    "FLAVOR": "真実を探せ。",
     "DESCRIPTIONS": [
-      "Points the way to a fabled #yfont #yof #yimmortality.",
-      "You found the Holy Grail.",
-      "~Good~ ~luck...~"
+      "#y不老不死の聖杯 への道筋が示されている。",
+      "あなたは #y聖杯 を見つけた。",
+      "~頑張って…~"
     ],
     "NOTE_FOR_TRANSLATORS": "This relic is a reference to Indiana Jones and the Last Crusade."
   },
@@ -167,15 +167,15 @@
     "NAME": "ダーヴァジャ",
     "FLAVOR": "勝利はあなたのものになるだろう…最終的には。",
     "DESCRIPTIONS": [
-      "Whenever you enter #yDivinity, #yDivinity's damage multiplier increases by #b1 this combat."
+      "#y神聖 の #yスタンス に入るたび、 #y神聖 のダメージ倍率が #b1 増加する。"
     ],
     "NOTE_FOR_TRANSLATORS": "https://en.wikipedia.org/wiki/Dhvaja"
   },
   "reliquary:ElizabethanCollar": {
-    "NAME": "Elizabethan Collar",
-    "FLAVOR": "If you'd just stop messing with it—!",
+    "NAME": "エリザベスカラー",
+    "FLAVOR": "怪我を悪化させたくないならコレ！",
     "DESCRIPTIONS": [
-      "Upon pickup, your #rCurses become #rInjuries. All #rCurses you obtain become #rInjuries."
+      "獲得時、全ての #r呪い が #r怪我 になる。獲得する #r呪い が全て #r怪我 になる。"
     ]
   },
   "reliquary:Ember": {
@@ -189,7 +189,7 @@
   },
   "reliquary:ExpiredCoupon": {
     "NAME": "期限切れのクーポン",
-    "FLAVOR": "「尻叩き」が10％オフ！それで、これを書いた奴は誰だ？",
+    "FLAVOR": "「尻叩き」が10％オフ！これを書いた奴は誰だ？",
     "DESCRIPTIONS": [
       "戦闘中に与えたブロックされていないダメージが #b",
       " 以上に達したとき、敵全体に #b",
@@ -231,24 +231,24 @@
   },
   "reliquary:FingerTrap": {
     "NAME": "フィンガートラップ",
-    "FLAVOR": "多分少し冷静になれば、気持ちが楽になる。",
+    "FLAVOR": "少し冷静になれば、気持ちが楽になるだろう。",
     "DESCRIPTIONS": [
       "あなたのターン中、あなたはHPを失わなくなる。"
     ]
   },
   "reliquary:Firecrackers": {
     "NAME": "爆竹",
-    "FLAVOR": "かなりやかましい。子供はそこで静かにしてろ！",
+    "FLAVOR": "非常にやかましい。子供はそこで静かにしてろ！",
     "DESCRIPTIONS": [
       "敵を倒したとき、超過したダメージをランダムな敵に与える。"
     ]
   },
   "reliquary:FishingReel": {
-    "NAME": "Fishing Reel",
-    "FLAVOR": "There's always the next sucker.",
+    "NAME": "釣りのリール",
+    "FLAVOR": "次に狙えるカモはいつでもいる。",
     "DESCRIPTIONS": [
-      "Each turn, you can pay for #b",
-      " card with next turn's #yEnergy."
+      "毎ターン #b",
+      " 枚のカードを、次のターンの #yエナジー を支払うことでプレイできる。"
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to stealing from your future self."
   },
@@ -256,31 +256,31 @@
     "NAME": "ビタミングミ",
     "FLAVOR": "うーん、いい歯ごたえ！",
     "DESCRIPTIONS": [
-      "1ターンに一度、カードを1枚引き、山札に #r粘液 を加えることができる。",
+      "使用時、カードを1枚引き、山札に #r粘液 を加える。1ターンに1回使用できる。",
       "このターン既にこの能力を使用した。"
     ]
   },
   "reliquary:HolyGrail": {
-    "NAME": "The Holy Grail",
-    "FLAVOR": "You have chosen... wisely.",
+    "NAME": "聖杯",
+    "FLAVOR": "選び当てたのう。お見事じゃ…",
     "DESCRIPTIONS": [
-      "The first time you would die each combat, die next turn instead."
+      "各戦闘で初めて死亡するとき、代わりに次のターンに死ぬ。"
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a quote from Indiana Jones and the Last Crusade."
   },
   "reliquary:HotPoker": {
     "NAME": "焼けた火かき棒",
-    "FLAVOR": "これで捕まえられるのは嫌だ。",
+    "FLAVOR": "これを引っかけられるのは嫌だ。",
     "DESCRIPTIONS": [
       "ターン中にカードを引くたび、そのコストに等しいダメージをランダムな敵に与える。"
     ]
   },
   "reliquary:IceCubeTray": {
-    "NAME": "Ice Cube Tray",
-    "FLAVOR": "Everyone who knew how to use this thing died a long time ago.",
+    "NAME": "製氷皿",
+    "FLAVOR": "これの使い方を知っている人々は、全員ずっと昔に死んでいる。",
     "DESCRIPTIONS": [
-      "For every #b",
-      " cards you add to your deck, you may remove a card from your deck."
+      "デッキにカードを #b",
+      " 枚追加するたび、カードを #b1 枚デッキから削除する。"
     ]
   },
   "reliquary:IridiumChain": {
@@ -293,7 +293,7 @@
   },
   "reliquary:IvoryTrinket": {
     "NAME": "象牙の像",
-    "FLAVOR": "象牙から小さな象牙を削り出してある。しかし、何のために？",
+    "FLAVOR": "象牙から小さな象牙を削り出してある。しかし何のために？",
     "DESCRIPTIONS": [
       "#y奇跡 を #b",
       " 回 #y保留 すると、 #y奇跡 を #b1 枚手札に加える。"
@@ -301,7 +301,7 @@
   },
   "reliquary:JackalopeAntler": {
     "NAME": "ジャッカロープの角",
-    "FLAVOR": "角の持ち主がどのような生き物であれ、不揃いな角のまま走り続けるのだろう。",
+    "FLAVOR": "この角の持ち主がどのような生き物であれ、不揃いな角のまま走り続けるのだろう。",
     "DESCRIPTIONS": [
       "敵を倒すたび、最後にプレイしたカードのエナジーが返還される。"
     ]
@@ -318,14 +318,14 @@
     "NAME": "ねじれたバネ",
     "FLAVOR": "誰かがひねって元に戻らなくなった。",
     "DESCRIPTIONS": [
-      "ターン開始時に、 [E] を得る。山札が空でターンを終了した時にのみ、捨て札がシャッフルされるようになる。"
+      "ターン開始時に、 [E] を得る。山札が空でターンを終了したときのみ、捨て札がシャッフルされるようになる。"
     ]
   },
   "reliquary:KnifeBlock": {
-    "NAME": "Knife Block",
-    "FLAVOR": "\"Who could ever need this many knives?\" asked the world's stupidest person.",
+    "NAME": "ナイフブロック",
+    "FLAVOR": "「こんなにたくさんのナイフ誰が使うんだ？」世界で最も愚かな人物はそう尋ねた。",
     "DESCRIPTIONS": [
-      "Whenever you create #yShivs, create an additional one."
+      "ナイフが作られるたび、追加でナイフを #b1 枚作成する。"
     ]
   },
   "reliquary:Knoch": {
@@ -338,12 +338,12 @@
     "NOTE_FOR_TRANSLATORS": "A knoch is just a fishing sinker: https://en.wikipedia.org/wiki/Fishing_sinker"
   },
   "reliquary:LeadDart": {
-    "NAME": "Lead Dart",
-    "FLAVOR": "Form over function? Function over form? \"How about neither?\" it seems to ask.",
+    "NAME": "最先端のダーツ",
+    "FLAVOR": "機能的な形？美しい機能？「それ以外もある！」そう思わせる形だ。",
     "DESCRIPTIONS": [
-      "The first time each combat you have #b",
-      " cards in hand, gain #b",
-      " #yStrength."
+      "戦闘中、初めて手札が #b",
+      " 枚になったとき、 #y筋力 #b",
+      " を得る。"
     ]
   },
   "reliquary:LoveEmittingDiode": {
@@ -357,7 +357,7 @@
   },
   "reliquary:MedicineBall": {
     "NAME": "メディシンボール",
-    "FLAVOR": "これを投げ合える人がいれば…",
+    "FLAVOR": "これを投げ合える人が欲しい…",
     "DESCRIPTIONS": [
       "最も筋力の高い敵に等しい筋力を追加で得る。この値の最小値は0。"
     ]
@@ -366,8 +366,8 @@
     "NAME": "ミュートンのゆりかご",
     "FLAVOR": "最も人気のある卓上玩具。",
     "DESCRIPTIONS": [
-      "Entering #yDivinity requires #b",
-      " less #yMantra."
+      "#y神聖 の #yスタンス に入るために必要な #yマントラ が #b",
+      " 減少する。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is a Newton's Cradle. 'Mudwin' is just a dumb name made up to sound like 'Newton.'"
   },
@@ -381,9 +381,9 @@
   },
   "reliquary:OuijaBoard": {
     "NAME": "ウィジャボード",
-    "FLAVOR": "あなたがそうするのと同じぐらい神秘的。",
+    "FLAVOR": "あなたのすることと同じぐらい神秘的。",
     "DESCRIPTIONS": [
-      "1ターンに一度、捨て札のカードにコストを #b1 加えてプレイし、それを山札に加える。",
+      "使用時、捨て札のカードにコストを #b1 加えてプレイし、それを山札に加える。1ターンに1回使用できる。",
       "このターン既にこの能力を使用した。",
       "捨て札が #r空 だ。",
       "捨て札のカードをプレイするのに十分なエナジーが無い。",
@@ -391,10 +391,10 @@
     ]
   },
   "reliquary:PaperSnowflake": {
-    "NAME": "Paper Snowflake",
-    "FLAVOR": "Is this what this is supposed to look like?",
+    "NAME": "紙のスノーフレーク",
+    "FLAVOR": "本当にこういう形だったのか？",
     "DESCRIPTIONS": [
-      "The newest card in your deck that costs #b1 or more costs #b1 less."
+      "デッキにあるコスト1以上の最も新しいカードは、そのコストが #b1 減少する。"
     ]
   },
   "reliquary:PartyBalloon": {
@@ -413,24 +413,24 @@
     ]
   },
   "reliquary:PrayerBox": {
-    "NAME": "Prayer Box",
-    "FLAVOR": "It's the perfect shape to hold your square prayers.",
+    "NAME": "祈りの箱",
+    "FLAVOR": "四角四面なあなたの祈りがすっぽりと収まる。",
     "DESCRIPTIONS": [
-      "You keep your #yMantra between combats."
+      "戦闘間も #yマントラ を維持する。"
     ]
   },
   "reliquary:PrincelyHelmet": {
     "NAME": "王子のヘルメット",
     "FLAVOR": "小さすぎて入らない。恐らく我々のために作られた物ではないだろう。",
     "DESCRIPTIONS": [
-      "戦闘中初めて得るX #yブロック を2倍にする。このXは現在のレベルの #b",
+      "戦闘中、最初に得るX #yブロック を2倍にする。このXは現在のレベルの #b",
       " 倍。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is the headgear of the Prince of All Cosmos from the Katamari Damacy series."
   },
   "reliquary:PurpleTingedLeaf": {
     "NAME": "紫がかった葉",
-    "FLAVOR": "この小学生に描かれたような葉は、植物界全体の中でも独特だ。",
+    "FLAVOR": "この小学生に描かれたような葉は、植物界の中でも珍しい。",
     "DESCRIPTIONS": [
       "獲得時に #yアタック を #b1 枚選択する。このカードをプレイするたび、HPを #b1 回復する。",
       "カードを1枚選択 ",
@@ -456,45 +456,45 @@
     ]
   },
   "reliquary:RabbitEars": {
-    "NAME": "Rabbit Ears",
-    "FLAVOR": "\"You're listening to 98.7 FM: The Fever. Don't touch that dial!\"",
+    "NAME": "兎の耳",
+    "FLAVOR": "「あなたはラジオのFM98.7:The Feverを聞いている。チャンネルはそのまま！」",
     "DESCRIPTIONS": [
-      "You may upgrade #bBlue cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
-      "Gain [B] for every !M! cards in your draw and discard piles.",
-      "Deal !D! damage for each Channeled Orb, plus !M! if you have no empty slots.",
-      "Gain !M! Focus. NL Channel 1 Bias.",
-      "Innate. NL Retain. NL Gain !B! Block. NL Exhaust.",
-      "Gain !B! Block. NL Next turn, gain [B] and draw 1 card.",
-      "Innate. NL Channel !M! Frost for each enemy in combat plus 1. NL Exhaust.",
-      "Deal !D! damage. Channel !M! Frost. NL Trigger the passive ability of all Frost orbs.",
-      "At the start of your turn, add 1 of 2 random Power cards into your hand.",
-      "Channel !M! Dark. NL Trigger the passive ability of all Dark orbs twice.",
-      "Double your Energy.",
-      "Evoke your next Orb !M! times.",
-      "The first and last cards you play each turn are played twice.",
-      "Lightning now hits ALL enemies. NL Channel !M! Lightning. NL Apply 99 Lock-On to a random enemy.",
-      "Evoke all your Orbs. Gain [B] and draw !M! card for each Orb Evoked.",
-      "Shift all Plasma orbs all the way left. NL Channel !M! Plasma.",
-      "Deal !D! damage. NL If the enemy intends to attack, apply !M! Weak, otherwise gain [B].",
-      "Whenever you play a Power card, draw !M! cards (Power cards when possible).",
-      "Innate. NL At the start of your turn, add a random Uncommon card into your hand.",
-      "Gain !B! Block. NL Put a card from your discard pile into your hand and Retain it this turn.",
-      "Deal !D! damage. NL Apply !M! Lock-On. NL Apply 1 Lock-On to all other enemies.",
-      "Steal all Block from the enemy. NL Deal !D! damage.",
-      "Deal !D! damage. NL Channel !M! Plasma, then Channel Plasma until you have no empty Orb slots.",
-      "Evoke your next Orb 2X times.",
-      "Channel 1 Data. NL Channel 1 Lightning. NL Channel 1 Frost. NL Channel 1 Dark.",
-      "Deal !D! damage. NL Put the next card you play this turn into your hand.",
-      "Trigger your next Orb's passive ability, then Evoke it. NL Channel the Orb that was just Evoked.",
-      "Exhaust up to !M! cards. NL Gain [B] equal to their combined cost.",
-      "Gain Block equal to twice the number of cards in your discard pile.",
-      "Innate. NL Whenever you play a Power card, Channel 1 Lightning for each [B] it cost (at least 1).",
-      "Deal !D! damage. NL If this kills an enemy, gain [B] [B] [B] [B].",
-      "Deal !D! damage to ALL enemies. Deals 1 more damage for each [B] you have. NL Draw !M! card.",
-      "Channel X+2 Lightning. NL Exhaust.",
-      "Gain [B] [B] [B] [B]. NL Add a *Void into your discard pile.",
-      "Add a random double Upgraded Power card into your hand. NL It costs 0 this turn. NL Exhaust.",
-      "Channel !M! Lightning. NL Gain 1 Ion."
+      "#bブルー カードを2回 #yアップグレード できるようになる。獲得時、 #yアップグレード されたカードを #b1 枚 #yアップグレード する。",
+      "山札と捨て札のカード !M! 枚につき、 [B] を得る。",
+      "生成 しているオーブ1つにつき、 !D! ダメージを与え、空のオーブスロットが無い場合、追加で !M! ダメージを与える。",
+      "集中力 !M! を得る。 NL バイアス 1 を 生成 する。",
+      "天賦 NL 保留 NL !B! ブロック を得る。 NL 廃棄",
+      "!B! ブロック を得る。 NL 次のターン、 [B] を得てカードを1枚引く。",
+      "天賦 NL 敵1体につき、 フロスト !M! と追加で1つ 生成 する。 NL 廃棄",
+      "!D! ダメージを与える。 フロスト !M! を 生成 する。 NL すべての フロスト オーブの自動効果を使用する。",
+      "ターン開始時、2枚のランダムなパワーから1枚選び、手札に加える。",
+      "ダーク !M! を 生成 する。 NL 全ての ダーク オーブの自動効果を2回使用する。",
+      "エナジーを2倍にする。",
+      "先頭のオーブを !M! 回 解放 する。",
+      "ターンの最初と最後にプレイするカードを、2回プレイする。",
+      "ライトニング がすべての敵を攻撃するようになる。 NL ライトニング !M! を 生成 する。 NL ランダムな敵に ロック・オン 99を与える。",
+      "すべてのオーブを 解放 する。 解放 したオーブ1つにつき、 [B] を得てカードを !M! 枚引く。",
+      "すべての プラズマ オーブを、左端まで移動する。 NL プラズマ !M! を 生成 する。",
+      "!D! ダメージを与える。 NL 敵が攻撃を予定している場合、 脱力 !M! を与える。 NL そうでない場合、 [B] を得る。",
+      "パワーをプレイするたび、カードを !M! 枚引く（可能ならパワーを優先する）。",
+      "天賦 NL ターン開始時、ランダムなアンコモンのカードを1枚手札に加える。",
+      "!B! ブロック を得る。 NL 捨て札のカードを1枚手札に戻し、このターンそれを 保留 する。",
+      "!D! ダメージを与える。 NL ロック・オン !M! を与える。 NL 敵全体に ロック・オン 1 を与える。",
+      "敵の ブロック をすべて奪う。 NL !D! ダメージを与える。",
+      "!D! ダメージを与える。 NL プラズマ !M! を 生成 し、空のオーブスロットがなくなるまで プラズマ を 生成 する。",
+      "先頭のオーブを Xｘ2 回 解放 する。",
+      "データ 1、 ライトニング 1、 フロスト 1、 ダーク 1を 生成 する。",
+      "!D! ダメージを与える。 NL このターン、次にプレイするカードを手札に戻す。",
+      "先頭のオーブの自動効果を使用し、 解放 する。 NL その 解放 したオーブを 生成 する。",
+      "カードを !M! 枚 廃棄 する。 NL そのコストの合計に等しい [B] を得る。",
+      "捨て札の枚数の2倍に等しい ブロック を得る。",
+      "天賦 NL パワーをプレイするたび、その消費 [B] ごとに ライトニング 1を 生成 する（最低でも1つ）。",
+      "!D! ダメージを与える。 NL この攻撃で敵を倒したとき、 [B] [B] [B] [B] を得る。",
+      "敵全体に !D! ダメージを与える。持っている [B] ごとにダメージが1上昇する。 NL カードを !M! 枚引く。",
+      "ライトニング X+2 を 生成 する。 NL 廃棄",
+      "[B] [B] [B] [B] を得る。 NL *空虚 を1枚捨て札に加える。",
+      "ランダムな2回 アップグレード されたパワーを1枚手札に加える。 NL このターン、そのコストは0。 NL 廃棄",
+      "ライトニング !M! を 生成 する。 NL イオン 1 を得る。"
     ],
     "NOTE_FOR_TRANSLATORS": [
       "These are second upgrades, so all but the first string are slight variants of Defect cards.",
@@ -520,7 +520,7 @@
   },
   "reliquary:RedPaperclip": {
     "NAME": "赤いペーパークリップ",
-    "FLAVOR": "物々交換の強力な象徴。",
+    "FLAVOR": "物々交換の力強い象徴。",
     "DESCRIPTIONS": [
       "ターン開始時に、 [E] を得る。 #b",
       " 個のランダムなノーマルまたは #bアンコモン のレリックと置き換える。"
@@ -577,7 +577,7 @@
   },
   "reliquary:SharkskinSheath": {
     "NAME": "シャークスキンシース",
-    "FLAVOR": "これに入れるシャークスキンのナイフでもあれば。",
+    "FLAVOR": "これに入れるシャークスキンのナイフが欲しい。",
     "DESCRIPTIONS": [
       "手札が空の状態でターンを終了すると、次のターン開始時、カードを追加で #b1 枚引く。"
     ]
@@ -592,7 +592,7 @@
   },
   "reliquary:Sideboard": {
     "NAME": "サイドボード",
-    "FLAVOR": "カードを置いておくためのボード…どうやって使うんだ？",
+    "FLAVOR": "カードを置いておくためのボード…ただの板？",
     "DESCRIPTIONS": [
       "カード報酬を選択するとデッキとは別の山に保持される。非戦闘時にその山からデッキにカードを移すことができる。",
       "サイドボード",
@@ -616,54 +616,54 @@
     ]
   },
   "reliquary:SkeletonKey": {
-    "NAME": "Skeleton Key",
-    "FLAVOR": "What does it unlock? You.",
+    "NAME": "スケルトンキー",
+    "FLAVOR": "何を開く鍵だろう？それはあなたの可能性。",
     "DESCRIPTIONS": [
-      "You may upgrade #gGreen cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
-      "Whenever you play a card, deal !M! damage to ALL enemies. Triggers twice on Skills.",
-      "*Shivs deal !M! additional damage. NL Add a *Shiv into your hand.",
-      "Gain [G] [G] [G]. NL Draw 2 cards. NL Exhaust.",
-      "Innate. NL Whenever you play a card, gain 1 Block. Triggers twice on Skills.",
-      "Obtain a random potion. NL Put its Vapor into your hand. NL Exhaust.",
-      "Deal !D! damage to ALL enemies. NL Discard 1 card at random. If you discard a Skill, deal !D! damage to ALL enemies.",
-      "Innate. NL Deal !D! damage. NL If it's not your 1st turn, deal !D! damage again. NL Exhaust.",
-      "Deal !D! damage. NL If the enemy has Poison, deal !D! damage twice more.",
-      "Gain !B! Block. NL Block doubles at the start of your next turn rather than being removed.",
-      "Reduce the cost of all cards in your hand to 0 this turn.",
-      "Discard any number of cards, then draw that many cards.",
-      "Whenever you are attacked, deal !M! damage back to ALL enemies.",
-      "Quadruple the enemy's Poison. NL Exhaust.",
-      "Deal !D! damage. NL Whenever you play a card this turn, the enemy loses !M! HP. Triggers twice on Skills.",
-      "Discard !M! cards. NL Gain [G] [G] [G].",
-      "Apply !M! Poison and 3 Weak to ALL enemies. NL Exhaust.",
-      "Deal !D! damage to ALL enemies !M! times.",
-      "Deal !D! damage. NL Draw !M! cards. NL Discard !M! cards.",
-      "Deal !D! damage to ALL enemies.",
-      "Add a random double Upgraded Skill into your hand. NL It costs 0 this turn. NL Exhaust.",
-      "Retain. NL Next turn, draw X+2 cards and gain X+2 [G]. NL Exhaust.",
-      "Deal !D! damage. NL Whenever you draw this card, add !M! copies of it into your hand. NL Exhaust.",
-      "Whenever an Attack deals unblocked damage, apply !M! Poison.",
-      "Costs 1 less [G] NL for each card discarded this turn. NL Deal !D! damage !M! times.",
-      "Deal !D! damage twice. Decrease the damage of this card by !M! this combat.",
-      "Can only be played if there are !M! or fewer cards in your draw pile. NL Deal !D! damage to ALL enemies.",
-      "My draw pile must NL have ",
-      " or fewer cards.",
-      "Deal !D! damage. NL If the enemy has Weak or Poison, NL gain [G] and NL draw 1 card.",
-      "Innate. NL At the start of your turn, add !M! *Shivs into your hand.",
-      "Enemy loses 2X Strength. Apply 2X Weak. NL Exhaust.",
-      "Choose a card. NL Next turn, add !M! Upgraded copies of that card into your hand. Exhaust.",
-      "Next turn, NL gain [G] [G] [G] [G].",
-      "For the next !M! turns, your Attacks deal double damage.",
-      "ALL enemies lose !M! Strength this turn.",
-      "Deal !D! damage. NL Next turn, draw !M! additional cards.",
-      "Deal !D! damage !M! times.",
-      "Put !M! cards from your hand on top of your draw pile. NL They cost 0 until played.",
-      "If X is 5 or more, increase it by 2. NL Deal !D! damage X times.",
-      "Discard your hand. NL Add 1 *Shiv++ into your hand for each card discarded.",
-      "Unplayable. NL If this card is discarded from your hand, gain [G] [G] [G].",
-      "Apply 99 Vulnerable. NL Apply Slow. NL Exhaust.",
-      "At the start of your turn, draw !M! cards and discard !M! cards.",
-      "Deal !D! damage. NL Draw !M! cards, then discard all non-Attack cards in your hand."
+      "#gグリーン カードを2回 #yアップグレード できるようになる。獲得時、 #yアップグレード されたカードを #b1 枚 #yアップグレード する。",
+      "カードをプレイするたび、敵全体に !M! ダメージを与える。スキルの場合2回発動する。",
+      "*ナイフ が !M! の追加ダメージを与える。 NL *ナイフ を1枚手札に加える。",
+      "[G] [G] [G] を得る。 NL カードを2枚引く。 NL 廃棄",
+      "天賦 NL カードをプレイするたび、 1 ブロック を得る。スキルの場合2回発動する。",
+      "ランダムなポーションを1つ入手する。 NL その 香り を1枚手札に加える。 NL 廃棄",
+      "敵全体に !D! ダメージを与える。 NL 手札をランダムに1枚捨て、それがスキルの場合、敵全体に !D! ダメージを与える。",
+      "天賦 NL !D! ダメージを与える。 NL 1ターン目以外の場合、さらに !D! ダメージを与える。 NL 廃棄",
+      "!D! ダメージを与える。 NL 敵が 毒 を受けている場合、さらに !D! ダメージを2回与える。",
+      "!B! ブロック を得る。 NL 次のターン開始時にブロックを失わず、それを2倍にする。",
+      "このターン、あなたの手札のコストは0になる。",
+      "手札を好きな枚数捨て、同じ枚数だけカードを引く。",
+      "攻撃を受けるたび、敵全体に !M! ダメージを与える。",
+      "敵の 毒 を4倍にする。 NL 廃棄",
+      "!D! ダメージを与える。 NL このターンカードをプレイするたび、対象の敵はHP !M! を失う。スキルの場合2回発動する。",
+      "カードを !M! 枚捨てる。 NL [G] [G] [G] を得る。",
+      "敵全体に 毒 !M! と 脱力 3を与える。 NL 廃棄",
+      "敵全体に !D! ダメージを !M! 回与える。",
+      "!D! ダメージを与える。 NL カードを !M! 引き、 !M! 枚捨てる。",
+      "敵全体に !D! ダメージを与える。",
+      "ランダムな2回 アップグレード されたスキルを1枚手札に加える。 NL このターン、そのコストは0。 NL 廃棄",
+      "保留 NL 次のターンにカードをX+2枚引いてX+2の [G] を得る。 NL 廃棄",
+      "このカードを引くたび、「終わりなき苦痛」を !M! 枚手札に加える。 NL !D! ダメージを与える。 NL 廃棄",
+      "アタックでダメージを与えるたび、 毒 !M! を与える。",
+      "このターンに捨てたカード1枚につき、 [G] の消費-1。 NL !D! ダメージを !M! 回与える。",
+      "!D! ダメージを2回与える。この戦闘中、このカードのダメージが !M! 低下する。",
+      "山札のカードが !M! 枚以下の時だけプレイ可能。 NL 敵全体に !D! ダメージを与える。",
+      "山札が #r",
+      "枚以下 でないとプレイできない。",
+      "!D! ダメージを与える。 NL 敵が 脱力 か 毒 を受けている場合は NL [G] を得て NL カードを1枚引く。",
+      "天賦 NL ターン開始時、 *ナイフ を !M! 枚手札に加える。",
+      "敵は 筋力 Xｘ2 を失う。 NL 脱力 Xｘ2 を与える。 NL 廃棄",
+      "手札のカードを1枚選ぶ。 NL 次のターン、そのカードの アップグレード された複製を !M! 枚手札に加える。 廃棄",
+      "次のターン、 NL [G] [G] [G] [G] を得る。",
+      "次の !M! ターン、アタックのダメージが2倍になる。",
+      "ターン終了時まで、敵全体が 筋力 !M! を失う。",
+      "!D! ダメージを与える。 NL 次のターン開始時、カードを !M! 枚引く。",
+      "!D! ダメージを !M! 回与える。",
+      "手札のカード !M! 枚を山札の1番上に置く。 NL プレイされるまでそのコストは0。",
+      "Xが5以上の場合、2増加する。 NL !D! ダメージを X 回与える。",
+      "手札をすべて捨てる。 NL 捨てたカード1枚につき、 *ナイフ++ を1枚手札に加える。",
+      "使用不可 NL このカードを捨てたとき、 [G] [G] [G] を得る。",
+      "弱体 99 を与える。 NL スロー を与える。 NL 廃棄",
+      "ターン開始時、カードを !M! 枚引き、 !M! 枚捨てる。",
+      "!D! ダメージを与える。 NL カードを !M! 枚引き、アタック以外のカードをすべて捨てる。"
     ],
     "NOTE_FOR_TRANSLATORS": [
       "These are second upgrades, so all but the first string are slight variants of Silent cards.",
@@ -684,7 +684,7 @@
     "NAME": "ソリティア",
     "FLAVOR": "一度は夢見た。まさか本当に手に入るとは。",
     "DESCRIPTIONS": [
-      "#pパープル カードを2回 #yアップグレード できるようになる。獲得時、 #yアップグレード されたカードを #1 枚 #yアップグレード する。",
+      "#pパープル カードを2回 #yアップグレード できるようになる。獲得時、 #yアップグレード されたカードを #b1 枚 #yアップグレード する。",
       "天賦 NL *ベータ+ を1枚山札に加える。 NL 廃棄",
       "天賦 NL ターン開始時、 *スマイト+ を手札に加える。",
       "保留 NL 神聖 の スタンス に入る。 NL !M! ターン後、 NL あなたは死ぬ。 NL 廃棄",
@@ -707,7 +707,7 @@
       "!B! ブロックを得る。 NL 次にプレイするアタックのコストは0で、 !M! の追加ダメージを与える。",
       "保留 NL 平静 の スタンス に入る。",
       "次のターン開始時、カードを !M! 枚引く。このターンに続いて追加の１ターンを行う。 NL ターンを終了する。 NL 廃棄",
-      "保留 NL マントラ !M! を得る。このカードを保留するたび、得られる マントラが %d 増加する。（最大 %d）",
+      "保留 NL マントラ !M! を得る。このカードを保留するたび、得られる マントラが %d 増加する（最大 %d ）。",
       "憤怒 の スタンス に入る。 NL !D! ダメージを与える。"
     ],
     "NOTE_FOR_TRANSLATORS": [
@@ -725,12 +725,12 @@
     ]
   },
   "reliquary:SpireOfHannoy": {
-    "NAME": "Spire of Hannoy",
-    "FLAVOR": "This puzzle's namesake Spire must have been even deadlier and more perplexing than this one.",
+    "NAME": "ハノイの尖塔",
+    "FLAVOR": "このパズルの元になった尖塔は、これよりもずっと複雑だったに違いない。",
     "DESCRIPTIONS": [
-      "#yWeak and #yVulnerable are #b",
-      "% more effective against enemies for every stack past the 1st (max ",
-      "%)."
+      "#y脱力 と #y弱体 が #b1 を超えた敵は、その効果が #b1 ごとに #b",
+      "% 上昇する（最大 ",
+      "%）。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is a Tower of Hanoi puzzle."
   },
@@ -743,10 +743,10 @@
     ]
   },
   "reliquary:Stimpack": {
-    "NAME": "Stimpack",
-    "FLAVOR": "The dogtags bear the initials \"T.O.P.\"",
+    "NAME": "スティムパック",
+    "FLAVOR": "ドッグタグには「T.O.P.」のイニシャルが刻まれている。",
     "DESCRIPTIONS": [
-      "The first time your HP drops to #b50% or below each combat, your #yAttacks deal double damage for #b1 turn."
+      "戦闘中、初めてHPが #b50% 以下になったとき、 #b1 ターンの間 #yアタック のダメージが2倍になる。"
     ]
   },
   "reliquary:Tamtam": {
@@ -771,10 +771,10 @@
       "これを @買わない@ 奴はバカだね！",
       "足元見すぎだよ…",
       "NOTE FOR TRANSLATORS: The following lines are when the merchant declines to buy a potion.",
-      "Sorry, not interested.",
-      "All set on those, thanks.",
-      "Nah.",
-      "Not in the market for those right now."
+      "興味ないかな。",
+      "おかげ様で仕入れは済んでるんだ。",
+      "いらない。",
+      "これはいらないね。"
     ],
     "NOTE_FOR_TRANSLATORS": "A couple of these are voice lines from the merchant in Resident Evil 4."
   },
@@ -782,13 +782,13 @@
     "NAME": "学帽",
     "FLAVOR": "この円錐を被っているだけで、賢く見える。",
     "DESCRIPTIONS": [
-      "戦闘開始時、前回の戦闘で最後から2番目にプレイしたカードを最初に #b1 枚引く。（デッキにあるカードのみを数える。）"
+      "戦闘開始時、前回の戦闘で最後から2番目にプレイしたカードを最初に #b1 枚引く（デッキにあるカードのみを数える）。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is a dunce cap."
   },
   "reliquary:ThirdArm": {
     "NAME": "第三の腕",
-    "FLAVOR": "それは小さく、指さえついていない。",
+    "FLAVOR": "小さく、指さえついていない。",
     "DESCRIPTIONS": [
       "戦闘開始時、ターン開始時に [E] を得るコスト #b",
       " の #yパワー を山札に追加する。"
@@ -796,18 +796,18 @@
     "NOTE_FOR_TRANSLATORS": "This is the arm from a wooden figure-drawing manikin."
   },
   "reliquary:ThumbDrive": {
-    "NAME": "Thumb Drive",
-    "FLAVOR": "Who's got three thumbs and a backup copy of the ancient Internet? This AI.",
+    "NAME": "USBメモリ",
+    "FLAVOR": "指が3本生えてて古代ネットのバックアップを持っているのはだーれだ？それはこのAIだ。",
     "DESCRIPTIONS": [
-      "At the start of each combat, #yChannel #b1 #yData."
+      "戦闘開始時、 #yデータ #b1 を #y生成 する。"
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the classic bad joke structure, 'Who's got two thumbs and <insert detail about self>? This guy.'"
   },
   "reliquary:TrainingWheel": {
-    "NAME": "Training Wheel",
-    "FLAVOR": "Its exterior is pristine, but it's so rusted on the inside that it can barely turn.",
+    "NAME": "補助輪",
+    "FLAVOR": "見た目は綺麗だが中は錆びついていてほとんど回らない。",
     "DESCRIPTIONS": [
-      "Whenever you draw a hand with no #yAttacks or no #ySkills, put a random card of that type from your draw pile into your hand."
+      "ターン開始時、 #yアタック もしくは #yスキル が手札に無い場合、そのタイプのカードを山札からそれぞれ1枚手札に加える。"
     ]
   },
   "reliquary:TridentHead": {
@@ -827,7 +827,7 @@
   },
   "reliquary:Vitrine": {
     "NAME": "ヴィトリン",
-    "FLAVOR": "貴重な所有品を展示するのに最適。",
+    "FLAVOR": "貴重な物を展示するのに最適。",
     "DESCRIPTIONS": [
       "獲得時に #b1 枚のカードを選択し、デッキから削除する。戦闘中、好きなときにそのカードを山札に加えることができる。",
       "削除するカードを1枚選択。",

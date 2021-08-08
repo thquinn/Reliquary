@@ -1,16 +1,16 @@
 ﻿{
   "reliquary:AfterGlow": {
-    "NAME": "After Glow",
+    "NAME": "残光",
     "DESCRIPTIONS": [
-      "#yAfter #yImage triggers twice on #ySkills.",
-      "#yAfter #yImage triggers #b",
-      " times on #ySkills."
+      "#y残像 が #yスキル で #b2 回発動する。",
+      "#y残像 が #yスキル で #b",
+      " 回発動する。"
     ]
   },
   "reliquary:AreaDenial": {
-    "NAME": "Area Denial",
+    "NAME": "接近阻止",
     "DESCRIPTIONS": [
-      "#yThorns deals damage to ALL enemies."
+      "#yトゲ が敵全体にダメージを与える。"
     ],
     "NOTE_FOR_TRANSLATORS": "This power augments the behavior of the base game's Thorns power."
   },
@@ -23,11 +23,11 @@
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Battle Hymn power."
   },
   "reliquary:BlurPlus": {
-    "NAME": "Double Vision",
+    "NAME": "ダブルビジョン",
     "DESCRIPTIONS": [
-      "#yBlock is doubled rather than removed at the start of your next turn.",
-      "#yBlock is doubled rather than removed at the start of your next #b",
-      " turns."
+      "次のターン開始時に #yブロック を失わず、それを2倍にする。",
+      "次の #b",
+      " ターンの開始時に #yブロック を失わず、それを2倍にする。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Blur power."
   },
@@ -40,32 +40,32 @@
     "NOTE_FOR_TRANSLATORS": "Combust is an existing power in the base game."
   },
   "reliquary:CutAbove": {
-    "NAME": "A Cut Above",
+    "NAME": "微塵切り",
     "DESCRIPTIONS": [
-      "#yThousand #yCuts triggers twice on #ySkills.",
-      "#yThousand #yCuts triggers #b",
-      " times on #ySkills."
+      "#yメッタ切り が #yスキル で #b2 回発動する。",
+      "#yメッタ切り が #yスキル で #b",
+      " 回発動する。"
     ]
   },
   "reliquary:DoubleWindsor": {
-    "NAME": "Double Windsor",
+    "NAME": "ダブル・ノット",
     "DESCRIPTIONS": [
-      "#yChoked triggers twice on #ySkills this turn.",
-      "#yChoked triggers #b",
-      " times on #ySkills this turn."
+      "#y窒息 が #yスキル で #b2 回発動する。",
+      "#y窒息 が #yスキル で #b",
+      " 回発動する。"
     ]
   },
   "reliquary:FocusDown": {
-    "NAME": "Focus Down",
+    "NAME": "集中力低下",
     "DESCRIPTIONS": [
-      "At the end of this turn, lose #b",
-      " #yFocus."
+      "ターン終了時、 集中力 #b",
+      " を失う。"
     ]
   },
   "reliquary:HalfLightning": {
-    "NAME": "Ion",
+    "NAME": "イオン",
     "DESCRIPTIONS": [
-      "When you have #b2 #yIon, lose #b2 #yIon and #yChannel #b1 #yLightning."
+      "#yイオン #b2 を得たとき、 #yイオン #b2 を失い #yライトニング #b1 を #y生成 する。"
     ]
   },
   "reliquary:HandSize": {
@@ -78,19 +78,19 @@
     ]
   },
   "reliquary:HelloPlus": {
-    "NAME": "Fizzbuzz",
+    "NAME": "フィズ・バズ",
     "DESCRIPTIONS": [
-      "At the start of your turn, add #b",
-      " random Uncommon card into your hand.",
-      " random Uncommon cards into your hand."
+      "ランダムなアンコモンのカードを #b",
+      " 枚手札に加える。",
+      " 枚手札に加える。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Hello power."
   },
   "reliquary:Hooked": {
-    "NAME": "Hooked",
+    "NAME": "釣り上げ",
     "DESCRIPTIONS": [
-      "Gain #b",
-      " less [E] next turn."
+      "次のターン、 [E] を #b",
+      " 失う。"
     ]
   },
   "reliquary:Hydrated": {
@@ -131,30 +131,30 @@
     "NOTE_FOR_TRANSLATORS": "This is an weaker version of the base game's Duplication power."
   },
   "reliquary:MrofOhce": {
-    "NAME": "Mrof Ohce",
+    "NAME": "化響反",
     "DESCRIPTIONS": [
-      "The last card you play each turn is played twice.",
-      "The last #b",
-      " cards you play each turn are played twice."
+      "ターンの最後にプレイするカードを、2回プレイする。",
+      "ターンの最後にプレイする #b",
+      " 枚のカードを、2回プレイする。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is an alternate version of the base game's Echo Form power. 'Mrof Ohce' is Echo Form backwards."
   },
   "reliquary:QuantumAI": {
-    "NAME": "Quantum AI",
+    "NAME": "量子AI",
     "DESCRIPTIONS": [
-      "At the start of your turn, add #b1 of #b2 random #yPower cards into your hand.",
-      "At the start of your turn, add #b1 of #b2 random #yPower cards into your hand twice.",
-      "At the start of your turn, add #b1 of #b2 random #yPower cards into your hand #b",
-      " times."
+      "ターン開始時、 #b2 枚のランダムな #yパワー から #b1 枚選び、手札に加える。",
+      "ターン開始時、 #b2 枚のランダムな #yパワー から #b2 枚選び、手札に加える。",
+      "ターン開始時、 #b2 枚のランダムな #yパワー から #b",
+      " 枚選び、手札に加える。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Study power."
   },
   "reliquary:ReboundPlus": {
-    "NAME": "Resound",
+    "NAME": "リサウンド",
     "DESCRIPTIONS": [
-      "The next card you play this turn is placed into your hand.",
-      "The next #b",
-      " cards you play this turn are placed into your hand."
+      "このターン、次にプレイするカードを手札に戻す。",
+      "このターン、次にプレイする #b",
+      " 枚のカードを手札に戻す。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Rebound power."
   },
@@ -167,11 +167,11 @@
     ]
   },
   "reliquary:StormPlus": {
-    "NAME": "Superstorm",
+    "NAME": "スーパーストーム",
     "DESCRIPTIONS": [
-      "Whenever you play a #yPower card, #yChannel #b",
-      " #yLightning for each [B] it cost (at least #b",
-      ")."
+      "#yパワー をプレイするたび、その消費 [B] ごとに #yライトニング #b",
+      " を生成する（最低でも #b",
+      " つ）。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Storm power."
   },
@@ -191,9 +191,9 @@
     ]
   },
   "reliquary:ThermalPaste": {
-    "NAME": "Thermal Paste",
+    "NAME": "放熱グリス",
     "DESCRIPTIONS": [
-      "#yHeatsink will draw #yPower cards when possible."
+      "#yヒートシンク が、可能なら #yパワー を優先して引く。"
     ],
     "NOTE_FOR_TRANSLATORS": "This power augments the behavior of the Defect's Heatsinks power."
   },

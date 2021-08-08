@@ -6,8 +6,8 @@
   },
   "reliquary:VaporAncientPotion": {
     "NAME": "古代の香り",
-    "DESCRIPTION": "保留 NL アーティファクト 1を解除する。 NL 廃棄",
-    "UPGRADE_DESCRIPTION": "保留 NL 敵全体の アーティファクト 1を解除する。 NL 廃棄"
+    "DESCRIPTION": "保留 NL アーティファクト 1を取り除く。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL 敵全体の アーティファクト 1を取り除く。 NL 廃棄"
   },
   "reliquary:VaporAttackPotion": {
     "NAME": "狂気の香り",
@@ -42,7 +42,7 @@
     "DESCRIPTION": "保留 NL 儀式 1 を得る。 筋力 !M! を失う。"
   },
   "reliquary:VaporCunningPotion": {
-    "NAME": "欺瞞的な香り",
+    "NAME": "欺くような香り",
     "DESCRIPTION": "保留 NL *ナイフ+ を1枚手札に加える。 NL 廃棄",
     "UPGRADE_DESCRIPTION": "保留 NL *ナイフ+ を !M! 枚手札に加える。 NL 廃棄"
   },
@@ -52,7 +52,7 @@
   },
   "reliquary:VaporDistilledChaos": {
     "NAME": "混沌とした香り",
-    "DESCRIPTION": "保留 NL 山札の一番上のカードをプレイする。 NL 廃棄",
+    "DESCRIPTION": "保留 NL 山札の1番上にあるカードをプレイする。 NL 廃棄",
     "UPGRADE_DESCRIPTION": "保留 NL 山札の上から !M! 枚のカードをプレイする。 NL 廃棄"
   },
   "reliquary:VaporDuplicationPotion": {
@@ -81,7 +81,7 @@
     "UPGRADE_DESCRIPTION": "保留 NL 全ての ダーク の自動効果を !M! 回使用する。 NL 廃棄"
   },
   "reliquary:VaporEssenceOfSteel": {
-    "NAME": "鋼の香り",
+    "NAME": "金属の香り",
     "DESCRIPTION": "保留 NL *プレートアーマー !M! を得る。"
   },
   "reliquary:VaporExplosivePotion": {
@@ -89,12 +89,12 @@
     "DESCRIPTION": "保留 NL 敵全体に !D! ダメージを与える。 NL 廃棄"
   },
   "reliquary:VaporFairyInABottle": {
-    "NAME": "絶縁の香り",
+    "NAME": "隔絶された香り",
     "DESCRIPTION": "保留 NL 次にHPを失うとき、それを無効化する。 NL 廃棄",
     "UPGRADE_DESCRIPTION": "保留 NL 次にHPを失うとき、それを !M! 回無効化する。 NL 廃棄"
   },
   "reliquary:VaporFearPotion": {
-    "NAME": "威嚇の香り",
+    "NAME": "威嚇する香り",
     "DESCRIPTION": "保留 NL 弱体 !M! を与える。 NL 廃棄"
   },
   "reliquary:VaporFirePotion": {
@@ -102,7 +102,7 @@
     "DESCRIPTION": "保留 NL !D! ダメージを与える。 NL 廃棄"
   },
   "reliquary:VaporFlexPotion": {
-    "NAME": "屈強な香り",
+    "NAME": "たくましい香り",
     "DESCRIPTION": "保留 NL 筋力 !M! を得る。 NL このターン終了時に 筋力 !M! を失う。 NL 廃棄"
   },
   "reliquary:VaporFocusPotion": {
@@ -114,7 +114,7 @@
     "DESCRIPTION": "保留 NL 最大HPを !M! 獲得。 NL 廃棄"
   },
   "reliquary:VaporGamblersBrew": {
-    "NAME": "流動する香り",
+    "NAME": "流れる香り",
     "DESCRIPTION": "保留 NL 手札をランダムに1枚捨て、カードを1枚引く。 NL 廃棄",
     "UPGRADE_DESCRIPTION": "保留 NL 手札を全て捨て、同じ枚数だけカードを引く。 NL 廃棄"
   },
@@ -140,7 +140,7 @@
     "DESCRIPTION": "保留 NL 毒 !M! を与える。 NL 廃棄"
   },
   "reliquary:VaporPotionOfCapacity": {
-    "NAME": "うねりの香り",
+    "NAME": "うねった香り",
     "DESCRIPTION": "保留 NL オーブスロットを1つ得る。",
     "UPGRADE_DESCRIPTION": "保留 NL オーブスロットを !M! つ得る。"
   },

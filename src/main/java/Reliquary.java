@@ -235,18 +235,21 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
     public void receiveEditStrings() {
         if (Settings.language == Settings.GameLanguage.JPN) {
             BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/jpn/CardStrings.json");
+            BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/jpn/OrbStrings.json");
             BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/jpn/PowerStrings.json");
             BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/jpn/RelicStrings.json");
             BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/jpn/StanceStrings.json");
             BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/jpn/UIStrings.json");
         } else if (Settings.language == Settings.GameLanguage.RUS) {
             BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/rus/CardStrings.json");
+            BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/rus/OrbStrings.json");
             BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/rus/PowerStrings.json");
             BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/rus/RelicStrings.json");
             BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/rus/StanceStrings.json");
             BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/rus/UIStrings.json");
         } else if (Settings.language == Settings.GameLanguage.ZHS) {
             BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/zhs/CardStrings.json");
+            BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/zhs/OrbStrings.json");
             BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/zhs/PowerStrings.json");
             BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/zhs/RelicStrings.json");
             BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/zhs/StanceStrings.json");

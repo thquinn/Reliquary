@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.FocusPower;
 import powers.LoseFocusPower;
+import util.ReliquaryLogger;
 
 public class OrbData extends OrbDataBase {
     public static String ORB_ID = "reliquary:Data";
@@ -70,7 +71,9 @@ public class OrbData extends OrbDataBase {
     @Override
     public void updateDescription() {
         applyFocus();
+        ReliquaryLogger.log("updating");
         description = DESCRIPTION[0] + passiveAmount + DESCRIPTION[1] + evokeAmount + DESCRIPTION[2];
+        ReliquaryLogger.log(description);
     }
 
     @Override

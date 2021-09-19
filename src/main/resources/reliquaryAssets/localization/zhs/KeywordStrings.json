@@ -7,21 +7,21 @@
   },
   {
     "NAMES": [
-      "虔诚"
+      "虔信"
     ],
     "DESCRIPTION": "回合开始时，获得 #y真言 。"
   },
   {
     "NAMES": [
-      "bias"
+      "偏差"
     ],
-    "DESCRIPTION": "Orb: Lose 1 Focus each turn."
+    "DESCRIPTION": "充能球：每回合失去1点 #y集中 。"
   },
   {
     "NAMES": [
-      "data"
+      "数据"
     ],
-    "DESCRIPTION": "Orb: Gains #yFocus."
+    "DESCRIPTION": "充能球：获得 #y集中 。"
   },
   {
     "NAMES": [
@@ -31,22 +31,22 @@
   },
   {
     "NAMES": [
-      "injury", "injuries"
+      "受伤", "受伤"
     ],
-    "DESCRIPTION": "Injuries are unplayable #rCurse cards.",
+    "DESCRIPTION": "受伤是不能被打出的 #r诅咒 牌。",
     "NOTE_FOR_TRANSLATORS": "This is a keyword for the Injury Curse card from the base game."
   },
   {
     "NAMES": [
-      "ion"
+      "离子"
     ],
-    "DESCRIPTION": "When you have #b2 #yIon, lose #b2 #yIon and #yChannel #b1 #yLightning."
+    "DESCRIPTION": "当你拥有 #b2 层 #y离子 时，失去 #b2 层 #y离子 并 #y生成 #b1 个 #y闪电 充能球。"
   },
   {
     "NAMES": [
-      "slow"
+      "缓慢"
     ],
-    "DESCRIPTION": "Slow creatures take #b10% more damage from Attacks for each previous card played that turn.",
+    "DESCRIPTION": "你在这个回合每打出一张卡牌，有缓慢效果的生物从 #y攻击 受到的伤害增加10%。",
     "NOTE_FOR_TRANSLATORS": "This is a keyword for the Slow debuff from the base game."
   },
   {

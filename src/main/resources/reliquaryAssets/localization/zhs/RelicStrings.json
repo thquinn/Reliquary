@@ -8,11 +8,11 @@
       " 在抽牌堆中，它会出现在抽牌堆的顶部。"
     ]
   },
-  "reliquary:AluminiumFoil": {
-    "NAME": "Aluminium Foil",
-    "FLAVOR": "Maybe if you put this on all your cards, people would respect you.",
+ "reliquary:AluminiumFoil": {
+    "NAME": "铝箔",
+    "FLAVOR": "闪卡一出，谁人不敬。",
     "DESCRIPTIONS": [
-      "Card rewards tend to be #yUpgraded and of a higher rarity."
+      "卡牌奖励为已 #y升级 及更高稀有度的几率增加。"
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to 'foil' or 'shiny' trading cards."
   },
@@ -24,19 +24,19 @@
     ]
   },
   "reliquary:Bellows": {
-    "NAME": "Bellows",
-    "FLAVOR": "Boy, if this were bigger than an inch across, it could really come in handy.",
+    "NAME": "鼓风器",
+    "FLAVOR": "伙计，这玩意要是能有一英寸大，用着就真的顺手了。",
     "DESCRIPTIONS": [
-      "Every #b",
-      " times you #yExhaust a card, shuffle a card from your exhaust pile into your draw pile.",
-      "Select a Card to Shuffle into Your Draw Pile"
+      "每当你第 #b",
+      " 次 #y消耗 一张牌，将消耗堆中的一张牌放入你的抽牌堆。",
+      "选择一张牌放入你的抽牌堆"
     ]
   },
   "reliquary:BigHammer": {
     "NAME": "大锤",
     "FLAVOR": "真的，这绝对是你见过的最大的锤子。",
     "DESCRIPTIONS": [
-      "#r红色 牌可以被 #y升级 两次。拾起时，选择并 #y升级 一张 #y已升级 的 #r红色 牌。",
+      "#r红色 牌可以被 #y升级 两次。拾起时，选择并 #y升级 一张已 #y升级 的 #r红色 牌。",
       "造成 !D! 点伤害。 NL 在弃牌堆放入一张此牌的复制品。 NL 弃牌堆每有一张愤怒，额外造成 !M! 点伤害。",
       "获得 !B! 点 格挡 。 NL 在本场战斗中 升级 手牌中的所有牌两次。",
       "固有 。 NL 格挡 不再在你的回合开始时消失。",
@@ -54,7 +54,7 @@
       "选择一张已 消耗 的牌，将其放入你的手牌并 升级 。 NL 消耗 。",
       "获得 !M! 点 力量 。 NL 此后的第 %d 个回合结束时，失去 !M! 点 力量 。",
       "打出抽牌堆顶部的 !M! 张牌，将其 消耗 。",
-      "Add a random double Upgraded Attack into your hand. NL It costs 0 this turn. NL Exhaust.",
+      "增加一张已 升级 两次的随机攻击牌到你的手牌。 NL 这张牌在本回合耗能变为0。 NL 消耗 。",
       "将你的 力量 翻三倍。",
       "失去6点生命。 NL 获得 [R] [R] [R] 。 NL 抽 !M! 张牌。 NL 消耗 。",
       "造成 !D! 点伤害。 NL 将一张 *晕眩 放入你的弃牌堆。",
@@ -101,8 +101,8 @@
     "FLAVOR": "雕饰有著名的Merek幼天鹅纹样。",
     "DESCRIPTIONS": [
       "你打出的下 #b",
-      " 张牌组中的可升级牌将会被永久 #y升级 。",
-      "你打出的下一张牌组中的可升级牌将会被永久 #y升级 。",
+      " 张牌组中的可 #y升级 牌将会被永久 #y升级 。",
+      "你打出的下一张牌组中的可 #y升级 牌将会被永久 #y升级 。",
       "这件遗物的效果已经使用完毕。"
     ]
   },
@@ -119,32 +119,32 @@
     "FLAVOR": "可以把你带到任何你想去的地方。",
     "DESCRIPTIONS": [
       "在你的回合开始时，如果你拥有至少 #b",
-      " 个同种充能球， #y生成 一个该种类的充能球。"
+      " 个同种充能球， #y生成 一个该种类的充能球。（多种满足则随机生成一种。）"
     ]
   },
   "reliquary:Craggleroot": {
     "NAME": "嶙峋之根",
     "FLAVOR": "疾风知劲根。",
     "DESCRIPTIONS": [
-      "回合开始时获得 [E] 。你每回合抽到的第一张牌在本场战斗中的耗能增加 #b1 点（耗能为X的牌不受影响）。"
+      "回合开始时获得 [E] 。你每回合抽到的第一张牌在本场战斗中的耗能增加 #b1 。（耗能为X的牌不受影响。）"
     ]
   },
   "reliquary:Crucible": {
-    "NAME": "Crucible",
-    "FLAVOR": "As long as it can handle temps up to 451°F, it should do the job.",
+    "NAME": "坩埚",
+    "FLAVOR": "它只要能将温度加热到451°F，就能派上用场。",
     "DESCRIPTIONS": [
-      "Whenever you remove an #yUpgraded card from your deck, #yUpgrade a random card in your deck.",
-      "Whenever you remove an #yUpgraded card from your deck, #yUpgrade #b",
-      " random cards in your deck."
+      "每当你移除牌组中一张已 #y升级 的牌，随机 #y升级 你牌组中的一张牌。",
+      "每当你移除牌组中一张已 #y升级 的牌，随机 #y升级 你牌组中的 #b",
+      " 张牌。"
     ]
   },
   "reliquary:CrusadersMap": {
-    "NAME": "Crusader's Map",
-    "FLAVOR": "Search for the truth.",
+    "NAME": "圣战者地图",
+    "FLAVOR": "寻求真理。",
     "DESCRIPTIONS": [
-      "Points the way to a fabled #yfont #yof #yimmortality.",
-      "You found the Holy Grail.",
-      "~Good~ ~luck...~"
+      "指出通往传说中 某个 #y永生圣洗池 的路。",
+      "你找到了圣杯。",
+      "~祝你~ ~好运……~"
     ],
     "NOTE_FOR_TRANSLATORS": "This relic is a reference to Indiana Jones and the Last Crusade."
   },
@@ -160,14 +160,14 @@
     "NAME": "经幢",
     "FLAVOR": "胜利会是你的......不过要到最后。",
     "DESCRIPTIONS": [
-      "Whenever you enter #yDivinity, #yDivinity's damage multiplier increases by #b1 this combat."
+      "每当你进入 #y神格 ， 本场战斗中你在 #y神格 姿态中所造成伤害的增益系数增加 #b1 。"
     ]
   },
   "reliquary:ElizabethanCollar": {
-    "NAME": "Elizabethan Collar",
-    "FLAVOR": "If you'd just stop messing with it—!",
+    "NAME": "伊丽莎白项圈",
+    "FLAVOR": "你大爷的，别把它弄得乱七八糟的好吗——！",
     "DESCRIPTIONS": [
-      "Upon pickup, your #rCurses become #rInjuries. All #rCurses you obtain become #rInjuries."
+      "拾起时，你的 #r诅咒 牌变为 #r受伤 。此后你获得的所有 #r诅咒 牌变为 #r受伤 。"
     ]
   },
   "reliquary:Ember": {
@@ -182,8 +182,8 @@
     "NAME": "失效的优惠券",
     "FLAVOR": "“股折啦！”这不才打9折吗？哪个天才把这句话写上去的？",
     "DESCRIPTIONS": [
-      "每当你在一场战斗中造成的未被 #y格挡 的伤害总计达到 #b",
-      " 点或更多，对所有敌人造成 #b",
+      "当你在一场战斗中造成的未被 #y格挡 的伤害总计达到 #b",
+      " 点或更多时，对所有敌人造成 #b",
       " 点伤害。"
     ]
   },
@@ -199,7 +199,7 @@
     "NAME": "船票",
     "FLAVOR": "上面写道，“移舟泊烟渚，日暮客愁新。”",
     "DESCRIPTIONS": [
-      "一场战斗中，如果你打出过你牌组中每种名称不同（ #y升级 后的牌视作同名牌）的可打出牌，在本次战斗奖励中增加一件 #y稀有 遗物，然后本遗物失效。",
+      "一场战斗中，如果你打出过你牌组中每种名称不同（ #y升级 前后的牌视作同名牌）的可打出牌，在本次战斗奖励中增加一件 #y稀有 遗物，然后本遗物失效。",
       "本场战斗中，打出你牌组中共 #b",
       " 种名称不同的可打出牌来获得一件 #y稀有 遗物。",
       "本场战斗中，再打出 #b",
@@ -227,11 +227,11 @@
     ]
   },
   "reliquary:FishingReel": {
-    "NAME": "Fishing Reel",
-    "FLAVOR": "There's always the next sucker.",
+    "NAME": "渔轮",
+    "FLAVOR": "总有下一个将来的你自己上钩。真好骗呐。",
     "DESCRIPTIONS": [
-      "Each turn, you can pay for #b",
-      " card with next turn's #yEnergy."
+      "每回合，你可以预支下个回合的 #y能量 打出 #b",
+      " 张牌。"
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to stealing from your future self."
   },
@@ -244,10 +244,10 @@
     ]
   },
   "reliquary:HolyGrail": {
-    "NAME": "The Holy Grail",
-    "FLAVOR": "You have chosen... wisely.",
+    "NAME": "圣杯",
+    "FLAVOR": "你做出了......明智的……选择。",
     "DESCRIPTIONS": [
-      "The first time you would die each combat, die next turn instead."
+      "阻止你在每场战斗中的第一次死亡，改为下回合死亡。"
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a quote from Indiana Jones and the Last Crusade."
   },
@@ -259,18 +259,18 @@
     ]
   },
   "reliquary:IceCubeTray": {
-    "NAME": "Ice Cube Tray",
-    "FLAVOR": "Everyone who knew how to use this thing died a long time ago.",
+    "NAME": "冰格",
+    "FLAVOR": "知道怎样使用这件东西的人都死了很多年了。",
     "DESCRIPTIONS": [
-      "For every #b",
-      " cards you add to your deck, you may remove a card from your deck."
+      "你每向牌组中加入 #b",
+      " 张牌，便可以移除牌组中的一张牌。"
     ]
   },
   "reliquary:IridiumChain": {
     "NAME": "铱链",
     "FLAVOR": "一环扣一环，数不完，理还乱。",
     "DESCRIPTIONS": [
-      "每当你打出一张 #y能力 牌，将它的一张耗能增加 #b1 点并具有 #y虚无 的复制加入你的手牌。",
+      "每当你打出一张 #y能力牌 ，将它的一张耗能增加 #b1 并具有 #y虚无 的复制加入你的手牌。",
       "虚无 。 NL "
     ]
   },
@@ -304,10 +304,10 @@
     ]
   },
   "reliquary:KnifeBlock": {
-    "NAME": "Knife Block",
-    "FLAVOR": "\"Who could ever need this many knives?\" asked the world's stupidest person.",
+    "NAME": "刀架",
+    "FLAVOR": "”谁会需要这么多小刀啊？“世上最蠢的人如是问。",
     "DESCRIPTIONS": [
-      "Whenever you create #yShivs, create an additional one."
+      "每当你创建一次（而非一张） #y小刀 ，额外创建一张。"
     ]
   },
   "reliquary:Knoch": {
@@ -319,12 +319,12 @@
     ]
   },
   "reliquary:LeadDart": {
-    "NAME": "Lead Dart",
-    "FLAVOR": "Form over function? Function over form? \"How about neither?\" it seems to ask.",
+    "NAME": "铅镖",
+    "FLAVOR": "形式重于功能？功能重于形式？“这俩都不要怎么样？”它似乎在问。",
     "DESCRIPTIONS": [
-      "The first time each combat you have #b",
-      " cards in hand, gain #b",
-      " #yStrength."
+      "每场战斗，当你第一次拥有 #b",
+      " 张手牌时，获得 #b",
+      " 点 #y力量 。"
     ]
   },
   "reliquary:LoveEmittingDiode": {
@@ -346,8 +346,8 @@
     "NAME": "马顿摆",
     "FLAVOR": "最流行的桌上玩具。",
     "DESCRIPTIONS": [
-      "Entering #yDivinity requires #b",
-      " less #yMantra."
+      "进入 #y神格 需要的 #y真言 层数 减少 #b",
+      " 。"
     ]
   },
   "reliquary:NewFriend": {
@@ -370,17 +370,17 @@
     ]
   },
   "reliquary:PaperSnowflake": {
-    "NAME": "Paper Snowflake",
-    "FLAVOR": "Is this what this is supposed to look like?",
+    "NAME": "纸雪花",
+    "FLAVOR": "它该长这样吗？",
     "DESCRIPTIONS": [
-      "The newest card in your deck that costs #b1 or more costs #b1 less."
+      "你牌组中最新获得的耗能大于等于 #b1 的牌的耗能减少 #b1 。"
     ]
   },
   "reliquary:PartyBalloon": {
     "NAME": "派对气球",
     "FLAVOR": "捏好那根绳子，否则它就飞走不见了！",
     "DESCRIPTIONS": [
-      "每场战斗开始时， #y能力 牌总是出现在抽牌堆的上半部分。"
+      "每场战斗开始时， #y能力牌 总是出现在抽牌堆的上半部分。"
     ]
   },
   "reliquary:PorcupineQuills": {
@@ -392,10 +392,10 @@
     ]
   },
   "reliquary:PrayerBox": {
-    "NAME": "Prayer Box",
-    "FLAVOR": "It's the perfect shape to hold your square prayers.",
+    "NAME": "祷告盒",
+    "FLAVOR": "它是装方形祷簿的完美形状。",
     "DESCRIPTIONS": [
-      "You keep your #yMantra between combats."
+      "#y真言 层数现在跨战斗保留。"
     ]
   },
   "reliquary:PrincelyHelmet": {
@@ -410,10 +410,10 @@
     "NAME": "微紫树叶",
     "FLAVOR": "这片树叶的样子在整个植物王国中独一无二，那是由一个小学生画出来的王国。",
     "DESCRIPTIONS": [
-      "拾起时，选择一张 #y攻击 牌。每当你打出这张牌，回复 #b1 点生命。",
+      "拾起时，选择一张 #y攻击牌 。每当你打出这张牌，回复 #b1 点生命值。",
       "选择一张攻击牌，",
       "每当你打出选定的这张 ",
-      " ，回复 #b1 点生命。"
+      " ，回复 #b1 点生命值。"
     ]
   },
   "reliquary:Pushpin": {
@@ -434,45 +434,45 @@
     ]
   },
   "reliquary:RabbitEars": {
-    "NAME": "Rabbit Ears",
-    "FLAVOR": "\"You're listening to 98.7 FM: The Fever. Don't touch that dial!\"",
+    "NAME": "兔耳朵",
+    "FLAVOR": "“您现在正在收听的是调频98.7，发烧电台。别碰那个旋钮可好！”",
     "DESCRIPTIONS": [
-      "You may upgrade #bBlue cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
-      "Gain [B] for every !M! cards in your draw and discard piles.",
-      "Deal !D! damage for each Channeled Orb, plus !M! if you have no empty slots.",
-      "Gain !M! Focus. NL Channel 1 Bias.",
-      "Innate. NL Retain. NL Gain !B! Block. NL Exhaust.",
-      "Gain !B! Block. NL Next turn, gain [B] and draw 1 card.",
-      "Innate. NL Channel !M! Frost for each enemy in combat plus 1. NL Exhaust.",
-      "Deal !D! damage. Channel !M! Frost. NL Trigger the passive ability of all Frost orbs.",
-      "At the start of your turn, add 1 of 2 random Power cards into your hand.",
-      "Channel !M! Dark. NL Trigger the passive ability of all Dark orbs twice.",
-      "Double your Energy.",
-      "Evoke your next Orb !M! times.",
-      "The first and last cards you play each turn are played twice.",
-      "Lightning now hits ALL enemies. NL Channel !M! Lightning. NL Apply 99 Lock-On to a random enemy.",
-      "Evoke all your Orbs. Gain [B] and draw !M! card for each Orb Evoked.",
-      "Shift all Plasma orbs all the way left. NL Channel !M! Plasma.",
-      "Deal !D! damage. NL If the enemy intends to attack, apply !M! Weak, otherwise gain [B].",
-      "Whenever you play a Power card, draw !M! cards (Power cards when possible).",
-      "Innate. NL At the start of your turn, add a random Uncommon card into your hand.",
-      "Gain !B! Block. NL Put a card from your discard pile into your hand and Retain it this turn.",
-      "Deal !D! damage. NL Apply !M! Lock-On. NL Apply 1 Lock-On to all other enemies.",
-      "Steal all Block from the enemy. NL Deal !D! damage.",
-      "Deal !D! damage. NL Channel !M! Plasma, then Channel Plasma until you have no empty Orb slots.",
-      "Evoke your next Orb 2X times.",
-      "Channel 1 Data. NL Channel 1 Lightning. NL Channel 1 Frost. NL Channel 1 Dark.",
-      "Deal !D! damage. NL Put the next card you play this turn into your hand.",
-      "Trigger your next Orb's passive ability, then Evoke it. NL Channel the Orb that was just Evoked.",
-      "Exhaust up to !M! cards. NL Gain [B] equal to their combined cost.",
-      "Gain Block equal to twice the number of cards in your discard pile.",
-      "Innate. NL Whenever you play a Power card, Channel 1 Lightning for each [B] it cost (at least 1).",
-      "Deal !D! damage. NL If this kills an enemy, gain [B] [B] [B] [B].",
-      "Deal !D! damage to ALL enemies. Deals 1 more damage for each [B] you have. NL Draw !M! card.",
-      "Channel X+2 Lightning. NL Exhaust.",
-      "Gain [B] [B] [B] [B]. NL Add a *Void into your discard pile.",
-      "Add a random double Upgraded Power card into your hand. NL It costs 0 this turn. NL Exhaust.",
-      "Channel !M! Lightning. NL Gain 1 Ion."
+      "#b蓝色 牌可以被 #y升级 两次。拾起时，选择并 #y升级 一张已 #y升级 的 #b蓝色 牌。",
+      "你的抽牌堆和弃牌堆中每有 !M! 张牌，获得一点 [B] 。",
+      "你每拥有一个充能球，造成 !D! 点伤害。如果你没有空的充能球栏位，总伤害增加 !M! 。",
+      "获得 !M! 点 集中 。 NL 生成 1个 偏差 充能球。",
+      "获得 !B! 点 格挡 。 NL 固有 。 NL 保留 。 NL 消耗 。",
+      "获得 !B! 点 格挡 。 NL 在下一回合获得 [B] ，抽1张牌。",
+      "固有 。 NL 生成1个 冰霜 充能球。当前每有一名敌人，再多生成 !M! 个 冰霜 充能球。 NL 消耗 。",
+      "造成 !D! 点伤害。 生成 !M! 个 冰霜 充能球。 NL 使用所有 冰霜 充能球的被动能力。",
+      "在你的回合开始时，从2张随机能力牌中选择1张，加入你的手牌。",
+      "生成 !M! 个 黑暗 充能球。 NL 使用所有 黑暗 充能球的被动能力两次。",
+      "将你的 能量 翻倍。",
+      "激发 你最右侧的充能球 !M! 次。",
+      "你每回合打出的第一张牌和最后一张牌（可同时满足）会打出两次。",
+      "闪电 充能球现在会击中所有敌人。 NL 生成 !M! 个 闪电 充能球。 NL 随机给予一名敌人99回合 跟踪锁定 效果。",
+      "激发 所有充能球，每 激发 一个充能球获得 [B] 并抽 !M! 张牌。",
+      "将所有 等离子 充能球尽可能向左冒泡移动。 NL 生成 !M! 个 等离子 充能球。",
+      "造成 !D! 点伤害。 NL 如果目标敌人的意图是攻击，则给予其 !M! 层 虚弱 。否则，获得 [B] 。",
+      "你每打出一张能力牌，抽 !M! 张牌（尽可能抽能力牌）。",
+      "固有 。 NL 在你的回合开始时，增加一张随机罕见牌到你的手牌。",
+      "获得 !B! 点 格挡 。 NL 将弃牌堆中的一张牌放入你的手牌，在本回合 保留 这张牌。",
+      "造成 !D! 点伤害。 NL 给予敌人 !M! 回合 跟踪锁定 效果。 NL 给予其他所有敌人1回合 跟踪锁定 效果 。",
+      "偷取一名敌人的所有 格挡 值。 NL 造成 !D! 点伤害。",
+      "造成 !D! 点伤害。 NL 生成 !M! 个 等离子 充能球，然后 生成 若干个 等离子 充能球，直到你没有空的 充能球栏位。",
+      "激发 你最右侧的充能球2X次。",
+      "生成 数据 、 闪电 、 冰霜 、 黑暗 充能球各一个。",
+      "造成 !D! 点伤害。 NL 你在这个回合打出的下一张牌将会被放入到你的手牌中。(只限会移入弃牌堆的牌）",
+      "使用你最右侧充能球的被动能力，然后 激发 它。 NL 然后 生成 一个刚才被 激发 的充能球。",
+      "消耗 最多 !M! 张牌。 NL 获得与其总耗能相等的 [B] 。",
+      "获得你当前弃牌堆中牌数两倍的 格挡 值。",
+      "固有 。 NL 你每打出一张能力牌， 生成 若干个 闪电 充能球，数量等于其耗能（至少 生成 1个）。",
+      "造成 !D! 点伤害。 NL 如果这张牌杀死了敌人，则获得 [B] [B] [B] [B] 。",
+      "对所有敌人造成 !D! 点伤害。你每有1 [B]（此牌耗能先行扣去） ，额外造成1点伤害。 NL 抽 !M! 张牌。",
+      "生成 X+2 个 闪电 充能球。 NL 消耗 。",
+      "获得 [B] [B] [B] [B] 。 NL 将一张 *虚空 放入你的弃牌堆中。",
+      "增加一张已 升级 两次的随机能力牌到你的手牌。 NL 这张牌在本回合耗能变为0。 NL 消耗 。",
+      "生成 !M! 个 闪电 充能球。 NL 获得1层 离子 。"
     ],
     "NOTE_FOR_TRANSLATORS": [
       "These are second upgrades, so all but the first string are slight variants of Defect cards.",
@@ -522,7 +522,7 @@
     "NAME": "天命控制器",
     "FLAVOR": "我命任我不任天。",
     "DESCRIPTIONS": [
-      "每当你不受伤害赢得一场战斗，将随机展示若干张任意颜色的牌，数量等于本次打败的敌人数量。你可以选择任意张牌加入你的牌组。",
+      "每当你不受伤害赢得一场战斗，将掉落若干张与本次打败的敌人一一对应的牌。（例，kaka固定掉落活动肌肉。）你可以从中选择一张牌加入你的牌组。",
       "控制器振动了......"
     ],
     "NOTE_FOR_TRANSLATORS": "This is a Wii controller, in honor of our wonderful JPN translator!"
@@ -546,7 +546,7 @@
     "NAME": "塑型钢",
     "FLAVOR": "何意绕指柔，化为百炼钢。",
     "DESCRIPTIONS": [
-      "拾起时，随机变为你拥有的一件未失效的普通， #b罕见 ， #y稀有 或 #y商店 遗物的复制。"
+      "拾起时，随机变为你拥有的一件未失效的普通， #b罕见 ， #y稀有 或 #y商店 遗物的复制。（不会复制 #y星系仪 。）"
     ]
   },
   "reliquary:SharkskinSheath": {
@@ -560,7 +560,7 @@
     "NAME": "短颅熔断器",
     "FLAVOR": "可能在任何时刻熔断。",
     "DESCRIPTIONS": [
-      "你的 #y闪电 充能球 总是会以生命值最低的敌人为目标。"
+      "你的 #y闪电 充能球总是会以生命值最低的敌人为目标。"
     ]
   },
   "reliquary:Sideboard": {
@@ -584,54 +584,54 @@
     ]
   },
   "reliquary:SkeletonKey": {
-    "NAME": "Skeleton Key",
-    "FLAVOR": "What does it unlock? You.",
+    "NAME": "剜能钥匙",
+    "FLAVOR": "你问它开什么的？你啊。",
     "DESCRIPTIONS": [
-      "You may upgrade #gGreen cards a second time. Upon pickup, #yUpgrade an #yUpgraded card.",
-      "Whenever you play a card, deal !M! damage to ALL enemies. Triggers twice on Skills.",
-      "*Shivs deal !M! additional damage. NL Add a *Shiv into your hand.",
-      "Gain [G] [G] [G]. NL Draw 2 cards. NL Exhaust.",
-      "Innate. NL Whenever you play a card, gain 1 Block. Triggers twice on Skills.",
-      "Obtain a random potion. NL Put its Vapor into your hand. NL Exhaust.",
-      "Deal !D! damage to ALL enemies. NL Discard 1 card at random. If you discard a Skill, deal !D! damage to ALL enemies.",
-      "Innate. NL Deal !D! damage. NL If it's not your 1st turn, deal !D! damage again. NL Exhaust.",
-      "Deal !D! damage. NL If the enemy has Poison, deal !D! damage twice more.",
-      "Gain !B! Block. NL Block doubles at the start of your next turn rather than being removed.",
-      "Reduce the cost of all cards in your hand to 0 this turn.",
-      "Discard any number of cards, then draw that many cards.",
-      "Whenever you are attacked, deal !M! damage back to ALL enemies.",
-      "Quadruple the enemy's Poison. NL Exhaust.",
-      "Deal !D! damage. NL Whenever you play a card this turn, the enemy loses !M! HP. Triggers twice on Skills.",
-      "Discard !M! cards. NL Gain [G] [G] [G].",
-      "Apply !M! Poison and 3 Weak to ALL enemies. NL Exhaust.",
-      "Deal !D! damage to ALL enemies !M! times.",
-      "Deal !D! damage. NL Draw !M! cards. NL Discard !M! cards.",
-      "Deal !D! damage to ALL enemies.",
-      "Add a random double Upgraded Skill into your hand. NL It costs 0 this turn. NL Exhaust.",
-      "Retain. NL Next turn, draw X+2 cards and gain X+2 [G]. NL Exhaust.",
-      "Deal !D! damage. NL Whenever you draw this card, add !M! copies of it into your hand. NL Exhaust.",
-      "Whenever an Attack deals unblocked damage, apply !M! Poison.",
-      "Costs 1 less [G] NL for each card discarded this turn. NL Deal !D! damage !M! times.",
-      "Deal !D! damage twice. Decrease the damage of this card by !M! this combat.",
-      "Can only be played if there are !M! or fewer cards in your draw pile. NL Deal !D! damage to ALL enemies.",
-      "My draw pile must NL have ",
-      " or fewer cards.",
-      "Deal !D! damage. NL If the enemy has Weak or Poison, NL gain [G] and NL draw 1 card.",
-      "Innate. NL At the start of your turn, add !M! *Shivs into your hand.",
-      "Enemy loses 2X Strength. Apply 2X Weak. NL Exhaust.",
-      "Choose a card. NL Next turn, add !M! Upgraded copies of that card into your hand. Exhaust.",
-      "Next turn, NL gain [G] [G] [G] [G].",
-      "For the next !M! turns, your Attacks deal double damage.",
-      "ALL enemies lose !M! Strength this turn.",
-      "Deal !D! damage. NL Next turn, draw !M! additional cards.",
-      "Deal !D! damage !M! times.",
-      "Put !M! cards from your hand on top of your draw pile. NL They cost 0 until played.",
-      "If X is 5 or more, increase it by 2. NL Deal !D! damage X times.",
-      "Discard your hand. NL Add 1 *Shiv++ into your hand for each card discarded.",
-      "Unplayable. NL If this card is discarded from your hand, gain [G] [G] [G].",
-      "Apply 99 Vulnerable. NL Apply Slow. NL Exhaust.",
-      "At the start of your turn, draw !M! cards and discard !M! cards.",
-      "Deal !D! damage. NL Draw !M! cards, then discard all non-Attack cards in your hand."
+      "#g绿色 牌可以被 #y升级 两次。拾起时，选择并 #y升级 一张已 #y升级 的 #g绿色 牌。",
+      "你每打出一张牌，就对所有敌人造成 !M! 点伤害。技能牌触发该效果两次。",
+      "*小刀 造成的伤害增加 !M! 。 NL 增加一张 *小刀 到你的手牌。",
+      "获得 [G] [G] [G] 。 NL 抽2张牌。 NL 消耗 。",
+      "固有 。 NL 你每打出一张牌，都获得1点 格挡 。技能牌触发该效果两次。",
+      "获得一瓶随机药水。 NL 将取材自它的 蒸汽 牌加入你的手牌。 NL 消耗 。",
+      "对所有敌人造成 !D! 点伤害。 NL 丢弃一张随机手牌。如果丢弃的是技能牌，再对所有敌人造成 !D! 点伤害。",
+      "固有 。 NL 造成 !D! 点伤害。 NL 如果当前不是你的第一个回合，则再次造成 !D! 点伤害。 NL 消耗 。",
+      "造成 !D! 点伤害。 NL 如果敌人有 中毒 状态，则再次造成 !D! 点伤害两次。",
+      "获得 !B! 点 格挡 。 NL 你的下一回合开始时 格挡 不会消失，反而会翻倍。",
+      "你手牌中的所有牌在本回合的耗能变为0点。",
+      "丢弃任意张手牌。 NL 然后抽相同数量张牌。",
+      "每当你被攻击时，对所有敌人造成 !M! 点伤害。",
+      "将一名敌人的 中毒 层数变为四倍。 NL 消耗 。",
+      "造成 !D! 点伤害。 NL 你在这个回合内每打出一张牌，该名敌人都会失去 !M! 点生命。技能牌触发该效果两次。",
+      "丢弃 !M! 张牌。 NL 获得 [G] [G] [G] 。",
+      "给予所有敌人 !M! 层 中毒 和3层 虚弱 。 NL 消耗 。",
+      "对所有敌人造成 !D! 点伤害 !M! 次。",
+      "造成 !D! 点伤害。 NL 抽 !M! 张牌。 NL 丢弃 !M! 张牌。",
+      "对所有敌人造成 !D! 点伤害。",
+      "增加一张已 升级 两次的随机技能牌到你的手牌。 NL 这张牌在本回合耗能变为0。 NL 消耗 。",
+      "保留 。 NL 下一回合，抽X+2张牌，获得X+2 [G] 。 NL 消耗 。",
+      "造成 !D! 点伤害。 NL 每当你抽到这张牌，都增加 !M! 张其复制品到你的手牌。 NL 消耗 。",
+      "每有一次攻击造成未被 格挡 的伤害，就给予 !M! 层 中毒 。",
+      "你在这个回合内每丢弃一张牌，耗能就减少1 [G] 。 NL 造成 !D! 点伤害 !M! 次。",
+      "造成 !D! 点伤害两次。这张牌每被打出一次，在本场战斗中其基础伤害减少 !M! 。",
+      "只有当抽牌堆中有少于等于 !M! 张牌时才能打出。 NL 对所有敌人造成 !D! 点伤害。",
+      "我的抽牌堆最多只能 NL 有",
+      " 张牌。",
+      "造成 !D! 点伤害。 NL 如果敌人有 虚弱 或 中毒 状态， NL 获得 [G] 并且 NL 抽1张牌。",
+      "固有 。 NL 在你的回合开始时，增加 !M! 张 *小刀 到你的手牌。",
+      "敌人失去2X点 力量 ，给予 2X层 虚弱 。 NL 消耗 。",
+      "选择一张牌， NL 在下一回合，将 !M! 份这张牌的已 升级 的复制品放入你的手牌中。 消耗 。",
+      "下一回合 NL 获得  [G] [G] [G] [G] 。",
+      "在你的下 !M! 个回合，你所有的攻击伤害翻倍。",
+      "所有敌人失去 !M! 力量 1回合。",
+      "造成 !D! 点伤害。 NL 在下一回合多抽 !M! 张牌。",
+      "造成 !D! 点伤害 !M! 次。",
+      "将手牌中的 !M! 张牌放到抽牌堆的顶部。 NL 并且它们在被打出之前，耗能变为0。",
+      "造成 !D! 点伤害X次。 NL 如果X大于等于5，这张牌的效果数值增加2点。",
+      "丢弃所有手牌。 NL 每丢弃一张牌，在你的手牌中增加一张 *小刀++ 。",
+      "不能被打出 。 NL 如果这张牌从你的手牌中被丢弃，获得 [G] [G] [G] 。",
+      "给予99层 易伤 。 NL 给予 缓慢 。 NL 消耗 。",
+      "在你的回合开始时，抽 !M! 张牌，丢弃 !M! 张牌。",
+      "造成 !D! 点伤害。 NL 抽 !M! 张牌，然后丢弃手牌中的所有非攻击牌。"
     ],
     "NOTE_FOR_TRANSLATORS": [
       "These are second upgrades, so all but the first string are slight variants of Silent cards.",
@@ -651,7 +651,7 @@
     "NAME": "单粒宝石",
     "FLAVOR": "你曾经梦见过它。它是怎么跨越梦境来到现实的是个谜。",
     "DESCRIPTIONS": [
-      "#p紫色 牌可以被 #y升级 两次。拾起时，选择并 #y升级 一张 #y已升级 的 #p紫色 牌。",
+      "#p紫色 牌可以被 #y升级 两次。拾起时，选择并 #y升级 一张已 #y升级 的 #p紫色 牌。",
       "固有 。 NL 将一张 *贝塔+ 放入你的抽牌堆中。 NL 消耗 。",
       "固有 。 NL 在每回合开始时，将一张 *惩恶+ 加入你的手牌。",
       "保留 。 NL 进入 神格 。 NL !M! 回合后死亡。 NL 消耗 。",
@@ -682,17 +682,17 @@
     "NAME": "轮盘",
     "FLAVOR": "千万不要停在红色上面，千万不要停在红色上面......儿来！",
     "DESCRIPTIONS": [
-      "每当你打出的牌跟上一张类型不同，获得 #b",
+      "一回合中，每当你打出的牌跟上一张类型不同，获得 #b",
       " 点 #y格挡 。"
     ]
   },
   "reliquary:SpireOfHannoy": {
-    "NAME": "Spire of Hannoy",
-    "FLAVOR": "This puzzle's namesake Spire must have been even deadlier and more perplexing than this one.",
+    "NAME": "菡糯尖塔",
+    "FLAVOR": "跟这个益智玩具撞名的另一个尖塔一定更暗流涌动，难解磨人。",
     "DESCRIPTIONS": [
-      "#yWeak and #yVulnerable are #b",
-      "% more effective against enemies for every stack past the 1st (max ",
-      "%)."
+      "对敌人生效的 #y虚弱 和 #y易伤 在1层的基础上每多一层，其效果增加 #b",
+      "% （最多",
+      "%）。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is a Tower of Hanoi puzzle."
   },
@@ -705,10 +705,10 @@
     ]
   },
   "reliquary:Stimpack": {
-    "NAME": "Stimpack",
-    "FLAVOR": "The dogtags bear the initials \"T.O.P.\"",
+    "NAME": "鸡血包",
+    "FLAVOR": "狗牌上标着姓名首字母“T.O.P.”。",
     "DESCRIPTIONS": [
-      "The first time your HP drops to #b50% or below each combat, your #yAttacks deal double damage for #b1 turn."
+      "每场战斗中，当你的生命值第一次从高于 #b50% 掉到低于等于 #b50% 时， #b1 回合内，你的 #y攻击牌 造成的伤害翻倍。"
     ]
   },
   "reliquary:Tamtam": {
@@ -731,12 +731,12 @@
       "给我！",
       "啊！我要出高价把它给买了！",
       "我要是 @不@ 买，我就是个傻子。",
-      "你还真能讨教还价呢......",
+      "你还真能讨价还价呢......",
       "NOTE FOR TRANSLATORS: The following lines are when the merchant declines to buy a potion.",
-      "Sorry, not interested.",
-      "All set on those, thanks.",
-      "Nah.",
-      "Not in the market for those right now."
+      "对不起，不感兴趣。",
+      "无需多言了，谢谢。",
+      "我卜要。",
+      "我现在不想买。"
     ]
   },
   "reliquary:ThinkingCap": {
@@ -752,7 +752,22 @@
     "FLAVOR": "小而无指。",
     "DESCRIPTIONS": [
       "每场战斗开始时，将一张耗能为 #b",
-      " 的 #y能力 牌放入你的抽牌堆。这张能力牌每回合给予你 [E] 。"
+      " 的 #y能力牌 放入你的抽牌堆。这张 #y能力牌 每回合给予你 [E] 。"
+    ]
+  },
+  "reliquary:ThumbDrive": {
+    "NAME": "拇指驱动器",
+    "FLAVOR": "谁有古代互联网的备份？[赞][赞][赞]哦，原来就是本AI自己啊。",
+    "DESCRIPTIONS": [
+      "每场战斗开始时， #y生成 #b1 个 #y数据 充能球。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the classic bad joke structure, 'Who's got two thumbs and <insert detail about self>? This guy.'"
+  },
+  "reliquary:TrainingWheel": {
+    "NAME": "辅助轮",
+    "FLAVOR": "这个轮子外表崭新，但内部锈蚀严重，几乎转不起来。",
+    "DESCRIPTIONS": [
+      "每当你在回合开始的抽牌后手牌中没有 #y攻击牌 或者没有 #y技能牌 ，随机将一张对应类型的牌从抽牌堆放到你的手牌中。"
     ]
   },
   "reliquary:ThumbDrive": {
@@ -789,7 +804,7 @@
     "NAME": "陈列柜",
     "FLAVOR": "展示你最珍贵的物品的绝佳场所。",
     "DESCRIPTIONS": [
-      "拾起时，从你的牌组中移除一张牌。每场战斗的任意时刻，你可以将这张牌放入你的抽牌堆中。",
+      "拾起时，从你的牌组中移除一张牌。每场战斗的任意可操作时刻，你可以将这张牌放入你的抽牌堆中。",
       "选择一张要移除的牌。",
       "[#2aecd7]右击[] 以将 ",
       " 放入你的抽牌堆中。",
@@ -800,9 +815,9 @@
     "NAME": "淡茶",
     "FLAVOR": "如果你喝下它还能睡着，那还有什么意义呢？",
     "DESCRIPTIONS": [
-      "每场战斗中，你打出的第一张无色牌的耗能减少 #b1 点。",
+      "每场战斗中，你打出的第一张无色牌的耗能减少 #b1 。",
       "每场战斗中，你打出的前 #b",
-      " 张无色牌的耗能减少 #b1 点。"
+      " 张无色牌的耗能减少 #b1 。"
     ]
   },
   "reliquary:WritOfMandamus": {

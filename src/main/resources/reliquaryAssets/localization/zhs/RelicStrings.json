@@ -770,21 +770,6 @@
       "每当你在回合开始的抽牌后手牌中没有 #y攻击牌 或者没有 #y技能牌 ，随机将一张对应类型的牌从抽牌堆放到你的手牌中。"
     ]
   },
-  "reliquary:ThumbDrive": {
-    "NAME": "Thumb Drive",
-    "FLAVOR": "Who's got three thumbs and a backup copy of the ancient Internet? This AI.",
-    "DESCRIPTIONS": [
-      "At the start of each combat, #yChannel #b1 #yData."
-    ],
-    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the classic bad joke structure, 'Who's got two thumbs and <insert detail about self>? This guy.'"
-  },
-  "reliquary:TrainingWheel": {
-    "NAME": "Training Wheel",
-    "FLAVOR": "Its exterior is pristine, but it's so rusted on the inside that it can barely turn.",
-    "DESCRIPTIONS": [
-      "Whenever you draw a hand with no #yAttacks or no #ySkills, put a random card of that type from your draw pile into your hand."
-    ]
-  },
   "reliquary:TridentHead": {
     "NAME": "三叉戟的头",
     "FLAVOR": "它是著名的波浪王所持武器的一部分。",

@@ -38,7 +38,7 @@ public class RelicOuijaBoard extends CustomRelic implements ClickableRelic {
 
     @Override
     public void onRightClick() {
-        if (!StaticHelpers.CanClickRelic(this)) {
+        if (!StaticHelpers.canClickRelic(this)) {
             return;
         }
         AbstractPlayer p = AbstractDungeon.player;
@@ -59,7 +59,7 @@ public class RelicOuijaBoard extends CustomRelic implements ClickableRelic {
     @Override
     public void update() {
         super.update();
-        if (!StaticHelpers.CanClickRelic(this) || usedThisTurn) {
+        if (!StaticHelpers.canClickRelic(this) || usedThisTurn) {
             return;
         }
         validTargets.clear();

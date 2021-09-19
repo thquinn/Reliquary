@@ -34,7 +34,7 @@ public class RelicGummyVitamins extends CustomRelic implements ClickableRelic {
 
     @Override
     public void onRightClick() {
-        if (!StaticHelpers.CanClickRelic(this)) {
+        if (!StaticHelpers.canClickRelic(this)) {
             return;
         }
         if (usedThisTurn) {

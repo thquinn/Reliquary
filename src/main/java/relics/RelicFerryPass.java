@@ -39,6 +39,9 @@ public class RelicFerryPass extends CustomRelic implements ClickableRelic {
 
     @Override
     public boolean canSpawn() {
+        if (AbstractDungeon.floorNum > 48) {
+            return false;
+        }
         int numNamesInDeck = getCardIDs().length;
         return numNamesInDeck >= SPAWN_MIN_UNIQUES;
     }

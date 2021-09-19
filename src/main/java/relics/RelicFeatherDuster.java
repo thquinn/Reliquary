@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.rooms.ShopRoom;
 import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
+import util.StaticHelpers;
 import util.TextureLoader;
 
 public class RelicFeatherDuster extends CustomRelic {
@@ -23,6 +24,7 @@ public class RelicFeatherDuster extends CustomRelic {
 
     public RelicFeatherDuster() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
+        StaticHelpers.removeStrikeTips(this);
     }
 
     @Override

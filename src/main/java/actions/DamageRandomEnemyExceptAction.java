@@ -28,6 +28,6 @@ public class DamageRandomEnemyExceptAction extends AbstractGameAction {
                 addToBot(new RelicAboveCreatureAction(target, relic));
             }
         }
-        this.isDone = true;
+        isDone = true;
     }
 }

@@ -14,6 +14,18 @@
   },
   {
     "NAMES": [
+      "バイアス"
+    ],
+    "DESCRIPTION": "オーブ:毎ターン #y集中力 1を失う。"
+  },
+  {
+    "NAMES": [
+      "データ"
+    ],
+    "DESCRIPTION": "オーブ: #y集中力 を得る。"
+  },
+  {
+    "NAMES": [
       "信心"
     ],
     "DESCRIPTION": "ターン開始時、 #yマントラ を得る。",
@@ -21,10 +33,29 @@
   },
   {
     "NAMES": [
+      "怪我"
+    ],
+    "DESCRIPTION": "怪我は使用不可の #r呪い カード。",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Injury Curse card from the base game."
+  },
+  {
+    "NAMES": [
+      "イオン"
+    ],
+    "DESCRIPTION": "#yイオン #b2 を得たとき、 #yイオン #b2 を失い #yライトニング #b1 を #y生成 する。"
+  },
+  {
+    "NAMES": [
       "粘液"
     ],
-    "DESCRIPTION": "1コストの #y状態異常 カード。",
-    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Slimed curse from the base game."
+    "DESCRIPTION": "粘液は1コストの #y状態異常 カード。"
+  },
+  {
+    "NAMES": [
+      "スロー"
+    ],
+    "DESCRIPTION": "スローの敵は、そのターンにプレイされたカード1枚につき、アタックから受けるダメージが #b10% 上昇する。",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Slow debuff from the base game."
   },
   {
     "NAMES": [

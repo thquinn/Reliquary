@@ -26,6 +26,10 @@ public class CardModRetain extends AbstractCardModifier {
     }
 
     @Override
+    public String identifier(AbstractCard card) {
+        return ID;
+    }
+    @Override
     public AbstractCardModifier makeCopy() {
         return new CardModRetain();
     }

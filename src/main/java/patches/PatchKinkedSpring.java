@@ -60,7 +60,6 @@ public class PatchKinkedSpring {
                 return SpireReturn.Continue();
             }
             // Remove all actions from the queue that may have requested this shuffle — they will just try to shuffle again.
-            // TODO: We could do something smart like keep track of which action types remain on the queue in successive shuffle attempts.
             AbstractDungeon.actionManager.actions.removeIf(a -> SHUFFLE_ACTION_CLASSES.contains(a.getClass()));
             __instance.isDone = true;
             kinkedSpring.flash();

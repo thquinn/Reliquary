@@ -10,13 +10,16 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import relics.RelicOuijaBoard;
 
 public class OuijaBoardAction extends AbstractGameAction {
     private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("WishAction");
+    private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(RelicOuijaBoard.ID);
     public static final String[] TEXT = uiStrings.TEXT;
+    public static final String[] DESCRIPTIONS = relicStrings.DESCRIPTIONS;
 
     int costChange;
 
@@ -36,7 +39,7 @@ public class OuijaBoardAction extends AbstractGameAction {
                 return;
             }
             AbstractDungeon.gridSelectScreen.open(ouija.validTargets, 1, TEXT[0], false, false, true, false);
-            AbstractDungeon.overlayMenu.cancelButton.show("Cancel");
+            AbstractDungeon.overlayMenu.cancelButton.show(DESCRIPTIONS[4]);
             tickDuration();
             return;
         }

@@ -22,7 +22,7 @@ public class RelicDhvaja extends CustomRelic {
 
     @Override
     public void onChangeStance(AbstractStance prevStance, AbstractStance newStance) {
-        if (prevStance.ID.equals(DivinityStance.STANCE_ID)) {
+        if (newStance.ID.equals(DivinityStance.STANCE_ID)) {
             addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new TriumphPower(AbstractDungeon.player, 1)));
         }

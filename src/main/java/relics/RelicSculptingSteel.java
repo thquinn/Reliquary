@@ -28,7 +28,7 @@ public class RelicSculptingSteel extends CustomRelic {
     public void onEquip() {
         List<AbstractRelic> copyables = AbstractDungeon.player.relics.stream().filter(r -> isAppropriateRarity(r) && COPYABLE_RELICS.contains(r.relicId)).collect(Collectors.toList());
         if (copyables.isEmpty()) {
-            ReliquaryLogger.log("no copyables");
+            ReliquaryLogger.error("Sculpting Steel found nothing to copy.");
             return;
         }
         Collections.shuffle(copyables, new Random(AbstractDungeon.miscRng.randomLong()));
@@ -58,6 +58,7 @@ public class RelicSculptingSteel extends CustomRelic {
     // Not all of these will actually be copied by Sculpting Steel; they are filtered further in canSpawn and onEquip.
     private final Set<String> COPYABLE_RELICS = new HashSet<>(Arrays.asList(
             // Reliquary
+            RelicAluminiumFoil.ID,
             RelicBallBearing.ID,
             RelicBoilingFlask.ID,
             RelicBookmark.ID,
@@ -71,16 +72,21 @@ public class RelicSculptingSteel extends CustomRelic {
             RelicExpiredCoupon.ID,
             RelicFirecrackers.ID,
             RelicHotPoker.ID,
+            RelicIceCubeTray.ID,
             RelicIvoryTrinket.ID,
             RelicJackalopeAntler.ID,
             RelicKillPill.ID,
+            RelicKnifeBlock.ID,
+            RelicLeadDart.ID,
             RelicMedicineBall.ID,
+            RelicMudwinsCradle.ID,
             RelicOuijaBoard.ID,
             RelicPorcupineQuills.ID,
             RelicRosewoodLute.ID,
             RelicSharkskinSheath.ID,
             RelicSpinner.ID,
             RelicTamtam.ID,
+            RelicThumbDrive.ID,
             RelicTridentHead.ID,
             RelicTuningFork.ID,
             RelicVitrine.ID,
@@ -147,7 +153,6 @@ public class RelicSculptingSteel extends CustomRelic {
             OddlySmoothStone.ID,
             OldCoin.ID,
             OrnamentalFan.ID,
-            Orrery.ID,
             Pantograph.ID,
             Pear.ID,
             PenNib.ID,

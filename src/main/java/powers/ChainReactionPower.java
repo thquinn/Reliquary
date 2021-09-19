@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.BerserkPower;
 import com.megacrit.cardcrawl.powers.CombustPower;
 import util.ReliquaryLogger;
 import util.TextureLoader;
@@ -17,9 +16,8 @@ import java.lang.reflect.Field;
 public class ChainReactionPower extends AbstractPower {
     public static final String POWER_ID = "reliquary:ChainReaction";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
-    private static final PowerStrings berserkStrings = CardCrawlGame.languagePack.getPowerStrings(BerserkPower.POWER_ID);
     private static final Texture tex32 = TextureLoader.getTexture("reliquaryAssets/images/powers/chainReaction32.png");
-    private static final Texture tex84 = TextureLoader.getTexture("reliquaryAssets/images/powers/chainReaction84.png");
+private static final Texture tex84 = TextureLoader.getTexture("reliquaryAssets/images/powers/chainReaction84.png");
 
     public ChainReactionPower(AbstractCreature owner, int amount) {
         name = powerStrings.NAME;

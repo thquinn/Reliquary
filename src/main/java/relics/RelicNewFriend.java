@@ -6,6 +6,7 @@ import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import util.StaticHelpers;
 import util.TextureLoader;
 
 public class RelicNewFriend extends CustomRelic {
@@ -17,6 +18,7 @@ public class RelicNewFriend extends CustomRelic {
 
     public RelicNewFriend() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
+        StaticHelpers.removeStrikeTips(this);
     }
 
     @Override

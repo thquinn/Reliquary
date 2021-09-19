@@ -4,6 +4,8 @@ import actions.ApplyPowerIfAbsentAction;
 import actions.BigHammerWhirlwindAction;
 import actions.MultiplyBlockAction;
 import actions.MultiplyStrengthAction;
+import basemod.helpers.CardModifierManager;
+import cardmods.CardModSolitairized;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -17,6 +19,7 @@ import com.megacrit.cardcrawl.cards.status.Dazed;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.BerserkPower;
 import com.megacrit.cardcrawl.powers.BrutalityPower;
@@ -41,7 +44,9 @@ public class PatchBigHammer {
     public static class PatchBigHammerCanUpgrade {
         public static SpireReturn<Boolean> Prefix(AbstractCard __instance) {
             boolean ironcladCard = __instance.color == AbstractCard.CardColor.RED;
-            if (ironcladCard && __instance.timesUpgraded < 2 && AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(RelicBigHammer.ID)) {
+            boolean hasSolitaire = AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(RelicBigHammer.ID);
+            boolean isSolitairized = CardModifierManager.hasModifier(__instance, CardModSolitairized.ID);
+            if (ironcladCard && __instance.timesUpgraded == 1 && (hasSolitaire || isSolitairized)) {
                 return SpireReturn.Return(true);
             }
             return SpireReturn.Continue();
@@ -124,15 +129,18 @@ public class PatchBigHammer {
     @SpirePatch(clz=WildStrike.class, method="upgrade")
     public static class PatchBigHammerUpgrade {
         public static SpireReturn Prefix(AbstractCard __instance) {
-            if (AbstractDungeon.player == null) {
+            if (__instance.timesUpgraded != 1) {
                 return SpireReturn.Continue();
             }
-            RelicBigHammer hammer = (RelicBigHammer) AbstractDungeon.player.getRelic(RelicBigHammer.ID);
-            if (__instance.timesUpgraded == 1 && hammer != null) {
-                hammer.upgradeCard(__instance);
-                return SpireReturn.Return(null);
+            RelicBigHammer bigHammer = AbstractDungeon.player == null ? null : (RelicBigHammer) AbstractDungeon.player.getRelic(RelicBigHammer.ID);
+            if (bigHammer == null && !CardModifierManager.hasModifier(__instance, CardModSolitairized.ID)) {
+                return SpireReturn.Continue();
             }
-            return SpireReturn.Continue();
+            if (bigHammer == null) {
+                bigHammer = (RelicBigHammer) RelicLibrary.getRelic(RelicBigHammer.ID).makeCopy();
+            }
+            bigHammer.upgradeCard(__instance);
+            return SpireReturn.Return(null);
         }
     }
 
@@ -389,6 +397,24 @@ public class PatchBigHammer {
             for (int i = 1; i < __instance.magicNumber; i++) {
                 AbstractDungeon.actionManager.addToBottom(new PlayTopCardAction(AbstractDungeon.getCurrRoom().monsters.getRandomMonster(null, true, AbstractDungeon.cardRandomRng), true));
             }
+        }
+    }
+
+    @SpirePatch(
+            clz= InfernalBlade.class,
+            method="use"
+    )
+    public static class PatchBigHammerInfernalBlade {
+        public static SpireReturn Prefix(InfernalBlade __instance) {
+            if (__instance.timesUpgraded == 2) {
+                AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.ATTACK).makeCopy();
+                c.upgrade();
+                c.upgrade();
+                c.setCostForTurn(0);
+                AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c, true));
+                return SpireReturn.Return(null);
+            }
+            return SpireReturn.Continue();
         }
     }
 

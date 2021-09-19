@@ -1,4 +1,19 @@
 ﻿{
+  "reliquary:AfterGlow": {
+    "NAME": "残光",
+    "DESCRIPTIONS": [
+      "#y残像 が #yスキル で #b2 回発動する。",
+      "#y残像 が #yスキル で #b",
+      " 回発動する。"
+    ]
+  },
+  "reliquary:AreaDenial": {
+    "NAME": "接近阻止",
+    "DESCRIPTIONS": [
+      "#yトゲ が敵全体にダメージを与える。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This power augments the behavior of the base game's Thorns power."
+  },
   "reliquary:BattleHymnPlus": {
     "NAME": "戦いの聖歌",
     "DESCRIPTIONS": [
@@ -6,6 +21,15 @@
       " 枚手札に加える。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Battle Hymn power."
+  },
+  "reliquary:BlurPlus": {
+    "NAME": "ダブルビジョン",
+    "DESCRIPTIONS": [
+      "次のターン開始時に #yブロック を失わず、それを2倍にする。",
+      "次の #b",
+      " ターンの開始時に #yブロック を失わず、それを2倍にする。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Blur power."
   },
   "reliquary:ChainReaction": {
     "NAME": "連鎖反応",
@@ -15,6 +39,35 @@
     ],
     "NOTE_FOR_TRANSLATORS": "Combust is an existing power in the base game."
   },
+  "reliquary:CutAbove": {
+    "NAME": "微塵切り",
+    "DESCRIPTIONS": [
+      "#yメッタ切り が #yスキル で #b2 回発動する。",
+      "#yメッタ切り が #yスキル で #b",
+      " 回発動する。"
+    ]
+  },
+  "reliquary:DoubleWindsor": {
+    "NAME": "ダブル・ノット",
+    "DESCRIPTIONS": [
+      "#y窒息 が #yスキル で #b2 回発動する。",
+      "#y窒息 が #yスキル で #b",
+      " 回発動する。"
+    ]
+  },
+  "reliquary:FocusDown": {
+    "NAME": "集中力低下",
+    "DESCRIPTIONS": [
+      "ターン終了時、 集中力 #b",
+      " を失う。"
+    ]
+  },
+  "reliquary:HalfLightning": {
+    "NAME": "イオン",
+    "DESCRIPTIONS": [
+      "#yイオン #b2 を得たとき、 #yイオン #b2 を失い #yライトニング #b1 を #y生成 する。"
+    ]
+  },
   "reliquary:HandSize": {
     "NAME": "手札容量増加",
     "DESCRIPTIONS": [
@@ -22,6 +75,22 @@
       "手札の最大数 #b+ #b",
       "手札の最大数 #b- #b",
       " 。"
+    ]
+  },
+  "reliquary:HelloPlus": {
+    "NAME": "フィズ・バズ",
+    "DESCRIPTIONS": [
+      "ランダムなアンコモンのカードを #b",
+      " 枚手札に加える。",
+      " 枚手札に加える。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Hello power."
+  },
+  "reliquary:Hooked": {
+    "NAME": "釣り上げ",
+    "DESCRIPTIONS": [
+      "次のターン、 [E] を #b",
+      " 失う。"
     ]
   },
   "reliquary:Hydrated": {
@@ -61,6 +130,34 @@
     ],
     "NOTE_FOR_TRANSLATORS": "This is an weaker version of the base game's Duplication power."
   },
+  "reliquary:MrofOhce": {
+    "NAME": "化響反",
+    "DESCRIPTIONS": [
+      "ターンの最後にプレイするカードを、2回プレイする。",
+      "ターンの最後にプレイする #b",
+      " 枚のカードを、2回プレイする。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an alternate version of the base game's Echo Form power. 'Mrof Ohce' is Echo Form backwards."
+  },
+  "reliquary:QuantumAI": {
+    "NAME": "量子AI",
+    "DESCRIPTIONS": [
+      "ターン開始時、 #b2 枚のランダムな #yパワー から #b1 枚選び、手札に加える。",
+      "ターン開始時、 #b2 枚のランダムな #yパワー から #b2 枚選び、手札に加える。",
+      "ターン開始時、 #b2 枚のランダムな #yパワー から #b",
+      " 枚選び、手札に加える。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Study power."
+  },
+  "reliquary:ReboundPlus": {
+    "NAME": "リサウンド",
+    "DESCRIPTIONS": [
+      "このターン、次にプレイするカードを手札に戻す。",
+      "このターン、次にプレイする #b",
+      " 枚のカードを手札に戻す。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Rebound power."
+  },
   "reliquary:ReduceColorlessCost": {
     "NAME": "蒼白",
     "DESCRIPTIONS": [
@@ -68,6 +165,15 @@
       "次にプレイする #b",
       " 枚の無色のカードのコストを #b1 減らす。"
     ]
+  },
+  "reliquary:StormPlus": {
+    "NAME": "スーパーストーム",
+    "DESCRIPTIONS": [
+      "#yパワー をプレイするたび、その消費 [B] ごとに #yライトニング #b",
+      " を生成する（最低でも #b",
+      " つ）。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Storm power."
   },
   "reliquary:StudyPlus": {
     "NAME": "詰め込み学習",
@@ -83,6 +189,13 @@
       "この敵が死亡するまで他の敵を攻撃できない。",
       "他の敵に #r@挑発@ されている！"
     ]
+  },
+  "reliquary:ThermalPaste": {
+    "NAME": "放熱グリス",
+    "DESCRIPTIONS": [
+      "#yヒートシンク が、可能なら #yパワー を優先して引く。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This power augments the behavior of the Defect's Heatsinks power."
   },
   "reliquary:Triumph": {
     "NAME": "征服",

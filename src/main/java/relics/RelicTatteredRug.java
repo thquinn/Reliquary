@@ -9,10 +9,15 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.ShopRoom;
 import util.TextureLoader;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class RelicTatteredRug extends CustomRelic {
     public static final String ID = "reliquary:TatteredRug";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/tatteredRug.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/tatteredRug.png");
+
+    public static Set<String> SOLD_POTION_IDS = new HashSet<>();
 
     public RelicTatteredRug() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT);

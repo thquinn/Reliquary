@@ -2,6 +2,7 @@ package relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
@@ -22,7 +23,12 @@ public class RelicKinkedSpring extends CustomRelic {
             // Neow boss relic swapping into Kinked Spring is a death sentence with an off-sized deck.
             return false;
         }
-        return true;
+        // The shuffle patch seems to break a lot of mod characters.
+        AbstractPlayer p = AbstractDungeon.player;
+        return p.chosenClass == AbstractPlayer.PlayerClass.IRONCLAD ||
+                p.chosenClass == AbstractPlayer.PlayerClass.THE_SILENT ||
+                p.chosenClass == AbstractPlayer.PlayerClass.DEFECT ||
+                p.chosenClass == AbstractPlayer.PlayerClass.WATCHER;
     }
 
     @Override

@@ -1,6 +1,7 @@
 package relics;
 
 import basemod.abstracts.CustomRelic;
+import basemod.abstracts.CustomSavable;
 import cards.colorless.CardVim;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.MathUtils;
@@ -24,6 +25,7 @@ import com.megacrit.cardcrawl.monsters.ending.SpireSpear;
 import com.megacrit.cardcrawl.monsters.exordium.*;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rewards.RewardItem;
+import util.RunicRemoteSave;
 import util.TextureLoader;
 
 import java.util.HashSet;
@@ -33,14 +35,15 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class RelicRunicRemote extends CustomRelic {
+public class RelicRunicRemote extends CustomRelic implements CustomSavable<RunicRemoteSave> {
     public static final String ID = "reliquary:RunicRemote";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/runicRemote.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/runicRemote.png");
 
+    static String RANDOM_COLORLESS = "random_colorless";
     public boolean perfect = true;
     Set<String> dropIDs = new HashSet<>();
-    static String RANDOM_COLORLESS = "random_colorless";
+    boolean postLoadTrigger = false;
 
     public RelicRunicRemote() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.SOLID);
@@ -93,6 +96,20 @@ public class RelicRunicRemote extends CustomRelic {
 
     @Override
     public void onVictory() {
+        trigger();
+    }
+    @Override
+    public void update() {
+        if (postLoadTrigger) {
+            if (AbstractDungeon.getCurrRoom() != null && AbstractDungeon.getCurrRoom().isBattleOver) {
+                trigger();
+                AbstractDungeon.combatRewardScreen.setupItemReward();
+            }
+            postLoadTrigger = false;
+        }
+        super.update();
+    }
+    public void trigger() {
         stopPulse();
         if (!perfect || dropIDs.isEmpty()) {
             return;
@@ -141,6 +158,18 @@ public class RelicRunicRemote extends CustomRelic {
             }
         }
         AbstractDungeon.getCurrRoom().addCardReward(reward);
+    }
+
+    @Override
+    public RunicRemoteSave onSave() {
+        return new RunicRemoteSave(perfect, dropIDs);
+    }
+
+    @Override
+    public void onLoad(RunicRemoteSave save) {
+        this.perfect = save.perfect;
+        this.dropIDs = save.dropIDs;
+        postLoadTrigger = true;
     }
 
     @Override

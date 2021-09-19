@@ -1,5 +1,6 @@
 package relics;
 
+import actions.QuartzCubeAction;
 import actions.TriggerArtifactAction;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
@@ -26,7 +27,7 @@ public class RelicQuartzCube extends CustomRelic {
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/quartzCube.png");
 
     static int NUM_ENEMIES = 3;
-    static int DURATION = 2;
+    public static int DURATION = 2;
 
     boolean activated = false, added = false, removed = false;
     AbstractMonster target;
@@ -65,13 +66,7 @@ public class RelicQuartzCube extends CustomRelic {
         // This has to be done here: stunning a monster in atBattleStart/atTurnStart causes its intent to never get set.
         if (target.intent != AbstractMonster.Intent.DEBUG) {
             activated = true;
-            addToBot(new RelicAboveCreatureAction(target, this));
-            if (target.hasPower("Artifact")) {
-                addToBot(new TriggerArtifactAction(target));
-                return;
-            }
-            addToBot(new ApplyPowerAction(target, AbstractDungeon.player, new StunMonsterPower(target, DURATION)));
-            addToBot(new ApplyPowerAction(target, AbstractDungeon.player, new InvincibleTurnsPower(target, DURATION)));
+            addToBot(new QuartzCubeAction(target));
         }
     }
 

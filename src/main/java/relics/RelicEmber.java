@@ -48,6 +48,10 @@ public class RelicEmber extends CustomRelic implements OnAfterUseCardRelic {
 
     @Override
     public void onAfterUseCard(AbstractCard c, UseCardAction useCardAction) {
+        if (c.cost == -2) {
+            // Unplayable cards.
+            return;
+        }
         if (c.freeToPlay()) {
             return;
         }

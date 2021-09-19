@@ -39,7 +39,7 @@ public class PatchSkeletonKey {
             boolean silentCard = __instance.color == AbstractCard.CardColor.GREEN;
             boolean hasSolitaire = AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(RelicSkeletonKey.ID);
             boolean isSolitairized = CardModifierManager.hasModifier(__instance, CardModSolitairized.ID);
-            if (silentCard && __instance.timesUpgraded == 2 && (hasSolitaire || isSolitairized)) {
+            if (silentCard && __instance.timesUpgraded == 1 && (hasSolitaire || isSolitairized)) {
                 return SpireReturn.Return(true);
             }
             return SpireReturn.Continue();

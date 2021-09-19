@@ -1,0 +1,17 @@
+{
+  "reliquary:Bias": {
+    "NAME": "偏差",
+    "DESCRIPTION": [
+      "#y被动： 回合开始时，失去 #b",
+      " 点 #y集中 。 NL #y激发： 无效果。 NL 偏差充能球不受 #y集中 影响。"
+    ]
+  },
+  "reliquary:Data": {
+    "NAME": "数据",
+    "DESCRIPTION": [
+      "#y被动： 被 #y生成 时以及回合开始时，获得 #b",
+      " 点 #r临时 #y集中 。 NL #y激发： 获得 #b",
+      " 点 #r临时 #y集中 。 NL 数据充能球不受 #y集中 影响。"
+    ]
+  }
+}

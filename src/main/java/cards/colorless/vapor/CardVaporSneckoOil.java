@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class CardVaporSneckoOil extends CustomCard {
+public class CardVaporSneckoOil extends CardVapor {
     public static final String ID = "reliquary:VaporSneckoOil";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/sneckoOil.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -51,10 +51,5 @@ public class CardVaporSneckoOil extends CustomCard {
             rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporSneckoOil();
     }
 }

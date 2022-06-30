@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.MetallicizePower;
 
-public class CardVaporHeartOfIron extends CustomCard {
+public class CardVaporHeartOfIron extends CardVapor {
     public static final String ID = "reliquary:VaporHeartOfIron";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/heartOfIron.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -35,10 +35,5 @@ public class CardVaporHeartOfIron extends CustomCard {
             upgradeName();
             upgradeMagicNumber(3);
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporHeartOfIron();
     }
 }

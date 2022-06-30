@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.ExplosionSmallEffect;
 
-public class CardVaporExplosivePotion extends CustomCard {
+public class CardVaporExplosivePotion extends CardVapor {
     public static final String ID = "reliquary:VaporExplosivePotion";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/explosivePotion.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -46,10 +46,5 @@ public class CardVaporExplosivePotion extends CustomCard {
             upgradeName();
             upgradeDamage(5);
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporExplosivePotion();
     }
 }

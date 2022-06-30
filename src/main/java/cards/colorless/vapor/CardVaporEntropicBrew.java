@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class CardVaporEntropicBrew extends CustomCard {
+public class CardVaporEntropicBrew extends CardVapor {
     public static final String ID = "reliquary:VaporEntropicBrew";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/entropicBrew.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -57,10 +57,5 @@ public class CardVaporEntropicBrew extends CustomCard {
             rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporEntropicBrew();
     }
 }

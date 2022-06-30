@@ -24,6 +24,7 @@ public class RelicCrucible extends CustomRelic implements OnRemoveCardFromMaster
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/crucible.png");
 
     static final int N = 2;
+    boolean trigger = false;
 
     public RelicCrucible() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.HEAVY);
@@ -36,9 +37,19 @@ public class RelicCrucible extends CustomRelic implements OnRemoveCardFromMaster
 
     @Override
     public void onRemoveCardFromMasterDeck(AbstractCard removed) {
-        if (!removed.upgraded) {
+        if (removed.upgraded) {
+            // Can't actually perform the upgrade in here, since that causes a concurrent modification exception with Peace Pipe.
+            trigger = true;
+        }
+    }
+
+    @Override
+    public void update() {
+        super.update();
+        if (!trigger) {
             return;
         }
+        trigger = false;
         AbstractPlayer p = AbstractDungeon.player;
         List<AbstractCard> upgradeableCards = p.masterDeck.group.stream().filter(c -> c.canUpgrade()).collect(Collectors.toList());
         if (upgradeableCards.isEmpty()) {

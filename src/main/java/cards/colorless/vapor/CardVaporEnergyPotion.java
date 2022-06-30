@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class CardVaporEnergyPotion extends CustomCard {
+public class CardVaporEnergyPotion extends CardVapor {
     public static final String ID = "reliquary:VaporEnergyPotion";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/energyPotion.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -37,10 +37,5 @@ public class CardVaporEnergyPotion extends CustomCard {
             rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporEnergyPotion();
     }
 }

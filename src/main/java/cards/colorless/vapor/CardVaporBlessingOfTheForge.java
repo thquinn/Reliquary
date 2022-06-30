@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class CardVaporBlessingOfTheForge extends CustomCard {
+public class CardVaporBlessingOfTheForge extends CardVapor {
     public static final String ID = "reliquary:VaporBlessingOfTheForge";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/blessingOfTheForge.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -46,10 +46,5 @@ public class CardVaporBlessingOfTheForge extends CustomCard {
             rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporBlessingOfTheForge();
     }
 }

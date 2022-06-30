@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.IntangiblePower;
 
-public class CardVaporGhostInAJar extends CustomCard {
+public class CardVaporGhostInAJar extends CardVapor {
     public static final String ID = "reliquary:VaporGhostInAJar";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/ghostInAJar.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -39,10 +39,5 @@ public class CardVaporGhostInAJar extends CustomCard {
             upgradeName();
             upgradeMagicNumber(40);
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporGhostInAJar();
     }
 }

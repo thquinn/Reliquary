@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.powers.BackAttackPower;
 import com.megacrit.cardcrawl.vfx.RainingGoldEffect;
 import com.megacrit.cardcrawl.vfx.combat.SmokeBombEffect;
 
-public class CardVaporSmokeBomb extends CustomCard {
+public class CardVaporSmokeBomb extends CardVapor {
     public static final String ID = "reliquary:VaporSmokeBomb";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/smokeBomb.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -69,10 +69,5 @@ public class CardVaporSmokeBomb extends CustomCard {
             upgradeName();
             upgradeMagicNumber(-50);
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporSmokeBomb();
     }
 }

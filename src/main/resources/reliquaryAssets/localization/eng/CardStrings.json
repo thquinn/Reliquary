@@ -17,7 +17,7 @@
   "reliquary:VaporBlessingOfTheForge": {
     "NAME": "Quenching Vapor",
     "DESCRIPTION": "Retain. NL Upgrade a random card in your hand for the rest of combat. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Upgrade half of the cards in your hand for the rest of combat, at random, rounded up. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Retain. NL Upgrade half of the cards in your hand for the rest of combat, rounded up, at random. NL Exhaust."
   },
   "reliquary:VaporBlockPotion": {
     "NAME": "Enshrouding Vapor",

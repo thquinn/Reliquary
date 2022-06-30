@@ -162,7 +162,7 @@ public class PatchBigHammer {
                     null, // Exceptions
                     "{" +
                         "int realBaseDamage = baseDamage;" +
-                        "baseDamage += magicNumber * " + PatchBigHammerAnger.class.getName() + ".discardedAngerCount();" +
+                        "baseDamage += Math.max(0, magicNumber) * " + PatchBigHammerAnger.class.getName() + ".discardedAngerCount();" +
                         "super.calculateCardDamage($1);" +
                         "baseDamage = realBaseDamage;" +
                         "isDamageModified = damage != baseDamage;" +

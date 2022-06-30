@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class CardVaporSkillPotion extends CustomCard {
+public class CardVaporSkillPotion extends CardVapor {
     public static final String ID = "reliquary:VaporSkillPotion";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/skillPotion.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -40,10 +40,5 @@ public class CardVaporSkillPotion extends CustomCard {
             rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporSkillPotion();
     }
 }

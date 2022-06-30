@@ -69,8 +69,11 @@
     "NAME": "沸腾的烧瓶",
     "FLAVOR": "一只沸腾的圆底烧瓶，容量5000毫升！",
     "DESCRIPTIONS": [
-      "在每场战斗开始时，如果你的药水栏位为满，根据你所拥有的药水，选择一张 #y蒸汽 牌并加入你的手牌。"
-    ]
+      "在每场战斗开始时，如果你的药水栏位为满，根据你所拥有的药水，选择一张 #y蒸汽 牌并加入你的手牌。",
+      "Wide ",
+      ""
+    ],
+    "NOTE_FOR_TRANSLATORS": "The second and third strings are the prefix and suffix for Vapors generated from the Wide Potions mod."
   },
   "reliquary:Bookmark": {
     "NAME": "书签",

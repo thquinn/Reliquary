@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.stances.CalmStance;
 import com.megacrit.cardcrawl.stances.NeutralStance;
 import com.megacrit.cardcrawl.stances.WrathStance;
 
-public class CardVaporStancePotion extends CustomCard {
+public class CardVaporStancePotion extends CardVapor {
     public static final String ID = "reliquary:VaporStancePotion";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/stancePotion.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -58,10 +58,5 @@ public class CardVaporStancePotion extends CustomCard {
             rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporStancePotion();
     }
 }

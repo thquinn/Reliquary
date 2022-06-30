@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class CardVaporCunningPotion extends CustomCard {
+public class CardVaporCunningPotion extends CardVapor {
     public static final String ID = "reliquary:VaporCunningPotion";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/cunningPotion.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -40,10 +40,5 @@ public class CardVaporCunningPotion extends CustomCard {
             rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporCunningPotion();
     }
 }

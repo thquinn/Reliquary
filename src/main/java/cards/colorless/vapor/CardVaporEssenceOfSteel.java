@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PlatedArmorPower;
 
-public class CardVaporEssenceOfSteel extends CustomCard {
+public class CardVaporEssenceOfSteel extends CardVapor {
     public static final String ID = "reliquary:VaporEssenceOfSteel";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/essenceOfSteel.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -35,10 +35,5 @@ public class CardVaporEssenceOfSteel extends CustomCard {
             upgradeName();
             upgradeMagicNumber(2);
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporEssenceOfSteel();
     }
 }

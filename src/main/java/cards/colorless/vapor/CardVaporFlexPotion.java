@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.LoseStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
-public class CardVaporFlexPotion extends CustomCard {
+public class CardVaporFlexPotion extends CardVapor {
     public static final String ID = "reliquary:VaporFlexPotion";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/flexPotion.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -38,10 +38,5 @@ public class CardVaporFlexPotion extends CustomCard {
             upgradeName();
             upgradeMagicNumber(2);
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporFlexPotion();
     }
 }

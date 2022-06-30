@@ -74,8 +74,11 @@
     "NAME": "Кипящая колба",
     "FLAVOR": "Кипящая колба с закругленным дном, пять тысяч миллиметров!",
     "DESCRIPTIONS": [
-      "В начале каждого боя, выберите карту #yИспарений и добавьте её в руку, если все места для зелий заполнены."
-    ]
+      "В начале каждого боя, выберите карту #yИспарений и добавьте её в руку, если все места для зелий заполнены.",
+      "Wide ",
+      ""
+    ],
+    "NOTE_FOR_TRANSLATORS": "The second and third strings are the prefix and suffix for Vapors generated from the Wide Potions mod."
   },
   "reliquary:Bookmark": {
     "NAME": "Закладка",

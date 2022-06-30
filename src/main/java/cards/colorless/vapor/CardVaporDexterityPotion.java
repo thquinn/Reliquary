@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 
-public class CardVaporDexterityPotion extends CustomCard {
+public class CardVaporDexterityPotion extends CardVapor {
     public static final String ID = "reliquary:VaporDexterityPotion";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/dexterityPotion.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -35,10 +35,5 @@ public class CardVaporDexterityPotion extends CustomCard {
             upgradeName();
             upgradeMagicNumber(1);
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporDexterityPotion();
     }
 }

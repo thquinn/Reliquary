@@ -71,9 +71,7 @@ public class OrbData extends OrbDataBase {
     @Override
     public void updateDescription() {
         applyFocus();
-        ReliquaryLogger.log("updating");
         description = DESCRIPTION[0] + passiveAmount + DESCRIPTION[1] + evokeAmount + DESCRIPTION[2];
-        ReliquaryLogger.log(description);
     }
 
     @Override

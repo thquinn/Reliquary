@@ -1,0 +1,12 @@
+{
+  "reliquary:CardModEthereal": {
+    "TEXT": [
+      "휘발성. NL "
+    ]
+  },
+  "reliquary:CardModRetain": {
+    "TEXT": [
+      "보존. NL "
+    ]
+  }
+}

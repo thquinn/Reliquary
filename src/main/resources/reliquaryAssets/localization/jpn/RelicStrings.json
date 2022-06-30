@@ -74,8 +74,11 @@
     "NAME": "煮沸フラスコ",
     "FLAVOR": "丸底沸騰フラスコ、5000ミリリットル！",
     "DESCRIPTIONS": [
-      "戦闘開始時にポーションスロットが一杯の場合、 #y香り カードを #b1 枚選び、手札に加える。"
-    ]
+      "戦闘開始時にポーションスロットが一杯の場合、 #y香り カードを #b1 枚選び、手札に加える。",
+      "Wide ",
+      ""
+    ],
+    "NOTE_FOR_TRANSLATORS": "The second and third strings are the prefix and suffix for Vapors generated from the Wide Potions mod."
   },
   "reliquary:Bookmark": {
     "NAME": "栞",

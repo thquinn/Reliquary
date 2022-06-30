@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import relics.RelicBoilingFlask;
 
-public class CardVaporUnknownPotion extends CustomCard {
+public class CardVaporUnknownPotion extends CardVapor {
     public static final String ID = "reliquary:VaporUnknownPotion";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/unknownPotion.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -43,10 +43,5 @@ public class CardVaporUnknownPotion extends CustomCard {
             rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporUnknownPotion();
     }
 }

@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.RitualPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
-public class CardVaporCultistPotion extends CustomCard {
+public class CardVaporCultistPotion extends CardVapor {
     public static final String ID = "reliquary:VaporCultistPotion";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/cultistPotion.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -41,10 +41,5 @@ public class CardVaporCultistPotion extends CustomCard {
             upgradeName();
             upgradeMagicNumber(-2);
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporCultistPotion();
     }
 }

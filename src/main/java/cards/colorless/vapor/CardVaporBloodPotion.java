@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class CardVaporBloodPotion extends CustomCard {
+public class CardVaporBloodPotion extends CardVapor {
     public static final String ID = "reliquary:VaporBloodPotion";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/bloodPotion.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -37,8 +37,4 @@ public class CardVaporBloodPotion extends CustomCard {
         }
     }
 
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporBloodPotion();
-    }
 }

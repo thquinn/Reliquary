@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.BufferPower;
 
-public class CardVaporFairyInABottle extends CustomCard {
+public class CardVaporFairyInABottle extends CardVapor {
     public static final String ID = "reliquary:VaporFairyInABottle";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/fairyInABottle.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -38,10 +38,5 @@ public class CardVaporFairyInABottle extends CustomCard {
             rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporFairyInABottle();
     }
 }

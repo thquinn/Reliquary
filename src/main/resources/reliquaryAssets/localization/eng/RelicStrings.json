@@ -74,8 +74,11 @@
     "NAME": "Boiling Flask",
     "FLAVOR": "A round-bottom boiling flask, five thousand milliliters!",
     "DESCRIPTIONS": [
-      "At the start of each combat, if your potion slots are full, choose a #yVapor card and add it into your hand."
-    ]
+      "At the start of each combat, if your potion slots are full, choose a #yVapor card and add it into your hand.",
+      "Wide ",
+      ""
+    ],
+    "NOTE_FOR_TRANSLATORS": "The second and third strings are the prefix and suffix for Vapors generated from the Wide Potions mod."
   },
   "reliquary:Bookmark": {
     "NAME": "Bookmark",

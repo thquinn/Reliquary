@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.RegenPower;
 
-public class CardVaporRegenPotion extends CustomCard {
+public class CardVaporRegenPotion extends CardVapor {
     public static final String ID = "reliquary:VaporRegenPotion";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/regenPotion.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -35,10 +35,5 @@ public class CardVaporRegenPotion extends CustomCard {
             upgradeName();
             upgradeMagicNumber(2);
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporRegenPotion();
     }
 }

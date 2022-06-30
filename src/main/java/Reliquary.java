@@ -212,6 +212,8 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         String path;
         if (Settings.language == Settings.GameLanguage.JPN) {
             path = "reliquaryAssets/localization/jpn/KeywordStrings.json";
+        } else if (Settings.language == Settings.GameLanguage.KOR) {
+            path = "reliquaryAssets/localization/kor/KeywordStrings.json";
         } else if (Settings.language == Settings.GameLanguage.RUS) {
             path = "reliquaryAssets/localization/rus/KeywordStrings.json";
         } else if (Settings.language == Settings.GameLanguage.ZHS) {
@@ -240,6 +242,13 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
             BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/jpn/RelicStrings.json");
             BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/jpn/StanceStrings.json");
             BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/jpn/UIStrings.json");
+        } else if (Settings.language == Settings.GameLanguage.KOR) {
+            BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/kor/CardStrings.json");
+            BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/kor/OrbStrings.json");
+            BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/kor/PowerStrings.json");
+            BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/kor/RelicStrings.json");
+            BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/kor/StanceStrings.json");
+            BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/kor/UIStrings.json");
         } else if (Settings.language == Settings.GameLanguage.RUS) {
             BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/rus/CardStrings.json");
             BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/rus/OrbStrings.json");

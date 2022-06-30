@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class CardVaporGamblersBrew extends CustomCard {
+public class CardVaporGamblersBrew extends CardVapor {
     public static final String ID = "reliquary:VaporGamblersBrew";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/gamblersBrew.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -41,10 +41,5 @@ public class CardVaporGamblersBrew extends CustomCard {
             rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporGamblersBrew();
     }
 }

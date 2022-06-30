@@ -10,6 +10,7 @@ import javassist.CtBehavior;
 import relics.RelicPartyBalloon;
 
 import java.util.Collections;
+import java.util.Random;
 
 @SpirePatch(
         clz= CardGroup.class,
@@ -40,7 +41,7 @@ public class PatchPartyBalloon {
             }
         }
         // Shuffle the top half of the deck.
-        Collections.shuffle(copy.group.subList((int)Math.ceil(copy.group.size() / 2f), copy.group.size()));
+        Collections.shuffle(copy.group.subList((int)Math.ceil(copy.group.size() / 2f), copy.group.size()), new Random(AbstractDungeon.shuffleRng.randomLong()));
     }
 
     private static class Locator extends SpireInsertLocator {

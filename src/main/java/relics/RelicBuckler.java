@@ -48,12 +48,11 @@ public class RelicBuckler extends CustomRelic {
 
     @Override
     public void setCounter(int counter) {
+        this.counter = counter;
         if (counter <= 0) {
-            this.counter = -2;
             usedUp();
             description = DESCRIPTIONS[3];
         } else {
-            this.counter = counter;
             description = counter == 1 ? DESCRIPTIONS[2] : DESCRIPTIONS[0] + counter + DESCRIPTIONS[1];
         }
         tips.clear();

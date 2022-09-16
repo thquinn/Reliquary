@@ -14,6 +14,8 @@ public class RelicKnifeBlock extends CustomRelic {
         super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.HEAVY);
     }
 
+    // implemented in PatchKnifeBlock
+
     @Override
     public String getUpdatedDescription() {
         return DESCRIPTIONS[0];

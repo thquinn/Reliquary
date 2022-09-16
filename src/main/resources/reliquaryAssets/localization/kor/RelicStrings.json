@@ -34,7 +34,8 @@
   },
   "reliquary:BigHammer": {
     "NAME": "큰 망치",
-     "DESCRIPTIONS": [
+    "FLAVOR": "Truly, it is the biggest hammer you have ever seen.",
+    "DESCRIPTIONS": [
       "이제부터 #b빨간 #b카드를 한 번 더 강화시킬수 있습니다. 이 유물을 획득하면, #y강회된 카드를 선택해 #y강화 합니다.",
       "피해를 !D! 줍니다. NL 이 카드를 1장 복사해 버린 카드 더미에 넣습니다. NL 버린 카드 더미에 있는 분노 1장당 피해량이 추가로 !M! 증가합니다.",
       "방어도를 !B! 얻습니다. NL 손 안에 있는 모든 카드를 이번 전투동안 2번 강화합니다.",

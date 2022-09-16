@@ -97,6 +97,20 @@
       "Put the fourth card you play each turn on top of your draw pile."
     ]
   },
+  "reliquary:Bouncer": {
+    "NAME": "Bouncer",
+    "FLAVOR": "I hope you have a plan for the landing.",
+    "DESCRIPTIONS": [
+      "Upon pickup, choose a card. It becomes #yUnplayable. If it's discarded from your hand, play it.",
+      "Choose a card for ",
+      "The chosen ",
+      " is #yUnplayable. If it's discarded from your hand, play it.",
+      "Unplayable. NL ",
+      " NL If this card is discarded from your hand, play it.",
+      "I can't play this card."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a spring from Sonic the Hedgehog."
+  },
   "reliquary:BrokenClock": {
     "NAME": "Broken Clock",
     "FLAVOR": "This one is only wrong twice a day, somehow, and right the rest of the time.",
@@ -189,6 +203,14 @@
       " damage for each Energy beyond the third you spend each turn."
     ],
     "NOTE_FOR_TRANSLATORS": "'Hachi machi' is a slang exclamation expressing surprise or pain."
+  },
+  "reliquary:EXA": {
+    "NAME": "EXA",
+    "FLAVOR": "Only your superhuman eyesight allows you to see this nanoscopic machine.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, if you have no #yLightning, #yFrost, and/or #yDark Orbs #yChanneled, #yChannel an Orb of a random missing type."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an EXA (EXecution Agent), a nanobot from the game EXAPUNKS."
   },
   "reliquary:ExpiredCoupon": {
     "NAME": "Expired Coupon",
@@ -393,6 +415,17 @@
       "Cancel"
     ]
   },
+  "reliquary:OvenMitt": {
+    "NAME": "Oven Mitt",
+    "FLAVOR": "It's already starting to fall apart.",
+    "DESCRIPTIONS": [
+      "Prevent the next #b",
+      " times you would lose HP.",
+      "Prevent the next time you would lose HP.",
+      "This relic has been used up."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This shares the same DESCRIPTIONS text from the Buffer power."
+  },
   "reliquary:PaperSnowflake": {
     "NAME": "Paper Snowflake",
     "FLAVOR": "Is this what this is supposed to look like?",
@@ -431,6 +464,15 @@
       " times the current Act."
     ],
     "NOTE_FOR_TRANSLATORS": "This is the headgear of the Prince of All Cosmos from the Katamari Damacy series."
+  },
+  "reliquary:PromissoryNotes": {
+    "NAME": "Promissory Notes",
+    "FLAVOR": "An ancient instrument of subterfuge.",
+    "DESCRIPTIONS": [
+      "Whenever you receive a debuff from an enemy, your first #yAttack against that enemy next turn deals #b",
+      " additional damage."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a checkbook."
   },
   "reliquary:PurpleTingedLeaf": {
     "NAME": "Purple-Tinged Leaf",
@@ -514,6 +556,14 @@
       "#yPoison doesn't decrement."
     ]
   },
+  "reliquary:RattleCoin": {
+    "NAME": "Rattle Coin",
+    "FLAVOR": "Both sides depict the same strangely familiar creature.",
+    "DESCRIPTIONS": [
+      "Double the first unblocked attack damage dealt to you and ALL enemies each combat."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The image on the coin is a rattlesnake."
+  },
   "reliquary:RedCape": {
     "NAME": "Red Cape",
     "FLAVOR": "Who wants the horns?",
@@ -593,6 +643,15 @@
       "Your #yLightning Orbs target the enemy with the least HP."
     ],
     "NOTE_FOR_TRANSLATORS": "To have a 'short fuse' means you get angry easily."
+  },
+  "reliquary:ShortStraw": {
+    "NAME": "Short Straw",
+    "FLAVOR": "This may not have been the pick.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain [E] and choose a random card in your hand. If it's still in your hand at the end of the turn, you lose #b",
+      " HP."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a very short bendy straw."
   },
   "reliquary:Sideboard": {
     "NAME": "Sideboard",
@@ -720,6 +779,22 @@
       "to see which string corresponds to which Watcher card. Indices start at 0!"
     ]
   },
+  "reliquary:Soularoid": {
+    "NAME": "Soularoid",
+    "FLAVOR": "Those guys with the beards were right...?!",
+    "DESCRIPTIONS": [
+      "Whenever you play a non-[#efc851]Status[] card with a different name than any card in your deck, add a copy of it to your deck."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A portmanteau of 'soul' and 'Polaroid.' The flavor text is a reference to the urban legend of Amish people believing that cameras can steal the subject's soul."
+  },
+  "reliquary:Splatula": {
+    "NAME": "Splatula",
+    "FLAVOR": "Features a nonstick coating for easy cleanup.",
+    "DESCRIPTIONS": [
+      "Whenever you #yAttack an enemy for half or more of its Max HP, set its HP to #b0."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A portmanteau of 'splat' and 'spatula.'"
+  },
   "reliquary:Spinner": {
     "NAME": "Spinner",
     "FLAVOR": "Please don't land on red, please don't land on red... son of a—!",
@@ -814,6 +889,14 @@
       "Whenever you draw a hand with no #yAttacks or no #ySkills, put a random card of that type from your draw pile into your hand."
     ]
   },
+  "reliquary:TrafficCone": {
+    "NAME": "Traffic Cone",
+    "FLAVOR": "In the dark of the Spire, its glinting stripes attain an unlikely menace.",
+    "DESCRIPTIONS": [
+      "The first time an enemy does something other than attack, it loses #b",
+      " #yStrength."
+    ]
+  },
   "reliquary:TridentHead": {
     "NAME": "Trident Head",
     "FLAVOR": "A part of the weapon wielded by the fabled Wave King.",
@@ -827,6 +910,13 @@
     "DESCRIPTIONS": [
       "Whenever you break an enemy's #yBlock exactly, deal #b",
       " damage to it."
+    ]
+  },
+  "reliquary:TwinPearls": {
+    "NAME": "Twin Pearls",
+    "FLAVOR": "They are completely identical in every way, impossible to tell apart. Close enough, anyway.",
+    "DESCRIPTIONS": [
+      "You start each turn with #yPearlescence in your hand."
     ]
   },
   "reliquary:Vitrine": {

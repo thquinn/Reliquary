@@ -8,10 +8,7 @@ import com.badlogic.gdx.graphics.TextureData;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import relics.RelicBellows;
 import relics.RelicBoilingFlask;
-import relics.RelicQuartzCube;
-import util.ReliquaryLogger;
 
 public abstract class CardVapor extends CustomCard {
     private static final String[] DESCRIPTIONS = CardCrawlGame.languagePack.getRelicStrings(RelicBoilingFlask.ID).DESCRIPTIONS;

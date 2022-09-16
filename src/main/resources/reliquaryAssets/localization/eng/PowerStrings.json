@@ -47,6 +47,13 @@
       " times on #ySkills."
     ]
   },
+  "reliquary:DeathWarrant": {
+    "NAME": "Death Warrant",
+    "DESCRIPTIONS": [
+      "Your next #yAttack against this enemy this turn deals an additional #b",
+      " damage."
+    ]
+  },
   "reliquary:DoubleWindsor": {
     "NAME": "Double Windsor",
     "DESCRIPTIONS": [
@@ -148,6 +155,15 @@
       " times."
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Study power."
+  },
+  "reliquary:Rattled": {
+    "NAME": "Rattled",
+    "DESCRIPTIONS": [
+      "Receives double damage from the next unblocked attack.",
+      "Receives double damage from the next #b",
+      " unblocked attacks."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A pun on rattlesnakes and being 'rattled,' i.e. unnerved or disarmed."
   },
   "reliquary:ReboundPlus": {
     "NAME": "Resound",

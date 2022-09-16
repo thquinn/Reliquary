@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.FocusPower;
 import powers.LoseFocusPower;
-import util.ReliquaryLogger;
 
 public class OrbData extends OrbDataBase {
     public static String ORB_ID = "reliquary:Data";

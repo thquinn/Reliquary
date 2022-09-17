@@ -1,7 +1,11 @@
 {
   "reliquary:Pearlescence": {
     "NAME": "",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "pearlescence",
+    "EXTENDED_DESCRIPTION": [
+      "I must play another card first."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The description should match the translation of the pearlescence keyword."
   },
   "reliquary:VaporAmbrosia": {
     "NAME": "Ambrosial Vapor",

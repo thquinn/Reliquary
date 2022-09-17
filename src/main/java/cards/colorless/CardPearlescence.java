@@ -2,17 +2,19 @@ package cards.colorless;
 
 import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShaderProgram;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import util.ReliquaryLogger;
-import util.TextureLoader;
+import vfx.PearlescenceDisappearEffect;
 
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.nio.charset.StandardCharsets;
 
@@ -27,14 +29,15 @@ public class CardPearlescence extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final int COST = 0;
+    public static final int PATCH_PRICE = -100;
 
-    AbstractCard lastCard;
+    public AbstractCard lastCard;
     float time;
 
     public CardPearlescence() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.STATUS, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.NONE);
-        isEthereal = true;
         purgeOnUse = true;
+        glowColor = Color.WHITE;
     }
 
     @Override
@@ -42,11 +45,39 @@ public class CardPearlescence extends CustomCard {
         if (c.cardID.equals(ID)) {
             return;
         }
+        boolean firstCard = lastCard == null;
         lastCard = c.makeStatEquivalentCopy();
         type = lastCard.type;
         target = c.target;
         cost = lastCard.cost;
         costForTurn = lastCard.costForTurn;
+        if (firstCard) {
+            lastCard.transparency = 0.01f;
+        }
+        lastCard.price = PATCH_PRICE; // set for PatchTwinPearls to display red energy correctly
+    }
+    @Override
+    public void triggerOnEndOfPlayerTurn() {
+        AbstractDungeon.effectsQueue.add(new PearlescenceDisappearEffect(this));
+    }
+    @Override
+    public void triggerOnManualDiscard() {
+        AbstractDungeon.effectsQueue.add(new PearlescenceDisappearEffect(this));
+    }
+    @Override
+    public void triggerOnExhaust() {
+        AbstractDungeon.effectsQueue.add(new PearlescenceDisappearEffect(this));
+    }
+
+    @Override
+    public void update() {
+        if (!AbstractDungeon.player.hand.contains(this) && lastCard != null) {
+            transparency = lastCard.transparency;
+        }
+        super.update();
+        if (lastCard != null) {
+            lastCard.update();
+        }
     }
 
     @Override
@@ -64,7 +95,13 @@ public class CardPearlescence extends CustomCard {
     }
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        return lastCard == null ? false : lastCard.canUse(p, m);
+        if (lastCard == null) {
+            cantUseMessage = cardStrings.EXTENDED_DESCRIPTION[0];
+            return false;
+        }
+        boolean canUse = lastCard.canUse(p, m);
+        cantUseMessage = lastCard.cantUseMessage;
+        return canUse;
     }
     @Override
     public void calculateCardDamage(AbstractMonster mo) {
@@ -82,6 +119,9 @@ public class CardPearlescence extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (lastCard != null) {
             lastCard.use(p, m);
+            lastCard.fadingOut = true;
+            AbstractDungeon.player.limbo.addToBottom(lastCard); // put it somewhere it will keep updating to finish fading out
+            stopGlowing();
         }
     }
 
@@ -99,16 +139,27 @@ public class CardPearlescence extends CustomCard {
 
     @Override
     public void render(SpriteBatch sb) {
+        try {
+            Method updateGlow = AbstractCard.class.getDeclaredMethod("updateGlow");
+            updateGlow.setAccessible(true);
+            updateGlow.invoke(this);
+            Method renderGlow = AbstractCard.class.getDeclaredMethod("renderGlow", SpriteBatch.class);
+            renderGlow.setAccessible(true);
+            renderGlow.invoke(this, sb);
+        } catch (Exception e) {
+            ReliquaryLogger.error("reflection failed in CardPearlescence glow: " + e);
+        }
         ShaderProgram oldShader = sb.getShader();
         sb.setShader(PEARLESCENCE_SHADER);
         time += Gdx.graphics.getDeltaTime();
         PEARLESCENCE_SHADER.setUniformf("x_time", time);
+        PEARLESCENCE_SHADER.setUniformf("alpha", transparency);
         try {
             Method renderCardBg = AbstractCard.class.getDeclaredMethod("renderCardBg", SpriteBatch.class, float.class, float.class);
             renderCardBg.setAccessible(true);
             renderCardBg.invoke(this, sb, current_x, current_y);
         } catch (Exception e) {
-            ReliquaryLogger.error("reflection failed in CardPearlescence: " + e);
+            ReliquaryLogger.error("reflection failed in CardPearlescence bg: " + e);
         }
         sb.setShader(oldShader);
         if (lastCard == null) {
@@ -119,5 +170,20 @@ public class CardPearlescence extends CustomCard {
         lastCard.drawScale = drawScale;
         lastCard.angle = angle;
         lastCard.render(sb);
+    }
+    @Override
+    public void renderCardTip(SpriteBatch sb) {
+        if (lastCard != null) {
+            try {
+                Field renderTip = AbstractCard.class.getDeclaredField("renderTip");
+                renderTip.setAccessible(true);
+                renderTip.set(lastCard, renderTip.get(this));
+            } catch (Exception e) {
+                ReliquaryLogger.error("reflection failed in CardPearlescence tip: " + e);
+            }
+            lastCard.renderCardTip(sb);
+        } else {
+            super.renderCardTip(sb);
+        }
     }
 }

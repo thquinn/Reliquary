@@ -1,4 +1,17 @@
 ﻿{
+  "reliquary:BlastOff": {
+    "NAME": "Blast Off!",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable to ALL enemies. NL Exhaust.",
+    "NOTE_FOR_TRANSLATORS": "The card name is the culmination of a rocket launch countdown: 3, 2, 1, blast off!"
+  },
+  "reliquary:Pearlescence": {
+    "NAME": "",
+    "DESCRIPTION": "pearlescence",
+    "EXTENDED_DESCRIPTION": [
+      "I must play another card first."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The description should match the translation of the pearlescence keyword."
+  },
   "reliquary:VaporAmbrosia": {
     "NAME": "アンブロシアの香り",
     "DESCRIPTION": "保留 NL マントラ !M! を得る。 NL 廃棄",

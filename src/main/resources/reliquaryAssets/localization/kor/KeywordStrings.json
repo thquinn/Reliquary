@@ -46,6 +46,12 @@
   },
   {
     "NAMES": [
+      "pearlescence"
+    ],
+    "DESCRIPTION": "Pearlescence is a card that copies the last card played in a turn."
+  },
+  {
+    "NAMES": [
       "점액덩어리"
     ],
     "DESCRIPTION": "점액덩어리는 비용 1의 #y상태이상 카드입니다.",

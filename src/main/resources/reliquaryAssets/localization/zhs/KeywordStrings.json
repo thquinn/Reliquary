@@ -44,6 +44,12 @@
   },
   {
     "NAMES": [
+      "pearlescence"
+    ],
+    "DESCRIPTION": "Pearlescence is a card that copies the last card played in a turn."
+  },
+  {
+    "NAMES": [
       "缓慢"
     ],
     "DESCRIPTION": "你在这个回合每打出一张卡牌，有缓慢效果的生物从 #y攻击 受到的伤害增加10%。",

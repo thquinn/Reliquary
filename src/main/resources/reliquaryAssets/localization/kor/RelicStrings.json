@@ -70,6 +70,15 @@
       "to see which string corresponds to which Ironclad card. Indices start at 0!"
     ]
   },
+  "reliquary:BloodSugar": {
+    "NAME": "Blood Sugar",
+    "FLAVOR": "You know you shouldn't, but you just can't help yourself!",
+    "DESCRIPTIONS": [
+      "Whenever you enter a room, heal #b",
+      " HP, then decrease that number by #b1. #yRest to reset it to #b",
+      "."
+    ]
+  },
   "reliquary:BoilingFlask": {
     "NAME": "끓고 있는 플라스크",
     "FLAVOR": "바닥이 둥근 끓고 있는 플라스크입니다. 5천 밀리리터나 되네요!",
@@ -96,6 +105,20 @@
       "",
       "매 턴 네번째로 사용하는 카드를 뽑을 카드 더미 위에 올려둡니다."
     ]
+  },
+  "reliquary:Bouncer": {
+    "NAME": "Bouncer",
+    "FLAVOR": "I hope you have a plan for the landing.",
+    "DESCRIPTIONS": [
+      "Upon pickup, choose a card. It becomes #yUnplayable. If it's discarded from your hand, play it.",
+      "Choose a card for ",
+      "The chosen ",
+      " is #yUnplayable. If it's discarded from your hand, play it.",
+      "Unplayable. NL ",
+      " NL If this card is discarded from your hand, play it.",
+      "I can't play this card."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a spring from Sonic the Hedgehog."
   },
   "reliquary:BrokenClock": {
     "NAME": "고장난 시계",
@@ -190,6 +213,14 @@
     ],
     "NOTE_FOR_TRANSLATORS": "'Hachi machi' is a slang exclamation expressing surprise or pain."
   },
+  "reliquary:EXA": {
+    "NAME": "EXA",
+    "FLAVOR": "Only your superhuman eyesight allows you to see this nanoscopic machine.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, if you have no #yLightning, #yFrost, and/or #yDark Orbs #yChanneled, #yChannel an Orb of a random missing type."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an EXA (EXecution Agent), a nanobot from the game EXAPUNKS."
+  },
   "reliquary:ExpiredCoupon": {
     "NAME": "만료된 쿠폰",
     "FLAVOR": " \"홍콩행 관광 보내기\"에 좋은 10% 할인 쿠폰입니다. 근데 대체 누가 이걸 프린트한걸까요?",
@@ -255,12 +286,28 @@
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to stealing from your future self."
   },
+  "reliquary:FreeSamples": {
+    "NAME": "Free Samples",
+    "FLAVOR": "Everyone's going to want a piece.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Whenever an enemy deals unblocked attack damage to you, it gains #b1 #yIntangible if it's not already."
+    ]
+  },
   "reliquary:GummyVitamins": {
     "NAME": "구미 비타민",
     "FLAVOR": "으음, 맛있다!",
     "DESCRIPTIONS": [
       "한 턴에 한 번, 카드를 1 장 뽑고, #r점액덩어리 1장을 뽑을 카드 더미에 넣습니다.",
       "이번 턴에 이미 그 유물을 사용했어."
+    ]
+  },
+  "reliquary:Hardlight": {
+    "NAME": "Hardlight",
+    "FLAVOR": "The words \"DO NOT FOLLOW\" have been scratched under the brim.",
+    "DESCRIPTIONS": [
+      "When your HP falls to #b",
+      " or less for the first time, permanently gain #b",
+      " #yStrength."
     ]
   },
   "reliquary:HolyGrail": {
@@ -393,6 +440,17 @@
       "Cancel"
     ]
   },
+  "reliquary:OvenMitt": {
+    "NAME": "Oven Mitt",
+    "FLAVOR": "It's already starting to fall apart.",
+    "DESCRIPTIONS": [
+      "Prevent the next #b",
+      " times you would lose HP.",
+      "Prevent the next time you would lose HP.",
+      "This relic has been used up."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This shares the same DESCRIPTIONS text from the Buffer power."
+  },
   "reliquary:PaperSnowflake": {
     "NAME": "종이 눈송이",
     "FLAVOR": "이게 원래 이런 모습이었던가요?",
@@ -407,6 +465,21 @@
       "매 전투 시작시 덱에 있는 무작위 #y파워 카드가 뽑을 카드 더미 맨 위로 올라옵니다."
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a parody of the old Pringles advertising slogan."
+  },
+  "reliquary:PeacockShield": {
+    "NAME": "Peacock Shield",
+    "FLAVOR": "Presents a remarkable defense.",
+    "DESCRIPTIONS": [
+      "Whenever you enter #yWrath, double your #yBlock."
+    ]
+  },
+  "reliquary:PlasmaLobster": {
+    "NAME": "Plasma Lobster",
+    "FLAVOR": "Smells of petrichor.",
+    "DESCRIPTIONS": [
+      "Increases your attack damage by #b",
+      " while you have #yBlock."
+    ]
   },
   "reliquary:PorcupineQuills": {
     "NAME": "고슴도치 가시",
@@ -431,6 +504,15 @@
       " 이며 막에 따라서 X가 배로 증가합니다."
     ],
     "NOTE_FOR_TRANSLATORS": "This is the headgear of the Prince of All Cosmos from the Katamari Damacy series."
+  },
+  "reliquary:PromissoryNotes": {
+    "NAME": "Promissory Notes",
+    "FLAVOR": "An ancient instrument of subterfuge.",
+    "DESCRIPTIONS": [
+      "Whenever you receive a debuff from an enemy, your first #yAttack against that enemy next turn deals #b",
+      " additional damage."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a checkbook."
   },
   "reliquary:PurpleTingedLeaf": {
     "NAME": "보랏빛 잎",
@@ -475,7 +557,7 @@
       "암흑을 !M! 번 영창합니다. NL 모든 암흑 구체의 지속 효과를 2번 발동합니다.",
       "에너지를 2배로 늘립니다.",
       "가장 오른쪽에 있는 구체를 !M! 번 발현합니다.",
-      "매 턴 처음 사용하는 카드와 마지막으로 사용하는 카드가 2번 사용됩니다.",
+      "The last card you play each turn is played twice.",
       "전기가 이제 모든 적을 대상으로 합니다. NL 전기를 !M! 번 영창합니다. NL 무작위 적에게 조준 99를 부여합니다.",
       "모든 구체를 발현시킵니다. 발현시킨 구체 하나당 [B] 를 얻고 카드를 !M! 장 뽑습니다.",
       "모든 플라즈마 구체의 위치를 맨 왼쪽으로 옮깁니다. NL 플라즈마를 !M! 번 영창합니다.",
@@ -513,6 +595,14 @@
     "DESCRIPTIONS": [
       "이제 더 이상 #y중독이 감소하지 않습니다."
     ]
+  },
+  "reliquary:RattleCoin": {
+    "NAME": "Rattle Coin",
+    "FLAVOR": "Both sides depict the same strangely familiar creature.",
+    "DESCRIPTIONS": [
+      "Double the first unblocked attack damage dealt to you and ALL enemies each combat."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The image on the coin is a rattlesnake."
   },
   "reliquary:RedCape": {
     "NAME": "빨간 망토",
@@ -586,6 +676,13 @@
       "손에 카드가 없는 상태로 턴을 종료하면, 다음 턴에 카드 1장을 추가로 뽑습니다."
     ]
   },
+  "reliquary:SheepsEyeMarble": {
+    "NAME": "Sheep's Eye Marble",
+    "FLAVOR": "You feel dumber just looking at it.",
+    "DESCRIPTIONS": [
+      "Whenever you play two copies of the same card in a row, play it again."
+    ]
+  },
   "reliquary:ShortFuse": {
     "NAME": "짧은 도화선",
     "FLAVOR": "금방이라도 터질것만 같습니다.",
@@ -593,6 +690,15 @@
       "#y전기 구체가 체력이 가장 많은 적을 우선으로 공격합니다."
     ],
     "NOTE_FOR_TRANSLATORS": "To have a 'short fuse' means you get angry easily."
+  },
+  "reliquary:ShortStraw": {
+    "NAME": "Short Straw",
+    "FLAVOR": "This may not have been the pick.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain [E] and choose a random card in your hand. If it's still in your hand at the end of the turn, you lose #b",
+      " HP."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a very short bendy straw."
   },
   "reliquary:Sideboard": {
     "NAME": "사이드보드",
@@ -720,6 +826,14 @@
       "to see which string corresponds to which Watcher card. Indices start at 0!"
     ]
   },
+  "reliquary:Soularoid": {
+    "NAME": "Soularoid",
+    "FLAVOR": "Those guys with the beards were right...?!",
+    "DESCRIPTIONS": [
+      "Whenever you play a non-[#efc851]Status[] card with a different name than any card in your deck, add a copy of it to your deck."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A portmanteau of 'soul' and 'Polaroid.' The flavor text is a reference to the urban legend of Amish people believing that cameras can steal the subject's soul."
+  },
   "reliquary:Spinner": {
     "NAME": "돌림판",
     "FLAVOR": "제발 빨간색만은, 제발 빨간색만은... 이런 개ㅅ—!",
@@ -737,6 +851,14 @@
       "%)."
     ],
     "NOTE_FOR_TRANSLATORS": "This is a Tower of Hanoi puzzle."
+  },
+  "reliquary:Splatula": {
+    "NAME": "Splatula",
+    "FLAVOR": "Features a nonstick coating for easy cleanup.",
+    "DESCRIPTIONS": [
+      "Whenever you #yAttack an enemy for half or more of its Max HP, set its HP to #b0."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A portmanteau of 'splat' and 'spatula.'"
   },
   "reliquary:Stiletto": {
     "NAME": "스틸레토",
@@ -759,6 +881,15 @@
     "DESCRIPTIONS": [
       "이전 턴에 #y방어도가 파괴되지 않았다면, 자신과 모든 적들이 #y힘을 #b1 얻습니다."
     ]
+  },
+  "reliquary:TankTop": {
+    "NAME": "Tank Top",
+    "FLAVOR": "The rusted remnant of a once-great warrior tribe.",
+    "DESCRIPTIONS": [
+      "Whenever you #yAttack the enemy with the most HP, if there are #b2 or more enemies, deal #b",
+      " damage to the front enemy."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the turret of a tank, in honor of our wonderful KOR translator OWATANKS!"
   },
   "reliquary:TatteredRug": {
     "NAME": "너덜너덜한 깔개",
@@ -807,11 +938,27 @@
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the classic bad joke structure, 'Who's got two thumbs and <insert detail about self>? This guy.'"
   },
+  "reliquary:ToyRocket": {
+    "NAME": "Toy Rocket",
+    "FLAVOR": "We choose to go to the Spire.",
+    "DESCRIPTIONS": [
+      "When you play a cost #b3 card, then a cost #b2 card, then a cost #b1 card in one combat, add a powerful cost #b0 #yAttack into your hand."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to JFK's 'we choose to go to the Moon' speech."
+  },
   "reliquary:TrainingWheel": {
     "NAME": "연습용 보조 바퀴",
     "FLAVOR": "외관은 깨끗하지만, 내부가 녹슬어서 거의 돌아가지 않습니다.",
     "DESCRIPTIONS": [
       "매 턴 시작 드로우에서 #y공격 또는 #y스킬 카드가 단 1장도 뽑히지 않았다면, 뽑을 카드 더미에서 뽑히지 않은 그 유형의 무작위 카드 1장을 뽑아 손으로 가져옵니다."
+    ]
+  },
+  "reliquary:TrafficCone": {
+    "NAME": "Traffic Cone",
+    "FLAVOR": "In the dark of the Spire, its glinting stripes attain an unlikely menace.",
+    "DESCRIPTIONS": [
+      "The first time an enemy does something other than attack, it loses #b",
+      " #yStrength."
     ]
   },
   "reliquary:TridentHead": {
@@ -827,6 +974,20 @@
     "DESCRIPTIONS": [
       "적의 #y방어도 수치와 동일한 피해를 입혀서 방어도를 파괴했다면, 대상 적에게 피해를 #b",
       " 줍니다."
+    ]
+  },
+  "reliquary:TwinPearls": {
+    "NAME": "Twin Pearls",
+    "FLAVOR": "They are completely identical in every way, impossible to tell apart. Close enough, anyway.",
+    "DESCRIPTIONS": [
+      "You start each turn with #yPearlescence in your hand."
+    ]
+  },
+  "reliquary:UnderdogBone": {
+    "NAME": "Underdog Bone",
+    "FLAVOR": "Someone must have been a very good boy or girl.",
+    "DESCRIPTIONS": [
+      "Whenever you play an unupgraded card, if there's an #yUpgraded copy in your draw pile, put it into your hand."
     ]
   },
   "reliquary:Vitrine": {
@@ -848,6 +1009,14 @@
       "처음 #b",
       " 번 사용하는 무색 카드의 비용이 #b1 줄어듭니다."
     ]
+  },
+  "reliquary:WitchyDice": {
+    "NAME": "Witchy Dice",
+    "FLAVOR": "What a lucky find! #blessed",
+    "DESCRIPTIONS": [
+      "At the start of each combat, play a random card of any color."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the Witch character from the game Dicey Dungeons."
   },
   "reliquary:WritOfMandamus": {
     "NAME": "행정집행명령",

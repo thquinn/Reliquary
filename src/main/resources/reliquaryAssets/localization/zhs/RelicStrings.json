@@ -65,6 +65,15 @@
       "对所有敌人造成 !D! 点伤害 X+ %d 次。"
     ]
   },
+  "reliquary:BloodSugar": {
+    "NAME": "Blood Sugar",
+    "FLAVOR": "You know you shouldn't, but you just can't help yourself!",
+    "DESCRIPTIONS": [
+      "Whenever you enter a room, heal #b",
+      " HP, then decrease that number by #b1. #yRest to reset it to #b",
+      "."
+    ]
+  },
   "reliquary:BoilingFlask": {
     "NAME": "沸腾的烧瓶",
     "FLAVOR": "一只沸腾的圆底烧瓶，容量5000毫升！",
@@ -91,6 +100,20 @@
       "",
       "将你每回合打出的第四张牌放到抽牌堆的顶部。"
     ]
+  },
+  "reliquary:Bouncer": {
+    "NAME": "Bouncer",
+    "FLAVOR": "I hope you have a plan for the landing.",
+    "DESCRIPTIONS": [
+      "Upon pickup, choose a card. It becomes #yUnplayable. If it's discarded from your hand, play it.",
+      "Choose a card for ",
+      "The chosen ",
+      " is #yUnplayable. If it's discarded from your hand, play it.",
+      "Unplayable. NL ",
+      " NL If this card is discarded from your hand, play it.",
+      "I can't play this card."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a spring from Sonic the Hedgehog."
   },
   "reliquary:BrokenClock": {
     "NAME": "破损时钟",
@@ -181,6 +204,14 @@
       " 点伤害。"
     ]
   },
+  "reliquary:EXA": {
+    "NAME": "EXA",
+    "FLAVOR": "Only your superhuman eyesight allows you to see this nanoscopic machine.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, if you have no #yLightning, #yFrost, and/or #yDark Orbs #yChanneled, #yChannel an Orb of a random missing type."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an EXA (EXecution Agent), a nanobot from the game EXAPUNKS."
+  },
   "reliquary:ExpiredCoupon": {
     "NAME": "失效的优惠券",
     "FLAVOR": "“股折啦！”这不才打9折吗？哪个天才把这句话写上去的？",
@@ -238,12 +269,28 @@
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to stealing from your future self."
   },
+  "reliquary:FreeSamples": {
+    "NAME": "Free Samples",
+    "FLAVOR": "Everyone's going to want a piece.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Whenever an enemy deals unblocked attack damage to you, it gains #b1 #yIntangible if it's not already."
+    ]
+  },
   "reliquary:GummyVitamins": {
     "NAME": "胶黏维生素",
     "FLAVOR": "呣呣，好难嚼！",
     "DESCRIPTIONS": [
       "每回合限一次，你可以抽一张牌，然后将一张 #r黏液 放入你的抽牌堆中。",
       "我在这回合已经使用过这件遗物了。"
+    ]
+  },
+  "reliquary:Hardlight": {
+    "NAME": "Hardlight",
+    "FLAVOR": "The words \"DO NOT FOLLOW\" have been scratched under the brim.",
+    "DESCRIPTIONS": [
+      "When your HP falls to #b",
+      " or less for the first time, permanently gain #b",
+      " #yStrength."
     ]
   },
   "reliquary:HolyGrail": {
@@ -372,6 +419,17 @@
       "取消"
     ]
   },
+  "reliquary:OvenMitt": {
+    "NAME": "Oven Mitt",
+    "FLAVOR": "It's already starting to fall apart.",
+    "DESCRIPTIONS": [
+      "Prevent the next #b",
+      " times you would lose HP.",
+      "Prevent the next time you would lose HP.",
+      "This relic has been used up."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This shares the same DESCRIPTIONS text from the Buffer power."
+  },
   "reliquary:PaperSnowflake": {
     "NAME": "纸雪花",
     "FLAVOR": "它该长这样吗？",
@@ -384,6 +442,21 @@
     "FLAVOR": "捏好那根绳子，否则它就飞走不见了！",
     "DESCRIPTIONS": [
       "每场战斗开始时， #y能力牌 总是出现在抽牌堆的上半部分。"
+    ]
+  },
+  "reliquary:PeacockShield": {
+    "NAME": "Peacock Shield",
+    "FLAVOR": "Presents a remarkable defense.",
+    "DESCRIPTIONS": [
+      "Whenever you enter #yWrath, double your #yBlock."
+    ]
+  },
+  "reliquary:PlasmaLobster": {
+    "NAME": "Plasma Lobster",
+    "FLAVOR": "Smells of petrichor.",
+    "DESCRIPTIONS": [
+      "Increases your attack damage by #b",
+      " while you have #yBlock."
     ]
   },
   "reliquary:PorcupineQuills": {
@@ -408,6 +481,15 @@
       "每场战斗中，你获得的前X点 #y格挡 将会被翻倍，其中X等于当前幕数的 #b",
       " 倍。"
     ]
+  },
+  "reliquary:PromissoryNotes": {
+    "NAME": "Promissory Notes",
+    "FLAVOR": "An ancient instrument of subterfuge.",
+    "DESCRIPTIONS": [
+      "Whenever you receive a debuff from an enemy, your first #yAttack against that enemy next turn deals #b",
+      " additional damage."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a checkbook."
   },
   "reliquary:PurpleTingedLeaf": {
     "NAME": "微紫树叶",
@@ -452,7 +534,7 @@
       "生成 !M! 个 黑暗 充能球。 NL 使用所有 黑暗 充能球的被动能力两次。",
       "将你的 能量 翻倍。",
       "激发 你最右侧的充能球 !M! 次。",
-      "你每回合打出的第一张牌和最后一张牌（可同时满足）会打出两次。",
+      "The last card you play each turn is played twice.",
       "闪电 充能球现在会击中所有敌人。 NL 生成 !M! 个 闪电 充能球。 NL 随机给予一名敌人99回合 跟踪锁定 效果。",
       "激发 所有充能球，每 激发 一个充能球获得 [B] 并抽 !M! 张牌。",
       "将所有 等离子 充能球尽可能向左冒泡移动。 NL 生成 !M! 个 等离子 充能球。",
@@ -490,6 +572,14 @@
     "DESCRIPTIONS": [
       "#y中毒 层数不会下降。"
     ]
+  },
+  "reliquary:RattleCoin": {
+    "NAME": "Rattle Coin",
+    "FLAVOR": "Both sides depict the same strangely familiar creature.",
+    "DESCRIPTIONS": [
+      "Double the first unblocked attack damage dealt to you and ALL enemies each combat."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The image on the coin is a rattlesnake."
   },
   "reliquary:RedCape": {
     "NAME": "红披风",
@@ -559,12 +649,28 @@
       "如果你在没有手牌的情况下结束回合，下回合抽一张牌。"
     ]
   },
+  "reliquary:SheepsEyeMarble": {
+    "NAME": "Sheep's Eye Marble",
+    "FLAVOR": "You feel dumber just looking at it.",
+    "DESCRIPTIONS": [
+      "Whenever you play two copies of the same card in a row, play it again."
+    ]
+  },
   "reliquary:ShortFuse": {
     "NAME": "短颅熔断器",
     "FLAVOR": "可能在任何时刻熔断。",
     "DESCRIPTIONS": [
       "你的 #y闪电 充能球总是会以生命值最低的敌人为目标。"
     ]
+  },
+  "reliquary:ShortStraw": {
+    "NAME": "Short Straw",
+    "FLAVOR": "This may not have been the pick.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain [E] and choose a random card in your hand. If it's still in your hand at the end of the turn, you lose #b",
+      " HP."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a very short bendy straw."
   },
   "reliquary:Sideboard": {
     "NAME": "备牌板",
@@ -681,6 +787,14 @@
       "进入 愤怒 。 NL 造成 !D! 点伤害。"
     ]
   },
+  "reliquary:Soularoid": {
+    "NAME": "Soularoid",
+    "FLAVOR": "Those guys with the beards were right...?!",
+    "DESCRIPTIONS": [
+      "Whenever you play a non-[#efc851]Status[] card with a different name than any card in your deck, add a copy of it to your deck."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A portmanteau of 'soul' and 'Polaroid.' The flavor text is a reference to the urban legend of Amish people believing that cameras can steal the subject's soul."
+  },
   "reliquary:Spinner": {
     "NAME": "轮盘",
     "FLAVOR": "千万不要停在红色上面，千万不要停在红色上面......儿来！",
@@ -698,6 +812,14 @@
       "%）。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is a Tower of Hanoi puzzle."
+  },
+  "reliquary:Splatula": {
+    "NAME": "Splatula",
+    "FLAVOR": "Features a nonstick coating for easy cleanup.",
+    "DESCRIPTIONS": [
+      "Whenever you #yAttack an enemy for half or more of its Max HP, set its HP to #b0."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A portmanteau of 'splat' and 'spatula.'"
   },
   "reliquary:Stiletto": {
     "NAME": "短剑",
@@ -720,6 +842,15 @@
     "DESCRIPTIONS": [
       "每当你在有 #y格挡 的情况下开始回合，你和所有敌人获得 #b1 点 #y力量 。"
     ]
+  },
+  "reliquary:TankTop": {
+    "NAME": "Tank Top",
+    "FLAVOR": "The rusted remnant of a once-great warrior tribe.",
+    "DESCRIPTIONS": [
+      "Whenever you #yAttack the enemy with the most HP, if there are #b2 or more enemies, deal #b",
+      " damage to the front enemy."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the turret of a tank, in honor of our wonderful KOR translator OWATANKS!"
   },
   "reliquary:TatteredRug": {
     "NAME": "破烂地毯",
@@ -766,11 +897,27 @@
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the classic bad joke structure, 'Who's got two thumbs and <insert detail about self>? This guy.'"
   },
+  "reliquary:ToyRocket": {
+    "NAME": "Toy Rocket",
+    "FLAVOR": "We choose to go to the Spire.",
+    "DESCRIPTIONS": [
+      "When you play a cost #b3 card, then a cost #b2 card, then a cost #b1 card in one combat, add a powerful cost #b0 #yAttack into your hand."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to JFK's 'we choose to go to the Moon' speech."
+  },
   "reliquary:TrainingWheel": {
     "NAME": "辅助轮",
     "FLAVOR": "这个轮子外表崭新，但内部锈蚀严重，几乎转不起来。",
     "DESCRIPTIONS": [
       "每当你在回合开始的抽牌后手牌中没有 #y攻击牌 或者没有 #y技能牌 ，随机将一张对应类型的牌从抽牌堆放到你的手牌中。"
+    ]
+  },
+  "reliquary:TrafficCone": {
+    "NAME": "Traffic Cone",
+    "FLAVOR": "In the dark of the Spire, its glinting stripes attain an unlikely menace.",
+    "DESCRIPTIONS": [
+      "The first time an enemy does something other than attack, it loses #b",
+      " #yStrength."
     ]
   },
   "reliquary:TridentHead": {
@@ -786,6 +933,20 @@
     "DESCRIPTIONS": [
       "每当你恰好突破一名敌人的 #y格挡 ，对其造成 #b",
       " 点伤害。"
+    ]
+  },
+  "reliquary:TwinPearls": {
+    "NAME": "Twin Pearls",
+    "FLAVOR": "They are completely identical in every way, impossible to tell apart. Close enough, anyway.",
+    "DESCRIPTIONS": [
+      "You start each turn with #yPearlescence in your hand."
+    ]
+  },
+  "reliquary:UnderdogBone": {
+    "NAME": "Underdog Bone",
+    "FLAVOR": "Someone must have been a very good boy or girl.",
+    "DESCRIPTIONS": [
+      "Whenever you play an unupgraded card, if there's an #yUpgraded copy in your draw pile, put it into your hand."
     ]
   },
   "reliquary:Vitrine": {
@@ -807,6 +968,14 @@
       "每场战斗中，你打出的前 #b",
       " 张无色牌的耗能减少 #b1 。"
     ]
+  },
+  "reliquary:WitchyDice": {
+    "NAME": "Witchy Dice",
+    "FLAVOR": "What a lucky find! #blessed",
+    "DESCRIPTIONS": [
+      "At the start of each combat, play a random card of any color."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the Witch character from the game Dicey Dungeons."
   },
   "reliquary:WritOfMandamus": {
     "NAME": "强制执行令",

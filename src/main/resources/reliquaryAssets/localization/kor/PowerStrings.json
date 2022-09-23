@@ -47,6 +47,13 @@
       " 발동합니다."
     ]
   },
+  "reliquary:DeathWarrant": {
+    "NAME": "Death Warrant",
+    "DESCRIPTIONS": [
+      "Your next #yAttack against this enemy this turn deals an additional #b",
+      " damage."
+    ]
+  },
   "reliquary:DoubleWindsor": {
     "NAME": "이중 윈저",
     "DESCRIPTIONS": [
@@ -113,6 +120,15 @@
       "It takes the name ('Blasphemer,' in English) from the existing debuff, so you don't need to translate that."
     ]
   },
+  "reliquary:IntangibleTurns": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "Reduce ALL damage taken and HP loss to #b1 this turn.",
+      "Reduce ALL damage taken and HP loss to #b1 for the next #b",
+      " turns."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This a turn-based version of the base game's Intangible power.."
+  },
   "reliquary:InvincibleTurns": {
     "NAME": "무적",
     "DESCRIPTIONS": [
@@ -148,6 +164,15 @@
       " 번 가져옵니다."
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's creative ai power."
+  },
+  "reliquary:Rattled": {
+    "NAME": "Rattled",
+    "DESCRIPTIONS": [
+      "Receives double damage from the next unblocked attack.",
+      "Receives double damage from the next #b",
+      " unblocked attacks."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A pun on rattlesnakes and being 'rattled,' i.e. unnerved or disarmed."
   },
   "reliquary:ReboundPlus": {
     "NAME": "울려퍼짐",

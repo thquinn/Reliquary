@@ -36,17 +36,17 @@ public class CardPearlescence extends CustomCard {
 
     public CardPearlescence() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.STATUS, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.NONE);
-        purgeOnUse = true;
         glowColor = Color.WHITE;
     }
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
-        if (c.cardID.equals(ID)) {
+        if (c.purgeOnUse) {
             return;
         }
         boolean firstCard = lastCard == null;
         lastCard = c.makeStatEquivalentCopy();
+        cardID = c.cardID;
         type = lastCard.type;
         target = c.target;
         cost = lastCard.cost;
@@ -71,7 +71,8 @@ public class CardPearlescence extends CustomCard {
 
     @Override
     public void update() {
-        if (!AbstractDungeon.player.hand.contains(this) && lastCard != null) {
+        AbstractPlayer p = AbstractDungeon.player;
+        if (p != null && !p.hand.contains(this) && lastCard != null) {
             transparency = lastCard.transparency;
         }
         super.update();
@@ -126,6 +127,10 @@ public class CardPearlescence extends CustomCard {
     }
 
     @Override
+    public boolean canUpgrade() {
+        return lastCard == null ? false : lastCard.canUpgrade();
+    }
+    @Override
     public void upgrade() {
         if (lastCard != null) {
             lastCard.upgrade();
@@ -135,6 +140,13 @@ public class CardPearlescence extends CustomCard {
     @Override
     public AbstractCard makeCopy() {
         return new CardPearlescence();
+    }
+    @Override
+    public AbstractCard makeStatEquivalentCopy() {
+        CardPearlescence copy = (CardPearlescence) super.makeStatEquivalentCopy();
+        copy.cardID = cardID;
+        copy.lastCard = lastCard;
+        return copy;
     }
 
     @Override
@@ -149,6 +161,21 @@ public class CardPearlescence extends CustomCard {
         } catch (Exception e) {
             ReliquaryLogger.error("reflection failed in CardPearlescence glow: " + e);
         }
+        renderPearlescentBG(sb);
+        if (lastCard == null) {
+            return;
+        }
+        lastCard.current_x = current_x;
+        lastCard.current_y = current_y;
+        lastCard.drawScale = drawScale;
+        lastCard.angle = angle;
+        lastCard.render(sb);
+    }
+    @Override
+    public void renderInLibrary(SpriteBatch sb) {
+        renderPearlescentBG(sb);
+    }
+    void renderPearlescentBG(SpriteBatch sb) {
         ShaderProgram oldShader = sb.getShader();
         sb.setShader(PEARLESCENCE_SHADER);
         time += Gdx.graphics.getDeltaTime();
@@ -162,15 +189,8 @@ public class CardPearlescence extends CustomCard {
             ReliquaryLogger.error("reflection failed in CardPearlescence bg: " + e);
         }
         sb.setShader(oldShader);
-        if (lastCard == null) {
-            return;
-        }
-        lastCard.current_x = current_x;
-        lastCard.current_y = current_y;
-        lastCard.drawScale = drawScale;
-        lastCard.angle = angle;
-        lastCard.render(sb);
     }
+
     @Override
     public void renderCardTip(SpriteBatch sb) {
         if (lastCard != null) {

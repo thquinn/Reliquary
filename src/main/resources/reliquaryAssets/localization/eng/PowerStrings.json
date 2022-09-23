@@ -120,6 +120,15 @@
       "It takes the name ('Blasphemer,' in English) from the existing debuff, so you don't need to translate that."
     ]
   },
+  "reliquary:IntangibleTurns": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "Reduce ALL damage taken and HP loss to #b1 this turn.",
+      "Reduce ALL damage taken and HP loss to #b1 for the next #b",
+      " turns."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This a turn-based version of the base game's Intangible power.."
+  },
   "reliquary:InvincibleTurns": {
     "NAME": "Invincible",
     "DESCRIPTIONS": [

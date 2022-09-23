@@ -40,6 +40,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         BaseMod.addRelic(new RelicBallBearing(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBellows(), RelicType.RED);
         BaseMod.addRelic(new RelicBigHammer(), RelicType.RED);
+        BaseMod.addRelic(new RelicBloodSugar(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBoilingFlask(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBookmark(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBoomerang(), RelicType.SHARED);
@@ -62,7 +63,9 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         BaseMod.addRelic(new RelicFingerTrap(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFirecrackers(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFishingReel(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicFreeSamples(), RelicType.SHARED);
         BaseMod.addRelic(new RelicGummyVitamins(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicHardlight(), RelicType.RED);
         BaseMod.addRelic(new RelicHolyGrail(), RelicType.SHARED);
         BaseMod.addRelic(new RelicHotPoker(), RelicType.SHARED);
         BaseMod.addRelic(new RelicIceCubeTray(), RelicType.SHARED);
@@ -82,6 +85,8 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         BaseMod.addRelic(new RelicOvenMitt(), RelicType.SHARED);
         BaseMod.addRelic(new RelicPaperSnowflake(), RelicType.SHARED);
         BaseMod.addRelic(new RelicPartyBalloon(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicPeacockShield(), RelicType.PURPLE);
+        BaseMod.addRelic(new RelicPlasmaLobster(), RelicType.SHARED);
         BaseMod.addRelic(new RelicPorcupineQuills(), RelicType.SHARED);
         BaseMod.addRelic(new RelicPrayerBox(), RelicType.PURPLE);
         BaseMod.addRelic(new RelicPrincelyHelmet(), RelicType.SHARED);
@@ -100,6 +105,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         BaseMod.addRelic(new RelicQuartzCube(), RelicType.SHARED);
         BaseMod.addRelic(new RelicSculptingSteel(), RelicType.SHARED);
         BaseMod.addRelic(new RelicSharkskinSheath(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicSheepsEyeMarble(), RelicType.SHARED);
         BaseMod.addRelic(new RelicShortFuse(), RelicType.BLUE);
         BaseMod.addRelic(new RelicShortStraw(), RelicType.SHARED);
         BaseMod.addRelic(new RelicSideboard(), RelicType.SHARED);
@@ -114,23 +120,28 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         BaseMod.addRelic(new RelicStiletto(), RelicType.SHARED);
         BaseMod.addRelic(new RelicStimpack(), RelicType.RED);
         BaseMod.addRelic(new RelicTamtam(), RelicType.RED);
+        BaseMod.addRelic(new RelicTankTop(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTatteredRug(), RelicType.SHARED);
         BaseMod.addRelic(new RelicThinkingCap(), RelicType.SHARED);
         BaseMod.addRelic(new RelicThirdArm(), RelicType.SHARED);
         BaseMod.addRelic(new RelicThumbDrive(), RelicType.BLUE);
+        BaseMod.addRelic(new RelicToyRocket(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTrafficCone(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTrainingWheel(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTridentHead(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTuningFork(), RelicType.SHARED);
         BaseMod.addRelic(new RelicTwinPearls(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicUnderdogBone(), RelicType.SHARED);
         BaseMod.addRelic(new RelicVitrine(), RelicType.SHARED);
         BaseMod.addRelic(new RelicWeakTea(), RelicType.SHARED);
+        BaseMod.addRelic(new RelicWitchyDice(), RelicType.SHARED);
         BaseMod.addRelic(new RelicWritOfMandamus(), RelicType.SHARED);
         UnlockTracker.markRelicAsSeen(RelicAerogel.ID);
         UnlockTracker.markRelicAsSeen(RelicAluminiumFoil.ID);
         UnlockTracker.markRelicAsSeen(RelicBallBearing.ID);
         UnlockTracker.markRelicAsSeen(RelicBellows.ID);
         UnlockTracker.markRelicAsSeen(RelicBigHammer.ID);
+        UnlockTracker.markRelicAsSeen(RelicBloodSugar.ID);
         UnlockTracker.markRelicAsSeen(RelicBoilingFlask.ID);
         UnlockTracker.markRelicAsSeen(RelicBookmark.ID);
         UnlockTracker.markRelicAsSeen(RelicBoomerang.ID);
@@ -153,7 +164,9 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         UnlockTracker.markRelicAsSeen(RelicFingerTrap.ID);
         UnlockTracker.markRelicAsSeen(RelicFirecrackers.ID);
         UnlockTracker.markRelicAsSeen(RelicFishingReel.ID);
+        UnlockTracker.markRelicAsSeen(RelicFreeSamples.ID);
         UnlockTracker.markRelicAsSeen(RelicGummyVitamins.ID);
+        UnlockTracker.markRelicAsSeen(RelicHardlight.ID);
         UnlockTracker.markRelicAsSeen(RelicHotPoker.ID);
         UnlockTracker.markRelicAsSeen(RelicIceCubeTray.ID);
         UnlockTracker.markRelicAsSeen(RelicIridiumChain.ID);
@@ -172,6 +185,8 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         UnlockTracker.markRelicAsSeen(RelicOvenMitt.ID);
         UnlockTracker.markRelicAsSeen(RelicPaperSnowflake.ID);
         UnlockTracker.markRelicAsSeen(RelicPartyBalloon.ID);
+        UnlockTracker.markRelicAsSeen(RelicPeacockShield.ID);
+        UnlockTracker.markRelicAsSeen(RelicPlasmaLobster.ID);
         UnlockTracker.markRelicAsSeen(RelicPorcupineQuills.ID);
         UnlockTracker.markRelicAsSeen(RelicPrayerBox.ID);
         UnlockTracker.markRelicAsSeen(RelicPrincelyHelmet.ID);
@@ -190,6 +205,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         UnlockTracker.markRelicAsSeen(RelicQuartzCube.ID);
         UnlockTracker.markRelicAsSeen(RelicSculptingSteel.ID);
         UnlockTracker.markRelicAsSeen(RelicSharkskinSheath.ID);
+        UnlockTracker.markRelicAsSeen(RelicSheepsEyeMarble.ID);
         UnlockTracker.markRelicAsSeen(RelicShortFuse.ID);
         UnlockTracker.markRelicAsSeen(RelicShortStraw.ID);
         UnlockTracker.markRelicAsSeen(RelicSideboard.ID);
@@ -204,17 +220,21 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         UnlockTracker.markRelicAsSeen(RelicStiletto.ID);
         UnlockTracker.markRelicAsSeen(RelicStimpack.ID);
         UnlockTracker.markRelicAsSeen(RelicTamtam.ID);
+        UnlockTracker.markRelicAsSeen(RelicTankTop.ID);
         UnlockTracker.markRelicAsSeen(RelicTatteredRug.ID);
         UnlockTracker.markRelicAsSeen(RelicThinkingCap.ID);
         UnlockTracker.markRelicAsSeen(RelicThirdArm.ID);
         UnlockTracker.markRelicAsSeen(RelicThumbDrive.ID);
+        UnlockTracker.markRelicAsSeen(RelicToyRocket.ID);
         UnlockTracker.markRelicAsSeen(RelicTrafficCone.ID);
         UnlockTracker.markRelicAsSeen(RelicTrainingWheel.ID);
         UnlockTracker.markRelicAsSeen(RelicTridentHead.ID);
         UnlockTracker.markRelicAsSeen(RelicTuningFork.ID);
         UnlockTracker.markRelicAsSeen(RelicTwinPearls.ID);
+        UnlockTracker.markRelicAsSeen(RelicUnderdogBone.ID);
         UnlockTracker.markRelicAsSeen(RelicVitrine.ID);
         UnlockTracker.markRelicAsSeen(RelicWeakTea.ID);
+        UnlockTracker.markRelicAsSeen(RelicWitchyDice.ID);
         UnlockTracker.markRelicAsSeen(RelicWritOfMandamus.ID);
     }
 

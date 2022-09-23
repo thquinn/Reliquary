@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import util.StaticHelpers;
 import util.TextureLoader;
 
 public class LesserDuplicationPower extends AbstractPower {
@@ -47,19 +48,7 @@ public class LesserDuplicationPower extends AbstractPower {
         }
         if (!card.purgeOnUse && amount > 0) {
             flash();
-            AbstractMonster m = null;
-            if (action.target != null)
-                m = (AbstractMonster)action.target;
-            AbstractCard tmp = card.makeSameInstanceOf();
-            AbstractDungeon.player.limbo.addToBottom(tmp);
-            tmp.current_x = card.current_x;
-            tmp.current_y = card.current_y;
-            tmp.target_x = Settings.WIDTH / 2f - 300f * Settings.scale;
-            tmp.target_y = Settings.HEIGHT / 2f;
-            if (m != null)
-                tmp.calculateCardDamage(m);
-            tmp.purgeOnUse = true;
-            AbstractDungeon.actionManager.addCardQueueItem(new CardQueueItem(tmp, m, card.energyOnUse, true, true), true);
+            StaticHelpers.duplicatePlayedCard(card, (AbstractMonster) action.target);
             amount--;
             if (amount == 0)
                 addToBot(new RemoveSpecificPowerAction(owner, owner, POWER_ID));

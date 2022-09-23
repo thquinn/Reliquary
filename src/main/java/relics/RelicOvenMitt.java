@@ -11,7 +11,7 @@ public class RelicOvenMitt extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/ovenMitt.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/ovenMitt.png");
 
-    static int USES = 5;
+    static int USES = 6;
 
     public RelicOvenMitt() {
         super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.FLAT);

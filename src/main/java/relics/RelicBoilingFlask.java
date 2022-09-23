@@ -35,8 +35,11 @@ public class RelicBoilingFlask extends CustomRelic {
 
     @Override
     public boolean canSpawn() {
-        boolean hasEmptySlot = AbstractDungeon.player.potions.stream().anyMatch(p -> p instanceof PotionSlot);
-        if (AbstractDungeon.player.hasRelic(Sozu.ID) && hasEmptySlot) {
+        long emptySlots = AbstractDungeon.player.potions.stream().filter(p -> p instanceof PotionSlot).count();
+        if (AbstractDungeon.player.hasRelic(Sozu.ID) && emptySlots > 0) {
+            return false;
+        }
+        if (emptySlots > 0 && AbstractDungeon.floorNum > 45 - emptySlots * 2) {
             return false;
         }
         return true;

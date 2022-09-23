@@ -292,10 +292,12 @@ public class PatchRabbitEars {
             method="use"
     )
     public static class PatchRabbitEarsEchoForm {
-        public static void Postfix(EchoForm __instance, AbstractPlayer p) {
+        public static SpireReturn Prefix(EchoForm __instance, AbstractPlayer p) {
             if (__instance.timesUpgraded == 2) {
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new MrofOhcePower(p, 1)));
+                return SpireReturn.Return();
             }
+            return SpireReturn.Continue();
         }
     }
 

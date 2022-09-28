@@ -4,10 +4,14 @@ import actions.DiscoveryCustomAction;
 import basemod.abstracts.CustomRelic;
 import cards.colorless.vapor.*;
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.mod.widepotions.potions.WidePotion;
+import com.evacipated.cardcrawl.mod.widepotions.potions.WidePotionRightHalf;
+import com.evacipated.cardcrawl.mod.widepotions.potions.WidePotionSlot;
+import com.evacipated.cardcrawl.modthespire.Loader;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.potions.*;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
@@ -15,6 +19,7 @@ import com.megacrit.cardcrawl.relics.SacredBark;
 import com.megacrit.cardcrawl.relics.Sozu;
 import util.TextureLoader;
 
+import java.util.ArrayList;
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -30,25 +35,44 @@ public class RelicBoilingFlask extends CustomRelic {
 
     @Override
     public boolean canSpawn() {
-        boolean hasEmptySlot = AbstractDungeon.player.potions.stream().anyMatch(p -> p instanceof PotionSlot);
-        if (AbstractDungeon.player.hasRelic(Sozu.ID) && hasEmptySlot) {
+        long emptySlots = AbstractDungeon.player.potions.stream().filter(p -> p instanceof PotionSlot).count();
+        if (AbstractDungeon.player.hasRelic(Sozu.ID) && emptySlots > 0) {
+            return false;
+        }
+        if (emptySlots > 0 && AbstractDungeon.floorNum > 45 - emptySlots * 2) {
             return false;
         }
         return true;
     }
 
     public void atBattleStartPreDraw() {
+        AbstractPlayer p = AbstractDungeon.player;
+        if (p.potions.size() == 0) {
+            return;
+        }
+        ArrayList<AbstractPotion> potions = new ArrayList<>(p.potions);
+        boolean wideLoad = Loader.isModLoaded("widepotions");
+        if (wideLoad) {
+            potions.addAll(WidePotionSlot.Field.widepotions.get(p));
+        }
+
         CardGroup vapors = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-        for (AbstractPotion potion : AbstractDungeon.player.potions) {
+        for (AbstractPotion potion : potions) {
             if (potion instanceof PotionSlot) {
                 return;
             }
-            AbstractCard vapor = POTION_TO_VAPOR.getOrDefault(potion.ID, UNKNOWN_VAPOR).makeCopy();
+            if (wideLoad && potion instanceof WidePotionRightHalf) {
+                continue;
+            }
+            CardVapor vapor = (CardVapor) POTION_TO_VAPOR.getOrDefault(potion.ID, UNKNOWN_VAPOR).makeCopy();
             if (vapors.group.stream().anyMatch(c -> c.cardID.equals(vapor.cardID))) {
                 continue;
             }
             if (AbstractDungeon.player.hasRelic(SacredBark.ID)) {
                 vapor.upgrade();
+            }
+            if (wideLoad && potion instanceof WidePotion) {
+                vapor.widen(true);
             }
             vapors.addToTop(vapor);
         }
@@ -70,7 +94,7 @@ public class RelicBoilingFlask extends CustomRelic {
         return new RelicBoilingFlask();
     }
 
-    public static final Map<String, AbstractCard> POTION_TO_VAPOR = Stream.of(new Object[][] {
+    public static final Map<String, CardVapor> POTION_TO_VAPOR = Stream.of(new Object[][] {
             { Ambrosia.POTION_ID, new CardVaporAmbrosia() },
             { AncientPotion.POTION_ID, new CardVaporAncientPotion() },
             { AttackPotion.POTION_ID, new CardVaporAttackPotion() },
@@ -113,6 +137,6 @@ public class RelicBoilingFlask extends CustomRelic {
             { StrengthPotion.POTION_ID, new CardVaporStrengthPotion() },
             { SwiftPotion.POTION_ID, new CardVaporSwiftPotion() },
             { WeakenPotion.POTION_ID, new CardVaporWeakPotion() }
-    }).collect(Collectors.toMap(data -> (String)data[0], data -> (AbstractCard)data[1]));
-    public static final AbstractCard UNKNOWN_VAPOR = new CardVaporUnknownPotion();
+    }).collect(Collectors.toMap(data -> (String)data[0], data -> (CardVapor)data[1]));
+    public static final CardVapor UNKNOWN_VAPOR = new CardVaporUnknownPotion();
 }

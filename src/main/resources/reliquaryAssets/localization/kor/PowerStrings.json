@@ -1,0 +1,249 @@
+{
+  "reliquary:AfterGlow": {
+    "NAME": "잔광",
+    "DESCRIPTIONS": [
+      "#y스킬 카드를 사용하면 #y잔상 효과가 2번 발동합니다.",
+      "#y스킬 카드를 사용하면 #y잔상 효과가 #b",
+      " 번 발동합니다."
+    ]
+  },
+  "reliquary:AreaDenial": {
+    "NAME": "영역 거부",
+    "DESCRIPTIONS": [
+      "#y가시가 적 전체에게 피해를 입힙니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This power augments the behavior of the base game's Thorns power."
+  },
+  "reliquary:BattleHymnPlus": {
+    "NAME": "전투 찬가",
+    "DESCRIPTIONS": [
+      "턴 시작시, #y엄벌+ #b",
+      " 장을 손으로 가져옵니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Battle Hymn power."
+  },
+  "reliquary:BlurPlus": {
+    "NAME": "더블 비전",
+    "DESCRIPTIONS": [
+      "#y방어도가 2배가 되지만 다음턴 시작시 사라지게 됩니다.",
+      "#y방어도가 2배가 되지만 다음 #b",
+      " 후에 사라지게 됩니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Blur power."
+  },
+  "reliquary:ChainReaction": {
+    "NAME": "연계 행동",
+    "DESCRIPTIONS": [
+      "턴 종료시, #y연소 #b",
+      " 을 얻습니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "Combust is an existing power in the base game."
+  },
+  "reliquary:CutAbove": {
+    "NAME": "수많은 절단",
+    "DESCRIPTIONS": [
+      "#y스킬 카드를 사용하면 #y능지처참의 효과가 2번 발동합니다.",
+      "#y스킬 카드를 사용하면 #y능지처참의 효과가 #b",
+      " 발동합니다."
+    ]
+  },
+  "reliquary:DeathWarrant": {
+    "NAME": "Death Warrant",
+    "DESCRIPTIONS": [
+      "Your next #yAttack against this enemy this turn deals an additional #b",
+      " damage."
+    ]
+  },
+  "reliquary:DoubleWindsor": {
+    "NAME": "이중 윈저",
+    "DESCRIPTIONS": [
+      "이번 턴 동안 #y스킬 카드를 사용하면 #y교살의 효과가 2번 발동합니다.",
+      "이번 턴 동안 #y스킬 카드를 사용하면 #y교살의 효과가 #b",
+      " 번 발동합니다."
+    ]
+  },
+  "reliquary:FocusDown": {
+    "NAME": "밀집 감소",
+    "DESCRIPTIONS": [
+      "턴 종료시, #y밀집을 #b",
+      " 잃습니다."
+    ]
+  },
+  "reliquary:HalfLightning": {
+    "NAME": "이온",
+    "DESCRIPTIONS": [
+      "#y이온이  #b2 개 이상이면, #y이온을 2 잃고 #y전기를 #b1 #y영창합니다."
+    ]
+  },
+  "reliquary:HandSize": {
+    "NAME": "손 용량 증가",
+    "DESCRIPTIONS": [
+      "손 용량 감소",
+      "손에 들 수 있는 카드의 최대 용량이 #b 증가합니다",
+      "손에 들 수 있는 카드의 최대 용량이 #b 감소합니다",
+      "."
+    ]
+  },
+  "reliquary:HelloPlus": {
+    "NAME": "피즈버즈",
+    "DESCRIPTIONS": [
+      "턴 시작시, 무작위 특별 카드 #b",
+      " 장을 손으로 가져옵니다.",
+      " 장을 손으로 가져옵니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Hello power."
+  },
+  "reliquary:Hooked": {
+    "NAME": "낚임",
+    "DESCRIPTIONS": [
+      "다음 턴에 에너지를 #b",
+      " [E] 만큼 적게 얻습니다."
+    ]
+  },
+  "reliquary:Hydrated": {
+    "NAME": "수화",
+    "DESCRIPTIONS": [
+      "#y힘 #y감소가 #b",
+      " 턴 후에 적용됩니다.",
+      " 턴 후에 적용됩니다."
+    ]
+  },
+  "reliquary:InNTurnsDeath": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "#b",
+      " 턴 후에, 죽습니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "This is an alternate version of the Watcher's Blasphemy debuff.",
+      "Instead of killing you at the end of the current turn (1 turn), it kills you in N turns.",
+      "It takes the name ('Blasphemer,' in English) from the existing debuff, so you don't need to translate that."
+    ]
+  },
+  "reliquary:IntangibleTurns": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "Reduce ALL damage taken and HP loss to #b1 this turn.",
+      "Reduce ALL damage taken and HP loss to #b1 for the next #b",
+      " turns."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This a turn-based version of the base game's Intangible power.."
+  },
+  "reliquary:InvincibleTurns": {
+    "NAME": "무적",
+    "DESCRIPTIONS": [
+      "이번 턴 동안 절대로 피해를 받지 않습니다.",
+      "다음 #b",
+      " 턴동안 절대로 피해를 받지 않습니다."
+    ]
+  },
+  "reliquary:LesserDuplication": {
+    "NAME": "약한 복제",
+    "DESCRIPTIONS": [
+      "이번 턴에 사용하는 비용 0 또는 비용 1의 카드가 2번 사용됩니다.",
+      "이번 턴에 사용하는 #b",
+      " 장의 비용 0 또는 비용 1의 카드가 2번 사용됩니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an weaker version of the base game's Duplication power."
+  },
+  "reliquary:MrofOhce": {
+    "NAME": "리아메",
+    "DESCRIPTIONS": [
+      "매 턴 마지막으로 사용하는 카드가 2번 사용됩닏다.",
+      "매 턴 마지막으로 사용하는 #b",
+      " 장의 카드가 2번 사용됩니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an alternate version of the base game's Echo Form power. 'Mrof Ohce' is Echo Form backwards."
+  },
+  "reliquary:QuantumAI": {
+    "NAME": "양자 AI",
+    "DESCRIPTIONS": [
+      "턴 시작시, #b1 또는 #b2 장의 무작위 #y파워 카드를 손으로 가져옵니다.",
+      "턴 시작시, #b1 또는 #b2 장의 무작위 #y파워 카드를 손으로 2번 가져옵니다.",
+      "턴 시작시, #b1 또는 #b2 장의 무작위 #y파워 카드를 손으로 #b",
+      " 번 가져옵니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's creative ai power."
+  },
+  "reliquary:Rattled": {
+    "NAME": "Rattled",
+    "DESCRIPTIONS": [
+      "Receives double damage from the next unblocked attack.",
+      "Receives double damage from the next #b",
+      " unblocked attacks."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A pun on rattlesnakes and being 'rattled,' i.e. unnerved or disarmed."
+  },
+  "reliquary:ReboundPlus": {
+    "NAME": "울려퍼짐",
+    "DESCRIPTIONS": [
+      "다음에 사용하는 카드 하나를 다시 손으로 가져옵니다.",
+      "다음에 사용하는 카드 #b",
+      " 장을 다시 손으로 가져옵니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Rebound power."
+  },
+  "reliquary:ReduceColorlessCost": {
+    "NAME": "창백함",
+    "DESCRIPTIONS": [
+      "다음에 사용하는 무색 카드의 비용이 #b1 줄어듭니다.",
+      "다음 사용하는 무색 카드 #b",
+      " 장의 비용이 #b1 줄어듭니다."
+    ]
+  },
+  "reliquary:StormPlus": {
+    "NAME": "대폭풍",
+    "DESCRIPTIONS": [
+      "#y파워 카드를 사용하면, 해당 파워 카드의 [B]만큼 #y전기를 #b",
+      " 번 영창합니다 (최소 #b",
+      ")."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Storm power."
+  },
+  "reliquary:StudyPlus": {
+    "NAME": "벼락치기",
+    "DESCRIPTIONS": [
+      "턴 시작시, #y통찰+ #b",
+      " 장을 뽑을 카드 더미에 넣습니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Study power."
+  },
+  "reliquary:Taunt": {
+    "NAME": "도발",
+    "DESCRIPTIONS": [
+      "이 적이 죽을때까지 다른 적들을 지정할 수 없습니다.",
+      "다른 적이 나를 #r@도발@ 하고 있어!"
+    ]
+  },
+  "reliquary:ThermalPaste": {
+    "NAME": "가열판",
+    "DESCRIPTIONS": [
+      "#y방열판 효과가 가능하면 파워 카드도 같이 뽑게 됩니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This power augments the behavior of the Defect's Heatsinks power."
+  },
+  "reliquary:Triumph": {
+    "NAME": "대성공",
+    "DESCRIPTIONS": [
+      "#y강림 상태의 피해량 증폭이 #b",
+      ", 증가하여 #b",
+      "배의 피해를 줍니다."
+    ]
+  },
+  "reliquary:Vim": {
+    "NAME": "활기참",
+    "DESCRIPTIONS": [],
+    "NOTE_FOR_TRANSLATORS": [
+      "'Envimmed' isn't a real word, it's an adjective I made up to mean 'infused with vim,' as 'invigorated' means 'infused with vigor.'",
+      "Feel free to use anything that means invigorated, or make one up...?",
+      "This uses the description strings from the Berserk power."
+    ]
+  },
+  "reliquary:VulnerableNextTurn": {
+    "NAME": "다음턴 취약",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " 다음턴에 #y취약 상태가 됩니다."
+    ]
+  }
+}

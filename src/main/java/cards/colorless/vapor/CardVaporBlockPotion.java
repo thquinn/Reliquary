@@ -1,6 +1,5 @@
 package cards.colorless.vapor;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -8,7 +7,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class CardVaporBlockPotion extends CustomCard {
+public class CardVaporBlockPotion extends CardVapor {
     public static final String ID = "reliquary:VaporBlockPotion";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/blockPotion.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -34,10 +33,5 @@ public class CardVaporBlockPotion extends CustomCard {
             upgradeName();
             upgradeBlock(6);
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporBlockPotion();
     }
 }

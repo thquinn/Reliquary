@@ -1,4 +1,17 @@
 {
+  "reliquary:BlastOff": {
+    "NAME": "Blast Off!",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable to ALL enemies. NL Exhaust.",
+    "NOTE_FOR_TRANSLATORS": "The card name is the culmination of a rocket launch countdown: 3, 2, 1, blast off!"
+  },
+  "reliquary:Pearlescence": {
+    "NAME": "",
+    "DESCRIPTION": "pearlescence",
+    "EXTENDED_DESCRIPTION": [
+      "I must play another card first."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The description should match the translation of the pearlescence keyword."
+  },
   "reliquary:VaporAmbrosia": {
     "NAME": "Ambrosial Vapor",
     "DESCRIPTION": "Retain. NL Gain !M! Mantra. NL Exhaust.",
@@ -17,7 +30,7 @@
   "reliquary:VaporBlessingOfTheForge": {
     "NAME": "Quenching Vapor",
     "DESCRIPTION": "Retain. NL Upgrade a random card in your hand for the rest of combat. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Upgrade half of the cards in your hand for the rest of combat, at random, rounded up. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Retain. NL Upgrade half of the cards in your hand for the rest of combat, rounded up, at random. NL Exhaust."
   },
   "reliquary:VaporBlockPotion": {
     "NAME": "Enshrouding Vapor",

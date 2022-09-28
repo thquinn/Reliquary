@@ -1,0 +1,226 @@
+{
+  "reliquary:BlastOff": {
+    "NAME": "Blast Off!",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable to ALL enemies. NL Exhaust.",
+    "NOTE_FOR_TRANSLATORS": "The card name is the culmination of a rocket launch countdown: 3, 2, 1, blast off!"
+  },
+  "reliquary:Pearlescence": {
+    "NAME": "",
+    "DESCRIPTION": "pearlescence",
+    "EXTENDED_DESCRIPTION": [
+      "I must play another card first."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The description should match the translation of the pearlescence keyword."
+  },
+  "reliquary:VaporAmbrosia": {
+    "NAME": "암브로시아 증기",
+    "DESCRIPTION": "보존. NL 만트라를 !M! 획득합니다. NL 소멸.",
+    "NOTE_FOR_TRANSLATORS": "Each of these 'Vapor' cards corresponds to one of the 42 potions in the game."
+  },
+  "reliquary:VaporAncientPotion": {
+    "NAME": "고대의 증기",
+    "DESCRIPTION": "보존. NL 적의 인공물 하나를 제거합니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 적 전체의 인공물 하나를 제거합니다. NL 소멸."
+  },
+  "reliquary:VaporAttackPotion": {
+    "NAME": "공격성 증기",
+    "DESCRIPTION": "보존. NL 무작위 공격 카드 하나를 손으로 가져옵니다. 이번 턴 동안 그 카드의 비용은 0이 됩니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 무작위 공격 카드 !M! 장을 손으로 가져옵니다. 이번 턴 동안 그 카드의 비용은 0이 됩니다. NL 소멸."
+  },
+  "reliquary:VaporBlessingOfTheForge": {
+    "NAME": "담금질 증기",
+    "DESCRIPTION": "보존. NL 손에 있는 무작위 카드를 이번 전투 동안 강화합니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 손에 있는 카드 갯수의 절반만큼을 이번 전투 동안 강화합니다. NL 소멸."
+  },
+  "reliquary:VaporBlockPotion": {
+    "NAME": "가림막 증기",
+    "DESCRIPTION": "보존. NL 방어도를 !B! 얻습니다. NL 소멸."
+  },
+  "reliquary:VaporBloodPotion": {
+    "NAME": "혈액 증기",
+    "DESCRIPTION": "보존. NL 최대 체력의 !M! 만큼 체력을 회복합니다. NL 소멸."
+  },
+  "reliquary:VaporBottledMiracle": {
+    "NAME": "기적의 증기",
+    "DESCRIPTION": "보존. NL 기적을 손으로 가져옵니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 기적+을 손으로 가져옵니다. NL 소멸."
+  },
+  "reliquary:VaporColorlessPotion": {
+    "NAME": "투명한 증기",
+    "DESCRIPTION": "보존. NL 무작위 무색 카드 하나를 손으로 가져옵니다. 이번 턴 동안 그 카드의 비용이 0이 됩니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 무작위 공격 카드 !M! 장을 손으로 가져옵니다. 이번 턴 동안 그 카드의 비용은 0이 됩니다. NL 소멸."
+  },
+  "reliquary:VaporCultistPotion": {
+    "NAME": "의식의 증기",
+    "DESCRIPTION": "보존. NL 의식 1을 얻고 힘이 !M! 감소합니다."
+  },
+  "reliquary:VaporCunningPotion": {
+    "NAME": "기만의 증기",
+    "DESCRIPTION": "보존. NL 단도+를 손으로 가져옵니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 단도+ !M! 장을 손으로 가져옵니다. NL 소멸."
+  },
+  "reliquary:VaporDexterityPotion": {
+    "NAME": "휘몰아치는 증기",
+    "DESCRIPTION": "보존. NL 민첩을 !M! 얻습니다."
+  },
+  "reliquary:VaporDistilledChaos": {
+    "NAME": "혼돈의 증기",
+    "DESCRIPTION": "보존. NL 뽑을 카드 더미 맨 위에 있는 카드를 사용합니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 뽑을 카드 더미 맨 위에 있는 카드 !M! 장을 사용합니다. NL 소멸."
+  },
+  "reliquary:VaporDuplicationPotion": {
+    "NAME": "수증기 증기",
+    "DESCRIPTION": "보존. NL 이번 턴에 사용하는 비용 0 또는 비용 1의 카드가 2번 사용됩니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 이번 턴에 사용하는 비용 0 또는 비용 1의 카드 !M! 장이 2번 사용됩니다. NL 소멸."
+  },
+  "reliquary:VaporElixir": {
+    "NAME": "정화의 증기",
+    "DESCRIPTION": "보존. NL 손에 있는 무작위 저주 또는 상태이상 카드를 소멸시킵니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 손에 있는 모든 저주와 상태이상 카드를 소멸시킵니다. NL 소멸."
+  },
+  "reliquary:VaporEnergyPotion": {
+    "NAME": "에너지 증기",
+    "DESCRIPTION": "보존. NL [W]를 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL [E] [E]를 얻습니다. NL 소멸."
+  },
+  "reliquary:VaporEntropicBrew": {
+    "NAME": "엔트로피의 증기",
+    "DESCRIPTION": "보존. NL A 현재 가진 포션 중 하나가 무작위 포션 하나로 변환됩니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 현재 가진 포션들이 전부 무작위 포션으로 변환됩니다. NL 소멸."
+  },
+  "reliquary:VaporEssenceOfDarkness": {
+    "NAME": "어둠의 증기",
+    "DESCRIPTION": "보존. NL 모든 암흑 구체의 지속 효과를 발동합니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 모든 암흑 구체의 지속 효과를 !M! 번 발동합니다. NL 소멸."
+  },
+  "reliquary:VaporEssenceOfSteel": {
+    "NAME": "강철의 증기",
+    "DESCRIPTION": "보존. NL 판금 갑옷을 !M! 얻습니다."
+  },
+  "reliquary:VaporExplosivePotion": {
+    "NAME": "폭발 증기",
+    "DESCRIPTION": "보존. NL 적 전체에게 !D! 피해를 줍니다. NL 소멸."
+  },
+  "reliquary:VaporFairyInABottle": {
+    "NAME": "단열의 증기",
+    "DESCRIPTION": "보존. NL 다음 번에 체력을 잃는걸 막아줍니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 다음 번에 체력을 잃는것을 !M! 번 막아줍니다. NL 소멸."
+  },
+  "reliquary:VaporFearPotion": {
+    "NAME": "위협적인 증기",
+    "DESCRIPTION": "보존. NL 취약을 !M! 부여합니다. NL 소멸."
+  },
+  "reliquary:VaporFirePotion": {
+    "NAME": "불꽃 증기",
+    "DESCRIPTION": "보존. NL 피해를 !D! 줍니다. NL 소멸."
+  },
+  "reliquary:VaporFlexPotion": {
+    "NAME": "우람한 증기",
+    "DESCRIPTION": "보존. NL 힘을 !M! 얻습니다. NL 턴 종료시, 힘을 !M! 잃습니다. NL 소멸."
+  },
+  "reliquary:VaporFocusPotion": {
+    "NAME": "농축된 증기",
+    "DESCRIPTION": "보존. NL 밀집을 !M! 얻습니다. NL 소멸."
+  },
+  "reliquary:VaporFruitJuice": {
+    "NAME": "과일 증기",
+    "DESCRIPTION": "보존. NL 최대 체력을 !M! 얻습니다. NL 소멸."
+  },
+  "reliquary:VaporGamblersBrew": {
+    "NAME": "변화의 증기",
+    "DESCRIPTION": "보존. NL 무작위 카드 1장을 버린 후, 카드 1장을 뽑습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 카드를 전부 버리고, 버린 카드 수만큼 다시 카드를 뽑습니다. NL 소멸."
+  },
+  "reliquary:VaporGhostInAJar": {
+    "NAME": "유령 증기",
+    "DESCRIPTION": "보존. NL !M! 확률로 영체화를 얻습니다. NL 소멸."
+  },
+  "reliquary:VaporHeartOfIron": {
+    "NAME": "빛나는 증기",
+    "DESCRIPTION": "보존. NL 금속화를 !M! 얻습니다."
+  },
+  "reliquary:VaporLiquidBronze": {
+    "NAME": "가시 돋친 증기",
+    "DESCRIPTION": "보존. NL 가시를 !M! 얻습니다."
+  },
+  "reliquary:VaporLiquidMemories": {
+    "NAME": "기시감 증기",
+    "DESCRIPTION": "보존. NL 버린 카드 더미에 있는 무작위 카드 하나를 손으로 가져옵니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 버린 카드 더미에 있는 무작위 카드 !M! 장을 손으로 가져옵니다. NL 소멸."
+  },
+  "reliquary:VaporPoisonPotion": {
+    "NAME": "독성 증기",
+    "DESCRIPTION": "보존. NL 중독을 !M! 부여합니다. NL 소멸."
+  },
+  "reliquary:VaporPotionOfCapacity": {
+    "NAME": "부글부글 증기",
+    "DESCRIPTION": "보존. NL 구체 슬롯 하나를 얻습니다.",
+    "UPGRADE_DESCRIPTION": "보존. NL 구체 슬롯 !M! 개를 얻습니다."
+  },
+  "reliquary:VaporPowerPotion": {
+    "NAME": "강력한 증기",
+    "DESCRIPTION": "보존. NL 무작위 파워 카드를 손으로 가져옵니다. 이번 턴 동안 그 카드의 비용은 0이 됩니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 무작위 파워 카드 !M! 을 손으로 가져옵니다. 이번 턴 동안 그 카드의 비용은 0이 됩니다. NL 소멸."
+  },
+  "reliquary:VaporRegenPotion": {
+    "NAME": "스며드는 증기",
+    "DESCRIPTION": "보존. NL 재생을 !M! 얻습니다."
+  },
+  "reliquary:VaporSkillPotion": {
+    "NAME": "밝은 증기",
+    "DESCRIPTION": "보존. NL 무작위 스킬 카드를 손으로 가져옵니다. 이번 턴 동안 그 카드의 비용은 0이 됩니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 무작위 스킬 카드 !M! 을 손으로 가져옵니다. 이번 턴 동안 그 카드의 비용은 0이 됩니다. NL 소멸."
+  },
+  "reliquary:VaporSmokeBomb": {
+    "NAME": "모호한 증기",
+    "DESCRIPTION": "보존. NL 골드 !M! 를 소모하여 전투에서 도주합니다. 보상은 얻을수 없습니다. NL 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      "저들을 유혹할만큼의 골드가 부족해!",
+      "포위당해있어!",
+      "저 자는 너무 강력해!",
+      "저들은 너무 강력해!"
+    ]
+  },
+  "reliquary:VaporSneckoOil": {
+    "NAME": "쉭쉭 증기",
+    "DESCRIPTION": "보존. NL 손에 있는 카드 절반의 비용을 무작위로 정하여 반올림합니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 손에 있는 카드의 비용을 무작위로 변환합니다. NL 소멸."
+  },
+  "reliquary:VaporSpeedPotion": {
+    "NAME": "빠른 증기",
+    "DESCRIPTION": "보존. NL 민첩을 !M! 얻습니다. NL 턴 종료시, 민첩을 !M! 잃습니다. NL 소멸."
+  },
+  "reliquary:VaporStancePotion": {
+    "NAME": "경지 증기",
+    "DESCRIPTION": "보존. NL 경지 상태가 아닐경우, 진노 또는 명상 중 무작위 경지로 진입합니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 명상 또는 진노 상태일경우, 다른 경지로 진입합니다. NL 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      "경지 상태일때는 사용할 수 없어.",
+      "명상 또는 진노 상태일때만 사용할 수 있어."
+    ]
+  },
+  "reliquary:VaporStrengthPotion": {
+    "NAME": "힘 증기",
+    "DESCRIPTION": "보존. NL 힘을 !M! 얻습니다."
+  },
+  "reliquary:VaporSwiftPotion": {
+    "NAME": "신속 증기",
+    "DESCRIPTION": "보존. NL 카드를 뽑습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 카드를 !M! 장 뽑습니다. NL 소멸."
+  },
+  "reliquary:VaporUnknownPotion": {
+    "NAME": "정체불명의 증기",
+    "DESCRIPTION": "보존. NL 무작위 증기 카드를 손으로 가져옵니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 무작위 증기 카드 !M! 장을 손으로 가져옵니다. NL 소멸.",
+    "NOTE_FOR_TRANSLATORS": "This Vapor is generated by potions from other mods."
+  },
+  "reliquary:VaporWeakPotion": {
+    "NAME": "무기력 증기",
+    "DESCRIPTION": "보존. NL 약화 !M! 을 부여합니다. NL 소멸."
+  },
+  "reliquary:Vim": {
+    "NAME": "활기",
+    "DESCRIPTION": "턴 시작시 [E] 를 얻습니다.",
+    "UPGRADE_DESCRIPTION": "턴 시작시 [E] [E] 를 얻습니다."
+  }
+}

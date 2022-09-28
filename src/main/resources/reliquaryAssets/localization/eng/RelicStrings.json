@@ -70,12 +70,24 @@
       "to see which string corresponds to which Ironclad card. Indices start at 0!"
     ]
   },
+  "reliquary:BloodSugar": {
+    "NAME": "Blood Sugar",
+    "FLAVOR": "You know you shouldn't, but you just can't help yourself!",
+    "DESCRIPTIONS": [
+      "Whenever you enter a room, heal #b",
+      " HP, then decrease that number by #b1. #yRest to reset it to #b",
+      "."
+    ]
+  },
   "reliquary:BoilingFlask": {
     "NAME": "Boiling Flask",
     "FLAVOR": "A round-bottom boiling flask, five thousand milliliters!",
     "DESCRIPTIONS": [
-      "At the start of each combat, if your potion slots are full, choose a #yVapor card and add it into your hand."
-    ]
+      "At the start of each combat, if your potion slots are full, choose a #yVapor card and add it into your hand.",
+      "Wide ",
+      ""
+    ],
+    "NOTE_FOR_TRANSLATORS": "The second and third strings are the prefix and suffix for Vapors generated from the Wide Potions mod."
   },
   "reliquary:Bookmark": {
     "NAME": "Bookmark",
@@ -93,6 +105,20 @@
       "",
       "Put the fourth card you play each turn on top of your draw pile."
     ]
+  },
+  "reliquary:Bouncer": {
+    "NAME": "Bouncer",
+    "FLAVOR": "I hope you have a plan for the landing.",
+    "DESCRIPTIONS": [
+      "Upon pickup, choose a card. It becomes #yUnplayable. If it's discarded from your hand, play it.",
+      "Choose a card for ",
+      "The chosen ",
+      " is #yUnplayable. If it's discarded from your hand, play it.",
+      "Unplayable. NL ",
+      " NL If this card is discarded from your hand, play it.",
+      "I can't play this card."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a spring from Sonic the Hedgehog."
   },
   "reliquary:BrokenClock": {
     "NAME": "Broken Clock",
@@ -187,6 +213,14 @@
     ],
     "NOTE_FOR_TRANSLATORS": "'Hachi machi' is a slang exclamation expressing surprise or pain."
   },
+  "reliquary:EXA": {
+    "NAME": "EXA",
+    "FLAVOR": "Only your superhuman eyesight allows you to see this nanoscopic machine.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, if you have no #yLightning, #yFrost, and/or #yDark Orbs #yChanneled, #yChannel an Orb of a random missing type."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an EXA (EXecution Agent), a nanobot from the game EXAPUNKS."
+  },
   "reliquary:ExpiredCoupon": {
     "NAME": "Expired Coupon",
     "FLAVOR": "Good for 10% off an \"ass-beating.\" Who printed this thing, anyway?",
@@ -252,12 +286,28 @@
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to stealing from your future self."
   },
+  "reliquary:FreeSamples": {
+    "NAME": "Free Samples",
+    "FLAVOR": "Everyone's going to want a piece.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Whenever an enemy deals unblocked attack damage to you, it gains #b1 #yIntangible if it's not already."
+    ]
+  },
   "reliquary:GummyVitamins": {
     "NAME": "Gummy Vitamins",
     "FLAVOR": "Mmm, chewy!",
     "DESCRIPTIONS": [
       "Once per turn, you may draw a card, then shuffle a #rSlimed into your draw pile.",
       "I've already used that this turn."
+    ]
+  },
+  "reliquary:Hardlight": {
+    "NAME": "Hardlight",
+    "FLAVOR": "The words \"DO NOT FOLLOW\" have been scratched under the brim.",
+    "DESCRIPTIONS": [
+      "When your HP falls to #b",
+      " or less for the first time, permanently gain #b",
+      " #yStrength."
     ]
   },
   "reliquary:HolyGrail": {
@@ -390,6 +440,17 @@
       "Cancel"
     ]
   },
+  "reliquary:OvenMitt": {
+    "NAME": "Oven Mitt",
+    "FLAVOR": "It's already starting to fall apart.",
+    "DESCRIPTIONS": [
+      "Prevent the next #b",
+      " times you would lose HP.",
+      "Prevent the next time you would lose HP.",
+      "This relic has been used up."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This shares the same DESCRIPTIONS text from the Buffer power."
+  },
   "reliquary:PaperSnowflake": {
     "NAME": "Paper Snowflake",
     "FLAVOR": "Is this what this is supposed to look like?",
@@ -404,6 +465,21 @@
       "#yPower cards start each combat in the top half of your draw pile."
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a parody of the old Pringles advertising slogan."
+  },
+  "reliquary:PeacockShield": {
+    "NAME": "Peacock Shield",
+    "FLAVOR": "Presents a remarkable defense.",
+    "DESCRIPTIONS": [
+      "Whenever you enter #yWrath, double your #yBlock."
+    ]
+  },
+  "reliquary:PlasmaLobster": {
+    "NAME": "Plasma Lobster",
+    "FLAVOR": "Smells of petrichor.",
+    "DESCRIPTIONS": [
+      "Increases your attack damage by #b",
+      " while you have #yBlock."
+    ]
   },
   "reliquary:PorcupineQuills": {
     "NAME": "Porcupine Quills",
@@ -428,6 +504,15 @@
       " times the current Act."
     ],
     "NOTE_FOR_TRANSLATORS": "This is the headgear of the Prince of All Cosmos from the Katamari Damacy series."
+  },
+  "reliquary:PromissoryNotes": {
+    "NAME": "Promissory Notes",
+    "FLAVOR": "An ancient instrument of subterfuge.",
+    "DESCRIPTIONS": [
+      "Whenever you receive a debuff from an enemy, your first #yAttack against that enemy next turn deals #b",
+      " additional damage."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a checkbook."
   },
   "reliquary:PurpleTingedLeaf": {
     "NAME": "Purple-Tinged Leaf",
@@ -472,7 +557,7 @@
       "Channel !M! Dark. NL Trigger the passive ability of all Dark orbs twice.",
       "Double your Energy.",
       "Evoke your next Orb !M! times.",
-      "The first and last cards you play each turn are played twice.",
+      "The last card you play each turn is played twice.",
       "Lightning now hits ALL enemies. NL Channel !M! Lightning. NL Apply 99 Lock-On to a random enemy.",
       "Evoke all your Orbs. Gain [B] and draw !M! card for each Orb Evoked.",
       "Shift all Plasma orbs all the way left. NL Channel !M! Plasma.",
@@ -510,6 +595,14 @@
     "DESCRIPTIONS": [
       "#yPoison doesn't decrement."
     ]
+  },
+  "reliquary:RattleCoin": {
+    "NAME": "Rattle Coin",
+    "FLAVOR": "Both sides depict the same strangely familiar creature.",
+    "DESCRIPTIONS": [
+      "Double the first unblocked attack damage dealt to you and ALL enemies each combat."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The image on the coin is a rattlesnake."
   },
   "reliquary:RedCape": {
     "NAME": "Red Cape",
@@ -583,6 +676,13 @@
       "Whenever you end your turn with no cards in hand, draw a card next turn."
     ]
   },
+  "reliquary:SheepsEyeMarble": {
+    "NAME": "Sheep's Eye Marble",
+    "FLAVOR": "You feel dumber just looking at it.",
+    "DESCRIPTIONS": [
+      "Whenever you play two copies of the same card in a row, play it again."
+    ]
+  },
   "reliquary:ShortFuse": {
     "NAME": "Short Fuse",
     "FLAVOR": "It might blow at any moment.",
@@ -590,6 +690,15 @@
       "Your #yLightning Orbs target the enemy with the least HP."
     ],
     "NOTE_FOR_TRANSLATORS": "To have a 'short fuse' means you get angry easily."
+  },
+  "reliquary:ShortStraw": {
+    "NAME": "Short Straw",
+    "FLAVOR": "This may not have been the pick.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain [E] and choose a random card in your hand. If it's still in your hand at the end of the turn, you lose #b",
+      " HP."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a very short bendy straw."
   },
   "reliquary:Sideboard": {
     "NAME": "Sideboard",
@@ -717,6 +826,14 @@
       "to see which string corresponds to which Watcher card. Indices start at 0!"
     ]
   },
+  "reliquary:Soularoid": {
+    "NAME": "Soularoid",
+    "FLAVOR": "Those guys with the beards were right...?!",
+    "DESCRIPTIONS": [
+      "Whenever you play a non-[#efc851]Status[] card with a different name than any card in your deck, add a copy of it to your deck."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A portmanteau of 'soul' and 'Polaroid.' The flavor text is a reference to the urban legend of Amish people believing that cameras can steal the subject's soul."
+  },
   "reliquary:Spinner": {
     "NAME": "Spinner",
     "FLAVOR": "Please don't land on red, please don't land on red... son of a—!",
@@ -734,6 +851,14 @@
       "%)."
     ],
     "NOTE_FOR_TRANSLATORS": "This is a Tower of Hanoi puzzle."
+  },
+  "reliquary:Splatula": {
+    "NAME": "Splatula",
+    "FLAVOR": "Features a nonstick coating for easy cleanup.",
+    "DESCRIPTIONS": [
+      "Whenever you #yAttack an enemy for half or more of its Max HP, set its HP to #b0."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A portmanteau of 'splat' and 'spatula.'"
   },
   "reliquary:Stiletto": {
     "NAME": "Stiletto",
@@ -756,6 +881,15 @@
     "DESCRIPTIONS": [
       "Whenever you start your turn with #yBlock, you and ALL enemies gain #b1 #yStrength."
     ]
+  },
+  "reliquary:TankTop": {
+    "NAME": "Tank Top",
+    "FLAVOR": "The rusted remnant of a once-great warrior tribe.",
+    "DESCRIPTIONS": [
+      "Whenever you #yAttack the enemy with the most HP, if there are #b2 or more enemies, deal #b",
+      " damage to the front enemy."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the turret of a tank, in honor of our wonderful KOR translator OWATANKS!"
   },
   "reliquary:TatteredRug": {
     "NAME": "Tattered Rug",
@@ -804,11 +938,27 @@
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the classic bad joke structure, 'Who's got two thumbs and <insert detail about self>? This guy.'"
   },
+  "reliquary:ToyRocket": {
+    "NAME": "Toy Rocket",
+    "FLAVOR": "We choose to go to the Spire.",
+    "DESCRIPTIONS": [
+      "When you play a cost #b3 card, then a cost #b2 card, then a cost #b1 card in one combat, add a powerful cost #b0 #yAttack into your hand."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to JFK's 'we choose to go to the Moon' speech."
+  },
   "reliquary:TrainingWheel": {
     "NAME": "Training Wheel",
     "FLAVOR": "Its exterior is pristine, but it's so rusted on the inside that it can barely turn.",
     "DESCRIPTIONS": [
       "Whenever you draw a hand with no #yAttacks or no #ySkills, put a random card of that type from your draw pile into your hand."
+    ]
+  },
+  "reliquary:TrafficCone": {
+    "NAME": "Traffic Cone",
+    "FLAVOR": "In the dark of the Spire, its glinting stripes attain an unlikely menace.",
+    "DESCRIPTIONS": [
+      "The first time an enemy does something other than attack, it loses #b",
+      " #yStrength."
     ]
   },
   "reliquary:TridentHead": {
@@ -824,6 +974,20 @@
     "DESCRIPTIONS": [
       "Whenever you break an enemy's #yBlock exactly, deal #b",
       " damage to it."
+    ]
+  },
+  "reliquary:TwinPearls": {
+    "NAME": "Twin Pearls",
+    "FLAVOR": "They are completely identical in every way, impossible to tell apart. Close enough, anyway.",
+    "DESCRIPTIONS": [
+      "You start each turn with #yPearlescence in your hand."
+    ]
+  },
+  "reliquary:UnderdogBone": {
+    "NAME": "Underdog Bone",
+    "FLAVOR": "Someone must have been a very good boy or girl.",
+    "DESCRIPTIONS": [
+      "Whenever you play an unupgraded card, if there's an #yUpgraded copy in your draw pile, put it into your hand."
     ]
   },
   "reliquary:Vitrine": {
@@ -845,6 +1009,14 @@
       "The first #b",
       " Colorless cards you play each combat cost #b1 less."
     ]
+  },
+  "reliquary:WitchyDice": {
+    "NAME": "Witchy Dice",
+    "FLAVOR": "What a lucky find! #blessed",
+    "DESCRIPTIONS": [
+      "At the start of each combat, play a random card of any color."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the Witch character from the game Dicey Dungeons."
   },
   "reliquary:WritOfMandamus": {
     "NAME": "Writ of Mandamus",

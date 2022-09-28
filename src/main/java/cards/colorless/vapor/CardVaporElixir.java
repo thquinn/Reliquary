@@ -1,6 +1,5 @@
 package cards.colorless.vapor;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
@@ -9,7 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class CardVaporElixir extends CustomCard {
+public class CardVaporElixir extends CardVapor {
     public static final String ID = "reliquary:VaporElixir";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/elixir.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -46,10 +45,5 @@ public class CardVaporElixir extends CustomCard {
             rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporElixir();
     }
 }

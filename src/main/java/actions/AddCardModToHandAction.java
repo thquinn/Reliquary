@@ -6,17 +6,22 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class AddCardModToHandAction extends AbstractGameAction {
     AbstractCardModifier mod;
     Queue<AbstractCard> cards;
     int waitFrames;
+    int nRandom = -1;
 
     public AddCardModToHandAction(AbstractCardModifier mod) {
         this.mod = mod;
         actionType = ActionType.SPECIAL;
+    }
+    public AddCardModToHandAction(AbstractCardModifier mod, int nRandom) {
+        this.mod = mod;
+        actionType = ActionType.SPECIAL;
+        this.nRandom = nRandom;
     }
 
     @Override
@@ -30,11 +35,20 @@ public class AddCardModToHandAction extends AbstractGameAction {
                 isDone = true;
                 return;
             }
-            cards = new LinkedList<>(AbstractDungeon.player.hand.group);
+            if (nRandom == 0) {
+                isDone = true;
+                return;
+            }
+            List<AbstractCard> handCopy = new ArrayList(AbstractDungeon.player.hand.group);
+            if (nRandom > 0) {
+                Collections.shuffle(handCopy, new Random(AbstractDungeon.miscRng.randomLong()));
+                handCopy = handCopy.subList(0, Math.min(nRandom, handCopy.size()));
+            }
+            cards = new LinkedList<>(handCopy);
         }
         AbstractCard card = cards.remove();
         if (mod.shouldApply(card)) {
-            CardModifierManager.addModifier(card, mod);
+            CardModifierManager.addModifier(card, mod.makeCopy());
             card.flash();
             waitFrames = 1;
         }

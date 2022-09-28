@@ -1,0 +1,1030 @@
+{
+  "reliquary:Aerogel": {
+    "NAME": "에어로젤",
+    "FLAVOR": "무게가 매우 가볍고, 불운에 대비해주는 강력한 방지책입니다.",
+    "DESCRIPTIONS": [
+      "이 유물을 획득하면, 카드를 1장 선택합니다. 선택한 카드가 뽑을 카드 더미에 있는채로 덱을 섞을때마다, 그 카드를 항상 뽑을 카드 더미의 맨 위로 올려둡니다.",
+      "뽑을 카드 더미 안에 있는 ",
+      " 카드가 있는채로 덲을 섞으면, 해당 카드가 뽑을 카드 더미 맨 위로 올라옵니다."
+    ]
+  },
+  "reliquary:AluminiumFoil": {
+    "NAME": "알루미늄 호일",
+    "FLAVOR": "만약 당신이 카드를 전부 여기에 포장해서 넣으면, 사람들이 당신한테 관심을 가질겁니다.",
+    "DESCRIPTIONS": [
+      "카드 보상에서 #y강화된 카드나 고등급 카드가 나올 확률이 높아집니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to 'foil' or 'shiny' trading cards."
+  },
+  "reliquary:BallBearing": {
+    "NAME": "볼 베어링",
+    "FLAVOR": "무언가가 계속 자연스럽게 돌아가도록 설계되었습니다.",
+    "DESCRIPTIONS": [
+      "뽑을 카드를 섞을때마다, #y강철의 #y섬광 또는 #y능숙 중 하나가 무작위로 섞여서 투입됩니다."
+    ]
+  },
+  "reliquary:Bellows": {
+    "NAME": "풀무",
+    "FLAVOR": "이야, 이게 1인치보다 더 컸다면, 정말 유용하게 쓸 수 있을겁니다.",
+    "DESCRIPTIONS": [
+      "카드를 #b",
+      " 번 #y소멸 시킬때마다 , 소멸 카드 더미에 있는 카드 하나를 선택해 뽑을 카드 더미에 넣습니다.",
+      "뽑을 카드 더미에 넣을 카드를 선택해주십시오"
+    ]
+  },
+  "reliquary:BigHammer": {
+    "NAME": "큰 망치",
+    "FLAVOR": "Truly, it is the biggest hammer you have ever seen.",
+    "DESCRIPTIONS": [
+      "이제부터 #b빨간 #b카드를 한 번 더 강화시킬수 있습니다. 이 유물을 획득하면, #y강회된 카드를 선택해 #y강화 합니다.",
+      "피해를 !D! 줍니다. NL 이 카드를 1장 복사해 버린 카드 더미에 넣습니다. NL 버린 카드 더미에 있는 분노 1장당 피해량이 추가로 !M! 증가합니다.",
+      "방어도를 !B! 얻습니다. NL 손 안에 있는 모든 카드를 이번 전투동안 2번 강화합니다.",
+      "선천성. NL 턴 시작시 방어도가 사라지지 않습니다.",
+      "다음턴에 취약 !M! 을 받습니다. NL 매 턴 시작시, [R]를 얻습니다.",
+      "체력을 3 잃습니다. NL [R] [R] [R] [R]를 얻습니다.",
+      "방어도의 %d%% 수치만큼 피해를 줍니다.",
+      "선천성. NL 턴 시작시, 체력을 !M! 잃고 카드를 !M! 장 뽑습니다.",
+      "턴 종료시, 체력을 1 잃고, 적 전체에게 피해를 !M! 주고, 이 효과 수치를 %d 만큼 증가시킵니다.",
+      "선천성. NL 스킬 카드의 비용이 0이 됩니다. NL 스킬 카드를 사용하면 소멸시킵니다.",
+      "카드를 소멸시키거나 파워 카드를 사용하면, 카드를 1장 뽑습니다.",
+      "피해를 !D! 줍니다. 적이 취약 상태라면, [R] 를 얻고 카드를 1장 뽑습니다. 취약 상태가 아닐 경우 취약 1을 부여합니다.",
+      "선택한 공격 또는 파워 카드 !M! 장을 복사하여 손으로 가져옵니다.",
+      "방어도를 3배로 늘립니다.",
+      "손에 가질수 있는 최대 카드 갯수가 %d 장 늘어납니다. NL 상태이상 카드를 뽑으면, 카드를 !M! 장 뽑습니다.",
+      "소멸된 카드 1장을 선택하여 손으로 가져온 후 강화합니다. NL 소멸.",
+      "힘을 !M! 얻습니다. NL 다음 %d 턴 후에, 힘을 !M! 잃습니다.",
+      "뽑을 카드 더미 위에 있는 카드 !M! 장을 사용하고 소멸시킵니다.",
+      "무작위 강화된 공격 카드 2장을 얻습니다. NL 이번 턴 동안 그 카드의 비용이 0이 됩니다. NL 소멸.",
+      "힘을 3배로 늘립니다.",
+      "체력을 6 잃습니다. NL [R] [R] [R]를 얻습니다. NL 카드를 !M! 장 뽑습니다. NL 소멸.",
+      "피해를 !D! 줍닏. NL *어지러움 1장을 버린 카드 더미에 넣습니다.",
+      "[R] [R] [R]를 얻습니다. NL 소멸.",
+      "방어도를 !B! 얻습니다. NL 이 카드가 소멸되면, NL [R] [R] [R]를 얻고 카드를 !M! 장 뽑습니다.",
+      "적 전체에게 피해를 !D! 주고 취약을 !M! 부여합니다.",
+      "방어도를 !B! 얻습니다. NL 카드를 최대 !M! 장까지 선택하여 소멸시킵니다.",
+      "적 전체에게 !D! 피해를 X+%d 번 입힙니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "These are second upgrades, so all but the first string are slight variants of Ironclad cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicBigHammer.java",
+      "to see which string corresponds to which Ironclad card. Indices start at 0!"
+    ]
+  },
+  "reliquary:BloodSugar": {
+    "NAME": "Blood Sugar",
+    "FLAVOR": "You know you shouldn't, but you just can't help yourself!",
+    "DESCRIPTIONS": [
+      "Whenever you enter a room, heal #b",
+      " HP, then decrease that number by #b1. #yRest to reset it to #b",
+      "."
+    ]
+  },
+  "reliquary:BoilingFlask": {
+    "NAME": "끓고 있는 플라스크",
+    "FLAVOR": "바닥이 둥근 끓고 있는 플라스크입니다. 5천 밀리리터나 되네요!",
+    "DESCRIPTIONS": [
+      "매 전투 시작시, 포션 슬롯이 꽉 차 있다면, #y증기 카드 중 하나를 선택하여 손으로 가져옵니다.",
+      "Wide ",
+      ""
+    ],
+    "NOTE_FOR_TRANSLATORS": "The second and third strings are the prefix and suffix for Vapors generated from the Wide Potions mod."
+  },
+  "reliquary:Bookmark": {
+    "NAME": "북마크",
+    "FLAVOR": "\"자, 어디서부터 다시 봐야하나...\"",
+    "DESCRIPTIONS": [
+      "전투 시작시, 덱에 존재하는 #y선천성 카드 1장당, 카드를 1장 뽑습니다."
+    ]
+  },
+  "reliquary:Boomerang": {
+    "NAME": "부메랑",
+    "FLAVOR": "만약 당신이 사랑하는게 있다면, 그냥 냅두세요. 아니면 그냥 집어던져버리시던가.",
+    "DESCRIPTIONS": [
+      "매 턴 첫번째로 사용하는 카드를 뽑을 카드 더미 위에 올려둡니다.",
+      "",
+      "",
+      "매 턴 네번째로 사용하는 카드를 뽑을 카드 더미 위에 올려둡니다."
+    ]
+  },
+  "reliquary:Bouncer": {
+    "NAME": "Bouncer",
+    "FLAVOR": "I hope you have a plan for the landing.",
+    "DESCRIPTIONS": [
+      "Upon pickup, choose a card. It becomes #yUnplayable. If it's discarded from your hand, play it.",
+      "Choose a card for ",
+      "The chosen ",
+      " is #yUnplayable. If it's discarded from your hand, play it.",
+      "Unplayable. NL ",
+      " NL If this card is discarded from your hand, play it.",
+      "I can't play this card."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a spring from Sonic the Hedgehog."
+  },
+  "reliquary:BrokenClock": {
+    "NAME": "고장난 시계",
+    "FLAVOR": "이건 가끔씩 하루에 두번만 시간을 잘못 가르키고, 나머지 시간에는 멀쩡해집니다.",
+    "DESCRIPTIONS": [
+      "이제 모든 전투가 플레이어 2턴 행동 후 적 2턴 행동으로 변경됩니다."
+    ]
+  },
+  "reliquary:Buckler": {
+    "NAME": "버클러",
+    "FLAVOR": "아주 유명한 마레크의 도장이 새겨졌습니다.",
+    "DESCRIPTIONS": [
+      "덱에서 강화가 가능한 카드 #b",
+      " 장을 사용하면, 그 카드들을 영구적으로 #y강화 합니다.",
+      "덱에서 강화가 가능한 카드를 사용하면, 그 카드들을 영구적으로 #y강화 합니다.",
+      "이 유물은 전부 사용했습니다."
+    ]
+  },
+  "reliquary:CitrusReamer": {
+    "NAME": "즙 짜개",
+    "FLAVOR": "힘으로 과일을 쥐어짤수 있는데 왜 굳이 짜개를 쓰려고 하죠?",
+    "DESCRIPTIONS": [
+      "매 턴 처음으로 손에 카드가 #b",
+      " 장이 있을때마다, [E] 를 얻습니다."
+    ]
+  },
+  "reliquary:Conveyor": {
+    "NAME": "컨베이어",
+    "FLAVOR": "어디로든 마음껏 보내세요.",
+    "DESCRIPTIONS": [
+      "턴 시작시, 현재 구체 슬롯에 동일한 종류의 구체가 #b",
+      " 개 이상 존재하면 해당 구체를 #y영창합니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a conveyor block from the game Infinifactory."
+  },
+  "reliquary:Craggleroot": {
+    "NAME": "돌돌 말린 뿌리",
+    "FLAVOR": "이 뿌리는 고달픈 인생을 겪어온것처럼 보이네요. 당신도 그 고난을 이겨낼 수 있을까요?",
+    "DESCRIPTIONS": [
+      "매 턴 시작시 [E] 를 추가로 얻습니다. 전투에서 매 턴 뽑히는 첫번째 카드의 비용이 #b1 증가합니다."
+    ]
+  },
+  "reliquary:Crucible": {
+    "NAME": "도가니",
+    "FLAVOR": "화씨 451°F도까지의 온도를 견뎌낼수 있으므로, 분명 제 역할을 해낼겁니다.",
+    "DESCRIPTIONS": [
+      "덱에서 #y강화된 카드를 제거할때마다, 덱에 있는 무작위 카드를 #y강화합니다.",
+      "덱에서 #y강화된 카드를 제거할때마다, 덱에 있는 무작위 카드 #b",
+      " 장을 #y강화합니다."
+    ]
+  },
+  "reliquary:CrusadersMap": {
+    "NAME": "성전 지도",
+    "FLAVOR": "진실을 찾아서.",
+    "DESCRIPTIONS": [
+      "#y불멸의 #y길로 가는 법을 알려주고 있습니다. (다음에 유물을 획득하면 확률로...?)",
+      "성배를 찾았습니다.",
+      "~Good~ ~luck...~"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This relic is a reference to Indiana Jones and the Last Crusade."
+  },
+  "reliquary:Crutches": {
+    "NAME": "목발",
+    "FLAVOR": "이런게 필요없는건 당신뿐만이 아니에요.",
+    "DESCRIPTIONS": [
+      "적에게서 #y상태이상 카드를 받을때마다, 모든 적들이 다음 턴에 #b",
+      " #y힘을 임시로 잃습니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text implies that your enemies are the ones that will need the crutches."
+  },
+  "reliquary:Dhvaja": {
+    "NAME": "승리의 배너",
+    "FLAVOR": "승리는 당신의 것이 될 것입니다... 어떻게든요.",
+    "DESCRIPTIONS": [
+      "#y강림 상태에 진입할때마다, 이 전투에서 #y강림 상태의 피해 증가량이 #b1배 더 증가합니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "https://en.wikipedia.org/wiki/Dhvaja"
+  },
+  "reliquary:ElizabethanCollar": {
+    "NAME": "목 보호대",
+    "FLAVOR": "그만 짖어대라 그랬잖아!",
+    "DESCRIPTIONS": [
+      "획득 시, 현재 가진 모든 #r저주 카드가 #r상처 카드로 변환됩니다. 이후에 얻는 모든 #r저주 카드가 #r상처 카드로 대체됩니다."
+    ]
+  },
+  "reliquary:Ember": {
+    "NAME": "잉걸불",
+    "FLAVOR": "핫 뜨거워, 정말 뜨겁군요!",
+    "DESCRIPTIONS": [
+      "매 턴 시작시 [E] 를 추가로 얻습니다. 매 턴마다 에너지를 3 이상 소모하면 #b",
+      " 피해를 입습니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "'Hachi machi' is a slang exclamation expressing surprise or pain."
+  },
+  "reliquary:EXA": {
+    "NAME": "EXA",
+    "FLAVOR": "Only your superhuman eyesight allows you to see this nanoscopic machine.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, if you have no #yLightning, #yFrost, and/or #yDark Orbs #yChanneled, #yChannel an Orb of a random missing type."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an EXA (EXecution Agent), a nanobot from the game EXAPUNKS."
+  },
+  "reliquary:ExpiredCoupon": {
+    "NAME": "만료된 쿠폰",
+    "FLAVOR": " \"홍콩행 관광 보내기\"에 좋은 10% 할인 쿠폰입니다. 근데 대체 누가 이걸 프린트한걸까요?",
+    "DESCRIPTIONS": [
+      "전투에서 적에게 막히지 않은 피해를 총합 #b",
+      " 또는 그 이상만큼 주면, 적 전체에게 피해를 #b",
+      " 줍니다."
+    ]
+  },
+  "reliquary:FeatherDuster": {
+    "NAME": "먼지 떨이",
+    "FLAVOR": "\"내 인생의 실수들이, 나를 수많은 먼지처럼 감싸고 있다.\" - 카데모",
+    "DESCRIPTIONS": [
+      "획득 시, 타격, 수비, #r저주 카드들을 제외한 카드를 원하는만큼 선택하고 지울수 있습니다.",
+      "원하는 만큼 제거할 카드를 선택하세요."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a made-up quote by a made-up person."
+  },
+  "reliquary:FerryPass": {
+    "NAME": "페리 패스",
+    "FLAVOR": "이렇게 읽힙니다, \"라스트셀 섬으로의 여가를 즐겨주세요!\"",
+    "DESCRIPTIONS": [
+      "한 전투에서 덱에 존재하는 각기 이름이 다른 사용 가능 카드를 사용하면, 전투가 끝난 후 #y희귀 유물을 얻을수 있습니다.",
+      "이 전투에서 덱에 존재하는 서로 이름이 다른 #b",
+      " 장의 카드를 사용하면 #y희귀 유물을 얻을수 있습니다.",
+      "서로 이름이 다른 #b",
+      " 장의 카드를 사용하면 이 전투에서 a #y희귀 유물을 얻을수 있습니다.",
+      " ",
+      ", 그리고 ",
+      " 그리고 ",
+      " 를 사용하면 #y희귀 유물을 얻을수 있습니다.",
+      " NL [#2aecd7]우 [#2aecd7]클릭으로 [#2aecd7]현재 [#2aecd7]사용하지[#2aecd7]않은 [#2aecd7]카드를 [#2aecd7]표시할수 [#2aecd7]있습니다[#2aecd7].[]",
+      "이 유물은 전부 사용되었습니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "'Every unique card' means every card with a different name. The upgradedness doesn't matter, e.g. 'Strike' and 'Strike+' are the same unique card.",
+      "A couple examples of what those last few strings will look like once assembled:",
+      "Play Bash, Defend, and Strike to gain a Rare relic.",
+      "Play Strike and Defend to gain a Rare relic.",
+      "Lastcel is a made-up name... I think? It's our wonderful ZHS translator's Github username."
+    ]
+  },
+  "reliquary:FingerTrap": {
+    "NAME": "손가락 함정",
+    "FLAVOR": "아마도 잠깐 동안 좀 진정하시면, 금방 벗겨낼수 있을겁니다.",
+    "DESCRIPTIONS": [
+      "이제 내 턴일때 더 이상 체력을 잃지 않습니다."
+    ]
+  },
+  "reliquary:Firecrackers": {
+    "NAME": "폭죽",
+    "FLAVOR": "시끄럽다고! 좀 조용히 해, 이 꼬맹이들아!",
+    "DESCRIPTIONS": [
+      "적을 죽였을때, 그 적에게 초과해서 입힌 피해량(오버킬)을 무작위 적에게 입힙니다."
+    ]
+  },
+  "reliquary:FishingReel": {
+    "NAME": "낚시 찌",
+    "FLAVOR": "항상 다음 놈은 어리버리하단 말이지.",
+    "DESCRIPTIONS": [
+      "매 턴마다, 에너지가 부족해도 카드 #b",
+      " 장을 사용할수 있지만 사용한 해당 카드의 비용만큼 다음 턴에 에너지를 적게 얻습니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to stealing from your future self."
+  },
+  "reliquary:FreeSamples": {
+    "NAME": "Free Samples",
+    "FLAVOR": "Everyone's going to want a piece.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Whenever an enemy deals unblocked attack damage to you, it gains #b1 #yIntangible if it's not already."
+    ]
+  },
+  "reliquary:GummyVitamins": {
+    "NAME": "구미 비타민",
+    "FLAVOR": "으음, 맛있다!",
+    "DESCRIPTIONS": [
+      "한 턴에 한 번, 카드를 1 장 뽑고, #r점액덩어리 1장을 뽑을 카드 더미에 넣습니다.",
+      "이번 턴에 이미 그 유물을 사용했어."
+    ]
+  },
+  "reliquary:Hardlight": {
+    "NAME": "Hardlight",
+    "FLAVOR": "The words \"DO NOT FOLLOW\" have been scratched under the brim.",
+    "DESCRIPTIONS": [
+      "When your HP falls to #b",
+      " or less for the first time, permanently gain #b",
+      " #yStrength."
+    ]
+  },
+  "reliquary:HolyGrail": {
+    "NAME": "성배",
+    "FLAVOR": "당신은 성배를... 잘 선택해냈소.",
+    "DESCRIPTIONS": [
+      "매 전투에서 처음으로 죽었을때, 죽지 않고 다음 턴에 죽습니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a quote from Indiana Jones and the Last Crusade."
+  },
+  "reliquary:HotPoker": {
+    "NAME": "핫 포커",
+    "FLAVOR": "이 일에 휘말리고 싶어하진 않을겁니다.",
+    "DESCRIPTIONS": [
+      "내 턴동안 카드를 뽑을경우, 무작위 적에게 뽑은 카드의 비용만큼 피해를 줍니다."
+    ]
+  },
+  "reliquary:IceCubeTray": {
+    "NAME": "얼음 보관 쟁반",
+    "FLAVOR": "이걸 사용할줄 알았던 모든 사람들은 오래 전에 모두 죽었습니다.",
+    "DESCRIPTIONS": [
+      "매 #b",
+      " 장의 카드를 덱에 추가할때마다, 덱에서 카드 1장을 골라 제거할 수 있습니다."
+    ]
+  },
+  "reliquary:IridiumChain": {
+    "NAME": "이리듐 사슬",
+    "FLAVOR": "연결된 수를 세어보려고 하지만, 두 개의 같은 숫자를 다시 생각해낼수가 없군요.",
+    "DESCRIPTIONS": [
+      "#y파워 카드를 사용하면, 효과가 동일한 파워 카드를 #y휘발성 효과와 비용 1이 늘어난채로 손으로 가져옵니다.",
+      "휘발성. NL "
+    ]
+  },
+  "reliquary:IvoryTrinket": {
+    "NAME": "상아 장신구",
+    "FLAVOR": "누군가가 코끼리의 상아를 잘라서, 좀 더 작은 상아를 만들었습니다. 대체 왜 그랬을까요?",
+    "DESCRIPTIONS": [
+      "기적을 #b",
+      "회 #y보존 시킬때마다, #y기적 1장을 손으로 가져옵니다. (손에 기적이 많을수록 스택 상승량도 1씩 증가, 다음 층으로 넘어가도 스택은 유지됨)"
+    ]
+  },
+  "reliquary:JackalopeAntler": {
+    "NAME": "재칼로프의 뿔",
+    "FLAVOR": "이 괴물이 무엇이든간에 분명 귀가 한쪽으로 치우쳐있겠죠.",
+    "DESCRIPTIONS": [
+      "적을 죽였을때, 그 적을 죽였을때 사용한 에너지만큼을 돌려받습니다."
+    ]
+  },
+  "reliquary:KillPill": {
+    "NAME": "킬 필",
+    "FLAVOR": "이제 가죽 재킷 뒷면만 있으면 더욱 멋져질겁니다.",
+    "DESCRIPTIONS": [
+      "매 턴 시작시 적에게 처음으로 #y중독을 부여할때마다, 중독 효과가 즉시 발동합니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the symbol of the motorcycle gang from Akira."
+  },
+  "reliquary:KinkedSpring": {
+    "NAME": "꼬인 스프링",
+    "FLAVOR": "누군가가 이렇게 다시 망쳐놓고, 다시 돌아오지 않았습니다.",
+    "DESCRIPTIONS": [
+      "매 턴 시작시 [E] 를 추가로 얻습니다. 이제 버린 카드 더미는 뽑을 카드 더미가 반드시 0일때에만 섞이게 됩니다."
+    ]
+  },
+  "reliquary:KnifeBlock": {
+    "NAME": "나이프 블록",
+    "FLAVOR": "\"대체 누가 이렇게나 많은 나이프가 필요한거죠?\" 라고 세상에서 가장 멍청한 사람이 묻습니다.",
+    "DESCRIPTIONS": [
+      "#y단도 를 생성할때, 추가 단도 하나를 생성합니다."
+    ]
+  },
+  "reliquary:Knoch": {
+    "NAME": "봉돌",
+    "FLAVOR": "자꾸만 당신의 가방 밑으로 가라앉으려고 합니다.",
+    "DESCRIPTIONS": [
+      "매 턴 시작시 체력이 #b",
+      "% 또는 그 이하인 적들에게 #y약화 1을 부여합니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A knoch is just a fishing sinker: https://en.wikipedia.org/wiki/Fishing_sinker"
+  },
+  "reliquary:LeadDart": {
+    "NAME": "납 다트",
+    "FLAVOR": "내구도에 관한것? 아니면 물건의 용도 그 자체에 대한것? \"그냥 둘 다 합치면 되잖아?\" 이것이 꼭 마치 그에 대한 대답 같습니다.",
+    "DESCRIPTIONS": [
+      "매 전투에서 처음으로 손에 #b",
+      " 장의 카드가 있을 경우, #y힘을 #b",
+      " 얻습니다."
+    ]
+  },
+  "reliquary:LoveEmittingDiode": {
+    "NAME": "사랑 방출 다이오드",
+    "FLAVOR": "역제곱 법칙 원칙에 따라, 사랑을 퍼뜨리시오.",
+    "DESCRIPTIONS": [
+      "가장 오른쪽에 있는 구체에 긍정적인 #y밀집 효과가 #b",
+      " 번 적용됩니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a play on light-emitting diodes, or LEDs."
+  },
+  "reliquary:MedicineBall": {
+    "NAME": "약품 공",
+    "FLAVOR": "이걸 다른 사람에게 던질수만 있다면...",
+    "DESCRIPTIONS": [
+      "전투에서 가장 #y힘이 높은 적에 비례한 추가 #y힘을 얻습니다(최소 0)."
+    ]
+  },
+  "reliquary:MudwinsCradle": {
+    "NAME": "머드윈의 요람",
+    "FLAVOR": "가장 인기 있는 탁상용 장난감.",
+    "DESCRIPTIONS": [
+      "#y강림 진입에 필요한 #y만트라 요구량이 #b",
+      " 감소합니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a Newton's Cradle. 'Mudwin' is just a dumb name made up to sound like 'Newton.'"
+  },
+  "reliquary:NewFriend": {
+    "NAME": "새 친구",
+    "FLAVOR": "이 귀여운 꼬마 친구가 당신을 계속 따라다닐겁니다... 그리고 세상에. 무지 굶었나보네요.",
+    "DESCRIPTIONS": [
+      "타격과 수비 카드가 #b",
+      "% 확률로 #y소멸합니다."
+    ]
+  },
+  "reliquary:OuijaBoard": {
+    "NAME": "위자 보드",
+    "FLAVOR": "당신이 이걸 신비하게 만들어주는겁니다.",
+    "DESCRIPTIONS": [
+      "한 턴에 한 번, 버린 카드 더미에 존재하는 카드 하나를 선택하여, 해당 카드의 비용+1만큼의 에너지를 지불하고 사용한뒤에 뽑을 카드 더미에 섞습니다.",
+      "이미 이번 턴에 위자 보드를 사용했어.",
+      "버린 카드 더미가 비어있어.",
+      "버린 카드 더미에 있는 카드를 사용할 에너지가 부족해.",
+      "Cancel"
+    ]
+  },
+  "reliquary:OvenMitt": {
+    "NAME": "Oven Mitt",
+    "FLAVOR": "It's already starting to fall apart.",
+    "DESCRIPTIONS": [
+      "Prevent the next #b",
+      " times you would lose HP.",
+      "Prevent the next time you would lose HP.",
+      "This relic has been used up."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This shares the same DESCRIPTIONS text from the Buffer power."
+  },
+  "reliquary:PaperSnowflake": {
+    "NAME": "종이 눈송이",
+    "FLAVOR": "이게 원래 이런 모습이었던가요?",
+    "DESCRIPTIONS": [
+      "최근에 덱에 새로 추가한 비용 #b1 이상의 카드 1장의 비용이 #b1 감소합니다."
+    ]
+  },
+  "reliquary:PartyBalloon": {
+    "NAME": "파티 풍선",
+    "FLAVOR": "한 번 터뜨리면, 재미가 갑자기 사그라듭니다.",
+    "DESCRIPTIONS": [
+      "매 전투 시작시 덱에 있는 무작위 #y파워 카드가 뽑을 카드 더미 맨 위로 올라옵니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a parody of the old Pringles advertising slogan."
+  },
+  "reliquary:PeacockShield": {
+    "NAME": "Peacock Shield",
+    "FLAVOR": "Presents a remarkable defense.",
+    "DESCRIPTIONS": [
+      "Whenever you enter #yWrath, double your #yBlock."
+    ]
+  },
+  "reliquary:PlasmaLobster": {
+    "NAME": "Plasma Lobster",
+    "FLAVOR": "Smells of petrichor.",
+    "DESCRIPTIONS": [
+      "Increases your attack damage by #b",
+      " while you have #yBlock."
+    ]
+  },
+  "reliquary:PorcupineQuills": {
+    "NAME": "고슴도치 가시",
+    "FLAVOR": "만약 이걸 다른 사람에게, 당신은 정말 그럴 자격이 있는겁니다.",
+    "DESCRIPTIONS": [
+      "적에게 #b",
+      " 또는 그 이상만큼 막히지 않은 피해를 받을시, 받은 피해만큼 적에게 반사 피해를 입힙니다."
+    ]
+  },
+  "reliquary:PrayerBox": {
+    "NAME": "기도 상자",
+    "FLAVOR": "네모난 기도 조각을 모으는데 완벽한 상자네요.",
+    "DESCRIPTIONS": [
+      "이제 전투 중에 쌓은 #y만트라가 다음 전투에서도 그대로 유지됩니다."
+    ]
+  },
+  "reliquary:PrincelyHelmet": {
+    "NAME": "왕자의 헬멧",
+    "FLAVOR": "당신 머리에 장착하기엔 너무 작은데요. 그게 우리 물건이었다면, 더욱 크게 만들었을겁니다.",
+    "DESCRIPTIONS": [
+      "매 전투마다 #y방어도를 얻을때 획득 방어도가 2배가 되고 획득한 추가 방어도만큼 이 유물의 X 수치가 깎입니다. X 는 #b",
+      " 이며 막에 따라서 X가 배로 증가합니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the headgear of the Prince of All Cosmos from the Katamari Damacy series."
+  },
+  "reliquary:PromissoryNotes": {
+    "NAME": "Promissory Notes",
+    "FLAVOR": "An ancient instrument of subterfuge.",
+    "DESCRIPTIONS": [
+      "Whenever you receive a debuff from an enemy, your first #yAttack against that enemy next turn deals #b",
+      " additional damage."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a checkbook."
+  },
+  "reliquary:PurpleTingedLeaf": {
+    "NAME": "보랏빛 잎",
+    "FLAVOR": "이 잎은 초등학생이 그린 것으로, 모든 식물계통 중에서 가장 독특한 외관을 지니고 있습니다.",
+    "DESCRIPTIONS": [
+      "획득 시, #y공격 카드 하나를 선택합니다. 선택한 공격 카드를 사용하면, 체력을 #b1 회복합니다.",
+      "Choose a card for ",
+      "선택된 ",
+      " 카드를 사용하면, 체력을 #b1 회복합니다."
+    ]
+  },
+  "reliquary:Pushpin": {
+    "NAME": "푸쉬핀",
+    "FLAVOR": "살인 사건을 해결하는데 쓰이기도 하지만 숙련된 암살자들이 살인 사건을 저지르기 위해 이것들을 사용하기도 합니다.",
+    "DESCRIPTIONS": [
+      "전투 시작 후 처음으로 뽑히는 카드들이 이번 전투동안 #y보존 상태가 됩니다."
+    ]
+  },
+  "reliquary:QuartzCube": {
+    "NAME": "쿼츠 큐브",
+    "FLAVOR": "꼭 마치 절대로 녹지 않는 얼음 큐브 같지만, 차갑지는 않습니다.",
+    "DESCRIPTIONS": [
+      "전투에서 #b",
+      " 명 이상의 적들과 조우하게 되면, 적 하나에게 #y기절을 #b",
+      " 부여하고 #y무적을 #b",
+      " 부여합니다."
+    ]
+  },
+  "reliquary:RabbitEars": {
+    "NAME": "토끼 귀",
+    "FLAVOR": "\"지금 98.7 FM: 피버를 듣고 계십니다. 다이얼 건들지 마세요!\"",
+    "DESCRIPTIONS": [
+      "이제부터 #b파란 #b카드를 한 번 더 강화시킬수 있습니다. 이 유물을 획득하면, #y강회된 카드를 선택해 #y강화 합니다.",
+      "뽑을 카드 더미와 버린 카드 더미에 있는 카드 !M! 장마다 [B] 를 얻습니다.",
+      "영창된 구체 슬롯 하나당 피해를 !D! 주고, 구체 슬롯을 전부 꽉 채웠다면 피해량이 !M! 만큼 증가합니다.",
+      "밀집을 !M! 얻습니다. NL 편향을 1번 영창합니다.",
+      "선천성. NL 보존. NL #y방어도를 !B! 얻습니다. NL 소멸.",
+      "방어도를 !B! 얻습니다. NL 다음 턴 시작시, [B]를 얻고 카드를 1장 뽑습니다.",
+      "선천성. NL 전투중인 적 하나당 #y냉기를 !M! 2번 영창합니다. NL 소멸.",
+      "피해를 !D! 줍니다. 냉기를 !M! 번 영창합니다. NL 모든 냉기 구체의 지속 효과를 발동합니다.",
+      "매 턴 시작시, 무작위 파워 카드 1장 또는 2장을 손으로 가져옵니다.",
+      "암흑을 !M! 번 영창합니다. NL 모든 암흑 구체의 지속 효과를 2번 발동합니다.",
+      "에너지를 2배로 늘립니다.",
+      "가장 오른쪽에 있는 구체를 !M! 번 발현합니다.",
+      "The last card you play each turn is played twice.",
+      "전기가 이제 모든 적을 대상으로 합니다. NL 전기를 !M! 번 영창합니다. NL 무작위 적에게 조준 99를 부여합니다.",
+      "모든 구체를 발현시킵니다. 발현시킨 구체 하나당 [B] 를 얻고 카드를 !M! 장 뽑습니다.",
+      "모든 플라즈마 구체의 위치를 맨 왼쪽으로 옮깁니다. NL 플라즈마를 !M! 번 영창합니다.",
+      "피해를 !D! 줍니다. NL 적이 공격할 의도가 있다면 약화를 !M! 부여합니다. 공격 의도가 아니라면 [B] 를 얻습니다.",
+      "파워 카드를 사용하면, 카드를 !M! 장 뽑습니다.(가능하면 파워 카드를 우선으로 뽑습니다.)",
+      "선천성. NL 턴 시작시, 무작위 특별 카드 1장을 손으로 가져옵니다.",
+      "방어도를 !B! 얻습니다. NL 버린 카드 더미에 있는 카드 1장을 손으로 가져온 후 보존합니다.",
+      "피해를 !D! 줍니다. NL #y조준을 !M! 부여합니다. NL 적 전체에게 조준을 1 부여합니다.",
+      "지정한 적의 모든 방어도를 훔쳐 자신의 것으로 만듭니다. NL 피해를 !D! 줍니다.",
+      "피해를 !D! 줍니다. NL 플라즈마를 !M! 번 영창하고, 구체 슬롯이 전부 꽉 찰 때까지 플라즈마를 영창합니다.",
+      "가장 오른쪽의 구체를 X+2번 발현합니다.",
+      "데이터를 1번, NL 전기를 1번, NL 냉기를 1번, NL 암흑을 1번 영창합니다.",
+      "피해를 !D! 줍니다. NL 이번 턴에 사용하는 카드를 다시 손으로 가져옵니다.",
+      "가장 오른쪽의 구체의 지속 효과를 발동하고 발현합니다. NL 발현된 구체를 그대로 영창합니다.",
+      "카드를 !M! 장 소멸시킵니다. NL 소멸시킨 카드들의 총합 비용만큼 [B] 를 얻습니다.",
+      "버린 카드 더미에 있는 카드 갯수의 2배만큼 방어도를 얻습니다.",
+      "선천성. NL 파워 카드를 사용하면, 소모된 [B] 만큼 전기를 영창합니다 (최소 1번).",
+      "피해를 !D! 줍니다. NL 이 공격으로 적이 죽으면, [B] [B] [B] [B]를 얻습니다.",
+      "적 전체에게 피해를 !D! 줍니다. 현재 가진 에너지만큼 피해량이 증가합니다. NL 카드를 !M! 장 뽑습니다.",
+      "전기를 X+2 번 영창합니다. NL 소멸.",
+      "[B] [B] [B] [B] 를 얻습니다. NL *공허 1장을 버린 카드 더미에 넣습니다i.",
+      "강화된 무작위 파워 카드 2장을 손으로 가져옵니다. NL 이번턴 동안 그 카드의 비용이 0이 됩니다. NL 소멸.",
+      "전기를 !M! 번 영창합니다. NL 이온 1을 획득합니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "These are second upgrades, so all but the first string are slight variants of Defect cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicRabbitEars.java",
+      "to see which string corresponds to which Defect card. Indices start at 0!",
+      "For the flavor text, the joke is: 98.7 is both a frequency for a radio station, and 0.1 greater than 98.6 Fahrenheit (body temperature). 98.7 Fahrenheit would be a slight fever."
+    ]
+  },
+  "reliquary:RadioactivePellet": {
+    "NAME": "방사성 알갱이",
+    "FLAVOR": "세상에서 가장 비열한 악당들의 비밀 병기입니다.",
+    "DESCRIPTIONS": [
+      "이제 더 이상 #y중독이 감소하지 않습니다."
+    ]
+  },
+  "reliquary:RattleCoin": {
+    "NAME": "Rattle Coin",
+    "FLAVOR": "Both sides depict the same strangely familiar creature.",
+    "DESCRIPTIONS": [
+      "Double the first unblocked attack damage dealt to you and ALL enemies each combat."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The image on the coin is a rattlesnake."
+  },
+  "reliquary:RedCape": {
+    "NAME": "빨간 망토",
+    "FLAVOR": "소들을 풀어라!",
+    "DESCRIPTIONS": [
+      "매 턴 시작시 [E] 를 추가로 얻습니다. 적군 하나를 지정하여 #y공격 했을경우, 지정한 대상 적이 죽을때까지 다른 적들을 지정할수 없습니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a matador's cape."
+  },
+  "reliquary:RedPaperclip": {
+    "NAME": "빨간 종이집게",
+    "FLAVOR": "물물교환의 강력한 상징입니다.",
+    "DESCRIPTIONS": [
+      "매 턴 시작 시 [E] 를 추가로 얻습니다. 이 유물을 획득하면 이전에 획득한 일반 또는 #b고급 유물이 #b",
+      " 개 제거됩니다."
+    ]
+  },
+  "reliquary:RoseTintedGlasses": {
+    "NAME": "장미빛 색안경",
+    "FLAVOR": "그거 아세요? 상황이 그리 나쁘지 않게 보이는거요.",
+    "DESCRIPTIONS": [
+      "매 전투에서 처음으로 #y상태이상 카드를 #b",
+      " 번 뽑을때마다, 그 카드를 #y소멸시키고 카드를 1장 뽑습니다."
+    ]
+  },
+  "reliquary:RosewoodLute": {
+    "NAME": "장미나무 류트",
+    "FLAVOR": "어찌됐든 \"원더스파이어\" 곡을 들을 시간입니다.",
+    "DESCRIPTIONS": [
+      "적들의 총합 피해량 수치와 현재 내 방어도 수치가 완벽히 동일하다면, 다음턴에 [E] 를 얻습니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the song 'Wonderwall' by Oasis."
+  },
+  "reliquary:RunicRemote": {
+    "NAME": "룬 리모트",
+    "FLAVOR": "당신의 운명을 조종하라.",
+    "DESCRIPTIONS": [
+      "피해를 입지 않고 전투에서 승리하면, 쓰러뜨린 적의 특정 의도에 해당하는 카드를 덱에 추가합니다.",
+      "리모콘이 진동하기 시작합니다..."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a Wii controller, in honor of our wonderful JPN translator!"
+  },
+  "reliquary:RustamsPendant": {
+    "NAME": "루스탐의 펜던트",
+    "FLAVOR": "그냥 금속 조각일 뿐이지만 당신에 대헤 뭔가 알고 있는것 같습니다.",
+    "DESCRIPTIONS": [
+      "매 턴 시작시 [E] 를 추가로 얻습니다. 이 유물은 캐릭터마다 각각 다른 패널티 효과가 적용됩니다.",
+      "매 턴 시작시 [E] 를 추가로 얻습니다. 전투 시작시 #b",
+      " #y힘 상태로 시작합니다.",
+      " #y민첩 상태로 시작합니다.",
+      " #y밀집 상태로 시작합니다.",
+      " #y헌신 상태로 시작합니다. #y만트라가 #b",
+      " 또는 그 이하가 되어버리면, #y속죄 상태로 진입합니다.",
+      "매 턴 시작시, #y만트라를 #b",
+      " 잃습니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This relic is named after our wonderful RUS translator!"
+  },
+  "reliquary:SculptingSteel": {
+    "NAME": "조각된 강철",
+    "FLAVOR": "찰흙처럼 유연하고, 돌처럼 단단합니다.",
+    "DESCRIPTIONS": [
+      "획득 시, 이 유물은 당신이 현재 가지고 있는 일반, #b고급, #y희귀, or #y상점 유물 중 하나로 변합니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a reference to the Magic card Sculpting Steel, which has some existing translations: https://scryfall.com/search?q=%21%E2%80%9CSculpting+Steel%E2%80%9D+set%3A2xm+lang%3Aany&unique=prints"
+  },
+  "reliquary:SharkskinSheath": {
+    "NAME": "상어 가죽 덮개",
+    "FLAVOR": "당신이 상어 가죽 나이프를 이 안에 집어넣었다면 참 좋았을텐데.",
+    "DESCRIPTIONS": [
+      "손에 카드가 없는 상태로 턴을 종료하면, 다음 턴에 카드 1장을 추가로 뽑습니다."
+    ]
+  },
+  "reliquary:SheepsEyeMarble": {
+    "NAME": "Sheep's Eye Marble",
+    "FLAVOR": "You feel dumber just looking at it.",
+    "DESCRIPTIONS": [
+      "Whenever you play two copies of the same card in a row, play it again."
+    ]
+  },
+  "reliquary:ShortFuse": {
+    "NAME": "짧은 도화선",
+    "FLAVOR": "금방이라도 터질것만 같습니다.",
+    "DESCRIPTIONS": [
+      "#y전기 구체가 체력이 가장 많은 적을 우선으로 공격합니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "To have a 'short fuse' means you get angry easily."
+  },
+  "reliquary:ShortStraw": {
+    "NAME": "Short Straw",
+    "FLAVOR": "This may not have been the pick.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain [E] and choose a random card in your hand. If it's still in your hand at the end of the turn, you lose #b",
+      " HP."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a very short bendy straw."
+  },
+  "reliquary:Sideboard": {
+    "NAME": "사이드보드",
+    "FLAVOR": "당신의 카드를 보관해줄수 있는... 나무 토막?",
+    "DESCRIPTIONS": [
+      "선택한 카드 보상이 덱이 아닌 별도의 보관함으로 들어갑니다. 비전투 상태일때 얻어둔 보관함에서 덱으로 옮길 수 있습니다.",
+      "사이드보드",
+      "비전투 상태에서 이 보관함 안에 있는 카드를 선택해 덱에 추가할수 있습니다.",
+      " NL [#2aecd7]우 [#2aecd7]클릭으로 [#2aecd7]유물을 [#2aecd7]활성화시킬수 [#2aecd7]있습니다.[]",
+      " NL [#2aecd7]우 [#2aecd7]클릭으로 [#2aecd7]유물을 [#2aecd7]비활성화시킬수 [#2aecd7]있습니다.[]",
+      "덱에 추가할 카드 보상을 선택하세요.",
+      "취소"
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "This is a reference to 'sideboards' in Magic the Gathering. It's a wooden board... this pun may not translate.",
+      "You may find the term used for sideboards in other languages here: https://blogs.magicjudges.org/translatedrules/",
+      "in the Comprehensive Rules, rule 100.4. The complete rules document might be on the second page."
+    ]
+  },
+  "reliquary:SilkGlove": {
+    "NAME": "실 장갑",
+    "FLAVOR": "마음이 간 여성의 뒤에서 접근하고 싶을때.",
+    "DESCRIPTIONS": [
+      "턴 종료시 손에 카드가 1장만 남아있다면, 그 카드를 #y보존 합니다."
+    ]
+  },
+  "reliquary:SkeletonKey": {
+    "NAME": "해골 열쇠",
+    "FLAVOR": "이걸로 뭘 열 수 있냐구요? 당신이요.",
+    "DESCRIPTIONS": [
+      "이제부터 #b초록 #b카드를 한 번 더 강화시킬수 있습니다. 이 유물을 획득하면, #y강회된 카드를 선택해 #y강화 합니다.",
+      "카드를 사용할때마다, 적 전체에게 피해를 !M! 줍니다. 스킬 카드를 사용하면 이 효과가 2번 발동됩니다.",
+      "*단도의 피해량이 !M! 증가합니다. NL *단도를 손으로 가져옵니다.",
+      "[G] [G] [G] 를 얻습니다. NL 카드를 2장 뽑습니다. NL 소멸.",
+      "선천성. NL 카드를 사용할때마다, 방어도를 1 얻습니다. 스킬 카드를 사용하면 이 효과가 2번 발동됩니다.",
+      "무작위 포션 1개를 얻습니다. NL 얻은 포션의 증기 카드를 손으로 가져옵니다. NL 소멸.",
+      "적 전체에게 !D! 피해를 줍니다. NL 무작위 카드 1장을 버립니다. 이 효과로 스킬 카드를 버렸다면, 적 전체에게 피해를 !D! 줍니다.",
+      "선천성. NL 피해를 !D! 줍니다. 첫 턴에 이 카드를 사용하지 않았다면, 피해 !D! 를 한번 더 입힙니다. NL 소멸.",
+      "피해를 !D! 줍니다. NL 해당 적이 중독 상태라면, !D!의 피해를 2번 더 입힙니다.",
+      "방어도를 !B! 얻습니다. NL 다음 턴 시작시 방어도가 사라지지 않고 방어도가 2배가 됩니다.",
+      "손 안에 있는 모든 카드의 비용이 0이 됩니다.",
+      "카드를 원하는 수만큼 버린 후, 버린 카드 수만큼 카드를 뽑습니다.",
+      "적에게 공격 받으면, 적 전체에게 !M!의 피해를 줍니다.",
+      "적의 중독을 4배로 늘립니다. NL 소멸.",
+      "피해를 !D! 줍니다. NL 이번 턴에 카드를 사용할때마다, 대상 적이 체력을 !M! 잃습니다. 스킬 카드를 사용하면 이 효과가 2번 발동됩니다.",
+      "카드를 !M! 장 버립니다. NL [G] [G] [G]를 얻습니다.",
+      "적 전체에게 중독을 !M! 부여하고 약화 3을 부여합니다. NL 소멸.",
+      "적 전체에게 !D! 피해를 !M! 번 입힙니다.",
+      "피해를 !D! 줍니다. NL 카드를 !M! 장 뽑습니다. NL 카드를 !M! 장 버립니다.",
+      "적 전체에게 피해를 !D! 줍니다.",
+      "강화된 무작위 스킬 카드 2장을 손으로 가져옵니다. NL 이번 턴 동안 그 카드의 비용이 0이 됩니다. NL 소멸.",
+      "보존. NL 다음 턴 시작시, 카드를 X+2 장 더 뽑고 에너지를 X+2 더 얻습니다.  [G]. NL 소멸.",
+      "피해를 !D! 줍니다. NL 이 카드를 뽑을때마다, 이 카드를 !M! 장 복사하여 손으로 가져옵니다. NL 소멸.",
+      "적에게 막히지 않은 피해를 줄때마다, 중독을 !M! 부여합니다.",
+      "이번 턴에 버려진 카드의 수만큼 이 카드의 비용이 [G] 감소합니다. NL ㄹ피해를 !D! 만큼 !M! 줍니다.",
+      "!D! 피해를 2번 줍니다. 이 카드를 사용할때마다 이번 전투 동안 이 카드의 피해량이 !M! 감소합니다.",
+      "뽑을 카드 더미에 카드가 !M! 장 또는 그 이하일 경우에만 사용할 수 있습니다. NL 적 전체에게 피해를 !D! 줍니다.",
+      "뽑을 카드 더미에 NL 카드가 ",
+      " 장 또는 그 이하의 갯수만 있어야해.",
+      "피해를 !D! 줍니다. NL 적이 약화 상태거나 중독 상태일경우, NL [G] 를 얻고 카드를 1장 뽑습니다.",
+      "선천성. NL 턴 시작시, *단도 !M! 장을 손으로 가져옵니다.",
+      "모든 에너지를 소모하고, 지정한 적의 힘을 X+2 감소시키고 약화를 X+2번 부여합니다. NL 소멸.",
+      "카드를 선택합니다. NL 다음 턴에 그 카드를 강화시킨 상태로 !M! 번 복사하여 손으로 가져옵니다. 소멸.",
+      "다음턴 시작시, NL [G] [G] [G] [G] 를 얻습니다.",
+      "다음 !M! 턴 동안, 공격의 피해량이 2배로 증가합니다.",
+      "적 전체의 힘을 이번 턴동안 !M! 낮춥니다.",
+      "피해를 !D! 줍니다. NL 다음 턴에 카드를 !M! 장 더 뽑습니다.",
+      "!D! 피해를 !M! 줍니다.",
+      "카드 !M! 장을 선택하여 뽑을 카드 더미 맨 위에 올려놓습니다. NL 이번 턴 동안 그 카드의 비용이 0이 됩니다.",
+      "소모한 에너지가 5 또는 그 이상일경우, 피해량이 2 증가합니다. NL 피해를 !D! 만큼 X 번 줍니다.",
+      "손에 있는 카드를 전부 버립니다. NL 버린 카드 갯수만큼 *단도++ 를 손으로 가져옵니다.",
+      "사용불가. NL 이 카드가 버려지면, [G] [G] [G] 를 얻습니다.",
+      "공포를 99 부여합니다. NL 둔화를 부여합니다. NL 소멸.",
+      "턴 시작시, 카드를 !M! 장 뽑고 카드를 !M! 장 버립니다.",
+      "피해를 !D! 줍니다. NL 카드를 !M! 장 뽑고, 손에 있는 카드 중 공격 카드가 아닌 카드를 전부 버립니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "These are second upgrades, so all but the first string are slight variants of Silent cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicSkeletonKey.java",
+      "to see which string corresponds to which Silent card. Indices start at 0!"
+    ]
+  },
+  "reliquary:Sod": {
+    "NAME": "잔디",
+    "FLAVOR": "일반적인 생각과는 달리, 잔디의 다른쪽도 전부 푸르지는 않습니다. 초록색이 아니라 갈색이죠.",
+    "DESCRIPTIONS": [
+      "강화되지 않은 카드를 #b",
+      "번 사용할때마다 해당 카드의 카드를 강화된 상태로 복사하여 손으로 가져옵니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a joke about the saying 'the grass is always greener on the other side.'"
+  },
+  "reliquary:Solitaire": {
+    "NAME": "솔리테르",
+    "FLAVOR": "한 번쯤 꿈꿔봤을 것인데, 이게 어떻게 현실로 넘어왔는지는 미스테리합니다.",
+    "DESCRIPTIONS": [
+      "이제부터 #b보라 #b카드를 한 번 더 강화시킬수 있습니다. 이 유물을 획득하면, #y강회된 카드를 선택해 #y강화 합니다.",
+      "선천성. NL *베타+ 를 뽑을 카드 더미에 넣습니다. NL 소멸.",
+      "선천성. NL 턴 시작시, *엄벌+ 을 손으로 가져옵니다.",
+      "보존. NL 강림합니다. NL !M! 턴 후에 죽습니다. NL 소멸.",
+      "피해를 !D! 줍니다. NL *엄벌+ 을 손으로 가져옵니다.",
+      "다음 X+2턴 시작시 *기적+ 을 손으로 가져옵니다. NL 소멸.",
+      "뽑을 카드 더미에 *말살검+ X+2를 뽑을 카드 더미에 섞어넣습니다. NL 소멸.",
+      "보존. NL 진노 상태일경우, 이번 턴에 힘을 !M! 얻고, 아니라면 진노합니다. NL 소멸.",
+      "방어도를 !B! 얻습니다. NL *안전+ 1장을 손으로 가져옵니다.",
+      "선천성. NL 매 턴 시작시, [W] 를 얻습니다. 얻는 에너지는 매 턴 !M! 만큼 증가합니다.",
+      "보존. NL !D! 피해를 !M! 번 줍니다.",
+      "모든 직업의 공격 카드 셋 중 하나를 선택하여 !M! 장을 복사해서 손으로 가져옵니다. NL 이번 턴 동안 그 카드의 비용이 0이 됩니다. NL 소멸.",
+      "피해를 !D! 줍니다. NL 치명타라면, 덱에 있는 무작위 카드 2장을 영구적으로 강화합니다. NL 소멸.",
+      "선천성. NL 전투 중에 카드를 생성할때마다, 그 카드를 강화합니다.",
+      "버린 카드 더미에서 카드 !M! 장을 손으로 가져온뒤 보존합니다. NL 명상합니다. NL 턴을 종료합니다.",
+      "뽑을 카드 더미에 있는 카드를 선택합니다. NL 선택한 카드를 !M! 번 사용하고 소멸시킵니다. NL 소멸.",
+      "피해를 !D! 줍니다. NL 뽑을 카드 더미에 NL *천국의 *계단+ 을 섞어넣습니다.",
+      "보존. NL 피해를 !D! 줍니다. NL 보존될 때마다, 이번 전투동안 이 카드의 비용이 !M! 줄어듭니다.",
+      "예지 !M!. NL 손이 가득 찰 때까지 카드를 뽑습니다. NL 소멸.",
+      "턴 종료시, *통찰+ 1장을 뽑을 카드 더미에 넣습니다.",
+      "방어도를 !B! 얻습니다. NL 다음에 사용하는 공격 카드의 비용이 0이 되고 피해량이 추가로 !M! 증가합니다.",
+      "보존. NL 명상합니다.",
+      "다음턴 시작시, 카드를 !M! 장 뽑습니다. 이번 턴 후에 내 턴을 추가로 진행합니다. NL 턴을 종료합니다. NL 소멸.",
+      "보존. NL 만트라를 !M! 획득합니다. 보존될 때마다, 이 카드로 얻는 만트라가 %d 증가합니다.(최대 %d)",
+      "진노합니다. NL 피해를 !D! 줍니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "These are second upgrades, so all but the first string are slight variants of Watcher cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicSolitaire.java",
+      "to see which string corresponds to which Watcher card. Indices start at 0!"
+    ]
+  },
+  "reliquary:Soularoid": {
+    "NAME": "Soularoid",
+    "FLAVOR": "Those guys with the beards were right...?!",
+    "DESCRIPTIONS": [
+      "Whenever you play a non-[#efc851]Status[] card with a different name than any card in your deck, add a copy of it to your deck."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A portmanteau of 'soul' and 'Polaroid.' The flavor text is a reference to the urban legend of Amish people believing that cameras can steal the subject's soul."
+  },
+  "reliquary:Spinner": {
+    "NAME": "돌림판",
+    "FLAVOR": "제발 빨간색만은, 제발 빨간색만은... 이런 개ㅅ—!",
+    "DESCRIPTIONS": [
+      "이전에 사용한 카드와 다른 유형의 카드를 사용하면, #y방어도를 #b",
+      " 얻습니다."
+    ]
+  },
+  "reliquary:SpireOfHannoy": {
+    "NAME": "한노이의 첨탑",
+    "FLAVOR": "이 퍼즐의 이름과 동일한 첨탑은 이것보다 더 치명적이고 복잡했을 겁니다.",
+    "DESCRIPTIONS": [
+      "적에게 #y약화와 #y취약을 부여할때마다 그 효과가 #b",
+      "% 만큼 더욱 증가합니다. (최대 ",
+      "%)."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a Tower of Hanoi puzzle."
+  },
+  "reliquary:Splatula": {
+    "NAME": "Splatula",
+    "FLAVOR": "Features a nonstick coating for easy cleanup.",
+    "DESCRIPTIONS": [
+      "Whenever you #yAttack an enemy for half or more of its Max HP, set its HP to #b0."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A portmanteau of 'splat' and 'spatula.'"
+  },
+  "reliquary:Stiletto": {
+    "NAME": "스틸레토",
+    "FLAVOR": "대부분의 갑옷의 플레이트 및 합금 사이로 자연스럽게 침투하도록 설계되었습니다.",
+    "DESCRIPTIONS": [
+      "이제 적들의 획득 #y방어도가 #b",
+      "%만큼 감소합니다."
+    ]
+  },
+  "reliquary:Stimpack": {
+    "NAME": "스팀팩",
+    "FLAVOR": "아! 바로 이거야!",
+    "DESCRIPTIONS": [
+      "매 전투에서 처음으로 체력이 #b50% 이하가 되면, #b1 턴동안 #y공격 으로 주는 피해량이 2배가 됩니다."
+    ]
+  },
+  "reliquary:Tamtam": {
+    "NAME": "탬탬",
+    "FLAVOR": "쿵.",
+    "DESCRIPTIONS": [
+      "이전 턴에 #y방어도가 파괴되지 않았다면, 자신과 모든 적들이 #y힘을 #b1 얻습니다."
+    ]
+  },
+  "reliquary:TankTop": {
+    "NAME": "Tank Top",
+    "FLAVOR": "The rusted remnant of a once-great warrior tribe.",
+    "DESCRIPTIONS": [
+      "Whenever you #yAttack the enemy with the most HP, if there are #b2 or more enemies, deal #b",
+      " damage to the front enemy."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the turret of a tank, in honor of our wonderful KOR translator OWATANKS!"
+  },
+  "reliquary:TatteredRug": {
+    "NAME": "너덜너덜한 깔개",
+    "FLAVOR": "상점 여는건 아무나 할 수 있는줄 아세요?",
+    "DESCRIPTIONS": [
+      "상인에게 포션을 판매할 수 있게 됩니다.",
+      "이 ",
+      " 골드에 판매합니다.",
+      "제가 살게요!",
+      "훌륭한 거래였어요!",
+      "~무~엇을~ 판매~하실건가요~?",
+      "아! 이건 비싸게 사도록 할게요!",
+      "주시죠!",
+      "그걸 안 사면 마치 @제가@ 멍청해질것 같아요!",
+      "거절할 수 없게끔 해주시는군요...",
+      "NOTE FOR TRANSLATORS: The following lines are when the merchant declines to buy a potion.",
+      "죄송한데 흥미롭지가 않네요.",
+      "이미 다 준비됐으니, 괜찮아요.",
+      "싫은데요.",
+      "지금은 안 됩니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A couple of these are voice lines from the merchant in Resident Evil 4."
+  },
+  "reliquary:ThinkingCap": {
+    "NAME": "생각 모자",
+    "FLAVOR": "이 엄청 큰 콘 모자를 쓰고 있으면, 모두들 당신이 얼마나 똑똑한지 알 수 있게 됩니다.",
+    "DESCRIPTIONS": [
+      "전투 시작시, 이전 전투에서 마지막으로 사용했던 카드를 첫 턴에 뽑습니다. (덱에 존재하는 카드여야만 합니다.)"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a dunce cap."
+  },
+  "reliquary:ThirdArm": {
+    "NAME": "3번째 팔",
+    "FLAVOR": "작고 손가락조차도 없는 팔입니다.",
+    "DESCRIPTIONS": [
+      "매 전투 시작시 매 턴 [E] 를 얻는 #b",
+      " 비용의 #y파워 카드 하나를 뽑을 카드 더미에 넣습니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the arm from a wooden figure-drawing manikin."
+  },
+  "reliquary:ThumbDrive": {
+    "NAME": "플래시 드라이브",
+    "FLAVOR": "고대 인터넷의 백업본을 가진 사람이 대체 누구일까요? 바로 이 AI죠.",
+    "DESCRIPTIONS": [
+      "전투 시작시, #y데이터를 1번 #y영창합니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the classic bad joke structure, 'Who's got two thumbs and <insert detail about self>? This guy.'"
+  },
+  "reliquary:ToyRocket": {
+    "NAME": "Toy Rocket",
+    "FLAVOR": "We choose to go to the Spire.",
+    "DESCRIPTIONS": [
+      "When you play a cost #b3 card, then a cost #b2 card, then a cost #b1 card in one combat, add a powerful cost #b0 #yAttack into your hand."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to JFK's 'we choose to go to the Moon' speech."
+  },
+  "reliquary:TrainingWheel": {
+    "NAME": "연습용 보조 바퀴",
+    "FLAVOR": "외관은 깨끗하지만, 내부가 녹슬어서 거의 돌아가지 않습니다.",
+    "DESCRIPTIONS": [
+      "매 턴 시작 드로우에서 #y공격 또는 #y스킬 카드가 단 1장도 뽑히지 않았다면, 뽑을 카드 더미에서 뽑히지 않은 그 유형의 무작위 카드 1장을 뽑아 손으로 가져옵니다."
+    ]
+  },
+  "reliquary:TrafficCone": {
+    "NAME": "Traffic Cone",
+    "FLAVOR": "In the dark of the Spire, its glinting stripes attain an unlikely menace.",
+    "DESCRIPTIONS": [
+      "The first time an enemy does something other than attack, it loses #b",
+      " #yStrength."
+    ]
+  },
+  "reliquary:TridentHead": {
+    "NAME": "삼지창 머리",
+    "FLAVOR": "전설의 파도의 왕이 사용한 무기의 일부입니다.",
+    "DESCRIPTIONS": [
+      "전투에서 처음으로 적 하나에게 카드를 사용하면 다른 모든 적들에게 그 카드의 효과가 발동합니다."
+    ]
+  },
+  "reliquary:TuningFork": {
+    "NAME": "소리굽쇠",
+    "FLAVOR": "당신이 이걸로 뭘 먹으려고 했다간, 이빨 부러지기 참 쉬울겁니다.",
+    "DESCRIPTIONS": [
+      "적의 #y방어도 수치와 동일한 피해를 입혀서 방어도를 파괴했다면, 대상 적에게 피해를 #b",
+      " 줍니다."
+    ]
+  },
+  "reliquary:TwinPearls": {
+    "NAME": "Twin Pearls",
+    "FLAVOR": "They are completely identical in every way, impossible to tell apart. Close enough, anyway.",
+    "DESCRIPTIONS": [
+      "You start each turn with #yPearlescence in your hand."
+    ]
+  },
+  "reliquary:UnderdogBone": {
+    "NAME": "Underdog Bone",
+    "FLAVOR": "Someone must have been a very good boy or girl.",
+    "DESCRIPTIONS": [
+      "Whenever you play an unupgraded card, if there's an #yUpgraded copy in your draw pile, put it into your hand."
+    ]
+  },
+  "reliquary:Vitrine": {
+    "NAME": "진열장",
+    "FLAVOR": "당신이 가장 아끼는 물건을 선물할 수 있는 완벽한 장소입니다.",
+    "DESCRIPTIONS": [
+      "이 유물을 획득하면, 덱에서 카드 하나를 선택해 제거합니다. 전투 도중에 이 유물을 우클릭하여 제거된 해당 카드를 뽑을 카드 더미에 넣을수 있습니다.",
+      "제거할 카드를 선택하십시오.",
+      "[#2aecd7]우 [#2aecd7]클릭[]으로 ",
+      " 를 뽑을 카드 더미에 넣습니다.",
+      " 은(는) 전투가 끝난 후 다시 이 유물 안으로 복귀합니다."
+    ]
+  },
+  "reliquary:WeakTea": {
+    "NAME": "묽은 차",
+    "FLAVOR": "이걸 마시고 잘 수 있게 된다면, 대체 이게 무슨 소용이 있죠?",
+    "DESCRIPTIONS": [
+      "매 전투마다 처음 2번 사용하는 무색 카드의 비용이 #b1 줄어듭니다.",
+      "처음 #b",
+      " 번 사용하는 무색 카드의 비용이 #b1 줄어듭니다."
+    ]
+  },
+  "reliquary:WitchyDice": {
+    "NAME": "Witchy Dice",
+    "FLAVOR": "What a lucky find! #blessed",
+    "DESCRIPTIONS": [
+      "At the start of each combat, play a random card of any color."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the Witch character from the game Dicey Dungeons."
+  },
+  "reliquary:WritOfMandamus": {
+    "NAME": "행정집행명령",
+    "FLAVOR": "이렇게 쓰여있군요, \"무엇을 생각하던간에: 대기하세요.\"",
+    "DESCRIPTIONS": [
+      "매 턴 시작시 [E] 를 추가로 얻습니다. 턴 종료시, #y방어도를 #b",
+      " 잃습니다."
+    ],
+    "NOTE_FOR_TRANSLATORS": "'Mandamus' is just a made-up name."
+  }
+}

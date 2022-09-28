@@ -1,6 +1,5 @@
 package cards.colorless.vapor;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -9,7 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class CardVaporColorlessPotion extends CustomCard {
+public class CardVaporColorlessPotion extends CardVapor {
     public static final String ID = "reliquary:VaporColorlessPotion";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/colorlessPotion.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -40,10 +39,5 @@ public class CardVaporColorlessPotion extends CustomCard {
             rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporColorlessPotion();
     }
 }

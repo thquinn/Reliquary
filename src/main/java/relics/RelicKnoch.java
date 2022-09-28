@@ -41,8 +41,13 @@ public class RelicKnoch extends CustomRelic {
             // Wait for queued ApplyPowerActions to finish before attempting to apply Weak.
             return;
         }
+        AbstractRoom room = AbstractDungeon.getCurrRoom();
+        if (room == null || room.monsters == null) {
+            // We have no monsters.
+            return;
+        }
 
-        for (AbstractMonster monster : AbstractDungeon.getCurrRoom().monsters.monsters) {
+        for (AbstractMonster monster : room.monsters.monsters) {
             if (!monstersCheckedForIneligibility.contains(monster)) {
                 // Ruina "ally" monsters are in the room's monster list and are immune to debuffs.
                 // What are they doing in there? I am not to say.

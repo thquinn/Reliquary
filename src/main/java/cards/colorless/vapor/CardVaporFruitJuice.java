@@ -1,13 +1,11 @@
 package cards.colorless.vapor;
 
-import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class CardVaporFruitJuice extends CustomCard {
+public class CardVaporFruitJuice extends CardVapor {
     public static final String ID = "reliquary:VaporFruitJuice";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/fruitJuice.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -34,10 +32,5 @@ public class CardVaporFruitJuice extends CustomCard {
             upgradeName();
             upgradeMagicNumber(1);
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporFruitJuice();
     }
 }

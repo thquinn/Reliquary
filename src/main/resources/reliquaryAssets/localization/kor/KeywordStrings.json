@@ -1,0 +1,73 @@
+[
+  {
+    "NAMES": [
+      "reliquary:translation_note"
+    ],
+    "DESCRIPTION": "No need to translate this.",
+    "NOTE_FOR_TRANSLATORS": "FOR ALL KEYWORDS: If your language has cases, the keyword NAMES must be lower case, or they won't match!"
+  },
+  {
+    "NAMES": [
+      "속죄"
+    ],
+    "DESCRIPTION": "이 #y경지로 진입하, [W] [W] 를 잃습니다 . 이 상태에선 #y경지 변경이 불가능합니다. 다음 턴 시작시 이 #y경지 에서 벗어납니다."
+  },
+  {
+    "NAMES": [
+      "편항"
+    ],
+    "DESCRIPTION": "구체: 매 턴마다 밀집을 잃습니다."
+  },
+  {
+    "NAMES": [
+      "데이터"
+    ],
+    "DESCRIPTION": "구체: #y밀집 을 얻습니다."
+  },
+  {
+    "NAMES": [
+      "헌신"
+    ],
+    "DESCRIPTION": "턴 시작시 #y만트라를 잃습니다.",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Devotion power from the base game."
+  },
+  {
+    "NAMES": [
+      "상처", "상처"
+    ],
+    "DESCRIPTION": "상처는 사용 불가능한 #r저주 카드입니다.",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Injury Curse card from the base game."
+  },
+  {
+    "NAMES": [
+      "이온"
+    ],
+    "DESCRIPTION": "#y이온을 #b2 개 이상 얻는다면, #y이온을 #b2 잃고 #y전기를 #b1 번 #y영창합니다."
+  },
+  {
+    "NAMES": [
+      "pearlescence"
+    ],
+    "DESCRIPTION": "Pearlescence is a card that copies the last card played in a turn."
+  },
+  {
+    "NAMES": [
+      "점액덩어리"
+    ],
+    "DESCRIPTION": "점액덩어리는 비용 1의 #y상태이상 카드입니다.",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Slimed status from the base game."
+  },
+  {
+    "NAMES": [
+      "둔화"
+    ],
+    "DESCRIPTION": "카드를 사용할떄마다 이번 턴동안 이 생물이 공격으로 받는 피해량이 #b10% 증가합니다.",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Slow debuff from the base game."
+  },
+  {
+    "NAMES": [
+      "증기"
+    ],
+    "DESCRIPTION": "증기는 당신이 가진 포션의 효과의 절반의 효과를 가진 카드입니다. 이 카드들은 보존이며 소멸합니다."
+  }
+]

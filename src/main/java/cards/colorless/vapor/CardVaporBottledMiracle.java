@@ -1,15 +1,13 @@
 package cards.colorless.vapor;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.tempCards.Miracle;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class CardVaporBottledMiracle extends CustomCard {
+public class CardVaporBottledMiracle extends CardVapor {
     public static final String ID = "reliquary:VaporBottledMiracle";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/bottledMiracle.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -37,10 +35,5 @@ public class CardVaporBottledMiracle extends CustomCard {
             initializeDescription();
             cardsToPreview.upgrade();
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporBottledMiracle();
     }
 }

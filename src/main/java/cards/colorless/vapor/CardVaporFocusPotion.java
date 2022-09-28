@@ -1,15 +1,13 @@
 package cards.colorless.vapor;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.FocusPower;
 
-public class CardVaporFocusPotion extends CustomCard {
+public class CardVaporFocusPotion extends CardVapor {
     public static final String ID = "reliquary:VaporFocusPotion";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/focusPotion.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -35,10 +33,5 @@ public class CardVaporFocusPotion extends CustomCard {
             upgradeName();
             upgradeMagicNumber(1);
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporFocusPotion();
     }
 }

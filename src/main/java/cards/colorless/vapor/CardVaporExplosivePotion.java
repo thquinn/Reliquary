@@ -1,11 +1,9 @@
 package cards.colorless.vapor;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -14,7 +12,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.ExplosionSmallEffect;
 
-public class CardVaporExplosivePotion extends CustomCard {
+public class CardVaporExplosivePotion extends CardVapor {
     public static final String ID = "reliquary:VaporExplosivePotion";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/explosivePotion.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -46,10 +44,5 @@ public class CardVaporExplosivePotion extends CustomCard {
             upgradeName();
             upgradeDamage(5);
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporExplosivePotion();
     }
 }

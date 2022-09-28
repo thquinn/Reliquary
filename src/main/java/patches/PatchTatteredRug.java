@@ -39,7 +39,8 @@ public class PatchTatteredRug {
         public static void Prefix(PotionPopUp __instance, SpriteBatch sb, AbstractPotion ___potion) {
             if (__instance.isHidden)
                 return;
-            boolean sellMode = AbstractDungeon.getCurrRoom() instanceof ShopRoom && AbstractDungeon.player.hasRelic(RelicTatteredRug.ID);
+            boolean noMonsters = AbstractDungeon.getCurrRoom().monsters == null || AbstractDungeon.getCurrRoom().monsters.monsters.size() == 0;
+            boolean sellMode = AbstractDungeon.getCurrRoom() instanceof ShopRoom && AbstractDungeon.player.hasRelic(RelicTatteredRug.ID) && noMonsters;
             if (sellMode) {
                 PotionPopUp.TEXT[2] = DESCRIPTIONS[1] + RelicTatteredRug.GetPrice(___potion) + DESCRIPTIONS[2];
             } else {

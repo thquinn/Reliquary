@@ -1,13 +1,11 @@
 package cards.colorless.vapor;
 
-import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class CardVaporPotionOfCapacity extends CustomCard {
+public class CardVaporPotionOfCapacity extends CardVapor {
     public static final String ID = "reliquary:VaporPotionOfCapacity";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/vapors/potionOfCapacity.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -35,10 +33,5 @@ public class CardVaporPotionOfCapacity extends CustomCard {
             rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
-    }
-
-    @Override
-    public AbstractCard makeCopy() {
-        return new CardVaporPotionOfCapacity();
     }
 }

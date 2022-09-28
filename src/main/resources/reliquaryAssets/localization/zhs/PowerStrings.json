@@ -47,10 +47,10 @@
     ]
   },
   "reliquary:DeathWarrant": {
-    "NAME": "Death Warrant",
+    "NAME": "死刑凭据",
     "DESCRIPTIONS": [
-      "Your next #yAttack against this enemy this turn deals an additional #b",
-      " damage."
+      "本回合内，你对这名敌人打出的下一张 #y攻击牌 额外造成 #b",
+      " 点固定伤害。"
     ]
   },
   "reliquary:DoubleWindsor": {
@@ -117,9 +117,9 @@
   "reliquary:IntangibleTurns": {
     "NAME": "",
     "DESCRIPTIONS": [
-      "Reduce ALL damage taken and HP loss to #b1 this turn.",
-      "Reduce ALL damage taken and HP loss to #b1 for the next #b",
-      " turns."
+      "（β-）将本回合受到的所有伤害和生命减少效果降低为 #b1 。回合结束时层数-1。",
+      "（β-）将接下来 #b",
+      " 个回合受到的所有伤害和生命减少效果降低为 #b1 。回合结束时层数-1。 "
     ],
     "NOTE_FOR_TRANSLATORS": "This a turn-based version of the base game's Intangible power.."
   },
@@ -142,9 +142,9 @@
   "reliquary:MrofOhce": {
     "NAME": "态形响回",
     "DESCRIPTIONS": [
-      "你每回合打出的最后一张牌会打出两次（即回合结束额外打出一次）。",
+      "你每回合打出的最后一张牌会在回合结束时额外打出一次。",
       "你每回合打出的最后 #b",
-      " 张牌会打出两次（即回合结束额外打出一次）。"
+      " 张牌会在回合结束时额外打出一次。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is an alternate version of the base game's Echo Form power. 'Mrof Ohce' is Echo Form backwards."
   },
@@ -159,11 +159,11 @@
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Study power."
   },
   "reliquary:Rattled": {
-    "NAME": "Rattled",
+    "NAME": "力量的代价",
     "DESCRIPTIONS": [
-      "Receives double damage from the next unblocked attack.",
-      "Receives double damage from the next #b",
-      " unblocked attacks."
+      "下次受到未被格挡的 #y攻击 伤害时，将其翻倍。",
+      "下 #b",
+      " 次受到未被格挡的 #y攻击 伤害时，将其翻倍。"
     ],
     "NOTE_FOR_TRANSLATORS": "A pun on rattlesnakes and being 'rattled,' i.e. unnerved or disarmed."
   },
@@ -218,8 +218,8 @@
     "NAME": "完胜",
     "DESCRIPTIONS": [
       "#y神格 的伤害增益系数增加 #b",
-      "，现在为 #b",
-      "。"
+      " ，现在为 #b",
+      " 。"
     ]
   },
   "reliquary:Vim": {

@@ -3,8 +3,8 @@
     "NAME": "气凝胶",
     "FLAVOR": "它能轻而易举地让你跟霉运绝缘。",
     "DESCRIPTIONS": [
-      "拾起时，选择一张牌。每当你将抽牌堆洗牌时，若这张牌在抽牌堆中，它会出现在抽牌堆的顶部。",
-      "每当你将抽牌堆洗牌时，若 ",
+      "拾起时，选择一张牌。每当你将抽牌堆洗牌，若这张牌在抽牌堆中，它会出现在抽牌堆的顶部。",
+      "每当你将抽牌堆洗牌，若 ",
       " 在抽牌堆中，它会出现在抽牌堆的顶部。"
     ]
   },
@@ -20,15 +20,15 @@
     "NAME": "滚珠轴承",
     "FLAVOR": "让一切顺滑地运转。",
     "DESCRIPTIONS": [
-      "每当你将抽牌堆洗牌时，随机放入一张 #y亮剑 或 #y妙计 。"
+      "每当你将抽牌堆洗牌，随机放入一张 #y亮剑 或 #y妙计 。"
     ]
   },
   "reliquary:Bellows": {
     "NAME": "鼓风器",
     "FLAVOR": "伙计，这玩意要是能有一英寸大，用着就真的顺手了。",
     "DESCRIPTIONS": [
-      "每当你第 #b",
-      " 次 #y消耗 一张牌，将消耗堆中的一张牌放入你的抽牌堆。",
+      "每当你 #y消耗 #b",
+      " 张牌后，将消耗堆中的一张牌放入你的抽牌堆。",
       "选择一张牌放入你的抽牌堆"
     ]
   },
@@ -49,13 +49,13 @@
       "每有一张牌被 消耗 或每有一张能力牌被打出时，抽一张牌。",
       "造成 !D! 点伤害。如果敌人有 易伤 状态，获得 [R] 并且抽1张牌。否则，给予1层 易伤 。",
       "将你手牌中的一张攻击或能力牌复制 !M! 张。",
-      "将你的 格挡 翻三倍。",
+      "将你的 格挡 变为三倍。",
       "将你的手牌上限增加 %d 。 NL 每当你抽到一张 状态牌 时，抽 !M! 张牌。",
       "选择一张已 消耗 的牌，将其放入你的手牌并 升级 。 NL 消耗 。",
       "获得 !M! 点 力量 。 NL 此后的第 %d 个回合结束时，失去 !M! 点 力量 。",
       "打出抽牌堆顶部的 !M! 张牌，将其 消耗 。",
       "增加一张已 升级 两次的随机攻击牌到你的手牌。 NL 这张牌在本回合耗能变为0。 NL 消耗 。",
-      "将你的 力量 翻三倍。",
+      "将你的 力量 变为三倍。",
       "失去6点生命。 NL 获得 [R] [R] [R] 。 NL 抽 !M! 张牌。 NL 消耗 。",
       "造成 !D! 点伤害。 NL 将一张 *晕眩 放入你的弃牌堆。",
       "获得 [R] [R] [R] 。 NL 消耗 。",
@@ -66,12 +66,12 @@
     ]
   },
   "reliquary:BloodSugar": {
-    "NAME": "Blood Sugar",
-    "FLAVOR": "You know you shouldn't, but you just can't help yourself!",
+    "NAME": "血糖",
+    "FLAVOR": "你也知道不应该，但是就是控制不住自己！",
     "DESCRIPTIONS": [
-      "Whenever you enter a room, heal #b",
-      " HP, then decrease that number by #b1. #yRest to reset it to #b",
-      "."
+      "每次进入房间时，回复 #b",
+      " 点生命值，然后将回复量减少 #b1 （最少为 #b0 ）。 #y休息 时将其重置为 #b",
+      " 点。"
     ]
   },
   "reliquary:BoilingFlask": {
@@ -79,14 +79,14 @@
     "FLAVOR": "一只沸腾的圆底烧瓶，容量5000毫升！",
     "DESCRIPTIONS": [
       "在每场战斗开始时，如果你的药水栏位为满，根据你所拥有的药水，选择一张 #y蒸汽 牌并加入你的手牌。",
-      "Wide ",
+      "宽大",
       ""
     ],
     "NOTE_FOR_TRANSLATORS": "The second and third strings are the prefix and suffix for Vapors generated from the Wide Potions mod."
   },
   "reliquary:Bookmark": {
     "NAME": "书签",
-    "FLAVOR": "“现在，我读到哪里了呢......”",
+    "FLAVOR": "“现在，我读到哪里了呢……”",
     "DESCRIPTIONS": [
       "在每场战斗开始时，你的牌组中每有一张 #y固有 牌，额外抽1张牌。"
     ]
@@ -95,23 +95,23 @@
     "NAME": "回旋镖",
     "FLAVOR": "爱它就放手。说难听点，你就是把它甩了也好啊。",
     "DESCRIPTIONS": [
-      "将你每回合打出的第一张牌放到抽牌堆的顶部。",
+      "将你每回合打出的第一张牌 #y弹回 。",
       "",
       "",
-      "将你每回合打出的第四张牌放到抽牌堆的顶部。"
+      "将你每回合打出的第四张牌 #y弹回 。"
     ]
   },
   "reliquary:Bouncer": {
-    "NAME": "Bouncer",
-    "FLAVOR": "I hope you have a plan for the landing.",
+    "NAME": "弹簧",
+    "FLAVOR": "我希望你有个着陆计划。",
     "DESCRIPTIONS": [
-      "Upon pickup, choose a card. It becomes #yUnplayable. If it's discarded from your hand, play it.",
-      "Choose a card for ",
-      "The chosen ",
-      " is #yUnplayable. If it's discarded from your hand, play it.",
-      "Unplayable. NL ",
-      " NL If this card is discarded from your hand, play it.",
-      "I can't play this card."
+      "拾起时，选择一张牌，其变为 #y不能被打出 。如果这张牌从你的手牌中被丢弃，视为打出了它（目标随机而定）。",
+      "选择一张牌 ",
+      "选定的这张 ",
+      " 现在 #y不能被打出 。如果这张牌从你的手牌中被丢弃，视为打出了它（目标随机而定）。",
+      "不能被打出 。 NL ",
+      " NL 如果这张牌从你的手牌中被丢弃，视为打出了它（目标随机而定）。",
+      "这张牌不能被打出。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is a spring from Sonic the Hedgehog."
   },
@@ -124,11 +124,11 @@
   },
   "reliquary:Buckler": {
     "NAME": "小圆盾",
-    "FLAVOR": "雕饰有著名的Merek幼天鹅纹样。",
+    "FLAVOR": "雕饰有著名的默雷克幼天鹅纹样。",
     "DESCRIPTIONS": [
       "你打出的下 #b",
-      " 张牌组中的可 #y升级 牌将会被永久 #y升级 。",
-      "你打出的下一张牌组中的可 #y升级 牌将会被永久 #y升级 。",
+      " 张牌组中的可 #y升级 牌将会立即被永久 #y升级 。",
+      "你打出的下一张牌组中的可 #y升级 牌将会立即被永久 #y升级 。",
       "这件遗物的效果已经使用完毕。"
     ]
   },
@@ -152,7 +152,7 @@
     "NAME": "嶙峋之根",
     "FLAVOR": "疾风知劲根。",
     "DESCRIPTIONS": [
-      "回合开始时获得 [E] 。你每回合抽到的第一张牌在本场战斗中的耗能增加 #b1 。（耗能为X的牌不受影响。）"
+      "每回合开始获得 [E] 。你每回合抽到的第一张牌在本场战斗中的耗能增加 #b1 。（不计算耗能为X的牌。）"
     ]
   },
   "reliquary:Crucible": {
@@ -184,7 +184,7 @@
   },
   "reliquary:Dhvaja": {
     "NAME": "经幢",
-    "FLAVOR": "胜利会是你的......不过要到最后。",
+    "FLAVOR": "胜利会是你的……不过要到最后。",
     "DESCRIPTIONS": [
       "每当你进入 #y神格 ， 本场战斗中你在 #y神格 姿态中所造成伤害的增益系数增加 #b1 。"
     ]
@@ -193,22 +193,22 @@
     "NAME": "伊丽莎白项圈",
     "FLAVOR": "你大爷的，别把它弄得乱七八糟的好吗——！",
     "DESCRIPTIONS": [
-      "拾起时，你的 #r诅咒 牌变为 #r受伤 。此后你获得的所有 #r诅咒 牌变为 #r受伤 。"
+      "拾起时，你的 #r诅咒 牌（ #r进阶之灾 除外）变为 #r受伤 。此后你获得的所有 #r诅咒 牌变为 #r受伤 。"
     ]
   },
   "reliquary:Ember": {
     "NAME": "余烬",
     "FLAVOR": "爹啊娘啊，烫死偶啦！",
     "DESCRIPTIONS": [
-      "每回合开始时获得 [E] 。每个回合中，你每花费超过3点能量的1点能量，受到 #b",
+      "每回合开始获得 [E] 。每个回合中，你每花费超过3点能量的1点能量，受到 #b",
       " 点伤害。"
     ]
   },
   "reliquary:EXA": {
     "NAME": "EXA",
-    "FLAVOR": "Only your superhuman eyesight allows you to see this nanoscopic machine.",
+    "FLAVOR": "只有拥有超常视力的人才能看见这些纳米机器人。",
     "DESCRIPTIONS": [
-      "At the start of your turn, if you have no #yLightning, #yFrost, and/or #yDark Orbs #yChanneled, #yChannel an Orb of a random missing type."
+      "在你的回合开始时，随机 #y生成 一个当前未拥有的基础充能球。（基础充能球包括 #y闪电 、 #y冰霜 和 #y黑暗 充能球。）"
     ],
     "NOTE_FOR_TRANSLATORS": "This is an EXA (EXecution Agent), a nanobot from the game EXAPUNKS."
   },
@@ -216,14 +216,14 @@
     "NAME": "失效的优惠券",
     "FLAVOR": "“股折啦！”这不才打9折吗？哪个天才把这句话写上去的？",
     "DESCRIPTIONS": [
-      "当你在一场战斗中造成的未被 #y格挡 的伤害总计达到 #b",
+      "当你在一场战斗中造成的未被格挡的伤害总计达到 #b",
       " 点或更多时，对所有敌人造成 #b",
       " 点伤害。"
     ]
   },
   "reliquary:FeatherDuster": {
     "NAME": "鸡毛掸子",
-    "FLAVOR": "“我生命中的错误，像灰尘一样向我袭来。”——Cademo",
+    "FLAVOR": "“我生命中的错误，像灰尘一样向我袭来。”——凯迪莫",
     "DESCRIPTIONS": [
       "拾起时，移除牌组中任意张牌。这些牌不能是打击，防御，或 #r诅咒 牌。",
       "选择任意张牌移除。"
@@ -231,17 +231,17 @@
   },
   "reliquary:FerryPass": {
     "NAME": "船票",
-    "FLAVOR": "上面写道，“移舟泊烟渚，日暮客愁新。”",
+    "FLAVOR": "移舟泊烟渚，日暮客愁新。",
     "DESCRIPTIONS": [
-      "一场战斗中，如果你打出过你牌组中每种名称不同（ #y升级 前后的牌视作同名牌）的可打出牌，在本次战斗奖励中增加一件 #y稀有 遗物，然后本遗物失效。",
+      "一场战斗中，如果你打出过你牌组中每种名称不同的可打出牌，在本次战斗奖励中增加一件 #y稀有 遗物，然后本遗物失效。",
       "本场战斗中，打出你牌组中共 #b",
       " 种名称不同的可打出牌来获得一件 #y稀有 遗物。",
       "本场战斗中，再打出 #b",
       " 种名称不同的牌来获得一件 #y稀有 遗物。",
       "打出 ",
-      "，",
-      "和",
-      "来获得一件 #y稀有 遗物。",
+      " ， ",
+      " 和 ",
+      " 来获得一件 #y稀有 遗物。",
       " NL [#2aecd7]右击以显示手牌中还未被打出过的牌。[]",
       "这件遗物的效果已经使用完毕。"
     ]
@@ -270,10 +270,10 @@
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to stealing from your future self."
   },
   "reliquary:FreeSamples": {
-    "NAME": "Free Samples",
-    "FLAVOR": "Everyone's going to want a piece.",
+    "NAME": "试吃品",
+    "FLAVOR": "人人都爱它。",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. Whenever an enemy deals unblocked attack damage to you, it gains #b1 #yIntangible if it's not already."
+      "每回合开始获得 [E] 。不处在 #yβ-无实体 状态的敌人如果对你造成了未被格挡的 #y攻击 伤害，在其回合结束时获得 #b1 层 #yβ-无实体 。"
     ]
   },
   "reliquary:GummyVitamins": {
@@ -285,19 +285,19 @@
     ]
   },
   "reliquary:Hardlight": {
-    "NAME": "Hardlight",
-    "FLAVOR": "The words \"DO NOT FOLLOW\" have been scratched under the brim.",
+    "NAME": "虐光",
+    "FLAVOR": "帽檐下刻着一排大字“切勿跟随”。",
     "DESCRIPTIONS": [
-      "When your HP falls to #b",
-      " or less for the first time, permanently gain #b",
-      " #yStrength."
+      "每局游戏中，当你的生命值第一次低于或等于 #b",
+      " 时，永久获得 #b",
+      " 点 #y力量 。"
     ]
   },
   "reliquary:HolyGrail": {
     "NAME": "圣杯",
-    "FLAVOR": "你做出了......明智的……选择。",
+    "FLAVOR": "你做出了……明智的……选择。",
     "DESCRIPTIONS": [
-      "阻止你在每场战斗中的第一次死亡，改为下回合死亡。"
+      "阻止你在每场战斗中的第一次死亡，保留 #b1 点生命值。如果当前是你的回合，你在下回合死亡；否则在下下回合死亡。"
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a quote from Indiana Jones and the Last Crusade."
   },
@@ -305,7 +305,7 @@
     "NAME": "红烫的拨火棍",
     "FLAVOR": "没人会想去捏住这玩意近火的那一端。",
     "DESCRIPTIONS": [
-      "每当你在你的回合中抽一张牌，对一个随机敌人造成等于其耗能的伤害。（回合开始时的抽牌不生效。）"
+      "每当你在你的回合中抽一张牌，对一名随机敌人造成等于其耗能的伤害。（回合开始时的抽牌不生效。）"
     ]
   },
   "reliquary:IceCubeTray": {
@@ -313,7 +313,7 @@
     "FLAVOR": "知道怎样使用这件东西的人都死了很多年了。",
     "DESCRIPTIONS": [
       "你每向牌组中加入 #b",
-      " 张牌，便可以移除牌组中的一张牌。"
+      " 张牌，就可以移除牌组中的一张牌。"
     ]
   },
   "reliquary:IridiumChain": {
@@ -350,22 +350,22 @@
     "NAME": "扭绞弹簧",
     "FLAVOR": "有人把它掰弯过头了，它弹不回来了。",
     "DESCRIPTIONS": [
-      "每回合开始时获得 [E] 。只有在你的回合结束且抽牌堆为空时，你的弃牌堆才会洗入抽牌堆。"
+      "每回合开始获得 [E] 。只有在你的回合结束且抽牌堆为空时，你的弃牌堆才会洗入抽牌堆。"
     ]
   },
   "reliquary:KnifeBlock": {
     "NAME": "刀架",
-    "FLAVOR": "”谁会需要这么多小刀啊？“世上最蠢的人如是问。",
+    "FLAVOR": "“谁会需要这么多小刀啊？”世上最蠢的人如是问。",
     "DESCRIPTIONS": [
-      "每当你创建一次（而非一张） #y小刀 ，额外创建一张。"
+      "每当你创建一次 #y小刀 ，额外创建一张。"
     ]
   },
   "reliquary:Knoch": {
     "NAME": "沉子",
     "FLAVOR": "它总是沉到你背包的最底下。",
     "DESCRIPTIONS": [
-      "生命值低于或等于 #b",
-      "% 的敌人具有 #y虚弱 。"
+      "在你的回合，生命值低于或等于 #b",
+      "% 的不具有 #y人工制品 或 #y虚弱 的敌人会被给予 #b1 层 #y虚弱 。"
     ]
   },
   "reliquary:LeadDart": {
@@ -387,7 +387,7 @@
   },
   "reliquary:MedicineBall": {
     "NAME": "健身球",
-    "FLAVOR": "但愿你能找到人和你来回扔......",
+    "FLAVOR": "但愿你能找到人和你来回扔……",
     "DESCRIPTIONS": [
       "你额外拥有 #y力量 ，数值等于所有敌人中力量的最高值（最小为 #b0 ）。"
     ]
@@ -420,13 +420,13 @@
     ]
   },
   "reliquary:OvenMitt": {
-    "NAME": "Oven Mitt",
-    "FLAVOR": "It's already starting to fall apart.",
+    "NAME": "隔热手套",
+    "FLAVOR": "已经在裂开了。",
     "DESCRIPTIONS": [
-      "Prevent the next #b",
-      " times you would lose HP.",
-      "Prevent the next time you would lose HP.",
-      "This relic has been used up."
+      "阻止下 #b",
+      " 次你受到的生命值损伤。",
+      "阻止下一次你受到的生命值损伤。",
+      "这件遗物的效果已经使用完毕。"
     ],
     "NOTE_FOR_TRANSLATORS": "This shares the same DESCRIPTIONS text from the Buffer power."
   },
@@ -445,18 +445,18 @@
     ]
   },
   "reliquary:PeacockShield": {
-    "NAME": "Peacock Shield",
-    "FLAVOR": "Presents a remarkable defense.",
+    "NAME": "孔雀之屏",
+    "FLAVOR": "这屏障不可小觑。",
     "DESCRIPTIONS": [
-      "Whenever you enter #yWrath, double your #yBlock."
+      "每当你进入 #y神格 ，将你的 #y格挡 翻倍。"
     ]
   },
   "reliquary:PlasmaLobster": {
-    "NAME": "Plasma Lobster",
-    "FLAVOR": "Smells of petrichor.",
+    "NAME": "等离子龙虾",
+    "FLAVOR": "带有雨和泥土的气息。",
     "DESCRIPTIONS": [
-      "Increases your attack damage by #b",
-      " while you have #yBlock."
+      "当你拥有 #y格挡 时，你的 #y攻击 伤害增加 #b",
+      " 。"
     ]
   },
   "reliquary:PorcupineQuills": {
@@ -464,7 +464,7 @@
     "FLAVOR": "如果这些刺伤到了你，那你完全是在自作自受。",
     "DESCRIPTIONS": [
       "每当你受到来自敌人的大于等于 #b",
-      " 点的未被 #y格挡 的伤害，造成等量的反伤。"
+      " 点的未被格挡的伤害，造成等量的反伤。"
     ]
   },
   "reliquary:PrayerBox": {
@@ -483,11 +483,11 @@
     ]
   },
   "reliquary:PromissoryNotes": {
-    "NAME": "Promissory Notes",
-    "FLAVOR": "An ancient instrument of subterfuge.",
+    "NAME": "期票",
+    "FLAVOR": "一种由来已久的耍滑方式。",
     "DESCRIPTIONS": [
-      "Whenever you receive a debuff from an enemy, your first #yAttack against that enemy next turn deals #b",
-      " additional damage."
+      "每当你受到来自一名敌人的负面效果，在下个回合，你对其打出的第一张 #y攻击牌 额外造成 #b",
+      " 点固定伤害。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is a checkbook."
   },
@@ -496,7 +496,7 @@
     "FLAVOR": "这片树叶的样子在整个植物王国中独一无二，那是由一个小学生画出来的王国。",
     "DESCRIPTIONS": [
       "拾起时，选择一张 #y攻击牌 。每当你打出这张牌，回复 #b1 点生命值。",
-      "选择一张攻击牌，",
+      "选择一张攻击牌 ",
       "每当你打出选定的这张 ",
       " ，回复 #b1 点生命值。"
     ]
@@ -520,7 +520,7 @@
   },
   "reliquary:RabbitEars": {
     "NAME": "兔耳朵",
-    "FLAVOR": "“您现在正在收听的是调频98.7，发烧电台。别碰那个旋钮可好！”",
+    "FLAVOR": "“您现在正在收听的是FM98.7，发烧电台。别碰那个旋钮可好！”",
     "DESCRIPTIONS": [
       "#b蓝色 牌可以被 #y升级 两次。拾起时，选择并 #y升级 一张已 #y升级 的 #b蓝色 牌。",
       "你的抽牌堆和弃牌堆中每有 !M! 张牌，获得一点 [B] 。",
@@ -534,10 +534,10 @@
       "生成 !M! 个 黑暗 充能球。 NL 使用所有 黑暗 充能球的被动能力两次。",
       "将你的 能量 翻倍。",
       "激发 你最右侧的充能球 !M! 次。",
-      "The last card you play each turn is played twice.",
+      "你每回合打出的最后一张牌会打出两次。",
       "闪电 充能球现在会击中所有敌人。 NL 生成 !M! 个 闪电 充能球。 NL 随机给予一名敌人99回合 跟踪锁定 效果。",
       "激发 所有充能球，每 激发 一个充能球获得 [B] 并抽 !M! 张牌。",
-      "将所有 等离子 充能球尽可能向左冒泡移动。 NL 生成 !M! 个 等离子 充能球。",
+      "将所有 等离子 充能球向左尽可能冒泡移动。 NL 生成 !M! 个 等离子 充能球。",
       "造成 !D! 点伤害。 NL 如果目标敌人的意图是攻击，则给予其 !M! 层 虚弱 。否则，获得 [B] 。",
       "你每打出一张能力牌，抽 !M! 张牌（尽可能抽能力牌）。",
       "固有 。 NL 在你的回合开始时，增加一张随机罕见牌到你的手牌。",
@@ -547,13 +547,13 @@
       "造成 !D! 点伤害。 NL 生成 !M! 个 等离子 充能球，然后 生成 若干个 等离子 充能球，直到你没有空的 充能球栏位。",
       "激发 你最右侧的充能球2X次。",
       "生成 数据 、 闪电 、 冰霜 、 黑暗 充能球各一个。",
-      "造成 !D! 点伤害。 NL 你在这个回合打出的下一张牌将会被放入到你的手牌中。(只限会移入弃牌堆的牌）",
+      "造成 !D! 点伤害。 NL 你在这个回合打出的下一张牌将会被放入到你的手牌中。（只限会移入弃牌堆的牌）",
       "使用你最右侧充能球的被动能力，然后 激发 它。 NL 然后 生成 一个刚才被 激发 的充能球。",
       "消耗 最多 !M! 张牌。 NL 获得与其总耗能相等的 [B] 。",
       "获得你当前弃牌堆中牌数两倍的 格挡 值。",
       "固有 。 NL 你每打出一张能力牌， 生成 若干个 闪电 充能球，数量等于其耗能（至少 生成 1个）。",
       "造成 !D! 点伤害。 NL 如果这张牌杀死了敌人，则获得 [B] [B] [B] [B] 。",
-      "对所有敌人造成 !D! 点伤害。你每有1 [B]（此牌耗能先行扣去） ，额外造成1点伤害。 NL 抽 !M! 张牌。",
+      "对所有敌人造成 !D! 点伤害。 NL 你每有1 [B] （此牌耗能先行扣去） ，额外造成1点伤害。 NL 抽 !M! 张牌。",
       "生成 X+2 个 闪电 充能球。 NL 消耗 。",
       "获得 [B] [B] [B] [B] 。 NL 将一张 *虚空 放入你的弃牌堆中。",
       "增加一张已 升级 两次的随机能力牌到你的手牌。 NL 这张牌在本回合耗能变为0。 NL 消耗 。",
@@ -574,10 +574,10 @@
     ]
   },
   "reliquary:RattleCoin": {
-    "NAME": "Rattle Coin",
-    "FLAVOR": "Both sides depict the same strangely familiar creature.",
+    "NAME": "响尾蛇硬币",
+    "FLAVOR": "两面都画着同一种莫名眼熟的生物。",
     "DESCRIPTIONS": [
-      "Double the first unblocked attack damage dealt to you and ALL enemies each combat."
+      "每场战斗中，翻倍所有角色第一次受到的未被格挡的 #y攻击 伤害。（结算时，你对敌人造成了翻倍伤害，反之则不然。）"
     ],
     "NOTE_FOR_TRANSLATORS": "The image on the coin is a rattlesnake."
   },
@@ -608,20 +608,20 @@
     "NAME": "红木诗琴",
     "FLAVOR": "不管怎么说，欢迎来到“惊奇尖塔”。",
     "DESCRIPTIONS": [
-      "每当你恰好 #y格挡 伤害，下回合获得 [E] 。"
+      "每当你恰好格挡伤害，下回合获得 [E] 。"
     ]
   },
   "reliquary:RunicRemote": {
     "NAME": "天命控制器",
     "FLAVOR": "我命任我不任天。",
     "DESCRIPTIONS": [
-      "每当你不受伤害赢得一场战斗，将掉落若干张与本次打败的敌人一一对应的牌。（例，kaka固定掉落活动肌肉。）你可以从中选择一张牌加入你的牌组。",
-      "控制器振动了......"
+      "每当你不受伤害赢得一场战斗，将掉落若干张与本次打败的敌人一一对应的牌。你可以从中选择一张牌加入你的牌组。",
+      "控制器振动了……"
     ],
     "NOTE_FOR_TRANSLATORS": "This is a Wii controller, in honor of our wonderful JPN translator!"
   },
   "reliquary:RustamsPendant": {
-    "NAME": "Rustam的吊坠",
+    "NAME": "鲁斯塔马的吊坠",
     "FLAVOR": "它只是一片薄薄的金属，却好像知道你的一些事情。",
     "DESCRIPTIONS": [
       "每回合开始获得 [E] 。不同的角色对应不同的负面效果。",
@@ -639,21 +639,21 @@
     "NAME": "塑型钢",
     "FLAVOR": "何意绕指柔，化为百炼钢。",
     "DESCRIPTIONS": [
-      "拾起时，随机变为你拥有的一件未失效的普通， #b罕见 ， #y稀有 或 #y商店 遗物的复制。（不会复制 #y星系仪 。）"
+      "拾起时，随机变为你拥有的一件普通， #b罕见 ， #y稀有 或 #y商店 遗物的全新复制。"
     ]
   },
   "reliquary:SharkskinSheath": {
     "NAME": "鲨鱼皮鞘",
     "FLAVOR": "但愿你有一把鲨鱼皮刀放在里面。",
     "DESCRIPTIONS": [
-      "如果你在没有手牌的情况下结束回合，下回合抽一张牌。"
+      "如果你在没有手牌的情况下结束回合，下回合额外抽一张牌。"
     ]
   },
   "reliquary:SheepsEyeMarble": {
-    "NAME": "Sheep's Eye Marble",
-    "FLAVOR": "You feel dumber just looking at it.",
+    "NAME": "魅惑弹珠",
+    "FLAVOR": "一眼万年。",
     "DESCRIPTIONS": [
-      "Whenever you play two copies of the same card in a row, play it again."
+      "每当你连续打出两张同名牌，第二张牌会再被打出一次。（不与自身叠加。）"
     ]
   },
   "reliquary:ShortFuse": {
@@ -664,17 +664,17 @@
     ]
   },
   "reliquary:ShortStraw": {
-    "NAME": "Short Straw",
-    "FLAVOR": "This may not have been the pick.",
+    "NAME": "短吸管",
+    "FLAVOR": "我可能不该选这个。",
     "DESCRIPTIONS": [
-      "At the start of your turn, gain [E] and choose a random card in your hand. If it's still in your hand at the end of the turn, you lose #b",
-      " HP."
+      "每回合开始获得 [E] ，随机选定一张手牌。如果回合结束时这张牌仍然没有离开过你的手牌，你失去 #b",
+      " 点生命值。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is a very short bendy straw."
   },
   "reliquary:Sideboard": {
     "NAME": "备牌板",
-    "FLAVOR": "这板子给你，你可以把卡牌存在它的......上面呢？还是里面呢？",
+    "FLAVOR": "这板子给你，你可以把卡牌存在它的……上面呢？还是里面呢？",
     "DESCRIPTIONS": [
       "选择的卡牌奖励现在会进入另一个单独的牌堆。战斗外，你可以将卡牌从此牌堆移动到你的牌组。",
       "备牌板",
@@ -702,7 +702,7 @@
       "获得 [G] [G] [G] 。 NL 抽2张牌。 NL 消耗 。",
       "固有 。 NL 你每打出一张牌，都获得1点 格挡 。技能牌触发该效果两次。",
       "获得一瓶随机药水。 NL 将取材自它的 蒸汽 牌加入你的手牌。 NL 消耗 。",
-      "对所有敌人造成 !D! 点伤害。 NL 丢弃一张随机手牌。如果丢弃的是技能牌，再对所有敌人造成 !D! 点伤害。",
+      "对所有敌人造成 !D! 点伤害。 NL 丢弃一张随机手牌。 NL 如果丢弃的是技能牌，再对所有敌人造成 !D! 点伤害。",
       "固有 。 NL 造成 !D! 点伤害。 NL 如果当前不是你的第一个回合，则再次造成 !D! 点伤害。 NL 消耗 。",
       "造成 !D! 点伤害。 NL 如果敌人有 中毒 状态，则再次造成 !D! 点伤害两次。",
       "获得 !B! 点 格挡 。 NL 你的下一回合开始时 格挡 不会消失，反而会翻倍。",
@@ -719,7 +719,7 @@
       "增加一张已 升级 两次的随机技能牌到你的手牌。 NL 这张牌在本回合耗能变为0。 NL 消耗 。",
       "保留 。 NL 下一回合，抽X+2张牌，获得X+2 [G] 。 NL 消耗 。",
       "造成 !D! 点伤害。 NL 每当你抽到这张牌，都增加 !M! 张其复制品到你的手牌。 NL 消耗 。",
-      "每有一次攻击造成未被 格挡 的伤害，就给予 !M! 层 中毒 。",
+      "每有一次攻击造成未被格挡的伤害，就给予 !M! 层 中毒 。",
       "你在这个回合内每丢弃一张牌，耗能就减少1 [G] 。 NL 造成 !D! 点伤害 !M! 次。",
       "造成 !D! 点伤害两次。这张牌每被打出一次，在本场战斗中其基础伤害减少 !M! 。",
       "只有当抽牌堆中有少于等于 !M! 张牌时才能打出。 NL 对所有敌人造成 !D! 点伤害。",
@@ -735,7 +735,7 @@
       "造成 !D! 点伤害。 NL 在下一回合多抽 !M! 张牌。",
       "造成 !D! 点伤害 !M! 次。",
       "将手牌中的 !M! 张牌放到抽牌堆的顶部。 NL 并且它们在被打出之前，耗能变为0。",
-      "造成 !D! 点伤害X次。 NL 如果X大于等于5，这张牌的效果数值增加2点。",
+      "造成 !D! 点伤害X次。 NL 如果X大于等于5，这张牌的发动次数增加2。",
       "丢弃所有手牌。 NL 每丢弃一张牌，在你的手牌中增加一张 *小刀++ 。",
       "不能被打出 。 NL 如果这张牌从你的手牌中被丢弃，获得 [G] [G] [G] 。",
       "给予99层 易伤 。 NL 给予 缓慢 。 NL 消耗 。",
@@ -750,10 +750,10 @@
   },
   "reliquary:Sod": {
     "NAME": "草皮",
-    "FLAVOR": "与大众的认知相反，它的另一面（side）没有更绿，反而是棕色的。",
+    "FLAVOR": "与大众的认知相反，它的另一面没有更绿，反而是棕色的。",
     "DESCRIPTIONS": [
       "你每打出第 #b",
-      " 张未 #y升级 的牌，将它的一张已 #y升级 的复制加入你的手牌。"
+      " 张未 #y升级 的牌，将它的一张已 #y升级 的复制加入你的手牌。（打出 #y状态牌 或 #r诅咒 牌不会使计数上升到 #b8 。）"
     ]
   },
   "reliquary:Solitaire": {
@@ -788,18 +788,18 @@
     ]
   },
   "reliquary:Soularoid": {
-    "NAME": "Soularoid",
-    "FLAVOR": "Those guys with the beards were right...?!",
+    "NAME": "魂丽来",
+    "FLAVOR": "那些大胡子人的传说确有其事……？！",
     "DESCRIPTIONS": [
-      "Whenever you play a non-[#efc851]Status[] card with a different name than any card in your deck, add a copy of it to your deck."
+      "每当你打出一张非 [#efc851]状态牌[] ，若其在当前牌组中无同名牌，将它的一张复制加入你的牌组。"
     ],
     "NOTE_FOR_TRANSLATORS": "A portmanteau of 'soul' and 'Polaroid.' The flavor text is a reference to the urban legend of Amish people believing that cameras can steal the subject's soul."
   },
   "reliquary:Spinner": {
     "NAME": "轮盘",
-    "FLAVOR": "千万不要停在红色上面，千万不要停在红色上面......儿来！",
+    "FLAVOR": "千万不要停在红色上面，千万不要停在红色上面……畜——",
     "DESCRIPTIONS": [
-      "一回合中，每当你打出的牌跟上一张类型不同，获得 #b",
+      "一回合中，每当你打出的牌与上一张类型不同，获得 #b",
       " 点 #y格挡 。"
     ]
   },
@@ -814,10 +814,10 @@
     "NOTE_FOR_TRANSLATORS": "This is a Tower of Hanoi puzzle."
   },
   "reliquary:Splatula": {
-    "NAME": "Splatula",
-    "FLAVOR": "Features a nonstick coating for easy cleanup.",
+    "NAME": "滑铲",
+    "FLAVOR": "带有一层特色防粘外壳，确保清洁便易。",
     "DESCRIPTIONS": [
-      "Whenever you #yAttack an enemy for half or more of its Max HP, set its HP to #b0."
+      "每当你 #y攻击 敌人，若未被格挡的 #y攻击 伤害超过了其最大生命值的一半，将它的生命值设置为 #b0 。"
     ],
     "NOTE_FOR_TRANSLATORS": "A portmanteau of 'splat' and 'spatula.'"
   },
@@ -840,15 +840,15 @@
     "NAME": "铜锣",
     "FLAVOR": "轰。",
     "DESCRIPTIONS": [
-      "每当你在有 #y格挡 的情况下开始回合，你和所有敌人获得 #b1 点 #y力量 。"
+      "每当你在拥有 #y格挡 的情况下开始回合，你和所有敌人获得 #b1 点 #y力量 。"
     ]
   },
   "reliquary:TankTop": {
-    "NAME": "Tank Top",
-    "FLAVOR": "The rusted remnant of a once-great warrior tribe.",
+    "NAME": "坦克炮塔",
+    "FLAVOR": "某个一度辉煌的战士氏族留下的锈涩残骸。",
     "DESCRIPTIONS": [
-      "Whenever you #yAttack the enemy with the most HP, if there are #b2 or more enemies, deal #b",
-      " damage to the front enemy."
+      "每当你对生命值最高的单个敌人打出一张 #y攻击牌 ，若至少有 #b2 名敌人，对最左边的敌人造成 #b",
+      " 点伤害。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is the turret of a tank, in honor of our wonderful KOR translator OWATANKS!"
   },
@@ -865,7 +865,7 @@
       "给我！",
       "啊！我要出高价把它给买了！",
       "我要是 @不@ 买，我就是个傻子。",
-      "你还真能讨价还价呢......",
+      "你还真能讨价还价呢……",
       "NOTE FOR TRANSLATORS: The following lines are when the merchant declines to buy a potion.",
       "对不起，不感兴趣。",
       "无需多言了，谢谢。",
@@ -877,7 +877,7 @@
     "NAME": "思萎帽",
     "FLAVOR": "头上戴着这个大圆锥，人人就都能知道你有多聪明了。",
     "DESCRIPTIONS": [
-      "每场对战开始时，抽取你上一场对战中打出的倒数第二张牌。（仅计算你牌组中的牌。）"
+      "每场战斗开始时，抽取你上一场战斗中打出的倒数第二张牌。（仅计算你牌组中的牌。）"
     ],
     "NOTE_FOR_TRANSLATORS": "This is a dunce cap."
   },
@@ -898,10 +898,10 @@
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the classic bad joke structure, 'Who's got two thumbs and <insert detail about self>? This guy.'"
   },
   "reliquary:ToyRocket": {
-    "NAME": "Toy Rocket",
-    "FLAVOR": "We choose to go to the Spire.",
+    "NAME": "玩具火箭",
+    "FLAVOR": "我们选择向塔进发，因为塔就在那里。",
     "DESCRIPTIONS": [
-      "When you play a cost #b3 card, then a cost #b2 card, then a cost #b1 card in one combat, add a powerful cost #b0 #yAttack into your hand."
+      "每场战斗限一次，在你依次连续打出耗能为 #b3 、 #b2 、 #b1 的牌各一张后，增加一张耗能为 #b0 的强力 #y攻击牌 到你的手牌。"
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to JFK's 'we choose to go to the Moon' speech."
   },
@@ -909,15 +909,15 @@
     "NAME": "辅助轮",
     "FLAVOR": "这个轮子外表崭新，但内部锈蚀严重，几乎转不起来。",
     "DESCRIPTIONS": [
-      "每当你在回合开始的抽牌后手牌中没有 #y攻击牌 或者没有 #y技能牌 ，随机将一张对应类型的牌从抽牌堆放到你的手牌中。"
+      "每当你在回合开始的抽牌后手牌中没有 #y攻击牌 或没有 #y技能牌 ，随机将一张对应类型的牌从抽牌堆放到你的手牌中。"
     ]
   },
   "reliquary:TrafficCone": {
-    "NAME": "Traffic Cone",
-    "FLAVOR": "In the dark of the Spire, its glinting stripes attain an unlikely menace.",
+    "NAME": "路障",
+    "FLAVOR": "在尖塔的黑暗中，它明灭的色带瞒昧了危险。",
     "DESCRIPTIONS": [
-      "The first time an enemy does something other than attack, it loses #b",
-      " #yStrength."
+      "敌人在第一次作出 #y攻击 以外的行动时失去 #b",
+      " 点 #y力量 。"
     ]
   },
   "reliquary:TridentHead": {
@@ -936,17 +936,17 @@
     ]
   },
   "reliquary:TwinPearls": {
-    "NAME": "Twin Pearls",
-    "FLAVOR": "They are completely identical in every way, impossible to tell apart. Close enough, anyway.",
+    "NAME": "双子珍珠",
+    "FLAVOR": "它们处处完全相同，无法区分。反正是形影不离。",
     "DESCRIPTIONS": [
-      "You start each turn with #yPearlescence in your hand."
+      "每回合开始时，增加一张 #y光明映像 到你的手牌。"
     ]
   },
   "reliquary:UnderdogBone": {
-    "NAME": "Underdog Bone",
-    "FLAVOR": "Someone must have been a very good boy or girl.",
+    "NAME": "败犬之骨",
+    "FLAVOR": "曾经，某人肯定也是个好男孩或者好女孩。",
     "DESCRIPTIONS": [
-      "Whenever you play an unupgraded card, if there's an #yUpgraded copy in your draw pile, put it into your hand."
+      "每当你打出一张未 #y升级 的牌，若你的抽牌堆中有其已 #y升级 的同名牌，选择一张同名牌加入你的手牌。"
     ]
   },
   "reliquary:Vitrine": {
@@ -970,10 +970,10 @@
     ]
   },
   "reliquary:WitchyDice": {
-    "NAME": "Witchy Dice",
-    "FLAVOR": "What a lucky find! #blessed",
+    "NAME": "女巫骰子",
+    "FLAVOR": "幸运女神会眷顾你吗？",
     "DESCRIPTIONS": [
-      "At the start of each combat, play a random card of any color."
+      "在每场战斗开始时，随机打出一张任意颜色的牌（目标随机而定）。这张牌会从本局游戏中除外。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is the Witch character from the game Dicey Dungeons."
   },

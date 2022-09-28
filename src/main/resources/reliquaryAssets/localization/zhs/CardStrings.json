@@ -1,4 +1,17 @@
 {
+  "reliquary:BlastOff": {
+    "NAME": "发射！",
+    "DESCRIPTION": "对所有敌人造成 D 点伤害，给予 M 层 易伤 。 NL 消耗 。",
+    "NOTE_FOR_TRANSLATORS": "The card name is the culmination of a rocket launch countdown: 3, 2, 1, blast off!"
+  },
+  "reliquary:Pearlescence": {
+    "NAME": "",
+    "DESCRIPTION": "光明映像",
+    "EXTENDED_DESCRIPTION": [
+      "我必须先打出一张其他牌。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "The description should match the translation of the pearlescence keyword."
+  },
   "reliquary:VaporAmbrosia": {
     "NAME": "仙馔蒸汽",
     "DESCRIPTION": "保留 。 NL 获得 !M! 层 真言 。 NL 消耗 。"

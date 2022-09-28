@@ -336,7 +336,7 @@
     "NAME": "鹿角兔的鹿角",
     "FLAVOR": "不管这个东西取自何种生物，那个生物肯定在东奔西跑，一角长，一角短。",
     "DESCRIPTIONS": [
-      "每当一名敌人死亡，返还你打出的上一张牌所花费的能量。"
+      "一场战斗中，每当一名敌人死亡，返还你打出的上一张牌所花费的能量。"
     ]
   },
   "reliquary:KillPill": {
@@ -817,7 +817,7 @@
     "NAME": "滑铲",
     "FLAVOR": "带有一层特色防粘外壳，确保清洁便易。",
     "DESCRIPTIONS": [
-      "每当你 #y攻击 敌人，若未被格挡的 #y攻击 伤害超过了其最大生命值的一半，将它的生命值设置为 #b0 。"
+      "每当你 #y攻击 敌人，若未被格挡的 #y攻击 伤害超过了其最大生命值的一半，将其生命值设置为 #b0 。"
     ],
     "NOTE_FOR_TRANSLATORS": "A portmanteau of 'splat' and 'spatula.'"
   },
@@ -973,7 +973,7 @@
     "NAME": "女巫骰子",
     "FLAVOR": "幸运女神会眷顾你吗？",
     "DESCRIPTIONS": [
-      "在每场战斗开始时，随机打出一张任意颜色的牌（目标随机而定）。这张牌会从本局游戏中除外。"
+      "在每场战斗开始时，随机打出一张任意颜色的牌（目标随机而定），然后将这张牌从本场战斗中除外。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is the Witch character from the game Dicey Dungeons."
   },

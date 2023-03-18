@@ -79,6 +79,8 @@ public class CardPearlescence extends CustomCard {
         if (lastCard != null) {
             lastCard.update();
         }
+        retain = false;
+        selfRetain = false;
     }
 
     @Override

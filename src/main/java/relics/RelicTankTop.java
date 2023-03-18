@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.BackAttackPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import util.ReliquaryLogger;
 import util.TextureLoader;
 
 import java.util.List;
@@ -49,7 +50,7 @@ public class RelicTankTop extends CustomRelic {
             if (m.isDeadOrEscaped() || m.halfDead || m.hasPower(BackAttackPower.POWER_ID)) {
                 continue;
             }
-            float x = m.hb_x;
+            float x = m.hb.cX;
             if (front == null || x < frontX) {
                 front = m;
                 frontX = x;

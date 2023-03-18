@@ -53,7 +53,9 @@ public class RelicFerryPass extends CustomRelic implements ClickableRelic {
 
     @Override
     public void onMasterDeckChange() {
-        atBattleStart();
+        if (AbstractDungeon.getCurrRoom() == null || AbstractDungeon.getCurrRoom().phase != AbstractRoom.RoomPhase.COMBAT) {
+            atBattleStart();
+        }
     }
 
     @Override

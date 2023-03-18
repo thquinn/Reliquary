@@ -10,11 +10,11 @@
     "NAMES": [
       "속죄"
     ],
-    "DESCRIPTION": "이 #y경지로 진입하, [W] [W] 를 잃습니다 . 이 상태에선 #y경지 변경이 불가능합니다. 다음 턴 시작시 이 #y경지 에서 벗어납니다."
+    "DESCRIPTION": "이 #y경지로 진입하면, [W] [W] 를 잃습니다 . 이 상태에선 #y경지 변경이 불가능합니다. 다음 턴 시작시 이 #y경지 에서 벗어납니다."
   },
   {
     "NAMES": [
-      "편항"
+      "편향"
     ],
     "DESCRIPTION": "구체: 매 턴마다 밀집을 잃습니다."
   },
@@ -46,9 +46,9 @@
   },
   {
     "NAMES": [
-      "pearlescence"
+      "진주빛"
     ],
-    "DESCRIPTION": "Pearlescence is a card that copies the last card played in a turn."
+    "DESCRIPTION": "진주빛 은 내 턴에서 가장 마지막으로 사용한 카드를 복사하는 카드입니다."
   },
   {
     "NAMES": [

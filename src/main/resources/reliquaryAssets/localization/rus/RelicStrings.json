@@ -909,7 +909,7 @@
     "NAME": "Toy Rocket",
     "FLAVOR": "We choose to go to the Spire.",
     "DESCRIPTIONS": [
-      "When you play a cost #b3 card, then a cost #b2 card, then a cost #b1 card in one combat, add a powerful cost #b0 #yAttack into your hand."
+      "The first time you play a cost #b3, cost #b2, and cost #b1 card in a row each combat, add a powerful cost #b0 #yAttack into your hand."
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to JFK's 'we choose to go to the Moon' speech."
   },

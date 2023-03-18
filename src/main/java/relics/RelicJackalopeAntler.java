@@ -33,8 +33,8 @@ public class RelicJackalopeAntler extends CustomRelic {
     }
 
     @Override
-    public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        if (damageAmount >= target.currentHealth && lastCost > 0) {
+    public void onMonsterDeath(AbstractMonster m) {
+        if (lastCost > 0) {
             addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             AbstractDungeon.player.gainEnergy(lastCost);
         }

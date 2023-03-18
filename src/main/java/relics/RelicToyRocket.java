@@ -32,13 +32,17 @@ public class RelicToyRocket extends CustomRelic {
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
-        if (counter > 0 && c.costForTurn == counter) {
-            counter--;
-            if (counter == 0) {
-                addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-                addToBot(new MakeTempCardInHandAction(new CardBlastOff()));
+        if (counter > 0) {
+            if (c.costForTurn == counter) {
+                counter--;
+                if (counter == 0) {
+                    addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+                    addToBot(new MakeTempCardInHandAction(new CardBlastOff()));
+                }
+                flash();
+            } else if (counter != 2 || c.costForTurn != 3) {
+                counter = 3;
             }
-            flash();
         }
     }
 

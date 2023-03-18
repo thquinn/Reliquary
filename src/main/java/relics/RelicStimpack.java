@@ -31,6 +31,9 @@ public class RelicStimpack extends CustomRelic {
     @Override
     public void onBloodied() {
         if (!triggeredThisCombat) {
+            if (AbstractDungeon.getCurrRoom() == null || AbstractDungeon.getCurrRoom().phase != AbstractRoom.RoomPhase.COMBAT) {
+                return;
+            }
             AbstractPlayer p = AbstractDungeon.player;
             addToBot(new RelicAboveCreatureAction(p, this));
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DoubleDamagePower(p, 1, AbstractDungeon.actionManager.turnHasEnded), 1));

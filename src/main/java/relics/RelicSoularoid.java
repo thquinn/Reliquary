@@ -27,7 +27,7 @@ public class RelicSoularoid extends CustomRelic {
         AbstractPlayer p = AbstractDungeon.player;
         if (p.masterDeck.group.stream().noneMatch(c -> c.cardID.equals(card.cardID))) {
             flash();
-            AbstractDungeon.effectsQueue.add(new FastCardObtainEffect(card.makeStatEquivalentCopy(), card.current_x, card.current_y));
+            AbstractDungeon.effectsQueue.add(new FastCardObtainEffect(card.makeCopy(), card.current_x, card.current_y));
         }
     }
 

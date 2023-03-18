@@ -6,6 +6,7 @@ import com.evacipated.cardcrawl.mod.stslib.actions.common.FetchAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.NewQueueCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.purple.Blasphemy;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -14,13 +15,17 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
 public class RelicWitchyDice extends CustomRelic {
     public static final String ID = "reliquary:WitchyDice";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/witchyDice.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/witchyDice.png");
 
     public RelicWitchyDice() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.SOLID);
+        super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.SOLID);
     }
 
     @Override
@@ -36,7 +41,10 @@ public class RelicWitchyDice extends CustomRelic {
         } else {
             rarity = AbstractCard.CardRarity.RARE;
         }
-        AbstractCard card = CardLibrary.getAnyColorCard(rarity);
+        AbstractCard card = null;
+        while (card == null || BLACKLIST.contains(card.cardID)) {
+            card = CardLibrary.getAnyColorCard(rarity);
+        }
         card.purgeOnUse = true;
         p.limbo.addToTop(card);
         card.current_x = Settings.WIDTH / 2.0F;
@@ -61,4 +69,8 @@ public class RelicWitchyDice extends CustomRelic {
     {
         return new RelicWitchyDice();
     }
+
+    private final Set<String> BLACKLIST = new HashSet<>(Arrays.asList(
+            Blasphemy.ID
+    ));
 }

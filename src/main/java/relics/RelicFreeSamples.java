@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
 import com.megacrit.cardcrawl.powers.IntangiblePower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import powers.IntangibleTurnsPower;
@@ -29,9 +30,24 @@ public class RelicFreeSamples extends CustomRelic implements BetterOnLoseHpRelic
     }
 
     @Override
+    public void onEquip() {
+        AbstractDungeon.player.energy.energyMaster += 1;
+    }
+
+    @Override
+    public void onUnequip() {
+        AbstractDungeon.player.energy.energyMaster -= 1;
+    }
+
+    @Override
+    public void atBattleStartPreDraw() {
+        flash();
+    }
+
+    @Override
     public int betterOnLoseHp(DamageInfo info, int damageAmount) {
         AbstractPlayer p = AbstractDungeon.player;
-        if (info.type == DamageInfo.DamageType.NORMAL && info.owner != null && info.owner != p && !info.owner.hasPower(IntangiblePower.POWER_ID)) {
+        if (info.type == DamageInfo.DamageType.NORMAL && info.owner != null && info.owner != p && !info.owner.hasPower(IntangibleTurnsPower.POWER_ID)) {
             addToBot(new ApplyPowerIfAbsentAction(info.owner, p, new IntangibleTurnsPower(info.owner, 1), this));
         }
         return damageAmount;

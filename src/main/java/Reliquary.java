@@ -113,7 +113,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         BaseMod.addRelic(new RelicSkeletonKey(), RelicType.GREEN);
         BaseMod.addRelic(new RelicSod(), RelicType.SHARED);
         BaseMod.addRelic(new RelicSolitaire(), RelicType.PURPLE);
-        BaseMod.addRelic(new RelicSoularoid(), RelicType.PURPLE);
+        BaseMod.addRelic(new RelicSoularoid(), RelicType.SHARED);
         BaseMod.addRelic(new RelicSpinner(), RelicType.SHARED);
         BaseMod.addRelic(new RelicSpireOfHannoy(), RelicType.SHARED);
         BaseMod.addRelic(new RelicSplatula(), RelicType.SHARED);
@@ -326,6 +326,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
     @Override
     public void receivePostInitialize() {
         BaseMod.registerModBadge(new Texture("reliquaryAssets/images/badge.png"), "Reliquary", "thquinn", "A collection of relics.", new ModPanel());
+        BaseMod.addPower(DeathWarrantPower.class, DeathWarrantPower.POWER_ID);
         BaseMod.addPower(InvincibleTurnsPower.class, InvincibleTurnsPower.POWER_ID);
         BaseMod.addPower(LesserDuplicationPower.class, LesserDuplicationPower.POWER_ID);
         BaseMod.addPower(ReduceColorlessCostPower.class, ReduceColorlessCostPower.POWER_ID);

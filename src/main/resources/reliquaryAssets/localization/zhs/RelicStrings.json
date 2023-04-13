@@ -791,7 +791,7 @@
     "NAME": "魂丽来",
     "FLAVOR": "那些大胡子人的传说确有其事……？！",
     "DESCRIPTIONS": [
-      "每当你打出一张非 [#efc851]状态牌[] ，若其在当前牌组中无同名牌，将它的一张全新未升级的复制加入你的牌组。"
+      "每当你打出一张非 [#efc851]状态牌[] ，若其在当前牌组中无同名牌，将它的一张全新未 #y升级 的复制加入你的牌组。"
     ],
     "NOTE_FOR_TRANSLATORS": "A portmanteau of 'soul' and 'Polaroid.' The flavor text is a reference to the urban legend of Amish people believing that cameras can steal the subject's soul."
   },

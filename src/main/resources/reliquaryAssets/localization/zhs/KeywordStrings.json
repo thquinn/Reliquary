@@ -33,7 +33,7 @@
     "NAMES": [
       "受伤", "受伤"
     ],
-    "DESCRIPTION": "受伤是不能被打出的 #r诅咒 牌。",
+    "DESCRIPTION": "受伤是 #y不能被打出 的 #r诅咒 牌。",
     "NOTE_FOR_TRANSLATORS": "This is a keyword for the Injury Curse card from the base game."
   },
   {
@@ -59,6 +59,6 @@
     "NAMES": [
       "蒸汽"
     ],
-    "DESCRIPTION": "蒸汽牌取材自你的药水，但效果较微弱。它们具有 保留 和 消耗 。"
+    "DESCRIPTION": "蒸汽牌取材自你的药水，但效果较微弱。它们具有 #y保留 和 #y消耗 。"
   }
 ]

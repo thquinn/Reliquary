@@ -117,8 +117,8 @@
   "reliquary:IntangibleTurns": {
     "NAME": "",
     "DESCRIPTIONS": [
-      "（β-）将本回合受到的所有伤害和生命减少效果降低为 #b1 。回合结束时层数-1。",
-      "（β-）将接下来 #b",
+      "将本回合受到的所有伤害和生命减少效果降低为 #b1 。回合结束时层数-1。",
+      "将接下来 #b",
       " 个回合受到的所有伤害和生命减少效果降低为 #b1 。回合结束时层数-1。 "
     ],
     "NOTE_FOR_TRANSLATORS": "This a turn-based version of the base game's Intangible power.."

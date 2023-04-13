@@ -132,7 +132,7 @@
   },
   "reliquary:VaporGhostInAJar": {
     "NAME": "幽灵蒸汽",
-    "DESCRIPTION": "保留 。 NL 有 !M! %的概率获得1层 无实体 。 NL 消耗 。"
+    "DESCRIPTION": "保留 。 NL 有 !M! %的几率获得1层 无实体 。 NL 消耗 。"
   },
   "reliquary:VaporHeartOfIron": {
     "NAME": "闪耀蒸汽",

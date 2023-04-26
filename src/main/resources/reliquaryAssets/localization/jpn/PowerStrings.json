@@ -50,8 +50,8 @@
   "reliquary:DeathWarrant": {
     "NAME": "Death Warrant",
     "DESCRIPTIONS": [
-      "Your next #yAttack against this enemy this turn deals an additional #b",
-      " damage."
+      "このターン、この敵に与える次の #yアタック のダメージが #b",
+      " 増加する。"
     ]
   },
   "reliquary:DoubleWindsor": {
@@ -123,9 +123,9 @@
   "reliquary:IntangibleTurns": {
     "NAME": "",
     "DESCRIPTIONS": [
-      "Reduce ALL damage taken and HP loss to #b1 this turn.",
-      "Reduce ALL damage taken and HP loss to #b1 for the next #b",
-      " turns."
+      "このターン、すべてのダメージとHPを失う効果を #b1 に軽減する。",
+      "2ターンの間、 #b",
+      " すべてのダメージとHPを失う効果を #b1 に軽減する。"
     ],
     "NOTE_FOR_TRANSLATORS": "This a turn-based version of the base game's Intangible power.."
   },
@@ -166,11 +166,11 @@
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Study power."
   },
   "reliquary:Rattled": {
-    "NAME": "Rattled",
+    "NAME": "ガラガラ",
     "DESCRIPTIONS": [
-      "Receives double damage from the next unblocked attack.",
-      "Receives double damage from the next #b",
-      " unblocked attacks."
+      "次のブロックされていない #yアタック から2倍のダメージを受ける。",
+      "次の #b",
+      " 回、ブロックされていない #yアタック から2倍のダメージを受ける。"
     ],
     "NOTE_FOR_TRANSLATORS": "A pun on rattlesnakes and being 'rattled,' i.e. unnerved or disarmed."
   },

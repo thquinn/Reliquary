@@ -47,10 +47,10 @@ public abstract class OrbDataBase extends AbstractOrb {
         try {
             Field field = AbstractGameEffect.class.getDeclaredField("color");
             field.setAccessible(true);
-            field.set(orbFlareEffect, c1);
+            field.set(orbFlareEffect, c1.cpy());
             field = OrbFlareEffect.class.getDeclaredField("color2");
             field.setAccessible(true);
-            field.set(orbFlareEffect, c2);
+            field.set(orbFlareEffect, c2.cpy());
         } catch (Exception e) {
             ReliquaryLogger.error("reflection failed in OrbDataBase: " + e);
         }
@@ -89,9 +89,9 @@ public abstract class OrbDataBase extends AbstractOrb {
     public void triggerEvokeAnimation(Color color) {
         active = false;
         float angle = angle1 = MathUtils.random(0, 360f);
-        AbstractDungeon.effectsQueue.add(new DataOrbRingEffect(this, angle, color));
+        AbstractDungeon.effectsQueue.add(new DataOrbRingEffect(this, angle, color.cpy()));
         angle += MathUtils.random(60f, 120f);
-        AbstractDungeon.effectsQueue.add(new DataOrbRingEffect(this, angle, color));
+        AbstractDungeon.effectsQueue.add(new DataOrbRingEffect(this, angle, color.cpy()));
     }
 
     public void render(SpriteBatch sb, Color c1, Color c2) {

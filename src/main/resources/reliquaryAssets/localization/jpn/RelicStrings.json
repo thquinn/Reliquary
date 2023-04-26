@@ -71,12 +71,12 @@
     ]
   },
   "reliquary:BloodSugar": {
-    "NAME": "Blood Sugar",
-    "FLAVOR": "You know you shouldn't, but you just can't help yourself!",
+    "NAME": "血の砂糖",
+    "FLAVOR": "駄目だけど我慢できない！",
     "DESCRIPTIONS": [
-      "Whenever you enter a room, heal #b",
-      " HP, then decrease that number by #b1. #yRest to reset it to #b",
-      "."
+      "部屋に入るたび、HPを #b",
+      " 回復し、回復量を #b1 減らす。休憩時に回復量を #b",
+      " にリセットする。"
     ]
   },
   "reliquary:BoilingFlask": {
@@ -84,7 +84,7 @@
     "FLAVOR": "丸底沸騰フラスコ、5000ミリリットル！",
     "DESCRIPTIONS": [
       "戦闘開始時にポーションスロットが一杯の場合、 #y香り カードを #b1 枚選び、手札に加える。",
-      "Wide ",
+      "ワイド",
       ""
     ],
     "NOTE_FOR_TRANSLATORS": "The second and third strings are the prefix and suffix for Vapors generated from the Wide Potions mod."
@@ -107,16 +107,16 @@
     ]
   },
   "reliquary:Bouncer": {
-    "NAME": "Bouncer",
-    "FLAVOR": "I hope you have a plan for the landing.",
+    "NAME": "バネ",
+    "FLAVOR": "無事に着陸できればいいのだが。",
     "DESCRIPTIONS": [
-      "Upon pickup, choose a card. It becomes #yUnplayable. If it's discarded from your hand, play it.",
-      "Choose a card for ",
-      "The chosen ",
-      " is #yUnplayable. If it's discarded from your hand, play it.",
-      "Unplayable. NL ",
-      " NL If this card is discarded from your hand, play it.",
-      "I can't play this card."
+      "獲得時、カードを1枚選択する。選択したカードは #y使用不可 になる。手札から捨てたとき、このカードをプレイする。",
+      "カードを1枚選択 ",
+      "選択した ",
+      " は #y使用不可 。手札から捨てたとき、このカードをプレイする。",
+      "使用不可 NL ",
+      " NL 手札から捨てたとき、このカードをプレイする。",
+      "このカードはプレイできない。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is a spring from Sonic the Hedgehog."
   },
@@ -215,9 +215,9 @@
   },
   "reliquary:EXA": {
     "NAME": "EXA",
-    "FLAVOR": "Only your superhuman eyesight allows you to see this nanoscopic machine.",
+    "FLAVOR": "あなたの超人的視力なら、ナノサイズの機械も見ることができる。",
     "DESCRIPTIONS": [
-      "At the start of your turn, if you have no #yLightning, #yFrost, and/or #yDark Orbs #yChanneled, #yChannel an Orb of a random missing type."
+      "ターン開始時、 #yライトニング 、 #yフロスト 、 #yダーク がそれぞれ #y生成 されていない場合、いずれかのオーブをランダムに1つ #y生成 する。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is an EXA (EXecution Agent), a nanobot from the game EXAPUNKS."
   },
@@ -287,10 +287,10 @@
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to stealing from your future self."
   },
   "reliquary:FreeSamples": {
-    "NAME": "Free Samples",
-    "FLAVOR": "Everyone's going to want a piece.",
+    "NAME": "無料サンプル",
+    "FLAVOR": "誰もが欲しがる。",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. Whenever an enemy deals unblocked attack damage to you, it gains #b1 #yIntangible if it's not already."
+      "ターン開始時、 [E] を得る。敵があなたにブロックされていないアタックのダメージを与えたとき、その敵に #y無形 がなければ #y無形 #b1 を得る。"
     ]
   },
   "reliquary:GummyVitamins": {
@@ -302,12 +302,12 @@
     ]
   },
   "reliquary:Hardlight": {
-    "NAME": "Hardlight",
-    "FLAVOR": "The words \"DO NOT FOLLOW\" have been scratched under the brim.",
+    "NAME": "ハードライト",
+    "FLAVOR": "「ついてくるな」とつばの下に刻まれている。",
     "DESCRIPTIONS": [
-      "When your HP falls to #b",
-      " or less for the first time, permanently gain #b",
-      " #yStrength."
+      "HPが初めて #b",
+      " 以下になったとき、永続的に #y筋力 #b",
+      " を得る。"
     ]
   },
   "reliquary:HolyGrail": {
@@ -441,13 +441,13 @@
     ]
   },
   "reliquary:OvenMitt": {
-    "NAME": "Oven Mitt",
-    "FLAVOR": "It's already starting to fall apart.",
+    "NAME": "オーブンミトン",
+    "FLAVOR": "ほどけ始めている。",
     "DESCRIPTIONS": [
-      "Prevent the next #b",
-      " times you would lose HP.",
-      "Prevent the next time you would lose HP.",
-      "This relic has been used up."
+      "次のHPの喪失を #b",
+      " 回防ぐ。",
+      "次のHPの喪失を防ぐ。",
+      "この能力は使い切った。"
     ],
     "NOTE_FOR_TRANSLATORS": "This shares the same DESCRIPTIONS text from the Buffer power."
   },
@@ -466,18 +466,18 @@
     ]
   },
   "reliquary:PeacockShield": {
-    "NAME": "Peacock Shield",
-    "FLAVOR": "Presents a remarkable defense.",
+    "NAME": "孔雀の盾",
+    "FLAVOR": "高い防御能力がある。",
     "DESCRIPTIONS": [
-      "Whenever you enter #yWrath, double your #yBlock."
+      " #y憤怒 のスタンスに入るたび、現在の #yブロック の値が2倍になる。"
     ]
   },
   "reliquary:PlasmaLobster": {
-    "NAME": "Plasma Lobster",
-    "FLAVOR": "Smells of petrichor.",
+    "NAME": "プラズマエビ",
+    "FLAVOR": "ペトリコールの香り。",
     "DESCRIPTIONS": [
-      "Increases your attack damage by #b",
-      " while you have #yBlock."
+      " #yブロック があるとき、 #yアタック のダメージが #b",
+      " 増加する。"
     ]
   },
   "reliquary:PorcupineQuills": {
@@ -505,11 +505,11 @@
     "NOTE_FOR_TRANSLATORS": "This is the headgear of the Prince of All Cosmos from the Katamari Damacy series."
   },
   "reliquary:PromissoryNotes": {
-    "NAME": "Promissory Notes",
-    "FLAVOR": "An ancient instrument of subterfuge.",
+    "NAME": "小切手",
+    "FLAVOR": "古代の策略の道具。",
     "DESCRIPTIONS": [
-      "Whenever you receive a debuff from an enemy, your first #yAttack against that enemy next turn deals #b",
-      " additional damage."
+      "敵からデバフを受けるたび、次のターンその敵に与える最初の #yアタック のダメージが #b",
+      " 増加する。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is a checkbook."
   },
@@ -556,7 +556,7 @@
       "ダーク !M! を 生成 する。 NL 全ての ダーク オーブの自動効果を2回使用する。",
       "エナジーを2倍にする。",
       "先頭のオーブを !M! 回 解放 する。",
-      "The last card you play each turn is played twice.",
+      "ターンの最後にプレイするカードを、2回プレイする。",
       "ライトニング がすべての敵を攻撃するようになる。 NL ライトニング !M! を 生成 する。 NL ランダムな敵に ロック・オン 99を与える。",
       "すべてのオーブを 解放 する。 解放 したオーブ1つにつき、 [B] を得てカードを !M! 枚引く。",
       "すべての プラズマ オーブを、左端まで移動する。 NL プラズマ !M! を 生成 する。",
@@ -596,10 +596,10 @@
     ]
   },
   "reliquary:RattleCoin": {
-    "NAME": "Rattle Coin",
-    "FLAVOR": "Both sides depict the same strangely familiar creature.",
+    "NAME": "ガラガラコイン",
+    "FLAVOR": "不思議と見慣れた生物が両面に画かれている。",
     "DESCRIPTIONS": [
-      "Double the first unblocked attack damage dealt to you and ALL enemies each combat."
+      "戦闘中、あなたとすべての敵に与えられる最初のブロックされていない #yアタック のダメージを2倍にする。"
     ],
     "NOTE_FOR_TRANSLATORS": "The image on the coin is a rattlesnake."
   },
@@ -676,10 +676,10 @@
     ]
   },
   "reliquary:SheepsEyeMarble": {
-    "NAME": "Sheep's Eye Marble",
-    "FLAVOR": "You feel dumber just looking at it.",
+    "NAME": "大理石の羊の目",
+    "FLAVOR": "眺めていると馬鹿になった気がする。",
     "DESCRIPTIONS": [
-      "Whenever you play two copies of the same card in a row, play it again."
+      "同じカードを2枚連続でプレイしたとき、もう一度プレイする。"
     ]
   },
   "reliquary:ShortFuse": {
@@ -691,11 +691,11 @@
     "NOTE_FOR_TRANSLATORS": "To have a 'short fuse' means you get angry easily."
   },
   "reliquary:ShortStraw": {
-    "NAME": "Short Straw",
-    "FLAVOR": "This may not have been the pick.",
+    "NAME": "短いストロー",
+    "FLAVOR": "選ぶべきではなかったかもしれない。",
     "DESCRIPTIONS": [
-      "At the start of your turn, gain [E] and choose a random card in your hand. If it's still in your hand at the end of the turn, you lose #b",
-      " HP."
+      "ターン開始時、 [E] を得て、手札からランダムなカードを一枚選ぶ。ターン終了時、そのカードが手札にある場合、HPを #b",
+      " 失う。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is a very short bendy straw."
   },
@@ -826,10 +826,10 @@
     ]
   },
   "reliquary:Soularoid": {
-    "NAME": "Soularoid",
-    "FLAVOR": "Those guys with the beards were right...?!",
+    "NAME": "写心機",
+    "FLAVOR": "顎鬚の奴らは正しかった...？！",
     "DESCRIPTIONS": [
-      "Whenever you play a non-[#efc851]Status[] card with a different name than any card in your deck, add a copy of it to your deck."
+      "デッキに存在しない #y状態異常 以外のカードをプレイするたび、その複製をデッキに追加する。"
     ],
     "NOTE_FOR_TRANSLATORS": "A portmanteau of 'soul' and 'Polaroid.' The flavor text is a reference to the urban legend of Amish people believing that cameras can steal the subject's soul."
   },
@@ -852,10 +852,10 @@
     "NOTE_FOR_TRANSLATORS": "This is a Tower of Hanoi puzzle."
   },
   "reliquary:Splatula": {
-    "NAME": "Splatula",
-    "FLAVOR": "Features a nonstick coating for easy cleanup.",
+    "NAME": "スプラチュラ",
+    "FLAVOR": "ノンスティック加工によりお手入れも簡単。",
     "DESCRIPTIONS": [
-      "Whenever you #yAttack an enemy for half or more of its Max HP, set its HP to #b0."
+      " #yアタック で敵の最大HPの半分以上のダメージを出したとき、その敵のHPを #b0 にする。"
     ],
     "NOTE_FOR_TRANSLATORS": "A portmanteau of 'splat' and 'spatula.'"
   },
@@ -882,11 +882,11 @@
     ]
   },
   "reliquary:TankTop": {
-    "NAME": "Tank Top",
-    "FLAVOR": "The rusted remnant of a once-great warrior tribe.",
+    "NAME": "タンクトップ",
+    "FLAVOR": "偉大な戦死族の錆びた残骸。",
     "DESCRIPTIONS": [
-      "Whenever you #yAttack the enemy with the most HP, if there are #b2 or more enemies, deal #b",
-      " damage to the front enemy."
+      "HPが最も高い敵に #yアタック するとき、敵が #b2 体以上の場合、先頭の敵に #b",
+      " ダメージを与える。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is the turret of a tank, in honor of our wonderful KOR translator OWATANKS!"
   },
@@ -938,10 +938,10 @@
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the classic bad joke structure, 'Who's got two thumbs and <insert detail about self>? This guy.'"
   },
   "reliquary:ToyRocket": {
-    "NAME": "Toy Rocket",
-    "FLAVOR": "We choose to go to the Spire.",
+    "NAME": "玩具のロケット",
+    "FLAVOR": "我々は塔を登ると決めた。",
     "DESCRIPTIONS": [
-      "The first time you play a cost #b3, cost #b2, and cost #b1 card in a row each combat, add a powerful cost #b0 #yAttack into your hand."
+      "戦闘中、初めてコスト #b3 、コスト #b2 、コスト #b1 、の順にカードを連続してプレイしたとき、強力なコスト #b0 の #yアタック を手札に追加する。"
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to JFK's 'we choose to go to the Moon' speech."
   },
@@ -953,11 +953,11 @@
     ]
   },
   "reliquary:TrafficCone": {
-    "NAME": "Traffic Cone",
-    "FLAVOR": "In the dark of the Spire, its glinting stripes attain an unlikely menace.",
+    "NAME": "三角コーン",
+    "FLAVOR": "塔の闇の中、そのきらめく縞模様は思いもよらない脅威をもたらす。",
     "DESCRIPTIONS": [
-      "The first time an enemy does something other than attack, it loses #b",
-      " #yStrength."
+      "戦闘中、それぞれの敵が初めてアタック以外の行動をしたとき、その敵は #y筋力 を #b",
+      " 失う。"
     ]
   },
   "reliquary:TridentHead": {
@@ -976,17 +976,17 @@
     ]
   },
   "reliquary:TwinPearls": {
-    "NAME": "Twin Pearls",
-    "FLAVOR": "They are completely identical in every way, impossible to tell apart. Close enough, anyway.",
+    "NAME": "ツインパール",
+    "FLAVOR": "全く同じで見分けることができない。とにかくそっくり。",
     "DESCRIPTIONS": [
-      "You start each turn with #yPearlescence in your hand."
+      "ターン開始時、 #yパールエッセンス を1枚手札に加える。"
     ]
   },
   "reliquary:UnderdogBone": {
-    "NAME": "Underdog Bone",
-    "FLAVOR": "Someone must have been a very good boy or girl.",
+    "NAME": "弱者の骨",
+    "FLAVOR": "とてもいい子であったに違いない。",
     "DESCRIPTIONS": [
-      "Whenever you play an unupgraded card, if there's an #yUpgraded copy in your draw pile, put it into your hand."
+      " #yアップグレード されていないカードをプレイするたび、山札にある #yアップグレード された同じカードを1枚手札に加える。"
     ]
   },
   "reliquary:Vitrine": {
@@ -1010,10 +1010,10 @@
     ]
   },
   "reliquary:WitchyDice": {
-    "NAME": "Witchy Dice",
-    "FLAVOR": "What a lucky find! #blessed",
+    "NAME": "魔女のサイコロ",
+    "FLAVOR": "なんて運がいい！恵まれている。",
     "DESCRIPTIONS": [
-      "At the start of each combat, play a random card of any color."
+      "戦闘開始時、ランダムな色のカードをプレイする。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is the Witch character from the game Dicey Dungeons."
   },

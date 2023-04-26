@@ -139,6 +139,8 @@ public class RelicSkeletonKey extends RelicSolitaireBase {
                 changeBaseCost(card, 1);
                 break;
             case CripplingPoison.ID:
+                card.baseMagicNumber += 2;
+                card.magicNumber += 2;
                 card.rawDescription = DESCRIPTIONS[DESC_INDEX_CRIPPLING_CLOUD];
                 break;
             case DaggerSpray.ID:
@@ -158,8 +160,8 @@ public class RelicSkeletonKey extends RelicSolitaireBase {
                 card.baseBlock += 3;
                 break;
             case DeadlyPoison.ID:
-                card.baseMagicNumber += 1;
-                card.magicNumber += 1;
+                card.baseMagicNumber += 2;
+                card.magicNumber += 2;
                 break;
             case Defend_Green.ID:
                 card.baseBlock += 4;

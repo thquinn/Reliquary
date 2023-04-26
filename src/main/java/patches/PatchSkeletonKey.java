@@ -798,7 +798,7 @@ public class PatchSkeletonKey {
     )
     public static class PatchSkeletonKeyPhantasmalSkewer {
         public static SpireReturn Prefix(Skewer __instance, AbstractPlayer p, AbstractMonster m) {
-            if (__instance.timesUpgraded == 2 && __instance.energyOnUse >= 5) {
+            if (__instance.timesUpgraded == 2 && __instance.energyOnUse >= 4) {
                 AbstractDungeon.actionManager.addToBottom(new SkewerAction(p, m, __instance.damage, __instance.damageTypeForTurn, __instance.freeToPlayOnce, __instance.energyOnUse + 2));
                 return SpireReturn.Return(null);
             }

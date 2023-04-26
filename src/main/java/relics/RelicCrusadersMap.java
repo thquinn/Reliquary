@@ -18,7 +18,7 @@ public class RelicCrusadersMap extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/crusadersMap.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/crusadersMap.png");
 
-    static final float CHANCE = .25f;
+    static final float CHANCE = .33f;
 
     public RelicCrusadersMap() {
         super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.FLAT);

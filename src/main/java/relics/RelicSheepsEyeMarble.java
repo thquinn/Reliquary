@@ -20,6 +20,7 @@ public class RelicSheepsEyeMarble extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/sheepsEyeMarble.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/sheepsEyeMarble.png");
 
+    boolean triggeredThisTurn;
     String lastID;
 
     public RelicSheepsEyeMarble() {
@@ -31,15 +32,23 @@ public class RelicSheepsEyeMarble extends CustomRelic {
         lastID = null;
     }
     @Override
+    public void atTurnStart() {
+        triggeredThisTurn = false;
+    }
+    @Override
     public void onPlayerEndTurn() {
         lastID = null;
     }
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
+        if (triggeredThisTurn) {
+            return;
+        }
         if (c.cardID.equals(lastID) && !c.purgeOnUse) {
             flash();
             StaticHelpers.duplicatePlayedCard(c, m);
+            triggeredThisTurn = true;
         } else {
             lastID = c.cardID;
         }

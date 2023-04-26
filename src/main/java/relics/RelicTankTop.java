@@ -22,7 +22,7 @@ public class RelicTankTop extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/tankTop.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/tankTop.png");
 
-    private static final int DAMAGE = 3;
+    private static final int DAMAGE = 4;
 
     public RelicTankTop() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.HEAVY);

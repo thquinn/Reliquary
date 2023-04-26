@@ -40,7 +40,7 @@
       "Deal !D! damage. NL Add a copy of this card into your discard pile. NL Deals !M! additional damage for each Anger in your discard pile.",
       "Gain !B! Block. NL Upgrade all cards in your hand twice for the rest of combat.",
       "Innate. NL Block is not removed at the start of your turn.",
-      "Gain !M! Vulnerable next turn. NL At the start of your turn, gain [R].",
+      "You and ALL enemies gain !M! Vulnerable next turn. NL At the start of your turn, gain [R].",
       "Lose 3 HP. NL Gain [R] [R] [R] [R].",
       "Deal damage equal to %d%% of your Block.",
       "Innate. NL At the start of your turn, lose !M! HP and draw !M! cards.",
@@ -158,7 +158,7 @@
     "NAME": "Craggleroot",
     "FLAVOR": "This root has seen some hard times. Maybe it will see you through hard times as well?",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. The first card you draw each turn costs #b1 more this combat."
+      "Gain [E] at the start of your turn. The first card you draw each turn costs #b1 more this combat until played."
     ]
   },
   "reliquary:Crucible": {
@@ -267,7 +267,8 @@
     "NAME": "Finger Trap",
     "FLAVOR": "Maybe if you chilled out for a second, you could get it off.",
     "DESCRIPTIONS": [
-      "You can't lose HP during your turn."
+      "Prevent the first #b",
+      " HP you would lose during your turn each combat."
     ]
   },
   "reliquary:Firecrackers": {
@@ -290,7 +291,7 @@
     "NAME": "Free Samples",
     "FLAVOR": "Everyone's going to want a piece.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. Whenever an enemy deals unblocked attack damage to you, it gains #b1 #yIntangible if it's not already."
+      "Gain [E] at the start of your turn. Whenever an enemy deals unblocked attack damage to you, it gains #b1 #yBuffer if it has none."
     ]
   },
   "reliquary:GummyVitamins": {
@@ -368,7 +369,7 @@
     "NAME": "Kinked Spring",
     "FLAVOR": "Someone overwound this thing, and it ain't comin' back.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. Your discard pile only shuffles into your draw pile when you end your turn with an empty draw pile."
+      "Gain [E][E] at the start of your turn. Your discard pile only shuffles into your draw pile when you end your turn with an empty draw pile."
     ]
   },
   "reliquary:KnifeBlock": {
@@ -470,7 +471,8 @@
     "NAME": "Peacock Shield",
     "FLAVOR": "Presents a remarkable defense.",
     "DESCRIPTIONS": [
-      "Whenever you enter #yWrath, double your #yBlock."
+      "Whenever you enter #yWrath, gain #b",
+      " #yBlock, then double your #yBlock."
     ]
   },
   "reliquary:PlasmaLobster": {
@@ -608,7 +610,7 @@
     "NAME": "Red Cape",
     "FLAVOR": "Who wants the horns?",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. Whenever you #yAttack a single enemy, other enemies can't be targeted until it dies."
+      "Gain [E] at the start of your turn. Whenever you #yAttack a single enemy, other enemies can't be attacked until it dies."
     ],
     "NOTE_FOR_TRANSLATORS": "This is a matador's cape."
   },
@@ -680,7 +682,7 @@
     "NAME": "Sheep's Eye Marble",
     "FLAVOR": "You feel dumber just looking at it.",
     "DESCRIPTIONS": [
-      "Whenever you play two copies of the same card in a row, play it again."
+      "The first time you play two copies of the same card in a row each turn, play it again."
     ]
   },
   "reliquary:ShortFuse": {
@@ -704,7 +706,8 @@
     "NAME": "Sideboard",
     "FLAVOR": "A board for you to keep cards... on? In?",
     "DESCRIPTIONS": [
-      "Chosen card rewards go into a separate pile. You can move cards from that pile to your deck between combats.",
+      "Upon pickup, gain #b",
+      " #yGold. Chosen card rewards go into a separate pile. You can move cards from that pile to your deck between combats.",
       "Sideboard",
       "Add cards from your sideboard into your deck between combats.",
       " NL [#2aecd7]Right [#2aecd7]click [#2aecd7]to [#2aecd7]toggle [#2aecd7]off.[]",
@@ -768,7 +771,7 @@
       "Deal !D! damage. NL Next turn, draw !M! additional cards.",
       "Deal !D! damage !M! times.",
       "Put !M! cards from your hand on top of your draw pile. NL They cost 0 until played.",
-      "If X is 5 or more, increase it by 2. NL Deal !D! damage X times.",
+      "If X is 4 or more, increase it by 2. NL Deal !D! damage X times.",
       "Discard your hand. NL Add 1 *Shiv++ into your hand for each card discarded.",
       "Unplayable. NL If this card is discarded from your hand, gain [G] [G] [G].",
       "Apply 99 Vulnerable. NL Apply Slow. NL Exhaust.",
@@ -879,7 +882,7 @@
     "NAME": "Tam-Tam",
     "FLAVOR": "GONG.",
     "DESCRIPTIONS": [
-      "Whenever you start your turn with #yBlock, you and ALL enemies gain #b1 #yStrength."
+      "Whenever you start your turn with #yBlock, you gain #b2 Strength and ALL enemies gain #b1 #yStrength."
     ]
   },
   "reliquary:TankTop": {
@@ -980,7 +983,7 @@
     "NAME": "Twin Pearls",
     "FLAVOR": "They are completely identical in every way, impossible to tell apart. Close enough, anyway.",
     "DESCRIPTIONS": [
-      "You start each turn with #yPearlescence in your hand."
+      "You start each odd-numbered turn with #yPearlescence in your hand."
     ]
   },
   "reliquary:UnderdogBone": {

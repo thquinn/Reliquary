@@ -21,10 +21,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.BerserkPower;
-import com.megacrit.cardcrawl.powers.BrutalityPower;
-import com.megacrit.cardcrawl.powers.HeatsinkPower;
-import com.megacrit.cardcrawl.powers.VulnerablePower;
+import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.screens.select.HandCardSelectScreen;
 import javassist.*;
@@ -196,6 +193,9 @@ public class PatchBigHammer {
         public static SpireReturn Prefix(Berserk __instance, AbstractPlayer p) {
             if (__instance.timesUpgraded == 2) {
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new VulnerableNextTurnPower(p, __instance.magicNumber), __instance.magicNumber));
+                for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new VulnerableNextTurnPower(m, __instance.magicNumber), __instance.magicNumber));
+                }
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new BerserkPower(p, 1), 1));
                 return SpireReturn.Return(null);
             }

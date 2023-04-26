@@ -48,7 +48,9 @@ public class RelicShortStraw extends CustomRelic {
         }
         int numStraws = Math.toIntExact(p.relics.stream().filter(r -> r.relicId.equals(ID)).count());
         addToBot(new RelicAboveCreatureAction(p, this));
-        addToBot(new AddCardModToHandAction(new CardModShortStraw(), numStraws));
+        addToBot(new AddCardModToHandAction(new CardModShortStraw(),
+                                            numStraws,
+                                            c -> c.cost != -2));
     }
 
     @Override

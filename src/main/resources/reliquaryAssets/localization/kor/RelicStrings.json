@@ -40,7 +40,7 @@
       "피해를 !D! 줍니다. NL 이 카드를 1장 복사해 버린 카드 더미에 넣습니다. NL 버린 카드 더미에 있는 분노 1장당 피해량이 추가로 !M! 증가합니다.",
       "방어도를 !B! 얻습니다. NL 손 안에 있는 모든 카드를 이번 전투동안 2번 강화합니다.",
       "선천성. NL 턴 시작시 방어도가 사라지지 않습니다.",
-      "다음턴에 취약 !M! 을 받습니다. NL 매 턴 시작시, [R] 를 얻습니다.",
+      "You and ALL enemies gain !M! Vulnerable next turn. NL At the start of your turn, gain [R].",
       "체력을 3 잃습니다. NL [R] [R] [R] [R] 를 얻습니다.",
       "방어도의 %d%% 수치만큼 피해를 줍니다.",
       "선천성. NL 턴 시작시, 체력을 !M! 잃고 카드를 !M! 장 뽑습니다.",
@@ -158,7 +158,7 @@
     "NAME": "돌돌 말린 뿌리",
     "FLAVOR": "이 뿌리는 고달픈 인생을 겪어온것처럼 보이네요. 당신도 그 고난을 이겨낼 수 있을까요?",
     "DESCRIPTIONS": [
-      "매 턴 시작시 [E] 를 추가로 얻습니다. 전투에서 매 턴 뽑히는 첫번째 카드의 비용이 #b1 증가합니다."
+      "Gain [E] at the start of your turn. The first card you draw each turn costs #b1 more this combat until played."
     ]
   },
   "reliquary:Crucible": {
@@ -267,7 +267,8 @@
     "NAME": "손가락 함정",
     "FLAVOR": "아마도 잠깐 동안 좀 진정하시면, 금방 벗겨낼수 있을겁니다.",
     "DESCRIPTIONS": [
-      "이제 내 턴일때 더 이상 체력을 잃지 않습니다."
+      "Prevent the first #b",
+      " HP you would lose during your turn each combat."
     ]
   },
   "reliquary:Firecrackers": {
@@ -290,7 +291,7 @@
     "NAME": "무료 샘플",
     "FLAVOR": "누구나 한 조각씩 원하는 물건이죠.",
     "DESCRIPTIONS": [
-      "매 턴 시작시 [E] 를 얻습니다. 적이 당신에게 막히지 않은 피해를 입힐때마다, 해당 적이 불가침 을 #b1 얻습니다. (이미 불가침을 보유하고 있다면 불가침을 얻을수 없습니다.)"
+      "Gain [E] at the start of your turn. Whenever an enemy deals unblocked attack damage to you, it gains #b1 #yBuffer if it has none."
     ]
   },
   "reliquary:GummyVitamins": {
@@ -368,7 +369,7 @@
     "NAME": "꼬인 스프링",
     "FLAVOR": "누군가가 이렇게 다시 망쳐놓고, 다시 돌아오지 않았습니다.",
     "DESCRIPTIONS": [
-      "매 턴 시작시 [E] 를 추가로 얻습니다. 이제 버린 카드 더미는 뽑을 카드 더미가 반드시 0일때에만 섞이게 됩니다."
+      "매 턴 시작시 [E][E] 를 추가로 얻습니다. 이제 버린 카드 더미는 뽑을 카드 더미가 반드시 0일때에만 섞이게 됩니다."
     ]
   },
   "reliquary:KnifeBlock": {
@@ -470,7 +471,8 @@
     "NAME": "공작 방패",
     "FLAVOR": "이건 아주 놀라운 추가 방어력을 제공해줍니다.",
     "DESCRIPTIONS": [
-      "#y진노 상태로 진입할때마다, #y방어도 를 2배로 늘립니다."
+      "Whenever you enter #yWrath, gain #b",
+      " #yBlock, then double your #yBlock."
     ]
   },
   "reliquary:PlasmaLobster": {
@@ -608,7 +610,7 @@
     "NAME": "빨간 망토",
     "FLAVOR": "소들을 풀어라!",
     "DESCRIPTIONS": [
-      "매 턴 시작시 [E] 를 추가로 얻습니다. 적군 하나를 지정하여 #y공격 했을경우, 지정한 대상 적이 죽을때까지 다른 적들을 지정할수 없습니다."
+      "Gain [E] at the start of your turn. Whenever you #yAttack a single enemy, other enemies can't be attacked until it dies."
     ],
     "NOTE_FOR_TRANSLATORS": "This is a matador's cape."
   },
@@ -680,7 +682,7 @@
     "NAME": "대리석 양의 눈 조각품",
     "FLAVOR": "그냥 보기만 해도 멍청해지는 것 같은 느낌입니다.",
     "DESCRIPTIONS": [
-      "똑같은 카드를 2 장 사용할 때마다, 해당 카드를 1 번 더 사용합니다."
+      "The first time you play two copies of the same card in a row each turn, play it again."
     ]
   },
   "reliquary:ShortFuse": {
@@ -704,7 +706,8 @@
     "NAME": "사이드보드",
     "FLAVOR": "당신의 카드를 보관해줄수 있는... 나무 토막?",
     "DESCRIPTIONS": [
-      "선택한 카드 보상이 덱이 아닌 별도의 보관함으로 들어갑니다. 비전투 상태일때 얻어둔 보관함에서 덱으로 옮길 수 있습니다.",
+      "Upon pickup, gain #b",
+      " #yGold. Chosen card rewards go into a separate pile. You can move cards from that pile to your deck between combats.",
       "사이드보드",
       "비전투 상태에서 이 보관함 안에 있는 카드를 선택해 덱에 추가할수 있습니다.",
       " NL [#2aecd7]우 [#2aecd7]클릭으로 [#2aecd7]유물을 [#2aecd7]활성화시킬수 [#2aecd7]있습니다.[]",
@@ -768,7 +771,7 @@
       "피해를 !D! 줍니다. NL 다음 턴에 카드를 !M! 장 더 뽑습니다.",
       "!D! 피해를 !M! 줍니다.",
       "카드 !M! 장을 선택하여 뽑을 카드 더미 맨 위에 올려놓습니다. NL 이번 턴 동안 그 카드의 비용이 0이 됩니다.",
-      "소모한 에너지가 5 또는 그 이상일경우, 피해량이 2 증가합니다. NL 피해를 !D! 만큼 X 번 줍니다.",
+      "소모한 에너지가 4 또는 그 이상일경우, 피해량이 2 증가합니다. NL 피해를 !D! 만큼 X 번 줍니다.",
       "손에 있는 카드를 전부 버립니다. NL 버린 카드 갯수만큼 *단도++ 를 손으로 가져옵니다.",
       "사용불가. NL 이 카드가 버려지면, [G] [G] [G] 를 얻습니다.",
       "공포를 99 부여합니다. NL 둔화를 부여합니다. NL 소멸.",
@@ -879,7 +882,7 @@
     "NAME": "탬탬",
     "FLAVOR": "쿵.",
     "DESCRIPTIONS": [
-      "이전 턴에 #y방어도가 파괴되지 않았다면, 자신과 모든 적들이 #y힘을 #b1 얻습니다."
+      "Whenever you start your turn with #yBlock, you gain #b2 Strength and ALL enemies gain #b1 #yStrength."
     ]
   },
   "reliquary:TankTop": {
@@ -980,7 +983,7 @@
     "NAME": "쌍둥이 진주",
     "FLAVOR": "이 진주는 모든 부분이 완전히 동일해서 구별이 불가능합니다. 어쩄든 충분히 가깝다는 것만은 확실합니다.",
     "DESCRIPTIONS": [
-      "전투 시작시, #y진주빛 1 장을 얻습니다."
+      "You start each odd-numbered turn with #yPearlescence in your hand."
     ]
   },
   "reliquary:UnderdogBone": {

@@ -40,7 +40,7 @@
       "Deal !D! damage. NL Add a copy of this card into your discard pile. NL Deals !M! additional damage for each Anger in your discard pile.",
       "Gain !B! Block. NL Upgrade all cards in your hand twice for the rest of combat.",
       "Innate. NL Block is not removed at the start of your turn.",
-      "Gain !M! Vulnerable next turn. NL At the start of your turn, gain [R].",
+      "You and ALL enemies gain !M! Vulnerable next turn. NL At the start of your turn, gain [R].",
       "Lose 3 HP. NL Gain [R] [R] [R] [R].",
       "Deal damage equal to %d%% of your Block.",
       "Innate. NL At the start of your turn, lose !M! HP and draw !M! cards.",
@@ -157,7 +157,7 @@
     "NAME": "Корень Крэггла",
     "FLAVOR": "Этот корень пережил тяжёлые времена. Может он поможет и тебе пережить тяжелые времена?",
     "DESCRIPTIONS": [
-      "Даёт [E] в начале вашего хода. Каждый ход, первая карта, которая берётся из стопки добора, повышает свою стоимость на #b1 до конца боя."
+      "Gain [E] at the start of your turn. The first card you draw each turn costs #b1 more this combat until played."
     ]
   },
   "reliquary:Crucible": {
@@ -255,7 +255,8 @@
     "NAME": "Finger Trap",
     "FLAVOR": "Maybe if you chilled out for a second, you could get it off.",
     "DESCRIPTIONS": [
-      "You can't lose HP during your turn."
+      "Prevent the first #b",
+      " HP you would lose during your turn each combat."
     ]
   },
   "reliquary:Firecrackers": {
@@ -278,7 +279,7 @@
     "NAME": "Free Samples",
     "FLAVOR": "Everyone's going to want a piece.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. Whenever an enemy deals unblocked attack damage to you, it gains #b1 #yIntangible if it's not already."
+      "Gain [E] at the start of your turn. Whenever an enemy deals unblocked attack damage to you, it gains #b1 #yBuffer if it has none."
     ]
   },
   "reliquary:GummyVitamins": {
@@ -355,7 +356,7 @@
     "NAME": "Перекрученная пружина",
     "FLAVOR": "Кто-то перекрутил её и её больше нельзя вернуть в прежнее положение.",
     "DESCRIPTIONS": [
-      "Даёт [E] в начале вашего хода. Ваша стопка сброса перетасовывается в стопку добора, только если стопка добора пуста в конце хода."
+      "Даёт [E][E] в начале вашего хода. Ваша стопка сброса перетасовывается в стопку добора, только если стопка добора пуста в конце хода."
     ]
   },
   "reliquary:KnifeBlock": {
@@ -453,7 +454,8 @@
     "NAME": "Peacock Shield",
     "FLAVOR": "Presents a remarkable defense.",
     "DESCRIPTIONS": [
-      "Whenever you enter #yWrath, double your #yBlock."
+      "Whenever you enter #yWrath, gain #b",
+      " #yBlock, then double your #yBlock."
     ]
   },
   "reliquary:PlasmaLobster": {
@@ -590,7 +592,7 @@
     "NAME": "Красный плащ",
     "FLAVOR": "Кому нужны рога?",
     "DESCRIPTIONS": [
-      "Даёт [E] в начале вашего хода. Когда вы играете #yАтаку на одного врага, остальные враги не могут стать целью любых ваших карт, пока не погибнет атакованный враг."
+      "Gain [E] at the start of your turn. Whenever you #yAttack a single enemy, other enemies can't be attacked until it dies."
     ]
   },
   "reliquary:RedPaperclip": {
@@ -659,7 +661,7 @@
     "NAME": "Sheep's Eye Marble",
     "FLAVOR": "You feel dumber just looking at it.",
     "DESCRIPTIONS": [
-      "Whenever you play two copies of the same card in a row, play it again."
+      "The first time you play two copies of the same card in a row each turn, play it again."
     ]
   },
   "reliquary:ShortFuse": {
@@ -682,7 +684,8 @@
     "NAME": "Дополнительная колода",
     "FLAVOR": "Дополнительная колода для хранения карт...",
     "DESCRIPTIONS": [
-      "Если активирована, то все добавляемые карты добавляются в отдельную колоду. Вы можете переместить карты из дополнительной колоды в вашу основную колоду только между боями. (Не нажимать на отдельную колоду в кострах)",
+      "Upon pickup, gain #b",
+      " #yGold. Chosen card rewards go into a separate pile. You can move cards from that pile to your deck between combats.",
       "Дополнительная колода",
       "Добавляйте карты из вашей дополнительной колоды в вашу основную колоду между боями",
       " NL [#2aecd7]Нажмите [#2aecd7]Правой [#2aecd7]кнопкой [#2aecd7]мыши [#2aecd7]для [#2aecd7]отключения [#2aecd7]действия [#2aecd7]реликвии .[]",
@@ -741,7 +744,7 @@
       "Deal !D! damage. NL Next turn, draw !M! additional cards.",
       "Deal !D! damage !M! times.",
       "Put !M! cards from your hand on top of your draw pile. NL They cost 0 until played.",
-      "If X is 5 or more, increase it by 2. NL Deal !D! damage X times.",
+      "If X is 4 or more, increase it by 2. NL Deal !D! damage X times.",
       "Discard your hand. NL Add 1 *Shiv++ into your hand for each card discarded.",
       "Unplayable. NL If this card is discarded from your hand, gain [G] [G] [G].",
       "Apply 99 Vulnerable. NL Apply Slow. NL Exhaust.",
@@ -847,7 +850,7 @@
     "NAME": "Гонг",
     "FLAVOR": "Поиграем в \"Что?Где?Когда?\"?",
     "DESCRIPTIONS": [
-      "Даёт #b1 #yСилу вам и ВСЕМ врагам, если в начале вашего хода у вас есть #yЗащита."
+      "Whenever you start your turn with #yBlock, you gain #b2 Strength and ALL enemies gain #b1 #yStrength."
     ]
   },
   "reliquary:TankTop": {
@@ -947,7 +950,7 @@
     "NAME": "Twin Pearls",
     "FLAVOR": "They are completely identical in every way, impossible to tell apart. Close enough, anyway.",
     "DESCRIPTIONS": [
-      "You start each turn with #yPearlescence in your hand."
+      "You start each odd-numbered turn with #yPearlescence in your hand."
     ]
   },
   "reliquary:UnderdogBone": {

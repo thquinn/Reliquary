@@ -211,7 +211,7 @@
   "reliquary:Taunt": {
     "NAME": "Taunt",
     "DESCRIPTIONS": [
-      "Other enemies can't be targeted until this enemy dies.",
+      "Other enemies can't be attacked until this enemy dies.",
       "Another enemy is #r@Taunting@ me!"
     ]
   },

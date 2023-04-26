@@ -8,6 +8,7 @@ import com.evacipated.cardcrawl.mod.stslib.relics.ClickableRelic;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.cards.CardSave;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
@@ -28,6 +29,7 @@ public class RelicSideboard extends CustomRelic implements CustomSavable<List<Ca
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/sideboard.png");
 
     public static SideboardButton sideboardButton = new SideboardButton();
+    public static int PICKUP_GOLD = 100;
     public static int COUNTER_ENABLED = -1;
     public static int COUNTER_DISABLED = -2;
 
@@ -48,6 +50,9 @@ public class RelicSideboard extends CustomRelic implements CustomSavable<List<Ca
     public void onEquip() {
         BaseMod.addTopPanelItem(sideboardButton);
         counter = COUNTER_ENABLED;
+        CardCrawlGame.sound.play("GOLD_GAIN");
+        AbstractDungeon.player.gainGold(PICKUP_GOLD);
+        setDescriptionAfterLoading();
     }
 
     public boolean isEnabled() {
@@ -122,7 +127,7 @@ public class RelicSideboard extends CustomRelic implements CustomSavable<List<Ca
     }
 
     public void setDescriptionAfterLoading() {
-        description = DESCRIPTIONS[0] + (isEnabled() ? DESCRIPTIONS[3] : DESCRIPTIONS[4]);
+        description = DESCRIPTIONS[0] + PICKUP_GOLD + DESCRIPTIONS[1] + (isEnabled() ? DESCRIPTIONS[4] : DESCRIPTIONS[5]);
         tips.clear();
         tips.add(new PowerTip(name, description));
         initializeTips();
@@ -130,7 +135,7 @@ public class RelicSideboard extends CustomRelic implements CustomSavable<List<Ca
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0];
+        return DESCRIPTIONS[0] + PICKUP_GOLD + DESCRIPTIONS[1];
     }
     @Override
     public AbstractRelic makeCopy()

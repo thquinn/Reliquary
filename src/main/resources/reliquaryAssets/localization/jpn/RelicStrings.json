@@ -40,7 +40,7 @@
       "!D! ダメージを与える。 NL このカードの複製を NL 捨て札に加える。 NL 捨て札にある怒りの枚数ｘ !M! の追加ダメージを与える。",
       "!B! ブロック を得る。 NL 戦闘終了まで手札のカードすべてを2回 アップグレード する。",
       "天賦 NL ターン開始時にブロック値を失わない。",
-      "次のターン、 弱体 !M! を得る。 NL ターン開始時、 [R] を得る。",
+      "You and ALL enemies gain !M! Vulnerable next turn. NL At the start of your turn, gain [R].",
       "[R] [R] [R] [R] を得る。 NL HPを3失う。",
       "現在のブロック値の NL %d%% のダメージを与える。",
       "天賦 NL ターン開始時、HPを !M! 失いカードを !M! 枚引く。",
@@ -158,7 +158,7 @@
     "NAME": "ごつごつした根",
     "FLAVOR": "この根はいくつもの困難な時代を見てきた。あなたのことも同じように見ているのだろうか？",
     "DESCRIPTIONS": [
-      "ターン開始時に、 [E] を得る。毎ターン、最初に引いたカードのコストがこの戦闘中 #b1 増加する。"
+      "Gain [E] at the start of your turn. The first card you draw each turn costs #b1 more this combat until played."
     ]
   },
   "reliquary:Crucible": {
@@ -267,7 +267,8 @@
     "NAME": "フィンガートラップ",
     "FLAVOR": "少し冷静になれば、気持ちが楽になるだろう。",
     "DESCRIPTIONS": [
-      "あなたのターン中、あなたはHPを失わなくなる。"
+      "Prevent the first #b",
+      " HP you would lose during your turn each combat."
     ]
   },
   "reliquary:Firecrackers": {
@@ -290,7 +291,7 @@
     "NAME": "無料サンプル",
     "FLAVOR": "誰もが欲しがる。",
     "DESCRIPTIONS": [
-      "ターン開始時、 [E] を得る。敵があなたにブロックされていないアタックのダメージを与えたとき、その敵に #y無形 がなければ #y無形 #b1 を得る。"
+      "Gain [E] at the start of your turn. Whenever an enemy deals unblocked attack damage to you, it gains #b1 #yBuffer if it has none."
     ]
   },
   "reliquary:GummyVitamins": {
@@ -368,7 +369,7 @@
     "NAME": "ねじれたバネ",
     "FLAVOR": "誰かがひねって元に戻らなくなった。",
     "DESCRIPTIONS": [
-      "ターン開始時に、 [E] を得る。山札が空でターンを終了したときのみ、捨て札がシャッフルされるようになる。"
+      "ターン開始時に、 [E][E] を得る。山札が空でターンを終了したときのみ、捨て札がシャッフルされるようになる。"
     ]
   },
   "reliquary:KnifeBlock": {
@@ -469,7 +470,8 @@
     "NAME": "孔雀の盾",
     "FLAVOR": "高い防御能力がある。",
     "DESCRIPTIONS": [
-      " #y憤怒 のスタンスに入るたび、現在の #yブロック の値が2倍になる。"
+      "Whenever you enter #yWrath, gain #b",
+      " #yBlock, then double your #yBlock."
     ]
   },
   "reliquary:PlasmaLobster": {
@@ -607,7 +609,7 @@
     "NAME": "赤いマント",
     "FLAVOR": "角の欲しい人は？",
     "DESCRIPTIONS": [
-      "ターン開始時に、 [E] を得る。敵に単体の #yアタック を行うと、その敵が死亡するまで他の敵を攻撃できなくなる。"
+      "Gain [E] at the start of your turn. Whenever you #yAttack a single enemy, other enemies can't be attacked until it dies."
     ],
     "NOTE_FOR_TRANSLATORS": "This is a matador's cape."
   },
@@ -679,7 +681,7 @@
     "NAME": "大理石の羊の目",
     "FLAVOR": "眺めていると馬鹿になった気がする。",
     "DESCRIPTIONS": [
-      "同じカードを2枚連続でプレイしたとき、もう一度プレイする。"
+      "The first time you play two copies of the same card in a row each turn, play it again."
     ]
   },
   "reliquary:ShortFuse": {
@@ -703,7 +705,8 @@
     "NAME": "サイドボード",
     "FLAVOR": "カードを置いておくためのボード…ただの板？",
     "DESCRIPTIONS": [
-      "カード報酬を選択するとデッキとは別の山に保持される。非戦闘時にその山からデッキにカードを移すことができる。",
+      "Upon pickup, gain #b",
+      " #yGold. Chosen card rewards go into a separate pile. You can move cards from that pile to your deck between combats.",
       "サイドボード",
       "非戦闘時にサイドボードからデッキにカードを移す。",
       " NL [#2aecd7]右クリックでオフ。[]",
@@ -767,7 +770,7 @@
       "!D! ダメージを与える。 NL 次のターン開始時、カードを !M! 枚引く。",
       "!D! ダメージを !M! 回与える。",
       "手札のカード !M! 枚を山札の1番上に置く。 NL プレイされるまでそのコストは0。",
-      "Xが5以上の場合、2増加する。 NL !D! ダメージを X 回与える。",
+      "Xが4以上の場合、2増加する。 NL !D! ダメージを X 回与える。",
       "手札をすべて捨てる。 NL 捨てたカード1枚につき、 *ナイフ++ を1枚手札に加える。",
       "使用不可 NL このカードを捨てたとき、 [G] [G] [G] を得る。",
       "弱体 99 を与える。 NL スロー を与える。 NL 廃棄",
@@ -878,7 +881,7 @@
     "NAME": "タムタム",
     "FLAVOR": "ゴーン。",
     "DESCRIPTIONS": [
-      "ターン開始時にあなたの #yブロック が残っている場合、あなたと全ての敵は #y筋力 #b1 を得る。"
+      "Whenever you start your turn with #yBlock, you gain #b2 Strength and ALL enemies gain #b1 #yStrength."
     ]
   },
   "reliquary:TankTop": {
@@ -979,7 +982,7 @@
     "NAME": "ツインパール",
     "FLAVOR": "全く同じで見分けることができない。とにかくそっくり。",
     "DESCRIPTIONS": [
-      "ターン開始時、 #yパールエッセンス を1枚手札に加える。"
+      "You start each odd-numbered turn with #yPearlescence in your hand."
     ]
   },
   "reliquary:UnderdogBone": {

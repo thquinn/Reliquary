@@ -211,7 +211,7 @@
   "reliquary:Taunt": {
     "NAME": "도발",
     "DESCRIPTIONS": [
-      "이 적이 죽을때까지 다른 적들을 지정할 수 없습니다.",
+      "Other enemies can't be attacked until this enemy dies.",
       "다른 적이 나를 #r@도발@ 하고 있어!"
     ]
   },

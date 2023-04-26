@@ -33,12 +33,12 @@ public class RelicKinkedSpring extends CustomRelic {
 
     @Override
     public void onEquip() {
-        AbstractDungeon.player.energy.energyMaster += 1;
+        AbstractDungeon.player.energy.energyMaster += 2;
     }
 
     @Override
     public void onUnequip() {
-        AbstractDungeon.player.energy.energyMaster -= 1;
+        AbstractDungeon.player.energy.energyMaster -= 2;
     }
 
     @Override

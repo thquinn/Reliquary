@@ -3,6 +3,7 @@ package relics;
 import basemod.abstracts.CustomRelic;
 import cards.colorless.CardBlastOff;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.unique.DoubleYourBlockAction;
@@ -19,6 +20,8 @@ public class RelicPeacockShield extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/peacockShield.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/peacockShield.png");
 
+    public static int BLOCK_GAIN = 2;
+
     public RelicPeacockShield() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
     }
@@ -26,13 +29,15 @@ public class RelicPeacockShield extends CustomRelic {
     @Override
     public void onChangeStance(AbstractStance prevStance, AbstractStance newStance) {
         if (newStance.ID.equals(WrathStance.STANCE_ID)) {
+            flash();
+            addToBot(new GainBlockAction(AbstractDungeon.player, BLOCK_GAIN));
             addToBot(new DoubleYourBlockAction(AbstractDungeon.player));
         }
     }
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0];
+        return DESCRIPTIONS[0] + BLOCK_GAIN + DESCRIPTIONS[1];
     }
     @Override
     public AbstractRelic makeCopy()

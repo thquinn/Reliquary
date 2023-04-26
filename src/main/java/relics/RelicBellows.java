@@ -17,7 +17,7 @@ public class RelicBellows extends CustomRelic {
     static final int N = 5;
 
     public RelicBellows() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.SOLID);
+        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.SOLID);
     }
 
     @Override

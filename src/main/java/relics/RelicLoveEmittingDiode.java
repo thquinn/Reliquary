@@ -10,10 +10,10 @@ public class RelicLoveEmittingDiode extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/loveEmittingDiode.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/loveEmittingDiode.png");
 
-    public static int MULTIPLIER = 3;
+    public static int MULTIPLIER = 2;
 
     public RelicLoveEmittingDiode() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.MAGICAL);
     }
 
     // implemented in PatchLoveEmittingDiode

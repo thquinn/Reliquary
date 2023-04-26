@@ -17,7 +17,7 @@ import java.util.Optional;
 )
 public class PatchTauntPower {
     public static SpireReturn<Boolean> Prefix(AbstractCard __instance, AbstractPlayer p, AbstractMonster m) {
-        if (__instance.target != AbstractCard.CardTarget.ENEMY || m == null || __instance.isInAutoplay) {
+        if (__instance.type != AbstractCard.CardType.ATTACK || __instance.target != AbstractCard.CardTarget.ENEMY || m == null || __instance.isInAutoplay) {
             return SpireReturn.Continue();
         }
         Optional<AbstractMonster> taunter = AbstractDungeon.getMonsters().monsters.stream().filter(mo -> !mo.halfDead && mo.hasPower(TauntPower.POWER_ID)).findAny();

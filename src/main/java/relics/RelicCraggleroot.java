@@ -3,6 +3,7 @@ package relics;
 import basemod.abstracts.CustomRelic;
 import basemod.helpers.CardModifierManager;
 import cardmods.CardModIncreaseCost;
+import cardmods.CardModIncreaseCostUntilPlayed;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
@@ -45,7 +46,7 @@ public class RelicCraggleroot extends CustomRelic {
     @Override
     public void onCardDraw(AbstractCard drawnCard) {
         if (!activated && drawnCard.cost != -1) {
-            CardModifierManager.addModifier(drawnCard, new CardModIncreaseCost(1));
+            CardModifierManager.addModifier(drawnCard, new CardModIncreaseCostUntilPlayed(1));
             drawnCard.flash(Color.RED);
             addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             activated = true;

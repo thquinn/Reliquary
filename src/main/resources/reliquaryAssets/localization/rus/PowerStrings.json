@@ -204,7 +204,7 @@
   "reliquary:Taunt": {
     "NAME": "Насмешка",
     "DESCRIPTIONS": [
-      "Остальные враги не могут стать целью ваших карт пока этот враг не умрёт.",
+      "Other enemies can't be attacked until this enemy dies.",
       "Другой враг #r@насмехается@ надо мной!"
     ]
   },

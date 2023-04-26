@@ -151,7 +151,7 @@ public class RelicRunicRemote extends CustomRelic implements CustomSavable<Runic
             } else {
                 String lookupID = id.endsWith("+") ? id.substring(0, id.length() - 1) : id;
                 AbstractCard card = CardLibrary.getCopy(lookupID);
-                if (id.endsWith("+")) {
+                if (id.endsWith("+") || AbstractDungeon.miscRng.random() < .5) {
                     card.upgrade();
                 }
                 reward.cards.add(card);

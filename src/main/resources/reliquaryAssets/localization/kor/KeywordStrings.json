@@ -20,6 +20,13 @@
   },
   {
     "NAMES": [
+      "buffer"
+    ],
+    "DESCRIPTION": "Prevents the next instance of damage.",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Buffer power from the base game."
+  },
+  {
+    "NAMES": [
       "데이터"
     ],
     "DESCRIPTION": "구체: #y밀집 을 얻습니다."

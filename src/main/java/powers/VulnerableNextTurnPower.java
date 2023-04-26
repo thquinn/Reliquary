@@ -33,6 +33,19 @@ public class VulnerableNextTurnPower extends AbstractPower {
     }
 
     public void atStartOfTurn() {
+        if (owner.isPlayer) {
+            Decrement();
+        }
+    }
+
+    @Override
+    public void atEndOfRound() {
+        if (!owner.isPlayer) {
+            Decrement();
+        }
+    }
+
+    void Decrement() {
         flash();
         addToBot(new ApplyPowerAction(owner, owner, new VulnerablePower(owner, amount, false)));
         addToBot(new RemoveSpecificPowerAction(owner, owner, POWER_ID));

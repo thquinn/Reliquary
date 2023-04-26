@@ -55,6 +55,9 @@ public class RelicEmber extends CustomRelic implements OnAfterUseCardRelic {
         if (c.freeToPlay()) {
             return;
         }
+        if (c.isInAutoplay) {
+            return;
+        }
         AbstractPlayer p = AbstractDungeon.player;
         int cost = c.cost == -1 ? c.energyOnUse : c.costForTurn;
         counter += cost;

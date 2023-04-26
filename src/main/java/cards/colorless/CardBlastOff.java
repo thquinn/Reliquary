@@ -27,7 +27,7 @@ public class CardBlastOff extends CustomCard {
 
     public CardBlastOff() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
-        baseDamage = 20;
+        baseDamage = 25;
         baseMagicNumber = 1;
         magicNumber = 1;
         exhaust = true;

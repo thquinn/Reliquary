@@ -20,7 +20,7 @@ public class PatchLoveEmittingDiode {
             AbstractPlayer p = AbstractDungeon.player;
             AbstractPower focus = p.getPower(FocusPower.POWER_ID);
             if (focus != null && focus.amount > 0 && p.hasRelic(RelicLoveEmittingDiode.ID) && p.hasOrb() && __instance == p.orbs.get(0)) {
-                __instance.passiveAmount = Math.max(0, __instance.passiveAmount + 2 * focus.amount);
+                __instance.passiveAmount = Math.max(0, __instance.passiveAmount + (RelicLoveEmittingDiode.MULTIPLIER - 1) * focus.amount);
             }
         }
     }

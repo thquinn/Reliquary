@@ -30,8 +30,14 @@ public class RelicTwinPearls extends CustomRelic {
     }
 
     @Override
+    public void atBattleStart() {
+        counter = 1;
+    }
+
+    @Override
     public void atBattleStartPreDraw() {
         // Cards aren't centered properly with this call for some reason.
+        flash();
         addToBot(new MakeTempCardInHandAction(new CardPearlescence()));
         firstTurn = true;
     }
@@ -41,9 +47,15 @@ public class RelicTwinPearls extends CustomRelic {
             firstTurn = false;
             return;
         }
-        if (AbstractDungeon.player.hand.group.stream().noneMatch(c -> c instanceof CardPearlescence)) {
+        counter++;
+        if (counter % 2 == 1 && AbstractDungeon.player.hand.group.stream().noneMatch(c -> c instanceof CardPearlescence)) {
+            flash();
             addToBot(new MakeTempCardInHandAction(new CardPearlescence()));
         }
+    }
+
+    public void onVictory() {
+        this.counter = -1;
     }
 
     @Override

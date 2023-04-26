@@ -203,7 +203,7 @@
   "reliquary:Taunt": {
     "NAME": "嘲讽",
     "DESCRIPTIONS": [
-      "直到该敌人死亡，其他敌人不能被选作目标。",
+      "Other enemies can't be attacked until this enemy dies.",
       "有另一名敌人正在 #r@嘲讽@ 我！"
     ]
   },

@@ -20,6 +20,13 @@
   },
   {
     "NAMES": [
+      "buffer"
+    ],
+    "DESCRIPTION": "Prevents the next instance of damage.",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Buffer power from the base game."
+  },
+  {
+    "NAMES": [
       "data"
     ],
     "DESCRIPTION": "Orb: Gains #yFocus."

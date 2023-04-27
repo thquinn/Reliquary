@@ -1,0 +1,71 @@
+[
+  {
+    "NAMES": [
+      "赎罪"
+    ],
+    "DESCRIPTION": "进入这一 #y姿态 时，失去 [W] [W] 。你不能改变 #y姿态 。你在下回合开始时自动离开这一 #y姿态 。"
+  },
+  {
+    "NAMES": [
+      "虔信"
+    ],
+    "DESCRIPTION": "回合开始时，获得 #y真言 。"
+  },
+  {
+    "NAMES": [
+      "偏差"
+    ],
+    "DESCRIPTION": "充能球：每回合失去1点 #y集中 。"
+  },
+  {
+    "NAMES": [
+      "缓冲"
+    ],
+    "DESCRIPTION": "阻止下一次受到的生命值损伤。",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Buffer power from the base game."
+  },
+  {
+    "NAMES": [
+      "数据"
+    ],
+    "DESCRIPTION": "充能球：获得 #y集中 。"
+  },
+  {
+    "NAMES": [
+      "黏液"
+    ],
+    "DESCRIPTION": "黏液是耗能为1的 #y状态牌 。"
+  },
+  {
+    "NAMES": [
+      "受伤", "受伤"
+    ],
+    "DESCRIPTION": "受伤是 #y不能被打出 的 #r诅咒 牌。",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Injury Curse card from the base game."
+  },
+  {
+    "NAMES": [
+      "离子"
+    ],
+    "DESCRIPTION": "当你拥有 #b2 层 #y离子 时，失去 #b2 层 #y离子 并 #y生成 #b1 个 #y闪电 充能球。"
+  },
+  {
+    "NAMES": [
+      "光明映像"
+    ],
+    "DESCRIPTION": "光明映像牌会复制你当回合打出的上一张牌。"
+  },
+  {
+    "NAMES": [
+      "缓慢"
+    ],
+    "DESCRIPTION": "你在这个回合每打出一张卡牌，有缓慢效果的生物从 #y攻击 受到的伤害增加10%。",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Slow debuff from the base game."
+  },
+  {
+    "NAMES": [
+      "蒸汽"
+    ],
+    "DESCRIPTION": "蒸汽牌取材自你的药水，但效果较微弱。它们具有 #y保留 和 #y消耗 。"
+  }
+]

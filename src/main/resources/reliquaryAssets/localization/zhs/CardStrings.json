@@ -51,7 +51,7 @@
   },
   "reliquary:VaporCultistPotion": {
     "NAME": "仪式蒸汽",
-    "DESCRIPTION": "保留 。 NL 获得1点仪式并失去 !M! 点 力量 。"
+    "DESCRIPTION": "保留 。 NL 获得1层 仪式 并失去 !M! 点 力量 。"
   },
   "reliquary:VaporCunningPotion": {
     "NAME": "欺诈蒸汽",
@@ -140,7 +140,7 @@
   },
   "reliquary:VaporLiquidBronze": {
     "NAME": "多刺蒸汽",
-    "DESCRIPTION": "保留 。 NL 获得 !M! 点 荆棘 。"
+    "DESCRIPTION": "保留 。 NL 获得 !M! 层 荆棘 。"
   },
   "reliquary:VaporLiquidMemories": {
     "NAME": "追昔蒸汽",

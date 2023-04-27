@@ -19,9 +19,9 @@
   },
   {
     "NAMES": [
-      "buffer"
+      "缓冲"
     ],
-    "DESCRIPTION": "Prevents the next instance of damage.",
+    "DESCRIPTION": "阻止下一次受到的生命值损伤。",
     "NOTE_FOR_TRANSLATORS": "This is a keyword for the Buffer power from the base game."
   },
   {

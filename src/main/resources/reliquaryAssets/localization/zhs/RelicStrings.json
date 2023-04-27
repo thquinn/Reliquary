@@ -40,7 +40,7 @@
       "造成 !D! 点伤害。 NL 在弃牌堆放入一张此牌的复制品。 NL 弃牌堆每有一张愤怒，额外造成 !M! 点伤害。",
       "获得 !B! 点 格挡 。 NL 在本场战斗中 升级 手牌中的所有牌两次。",
       "固有 。 NL 格挡 不再在你的回合开始时消失。",
-      "You and ALL enemies gain !M! Vulnerable next turn. NL At the start of your turn, gain [R].",
+      "所有角色下回合获得 !M! 层 易伤 。 NL 在每回合开始时获得 [R] 。",
       "失去3点生命。 NL 获得 [R] [R] [R] [R] 。",
       "造成你当前 格挡 值的 %d%% 的伤害。",
       "固有 。 NL 在你的回合开始时，你失去 !M! 点生命，抽 !M! 张牌。",
@@ -152,7 +152,7 @@
     "NAME": "嶙峋之根",
     "FLAVOR": "疾风知劲根。",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. The first card you draw each turn costs #b1 more this combat until played."
+      "每回合开始获得 [E] 。你每回合抽到的第一张牌在被打出之前耗能增加 #b1 。（不计算耗能为X的牌。）"
     ]
   },
   "reliquary:Crucible": {
@@ -250,8 +250,8 @@
     "NAME": "手指夹",
     "FLAVOR": "说不定你冷静一下就能把手拿出来。",
     "DESCRIPTIONS": [
-      "Prevent the first #b",
-      " HP you would lose during your turn each combat."
+      "每场战斗中，阻止你在自己的回合中受到的前 #b",
+      " 点生命值损伤。"
     ]
   },
   "reliquary:Firecrackers": {
@@ -274,7 +274,7 @@
     "NAME": "试吃品",
     "FLAVOR": "人人都爱它。",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. Whenever an enemy deals unblocked attack damage to you, it gains #b1 #yBuffer if it has none."
+      "每回合开始获得 [E] 。没有 #y缓冲 的敌人如果对你造成了未被格挡的 #y攻击 伤害，在其回合结束时获得 #b1 层 #y缓冲 。"
     ]
   },
   "reliquary:GummyVitamins": {
@@ -351,7 +351,7 @@
     "NAME": "扭绞弹簧",
     "FLAVOR": "有人把它掰弯过头了，它弹不回来了。",
     "DESCRIPTIONS": [
-      "每回合开始获得 [E][E] 。只有在你的回合结束且抽牌堆为空时，你的弃牌堆才会洗入抽牌堆。"
+      "每回合开始获得 [E] [E] 。只有在你的回合结束且抽牌堆为空时，你的弃牌堆才会洗入抽牌堆。"
     ]
   },
   "reliquary:KnifeBlock": {
@@ -413,7 +413,7 @@
     "NAME": "显灵板",
     "FLAVOR": "也没多么神秘，你玩玩便知。",
     "DESCRIPTIONS": [
-      "每回合限一次，从你的弃牌堆中打出一张牌（目标随机而定），然后将其放入你的抽牌堆。注意，使用这件遗物打出牌需要 #r额外 消耗 #b1 点能量。",
+      "每回合限一次，从你的弃牌堆中打出一张牌（目标随机而定），然后将其放入你的抽牌堆。注意，使用这件遗物打出牌需要 #r额外 花费 #b1 点能量。",
       "我在这回合已经使用过这件遗物了。",
       "我的弃牌堆是空的。",
       "我没有足够的能量来打出我弃牌堆中的任何牌。",
@@ -449,15 +449,15 @@
     "NAME": "孔雀之屏",
     "FLAVOR": "这屏障不可小觑。",
     "DESCRIPTIONS": [
-      "Whenever you enter #yWrath, gain #b",
-      " #yBlock, then double your #yBlock."
+      "每当你进入 #y愤怒 ，获得 #b",
+      " 点 #y格挡 ，然后将你的 #y格挡 翻倍。"
     ]
   },
   "reliquary:PlasmaLobster": {
     "NAME": "等离子虾",
     "FLAVOR": "带有雨和泥土的气息。",
     "DESCRIPTIONS": [
-      "当你拥有 #y格挡 时，你的 #y攻击 伤害增加 #b",
+      "当你拥有 #y格挡 时，造成的 #y攻击 伤害增加 #b",
       " 。"
     ]
   },
@@ -587,7 +587,7 @@
     "NAME": "红披风",
     "FLAVOR": "这些牛角谁想要啊？",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. Whenever you #yAttack a single enemy, other enemies can't be attacked until it dies."
+      "每回合开始获得 [E] 。每当你 #y攻击 某个单个敌人，直到该敌人死亡，其他敌人不能被选作攻击目标。"
     ]
   },
   "reliquary:RedPaperclip": {
@@ -655,7 +655,7 @@
     "NAME": "魅惑弹珠",
     "FLAVOR": "一眼万年。",
     "DESCRIPTIONS": [
-      "The first time you play two copies of the same card in a row each turn, play it again."
+      "每当你在一回合中连续打出两张同名牌，第二张牌会再被打出一次。每回合限一次。"
     ]
   },
   "reliquary:ShortFuse": {
@@ -678,8 +678,8 @@
     "NAME": "备牌板",
     "FLAVOR": "这板子给你，你可以把卡牌存在它的……上面呢？还是里面呢？",
     "DESCRIPTIONS": [
-      "Upon pickup, gain #b",
-      " #yGold. Chosen card rewards go into a separate pile. You can move cards from that pile to your deck between combats.",
+      "拾起时，获得 #b",
+      " #y金币 。选择的卡牌奖励现在会进入另一个单独的牌堆。战斗外，你可以将卡牌从此牌堆移动到你的牌组。",
       "备牌板",
       "战斗外，将卡牌从备牌板移动到你的牌组。",
       " NL [#2aecd7]右击以关闭。[]",
@@ -843,7 +843,7 @@
     "NAME": "铜锣",
     "FLAVOR": "轰。",
     "DESCRIPTIONS": [
-      "Whenever you start your turn with #yBlock, you gain #b2 Strength and ALL enemies gain #b1 #yStrength."
+      "每当你在拥有 #y格挡 的情况下开始回合，你获得 #b2 点 #y力量 ，所有敌人也获得 #b1 点 #y力量 。"
     ]
   },
   "reliquary:TankTop": {
@@ -942,7 +942,7 @@
     "NAME": "双子珍珠",
     "FLAVOR": "它们处处完全相同，无法区分。反正是形影不离。",
     "DESCRIPTIONS": [
-      "You start each odd-numbered turn with #yPearlescence in your hand."
+      "奇数回合开始时，增加一张 #y光明映像 到你的手牌。"
     ]
   },
   "reliquary:UnderdogBone": {

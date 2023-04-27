@@ -51,7 +51,7 @@
   },
   "reliquary:VaporCultistPotion": {
     "NAME": "仪式蒸汽",
-    "DESCRIPTION": "保留 。 NL 获得1层 *仪式 并失去 !M! 点 力量 。"
+    "DESCRIPTION": "保留 。 NL 获得1层 仪式 并失去 !M! 点 力量 。"
   },
   "reliquary:VaporCunningPotion": {
     "NAME": "欺诈蒸汽",

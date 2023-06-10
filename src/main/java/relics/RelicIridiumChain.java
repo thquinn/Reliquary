@@ -25,7 +25,7 @@ public class RelicIridiumChain extends CustomRelic {
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
-        if (c.type != AbstractCard.CardType.POWER)
+        if (c.type != AbstractCard.CardType.POWER || c.cost < 0)
             return;
         AbstractCard copy = c.makeStatEquivalentCopy();
         CardModifierManager.addModifier(copy, new CardModIncreaseCost(1));

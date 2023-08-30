@@ -70,6 +70,14 @@
       "to see which string corresponds to which Ironclad card. Indices start at 0!"
     ]
   },
+  "reliquary:BloodFilter": {
+    "NAME": "Blood Filter",
+    "FLAVOR": "Gives you a second chance at life, as long as you take care of yourself...",
+    "DESCRIPTIONS": [
+      "Whenever you lose HP during your turn, regain it at the end of combat."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This relic was made in honor of our wonderful SPA translator Dextro!"
+  },
   "reliquary:BloodSugar": {
     "NAME": "Blood Sugar",
     "FLAVOR": "You know you shouldn't, but you just can't help yourself!",
@@ -369,7 +377,7 @@
     "NAME": "Kinked Spring",
     "FLAVOR": "Someone overwound this thing, and it ain't comin' back.",
     "DESCRIPTIONS": [
-      "Gain [E][E] at the start of your turn. Your discard pile only shuffles into your draw pile when you end your turn with an empty draw pile."
+      "Gain [E] [E] at the start of your turn. Your discard pile only shuffles into your draw pile when you end your turn with an empty draw pile."
     ]
   },
   "reliquary:KnifeBlock": {

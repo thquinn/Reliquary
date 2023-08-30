@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.rooms.MonsterRoomBoss;
 import util.TextureLoader;
 
 import java.util.Arrays;
@@ -35,6 +36,9 @@ public class RelicFerryPass extends CustomRelic implements ClickableRelic {
 
     String[] getCardIDs() {
         return AbstractDungeon.player.masterDeck.group.stream().filter(c -> c.cost != -2).map(c -> c.cardID).distinct().toArray(String[]::new);
+    }
+    boolean isAct3Boss() {
+        return AbstractDungeon.actNum == 3 && AbstractDungeon.getCurrRoom() instanceof MonsterRoomBoss;
     }
 
     @Override
@@ -73,6 +77,9 @@ public class RelicFerryPass extends CustomRelic implements ClickableRelic {
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
+        if (isAct3Boss()) {
+            return;
+        }
         if (counter == -2) {
             return;
         }

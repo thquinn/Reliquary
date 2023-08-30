@@ -21,7 +21,7 @@ public class ApplyTauntAction extends AbstractGameAction {
     @Override
     public void update() {
         isDone = true;
-        if (AbstractDungeon.getMonsters().monsters.stream().anyMatch(mo -> mo.hasPower(TauntPower.POWER_ID))) {
+        if (TauntPower.getTaunter() != null) {
             return;
         }
         addToTop(new ApplyPowerAction(target, AbstractDungeon.player, new TauntPower(target)));

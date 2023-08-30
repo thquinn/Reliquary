@@ -1,0 +1,226 @@
+{
+  "reliquary:BlastOff": {
+    "NAME": "Despegue!",
+    "DESCRIPTION": "Haz !D! de daño y aplica !M! Vulnerable a TODOS los enemigos. NL .",
+    "NOTE_FOR_TRANSLATORS": "The card name is the culmination of a rocket launch countdown: 3, 2, 1, blast off!"
+  },
+  "reliquary:Pearlescence": {
+    "NAME": "Nacarado",
+    "DESCRIPTION": "Nacarado",
+    "EXTENDED_DESCRIPTION": [
+      "Debo jugar otra carta primero."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The description should match the translation of the pearlescence keyword. (Test it. Is accord the keyword that i put in Spanish)"
+  },
+  "reliquary:VaporAmbrosia": {
+    "NAME": "Vapor Ambrosía",
+    "DESCRIPTION": "Retiene. NL Gana !M! Mantra. NL Agota.",
+    "NOTE_FOR_TRANSLATORS": "Each of these 'Vapor' cards corresponds to one of the 42 potions in the game."
+  },
+  "reliquary:VaporAncientPotion": {
+    "NAME": "Vapor Antiguo",
+    "DESCRIPTION": "Retiene. NL Quita 1 Artefacto del enemigo. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Quita 1 Artefacto de TODOS los enemigos. NL Agota."
+  },
+  "reliquary:VaporAttackPotion": {
+    "NAME": "Vapor Enloquecedor",
+    "DESCRIPTION": "Retiene. NL Añade una carta de ataque aleatoria a tu mano. Cuesta 0 este turno. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Añade !M! copias de un ataque aleatorio a tu mano. Cuestan 0 este turno. NL Agota."
+  },
+  "reliquary:VaporBlessingOfTheForge": {
+    "NAME": "Vapor de Enfriamiento",
+    "DESCRIPTION": "Retiene. NL Mejora una carta aleatoria en tu mano por el resto del combate. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Mejora la mitad de las cartas de tu mano durante el resto del combate, redondeando hacia arriba, al azar. NL Agota."
+  },
+  "reliquary:VaporBlockPotion": {
+    "NAME": "Vapor envolvente",
+    "DESCRIPTION": "Retiene. NL Gana !B! Bloqueo. NL Agota."
+  },
+  "reliquary:VaporBloodPotion": {
+    "NAME": "Vapor de sangre",
+    "DESCRIPTION": "Retiene. NL Cura el !M! % de tus NL PV Maximos. NL Agota."
+  },
+  "reliquary:VaporBottledMiracle": {
+    "NAME": "Vapor Milagroso",
+    "DESCRIPTION": "Retiene. NL Añade un *Milagro a tu mano. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Añade un *Milagro+ a tu mano. NL Agota."
+  },
+  "reliquary:VaporColorlessPotion": {
+    "NAME": "Vapor Transparente",
+    "DESCRIPTION": "Retiene. NL Añade una carta Incolora a tu mano. Cuesta 0 este turno. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Añade !M! copias de una carta incolora a tu mano. Cuestan 0 este turno. NL Agota."
+  },
+  "reliquary:VaporCultistPotion": {
+    "NAME": "Vapor Ritual",
+    "DESCRIPTION": "Retiene. NL Gana 1 Ritual y Pierde !M! Strength."
+  },
+  "reliquary:VaporCunningPotion": {
+    "NAME": "Vapor Engañoso",
+    "DESCRIPTION": "Retiene. NL Añade una *Navaja+ a tu mano. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Añade !M! *Navaja+ a tu mano. NL Agota."
+  },
+  "reliquary:VaporDexterityPotion": {
+    "NAME": "Vapor Arremolinado",
+    "DESCRIPTION": "Retiene. NL Gana !M! Destreza."
+  },
+  "reliquary:VaporDistilledChaos": {
+    "NAME": "Vapor Caótico",
+    "DESCRIPTION": "Retiene. NL Juega la primera carta de tu pila de robado. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Juega las !M! primeras cartas de tu pila de robado. NL Agota."
+  },
+  "reliquary:VaporDuplicationPotion": {
+    "NAME": "Vapor Vaporoso",
+    "DESCRIPTION": "Retiene. NL Este turno, tu siguiente carta de coste 0 o 1 se juega 2 veces. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Este turno, tus !M! siguientes cartas de cost 0 o 1 se juegan 2 veces. NL Agota."
+  },
+  "reliquary:VaporElixir": {
+    "NAME": "Vapor Limpiador",
+    "DESCRIPTION": "Retiene. NL Agota una carta de estado o Maldicion en tu mano aleatoriamente. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Agota todas las cartas de estado y maldicion en tu mano. NL Agota."
+  },
+  "reliquary:VaporEnergyPotion": {
+    "NAME": "Vapor Energético",
+    "DESCRIPTION": "Retiene. NL Gana [W]. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Gana [E] [E]. NL Agota."
+  },
+  "reliquary:VaporEntropicBrew": {
+    "NAME": "Vapor Entrópico",
+    "DESCRIPTION": "Retiene. NL Una de tus pociones se convierte en una nueva pocion aleatoriamente. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Tus pociones se convierten en una nueva pocion aleatoriamente. NL Agota."
+  },
+  "reliquary:VaporEssenceOfDarkness": {
+    "NAME": "Vapor Oscuro",
+    "DESCRIPTION": "Retiene. NL Activa la habilidad pasiva de todos tus orbes de oscuridad. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Activa la habilidad pasiva de todos tur orbes de oscuridad !M! veces. NL Agota."
+  },
+  "reliquary:VaporEssenceOfSteel": {
+    "NAME": "Vapor de Acero",
+    "DESCRIPTION": "Retiene. NL Gana !M! Armadura de Placas."
+  },
+  "reliquary:VaporExplosivePotion": {
+    "NAME": "Vapor Explosivo",
+    "DESCRIPTION": "Retiene. NL Haz !D! de daño a TODOS los enemigos. NL Agota."
+  },
+  "reliquary:VaporFairyInABottle": {
+    "NAME": "Vapor Aislante",
+    "DESCRIPTION": "Retiene. NL Previene la proxima vez que vayas a perder PV. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Previene las proximas !M! veces que vayas a perder PV. NL Agota."
+  },
+  "reliquary:VaporFearPotion": {
+    "NAME": "Vapor Amenazador",
+    "DESCRIPTION": "Retiene. NL Aplica !M! Vulnerable. NL Agota."
+  },
+  "reliquary:VaporFirePotion": {
+    "NAME": "Vapor Ardiente",
+    "DESCRIPTION": "Retiene. NL Haz !D! de daño. NL Agota."
+  },
+  "reliquary:VaporFlexPotion": {
+    "NAME": "Vapor Beefy",
+    "DESCRIPTION": "Retiene. NL Gana !M! de Fuerza. NL Al final del turno, pierde !M! Fuerza. NL Agota."
+  },
+  "reliquary:VaporFocusPotion": {
+    "NAME": "Vapor Concentrado",
+    "DESCRIPTION": "Retiene. NL Gana !M! Concentracion. NL Agota."
+  },
+  "reliquary:VaporFruitJuice": {
+    "NAME": "Vapor Frutal",
+    "DESCRIPTION": "Retiene. NL Gana !M! PV Maximos. NL Agota."
+  },
+  "reliquary:VaporGamblersBrew": {
+    "NAME": "Vapor Cambiante",
+    "DESCRIPTION": "Retiene. NL Descarta 1 carta al azar, luego roba 1 carta. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Descarta tu mano, luego roba la misma cantidad de cartas. NL Agota."
+  },
+  "reliquary:VaporGhostInAJar": {
+    "NAME": "Vapor Fantasmal",
+    "DESCRIPTION": "Retiene. NL Tienes !M! % de probabilidad de aplicar 1 Intangible. NL Agota."
+  },
+  "reliquary:VaporHeartOfIron": {
+    "NAME": "Vapor Brillante",
+    "DESCRIPTION": "Retiene. NL Gana !M! Metalizado."
+  },
+  "reliquary:VaporLiquidBronze": {
+    "NAME": "Vapor Espinoso",
+    "DESCRIPTION": "Retiene. NL Gana !M! Espinas."
+  },
+  "reliquary:VaporLiquidMemories": {
+    "NAME": "Vapor Deja",
+    "DESCRIPTION": "Retiene. NL Devuelve una carta aleatoria de tu pila de descartes a tu mano. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Devuelve !M! cartas aleatorias de tu pila de descartes a tu mano. NL Agota."
+  },
+  "reliquary:VaporPoisonPotion": {
+    "NAME": "Vapor Venenoso",
+    "DESCRIPTION": "Retiene. NL Aplica !M! Veneno. NL Agota."
+  },
+  "reliquary:VaporPotionOfCapacity": {
+    "NAME": "Vapor Ondulante",
+    "DESCRIPTION": "Retiene. NL Gana 1 espacio de Orbe.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Gana !M! espacios de Orbe."
+  },
+  "reliquary:VaporPowerPotion": {
+    "NAME": "Vapor Poderoso",
+    "DESCRIPTION": "Retiene. NL Añade una carta de poder aleatoria a tu mano. Cuesta 0 este turno. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Añade !M! copias de una carta de poder aleatoria a tu mano. Cuestan 0 este turno. NL Agota."
+  },
+  "reliquary:VaporRegenPotion": {
+    "NAME": "Vapor Permeable",
+    "DESCRIPTION": "Retiene. NL Gana !M! de Regeneracion."
+  },
+  "reliquary:VaporSkillPotion": {
+    "NAME": "Vapor Brillante",
+    "DESCRIPTION": "Retiene. NL Añade una carta de habilidad aleatoria a tu mano. Cuesta 0 este turno. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Añade !M! copias de una carta de habilidad aleatoria a tu mano. Cuestan 0 este turno. NL Agota."
+  },
+  "reliquary:VaporSmokeBomb": {
+    "NAME": "Vapor Oscurecedor",
+    "DESCRIPTION": "Retiene. NL Gasta !M! de Oro para escapar de un combate que no sea contra un jefe. No recibes recompensas. NL Agota.",
+    "EXTENDED_DESCRIPTION": [
+      "No tengo el oro para distraelos!",
+      "Estoy rodeado!",
+      "Es demasiado poderoso!",
+      "Son demasiado poderosos!"
+    ]
+  },
+  "reliquary:VaporSneckoOil": {
+    "NAME": "Vapor Silbante",
+    "DESCRIPTION": "Retiene. NL Randomiza el coste de la mitad de las cartas de tu mano, hacia arriba. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Randomiza el coste de las cartas de tu mano. NL Agota."
+  },
+  "reliquary:VaporSpeedPotion": {
+    "NAME": "Vapor fresco",
+    "DESCRIPTION": "Retiene. NL Gana !M! Destreza. NL Al final de tu turno, pierde !M! Destreza. NL Agota."
+  },
+  "reliquary:VaporStancePotion": {
+    "NAME": "Vapor Equilibrado",
+    "DESCRIPTION": "Retiene. NL Si no estás en una postura, entra en Calma o Cálera aleatoriamente. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Si estas en Calma o Cólera, entra en la otra postura. NL Agota.",
+    "EXTENDED_DESCRIPTION": [
+      "No puedo hacerlo mientras estoy en una postura.",
+      "Debo estar en Calma o en Cólera para hacerlo."
+    ]
+  },
+  "reliquary:VaporStrengthPotion": {
+    "NAME": "Vapor Fuerte",
+    "DESCRIPTION": "Retiene. NL Gana !M! de Fuerza."
+  },
+  "reliquary:VaporSwiftPotion": {
+    "NAME": "Vapor rápido",
+    "DESCRIPTION": "Retiene. NL Roba una carta. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Roba !M! cartas. NL Agota."
+  },
+  "reliquary:VaporUnknownPotion": {
+    "NAME": "Vapor Desconocido",
+    "DESCRIPTION": "Retiene. NL A{ade una carta de Vapor aleatoria a tu mano. NL Agota.",
+    "UPGRADE_DESCRIPTION": "Retiene. NL Añade !M! cartas de Vapor aleatorias a tu mano. NL Agota.",
+    "NOTE_FOR_TRANSLATORS": "This Vapor is generated by potions from other mods."
+  },
+  "reliquary:VaporWeakPotion": {
+    "NAME": "Vapor Enfermizo",
+    "DESCRIPTION": "Retiene. NL Aplica !M! Débil. NL Agota."
+  },
+  "reliquary:Vim": {
+    "NAME": "Empuje",
+    "DESCRIPTION": "Gana [E] al inicio de tu turno.",
+    "UPGRADE_DESCRIPTION": "Gana [E] [E] al inicio de tu turno."
+  }
+}

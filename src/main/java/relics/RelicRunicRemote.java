@@ -86,7 +86,7 @@ public class RelicRunicRemote extends CustomRelic implements CustomSavable<Runic
         }
         for (String id : cardIDs) {
             String lookupID = id.endsWith("+") ? id.substring(0, id.length() - 1) : id;
-            AbstractCard card = CardLibrary.getCopy(lookupID);
+            AbstractCard card = tryGetCopy(lookupID);
             if (card != null) {
                 dropIDs.add(id);
                 return;
@@ -150,11 +150,13 @@ public class RelicRunicRemote extends CustomRelic implements CustomSavable<Runic
                 reward.cards.add(card);
             } else {
                 String lookupID = id.endsWith("+") ? id.substring(0, id.length() - 1) : id;
-                AbstractCard card = CardLibrary.getCopy(lookupID);
-                if (id.endsWith("+") || AbstractDungeon.miscRng.random() < .5) {
-                    card.upgrade();
+                AbstractCard card = tryGetCopy(lookupID);
+                if (card != null) {
+                    if (id.endsWith("+") || AbstractDungeon.miscRng.random() < .5) {
+                        card.upgrade();
+                    }
+                    reward.cards.add(card);
                 }
-                reward.cards.add(card);
             }
         }
         AbstractDungeon.getCurrRoom().addCardReward(reward);
@@ -170,6 +172,14 @@ public class RelicRunicRemote extends CustomRelic implements CustomSavable<Runic
         this.perfect = save.perfect;
         this.dropIDs = save.dropIDs;
         postLoadTrigger = true;
+    }
+
+    static AbstractCard tryGetCopy(String id) {
+        try {
+            return CardLibrary.getCopy(id);
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     @Override

@@ -1,0 +1,8 @@
+{
+  "reliquary:Atonement": {
+    "NAME": "Expiación",
+    "DESCRIPTION": [
+      "Al entrar en esta #yPostura, Pierdes [W] [W] . No puedes cambiar de #yPostura. Sal de esta #yPostura al inicio de tu turno."
+    ]
+  }
+}

@@ -60,6 +60,7 @@ public class RelicSculptingSteel extends CustomRelic {
             // Reliquary
             RelicAluminiumFoil.ID,
             RelicBallBearing.ID,
+            RelicBloodFilter.ID,
             RelicBloodSugar.ID,
             RelicBoilingFlask.ID,
             RelicBookmark.ID,

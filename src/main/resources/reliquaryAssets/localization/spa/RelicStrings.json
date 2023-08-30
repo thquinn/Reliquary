@@ -1,0 +1,1042 @@
+  {
+  "reliquary:Aerogel": {
+    "NAME": "Aerogel",
+    "FLAVOR": "Pesa casi nada y es un buen aislante contra la mala suerte.",
+    "DESCRIPTIONS": [
+      "Al recoger esta reliquia, escoge una carta. Cada vez que barajes tu pila de robo con esta carta en ella. Terminara en la parte superior.",
+      "Siempre que barajes tu pila de robado con la elegida. ",
+      "Estara en la parte superior."
+    ]
+  },
+  "reliquary:AluminiumFoil": {
+    "NAME": "Papel Aluminio",
+    "FLAVOR": "Tal vez si pones esto en todas tu cartas, la gente puede que te respete.",
+    "DESCRIPTIONS": [
+      "Las recompensas de cartas tienden a estar mejoradas y de una rareza superior."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to 'foil' or 'shiny' trading cards."
+  },
+  "reliquary:BallBearing": {
+    "NAME": "Rodamiento",
+    "FLAVOR": "Mantiene las cosas rodando sin problemas.",
+    "DESCRIPTIONS": [
+      "Cada vez que barajes tu pila de robado, baraja un #yDestello #yde #yAcero o #ySutileza, escogida aleatoriamente."
+    ]
+  },
+  "reliquary:Bellows": {
+    "NAME": "Fuelle",
+    "FLAVOR": "Chico, si esto fuera mas grande que una pulgada de ancho, podria ser realmente util.",
+    "DESCRIPTIONS": [
+      "Cada #b",
+      " veces que #yAgotes una carta, baraja una carta de tus cartas Agotadas en tu pila de robado",
+      " Escoge una carta para mezclar en tu pila de robado."
+    ]
+  },
+  "reliquary:BigHammer": {
+    "NAME": "Gran Martillo",
+    "FLAVOR": "En verdad, es el martillo mas grande que jamas hayas visto.",
+    "DESCRIPTIONS": [
+      "Puedes mejorar las #rCartas Rojas una segunda vez. Al Recoger esta Reliquia, #yMejora una #yCarta Mejorada.",
+      "Haz !D! de daño. NL Añade una copia de esta carta a la pila de descarte. NL Hace !M! de daño adicional por cada Ira en tu pila de descarte.", // Anger++ /Ira++
+      "Gana !B! de Bloqueo. NL Mejora TODAS las cartan en la mano 2 veces hasta el fin del combate.", // Armaments++ / Armamentos++
+      "Innata. NL El Bloqueo ya no desaparece al inicio de cada turno.", // Barricade++ / Barricada++
+      "Tu y TODOS los enemigos ganan !M! Vulnerable el siguiente turno. NL At Gana [R] al inicio de cada turno.", // Berserk++ / Frenesi++
+      "Gana [R] [R] [R] [R]. NL Pierde 3 PV. ", // Bloodletting++ / Flebotomia++
+      "Haz daño igual al %d%% de tu Bloqueo Actual.", // Body Slam++ / Embestida++
+      "Innata. NL Al inicio de tu turno, pierde !M! PV y roba !M! cartas.", // Brutality++ / Brutalidad++
+      "Al final de tu turno, pierde 1 PV y haz !M! de daño a TODOS los enemigos, luego aumenta este daño por %d.", // Combust++ / Combustion++
+      "Innata. NL Las cartas de habilidad cuestan 0. NL Cada vez que juegues una carta de habilidad, Agotala.", // Corruption++ / Corrupcion++
+      "Cada vez que una carta es agotada o juegas una carta de Poder, roba 1 carta.", // Dark Embrace++ / Abrazo Oscuro++
+      "Haz !D! de daño. Si el enemigo es Vulnerable, gana [R] y roba 1 carta, de lo contrario aplica 1 Vulnerable.", // Dropkick++ / Patada Voladora++
+      "Crea !M! copias de una carta de Ataque o Poder en la mano.", // Dual Wield++ / A Dos Manos++
+      "Triplica tu Bloqueo Actual.", // Entrench++ / Atrincherarse++
+      "Aumenta la cantidad Max. de cartas en mano en %d. NL Cada vez que robes una carta de Estado, roba !M! cartas.", // Evolve++ / Evolucionar++
+      "Coloca una carta agotada en la mano y mejorala. NL Agota.", // Exhume++ / Desenterrar++
+      "Gana !M! de Fuerza. NL Al final de %d turnos, pierde !M! de Fuerza.", // Flex++ / Flexionar++
+      "Juega las siguientes !M! cartas de tu pila de robo y Agotalas.", // Havoc++ / Confusion++
+      "Añade una carta doble mejorada al azar a la mano. NL Su coste es 0 en este turno. NL Agota.", // Infernal Blade++ / Espada Infernal++
+      "Triplica tu Fuerza.", // Limit Break++ / Romper el limite++
+      "Pierde 6 PV. NL Gana [R] [R] [R]. NL Roba !M! cartas. NL Agota.", // Offering++ / Ofrenda++
+      "Haz !D! de daño. NL Baraja un *Desorientado en la pila de descarte.", // Reckless Charge++ / Carga Imprudente++
+      "Gana [R] [R] [R]. NL Agota.", // Seeing Red++ / Cabrearse++
+      "Gana !B! de Bloqueo. NL Si esta carta es Agotada, gana NL [R] [R] [R] y roba !M! cartas.", // Sentinel++ / Centinela++
+      "Haz !D! de daño y aplica !M! Vulnerable a TODOS los enemigos.", // Thunderclap++ / Tronido++
+      "Gana !B! de Bloqueo. NL Agota entre 1 y !M! cartas.", // True Grit++ / Verdaderas Agallas++
+      "Haz !D! de daño a TODOS los enemigos X+%d veces." // Whirlwind++ / Torbellino++
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "These are second upgrades, so all but the first string are slight variants of Ironclad cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicBigHammer.java",
+      "to see which string corresponds to which Ironclad card. Indices start at 0!"
+    ]
+  },
+  "reliquary:BloodFilter": {
+    "NAME": "Filtro de Sangre",
+    "FLAVOR": "Te da una segunda oportunidad de vivir. Siempre que te cuides...",
+    "DESCRIPTIONS": [
+      "Siempre que pierdas PV durante tu turno, los recuperas al final del combate."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This relic was made in honor of our wonderful SPA translator Dextro!"
+  },
+  "reliquary:BloodSugar": {
+    "NAME": "Azucar Sangüina",
+    "FLAVOR": "¡Sabes que no deberias, pero no puedes evitarlo!",
+    "DESCRIPTIONS": [
+      "Cada vez qie entras en una habitacion, cura #b",
+      " PV, Luego reduce ese numero en #b1. #yDescansa para volver a #b",
+      "."
+    ]
+  },
+  "reliquary:BoilingFlask": {
+    "NAME": "Frasco Hirviendo",
+    "FLAVOR": "Un Frasco redondo para hervir, de 5000ml!",
+    "DESCRIPTIONS": [
+      "Al inicio de cada combate, si tu cinturon de pociones esta lleno, escoge una carta de #yVapor y agregala a tu mano.",
+      "Wide ",
+      ""
+    ],
+    "NOTE_FOR_TRANSLATORS": "The second and third strings are the prefix and suffix for Vapors generated from the Wide Potions mod."
+  },
+  "reliquary:Bookmark": {
+    "NAME": "Marcador",
+    "FLAVOR": "\"Ahora, Donde estaaba yo...?\"",
+    "DESCRIPTIONS": [
+      "Al inicio del cada combate, roba una carta extra por cada carta Innata en tu mazo."
+    ]
+  },
+  "reliquary:Boomerang": {
+    "NAME": "Boomerang",
+    "FLAVOR": "Si amas algo, dejalo ir… o simplemente lanzalo.",
+    "DESCRIPTIONS": [
+      "Pon la primera carta que juegues cada turno en el tope de la pila de robo.",
+      "",
+      "",
+      "Pon la cuarta carta que juegues cada turno en el tope de la pila de robo."
+    ]
+  },
+  "reliquary:Bouncer": {
+    "NAME": "Rebotador",
+    "FLAVOR": "Espero que tengas un plan de aterrizaje.",
+    "DESCRIPTIONS": [
+      "Al recoger esta reliquia, escoge una carta. Se Vuelve #yInjugable. Si es descartada de tu mano, juegala.",
+      "Escoge una Carta Para ",
+      "La elegida ",
+      "es #yInjugable. Si es decartada de tu mano, juegala.",
+      "Injugable. NL ",
+      "NL Si esta carta es descartada de tu mano, se juega.",
+      "No Puedo juegar esta carta."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a spring from Sonic the Hedgehog."
+  },
+  "reliquary:BrokenClock": {
+    "NAME": "Reloj Roto",
+    "FLAVOR": "Esto se equivoca solo 2 veces al dia, de alguna manera, acierta el resto del tiempo.",
+    "DESCRIPTIONS": [
+      "Cada combate inicia con 2 turnos, luego el enemigo toma 2 turnos."
+    ]
+  },
+  "reliquary:Buckler": {
+    "NAME": "Escudo",
+    "FLAVOR": "Blazonada con el famoso sello de Cygnet de Merek. ",
+    "DESCRIPTIONS": [
+      "Las siguientes #b",
+      " veces que juegues una carta mejorable que esta en tu mazo., #yMejorala Permanentemente.",
+      "La proxima vez que juegues una carta mejorable que esta en tu mazo, #yMejorala Permanentemente.",
+      "Esta Reliquia ya ha sido usada."
+    ]
+  },
+  "reliquary:CitrusReamer": {
+    "NAME": "Escariador de Citricos",
+    "FLAVOR": "¿ Porque apretar, cuando puedes escariar ?",
+    "DESCRIPTIONS": [
+      "La primera vez en cada turno que tengas #b",
+      " cartas en mano, gana [E] ."
+    ]
+  },
+  "reliquary:Conveyor": {
+    "NAME": "Cinta Transportadora",
+    "FLAVOR": "Te lleva donde quieres ir.",
+    "DESCRIPTIONS": [
+      "Al inicio de tu turno, #yCanaliza un orbe del tipo que tengas #b",
+      " o mas #yCanalizados."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a conveyor block from the game Infinifactory."
+  },
+  "reliquary:Craggleroot": {
+    "NAME": "Raiz Crujiente",
+    "FLAVOR": "Esta raiz ha pasado por momentos dificiles. ¿Quizas tambien te Ayudara a pasar los momentos dificiles?",
+    "DESCRIPTIONS": [
+      "Gana [E] al inicio de tu turno. La primera carta que robes cada turno cuesta #b1 mas este combate hasta que se juegue."
+    ]
+  },
+  "reliquary:Crucible": {
+    "NAME": "Crisol",
+    "FLAVOR": "Mientras pueda manejar temperaturas de 451°F, deberia hacer el trabajo.",
+    "DESCRIPTIONS": [
+      "Cada vez que elimines una carta #yMejorada del mazo, #yMejora una carta aleatoria del mazo.",
+      "Cada vez que elimines una carta #yMejorada del mazo, #yMejora #b",
+      " cartas aleatorias del mazo."
+    ]
+  },
+  "reliquary:CrusadersMap": {
+    "NAME": "Mapa del Cruzado",
+    "FLAVOR": "Busca la verdad.",
+    "DESCRIPTIONS": [
+      "Señala el camino a una legendaria #yFuente #yde #yinmortalidad.",
+      "Has encontrado el Santo Grial.",
+      "~Buena~ ~Suerte...~"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This relic is a reference to Indiana Jones and the Last Crusade."
+  },
+  "reliquary:Crutches": {
+    "NAME": "Muletas",
+    "FLAVOR": "No eres el que las va a necesitar estas...",
+    "DESCRIPTIONS": [
+      "Cada vez que obtengas un #yEstado, Los enemigos pierden #b",
+      " de #yFuerza durante el proximo turno."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text implies that your enemies are the ones that will need the crutches."
+  },
+  "reliquary:Dhvaja": {
+    "NAME": "Dhvaja",
+    "FLAVOR": "La victoria sera tuya… eventualmente.",
+    "DESCRIPTIONS": [
+      "Cada vez que entras en #yDivinidad, El multiplicador de daño de #yDivinidad aumenta en #b1 este combate."
+    ],
+    "NOTE_FOR_TRANSLATORS": "https://en.wikipedia.org/wiki/Dhvaja"
+  },
+  "reliquary:ElizabethanCollar": {
+    "NAME": "Collar Isabelino",
+    "FLAVOR": "¡Si tan solo dejaras de jugar con eso…!",
+    "DESCRIPTIONS": [
+      "Al recoger esta reliquia, tus #rMaldiciones se convierten en #rHeridas. Todas las #rMaldiciones que obtengs se convierten en #rHeridas."
+    ]
+  },
+  "reliquary:Ember": {
+    "NAME": "Brasa",
+    "FLAVOR": "Hachi machi, esto esta caliente!",
+    "DESCRIPTIONS": [
+      "Gana [E] al inicio de tu turno. Toma #b",
+      " puntos de daño por cada Energia mas alla de la 3ª gastada en cada turno."
+    ],
+    "NOTE_FOR_TRANSLATORS": "'Hachi machi' is a slang exclamation expressing surprise or pain."
+  },
+  "reliquary:EXA": {
+    "NAME": "EXA",
+    "FLAVOR": "Solo tu vista sobrehumana te permite ver esta maquina nanoscopica.",
+    "DESCRIPTIONS": [
+      "Al inicio de tu turno, sino tienes orbes #yRelampagos, #yEscarchas, y/o #yOscuridad #yCanalizados, #yCanaliza un orbe de un tipo faltante aleatorio."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an EXA (EXecution Agent), a nanobot from the game EXAPUNKS."
+  },
+  "reliquary:ExpiredCoupon": {
+    "NAME": "Cupon Expirado",
+    "FLAVOR": "Vale por un 10% de descuento en \"Una Paliza.\" Quien Imprimio esto?",
+    "DESCRIPTIONS": [
+      "Cuando alcances #b",
+      " o mas daño no bloqueado en combate, Inflinge #b",
+      " de daño a TODOS los enemigos."
+    ]
+  },
+  "reliquary:FeatherDuster": {
+    "NAME": "Plumero",
+    "FLAVOR": "\"Los errores de mi vida, Yacen a mi alrededor como mucho polvo.\" - Cademo",
+    "DESCRIPTIONS": [
+      "Al recoger esta reliquia, Retira cualquier numero de cartas de tu mazo, excepto cartas de Golpes, Defenderes y #rMaldiciones.",
+      "Selecciona el numero de cartas a eliminar."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a made-up quote by a made-up person."
+  },
+  "reliquary:FerryPass": {
+    "NAME": "Boleto de Ferry",
+    "FLAVOR": "Se lee, \"Disfruta tu viaje a la isla Lastcel !\"",
+    "DESCRIPTIONS": [
+      "La proxima vez que juegues una copia de cada carta de tu mazo en combate, agrega una reliquia #yRara como recompensa.",
+      "Juega las #b",
+      " copias de cartas en tu mazo este combate para obtener una reliquia #yRara.",
+      "Juega #b",
+      " cartas unicas mas este combate para obtener una reliquia #yRara.",
+      "juega ",
+      ", y ",
+      " y ",
+      " para obtener una reliquia #yRara.",
+      " NL [#2aecd7]Click [#2aecd7]derecho [#2aecd7]para [#2aecd7]ver [#2aecd7]las cartas [#2aecd7]no jugadas [#2aecd7]en [#2aecd7] tu mano.[]",
+      "Esta Reliquia ya ha sido usada."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "'Every unique card' means every card with a different name. The upgradedness doesn't matter, e.g. 'Strike' and 'Strike+' are the same unique card.",
+      "A couple examples of what those last few strings will look like once assembled:",
+      "Play Bash, Defend, and Strike to gain a Rare relic.",
+      "Play Strike and Defend to gain a Rare relic.",
+      "Lastcel is a made-up name... I think? It's our wonderful ZHS translator's Github username."
+    ]
+  },
+  "reliquary:FingerTrap": {
+    "NAME": "Trampa de dedos",
+    "FLAVOR": "Tal vez si te relajas por un segundo, podrias quitartelo.",
+    "DESCRIPTIONS": [
+      "Previene los primeros #b",
+      " PV que puedas perder durante tu turno en cada combate."
+    ]
+  },
+  "reliquary:Firecrackers": {
+    "NAME": "Petardos",
+    "FLAVOR": "¡Hace bastante ruido!, mantenlo fuera de los niños.",
+    "DESCRIPTIONS": [
+      "El exceso de dano se inflinge a un enemigo aleatorio."
+    ]
+  },
+  "reliquary:FishingReel": {
+    "NAME": "Carrete de Pesca",
+    "FLAVOR": "Siempre habra un proximo imbecil…",
+    "DESCRIPTIONS": [
+      "Cada turno, puedes pagar #b",
+      " por una carta con la #yEnergia del siguiente turno."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to stealing from your future self."
+  },
+  "reliquary:FreeSamples": {
+    "NAME": "Muestras Gratis",
+    "FLAVOR": "Todos van a querer una pieza.",
+    "DESCRIPTIONS": [
+      "Gana [E] al inicio de tu turno. Cada vez que un enemigo inflinge daño no bloqueado, Este Gana #b1 #yBuffer si no lo tiene."
+    ]
+  },
+  "reliquary:GummyVitamins": {
+    "NAME": "Gominolas de Vitaminas",
+    "FLAVOR": "¡Mmm… Masticable!",
+    "DESCRIPTIONS": [
+      "Una vez por turno, puedes robar una carta, luego baraja un #rViscoso en tu pila de robado.",
+      "Ya lo he usado este turno."
+    ]
+  },
+  "reliquary:Hardlight": {
+    "NAME": "Casco Minero",
+    "FLAVOR": "Las palabras \"NO SEGUIR\" han sido rayadas debajo del borde.",
+    "DESCRIPTIONS": [
+      "Cuando tus PV caen a #b",
+      " o menos la primera vez, Permanentemente gana #b",
+      " de #yFuerza."
+    ]
+  },
+  "reliquary:HolyGrail": {
+    "NAME": "El Santo Grial",
+    "FLAVOR": "Has elegido... Sabiamente.",
+    "DESCRIPTIONS": [
+      "La primera vez que fueras a morir en combate, mueres en el siguiente turno"
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a quote from Indiana Jones and the Last Crusade."
+  },
+  "reliquary:HotPoker": {
+    "NAME": "Atizador Caliente",
+    "FLAVOR": "No querria ser atrapado al final de esta cosa.",
+    "DESCRIPTIONS": [
+      "Cada vez que robas una carta durante tu turno, inflinge daño equivalente a su coste a un enemigo aleatorio."
+    ]
+  },
+  "reliquary:IceCubeTray": {
+    "NAME": "Cubeta de Hielo",
+    "FLAVOR": "Todos los que sabian usar esta cosa, murieron hace mucho tiempo.",
+    "DESCRIPTIONS": [
+      "Cada #b",
+      " que agregues a tu mazo, puedes remover una carta del mazo."
+    ]
+  },
+  "reliquary:IridiumChain": {
+    "NAME": "Cadena de Iridio",
+    "FLAVOR": "Intentas contar los enlaces, pero nunca obtienes el mismo numero 2 veces.",
+    "DESCRIPTIONS": [
+      "Cada vez que juegas una carta de #yPoder , pon una copia #yEtérea en tu mano que cuesta #b1 mas.",
+      "Etérea. NL "
+    ]
+  },
+  "reliquary:IvoryTrinket": {
+    "NAME": "Baratija de Marfil",
+    "FLAVOR": "Alguien cortó un colmillo de elefante, solo para tallarlo en un colmillo mas pequeño, ¿ porqué ?",
+    "DESCRIPTIONS": [
+      "Cada #b",
+      "veces que #yRetengas un #yMilagro, agrega un #yMilagro a tu mano."
+    ]
+  },
+  "reliquary:JackalopeAntler": {
+    "NAME": "Asta de Jackalope",
+    "FLAVOR": "Cualquiera que sea la criatura de la que vino esto, debe estar corriendo de un lado a otro.",
+    "DESCRIPTIONS": [
+      "Cada vez que un enemigo muere, devuelve el coste de energia de la ultima carta que hayas jugado."
+    ]
+  },
+  "reliquary:KillPill": {
+    "NAME": "Pildora Asesina",
+    "FLAVOR": "Quedaría muy bien en la espalda de una chaqueta de cuero.",
+    "DESCRIPTIONS": [
+      "La primera vez que aplicas #yVeneno a cada enemigo en cada turno, se activa inmediatamente"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the symbol of the motorcycle gang from Akira."
+  },
+  "reliquary:KinkedSpring": {
+    "NAME": "Resorte Doblado",
+    "FLAVOR": "Alguien le dio demasiada cuerda a esta cosa, y no va a volver.",
+    "DESCRIPTIONS": [
+      "Gana [E][E] al inicio de tu turno. Tu pila de descarte solo se mezclara en tu pila de robado, cuando termines tu turno con la pila de robado vacia."
+    ]
+  },
+  "reliquary:KnifeBlock": {
+    "NAME": "Bloque para Cuchillos",
+    "FLAVOR": "\"Quién podria necesitar tantos cuchillos?\" Preguntó la persona mas estúpida del mundo.",
+    "DESCRIPTIONS": [
+      "Siempre que creas #yNavajas, crea una adicional."
+    ]
+  },
+  "reliquary:Knoch": {
+    "NAME": "Contrapeso",
+    "FLAVOR": "Sigue hundiendose en el fondo de tu mochila.",
+    "DESCRIPTIONS": [
+      "Los enemigos con #b",
+      "% o menos PV tienen #yDebil."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A knoch is just a fishing sinker: https://en.wikipedia.org/wiki/Fishing_sinker"
+  },
+  "reliquary:LeadDart": {
+    "NAME": "Dardo de Plomo",
+    "FLAVOR": "Forma sobre funcion? Funcion sobre forma? \"Que tal ninguna?\" Parece preguntar.",
+    "DESCRIPTIONS": [
+      "La primera vez que en cada combate tengas #b",
+      " cartas en mano, gana #b",
+      " de #yFuerza."
+    ]
+  },
+  "reliquary:LoveEmittingDiode": {
+    "NAME": "Diodo Emisor de Amor",
+    "FLAVOR": "Difunde el amor, según los principios de la ley del cuadrado inverso.",
+    "DESCRIPTIONS": [
+      "La #yConcentracion afecta al Orbe mas a la derecha #b",
+      " veces."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a play on light-emitting diodes, or LEDs."
+  },
+  "reliquary:MedicineBall": {
+    "NAME": "Balon Medicinal",
+    "FLAVOR": "Si solo tuvieras a alguien que lanzarle esto…",
+    "DESCRIPTIONS": [
+      "Tienes #yFuerza adicional igual a la #yFuerza mas alta entre todos los enemigos (0 minimum)."
+    ]
+  },
+  "reliquary:MudwinsCradle": {
+    "NAME": "Cuna de Mudwin",
+    "FLAVOR": "El juguete de escritorio mas popular.",
+    "DESCRIPTIONS": [
+      "Entrar en #yDivinidad requiere #b",
+      " de #yMantra menos."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a Newton's Cradle. 'Mudwin' is just a dumb name made up to sound like 'Newton.'"
+  },
+  "reliquary:NewFriend": {
+    "NAME": "Nuevo Amigo",
+    "FLAVOR": "Este pequeñin no dejara de seguirte… y vaya si tiene hambre.",
+    "DESCRIPTIONS": [
+      "Golpes y Defenderes se #yAgotan #b",
+      "% de las veces."
+    ]
+  },
+  "reliquary:OuijaBoard": {
+    "NAME": "Tablero Ouija",
+    "FLAVOR": "Tan misteriosos como tu lo hagas.",
+    "DESCRIPTIONS": [
+      "Una vez por turno, paga el coste de una carta mas #b1 para jugarla y meterla en tu pila de robado.",
+      "Ya he usado esto este turno.",
+      "Mi pila de descarte esta #rVacia.",
+      "No tengo suficiente Energia para las cartas en mi pila de descarte.",
+      "Cancelar"
+    ]
+  },
+  "reliquary:OvenMitt": {
+    "NAME": "Guante de Horno",
+    "FLAVOR": "Ya empieza a desmoronarse.",
+    "DESCRIPTIONS": [
+      "Previene las proximas #b",
+      " veces que pierdas PV.",
+      "Previene la proxima vez que vayas a perder PV.",
+      "Esta reliquia ya ha sido usada."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This shares the same DESCRIPTIONS text from the Buffer power."
+  },
+  "reliquary:PaperSnowflake": {
+    "NAME": "Copo de Nieve de Papel",
+    "FLAVOR": "¿Esto es lo que se supone que tiene que parecer?",
+    "DESCRIPTIONS": [
+      "La carta mas reciente en tu mazo cuesta #b1 mas o #b1 menos."
+    ]
+  },
+  "reliquary:PartyBalloon": {
+    "NAME": "Globo de Fiesta",
+    "FLAVOR": "En cuanto revienta… la diversion inmediatamente se termina.",
+    "DESCRIPTIONS": [
+      "Las cartas de #yPoder empiezan en el tope de tu pila de robado al inico de cada combate."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a parody of the old Pringles advertising slogan."
+  },
+  "reliquary:PeacockShield": {
+    "NAME": "Escudo del Pavo Real",
+    "FLAVOR": "Presenta una defensa notable.",
+    "DESCRIPTIONS": [
+      "Siempre que entras en #yColera, gana #b",
+      " #yBloqueo, luego dobla tu #yBloqueo."
+    ]
+  },
+  "reliquary:PlasmaLobster": {
+    "NAME": "Langosta de Plasma",
+    "FLAVOR": "Huele a tierra mojada.",
+    "DESCRIPTIONS": [
+      "Incrementa tu ataque en #b",
+      " mientras tengas #yBloqueo."
+    ]
+  },
+  "reliquary:PorcupineQuills": {
+    "NAME": "Púas de Puercoespín",
+    "FLAVOR": "Si esto te pasa. Te lo habrás merecido.",
+    "DESCRIPTIONS": [
+      "Cada vez que recibas #b",
+      " o mas daño no bloqueado, inflinge ese daño de vuelta."
+    ]
+  },
+  "reliquary:PrayerBox": {
+    "NAME": "Caja de Oraciones",
+    "FLAVOR": "Tiene la forma perfecta para contener tus cuadradas oraciones.",
+    "DESCRIPTIONS": [
+      "Conservas tu Mantra entre combates."
+    ]
+  },
+  "reliquary:PrincelyHelmet": {
+    "NAME": "Casco Principesco",
+    "FLAVOR": "Demasiado pequeño para caber en tu cabeza. Si fuera nuestra, la haríamos mucho más grande.",
+    "DESCRIPTIONS": [
+      "Dobla tus primeros X de #yBloqueo que ganes en cada combate, donde X es #b",
+      " veces del acto actual."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the headgear of the Prince of All Cosmos from the Katamari Damacy series."
+  },
+  "reliquary:PromissoryNotes": {
+    "NAME": "Pagarés",
+    "FLAVOR": "Un antiguo instrumento de subterfugio.",
+    "DESCRIPTIONS": [
+      "Cada vez que recibas un debufo de un enemigo, tu primer #yAtaque contra ese enemigo el siquiente turno hace #b",
+      " de daño adicional."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a checkbook."
+  },
+  "reliquary:PurpleTingedLeaf": {
+    "NAME": "Purple-Tinged Leaf",
+    "FLAVOR": "Esta hoja tiene el aspecto, único en todo el reino vegetal, de haber sido dibujada por un alumno de primaria.",
+    "DESCRIPTIONS": [
+      "Al recoger esta reliquia, escoge un #yAtaque. Cuando juegas esa carta, te curas #b1 .",
+      "Escoge una carta para que ",
+      "siempre que juegues la carta escogida ",
+      ", curas #b1 PV."
+    ]
+  },
+  "reliquary:Pushpin": {
+    "NAME": "Chincheta",
+    "FLAVOR": "A veces se utilizan para resolver asesinatos, pero los asesinos más hábiles pueden usarlas para cometer uno.",
+    "DESCRIPTIONS": [
+      "Las cartas en tu mano inicial se #yRetienen por el resto del combate."
+    ]
+  },
+  "reliquary:QuartzCube": {
+    "NAME": "Cubo de Cuarzo",
+    "FLAVOR": "Es como un cubo de hielo que nunca se derrite, aunque tampoco esta frio.",
+    "DESCRIPTIONS": [
+      "Al inicio de cada combate con #b",
+      " o mas enemigos, aplica #b",
+      " #yAturdido y #b",
+      " #yInvencible a uno de ellos."
+    ]
+  },
+  "reliquary:RabbitEars": {
+    "NAME": "Antena Orejas de Conejo",
+    "FLAVOR": "\"Estás escuchando la 98.7 FM: La Fiebre. No toques esa señal!\"",
+    "DESCRIPTIONS": [
+      "Puedes mejorar las cartas #bAzules una segunda vez. Al recoger esta reliquia, #yMejora una carta #yMejorada.",
+      "Gana [B] por cada !M! cartas en tu pila de robo y descarte.", // Aggregate++ / Agregar++
+      "Haz !D! de daño por cada Orbe #yInvocado, mas !M! si no tienes espacios vacios.", // Barrage++ / Bombardeo++
+      "Gana !M! de Concentración. NL Invoca 1 Sesgo.", // Biased Cognition++ / Conocimiento Parcial ++
+      "#yInnata. NL #yRetain. NL Gana !B! de #yBloqueo. NL #yAgota.", // Boot Sequence++ / Secuencia de Arranque++
+      "Gana !B! de #yBloqueo. NL Al siguiente turno, gana [B] y roba 1 carta.", // Charge Battery++ / Cargar Bateria++
+      "#yInnata. NL #yInvoca !M! #yEscarcha por cada enemigo en combate mas 1. NL #yAgota.", // Chill++ / Enfriar++
+      "Haz !D! de daño. #yInvoca !M! #yEscarcha. NL Activa la habilidad pasiva de todos tus orbes de #yEscarcha.", // Cold Snap++ / Frio Repentino++
+      "Al inicio de tu turno, añade 1 de 2 cartas de poder aleatorias a tu mano.", // Creative AI++ / IA Creativa++
+      "#yInvoca !M! #yOscuridad. NL Activa la habilidad pasiva de todos tus orbes de #yOscuridad 2 veces.", // Darkness++ / Oscuridad++
+      "Duplica la Energía.", // Double Energy++ / Duplicar Energia++
+      "#yDescarga tu siguiente Orbe !M! veces.", // Dualcast++ / Doble Descarga++
+      "La última carta que juegues cada turno se juega dos veces.", // Echo Form++ / Forma Eco++
+      "#yRelámpago ahora daña a TODOS los enemigos. NL #yInvoca !M! #yRelámpago NL Aplica 99 #Localizar a un enemigo aleatorio.", // Electrodynamics++ / Electrodinamicas++
+      "#yDescarga TODOS tus Orbes. Gana [B] y roba !M! carta por cada orbe #descargado.", // Fission++ / Fision++
+      "Desplaza todos los orbes de plasma hacia la izquierda. NL #yInvoca !M! #yPlasma.", // Fusion++
+      "Haz !D! de daño. NL Si el enemigo tiene la intención de atacar, aplica !M! #yDébil, de lo contrario gana [B].", // Go for the Eyes++ / Ir a por los ojos++
+      "Cada vez que juegues una carta de Poder, roba !M! cartas (Cartas de Poder si es posible).", // Heatsinks++ / Disipadores++
+      "#yInnata. NL Al inicio de tu turno, añade una carta Poco Comñun al azar a tu mano.", // Hello World++ / Hola Mundo++
+      "Gana !B! de #yBloqueo. NL Devuelve una carta de la pila de descarte a la mano y #yRetenla este turno.", // Hologram++ / Holograma++
+      "Haz !D! de daño. NL Aplica !M! Localizar. NL Aplica 1 Localizar a todos los demas enemigos.", // Bullseye++ / Localizar++
+      "Roba todo el #yBloqueo del enemigo. NL Haz !D! de daño.", // Melter++ / Fundir++
+      "Haz !D! de daño. NL #yInvoca !M! #yPlasma, luego #yInvoca #yPlasma hasta que no tengas espacios de Orbe vacios.", // Meteor Strike++ / Golpe Meteoro++
+      "#yDescarga tu siguiente Orbe 2X veces.", // Multi-Cast++ / Multilanzamiento++
+      "#yInvoca 1 Data, 1 #yRelámpago, 1 #yEscarcha y 1 #yOscuridad.", //Rainbow++ / Arcoiris++
+      "Haz !D! de daño. NL Coloca la siguiente carta que juegues en este turno a tu mano.", // Rebound++ / Rebote++
+      "Activa la habilidad pasiva de tu siguiente Orbe, luego Descargalo. NL #yInvoca el Orbe que acabas de #yDescargar.", //Recursion++ / Rehacer++
+      "#yAgota !M! cartas. NL Gana [B] igual a su coste combinado.", // Recycle++ / Reciclar ++
+      "Gana #yBloqueo igual al doble de las cartas en tu pila de descarte.", // Stack++ / Apilar++
+      "#yInnata. NL Cada vez que juegues una carta de Poder, #yInvoca 1 #yRelámpago por cada [B] que cuesta (Min. 1).", // Storm++ / Tormenta++
+      "Haz !D! de daño. NL Si esta carta mata a un enemigo, gana [B] [B] [B] [B].", // Sunder++ / Romper++
+      "Haz !D! de daño a TODOS los enemigos. Haz 1 mas de daño por cada [B] que tengas. NL Roba !M! carta.", // Sweeping Beam++ / Barrido de Haz++
+      "#yInvoca X+2 #yRelámpago. NL #yAgota.", // Tempest++ / Tempestad++
+      "Gana [B] [B] [B] [B]. NL Añade un *Vacío en la pila de descarte.", //TURBO++ / Turbo++
+      "Añade una Carta de Poder doble #YMejorada a tu mano. NL Cuesta 0 este turno. NL #yAgota.", // White Noise++ / Ruido Blanco++
+      "#yInvoca !M! #yRelámpago. NL Gana 1 #yIon." //Zap++ / Calambrazo++
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "These are second upgrades, so all but the first string are slight variants of Defect cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicRabbitEars.java",
+      "to see which string corresponds to which Defect card. Indices start at 0!",
+      "For the flavor text, the joke is: 98.7 is both a frequency for a radio station, and 0.1 greater than 98.6 Fahrenheit (body temperature). 98.7 Fahrenheit would be a slight fever."
+    ]
+  },
+  "reliquary:RadioactivePellet": {
+    "NAME": "Pellet Radioactivo",
+    "FLAVOR": "El arma secreta de los villanos mas ruines del mundo.",
+    "DESCRIPTIONS": [
+      "El #yVeneno no disminuye."
+    ]
+  },
+  "reliquary:RattleCoin": {
+    "NAME": "Moneda Sonajero",
+    "FLAVOR": "Ambas cara representan la misma criatura extranamente familiar.",
+    "DESCRIPTIONS": [
+      "Duplica el primer daño no bloqueado hecho a ti y a TODOS los enemigos en cada combate."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The image on the coin is a rattlesnake."
+  },
+  "reliquary:RedCape": {
+    "NAME": "Capa Roja",
+    "FLAVOR": "¿Quién quiere los cuernos?",
+    "DESCRIPTIONS": [
+      "Gana [E] al inicio de tu turno. Siempre que #yAtacas a un unico enemigo, los otros enemigos no se pueden atacar hasta que el marcado muera."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a matador's cape."
+  },
+  "reliquary:RedPaperclip": {
+    "NAME": "Clip Rojo",
+    "FLAVOR": "Un poderoso simbolo de trueque.",
+    "DESCRIPTIONS": [
+      "Gana [E] al inicio de tu turno. Reemplaza #b",
+      " reliquias Comunes o Poco Comunes."
+    ]
+  },
+  "reliquary:RoseTintedGlasses": {
+    "NAME": "Gafas de color Rosa",
+    "FLAVOR": "¿Sabes que? Las cosas no estan tan mal.",
+    "DESCRIPTIONS": [
+      "Las primeras #b",
+      " veces que robes una carta de #yEstado en cada combate, #yAgotala y roba una carta."
+    ]
+  },
+  "reliquary:RosewoodLute": {
+    "NAME": "Laud de Palisandro",
+    "FLAVOR": "De todos modos, aqui esta \"Wonderspire.\"",
+    "DESCRIPTIONS": [
+      "Cada vez que bloquees daño exacto, gana [E] al siguiente turno."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the song 'Wonderwall' by Oasis."
+  },
+  "reliquary:RunicRemote": {
+    "NAME": "Mando Rúnico",
+    "FLAVOR": "Toma las riendas de tu destino.",
+    "DESCRIPTIONS": [
+      "Cada vez que ganes un combate sin recibir daño, puedes agregar una carta correspondiente a un enemigo derrotado en tu mazo.",
+      "El mando vibra..."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a Wii controller, in honor of our wonderful JPN translator!"
+  },
+  "reliquary:RustamsPendant": {
+    "NAME": "Colgante de Rustam",
+    "FLAVOR": "Es solo un trozo de metal, pero parece saber algo sobre ti.",
+    "DESCRIPTIONS": [
+      "Gana [E] al inicio de tu turno. Tiene un efecto negativo para cada personaje.",
+      "Gana [E] al inicio de tu turno. Comienzas el combate con #b",
+      " de #yFuerza.",
+      " de #yDestreza.",
+      " de #yConcentración.",
+      " de #yDevocion. Cuando obtienes #b",
+      " #yMantra, entra en #yExpiación.",
+      "Al inicio de tu turno, pierde #b",
+      " #yMantra."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This relic is named after our wonderful RUS translator!"
+  },
+  "reliquary:SculptingSteel": {
+    "NAME": "Acero para Esculpir",
+    "FLAVOR": "Maleable como la arcilla en un segundo, duro como la piedra al siguiente.",
+    "DESCRIPTIONS": [
+      "Al recoger esta reliquia, se convierte en una copia de una reliquia Comun, #bPoco Comun, #yRaro, o de #yTienda que ya tengas."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a reference to the Magic card Sculpting Steel, which has some existing translations: https://scryfall.com/search?q=%21%E2%80%9CSculpting+Steel%E2%80%9D+set%3A2xm+lang%3Aany&unique=prints"
+  },
+  "reliquary:SharkskinSheath": {
+    "NAME": "Funda de Piel de Tiburón",
+    "FLAVOR": "Si solo tuvieras un Cuchillo de Piel de tiburón para ponerlo aquí.",
+    "DESCRIPTIONS": [
+      "Cada vez que termines tu turno sin cartas en tu mano, roba una carta el siguiente turno."
+    ]
+  },
+  "reliquary:SheepsEyeMarble": {
+    "NAME": "Canica Ojo de Oveja",
+    "FLAVOR": "Te sientes más tonto de solo mirarlo.",
+    "DESCRIPTIONS": [
+      "La primera vez que juegues 2 copias de la misma carta seguidas en cada turno, vuelve a jugarla."
+    ]
+  },
+  "reliquary:ShortFuse": {
+    "NAME": "Mecha Corta",
+    "FLAVOR": "Puede estallar en cualquier momento.",
+    "DESCRIPTIONS": [
+      "Tus Orbes #yRelámpago, targetean al enemigo con menos PV."
+    ],
+    "NOTE_FOR_TRANSLATORS": "To have a 'short fuse' means you get angry easily."
+  },
+  "reliquary:ShortStraw": {
+    "NAME": "Pajilla Corta",
+    "FLAVOR": "Puede que esta no haya sido la eleccion.",
+    "DESCRIPTIONS": [
+      "Al inicio de tu turno, gana [E] y escoge una carta aleatoria de tu mano. Si esta sigue en tu mano al final del turno, pierdes #b",
+      " PV."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a very short bendy straw."
+  },
+  "reliquary:Sideboard": {
+    "NAME": "Aparador",
+    "FLAVOR": "Una tabla para que guardes tus cartas... en? adentro?",
+    "DESCRIPTIONS": [
+      "Al recoger esta reliquia, gana #b de",
+      " #yOro. Las cartas de recompensas van en una pila separada. Puedes mover cartas de esa pila a tu mazo entre compbates.",
+      "Aparador",
+      "Agrega cartas de tu aparador a tu mazo entre combates.",
+      " NL [#2aecd7]Click [#2aecd7]Derecho [#2aecd7]para [#2aecd7]desactivarlo.[]",
+      " NL [#2aecd7]Click [#2aecd7]Izquierdo [#2aecd7]para [#2aecd7] activarlo.[]",
+      "Escoge una carta para agregarlo a tu mazo.",
+      "Cancelar"
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "This is a reference to 'sideboards' in Magic the Gathering. It's a wooden board... this pun may not translate.",
+      "You may find the term used for sideboards in other languages here: https://blogs.magicjudges.org/translatedrules/",
+      "in the Comprehensive Rules, rule 100.4. The complete rules document might be on the second page."
+    ]
+  },
+  "reliquary:SilkGlove": {
+    "NAME": "Guante de Seda",
+    "FLAVOR": "Dejado por una senora elegante que no se anda con chiquitas.",
+    "DESCRIPTIONS": [
+      "Cada vez que vayas a descartar una sola carta al final de tu turno, #yRetenla."
+    ]
+  },
+  "reliquary:SkeletonKey": {
+    "NAME": "Llave Esqueleto",
+    "FLAVOR": "¿Qué Desbloquea? A ti….",
+    "DESCRIPTIONS": [
+      "Puedes Mejorar las cartas #gVerdes una segunda vez. Al recoger esta reliquia, #yMejora una carta #yMejorada.",
+      "Cuando juegues una carta, haz !M! de daño a TODOS los enemigos. Se activa 2 veces con Habilidades.", //A Thousand Cuts++ / Mil Cortes++
+      "*Navaja hace !M! de daño adicional. NL Agrega una *Navaja a tu mano.", //Accuracy++ / Precision++
+      "Gana [G] [G] [G]. NL Roba 2 cartas. NL #yAgota.", //Adrenaline++ / Adrenalina++
+      "#yInnate. NL Cuando juegues una carta, gana 1 de #yBloqueo. Se activa 2 veces con Habilidades.", //After Image++ / Imagen Residual++
+      "Obtén una poción al azar. NL Pon su #yVapor en tu mano. NL #yAgota.", //Alchemize++ / Alquimia++
+      "Haz !D! de daño a TODOS los enemigos. NL Descarta una carta al azar. Si descartas una habilidad, haz !D! de daño extra a TODOS los enemigos.", // All-Out Attack / Ataque Masivo++
+      "#yInnata. NL Haz !D! de daño. NL Si no es tu primer turno, haz !D! de daño otra vez. NL #yAgota.", // Backstab++ / Puñalada Trapera++
+      "Haz !D! de daño. NL Si el enemigo esta #yEnvenenado, Haz !D! de daño 2 veces mas.", // Bane++ / Plaga++
+      "Gana !B! de #yBloqueo. NL El #yBloqueo se duplica en lugar de desaparecer el siguiente turno.", // Blur++ / Borroso++
+      "Reduce el coste de las cartas de tu mano a 0 este turno.", // Bullet Time++ / Tiempo Bala++
+      "Descarta cualquier numero de cartas de tu mano,  entonces roba el mismo numero de cartas.", // Calculated Gamble++ / Apuesta Calculada++
+      "Cada vez que te ataquen, haz !M! de daño a TODOS los enemigos.", // Caltrops++ / Abrojos++
+      "Cuadruplica la cantidad de #yVeneno de un enemigo. NL #yAgota.", //Catalyst++ / Catalizador++
+      "Haz !D! de daño. NL Cada vez que juegues una carta este turno, el enemigo elegido !M! PV. Se activa 2 veces con habilidades.", // Choke++ / Estrangular++
+      "Descarta !M! cartas. NL Gana [G] [G] [G].", // Concentrate ++ / Concentracion++
+      "Aplica !M! de #yVeneno y 3 #Débil a TODOS los enemigos. NL #yAgota.", // Crippling Cloud++ / Veneno Paralizador++
+      "Haz !D! de daño a TODOS los enemigos !M! veces.", // Dagger Spray++ / Lluvia de Dagas++
+      "Haz !D! de daño. NL Roba !M! carta. NL Descarta !M! cartas.", // Dagger Throw++ / Lanzamiento de Daga++
+      "Haz !D! de daño a TODOS los enemigos.", // Die Die Die++ / Muere Muere Muere++
+      "Añade una carta de habilidad mejorada 2 veces al azar a la mano. NL Su coste es 0 en este turno. NL #Agota.", // Distraction++ / Distraccion++
+      "#yRetiene. NL Al siguiente turno, roba X+2 cartas y gana X+2 [G]. NL #yAgota.", // Doppelganger++ / Doppelganger++
+      "Haz !D! de daño. NL Cada vez que robes esta carta, añade !M! copias a la mano. NL #yAgota.", // Endless Agony++ / Agonia Eterna++
+      "Cada vez que una carta de ataque hace daño no bloqueado, aplica !M! de #yVeneno.", // Envenom++ / Envenenar++
+      "Cuesta 1 menos [G] por cada carata descarta este turno. NL Haz !D! de daño !M! veces.", // Eviscerate++ / Destripar++
+      "Haz !D! de daño 2 veces. El daño de esta carta se reduce en !M! este combate.", // Glass Knife ++ / Cuchillo de Cristal++
+      "Solo puede ser jugada si no hay mas de !M! o menos cartas en la pila de extracción. NL Haz !D! de daño a TODOS los enemigos.", // Grand Finale++ / Gran Final++
+      "Mi pila de robo debe NL tener ",
+      " o menos cartas.",
+      "Haz !D! de daño. NL Si el enemigo tiene #yDébil o #yVeneno, NL Gana [G] y NL roba 1 carta.", // Heel Hook++ / Agarre de Tobillo++
+      "#yInnata. NL Al inicio de tu turno, añade !M! *Navajas a la mano.", // Infinite Blades++ / Nvajas Infinitas++
+      "El enemigo pierde 2X de #yFuerza. Aplica 2X #yDébil. NL #yAgota.", // Malaise++ / Malestar++
+      "Elige una carta. NL Al siguiente turno, añade !M! copias mejoradas de esa carta a la mano. #yAgota.", // Nightmare++ / Pesadilla++
+      "Al siguiente turno, NL gana [G] [G] [G] [G].", // Outmaneuver++ / Aventajar++
+      "En tus siguientes !M! turnos, tu daño de ataque se duplica.", // Phantasmal Killer++ / Asesino Fantasma++
+      "TODOS los enemigos pierden !M! de #yFuerza este turno.", // Piercing Wail++ / Llanto Lacerante++
+      "Haz !D! de daño. NL El siguiente turno, roba !M! cartas adicionales.", // Predator++ / Depredador++
+      "Haz !D! de daño !M! veces.", // Riddle with Holes++ / Acribillar++
+      "Coloca !M! cartas de la mano al tope de tu pila de extracción. NL Su coste es 0 hasta que es jugada.", // Setup ++ / Configurar++
+      "Si X es 4 o más, aumenta en 2 el daño. NL Haz !D! de daño X veces.", // Skewer++ / Ensartar ++
+      "Descarta tu mano. NL Añade 1 *Navaja++ a tu mano por cada carta descartada.", // Storm of Steel++ / Tormenta de Acero++
+      "#yInjugable. NL Si esta carta es descartada de la mano, gana [G] [G] [G].", //Tactician++ // Estratega++
+      "Aplica 99 #yVulnerable. NL Aplica #yLento. NL #yAgota.", // Terror++
+      "Al inicio de tu turno, roba !M! cartas y descarta !M! cartas.", //Tools of the Trade++ / Gajes del Oficio++
+      "Haz !D! de daño. NL Roba !M! cartas, Descarta TODAS las cartas que no sean de ataque." //Unload++ / Descargar++
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "These are second upgrades, so all but the first string are slight variants of Silent cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicSkeletonKey.java",
+      "to see which string corresponds to which Silent card. Indices start at 0!"
+    ]
+  },
+  "reliquary:Sod": {
+    "NAME": "Césped",
+    "FLAVOR": "Contrario al Dicho popular, El cesped no es mas verde del otro lado. Es Café. (Marrón tambien)",
+    "DESCRIPTIONS": [
+      "Pon una carta #yMejorada en tu mano por cada #b",
+      " cartas no mejoradas que juegues en tu mano."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a joke about the saying 'the grass is always greener on the other side.'"
+  },
+  "reliquary:Solitaire": {
+    "NAME": "Joya Solitaria",
+    "FLAVOR": "Una vez sonaste con ella. Como paso a la realidad es un misterio.",
+    "DESCRIPTIONS": [
+      "Puedes mejorar cartas #pMoradas una segunda vez. Al recoger esta reliquia, #yMejora una carta #yMejorada.",
+      "#yInnata. NL Varaja un *Beta+ en tu pila de extracción. NL #yAgota.", // Alpha++ /Alfa++
+      "#yInnata. NL Al comienzo de cada turno, añade un *Aplastar+ a tu mano.", // Battle Hymn++ / Himno de Batalla++
+      "#yRetiene. NL Entra en #yDivinidad. NL Muere en !M! turnos. NL #yAgota.", // Blasphemy++ / Blasfemia++
+      "Haz !D! de daño. NL Añade un *Aplastar+ a tu mano.", // Carve Reality++ / Esculpir Realidad++
+      "Pon un *Milagro+ en tu mano al comienzo de tus proximos X+2 turnos. NL #yAgota.", // Collect++ / Recolectar++
+      "Baraja una *Expiradora+ con X+2 en tu pila de extracción. NL #yAgota.", // Conjure Blade++ / Conjurar Cuchilla++
+      "#yRetiene. NL Si estas en #yCólera, gana !M! de #yFuerza este turno, sino entra en #yCólera. NL #yAgota.", // Crescendo++
+      "Gana !B! de #yBloqueo. NL Añade una *Seguridad+ NL a tu mano.", // Deceive Reality++ / Burlar Realidad++
+      "#yInnata. NL Al comienzo de tu turno, gana [W] NL y aumenta este bonus por !M!.", // Deva Form++ / Forma Deva++
+      "#yRetiene. NL Haz !D! de daño !M! veces.", // Flying Sleeves++ / Mangas Voladoras++
+      "Elige 1 entre 3 Ataques de cualquier color y añade !M! copias a tu mano. NL Estan cuestan 0 este turno. NL #yAgota.", // Foreign Influence++ / Influencia Externa++
+      "Haz !D! de daño. NL Si es #yFatal, #yMejora una carta aleatoria en tu mazo 2 veces. NL #yAgota.", // Lesson Learned++ / Leccion Aprendida++
+      "#yInnata. NL Cuando se crea una carta durante el combate, Mejórala.", // Master Reality++ / Amaestrar Realidad++
+      "Pon !M! cartas de tu pila de descartes en tu mano y #yRetenlas. NL Entra en #yCalma. NL Finaliza tu turno.", // Meditate++ / Meditar++
+      "Elige una carta en tu pila de extracción. NL Juega la carta elegida !M! veces y agotala. NL #Agota.", // Omniscience+ / Omnisciencia++
+      "Haz !D! de daño. NL Baraja un NL *Mediante la *Violencia+ en tu pila de extracción.", // Reach Heaven++ / Alcanzar el Cielo ++
+      "#yRetiene. NL Haz !D! de daño. NL Al retener, Reduce su coste en !M! este combate.", // Sands of Time++ / Arenas del Tiempo++
+      "#yAdivina !M!. NL Roba cartas hasta que tu mano este llena. NL #yAgota.", // Scrawl++ /Garabatear++
+      "Al final de tu turno, baaja una *Revelación+ en tu pila de extracción.", // Study++ / Estudiar++
+      "Gana !B! de #yBloqueo. NL El siguiente ataque que juegues cuesta 0 y hace !M! de daño adicional.", // Swivel++ / Pivotar++
+      "#yRetiene. NL Entra en #yCalma.", // Tranquility++ / Tranquilidad++
+      "Al siguiente turno, roba !M! carta. Toma un turno extra tras este. NL Termina tu turno. NL #yAgota.", // Vault++ / Sortear++
+      "#yRetiene. NL Gana !M! de #yMantra. Cuando se #yRetiene, Aumenta el #yMantra ganado en %d (Max %d).", // Worship++ / Adorar++
+      "Entra en #yCólera. NL Haz !D! de daño." // Eruption++ / Erupcion++
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "These are second upgrades, so all but the first string are slight variants of Watcher cards.",
+      "Refer to the indices at the top of https://github.com/thquinn/Reliquary/blob/main/src/main/java/relics/RelicSolitaire.java",
+      "to see which string corresponds to which Watcher card. Indices start at 0!"
+    ]
+  },
+  "reliquary:Soularoid": {
+    "NAME": "Soularoid",
+    "FLAVOR": "Esos tipos con barba tenian razon…!",
+    "DESCRIPTIONS": [
+      "Cada vez que juegues una carta que no sea de [#efc851]Estado[] con un nombre diferente a cualquier carta de tu mazo, Añade una copia de esta a tu mazo."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A portmanteau of 'soul' and 'Polaroid.' The flavor text is a reference to the urban legend of Amish people believing that cameras can steal the subject's soul."
+  },
+  "reliquary:Spinner": {
+    "NAME": "Spinner",
+    "FLAVOR": "Por favor no caigas en el rojo, Por favor no caigas en el rojo… Hijo de p…!",
+    "DESCRIPTIONS": [
+      "Cada vez que juegues una carta de un tipo diferente a la anterior, gana #b",
+      " de #yBloqueo."
+    ]
+  },
+  "reliquary:SpireOfHannoy": {
+    "NAME": "Torre de Hannoy",
+    "FLAVOR": "La aguja homónima de este rompecabezas debió de ser aún más mortal y desconcertante que ésta.",
+    "DESCRIPTIONS": [
+      "#yDébil and #yVulnerable son #b",
+      "% mas efectivos contra enemigos por cada acumulación pasada la primera (max ",
+      "%)."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a Tower of Hanoi puzzle."
+  },
+  "reliquary:Splatula": {
+    "NAME": "Esplatula",
+    "FLAVOR": "Con revestimiento antiadherente para facilitar la limpieza.",
+    "DESCRIPTIONS": [
+      "Cada vez que ataques a un enemigo con la mitad o mas de sus PV Maximos, Establece sus PV a #b0."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A portmanteau of 'splat' and 'spatula.'"
+  },
+  "reliquary:Stiletto": {
+    "NAME": "Stiletto",
+    "FLAVOR": "Diseñado para deslizarse entre las placas y los eslabones de casi cualquier armadura.",
+    "DESCRIPTIONS": [
+      "Los enemigos obtienen un #b",
+      "% menos de #yBloqueo."
+    ]
+  },
+  "reliquary:Stimpack": {
+    "NAME": "Paquete Estimulante",
+    "FLAVOR": "Las placas llevan las iniciales \"T.O.P.\"",
+    "DESCRIPTIONS": [
+      "la primera vez que tus PV bajan del #b50% o menos en cada combate, tus #yAtaques hacen el doble de daño por #b1 turno."
+    ]
+  },
+  "reliquary:Tamtam": {
+    "NAME": "Tam-Tam",
+    "FLAVOR": "GONG.",
+    "DESCRIPTIONS": [
+      "Cada vez que inicies tu turno con #yBloqueo, ganas #b2 de #yFuerza y TODOS los enemigos ganan #b1 de #yFuerza."
+    ]
+  },
+  "reliquary:TankTop": {
+    "NAME": "Cañon de Tanque",
+    "FLAVOR": "El vestigio oxidado de una grandiosa tribu guerrera de antaño.",
+    "DESCRIPTIONS": [
+      "Cada vez que #yAtacas al enemigo con mas PV, Si hay #b2 o mas enemigos, Haz #b",
+      " de daño al enemigo del frente."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the turret of a tank, in honor of our wonderful KOR translator OWATANKS!"
+  },
+  "reliquary:TatteredRug": {
+    "NAME": "Alfombra Andrajosa",
+    "FLAVOR": "Espera. ¿Crees que cualquiera puede montar una tienda?",
+    "DESCRIPTIONS": [
+      "Puedes venderla pociones al comerciante.",
+      "Se vende por ",
+      " de Oro",
+      "¡Me lo llevo!",
+      "¡Has hecho un trato!",
+      "~¿Qué estás vendiendo?",
+      "¡Ah! ¡Lo compraré a un alto precio!",
+      "¡Dámelo!",
+      "Sería un tonto si @no@ lo comprara.",
+      "Manejas una dura negociación...",
+      "NOTE FOR TRANSLATORS: The following lines are when the merchant declines to buy a potion.",
+      "Lo siento, no me interesa.",
+      "Todo listo, gracias.",
+      "Nah.",
+      "No estoy en el mercado ahora mismo."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A couple of these are voice lines from the merchant in Resident Evil 4."
+  },
+  "reliquary:ThinkingCap": {
+    "NAME": "Gorro para pensar",
+    "FLAVOR": "Con ese gran cono en tu cabeza, todos sabran lo listo que eres.",
+    "DESCRIPTIONS": [
+      "Al inicio del combate, roba la penúltima carta que jugaste el último combate. (Solo cuentan las cartas de tu mazo.)"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a dunce cap."
+  },
+  "reliquary:ThirdArm": {
+    "NAME": "Tercer Brazo",
+    "FLAVOR": "Es diminuto y ni siquiera tiene dedos.",
+    "DESCRIPTIONS": [
+      "Inicias cada combate con un #yPoder de coste #b",
+      " en tu pila de robo que te da [E] cada turno."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the arm from a wooden figure-drawing manikin."
+  },
+  "reliquary:ThumbDrive": {
+    "NAME": "Dedo USB",
+    "FLAVOR": "¿Quién tiene 3 Dedos y una copia de seguridad de la internet antigua? Esta IA.",
+    "DESCRIPTIONS": [
+      "Al inicio de cada combate, #yInvoca #b1 #yData."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to the classic bad joke structure, 'Who's got two thumbs and <insert detail about self>? This guy.'"
+  },
+  "reliquary:ToyRocket": {
+    "NAME": "Cohete de Juguete",
+    "FLAVOR": "Escogemos ir a la torre.",
+    "DESCRIPTIONS": [
+      "La primera vez en cada combate que juegues una carta de coste #b3, #b2, y #b1 en ese orden , añade un poderoso #yAtaque de coste #b0 a tu mano."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to JFK's 'we choose to go to the Moon' speech."
+  },
+  "reliquary:TrainingWheel": {
+    "NAME": "Ruedita de Entrenamiento",
+    "FLAVOR": "Su exterior es impecable, pero esta tan oxidado en el interior que apenas puede girar.",
+    "DESCRIPTIONS": [
+      "Cada vez que robes una mano sin #yAtaques o #yHabilidades, pon una carta aleatoria de ese tipo de tu pila de robo a tu mano."
+    ]
+  },
+  "reliquary:TrafficCone": {
+    "NAME": "Cono de Trafico",
+    "FLAVOR": "En la oscuridad de la torre, sus rayas brillantes logran una amenaza improbable.",
+    "DESCRIPTIONS": [
+      "La primera vez que un enemigo hace otra cosa que no sea atacar, Pierde #b",
+      " de #yFuerza."
+    ]
+  },
+  "reliquary:TridentHead": {
+    "NAME": "Cabeza de Tridente",
+    "FLAVOR": "Una parte del arma que empuñaba el legendario rey de las Olas",
+    "DESCRIPTIONS": [
+      "La primera carta que juegues en un solo enemigo en cada combate, se juega a TODOS los demas enemigos."
+    ]
+  },
+  "reliquary:TuningFork": {
+    "NAME": "Tenedor de afinación",
+    "FLAVOR": "Si tratas de comer con el, es probable que te rompas un diente.",
+    "DESCRIPTIONS": [
+      "Cada vez que rompas el #yBloqueo exacto del enemigo, Haz #b",
+      " de daño a él."
+    ],
+      "NOTE_FOR_TRANSLATORS": "The real name of the relic in Spanish is 'diapason' but to be consistent with the flavor in English, it remains with that name. "
+  },
+  "reliquary:TwinPearls": {
+    "NAME": "Perlas Gemelas",
+    "FLAVOR": "Son completamente idénticas en todos los sentidos, imposibles de distinguir.",
+    "DESCRIPTIONS": [
+      "Comienzas cada turno impar con un #yNacarado en tu mano."
+    ]
+  },
+  "reliquary:UnderdogBone": {
+    "NAME": "Hueso Desvalido",
+    "FLAVOR": "Alguien debe haber sido un muy buen chico o chica.",
+    "DESCRIPTIONS": [
+      "Cuando juegas una carta no mejorada, si tienes una copia #yUpgraded en tu pila de robo, ponla en tu mano."
+    ]
+  },
+  "reliquary:Vitrine": {
+    "NAME": "Vitrina",
+    "FLAVOR": "El lugar perfecto para presentar tus posesiones mas preciadas.",
+    "DESCRIPTIONS": [
+      "Al recoger esta reliquia, retira una carta de tu mazo. Puedes barajarla en tu pila de robo en cualquier momento durante el combate.",
+      "Escoge una carta para retirar.",
+      "[#2aecd7]Click [#2aecd7]derecho[] para barajar ",
+      " en tu pila de robo.",
+      " volverá aquí después del combate."
+    ]
+  },
+  "reliquary:WeakTea": {
+    "NAME": "Té Suave",
+    "FLAVOR": "Si puedes dormir despues de beberlo, ¿Para que? ",
+    "DESCRIPTIONS": [
+      "La primera carta incolora que juegues cada combate cuesta #b1 menos.",
+      "Las primeras #b",
+      " cartas incoloras que juegues cada combate cuestan #b1 menos."
+    ]
+  },
+  "reliquary:WitchyDice": {
+    "NAME": "Dado de Bruja",
+    "FLAVOR": "Que hallazgo tan afortunado! #Bendito",
+    "DESCRIPTIONS": [
+      "Al inicio de cada combate, juega una carta de cualquier color aleatoriamente."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the Witch character from the game Dicey Dungeons."
+  },
+  "reliquary:WritOfMandamus": {
+    "NAME": "Escrito de Mandamus",
+    "FLAVOR": "Comienza diciendo, \"Lo que esté pensando hacer: Detengase Señor.\"",
+    "DESCRIPTIONS": [
+      "Gana [E] al inicio de tu turno. Al final de tu turno, pierdes #b",
+      " de #yBloqueo."
+    ],
+    "NOTE_FOR_TRANSLATORS": "'Mandamus' is just a made-up name."
+  }
+}

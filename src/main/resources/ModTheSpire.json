@@ -4,7 +4,7 @@
   "author_list": ["Tom Quinn"],
   "credits": "Check out my other stuff at thquinn.github.io!",
   "description": "A collection of relics.",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "sts_version": "12-22-2020",
   "mts_version": "2.6.0",
   "dependencies": ["basemod", "stslib"]

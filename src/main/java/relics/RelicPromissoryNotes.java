@@ -25,10 +25,13 @@ public class RelicPromissoryNotes extends CustomRelic implements OnReceivePowerR
 
     @Override
     public boolean onReceivePower(AbstractPower abstractPower, AbstractCreature source) {
+        if (source == null) {
+            return true;
+        }
         if (source.hasPower(DeathWarrantPower.POWER_ID) && source.getPower(DeathWarrantPower.POWER_ID).amount >= 100) {
             return true;
         }
-        if (abstractPower.type == AbstractPower.PowerType.DEBUFF && source != null && !source.isPlayer) {
+        if (abstractPower.type == AbstractPower.PowerType.DEBUFF && !source.isPlayer) {
             addToBot(new RelicAboveCreatureAction(source, this));
             addToBot(new ApplyPowerAction(source, AbstractDungeon.player, new DeathWarrantPower(source, DAMAGE)));
         }

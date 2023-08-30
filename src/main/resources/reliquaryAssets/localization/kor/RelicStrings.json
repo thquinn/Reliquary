@@ -70,6 +70,14 @@
       "to see which string corresponds to which Ironclad card. Indices start at 0!"
     ]
   },
+  "reliquary:BloodFilter": {
+    "NAME": "Blood Filter",
+    "FLAVOR": "Gives you a second chance at life, as long as you take care of yourself...",
+    "DESCRIPTIONS": [
+      "Whenever you lose HP during your turn, regain it at the end of combat."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This relic was made in honor of our wonderful SPA translator Dextro!"
+  },
   "reliquary:BloodSugar": {
     "NAME": "혈당",
     "FLAVOR": "당신은 어쩔 수 없다면서 자기합리화를 하고 있을겁니다. 그 몸뚱이를 애써 무시하면서.",
@@ -369,7 +377,7 @@
     "NAME": "꼬인 스프링",
     "FLAVOR": "누군가가 이렇게 다시 망쳐놓고, 다시 돌아오지 않았습니다.",
     "DESCRIPTIONS": [
-      "매 턴 시작시 [E][E] 를 추가로 얻습니다. 이제 버린 카드 더미는 뽑을 카드 더미가 반드시 0일때에만 섞이게 됩니다."
+      "매 턴 시작시 [E] [E] 를 추가로 얻습니다. 이제 버린 카드 더미는 뽑을 카드 더미가 반드시 0일때에만 섞이게 됩니다."
     ]
   },
   "reliquary:KnifeBlock": {

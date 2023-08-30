@@ -35,7 +35,7 @@ public class RelicFeatherDuster extends CustomRelic {
     @Override
     public void onEquip() {
         CardGroup tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-        for (AbstractCard card : AbstractDungeon.player.masterDeck.getPurgeableCards().group) {
+        for (AbstractCard card : CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck.getPurgeableCards()).group) {
             if (!card.hasTag(AbstractCard.CardTags.STARTER_DEFEND) && !card.hasTag(AbstractCard.CardTags.STARTER_STRIKE) && card.type != AbstractCard.CardType.CURSE)
                 tmp.addToTop(card);
         }

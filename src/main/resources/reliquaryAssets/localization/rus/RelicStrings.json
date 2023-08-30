@@ -70,6 +70,14 @@
       "to see which string corresponds to which Ironclad card. Indices start at 0!"
     ]
   },
+  "reliquary:BloodFilter": {
+    "NAME": "Blood Filter",
+    "FLAVOR": "Gives you a second chance at life, as long as you take care of yourself...",
+    "DESCRIPTIONS": [
+      "Whenever you lose HP during your turn, regain it at the end of combat."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This relic was made in honor of our wonderful SPA translator Dextro!"
+  },
   "reliquary:BloodSugar": {
     "NAME": "Blood Sugar",
     "FLAVOR": "You know you shouldn't, but you just can't help yourself!",
@@ -356,7 +364,7 @@
     "NAME": "Перекрученная пружина",
     "FLAVOR": "Кто-то перекрутил её и её больше нельзя вернуть в прежнее положение.",
     "DESCRIPTIONS": [
-      "Даёт [E][E] в начале вашего хода. Ваша стопка сброса перетасовывается в стопку добора, только если стопка добора пуста в конце хода."
+      "Даёт [E] [E] в начале вашего хода. Ваша стопка сброса перетасовывается в стопку добора, только если стопка добора пуста в конце хода."
     ]
   },
   "reliquary:KnifeBlock": {

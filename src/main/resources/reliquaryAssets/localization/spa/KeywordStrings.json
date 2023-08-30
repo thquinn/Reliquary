@@ -1,0 +1,80 @@
+[
+  {
+    "NAMES": [
+      "reliquary:translation_note"
+    ],
+    "DESCRIPTION": "No need to translate this.",
+    "NOTE_FOR_TRANSLATORS": "FOR ALL KEYWORDS: If your language has cases, the keyword NAMES must be lower case, or they won't match!"
+  },
+  {
+    "NAMES": [
+      "atonement"
+    ],
+    "DESCRIPTION": "Cuando entras en esta #yPostura, pierdes [W] [W] . No puedes cambiar #yPosturas. Sales de esta #yPostura al inicio de tu turno."
+  },
+  {
+    "NAMES": [
+      "bias"
+    ],
+    "DESCRIPTION": "Orbe: Pierde 1 de Concentración cada turno."
+  },
+  {
+    "NAMES": [
+      "buffer"
+    ],
+    "DESCRIPTION": "Evita el próximo daño.",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Buffer power from the base game."
+  },
+  {
+    "NAMES": [
+      "data"
+    ],
+    "DESCRIPTION": "Orbe: Gana #yConcentración."
+  },
+  {
+    "NAMES": [
+      "devotion"
+    ],
+    "DESCRIPTION": "Ganas #yMantra al inicio de tu turno.",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Devotion power from the base game."
+  },
+  {
+    "NAMES": [
+      "injury", "injuries"
+    ],
+    "DESCRIPTION": "Heridas son cartas de #rMaldición Injugables.",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Injury Curse card from the base game."
+  },
+  {
+    "NAMES": [
+      "ion"
+    ],
+    "DESCRIPTION": "Cuando tienes #b2 #yIon, pierdes #b2 #yIon e #yInvoca #b1 #yRelámpago."
+  },
+  {
+    "NAMES": [
+      "pearlescence"
+    ],
+    "DESCRIPTION": "Nacarado es una carta que copia la ultima carta jugada en un turno."
+  },
+  {
+    "NAMES": [
+      "slimed"
+    ],
+    "DESCRIPTION": "Viscoso es una carta de #yEstado de coste 1.",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Slimed status from the base game."
+  },
+  {
+    "NAMES": [
+      "slow"
+    ],
+    "DESCRIPTION": "Las criaturas Lentas toman un #b10% mas de daño de los ataques por cada carta previamente jugada este turno.",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Slow debuff from the base game."
+  },
+  {
+    "NAMES": [
+      "vapor"
+    ],
+    "DESCRIPTION": "Vapores son cartas con efectos menores derivados de tus pociones. Estas se Retienen y Agotan."
+  }
+]

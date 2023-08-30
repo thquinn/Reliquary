@@ -59,7 +59,7 @@ public class RelicTankTop extends CustomRelic {
         // Damage.
         if (front != null) {
             addToBot(new RelicAboveCreatureAction(front, this));
-            addToBot(new DamageAction(front, new DamageInfo(AbstractDungeon.player, DAMAGE, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.FIRE));
+            addToBot(new DamageAction(front, new DamageInfo(AbstractDungeon.player, DAMAGE, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
         }
     }
 

@@ -1,16 +1,19 @@
 import basemod.AutoAdd;
 import basemod.BaseMod;
+import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import cards.colorless.CardVim;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
@@ -20,14 +23,25 @@ import powers.*;
 import relics.*;
 import stances.AtonementStance;
 
+import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.Properties;
 
 @SpireInitializer
 public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber, EditStringsSubscriber, PostInitializeSubscriber, PostUpdateSubscriber, OnStartBattleSubscriber, OnCardUseSubscriber {
     public static final String ID = "reliquary";
+    public static final String CONFIG_NAME = "reliconfig";
+    public static final String CONFIG_USE_RETIRED_RELICS = "use_retired_relics";
 
     public static void initialize() {
         BaseMod.subscribe(new Reliquary());
+        try {
+            Properties defaults = new Properties();
+            defaults.setProperty(CONFIG_USE_RETIRED_RELICS, "false");
+            SpireConfig config = new SpireConfig(ID, CONFIG_NAME, defaults);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -40,6 +54,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         BaseMod.addRelic(new RelicBallBearing(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBellows(), RelicType.RED);
         BaseMod.addRelic(new RelicBigHammer(), RelicType.RED);
+        BaseMod.addRelic(new RelicBloodFilter(), RelicType.RED);
         BaseMod.addRelic(new RelicBloodSugar(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBoilingFlask(), RelicType.SHARED);
         BaseMod.addRelic(new RelicBookmark(), RelicType.SHARED);
@@ -60,7 +75,6 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         BaseMod.addRelic(new RelicExpiredCoupon(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFeatherDuster(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFerryPass(), RelicType.SHARED);
-        BaseMod.addRelic(new RelicFingerTrap(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFirecrackers(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFishingReel(), RelicType.SHARED);
         BaseMod.addRelic(new RelicFreeSamples(), RelicType.SHARED);
@@ -141,6 +155,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         UnlockTracker.markRelicAsSeen(RelicBallBearing.ID);
         UnlockTracker.markRelicAsSeen(RelicBellows.ID);
         UnlockTracker.markRelicAsSeen(RelicBigHammer.ID);
+        UnlockTracker.markRelicAsSeen(RelicBloodFilter.ID);
         UnlockTracker.markRelicAsSeen(RelicBloodSugar.ID);
         UnlockTracker.markRelicAsSeen(RelicBoilingFlask.ID);
         UnlockTracker.markRelicAsSeen(RelicBookmark.ID);
@@ -161,7 +176,6 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         UnlockTracker.markRelicAsSeen(RelicExpiredCoupon.ID);
         UnlockTracker.markRelicAsSeen(RelicFeatherDuster.ID);
         UnlockTracker.markRelicAsSeen(RelicFerryPass.ID);
-        UnlockTracker.markRelicAsSeen(RelicFingerTrap.ID);
         UnlockTracker.markRelicAsSeen(RelicFirecrackers.ID);
         UnlockTracker.markRelicAsSeen(RelicFishingReel.ID);
         UnlockTracker.markRelicAsSeen(RelicFreeSamples.ID);
@@ -236,6 +250,18 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         UnlockTracker.markRelicAsSeen(RelicWeakTea.ID);
         UnlockTracker.markRelicAsSeen(RelicWitchyDice.ID);
         UnlockTracker.markRelicAsSeen(RelicWritOfMandamus.ID);
+
+        boolean useRetiredRelics = false;
+        try {
+            SpireConfig config = new SpireConfig(ID, CONFIG_NAME);
+            useRetiredRelics = config.getBool(CONFIG_USE_RETIRED_RELICS);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if (useRetiredRelics) {
+            BaseMod.addRelic(new RelicFingerTrap(), RelicType.SHARED);
+            UnlockTracker.markRelicAsSeen(RelicFingerTrap.ID);
+        }
     }
 
     @Override
@@ -253,6 +279,8 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
             path = "reliquaryAssets/localization/jpn/KeywordStrings.json";
         } else if (Settings.language == Settings.GameLanguage.KOR) {
             path = "reliquaryAssets/localization/kor/KeywordStrings.json";
+        } else if (Settings.language == Settings.GameLanguage.SPA) {
+            path = "reliquaryAssets/localization/spa/KeywordStrings.json";
         } else if (Settings.language == Settings.GameLanguage.RUS) {
             path = "reliquaryAssets/localization/rus/KeywordStrings.json";
         } else if (Settings.language == Settings.GameLanguage.ZHS) {
@@ -288,6 +316,13 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
             BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/kor/RelicStrings.json");
             BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/kor/StanceStrings.json");
             BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/kor/UIStrings.json");
+        } else if (Settings.language == Settings.GameLanguage.SPA) {
+            BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/spa/CardStrings.json");
+            BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/spa/OrbStrings.json");
+            BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/spa/PowerStrings.json");
+            BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/spa/RelicStrings.json");
+            BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/spa/StanceStrings.json");
+            BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/spa/UIStrings.json");
         } else if (Settings.language == Settings.GameLanguage.RUS) {
             BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/rus/CardStrings.json");
             BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/rus/OrbStrings.json");
@@ -325,7 +360,13 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
 
     @Override
     public void receivePostInitialize() {
-        BaseMod.registerModBadge(new Texture("reliquaryAssets/images/badge.png"), "Reliquary", "thquinn", "A collection of relics.", new ModPanel());
+        ModPanel modPanel = new ModPanel();
+        try {
+            modPanel = initConfig();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        BaseMod.registerModBadge(new Texture("reliquaryAssets/images/badge.png"), "Reliquary", "thquinn", "A collection of relics.", modPanel);
         BaseMod.addPower(DeathWarrantPower.class, DeathWarrantPower.POWER_ID);
         BaseMod.addPower(InvincibleTurnsPower.class, InvincibleTurnsPower.POWER_ID);
         BaseMod.addPower(LesserDuplicationPower.class, LesserDuplicationPower.POWER_ID);
@@ -333,6 +374,27 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         BaseMod.addPower(TauntPower.class, TauntPower.POWER_ID);
         BaseMod.addPower(TriumphPower.class, TriumphPower.POWER_ID);
         BaseMod.addPower(VimPower.class, VimPower.POWER_ID);
+    }
+    ModPanel initConfig() throws IOException {
+        SpireConfig config = new SpireConfig(ID, CONFIG_NAME);
+        ModPanel modPanel = new ModPanel();
+        ModLabeledToggleButton buttonEnableRetired = new ModLabeledToggleButton(
+                "Enable Retired Relics",
+                "To avoid inflating the relic pool, some relics have been retired. You can find the list on my site. (Requires restart.)",
+                400, 750, Settings.CREAM_COLOR, FontHelper.charDescFont,
+                config.getBool(CONFIG_USE_RETIRED_RELICS), modPanel, modLabel -> {},
+                button -> {
+                    config.setBool(CONFIG_USE_RETIRED_RELICS, button.enabled);
+                    try {
+                        config.save();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                }
+        );
+        modPanel.addUIElement(buttonEnableRetired);
+        return modPanel;
     }
 
     @Override

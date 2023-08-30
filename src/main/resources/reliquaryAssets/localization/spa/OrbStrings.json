@@ -1,0 +1,17 @@
+{
+  "reliquary:Bias": {
+    "NAME": "Sesgo",
+    "DESCRIPTION": [
+      "#yPasiva: Al inicio del turno, pierde #b",
+      " #yConcentración. NL #yDescarga: Sin efecto. NL Sesgo no es afectado por #yConcentración."
+    ]
+  },
+  "reliquary:Data": {
+    "NAME": "Data",
+    "DESCRIPTION": [
+      "#yPasiva: Cuando #yInvocas y al inicio del turno, gana #b",
+      " #yConcentración Temporal. NL #yDescarga: Gana #b",
+      " #yConcentración Temporal. NL Data no es afectada por #yConcentración."
+    ]
+  }
+}

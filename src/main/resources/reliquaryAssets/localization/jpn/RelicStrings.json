@@ -70,6 +70,14 @@
       "to see which string corresponds to which Ironclad card. Indices start at 0!"
     ]
   },
+  "reliquary:BloodFilter": {
+    "NAME": "Blood Filter",
+    "FLAVOR": "Gives you a second chance at life, as long as you take care of yourself...",
+    "DESCRIPTIONS": [
+      "Whenever you lose HP during your turn, regain it at the end of combat."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This relic was made in honor of our wonderful SPA translator Dextro!"
+  },
   "reliquary:BloodSugar": {
     "NAME": "血の砂糖",
     "FLAVOR": "駄目だけど我慢できない！",
@@ -369,7 +377,7 @@
     "NAME": "ねじれたバネ",
     "FLAVOR": "誰かがひねって元に戻らなくなった。",
     "DESCRIPTIONS": [
-      "ターン開始時に、 [E][E] を得る。山札が空でターンを終了したときのみ、捨て札がシャッフルされるようになる。"
+      "ターン開始時に、 [E] [E] を得る。山札が空でターンを終了したときのみ、捨て札がシャッフルされるようになる。"
     ]
   },
   "reliquary:KnifeBlock": {

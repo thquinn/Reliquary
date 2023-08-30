@@ -1,0 +1,249 @@
+{
+  "reliquary:AfterGlow": {
+    "NAME": "Brillo Residual",
+    "DESCRIPTIONS": [
+      "#yImagen #yResidual se activa 2 veces con #yHabilidades.",
+      "#yImagen #yResidual se activa #b",
+      " veces con #yHabilidades."
+    ]
+  },
+  "reliquary:AreaDenial": {
+    "NAME": "Negación de área",
+    "DESCRIPTIONS": [
+      "#yEspinas hace daño a TODOS los enemigos."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This power augments the behavior of the base game's Thorns power."
+  },
+  "reliquary:BattleHymnPlus": {
+    "NAME": "Himno de batalla",
+    "DESCRIPTIONS": [
+      "Al inicio de tu turno, Añade #b",
+      " #yAplastar+ a tu mano."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Battle Hymn power."
+  },
+  "reliquary:BlurPlus": {
+    "NAME": "Vision Doble",
+    "DESCRIPTIONS": [
+      "#yBloqueo es duplicado en vez de ser removido al inicio de tu proximo turno.",
+      "#yBloqueo es duplicado en vez de ser removido al inicio de tus proximos #b",
+      " turnos."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Blur power."
+  },
+  "reliquary:ChainReaction": {
+    "NAME": "Reacción en Cadena",
+    "DESCRIPTIONS": [
+      "Al final de tu turno, gana #b",
+      " #yCombustión."
+    ],
+    "NOTE_FOR_TRANSLATORS": "Combust is an existing power in the base game."
+  },
+  "reliquary:CutAbove": {
+    "NAME": "Un corte por encima",
+    "DESCRIPTIONS": [
+      "#yMil #yCortes se activa 2 veces con #yHabilidades.",
+      "#yMil #yCortes se activa #b",
+      " veces con #yHabilidades."
+    ]
+  },
+  "reliquary:DeathWarrant": {
+    "NAME": "Orden de ejecución",
+    "DESCRIPTIONS": [
+      "Tu siguiente #yAtaque contra este enemigo este turno hace #b",
+      " de daño adicional."
+    ]
+  },
+  "reliquary:DoubleWindsor": {
+    "NAME": "Doble Windsor",
+    "DESCRIPTIONS": [
+      "#yEstrangular se activa 2 veces con #yHabilidades este turno.",
+      "#yEstrangular se activa #b",
+      " veces con #yHabilidades este turno."
+    ]
+  },
+  "reliquary:FocusDown": {
+    "NAME": "Enfoque hacia abajo",
+    "DESCRIPTIONS": [
+      "Al final de este turno, pierde #b",
+      " #yConcentración."
+    ]
+  },
+  "reliquary:HalfLightning": {
+    "NAME": "Ion",
+    "DESCRIPTIONS": [
+      "Cuando tienes #b2 #yIon, pierde #b2 #yIon e #yInvoca #b1 #yRelámpago."
+    ]
+  },
+  "reliquary:HandSize": {
+    "NAME": "Aumentar el tamaño de la mano",
+    "DESCRIPTIONS": [
+      "Reducir el tamaño de la mano",
+      "El tamaño maximo de tu mano es aumentado en #b",
+      "El tamaño maximo de tu mano es reducido en #b",
+      "."
+    ]
+  },
+  "reliquary:HelloPlus": {
+    "NAME": "Fizzbuzz",
+    "DESCRIPTIONS": [
+      "Al inicio de tu turno, añade #b",
+      " carta poco comun aleatoria a tu mano.",
+      " cartas poco comunes aleatorias a tu mano."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Hello power."
+  },
+  "reliquary:Hooked": {
+    "NAME": "Enganchado",
+    "DESCRIPTIONS": [
+      "Gana #b",
+      " menos [E] el siguiente turno."
+    ]
+  },
+  "reliquary:Hydrated": {
+    "NAME": "Hidratado",
+    "DESCRIPTIONS": [
+      "Retrasa la #yPerdida de #yFuerza en #b",
+      " turno.",
+      " turnos."
+    ]
+  },
+  "reliquary:InNTurnsDeath": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "En #b",
+      " turnos, Mueres."
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "This is an alternate version of the Watcher's Blasphemy debuff.",
+      "Instead of killing you at the end of the current turn (1 turn), it kills you in N turns.",
+      "It takes the name ('Blasphemer,' in English) from the existing debuff, so you don't need to translate that."
+    ]
+  },
+  "reliquary:IntangibleTurns": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "Reduce TODO el daño tomado y la perdida de PV a #b1 este turno.",
+      "Reduce TODO el daño tomado y la perdida de PV a #b1 por los siguientes #b",
+      " turnos."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This a turn-based version of the base game's Intangible power.."
+  },
+  "reliquary:InvincibleTurns": {
+    "NAME": "Invencible",
+    "DESCRIPTIONS": [
+      "No puede ser dañado este turno",
+      "No puede ser dañado los proximos #b",
+      " turnos."
+    ]
+  },
+  "reliquary:LesserDuplication": {
+    "NAME": "Duplicacion Menor",
+    "DESCRIPTIONS": [
+      "Tu proxima carta de coste 0 o 1 es jugada 2 veces este turno.",
+      "Tus proximas #b",
+      " cartas de coste 0 o 1 son jugadas 2 veces este turno."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an weaker version of the base game's Duplication power."
+  },
+  "reliquary:MrofOhce": {
+    "NAME": "Amrof Oce",
+    "DESCRIPTIONS": [
+      "La ultima carta que juegues cada turno es jugada 2 veces.",
+      "Las ultimas #b",
+      " cartas que juegas cada turno son jugadas 2 veces."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an alternate version of the base game's Echo Form power. 'Mrof Ohce' is Echo Form backwards."
+  },
+  "reliquary:QuantumAI": {
+    "NAME": "IA Quantum",
+    "DESCRIPTIONS": [
+      "Al inicio del turno, añade #b1 de #b2 cartas aleatorias de #yPoder a tu mano.",
+      "Al inicio del turno, añade #b1 de #b2 cartas aleatorias de #yPoder a tu mano. 2 veces.",
+      "Al inicio del turno, añade #b1 de #b2 cartas aleatorias de #yPoder a tu mano #b",
+      " veces."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Study power."
+  },
+  "reliquary:Rattled": {
+    "NAME": "Agitado",
+    "DESCRIPTIONS": [
+      "Recibes el doble de daño del siguient ataque no bloqueado.",
+      "Recibes el doble de daño de los siguientes #b",
+      " ataques no bloqueados."
+    ],
+    "NOTE_FOR_TRANSLATORS": "A pun on rattlesnakes and being 'rattled,' i.e. unnerved or disarmed."
+  },
+  "reliquary:ReboundPlus": {
+    "NAME": "Resonar",
+    "DESCRIPTIONS": [
+      "La proxima carta que juegues este turno es colocada en tu mano.",
+      "Las proximas #b",
+      " cartas que juegues este turno son colocadas en tu mano."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Rebound power."
+  },
+  "reliquary:ReduceColorlessCost": {
+    "NAME": "Pálido",
+    "DESCRIPTIONS": [
+      "La proxima carta Incolora que juegues cuesta #b1 menos.",
+      "Las proximas #b",
+      " cartas Incoloras que juegues cuestan #b1 menos."
+    ]
+  },
+  "reliquary:StormPlus": {
+    "NAME": "Supertormenta",
+    "DESCRIPTIONS": [
+      "Cuando juegas una carta de #yPoder, #yInvoca #b",
+      " #yRelámpago por cada [B] que cueste (Min. #b",
+      ")."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Storm power."
+  },
+  "reliquary:StudyPlus": {
+    "NAME": "Atiborrar",
+    "DESCRIPTIONS": [
+      "Al final del turno, Mezcla #b",
+      " #yRevelación+ en tu pila de robo."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Study power."
+  },
+  "reliquary:Taunt": {
+    "NAME": "Provocar",
+    "DESCRIPTIONS": [
+      "Los otros enemigos no pueden ser atacados hasta que este muera.",
+      "Otro enemigo esta #r@Provocandome!@ "
+    ]
+  },
+  "reliquary:ThermalPaste": {
+    "NAME": "Pasta Térmica",
+    "DESCRIPTIONS": [
+      "#yDisipadores robará cartas de #yPoder cuando sea posible."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This power augments the behavior of the Defect's Heatsinks power."
+  },
+  "reliquary:Triumph": {
+    "NAME": "Triunfo",
+    "DESCRIPTIONS": [
+      "El multiplicador de daño de #yDivinidad es aumentado en #b",
+      ", a #b",
+      "."
+    ]
+  },
+  "reliquary:Vim": {
+    "NAME": "Vigorizado",
+    "DESCRIPTIONS": [],
+    "NOTE_FOR_TRANSLATORS": [
+      "'Envimmed' isn't a real word, it's an adjective I made up to mean 'infused with vim,' as 'invigorated' means 'infused with vigor.'",
+      "Feel free to use anything that means invigorated, or make one up...?",
+      "This uses the description strings from the Berserk power."
+    ]
+  },
+  "reliquary:VulnerableNextTurn": {
+    "NAME": "Vulnerable el proximo turno",
+    "DESCRIPTIONS": [
+      "Gana #b",
+      " #yVulnerable el siguiente turno."
+    ]
+  }
+}

@@ -26,12 +26,12 @@ public class RelicExpiredCoupon extends CustomRelic {
 
     @Override
     public void onEquip() {
-        counter = 0;
+        counter = THRESHOLD;
     }
 
     @Override
     public void atBattleStart() {
-        counter = 0;
+        counter = THRESHOLD;
         grayscale = false;
     }
 
@@ -43,8 +43,8 @@ public class RelicExpiredCoupon extends CustomRelic {
         if (!(AbstractDungeon.getCurrRoom() instanceof MonsterRoom)) {
             return;
         }
-        counter += damageAmount;
-        if (counter >= THRESHOLD) {
+        counter -= damageAmount;
+        if (counter <= 0) {
             addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             addToBot(new DamageAllEnemiesAction(
                     AbstractDungeon.player,

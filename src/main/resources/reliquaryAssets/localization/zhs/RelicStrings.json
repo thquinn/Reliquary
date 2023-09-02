@@ -66,10 +66,10 @@
     ]
   },
   "reliquary:BloodFilter": {
-    "NAME": "Blood Filter",
-    "FLAVOR": "Gives you a second chance at life, as long as you take care of yourself...",
+    "NAME": "血液滤过器",
+    "FLAVOR": "它会再带给你一次生机，只要你多保重……",
     "DESCRIPTIONS": [
-      "Whenever you lose HP during your turn, regain it at the end of combat."
+      "每场战斗结束时，回复你在自己的回合中失去的生命值。"
     ],
     "NOTE_FOR_TRANSLATORS": "This relic was made in honor of our wonderful SPA translator Dextro!"
   },

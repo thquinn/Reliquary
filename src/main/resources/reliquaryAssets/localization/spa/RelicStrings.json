@@ -377,7 +377,7 @@
     "NAME": "Resorte Doblado",
     "FLAVOR": "Alguien le dio demasiada cuerda a esta cosa, y no va a volver.",
     "DESCRIPTIONS": [
-      "Gana [E][E] al inicio de tu turno. Tu pila de descarte solo se mezclara en tu pila de robado, cuando termines tu turno con la pila de robado vacia."
+      "Gana [E] [E] al inicio de tu turno. Tu pila de descarte solo se mezclara en tu pila de robado, cuando termines tu turno con la pila de robado vacia."
     ]
   },
   "reliquary:KnifeBlock": {
@@ -737,7 +737,7 @@
     ]
   },
   "reliquary:SkeletonKey": {
-    "NAME": "Llave Esqueleto",
+      "NAME": "Llave Esqueleto",
     "FLAVOR": "¿Qué Desbloquea? A ti….",
     "DESCRIPTIONS": [
       "Puedes Mejorar las cartas #gVerdes una segunda vez. Al recoger esta reliquia, #yMejora una carta #yMejorada.",

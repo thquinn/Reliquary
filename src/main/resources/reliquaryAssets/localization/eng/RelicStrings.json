@@ -677,7 +677,7 @@
     "DESCRIPTIONS": [
       "Upon pickup, becomes a copy of a random Common, #bUncommon, #yRare, or #yShop relic you already have."
     ],
-    "NOTE_FOR_TRANSLATORS": "This is a reference to the Magic card Sculpting Steel, which has some existing translations: https://scryfall.com/search?q=%21%E2%80%9CSculpting+Steel%E2%80%9D+set%3A2xm+lang%3Aany&unique=prints"
+    "NOTE_FOR_TRANSLATORS": "This is a reference to the Magic card Sculpting Steel, which has some existing translations: https://scryfall.com/search?q=%21%E2%80%9CSculpting+Steel%E2%80%9D+set%3A10e+lang%3Aany&unique=prints"
   },
   "reliquary:SharkskinSheath": {
     "NAME": "Sharkskin Sheath",

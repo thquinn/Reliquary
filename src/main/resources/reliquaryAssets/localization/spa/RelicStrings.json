@@ -150,7 +150,7 @@
     "FLAVOR": "¿ Porque apretar, cuando puedes escariar ?",
     "DESCRIPTIONS": [
       "La primera vez en cada turno que tengas #b",
-      " cartas en mano, gana [E] ."
+      " cartas en mano, gana [E] [REMOVE_SPACE]."
     ]
   },
   "reliquary:Conveyor": {

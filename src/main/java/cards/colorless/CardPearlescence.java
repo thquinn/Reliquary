@@ -141,13 +141,18 @@ public class CardPearlescence extends CustomCard {
 
     @Override
     public AbstractCard makeCopy() {
+        if (lastCard != null) {
+            return lastCard.makeCopy();
+        }
         return new CardPearlescence();
     }
     @Override
     public AbstractCard makeStatEquivalentCopy() {
+        if (lastCard != null) {
+            return lastCard.makeStatEquivalentCopy();
+        }
         CardPearlescence copy = (CardPearlescence) super.makeStatEquivalentCopy();
         copy.cardID = cardID;
-        copy.lastCard = lastCard;
         return copy;
     }
 

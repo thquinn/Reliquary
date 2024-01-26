@@ -16,9 +16,17 @@ public class CardModShortStraw extends AbstractCardModifier {
     private Texture img;
     private TextureRegion region;
 
-    public CardModShortStraw() {
+    boolean isCopy;
+
+    public CardModShortStraw(boolean isCopy) {
         img = TextureLoader.getTexture("reliquaryAssets/images/relics/shortStraw.png");
         region = new TextureRegion(img);
+        this.isCopy = isCopy;
+    }
+
+    @Override
+    public boolean shouldApply(AbstractCard card) {
+        return !isCopy;
     }
 
     @Override
@@ -48,7 +56,7 @@ public class CardModShortStraw extends AbstractCardModifier {
 
     @Override
     public AbstractCardModifier makeCopy() {
-        return new CardModShortStraw();
+        return new CardModShortStraw(true);
     }
 
     @Override

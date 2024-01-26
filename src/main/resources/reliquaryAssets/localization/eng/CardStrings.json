@@ -120,7 +120,7 @@
   },
   "reliquary:VaporFocusPotion": {
     "NAME": "Concentrated Vapor",
-    "DESCRIPTION": "Retain. NL Gain !M! Focus. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Gain !M! Focus."
   },
   "reliquary:VaporFruitJuice": {
     "NAME": "Fruity Vapor",

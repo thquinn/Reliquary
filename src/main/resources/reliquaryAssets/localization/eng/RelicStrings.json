@@ -150,7 +150,7 @@
     "FLAVOR": "Why squeeze when you can ream?",
     "DESCRIPTIONS": [
       "The first time each turn you have #b",
-      " cards in hand, gain [E] ."
+      " cards in hand, gain [E] [REMOVE_SPACE]."
     ]
   },
   "reliquary:Conveyor": {

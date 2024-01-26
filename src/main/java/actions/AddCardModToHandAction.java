@@ -16,6 +16,7 @@ public class AddCardModToHandAction extends AbstractGameAction {
     int waitFrames;
     int nRandom = -1;
     Predicate<AbstractCard> predicate;
+    boolean makeCopy;
 
     public AddCardModToHandAction(AbstractCardModifier mod) {
         this.mod = mod;
@@ -57,10 +58,15 @@ public class AddCardModToHandAction extends AbstractGameAction {
                 handCopy = handCopy.subList(0, Math.min(nRandom, handCopy.size()));
             }
             cards = new LinkedList<>(handCopy);
+            makeCopy = cards.size() > 1;
+        }
+        if (cards.isEmpty()) {
+            isDone = true;
+            return;
         }
         AbstractCard card = cards.remove();
         if (mod.shouldApply(card)) {
-            CardModifierManager.addModifier(card, mod.makeCopy());
+            CardModifierManager.addModifier(card, makeCopy ? mod.makeCopy() : mod);
             card.flash();
             waitFrames = 1;
         }

@@ -119,7 +119,7 @@
   },
   "reliquary:VaporFocusPotion": {
     "NAME": "Сфокусированные испарения",
-    "DESCRIPTION": "Оставляется. NL Даёт !M! Фокуса. NL Сжигается."
+    "DESCRIPTION": "Оставляется. NL Даёт !M! Фокуса."
   },
   "reliquary:VaporFruitJuice": {
     "NAME": "Фруктовые испарения",

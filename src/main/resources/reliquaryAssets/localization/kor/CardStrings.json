@@ -120,7 +120,7 @@
   },
   "reliquary:VaporFocusPotion": {
     "NAME": "농축된 증기",
-    "DESCRIPTION": "보존. NL 밀집을 !M! 얻습니다. NL 소멸."
+    "DESCRIPTION": "보존. NL 밀집을 !M! 얻습니다."
   },
   "reliquary:VaporFruitJuice": {
     "NAME": "과일 증기",

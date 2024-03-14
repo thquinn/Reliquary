@@ -16,20 +16,20 @@
     "NAMES": [
       "バイアス"
     ],
-    "DESCRIPTION": "オーブ:毎ターン #y集中力 1を失う。"
+    "DESCRIPTION": "オーブ: #y集中力 を失う。"
   },
   {
     "NAMES": [
-      "buffer"
+      "バッファー"
     ],
-    "DESCRIPTION": "Prevents the next instance of damage.",
+    "DESCRIPTION": "次のHPの喪失を防ぐ。",
     "NOTE_FOR_TRANSLATORS": "This is a keyword for the Buffer power from the base game."
   },
   {
     "NAMES": [
       "データ"
     ],
-    "DESCRIPTION": "オーブ: #y集中力 を得る。"
+    "DESCRIPTION": "オーブ:一時的な #y集中力 を得る。"
   },
   {
     "NAMES": [
@@ -55,25 +55,25 @@
     "NAMES": [
       "パールエッセンス"
     ],
-    "DESCRIPTION": "パールエッセンスは、ターン中最後にプレイしたカードをコピーするカード。"
+    "DESCRIPTION": "パールエッセンスは、ターン中1つ前にプレイしたカードに変身するカード。"
   },
   {
     "NAMES": [
       "粘液"
     ],
-    "DESCRIPTION": "粘液は1コストの #y状態異常 カード。"
+    "DESCRIPTION": "粘液は1コストで #y廃棄 できる #y状態異常 カード。"
   },
   {
     "NAMES": [
       "スロー"
     ],
-    "DESCRIPTION": "スローの敵は、そのターンにプレイされたカード1枚につき、アタックから受けるダメージが #b10% 上昇する。",
+    "DESCRIPTION": "スローを受けている敵は、そのターンにプレイされたカード1枚につき、アタックから受けるダメージが #b10% 上昇する。",
     "NOTE_FOR_TRANSLATORS": "This is a keyword for the Slow debuff from the base game."
   },
   {
     "NAMES": [
       "香り"
     ],
-    "DESCRIPTION": "香りはポーションから派生する弱い効果を持つカード。 #y保留 と #y廃棄 がついている。"
+    "DESCRIPTION": "香りはポーションから派生する弱い効果を持つカード。 #y保留 と #y廃棄 を持つ。"
   }
 ]

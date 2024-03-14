@@ -2,8 +2,8 @@
   "reliquary:AfterGlow": {
     "NAME": "残光",
     "DESCRIPTIONS": [
-      "#y残像 が #yスキル で #b2 回発動する。",
-      "#y残像 が #yスキル で #b",
+      "#yスキル をプレイすると、 #y残像 が #b2 回発動する。",
+      "#yスキル をプレイすると、 #y残像 が #b",
       " 回発動する。"
     ]
   },
@@ -23,49 +23,49 @@
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Battle Hymn power."
   },
   "reliquary:BlurPlus": {
-    "NAME": "ダブルビジョン",
+    "NAME": "分身",
     "DESCRIPTIONS": [
-      "次のターン開始時に #yブロック を失わず、それを2倍にする。",
+      "次のターン開始時に #yブロック を失わず、さらにそれを2倍にする。",
       "次の #b",
-      " ターンの開始時に #yブロック を失わず、それを2倍にする。"
+      " ターンの間、ターンの開始時に #yブロック を失わず、さらにそれを2倍にする。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Blur power."
   },
   "reliquary:ChainReaction": {
     "NAME": "連鎖反応",
     "DESCRIPTIONS": [
-      "ターン終了時、 #y燃焼 #b",
-      " を得る。"
+      "ターン終了時、 #y燃焼 が与えるダメージが #b",
+      " 増加する。"
     ],
     "NOTE_FOR_TRANSLATORS": "Combust is an existing power in the base game."
   },
   "reliquary:CutAbove": {
     "NAME": "微塵切り",
     "DESCRIPTIONS": [
-      "#yメッタ切り が #yスキル で #b2 回発動する。",
-      "#yメッタ切り が #yスキル で #b",
+      "#yスキル をプレイすると、 #yメッタ切り が #b2 回発動する。",
+      "#yスキル をプレイすると、 #yメッタ切り が #b",
       " 回発動する。"
     ]
   },
   "reliquary:DeathWarrant": {
-    "NAME": "Death Warrant",
+    "NAME": "死刑令状",
     "DESCRIPTIONS": [
-      "このターン、この敵に与える次の #yアタック のダメージが #b",
+      "このターン、この敵が次に受ける #yアタック のダメージが #b",
       " 増加する。"
     ]
   },
   "reliquary:DoubleWindsor": {
-    "NAME": "ダブル・ノット",
+    "NAME": "二重巻き",
     "DESCRIPTIONS": [
-      "#y窒息 が #yスキル で #b2 回発動する。",
-      "#y窒息 が #yスキル で #b",
+      "#yスキル をプレイすると、 #y窒息 が #b2 回発動する。",
+      "#yスキル をプレイすると、 #y窒息 が #b",
       " 回発動する。"
     ]
   },
   "reliquary:FocusDown": {
     "NAME": "集中力低下",
     "DESCRIPTIONS": [
-      "ターン終了時、 集中力 #b",
+      "次のターン開始時、 #y集中力 #b",
       " を失う。"
     ]
   },
@@ -79,15 +79,15 @@
     "NAME": "手札容量増加",
     "DESCRIPTIONS": [
       "手札容量減少",
-      "手札の最大数 #b+ #b",
-      "手札の最大数 #b- #b",
+      "手札の最大数が #b+ #b",
+      "手札の最大数が #b- #b",
       " 。"
     ]
   },
   "reliquary:HelloPlus": {
-    "NAME": "フィズ・バズ",
+    "NAME": "フィズバズ",
     "DESCRIPTIONS": [
-      "ランダムなアンコモンのカードを #b",
+      "ターン開始時、ランダムなアンコモンのカードを #b",
       " 枚手札に加える。",
       " 枚手札に加える。"
     ],
@@ -96,8 +96,8 @@
   "reliquary:Hooked": {
     "NAME": "釣り上げ",
     "DESCRIPTIONS": [
-      "次のターン、 [E] を #b",
-      " 失う。"
+      "次のターン、 #b",
+      " [E] を失う。"
     ]
   },
   "reliquary:Hydrated": {
@@ -123,9 +123,9 @@
   "reliquary:IntangibleTurns": {
     "NAME": "",
     "DESCRIPTIONS": [
-      "このターン、すべてのダメージとHPを失う効果を #b1 に軽減する。",
-      "2ターンの間、 #b",
-      " すべてのダメージとHPを失う効果を #b1 に軽減する。"
+      "すべてのダメージとHPを失う効果を #b1 に軽減する。 #b1 ターン有効。",
+      "すべてのダメージとHPを失う効果を #b1 に軽減する。 #b",
+      " ターン有効。"
     ],
     "NOTE_FOR_TRANSLATORS": "This a turn-based version of the base game's Intangible power.."
   },
@@ -133,15 +133,15 @@
     "NAME": "無敵",
     "DESCRIPTIONS": [
       "このターン、ダメージを受けない。",
-      "#b",
-      " ターンの間、ダメージを受けない。"
+      "ダメージを受けない。 #b",
+      " ターン有効。"
     ]
   },
   "reliquary:LesserDuplication": {
-    "NAME": "複製（弱）",
+    "NAME": "複製-",
     "DESCRIPTIONS": [
-      "このターン、次のコスト0か1のカードを2回プレイする。",
-      "このターン、次のコスト0か1のカード #b",
+      "このターン、次にプレイするコストが1以下のカードを2回プレイする。",
+      "このターン、次にプレイするコストが1以下のカード #b",
       " 枚を2回プレイする。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is an weaker version of the base game's Duplication power."
@@ -159,18 +159,18 @@
     "NAME": "量子AI",
     "DESCRIPTIONS": [
       "ターン開始時、 #b2 枚のランダムな #yパワー から #b1 枚選び、手札に加える。",
-      "ターン開始時、 #b2 枚のランダムな #yパワー から #b2 枚選び、手札に加える。",
-      "ターン開始時、 #b2 枚のランダムな #yパワー から #b",
-      " 枚選び、手札に加える。"
+      "ターン開始時、 #b2 枚のランダムな #yパワー から #b1 枚選び、手札に加える。これを #b2 回繰り返す。",
+      "ターン開始時、 #b2 枚のランダムな #yパワー から #b1 枚選び、手札に加える。 これを #b",
+      " 回繰り返す。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Study power."
   },
   "reliquary:Rattled": {
     "NAME": "ガラガラ",
     "DESCRIPTIONS": [
-      "次のブロックされていない #yアタック から2倍のダメージを受ける。",
+      "次に受けるブロックされなかった #yアタック のダメージが #b2 倍になる。",
       "次の #b",
-      " 回、ブロックされていない #yアタック から2倍のダメージを受ける。"
+      " 回、受けるブロックされなかった #yアタック のダメージが #b2 倍になる。"
     ],
     "NOTE_FOR_TRANSLATORS": "A pun on rattlesnakes and being 'rattled,' i.e. unnerved or disarmed."
   },
@@ -186,22 +186,22 @@
   "reliquary:ReduceColorlessCost": {
     "NAME": "蒼白",
     "DESCRIPTIONS": [
-      "次にプレイする無色のカードのコストを #b1 減らす。",
+      "次にプレイする無色カードのコストを #b1 減らす。",
       "次にプレイする #b",
-      " 枚の無色のカードのコストを #b1 減らす。"
+      " 枚の無色カードのコストを #b1 減らす。"
     ]
   },
   "reliquary:StormPlus": {
     "NAME": "スーパーストーム",
     "DESCRIPTIONS": [
-      "#yパワー をプレイするたび、その消費 [B] ごとに #yライトニング #b",
-      " を生成する（最低でも #b",
-      " つ）。"
+      "#yパワー をプレイするたび、消費した [B] ごとに #yライトニング #b",
+      " を生成する。 [B] を消費していない場合、 #yライトニング #b",
+      " を生成する。"
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Storm power."
   },
   "reliquary:StudyPlus": {
-    "NAME": "詰め込み学習",
+    "NAME": "詰め込み",
     "DESCRIPTIONS": [
       "ターン終了時、 #y洞察+ を #b",
       " 枚山札に加える。"
@@ -211,14 +211,14 @@
   "reliquary:Taunt": {
     "NAME": "挑発",
     "DESCRIPTIONS": [
-      "Other enemies can't be attacked until this enemy dies.",
+      "この敵が死ぬまで、他の敵に攻撃できない。",
       "他の敵に #r@挑発@ されている！"
     ]
   },
   "reliquary:ThermalPaste": {
     "NAME": "放熱グリス",
     "DESCRIPTIONS": [
-      "#yヒートシンク が、可能なら #yパワー を優先して引く。"
+      "#yヒートシンク が発動したとき、優先的に #yパワー を引く。"
     ],
     "NOTE_FOR_TRANSLATORS": "This power augments the behavior of the Defect's Heatsinks power."
   },
@@ -231,7 +231,7 @@
     ]
   },
   "reliquary:Vim": {
-    "NAME": "力",
+    "NAME": "活力",
     "DESCRIPTIONS": [],
     "NOTE_FOR_TRANSLATORS": [
       "'Envimmed' isn't a real word, it's an adjective I made up to mean 'infused with vim,' as 'invigorated' means 'infused with vigor.'",
@@ -240,9 +240,9 @@
     ]
   },
   "reliquary:VulnerableNextTurn": {
-    "NAME": "次のターンに弱体",
+    "NAME": "次ターン弱体",
     "DESCRIPTIONS": [
-      "次のターン、 #y弱体 #b",
+      "次のターン開始時、 #y弱体 #b",
       " を得る。"
     ]
   }

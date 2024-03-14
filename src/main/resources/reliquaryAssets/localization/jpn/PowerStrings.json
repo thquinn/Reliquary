@@ -1,0 +1,249 @@
+﻿{
+  "reliquary:AfterGlow": {
+    "NAME": "残光",
+    "DESCRIPTIONS": [
+      "#yスキル をプレイすると、 #y残像 が #b2 回発動する。",
+      "#yスキル をプレイすると、 #y残像 が #b",
+      " 回発動する。"
+    ]
+  },
+  "reliquary:AreaDenial": {
+    "NAME": "接近阻止",
+    "DESCRIPTIONS": [
+      "#yトゲ が敵全体にダメージを与える。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This power augments the behavior of the base game's Thorns power."
+  },
+  "reliquary:BattleHymnPlus": {
+    "NAME": "戦いの聖歌",
+    "DESCRIPTIONS": [
+      "ターン開始時、 #yスマイト+ を #b",
+      " 枚手札に加える。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Battle Hymn power."
+  },
+  "reliquary:BlurPlus": {
+    "NAME": "分身",
+    "DESCRIPTIONS": [
+      "次のターン開始時に #yブロック を失わず、さらにそれを2倍にする。",
+      "次の #b",
+      " ターンの間、ターンの開始時に #yブロック を失わず、さらにそれを2倍にする。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Blur power."
+  },
+  "reliquary:ChainReaction": {
+    "NAME": "連鎖反応",
+    "DESCRIPTIONS": [
+      "ターン終了時、 #y燃焼 が与えるダメージが #b",
+      " 増加する。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "Combust is an existing power in the base game."
+  },
+  "reliquary:CutAbove": {
+    "NAME": "微塵切り",
+    "DESCRIPTIONS": [
+      "#yスキル をプレイすると、 #yメッタ切り が #b2 回発動する。",
+      "#yスキル をプレイすると、 #yメッタ切り が #b",
+      " 回発動する。"
+    ]
+  },
+  "reliquary:DeathWarrant": {
+    "NAME": "死刑令状",
+    "DESCRIPTIONS": [
+      "このターン、この敵が次に受ける #yアタック のダメージが #b",
+      " 増加する。"
+    ]
+  },
+  "reliquary:DoubleWindsor": {
+    "NAME": "二重巻き",
+    "DESCRIPTIONS": [
+      "#yスキル をプレイすると、 #y窒息 が #b2 回発動する。",
+      "#yスキル をプレイすると、 #y窒息 が #b",
+      " 回発動する。"
+    ]
+  },
+  "reliquary:FocusDown": {
+    "NAME": "集中力低下",
+    "DESCRIPTIONS": [
+      "次のターン開始時、 #y集中力 #b",
+      " を失う。"
+    ]
+  },
+  "reliquary:HalfLightning": {
+    "NAME": "イオン",
+    "DESCRIPTIONS": [
+      "#yイオン #b2 を得たとき、 #yイオン #b2 を失い #yライトニング #b1 を #y生成 する。"
+    ]
+  },
+  "reliquary:HandSize": {
+    "NAME": "手札容量増加",
+    "DESCRIPTIONS": [
+      "手札容量減少",
+      "手札の最大数が #b+ #b",
+      "手札の最大数が #b- #b",
+      " 。"
+    ]
+  },
+  "reliquary:HelloPlus": {
+    "NAME": "フィズバズ",
+    "DESCRIPTIONS": [
+      "ターン開始時、ランダムなアンコモンのカードを #b",
+      " 枚手札に加える。",
+      " 枚手札に加える。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Hello power."
+  },
+  "reliquary:Hooked": {
+    "NAME": "釣り上げ",
+    "DESCRIPTIONS": [
+      "次のターン、 #b",
+      " [E] を失う。"
+    ]
+  },
+  "reliquary:Hydrated": {
+    "NAME": "水分補給",
+    "DESCRIPTIONS": [
+      "#y筋力 の #y減少 を #b",
+      " ターン遅らせる。",
+      " ターン遅らせる。"
+    ]
+  },
+  "reliquary:InNTurnsDeath": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "#b",
+      " ターン後、あなたは死ぬ。"
+    ],
+    "NOTE_FOR_TRANSLATORS": [
+      "This is an alternate version of the Watcher's Blasphemy debuff.",
+      "Instead of killing you at the end of the current turn (1 turn), it kills you in N turns.",
+      "It takes the name ('Blasphemer,' in English) from the existing debuff, so you don't need to translate that."
+    ]
+  },
+  "reliquary:IntangibleTurns": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "すべてのダメージとHPを失う効果を #b1 に軽減する。 #b1 ターン有効。",
+      "すべてのダメージとHPを失う効果を #b1 に軽減する。 #b",
+      " ターン有効。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This a turn-based version of the base game's Intangible power.."
+  },
+  "reliquary:InvincibleTurns": {
+    "NAME": "無敵",
+    "DESCRIPTIONS": [
+      "このターン、ダメージを受けない。",
+      "ダメージを受けない。 #b",
+      " ターン有効。"
+    ]
+  },
+  "reliquary:LesserDuplication": {
+    "NAME": "複製-",
+    "DESCRIPTIONS": [
+      "このターン、次にプレイするコストが1以下のカードを2回プレイする。",
+      "このターン、次にプレイするコストが1以下のカード #b",
+      " 枚を2回プレイする。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an weaker version of the base game's Duplication power."
+  },
+  "reliquary:MrofOhce": {
+    "NAME": "化響反",
+    "DESCRIPTIONS": [
+      "ターンの最後にプレイするカードを、2回プレイする。",
+      "ターンの最後にプレイする #b",
+      " 枚のカードを、2回プレイする。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an alternate version of the base game's Echo Form power. 'Mrof Ohce' is Echo Form backwards."
+  },
+  "reliquary:QuantumAI": {
+    "NAME": "量子AI",
+    "DESCRIPTIONS": [
+      "ターン開始時、 #b2 枚のランダムな #yパワー から #b1 枚選び、手札に加える。",
+      "ターン開始時、 #b2 枚のランダムな #yパワー から #b1 枚選び、手札に加える。これを #b2 回繰り返す。",
+      "ターン開始時、 #b2 枚のランダムな #yパワー から #b1 枚選び、手札に加える。 これを #b",
+      " 回繰り返す。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Study power."
+  },
+  "reliquary:Rattled": {
+    "NAME": "ガラガラ",
+    "DESCRIPTIONS": [
+      "次に受けるブロックされなかった #yアタック のダメージが #b2 倍になる。",
+      "次の #b",
+      " 回、受けるブロックされなかった #yアタック のダメージが #b2 倍になる。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "A pun on rattlesnakes and being 'rattled,' i.e. unnerved or disarmed."
+  },
+  "reliquary:ReboundPlus": {
+    "NAME": "リサウンド",
+    "DESCRIPTIONS": [
+      "このターン、次にプレイするカードを手札に戻す。",
+      "このターン、次にプレイする #b",
+      " 枚のカードを手札に戻す。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Rebound power."
+  },
+  "reliquary:ReduceColorlessCost": {
+    "NAME": "蒼白",
+    "DESCRIPTIONS": [
+      "次にプレイする無色カードのコストを #b1 減らす。",
+      "次にプレイする #b",
+      " 枚の無色カードのコストを #b1 減らす。"
+    ]
+  },
+  "reliquary:StormPlus": {
+    "NAME": "スーパーストーム",
+    "DESCRIPTIONS": [
+      "#yパワー をプレイするたび、消費した [B] ごとに #yライトニング #b",
+      " を生成する。 [B] を消費していない場合、 #yライトニング #b",
+      " を生成する。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Storm power."
+  },
+  "reliquary:StudyPlus": {
+    "NAME": "詰め込み",
+    "DESCRIPTIONS": [
+      "ターン終了時、 #y洞察+ を #b",
+      " 枚山札に加える。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Study power."
+  },
+  "reliquary:Taunt": {
+    "NAME": "挑発",
+    "DESCRIPTIONS": [
+      "この敵が死ぬまで、他の敵に攻撃できない。",
+      "他の敵に #r@挑発@ されている！"
+    ]
+  },
+  "reliquary:ThermalPaste": {
+    "NAME": "放熱グリス",
+    "DESCRIPTIONS": [
+      "#yヒートシンク が発動したとき、優先的に #yパワー を引く。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "This power augments the behavior of the Defect's Heatsinks power."
+  },
+  "reliquary:Triumph": {
+    "NAME": "征服",
+    "DESCRIPTIONS": [
+      "#y神聖 のダメージ倍率が #b",
+      " 増加する。現在は #b",
+      " 倍。"
+    ]
+  },
+  "reliquary:Vim": {
+    "NAME": "活力",
+    "DESCRIPTIONS": [],
+    "NOTE_FOR_TRANSLATORS": [
+      "'Envimmed' isn't a real word, it's an adjective I made up to mean 'infused with vim,' as 'invigorated' means 'infused with vigor.'",
+      "Feel free to use anything that means invigorated, or make one up...?",
+      "This uses the description strings from the Berserk power."
+    ]
+  },
+  "reliquary:VulnerableNextTurn": {
+    "NAME": "次ターン弱体",
+    "DESCRIPTIONS": [
+      "次のターン開始時、 #y弱体 #b",
+      " を得る。"
+    ]
+  }
+}

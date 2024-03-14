@@ -1,0 +1,79 @@
+﻿[
+  {
+    "NAMES": [
+      "reliquary:translation_note"
+    ],
+    "DESCRIPTION": "No need to translate this.",
+    "NOTE_FOR_TRANSLATORS": "FOR ALL KEYWORDS: If your language has cases, the keyword NAMES must be lower case, or they won't match!"
+  },
+  {
+    "NAMES": [
+      "贖罪"
+    ],
+    "DESCRIPTION": "この #yスタンス に入ったとき、 [W] [W] を失う。 #yスタンス を変更できない。次のターン開始時、この #yスタンス を解除する。"
+  },
+  {
+    "NAMES": [
+      "バイアス"
+    ],
+    "DESCRIPTION": "オーブ: #y集中力 を失う。"
+  },
+  {
+    "NAMES": [
+      "バッファー"
+    ],
+    "DESCRIPTION": "次のHPの喪失を防ぐ。",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Buffer power from the base game."
+  },
+  {
+    "NAMES": [
+      "データ"
+    ],
+    "DESCRIPTION": "オーブ:一時的な #y集中力 を得る。"
+  },
+  {
+    "NAMES": [
+      "信心"
+    ],
+    "DESCRIPTION": "ターン開始時、 #yマントラ を得る。",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Devotion power from the base game."
+  },
+  {
+    "NAMES": [
+      "怪我"
+    ],
+    "DESCRIPTION": "怪我は使用不可の #r呪い カード。",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Injury Curse card from the base game."
+  },
+  {
+    "NAMES": [
+      "イオン"
+    ],
+    "DESCRIPTION": "#yイオン #b2 を得たとき、 #yイオン #b2 を失い #yライトニング #b1 を #y生成 する。"
+  },
+  {
+    "NAMES": [
+      "パールエッセンス"
+    ],
+    "DESCRIPTION": "パールエッセンスは、ターン中1つ前にプレイしたカードに変身するカード。"
+  },
+  {
+    "NAMES": [
+      "粘液"
+    ],
+    "DESCRIPTION": "粘液は1コストで #y廃棄 できる #y状態異常 カード。"
+  },
+  {
+    "NAMES": [
+      "スロー"
+    ],
+    "DESCRIPTION": "スローを受けている敵は、そのターンにプレイされたカード1枚につき、アタックから受けるダメージが #b10% 上昇する。",
+    "NOTE_FOR_TRANSLATORS": "This is a keyword for the Slow debuff from the base game."
+  },
+  {
+    "NAMES": [
+      "香り"
+    ],
+    "DESCRIPTION": "香りはポーションから派生する弱い効果を持つカード。 #y保留 と #y廃棄 を持つ。"
+  }
+]

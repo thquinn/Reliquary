@@ -1,0 +1,226 @@
+﻿{
+  "reliquary:BlastOff": {
+    "NAME": "発射！",
+    "DESCRIPTION": "敵全体に !D! ダメージと 弱体 !M! を与える。 NL 廃棄",
+    "NOTE_FOR_TRANSLATORS": "The card name is the culmination of a rocket launch countdown: 3, 2, 1, blast off!"
+  },
+  "reliquary:Pearlescence": {
+    "NAME": "",
+    "DESCRIPTION": "パールエッセンス",
+    "EXTENDED_DESCRIPTION": [
+      "先に別のカードをプレイする必要がある。"
+    ],
+    "NOTE_FOR_TRANSLATORS": "The description should match the translation of the pearlescence keyword."
+  },
+  "reliquary:VaporAmbrosia": {
+    "NAME": "アンブロシアの香り",
+    "DESCRIPTION": "保留 NL マントラ !M! を得る。 NL 廃棄",
+    "NOTE_FOR_TRANSLATORS": "Each of these 'Vapor' cards corresponds to one of the 42 potions in the game."
+  },
+  "reliquary:VaporAncientPotion": {
+    "NAME": "古代の香り",
+    "DESCRIPTION": "保留 NL 敵が アーティファクト 1を失う。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL 敵全体が アーティファクト 1を失う。 NL 廃棄"
+  },
+  "reliquary:VaporAttackPotion": {
+    "NAME": "アタックの香り",
+    "DESCRIPTION": "保留 NL ランダムなアタックを1枚手札に加える。このターン、そのコストは0。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL ランダムなアタックを !M! 枚手札に加える。このターン、そのコストは0。 NL 廃棄"
+  },
+  "reliquary:VaporBlessingOfTheForge": {
+    "NAME": "鍛冶場の香り",
+    "DESCRIPTION": "保留 NL 戦闘終了まで手札のランダムなカード1枚を アップグレード する。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL 戦闘終了まで手札のランダムな半分のカードを アップグレード する。 NL 廃棄"
+  },
+  "reliquary:VaporBlockPotion": {
+    "NAME": "ブロックの香り",
+    "DESCRIPTION": "保留 NL !B! ブロック を得る。 NL 廃棄"
+  },
+  "reliquary:VaporBloodPotion": {
+    "NAME": "血の香り",
+    "DESCRIPTION": "保留 NL 最大HPの !M! %を回復する。 NL 廃棄"
+  },
+  "reliquary:VaporBottledMiracle": {
+    "NAME": "奇跡の香り",
+    "DESCRIPTION": "保留 NL *奇跡 を1枚手札に加える。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL *奇跡+ を1枚手札に加える。 NL 廃棄"
+  },
+  "reliquary:VaporColorlessPotion": {
+    "NAME": "無色の香り",
+    "DESCRIPTION": "保留 NL ランダムな無色のカードを1枚手札に加える。 NL このターン、そのコストは0。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL ランダムな無色のカードを2枚手札に加える。 NL このターン、そのコストは0。 NL 廃棄"
+  },
+  "reliquary:VaporCultistPotion": {
+    "NAME": "儀式の香り",
+    "DESCRIPTION": "保留 NL 儀式 1 を得る。 筋力 !M! を失う。"
+  },
+  "reliquary:VaporCunningPotion": {
+    "NAME": "狡猾な香り",
+    "DESCRIPTION": "保留 NL *ナイフ+ を1枚手札に加える。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL *ナイフ+ を !M! 枚手札に加える。 NL 廃棄"
+  },
+  "reliquary:VaporDexterityPotion": {
+    "NAME": "機敏な香り",
+    "DESCRIPTION": "保留 NL 敏捷性 !M! を得る。"
+  },
+  "reliquary:VaporDistilledChaos": {
+    "NAME": "混沌の香り",
+    "DESCRIPTION": "保留 NL 山札の一番上のカードをプレイする。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL 山札の上から !M! 枚のカードをプレイする。 NL 廃棄"
+  },
+  "reliquary:VaporDuplicationPotion": {
+    "NAME": "複製の香り",
+    "DESCRIPTION": "保留 NL このターン、次にプレイするコストが1以下のカードを2回プレイする。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL このターン、次にプレイするコストが1以下のカード !M! 枚を2回プレイする。 NL 廃棄"
+  },
+  "reliquary:VaporElixir": {
+    "NAME": "洗浄の香り",
+    "DESCRIPTION": "保留 NL 手札の 状態異常 か 呪い をランダムに1枚 廃棄 する。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL 手札の 状態異常 と 呪い を全て 廃棄 する。 NL 廃棄"
+  },
+  "reliquary:VaporEnergyPotion": {
+    "NAME": "エナジーの香り",
+    "DESCRIPTION": "保留 NL [E] を得る。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL [E] [E] を得る。 NL 廃棄"
+  },
+  "reliquary:VaporEntropicBrew": {
+    "NAME": "エントロピーの香り",
+    "DESCRIPTION": "保留 NL 所持しているランダムなポーション1つが別のポーションに変化する。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL 所持しているポーション全てが別のポーションに変化する。 NL 廃棄"
+  },
+  "reliquary:VaporEssenceOfDarkness": {
+    "NAME": "闇の香り",
+    "DESCRIPTION": "保留 NL 全ての ダーク オーブの自動効果を使用する。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL 全ての ダーク オーブの自動効果を !M! 回使用する。 NL 廃棄"
+  },
+  "reliquary:VaporEssenceOfSteel": {
+    "NAME": "鉄の香り",
+    "DESCRIPTION": "保留 NL *プレートアーマー !M! を得る。"
+  },
+  "reliquary:VaporExplosivePotion": {
+    "NAME": "爆発の香り",
+    "DESCRIPTION": "保留 NL 敵全体に !D! ダメージを与える。 NL 廃棄"
+  },
+  "reliquary:VaporFairyInABottle": {
+    "NAME": "妖精の香り",
+    "DESCRIPTION": "保留 NL 次にHPを失うとき、それを無効化する。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL 次の !M! 回、HPを失うとき、それを無効化する。 NL 廃棄"
+  },
+  "reliquary:VaporFearPotion": {
+    "NAME": "恐怖の香り",
+    "DESCRIPTION": "保留 NL 弱体 !M! を与える。 NL 廃棄"
+  },
+  "reliquary:VaporFirePotion": {
+    "NAME": "火炎の香り",
+    "DESCRIPTION": "保留 NL !D! ダメージを与える。 NL 廃棄"
+  },
+  "reliquary:VaporFlexPotion": {
+    "NAME": "ステロイドの香り",
+    "DESCRIPTION": "保留 NL 筋力 !M! を得る。 NL このターン終了時に 筋力 !M! を失う。 NL 廃棄"
+  },
+  "reliquary:VaporFocusPotion": {
+    "NAME": "集中の香り",
+    "DESCRIPTION": "保留 NL 集中力 !M! を得る。"
+  },
+  "reliquary:VaporFruitJuice": {
+    "NAME": "フルーツの香り",
+    "DESCRIPTION": "保留 NL 最大HPを !M! 獲得。 NL 廃棄"
+  },
+  "reliquary:VaporGamblersBrew": {
+    "NAME": "醸造酒の香り",
+    "DESCRIPTION": "保留 NL 手札をランダムに1枚捨てる。 NL カードを1枚引く。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL 手札を全て捨て、同じ枚数だけカードを引く。 NL 廃棄"
+  },
+  "reliquary:VaporGhostInAJar": {
+    "NAME": "幽霊の香り",
+    "DESCRIPTION": "保留 NL !M! %の確率で 無形 1 を得る。 NL 廃棄"
+  },
+  "reliquary:VaporHeartOfIron": {
+    "NAME": "金属の香り",
+    "DESCRIPTION": "保留 NL 金属化 !M! を得る。"
+  },
+  "reliquary:VaporLiquidBronze": {
+    "NAME": "棘の香り",
+    "DESCRIPTION": "保留 NL トゲ !M! を得る。"
+  },
+  "reliquary:VaporLiquidMemories": {
+    "NAME": "記憶の香り",
+    "DESCRIPTION": "保留 NL 捨て札のランダムなカードを1枚手札に戻す。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL 捨て札のランダムなカードを !M! 枚手札に戻す。 NL 廃棄"
+  },
+  "reliquary:VaporPoisonPotion": {
+    "NAME": "毒の香り",
+    "DESCRIPTION": "保留 NL 毒 !M! を与える。 NL 廃棄"
+  },
+  "reliquary:VaporPotionOfCapacity": {
+    "NAME": "拡張の香り",
+    "DESCRIPTION": "保留 NL オーブスロットを1つ得る。",
+    "UPGRADE_DESCRIPTION": "保留 NL オーブスロットを !M! つ得る。"
+  },
+  "reliquary:VaporPowerPotion": {
+    "NAME": "パワーの香り",
+    "DESCRIPTION": "保留 NL ランダムなパワーを1枚手札に加える。 NL このターン、そのコストは0。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL ランダムなパワーを !M! 枚手札に加える。 NL このターン、そのコストは0。 NL 廃棄"
+  },
+  "reliquary:VaporRegenPotion": {
+    "NAME": "再生の香り",
+    "DESCRIPTION": "保留 NL 再生 !M! を得る。"
+  },
+  "reliquary:VaporSkillPotion": {
+    "NAME": "スキルの香り",
+    "DESCRIPTION": "保留 NL ランダムなスキルを1枚手札に加える。 NL このターン、そのコストは0。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL ランダムなスキルを !M! 枚手札に加える。 NL このターン、そのコストは0。 NL 廃棄"
+  },
+  "reliquary:VaporSmokeBomb": {
+    "NAME": "煙の香り",
+    "DESCRIPTION": "保留 NL !M! ゴールドを支払い、ボス以外の戦闘から逃走する。 NL 報酬は得られない。 NL 廃棄",
+    "EXTENDED_DESCRIPTION": [
+      "ゴールドが足りない！",
+      "囲まれている！",
+      "こいつからは逃げられない！",
+      "こいつらからは逃げられない！"
+    ]
+  },
+  "reliquary:VaporSneckoOil": {
+    "NAME": "蛇の香り",
+    "DESCRIPTION": "保留 NL 手札のランダムな半分のカードのコストをランダムに変化する。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL 手札のコストをランダムに変化する。 NL 廃棄"
+  },
+  "reliquary:VaporSpeedPotion": {
+    "NAME": "スピードの香り",
+    "DESCRIPTION": "保留 NL 敏捷性 !M! を得る。 NL このターン終了時に 敏捷性 !M! を失う。 NL 廃棄"
+  },
+  "reliquary:VaporStancePotion": {
+    "NAME": "スタンスの香り",
+    "DESCRIPTION": "保留 NL スタンス に入っていない時だけプレイ可能。 NL 平静 か 憤怒 のどちらかランダムな スタンス に入る。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL 平静 か 憤怒 に入っている時だけプレイ可能。 NL もう一方の スタンス に入る。 NL 廃棄",
+    "EXTENDED_DESCRIPTION": [
+      "スタンスに入っている時は使用できない。",
+      "平静か憤怒の時だけ使用できる。"
+    ]
+  },
+  "reliquary:VaporStrengthPotion": {
+    "NAME": "筋力の香り",
+    "DESCRIPTION": "保留 NL 筋力 !M! を得る。"
+  },
+  "reliquary:VaporSwiftPotion": {
+    "NAME": "加速の香り",
+    "DESCRIPTION": "保留 NL カードを1枚引く。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL カードを !M! 枚引く。 NL 廃棄"
+  },
+  "reliquary:VaporUnknownPotion": {
+    "NAME": "謎の香り",
+    "DESCRIPTION": "保留 NL ランダムな香りカードを1枚手札に加える。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL ランダムな香りカードを !M! 枚手札に加える。 NL 廃棄",
+    "NOTE_FOR_TRANSLATORS": "This Vapor is generated by potions from other mods."
+  },
+  "reliquary:VaporWeakPotion": {
+    "NAME": "脱力の香り",
+    "DESCRIPTION": "保留 NL 脱力 !M! を与える。 NL 廃棄"
+  },
+  "reliquary:Vim": {
+    "NAME": "活力",
+    "DESCRIPTION": "ターン開始時、 [E] を得る。",
+    "UPGRADE_DESCRIPTION": "ターン開始時、 [E] [E] を得る。"
+  }
+}

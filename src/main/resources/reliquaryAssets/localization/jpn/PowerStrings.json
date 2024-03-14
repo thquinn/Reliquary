@@ -65,7 +65,7 @@
   "reliquary:FocusDown": {
     "NAME": "集中力低下",
     "DESCRIPTIONS": [
-      "次のターン開始時、 #y集中力 #b",
+      "ターン終了時、 #y集中力 #b",
       " を失う。"
     ]
   },

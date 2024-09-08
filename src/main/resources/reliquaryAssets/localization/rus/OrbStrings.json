@@ -1,17 +1,17 @@
 {
   "reliquary:Bias": {
-    "NAME": "Bias",
+    "NAME": "Предвзятость",
     "DESCRIPTION": [
-      "#yPassive: At the start of turn, lose #b",
-      " #yFocus. NL #yEvoke: No effect. NL Bias is unaffected by #yFocus."
+      "#yПассивно: В начале вашего хода отнимает #b",
+      " #yФокуса. NL #yРазрядка: Нет эффекта. NL #yФокус не влияет на предвзятость."
     ]
   },
   "reliquary:Data": {
-    "NAME": "Data",
+    "NAME": "Данные",
     "DESCRIPTION": [
-      "#yPassive: When #yChanneled and at the start of turn, gain #b",
-      " temporary #yFocus. NL #yEvoke: Gain #b",
-      " temporary #yFocus. NL Data is unaffected by #yFocus."
+      "#yПассивно: Когда #yЗаряжена и в начале каждого хода даёт #b",
+      " временного #yФокуса. NL #yРазрядка: Даёт #b",
+      " временного #yФокуса. NL #yФокус не влияет на Данные."
     ]
   }
 }

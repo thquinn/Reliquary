@@ -71,10 +71,10 @@
     ]
   },
   "reliquary:BloodFilter": {
-    "NAME": "Blood Filter",
-    "FLAVOR": "Gives you a second chance at life, as long as you take care of yourself...",
+    "NAME": "血液フィルター",
+    "FLAVOR": "自分を大切にする限り、人生におけるセカンド・チャンスを与えてくれる...。",
     "DESCRIPTIONS": [
-      "Whenever you lose HP during your turn, regain it at the end of combat."
+      "ターン中にHPを失うたびに、戦闘終了時にHPを回復する。"
     ],
     "NOTE_FOR_TRANSLATORS": "This relic was made in honor of our wonderful SPA translator Dextro!"
   },
@@ -166,7 +166,7 @@
     "NAME": "ごつごつした根",
     "FLAVOR": "この根はいくつもの困難な時代を見てきた。あなたのことも同じように見ているのだろうか？",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. The first card you draw each turn costs #b1 more this combat until played."
+      "ターン開始時に [E] を得る。あなたが毎ターン最初に引くカードは、プレイされるまでこの戦闘でコストが #b1 増える。"
     ]
   },
   "reliquary:Crucible": {
@@ -275,8 +275,8 @@
     "NAME": "フィンガートラップ",
     "FLAVOR": "少し冷静になれば、気持ちが楽になるだろう。",
     "DESCRIPTIONS": [
-      "Prevent the first #b",
-      " HP you would lose during your turn each combat."
+      "各戦闘のターン中、最初に #b",
+      " のHPを失うのを防ぐ。"
     ]
   },
   "reliquary:Firecrackers": {
@@ -299,7 +299,7 @@
     "NAME": "無料サンプル",
     "FLAVOR": "誰もが欲しがる。",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. Whenever an enemy deals unblocked attack damage to you, it gains #b1 #yBuffer if it has none."
+      "ターン開始時に[E]を得る。敵がブロックされていない攻撃ダメージをあなたに与えるたび、その敵に #b1 #yBuffer がない場合、それを得る。"
     ]
   },
   "reliquary:GummyVitamins": {
@@ -478,8 +478,8 @@
     "NAME": "孔雀の盾",
     "FLAVOR": "高い防御能力がある。",
     "DESCRIPTIONS": [
-      "Whenever you enter #yWrath, gain #b",
-      " #yBlock, then double your #yBlock."
+      "あなたが #y憤怒のスタンス に入るたび、 #b",
+      " #yブロック を獲得し、その後あなたの #yブロック を2倍にする。"
     ]
   },
   "reliquary:PlasmaLobster": {

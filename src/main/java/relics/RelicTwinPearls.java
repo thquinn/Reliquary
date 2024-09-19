@@ -25,11 +25,6 @@ public class RelicTwinPearls extends CustomRelic {
     }
 
     @Override
-    public boolean canSpawn() {
-        return !AbstractDungeon.player.chosenClass.toString().equals("THE_AUTOMATON");
-    }
-
-    @Override
     public void atBattleStart() {
         counter = 1;
     }

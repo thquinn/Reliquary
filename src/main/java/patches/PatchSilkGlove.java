@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.actions.unique.RetainCardsAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.powers.watcher.EstablishmentPower;
 import com.megacrit.cardcrawl.relics.RunicPyramid;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
@@ -23,6 +24,7 @@ public class PatchSilkGlove {
     )
     public static void Insert() {
         AbstractPlayer p = AbstractDungeon.player;
+        EstablishmentPower establishmentPower = (EstablishmentPower) p.getPower(EstablishmentPower.POWER_ID);
         if (!p.hasRelic(RelicSilkGlove.ID) || p.hasRelic(RunicPyramid.ID)) {
             return;
         }
@@ -33,6 +35,11 @@ public class PatchSilkGlove {
             for (AbstractCard c : p.hand.group) {
                 if (!c.isEthereal) {
                     c.retain = true;
+                    if (establishmentPower != null) {
+                        // Hacky, but unfortunately Well-Laid Plans' selection resolves after Establishment, so there's
+                        // no other place to put this.
+                        c.modifyCostForCombat(-establishmentPower.amount);
+                    }
                 }
             }
             AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(p, p.getRelic(RelicSilkGlove.ID)));

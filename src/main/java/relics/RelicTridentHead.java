@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import util.TextureLoader;
 
 public class RelicTridentHead extends CustomRelic {
@@ -67,7 +68,11 @@ public class RelicTridentHead extends CustomRelic {
     }
 
     boolean AreThereMultipleEnemies() {
-        return AbstractDungeon.getCurrRoom().monsters.monsters.stream().filter(mo -> !mo.isDeadOrEscaped()).count() > 1;
+        AbstractRoom room = AbstractDungeon.getCurrRoom();
+        if (room != null && room.monsters != null && room.monsters.monsters != null) {
+            return AbstractDungeon.getCurrRoom().monsters.monsters.stream().filter(mo -> mo != null && !mo.isDeadOrEscaped()).count() > 1;
+        }
+        return false;
     }
 
     @Override

@@ -968,7 +968,7 @@
     "NAME": "Traffic Cone",
     "FLAVOR": "In the dark of the Spire, its glinting stripes attain an unlikely menace.",
     "DESCRIPTIONS": [
-      "The first time an enemy does something other than attack, it loses #b",
+      "The first time each enemy does something other than attack, it loses #b",
       " #yStrength."
     ]
   },

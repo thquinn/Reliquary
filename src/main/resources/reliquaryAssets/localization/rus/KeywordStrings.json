@@ -14,22 +14,22 @@
   },
   {
     "NAMES": [
-      "bias"
+      "предвзятость"
     ],
-    "DESCRIPTION": "Orb: Lose 1 Focus each turn."
+    "DESCRIPTION": "Сфера: отнимает 1 Фокус в начале каждого вашего хода."
   },
   {
     "NAMES": [
-      "buffer"
+      "буфер"
     ],
-    "DESCRIPTION": "Prevents the next instance of damage.",
+    "DESCRIPTION": "Предотвращает следующую потерю ОЗ.",
     "NOTE_FOR_TRANSLATORS": "This is a keyword for the Buffer power from the base game."
   },
   {
     "NAMES": [
-      "data"
+      "данные"
     ],
-    "DESCRIPTION": "Orb: Gains #yFocus."
+    "DESCRIPTION": "Сфера: дает #yФокус."
   },
   {
     "NAMES": [
@@ -40,9 +40,9 @@
   },
   {
     "NAMES": [
-      "injury", "injuries"
+      "травма", "травмы"
     ],
-    "DESCRIPTION": "Injuries are unplayable #rCurse cards.",
+    "DESCRIPTION": "Травмы это неиграбельные #rПроклятья.",
     "NOTE_FOR_TRANSLATORS": "This is a keyword for the Injury Curse card from the base game."
   },
   {
@@ -65,9 +65,9 @@
   },
   {
     "NAMES": [
-      "slow"
+      "медлительность"
     ],
-    "DESCRIPTION": "Slow creatures take #b10% more damage from Attacks for each previous card played that turn.",
+    "DESCRIPTION": "Медлительные враги получают на #b10% больше урона от Атак за каждую сыгранную в этот ход карту.",
     "NOTE_FOR_TRANSLATORS": "This is a keyword for the Slow debuff from the base game."
   },
   {

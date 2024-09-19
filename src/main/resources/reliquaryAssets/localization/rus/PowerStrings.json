@@ -1,72 +1,73 @@
 {
   "reliquary:AfterGlow": {
-    "NAME": "After Glow",
+    "NAME": "Сияние в воздухе",
     "DESCRIPTIONS": [
-      "#yAfter #yImage triggers twice on #ySkills.",
-      "#yAfter #yImage triggers #b",
-      " times on #ySkills."
+      "#yСлед #yв #yвоздухе срабатывает дважды для #yНавыков.",
+      "#yСлед #yв #yвоздухе срабатывает #b",
+      " раз для #yНавыков."
     ]
   },
   "reliquary:AreaDenial": {
     "NAME": "Area Denial",
     "DESCRIPTIONS": [
-      "#yThorns deals damage to ALL enemies."
+      "#yШипы наносят урон ВСЕМ врагам."
     ],
     "NOTE_FOR_TRANSLATORS": "This power augments the behavior of the base game's Thorns power."
   },
   "reliquary:BattleHymnPlus": {
-    "NAME": "Battle Anthem",
+    "NAME": "Боевой гимн",
     "DESCRIPTIONS": [
-      "At the start of your turn, add #b",
-      " #ySmite+ into your hand."
+      "В начале каждого вашего хода добавляет #b карт",
+      " #yКара+ в руку."
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Battle Hymn power."
   },
   "reliquary:BlurPlus": {
-    "NAME": "Double Vision",
+    "NAME": "Двойная неуловимость",
     "DESCRIPTIONS": [
-      "#yBlock is doubled rather than removed at the start of your next turn.",
-      "#yBlock is doubled rather than removed at the start of your next #b",
-      " turns."
+      "#yЗащита удваивается, а не исчезает в начале вашего следующего хода.",
+      "#yЗащита удваивается, а не исчезает в начале ваших #b следующих",
+      " ходов."
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Blur power."
   },
   "reliquary:ChainReaction": {
-    "NAME": "Chain Reaction",
+    "NAME": "Цепная реакция",
     "DESCRIPTIONS": [
-      "At the end of your turn, gain #b",
-      " #yCombust."
+      "В конце вашего хода получите #b",
+      " #yСамовозгорания."
     ],
     "NOTE_FOR_TRANSLATORS": "Combust is an existing power in the base game."
   },
   "reliquary:CutAbove": {
-    "NAME": "A Cut Above",
+    "NAME": "Высший порез",
     "DESCRIPTIONS": [
-      "#yThousand #yCuts triggers twice on #ySkills.",
-      "#yThousand #yCuts triggers #b",
-      " times on #ySkills."
-    ]
+      "#yТысяча #yпорезов срабатывает дважды для #yНавыков.",
+      "#yТысяча #yпорезов срабатывает #b",
+      " раз для #yНавыков."
+    ],
+    "NOTE_FOR_TRANSLATORS": "Я не могу найти достойного русского аналога для A Cut Above. Высший порез звучит глупо, но в игре переведено именно как порез, а не разрез"
   },
   "reliquary:DeathWarrant": {
-    "NAME": "Death Warrant",
+    "NAME": "Смертный приговор",
     "DESCRIPTIONS": [
-      "Your next #yAttack against this enemy this turn deals an additional #b",
-      " damage."
+      "Ваша следующая #yАтака по этому врагу нанесет дополнительно #b",
+      " урона."
     ]
   },
   "reliquary:DoubleWindsor": {
-    "NAME": "Double Windsor",
+    "NAME": "Двойной Виндзор",
     "DESCRIPTIONS": [
-      "#yChoked triggers twice on #ySkills this turn.",
-      "#yChoked triggers #b",
-      " times on #ySkills this turn."
+      "#yУдушение срабатывает дважды для #yНавыков в этом ходу.",
+      "#yУдушение срабатывает #b",
+      " раз для #yНавыков в этом ходу."
     ]
   },
   "reliquary:FocusDown": {
-    "NAME": "Focus Down",
+    "NAME": "Потеря фокуса",
     "DESCRIPTIONS": [
-      "At the end of this turn, lose #b",
-      " #yFocus."
+      "В конце этого хода потеряйте #b",
+      " #yФокуса."
     ]
   },
   "reliquary:HalfLightning": {
@@ -76,51 +77,51 @@
     ]
   },
   "reliquary:HandSize": {
-    "NAME": "Hand Size Up",
+    "NAME": "Увеличение руки",
     "DESCRIPTIONS": [
-      "Hand Size Down",
-      "Your maximum hand size is increased by #b",
-      "Your maximum hand size is decreased by #b",
+      "Уменьшение руки",
+      "Максимальный размер руки увеличен на #b",
+      "Максимальный размер руки уменьшен на #b",
       "."
     ]
   },
   "reliquary:HelloPlus": {
     "NAME": "Fizzbuzz",
     "DESCRIPTIONS": [
-      "At the start of your turn, add #b",
-      " random Uncommon card into your hand.",
-      " random Uncommon cards into your hand."
+      "В начале вашего хода добавьте #b",
+      " случайную Необычную карту в руку.",
+      " случайных Необычных карт в руку."
     ],
-    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Hello power."
+    "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Hello power. Т.к. это отсылка к задаче из программирования, я не буду переводить название"
   },
   "reliquary:Hooked": {
-    "NAME": "Hooked",
+    "NAME": "На крючке",
     "DESCRIPTIONS": [
-      "Gain #b",
-      " less [E] next turn."
+      "Получите на #b",
+      " меньше [E] на следующий ход."
     ]
   },
   "reliquary:Hydrated": {
-    "NAME": "Hydrated",
+    "NAME": "Водный баланс",
     "DESCRIPTIONS": [
-      "Delays #yStrength #yDown for #b",
-      " turn.",
-      " turns."
+      "#yПонижение #yСилы сработает через #b",
+      " ход.",
+      " ходов."
     ]
   },
   "reliquary:InNTurnsDeath": {
     "NAME": "",
     "DESCRIPTIONS": [
-      "In #b",
-      " turns, die."
+      "Через #b",
+      " ходов вы умрёте."
     ]
   },
   "reliquary:IntangibleTurns": {
     "NAME": "",
     "DESCRIPTIONS": [
-      "Reduce ALL damage taken and HP loss to #b1 this turn.",
-      "Reduce ALL damage taken and HP loss to #b1 for the next #b",
-      " turns."
+      "Понижает ЛЮБОЙ получаемый урон и потерю ОЗ до #b1 в этот ход.",
+      "Понижает ЛЮБОЙ получаемый урон и потерю ОЗ до #b1 на #b следующих",
+      " ходов."
     ],
     "NOTE_FOR_TRANSLATORS": "This a turn-based version of the base game's Intangible power.."
   },
@@ -141,39 +142,39 @@
     ]
   },
   "reliquary:MrofOhce": {
-    "NAME": "Mrof Ohce",
+    "NAME": "Охэ килбо",
     "DESCRIPTIONS": [
-      "The last card you play each turn is played twice.",
-      "The last #b",
-      " cards you play each turn are played twice."
+      "Последняя карта, сыгранная каждый ход, разыгрывается дважды.",
+      "Последние #b",
+      " карт, сыгранные каждый ход, разыгрываются дважды."
     ],
     "NOTE_FOR_TRANSLATORS": "This is an alternate version of the base game's Echo Form power. 'Mrof Ohce' is Echo Form backwards."
   },
   "reliquary:QuantumAI": {
-    "NAME": "Quantum AI",
+    "NAME": "Квантовый ИИ",
     "DESCRIPTIONS": [
-      "At the start of your turn, add #b1 of #b2 random #yPower cards into your hand.",
-      "At the start of your turn, add #b1 of #b2 random #yPower cards into your hand twice.",
-      "At the start of your turn, add #b1 of #b2 random #yPower cards into your hand #b",
-      " times."
+      "В начале вашего хода добавьте #b1 из #b2 случайных карт #yТаланта в руку.",
+      "В начале вашего хода добавьте #b1 из #b2 случайных карт #yТаланта в руку дважды.",
+      "В начале вашего хода добавьте #b1 из #b2 случайных карт #yТаланта в руку #b",
+      " раз."
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Study power."
   },
   "reliquary:Rattled": {
-    "NAME": "Rattled",
+    "NAME": "Растерянность",
     "DESCRIPTIONS": [
-      "Receives double damage from the next unblocked attack.",
-      "Receives double damage from the next #b",
-      " unblocked attacks."
+      "Получите двойной урон от следующей незаблокированной атаки.",
+      "Получите двойной урон от следующих #b",
+      " незаблокированных атак."
     ],
-    "NOTE_FOR_TRANSLATORS": "A pun on rattlesnakes and being 'rattled,' i.e. unnerved or disarmed."
+    "NOTE_FOR_TRANSLATORS": "A pun on rattlesnakes and being 'rattled,' i.e. unnerved or disarmed. Не могу перевести каламбур."
   },
   "reliquary:ReboundPlus": {
-    "NAME": "Resound",
+    "NAME": "Резонанс",
     "DESCRIPTIONS": [
-      "The next card you play this turn is placed into your hand.",
-      "The next #b",
-      " cards you play this turn are placed into your hand."
+      "Вы кладете следующую разыгранную в этом ходу карту в руку.",
+      "Следующие #b",
+      " карт, сыгранные в этом ходу, кладутся в вашу руку."
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Rebound power."
   },
@@ -186,10 +187,10 @@
     ]
   },
   "reliquary:StormPlus": {
-    "NAME": "Superstorm",
+    "NAME": "Сверхшторм",
     "DESCRIPTIONS": [
-      "Whenever you play a #yPower card, #yChannel #b",
-      " #yLightning for each [B] it cost (at least #b",
+      "Когда вы разыгрываете #yТалант, #yЗаряжает #b",
+      " #yМолний за каждую [B] его стоимости (не менее #b",
       ")."
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Storm power."
@@ -202,16 +203,16 @@
     ]
   },
   "reliquary:Taunt": {
-    "NAME": "Насмешка",
+    "NAME": "Провокация",
     "DESCRIPTIONS": [
-      "Other enemies can't be attacked until this enemy dies.",
-      "Другой враг #r@насмехается@ надо мной!"
+      "Другие враги не могут быть атакованы, пока этот не умрет.",
+      "Другой враг #r@Провоцирует@ меня!"
     ]
   },
   "reliquary:ThermalPaste": {
-    "NAME": "Thermal Paste",
+    "NAME": "Термопаста",
     "DESCRIPTIONS": [
-      "#yHeatsink will draw #yPower cards when possible."
+      "#yТеплоотводы будут давать карты #yТаланта , если возможно."
     ],
     "NOTE_FOR_TRANSLATORS": "This power augments the behavior of the Defect's Heatsinks power."
   },
@@ -233,10 +234,10 @@
     ]
   },
   "reliquary:VulnerableNextTurn": {
-    "NAME": "Vulnerable Next Turn",
+    "NAME": "Уязвимость на следующий ход",
     "DESCRIPTIONS": [
-      "Gain #b",
-      " #yVulnerable next turn."
+      "Получите #b",
+      " #yУязвимости на следующий ход."
     ]
   }
 }

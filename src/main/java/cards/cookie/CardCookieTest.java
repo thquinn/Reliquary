@@ -16,6 +16,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.vfx.combat.ExplosionSmallEffect;
 
+import java.lang.reflect.Type;
+
 public class CardCookieTest extends CardCookie {
     public static final String ID = "reliquary:CookieTest";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/blastoff.png";
@@ -25,34 +27,17 @@ public class CardCookieTest extends CardCookie {
     public static final int COST = 0;
 
     public CardCookieTest() {
-        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, CardTarget.ALL_ENEMY);
-        baseDamage = 25;
-        baseMagicNumber = 1;
-        magicNumber = 1;
-        exhaust = true;
+        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, CardTarget.NONE);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
-            if (!mo.isDeadOrEscaped())
-                addToBot(new VFXAction(new ExplosionSmallEffect(mo.hb.cX, mo.hb.cY), 0.1F));
-        }
-        addToBot(new WaitAction(0.5F));
-        addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(damage, true), DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.NONE));
-        for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
-            if (!mo.isDeadOrEscaped()) {
-                addToBot(new ApplyPowerAction(mo, AbstractDungeon.player, new VulnerablePower(mo, 1, false)));
-            }
-        }
+        super.use(p, m);
     }
 
     @Override
     public void upgrade() {
-        if (!this.upgraded) {
-            upgradeName();
-            upgradeDamage(10);
-        }
+        super.upgrade();
     }
 
     @Override

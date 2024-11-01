@@ -17,8 +17,14 @@ public class CookieStatics {
     public static final String CARD_BACK_ENERGY_LARGE = "reliquaryAssets/images/cardui/cookie/energy1024.png";
     public static final String CARD_BACK_ENERGY_SMALL = "reliquaryAssets/images/cardui/cookie/energy512.png";
     public static final String CARD_BACK_ENERGY_TEXT = "reliquaryAssets/images/cardui/cookie/energyText.png";
-    public static final String CARD_BACK_ATTACK_LARGE = "reliquaryAssets/images/cardui/cookie/attack1024.png";
-    public static final String CARD_BACK_ATTACK_BITE_LARGE = "reliquaryAssets/images/cardui/cookie/attack1024_bite.png";
-    public static final String CARD_BACK_ATTACK_SMALL = "reliquaryAssets/images/cardui/cookie/attack512.png";
-    public static final String CARD_BACK_ATTACK_BITE_SMALL = "reliquaryAssets/images/cardui/cookie/attack512_bite.png";
+    public static final String[] CARD_BACKS_ATTACK_LARGE = {
+            "reliquaryAssets/images/cardui/cookie/attack1024.png",
+            "reliquaryAssets/images/cardui/cookie/attack1024_bite.png",
+            "reliquaryAssets/images/cardui/cookie/attack1024_bite2.png",
+    };
+    public static final String[] CARD_BACKS_ATTACK_SMALL = {
+            "reliquaryAssets/images/cardui/cookie/attack512.png",
+            "reliquaryAssets/images/cardui/cookie/attack512_bite.png",
+            "reliquaryAssets/images/cardui/cookie/attack512_bite2.png",
+    };
 }

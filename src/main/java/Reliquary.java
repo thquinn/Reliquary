@@ -40,9 +40,9 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         BaseMod.addColor(
                 CookieStatics.RELIQUARY_COOKIE,
                 CookieStatics.COLOR,
-                CookieStatics.CARD_BACK_ATTACK_SMALL, CookieStatics.CARD_BACK_ATTACK_SMALL, CookieStatics.CARD_BACK_ATTACK_SMALL,
+                CookieStatics.CARD_BACKS_ATTACK_SMALL[0], CookieStatics.CARD_BACKS_ATTACK_SMALL[0], CookieStatics.CARD_BACKS_ATTACK_SMALL[0],
                 CookieStatics.CARD_BACK_ENERGY_SMALL,
-                CookieStatics.CARD_BACK_ATTACK_LARGE, CookieStatics.CARD_BACK_ATTACK_LARGE, CookieStatics.CARD_BACK_ATTACK_LARGE,
+                CookieStatics.CARD_BACKS_ATTACK_LARGE[0], CookieStatics.CARD_BACKS_ATTACK_LARGE[0], CookieStatics.CARD_BACKS_ATTACK_LARGE[0],
                 CookieStatics.CARD_BACK_ENERGY_LARGE, CookieStatics.CARD_BACK_ENERGY_TEXT
         );
         try {
@@ -74,6 +74,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         BaseMod.addRelic(new RelicBuckler(), RelicType.SHARED);
         BaseMod.addRelic(new RelicCitrusReamer(), RelicType.SHARED);
         BaseMod.addRelic(new RelicConveyor(), RelicType.BLUE);
+        BaseMod.addRelic(new RelicCookieJar(), RelicType.SHARED);
         BaseMod.addRelic(new RelicCraggleroot(), RelicType.SHARED);
         BaseMod.addRelic(new RelicCrucible(), RelicType.SHARED);
         BaseMod.addRelic(new RelicCrusadersMap(), RelicType.SHARED);
@@ -175,6 +176,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         UnlockTracker.markRelicAsSeen(RelicBuckler.ID);
         UnlockTracker.markRelicAsSeen(RelicCitrusReamer.ID);
         UnlockTracker.markRelicAsSeen(RelicConveyor.ID);
+        UnlockTracker.markRelicAsSeen(RelicCookieJar.ID);
         UnlockTracker.markRelicAsSeen(RelicCraggleroot.ID);
         UnlockTracker.markRelicAsSeen(RelicCrucible.ID);
         UnlockTracker.markRelicAsSeen(RelicCrusadersMap.ID);

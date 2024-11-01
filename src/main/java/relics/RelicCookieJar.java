@@ -14,13 +14,21 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import util.TextureLoader;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 public class RelicCookieJar extends CustomRelic {
     public static final String ID = "reliquary:CookieJar";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/cookieJar.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/cookieJar.png");
 
+    Queue<CardCookie> cookiesToAdd;
+
     public RelicCookieJar() {
         super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.CLINK);
+        cookiesToAdd = new LinkedList<>();
     }
 
     @Override
@@ -33,16 +41,24 @@ public class RelicCookieJar extends CustomRelic {
     public void onUpgradeCookie(CardCookie cookie) {
         getRandomCookie(cookie);
     }
-
     void getRandomCookie(CardCookie except) {
+        // For some godforsaken reason, the ShowCardAndObtainEffect constructor puts an effect on the effect queue
+        // immediately, so it triggers a concurrent modification except if performed during a Smith upgrade.
         CardCookie cookie = new CardCookieTest();
-        AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(cookie, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
-        boolean inCombat = CardCrawlGame.isInARun() && AbstractDungeon.currMapNode != null && AbstractDungeon.getCurrRoom() != null && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT;
-        if (inCombat) {
-            addToBot(new MakeTempCardInHandAction(cookie, true, true));
+        cookiesToAdd.add(cookie);
+    }
+    @Override
+    public void update() {
+        super.update();
+        while (!cookiesToAdd.isEmpty()) {
+            CardCookie cookie = cookiesToAdd.remove();
+            AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(cookie, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
+            boolean inCombat = CardCrawlGame.isInARun() && AbstractDungeon.currMapNode != null && AbstractDungeon.getCurrRoom() != null && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT;
+            if (inCombat) {
+                addToBot(new MakeTempCardInHandAction(cookie, true, true));
+            }
         }
     }
-
 
     @Override
     public String getUpdatedDescription() {

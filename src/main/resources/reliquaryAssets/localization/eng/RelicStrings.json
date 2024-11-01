@@ -157,7 +157,7 @@
     "NAME": "Cookie Jar",
     "FLAVOR": "Sehr lecka!",
     "DESCRIPTIONS": [
-      "Upon pickup and whenever you #yPurge or eat a #yCookie #ycard, add a #yCookie #ycard into your deck.",
+      "Whenever you have no unupgraded #yCookie #cards in your deck, add one to your deck.",
       "Cookie Card",
       "A random special card. Removed permanently after being played #b3 times, unless #yUpgraded.",
       "#yEaten after being played #b3 times, unless #yUpgraded."

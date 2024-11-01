@@ -108,17 +108,13 @@ public abstract class CardCookie extends ReliquaryCard implements CustomSavable<
 
     @Override
     public void onRemoveFromMasterDeck() {
-        RelicCookieJar[] cookieJars = AbstractDungeon.player.relics.stream().filter(r -> r instanceof RelicCookieJar).map(r -> (RelicCookieJar)r).toArray(RelicCookieJar[]::new);
-        for (RelicCookieJar cookieJar : cookieJars) {
-            cookieJar.onPurgeCookie(this);
-        }
+        AbstractDungeon.player.relics.stream().filter(r -> r instanceof RelicCookieJar).map(r -> (RelicCookieJar)r).forEach(r -> r.onPurgeCookie(this));
     }
     @Override
     public void upgrade() {
-        if (!this.upgraded) {
-            RelicCookieJar[] cookieJars = AbstractDungeon.player.relics.stream().filter(r -> r instanceof RelicCookieJar).map(r -> (RelicCookieJar)r).toArray(RelicCookieJar[]::new);
-            for (RelicCookieJar cookieJar : cookieJars) {
-                cookieJar.onUpgradeCookie(this);
+        if (!upgraded) {
+            if (AbstractDungeon.player.masterDeck.contains(this)) {
+                AbstractDungeon.player.relics.stream().filter(r -> r instanceof RelicCookieJar).map(r -> (RelicCookieJar) r).forEach(r -> r.onUpgradeCookie(this));
             }
             upgradeName();
         }

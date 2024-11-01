@@ -1,30 +1,18 @@
 package relics;
 
 import basemod.abstracts.CustomRelic;
-import cards.colorless.CardBlastOff;
 import cards.cookie.CardCookie;
 import cards.cookie.CardCookieTest;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
-import util.ReliquaryLogger;
 import util.TextureLoader;
-
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
-import java.util.stream.Collectors;
-
-import static relics.RelicSculptingSteel.isAppropriateRarity;
 
 public class RelicCookieJar extends CustomRelic {
     public static final String ID = "reliquary:CookieJar";
@@ -37,16 +25,16 @@ public class RelicCookieJar extends CustomRelic {
 
     @Override
     public void onEquip() {
-        getRandomCookie();
+        getRandomCookie(null);
     }
-    public void onPurgeCookie() {
-        getRandomCookie();
+    public void onPurgeCookie(CardCookie cookie) {
+        getRandomCookie(cookie);
     }
-    public void onUpgradeCookie() {
-        getRandomCookie();
+    public void onUpgradeCookie(CardCookie cookie) {
+        getRandomCookie(cookie);
     }
 
-    void getRandomCookie() {
+    void getRandomCookie(CardCookie except) {
         CardCookie cookie = new CardCookieTest();
         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(cookie, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
         boolean inCombat = CardCrawlGame.isInARun() && AbstractDungeon.currMapNode != null && AbstractDungeon.getCurrRoom() != null && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT;

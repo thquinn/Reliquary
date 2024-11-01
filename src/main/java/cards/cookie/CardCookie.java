@@ -22,7 +22,7 @@ import java.util.List;
 
 public abstract class CardCookie extends ReliquaryCard implements CustomSavable<Integer> {
     static String[] DESCRIPTIONS = CardCrawlGame.languagePack.getRelicStrings(RelicCookieJar.ID).DESCRIPTIONS;
-    static TextureAtlas.AtlasRegion[] SILHOUETTES_ATTACK;
+    static TextureAtlas.AtlasRegion[] SILHOUETTES_ATTACK, SILHOUETTES_POWER, SILHOUETTES_SKILL;
     int displayBites;
 
     public CardCookie(String id,
@@ -39,8 +39,17 @@ public abstract class CardCookie extends ReliquaryCard implements CustomSavable<
                     TextureLoader.asAtlasRegion("reliquaryAssets/images/cardui/cookie/silhouette_attack_bite.png"),
                     TextureLoader.asAtlasRegion("reliquaryAssets/images/cardui/cookie/silhouette_attack_bite2.png"),
             };
+            SILHOUETTES_POWER = new TextureAtlas.AtlasRegion[] {
+                    TextureLoader.asAtlasRegion("reliquaryAssets/images/cardui/cookie/silhouette_power.png"),
+                    TextureLoader.asAtlasRegion("reliquaryAssets/images/cardui/cookie/silhouette_power_bite.png"),
+                    TextureLoader.asAtlasRegion("reliquaryAssets/images/cardui/cookie/silhouette_power_bite2.png"),
+            };
+            SILHOUETTES_SKILL = new TextureAtlas.AtlasRegion[] {
+                    TextureLoader.asAtlasRegion("reliquaryAssets/images/cardui/cookie/silhouette_skill.png"),
+                    TextureLoader.asAtlasRegion("reliquaryAssets/images/cardui/cookie/silhouette_skill_bite.png"),
+                    TextureLoader.asAtlasRegion("reliquaryAssets/images/cardui/cookie/silhouette_skill_bite2.png"),
+            };
         }
-        displayBites = -1;
     }
 
     @Override
@@ -61,14 +70,27 @@ public abstract class CardCookie extends ReliquaryCard implements CustomSavable<
         int bites = CookieBiteField.bites.get(this);
         if (bites != displayBites) {
             displayBites = bites;
-            setBackgroundTexture(CookieStatics.CARD_BACKS_ATTACK_SMALL[displayBites], CookieStatics.CARD_BACKS_ATTACK_LARGE[displayBites]);
+            String[] smallBacks = CookieStatics.CARD_BACKS_SKILL_SMALL, largeBacks = CookieStatics.CARD_BACKS_SKILL_LARGE;
+            if (type == CardType.ATTACK) {
+                smallBacks = CookieStatics.CARD_BACKS_ATTACK_SMALL;
+                largeBacks = CookieStatics.CARD_BACKS_ATTACK_LARGE;
+            } else if (type == CardType.POWER) {
+                smallBacks = CookieStatics.CARD_BACKS_POWER_SMALL;
+                largeBacks = CookieStatics.CARD_BACKS_POWER_LARGE;
+            }
+            setBackgroundTexture(smallBacks[displayBites], largeBacks[displayBites]);
         }
         super.update();
     }
 
     @Override
     public TextureAtlas.AtlasRegion getCardBgAtlas() {
-        return SILHOUETTES_ATTACK[displayBites];
+        if (type == CardType.ATTACK) {
+            return SILHOUETTES_ATTACK[displayBites];
+        } else if (type == CardType.POWER) {
+            return SILHOUETTES_POWER[displayBites];
+        }
+        return SILHOUETTES_SKILL[displayBites];
     }
 
     @Override
@@ -86,12 +108,18 @@ public abstract class CardCookie extends ReliquaryCard implements CustomSavable<
 
     @Override
     public void onRemoveFromMasterDeck() {
-        AbstractDungeon.player.relics.stream().filter(r -> r instanceof RelicCookieJar).map(r -> (RelicCookieJar)r).forEach(r -> r.onPurgeCookie());
+        RelicCookieJar[] cookieJars = AbstractDungeon.player.relics.stream().filter(r -> r instanceof RelicCookieJar).map(r -> (RelicCookieJar)r).toArray(RelicCookieJar[]::new);
+        for (RelicCookieJar cookieJar : cookieJars) {
+            cookieJar.onPurgeCookie(this);
+        }
     }
     @Override
     public void upgrade() {
         if (!this.upgraded) {
-            AbstractDungeon.player.relics.stream().filter(r -> r instanceof RelicCookieJar).map(r -> (RelicCookieJar)r).forEach(r -> r.onUpgradeCookie());
+            RelicCookieJar[] cookieJars = AbstractDungeon.player.relics.stream().filter(r -> r instanceof RelicCookieJar).map(r -> (RelicCookieJar)r).toArray(RelicCookieJar[]::new);
+            for (RelicCookieJar cookieJar : cookieJars) {
+                cookieJar.onUpgradeCookie(this);
+            }
             upgradeName();
         }
         setBites(0);

@@ -40,9 +40,9 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         BaseMod.addColor(
                 CookieStatics.RELIQUARY_COOKIE,
                 CookieStatics.COLOR,
-                CookieStatics.CARD_BACKS_ATTACK_SMALL[0], CookieStatics.CARD_BACKS_ATTACK_SMALL[0], CookieStatics.CARD_BACKS_ATTACK_SMALL[0],
+                CookieStatics.CARD_BACKS_ATTACK_SMALL[0], CookieStatics.CARD_BACKS_SKILL_SMALL[0], CookieStatics.CARD_BACKS_POWER_SMALL[0],
                 CookieStatics.CARD_BACK_ENERGY_SMALL,
-                CookieStatics.CARD_BACKS_ATTACK_LARGE[0], CookieStatics.CARD_BACKS_ATTACK_LARGE[0], CookieStatics.CARD_BACKS_ATTACK_LARGE[0],
+                CookieStatics.CARD_BACKS_ATTACK_LARGE[0], CookieStatics.CARD_BACKS_SKILL_LARGE[0], CookieStatics.CARD_BACKS_POWER_LARGE[0],
                 CookieStatics.CARD_BACK_ENERGY_LARGE, CookieStatics.CARD_BACK_ENERGY_TEXT
         );
         try {

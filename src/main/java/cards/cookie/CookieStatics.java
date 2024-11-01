@@ -27,4 +27,24 @@ public class CookieStatics {
             "reliquaryAssets/images/cardui/cookie/attack512_bite.png",
             "reliquaryAssets/images/cardui/cookie/attack512_bite2.png",
     };
+    public static final String[] CARD_BACKS_POWER_LARGE = {
+            "reliquaryAssets/images/cardui/cookie/power1024.png",
+            "reliquaryAssets/images/cardui/cookie/power1024_bite.png",
+            "reliquaryAssets/images/cardui/cookie/power1024_bite2.png",
+    };
+    public static final String[] CARD_BACKS_POWER_SMALL = {
+            "reliquaryAssets/images/cardui/cookie/power512.png",
+            "reliquaryAssets/images/cardui/cookie/power512_bite.png",
+            "reliquaryAssets/images/cardui/cookie/power512_bite2.png",
+    };
+    public static final String[] CARD_BACKS_SKILL_LARGE = {
+            "reliquaryAssets/images/cardui/cookie/skill1024.png",
+            "reliquaryAssets/images/cardui/cookie/skill1024_bite.png",
+            "reliquaryAssets/images/cardui/cookie/skill1024_bite2.png",
+    };
+    public static final String[] CARD_BACKS_SKILL_SMALL = {
+            "reliquaryAssets/images/cardui/cookie/skill512.png",
+            "reliquaryAssets/images/cardui/cookie/skill512_bite.png",
+            "reliquaryAssets/images/cardui/cookie/skill512_bite2.png",
+    };
 }

@@ -1,6 +1,6 @@
 package cards.colorless;
 
-import basemod.abstracts.CustomCard;
+import cards.ReliquaryCard;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -18,7 +18,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.nio.charset.StandardCharsets;
 
-public class CardPearlescence extends CustomCard {
+public class CardPearlescence extends ReliquaryCard {
     public static final String ID = "reliquary:Pearlescence";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/pearlescence.png";
     private static final ShaderProgram PEARLESCENCE_SHADER = new ShaderProgram(

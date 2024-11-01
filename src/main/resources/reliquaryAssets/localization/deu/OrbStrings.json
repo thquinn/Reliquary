@@ -1,0 +1,17 @@
+{
+  "reliquary:Bias": {
+    "NAME": "Voreingenommenheit",
+    "DESCRIPTION": [
+      "#yPassiv: Zu Beginn des Zuges, verliere #b",
+      " #yFokus. NL #yEntladen: keinen Effekt. NL Voreingenommenheit ist unbetroffen von #yFokus."
+    ]
+  },
+  "reliquary:Data": {
+    "NAME": "Daten",
+    "DESCRIPTION": [
+      "#yPassiv: Wenn #yCErschaffen und zu Beginn des Zuges, erhalte #b",
+      " temporärer #yFokus. NL #yEntladen: Erhalte #b",
+      " temporärer #yFokus. NL Daten sind nicht beinflusst von #yFokus."
+    ]
+  }
+}

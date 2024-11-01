@@ -4,14 +4,9 @@ import basemod.abstracts.CustomRelic;
 import cards.colorless.CardPearlescence;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.cards.CardGroup;
-import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import util.ReliquaryLogger;
 import util.TextureLoader;
-
-import javax.smartcardio.Card;
 
 public class RelicTwinPearls extends CustomRelic {
     public static final String ID = "reliquary:TwinPearls";

@@ -4,7 +4,9 @@ import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
+import cards.ReliquaryCard;
 import cards.colorless.CardVim;
+import cards.cookie.CookieStatics;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
@@ -35,6 +37,14 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
 
     public static void initialize() {
         BaseMod.subscribe(new Reliquary());
+        BaseMod.addColor(
+                CookieStatics.RELIQUARY_COOKIE,
+                CookieStatics.COLOR,
+                CookieStatics.CARD_BACK_ATTACK_SMALL, CookieStatics.CARD_BACK_ATTACK_SMALL, CookieStatics.CARD_BACK_ATTACK_SMALL,
+                CookieStatics.CARD_BACK_ENERGY_SMALL,
+                CookieStatics.CARD_BACK_ATTACK_LARGE, CookieStatics.CARD_BACK_ATTACK_LARGE, CookieStatics.CARD_BACK_ATTACK_LARGE,
+                CookieStatics.CARD_BACK_ENERGY_LARGE, CookieStatics.CARD_BACK_ENERGY_TEXT
+        );
         try {
             Properties defaults = new Properties();
             defaults.setProperty(CONFIG_USE_RETIRED_RELICS, "false");
@@ -267,7 +277,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
     @Override
     public void receiveEditCards() {
         new AutoAdd(ID)
-            .packageFilter(CardVim.class)
+            .packageFilter(ReliquaryCard.class)
             .setDefaultSeen(false)
             .cards();
     }
@@ -275,14 +285,16 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
     @Override
     public void receiveEditKeywords() {
         String path;
-        if (Settings.language == Settings.GameLanguage.JPN) {
+        if (Settings.language == Settings.GameLanguage.DEU) {
+            path = "reliquaryAssets/localization/deu/KeywordStrings.json";
+        } else if (Settings.language == Settings.GameLanguage.JPN) {
             path = "reliquaryAssets/localization/jpn/KeywordStrings.json";
         } else if (Settings.language == Settings.GameLanguage.KOR) {
             path = "reliquaryAssets/localization/kor/KeywordStrings.json";
-        } else if (Settings.language == Settings.GameLanguage.SPA) {
-            path = "reliquaryAssets/localization/spa/KeywordStrings.json";
         } else if (Settings.language == Settings.GameLanguage.RUS) {
             path = "reliquaryAssets/localization/rus/KeywordStrings.json";
+        } else if (Settings.language == Settings.GameLanguage.SPA) {
+            path = "reliquaryAssets/localization/spa/KeywordStrings.json";
         } else if (Settings.language == Settings.GameLanguage.ZHS) {
             path = "reliquaryAssets/localization/zhs/KeywordStrings.json";
         } else {
@@ -302,7 +314,14 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
 
     @Override
     public void receiveEditStrings() {
-        if (Settings.language == Settings.GameLanguage.JPN) {
+        if (Settings.language == Settings.GameLanguage.DEU) {
+            BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/deu/CardStrings.json");
+            BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/deu/OrbStrings.json");
+            BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/deu/PowerStrings.json");
+            BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/deu/RelicStrings.json");
+            BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/deu/StanceStrings.json");
+            BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/deu/UIStrings.json");
+        } else if (Settings.language == Settings.GameLanguage.JPN) {
             BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/jpn/CardStrings.json");
             BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/jpn/OrbStrings.json");
             BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/jpn/PowerStrings.json");
@@ -316,13 +335,6 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
             BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/kor/RelicStrings.json");
             BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/kor/StanceStrings.json");
             BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/kor/UIStrings.json");
-        } else if (Settings.language == Settings.GameLanguage.SPA) {
-            BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/spa/CardStrings.json");
-            BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/spa/OrbStrings.json");
-            BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/spa/PowerStrings.json");
-            BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/spa/RelicStrings.json");
-            BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/spa/StanceStrings.json");
-            BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/spa/UIStrings.json");
         } else if (Settings.language == Settings.GameLanguage.RUS) {
             BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/rus/CardStrings.json");
             BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/rus/OrbStrings.json");
@@ -330,6 +342,13 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
             BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/rus/RelicStrings.json");
             BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/rus/StanceStrings.json");
             BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/rus/UIStrings.json");
+        } else if (Settings.language == Settings.GameLanguage.SPA) {
+            BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/spa/CardStrings.json");
+            BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/spa/OrbStrings.json");
+            BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/spa/PowerStrings.json");
+            BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/spa/RelicStrings.json");
+            BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/spa/StanceStrings.json");
+            BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/spa/UIStrings.json");
         } else if (Settings.language == Settings.GameLanguage.ZHS) {
             BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/zhs/CardStrings.json");
             BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/zhs/OrbStrings.json");
@@ -355,7 +374,6 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         BaseMod.addAudio(OrbBias.SFX_EVOKE, "reliquaryAssets/audio/sound/orb_bias_evoke.ogg");
         BaseMod.addAudio(OrbData.SFX_CHANNEL, "reliquaryAssets/audio/sound/orb_data_channel.ogg");
         BaseMod.addAudio(OrbData.SFX_EVOKE, "reliquaryAssets/audio/sound/orb_data_evoke.ogg");
-
     }
 
     @Override
@@ -390,7 +408,6 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-
                 }
         );
         modPanel.addUIElement(buttonEnableRetired);

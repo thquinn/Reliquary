@@ -1,0 +1,12 @@
+{
+  "reliquary:CardModEthereal": {
+    "TEXT": [
+      "Flüchtig. NL "
+    ]
+  },
+  "reliquary:CardModRetain": {
+    "TEXT": [
+      "Behalten. NL "
+    ]
+  }
+}

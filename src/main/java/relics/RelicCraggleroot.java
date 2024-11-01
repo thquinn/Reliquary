@@ -2,7 +2,6 @@ package relics;
 
 import basemod.abstracts.CustomRelic;
 import basemod.helpers.CardModifierManager;
-import cardmods.CardModIncreaseCost;
 import cardmods.CardModIncreaseCostUntilPlayed;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;

@@ -1,4 +1,4 @@
-package cards.colorless;
+package cards.cookie;
 
 import cards.ReliquaryCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -16,20 +16,21 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.vfx.combat.ExplosionSmallEffect;
 
-public class CardBlastOff extends ReliquaryCard {
-    public static final String ID = "reliquary:BlastOff";
+public class CardCookieTest extends ReliquaryCard {
+    public static final String ID = "reliquary:CookieTest";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/blastoff.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final int COST = 0;
 
-    public CardBlastOff() {
-        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
+    public CardCookieTest() {
+        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, CookieStatics.RELIQUARY_COOKIE, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
         baseDamage = 25;
         baseMagicNumber = 1;
         magicNumber = 1;
         exhaust = true;
+        setBackgroundTexture(CookieStatics.CARD_BACK_ATTACK_BIT_SMALL, CookieStatics.CARD_BACK_ATTACK_BIT_LARGE);
     }
 
     @Override
@@ -55,8 +56,10 @@ public class CardBlastOff extends ReliquaryCard {
         }
     }
 
+
+
     @Override
     public AbstractCard makeCopy() {
-        return new CardBlastOff();
+        return new CardCookieTest();
     }
 }

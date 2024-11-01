@@ -1,7 +1,6 @@
 package relics;
 
 import basemod.abstracts.CustomRelic;
-import basemod.devcommands.relic.Relic;
 import cards.colorless.CardBlastOff;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;

@@ -2,13 +2,9 @@ package relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import com.sun.jmx.remote.internal.ArrayNotificationBuffer;
-import util.StaticHelpers;
 import util.TextureLoader;
 
 public class RelicPlasmaLobster extends CustomRelic {

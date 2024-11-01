@@ -1,7 +1,7 @@
 package cards.colorless.vapor;
 
 import basemod.ReflectionHacks;
-import basemod.abstracts.CustomCard;
+import cards.ReliquaryCard;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.TextureData;
@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import relics.RelicBoilingFlask;
 
-public abstract class CardVapor extends CustomCard {
+public abstract class CardVapor extends ReliquaryCard {
     private static final String[] DESCRIPTIONS = CardCrawlGame.languagePack.getRelicStrings(RelicBoilingFlask.ID).DESCRIPTIONS;
 
     boolean wide = false;
@@ -72,6 +72,6 @@ public abstract class CardVapor extends CustomCard {
         int tw = portraitImg.getWidth();
         int th = portraitImg.getHeight();
         TextureAtlas.AtlasRegion cardImg = new TextureAtlas.AtlasRegion(portraitImg, 0, 0, tw, th);
-        ReflectionHacks.setPrivateInherited(this, CustomCard.class, "portrait", cardImg);
+        ReflectionHacks.setPrivateInherited(this, ReliquaryCard.class, "portrait", cardImg);
     }
 }

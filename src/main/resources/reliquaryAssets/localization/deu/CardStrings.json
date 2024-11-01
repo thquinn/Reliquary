@@ -1,38 +1,31 @@
 {
   "reliquary:BlastOff": {
-    "NAME": "Blast Off!",
-    "DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable to ALL enemies. NL Exhaust.",
+    "NAME": "Abschuss!",
+    "DESCRIPTION": "Füge !D! Schaden zu und wende !M! Verwundbar an ALLE Gegnern an. NL Erschöpft.",
     "NOTE_FOR_TRANSLATORS": "The card name is the culmination of a rocket launch countdown: 3, 2, 1, blast off!"
   },
   "reliquary:Pearlescence": {
     "NAME": "",
-    "DESCRIPTION": "pearlescence",
+    "DESCRIPTION": "Perlenschimmer",
     "EXTENDED_DESCRIPTION": [
-      "I must play another card first."
+      "Ich muss zuerst eine andere Karte spielen."
     ],
     "NOTE_FOR_TRANSLATORS": "The description should match the translation of the pearlescence keyword."
   },
-
-  "reliquary:CookieTest": {
-    "NAME": "Cookie Test",
-    "DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable to ALL enemies. NL Exhaust.",
-    "NOTE_FOR_TRANSLATORS": "Yum!"
-  },
-
   "reliquary:VaporAmbrosia": {
-    "NAME": "Ambrosial Vapor",
-    "DESCRIPTION": "Retain. NL Gain !M! Mantra. NL Exhaust.",
+    "NAME": "Ambrosischer Dampf",
+    "DESCRIPTION": "Behalten. NL Erhalte !M! Mantra. NL Erschöpft.",
     "NOTE_FOR_TRANSLATORS": "Each of these 'Vapor' cards corresponds to one of the 42 potions in the game."
   },
   "reliquary:VaporAncientPotion": {
-    "NAME": "Ancient Vapor",
-    "DESCRIPTION": "Retain. NL Remove 1 Artifact from the enemy. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Remove 1 Artifact from ALL enemies. NL Exhaust."
+    "NAME": "Antiker Dampf",
+    "DESCRIPTION": "Behalten. NL Entferne 1 Artefakt von dem Gegner. NL Erschöpft.",
+    "UPGRADE_DESCRIPTION": "Behalten. NL Entferne 1 Artefakt von ALLEN Gegnern. NL Erschöpft."
   },
   "reliquary:VaporAttackPotion": {
-    "NAME": "Maddening Vapor",
-    "DESCRIPTION": "Retain. NL Add a random Attack card into your hand. It costs 0 this turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Add !M! copies of a random Attack card into your hand. They cost 0 this turn. NL Exhaust."
+    "NAME": "Wut-erregender Dampf",
+    "DESCRIPTION": "Behalten. NL Add a random Attack card into your hand. It costs 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Nimm !M! Kopien eines zufälligen Angriffes. Sie kosten 0 diesen Zug. NL Erschöpft."
   },
   "reliquary:VaporBlessingOfTheForge": {
     "NAME": "Quenching Vapor",

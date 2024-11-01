@@ -13,10 +13,9 @@ public class CardVaporPoisonPotion extends CardVapor {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final int COST = 0;
 
     public CardVaporPoisonPotion() {
-        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, DESCRIPTION, CardType.SKILL, CardTarget.ENEMY);
         baseMagicNumber = 3;
         magicNumber = 3;
         selfRetain = true;

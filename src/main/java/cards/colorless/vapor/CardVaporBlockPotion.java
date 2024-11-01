@@ -13,10 +13,9 @@ public class CardVaporBlockPotion extends CardVapor {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final int COST = 0;
 
     public CardVaporBlockPotion() {
-        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCard.CardColor.COLORLESS, AbstractCard.CardRarity.SPECIAL, AbstractCard.CardTarget.NONE);
+        super(ID, NAME, IMG_PATH, DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCard.CardTarget.NONE);
         baseBlock = 6;
         selfRetain = true;
         exhaust = true;

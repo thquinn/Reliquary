@@ -1,9 +1,11 @@
 package cards.cookie;
 
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
+import util.TextureLoader;
 
 public class CookieStatics {
     @SpireEnum(name = "RELIQUARY_COOKIE")
@@ -16,7 +18,7 @@ public class CookieStatics {
     public static final String CARD_BACK_ENERGY_SMALL = "reliquaryAssets/images/cardui/cookie/energy512.png";
     public static final String CARD_BACK_ENERGY_TEXT = "reliquaryAssets/images/cardui/cookie/energyText.png";
     public static final String CARD_BACK_ATTACK_LARGE = "reliquaryAssets/images/cardui/cookie/attack1024.png";
-    public static final String CARD_BACK_ATTACK_BIT_LARGE = "reliquaryAssets/images/cardui/cookie/attack1024_bite.png";
+    public static final String CARD_BACK_ATTACK_BITE_LARGE = "reliquaryAssets/images/cardui/cookie/attack1024_bite.png";
     public static final String CARD_BACK_ATTACK_SMALL = "reliquaryAssets/images/cardui/cookie/attack512.png";
-    public static final String CARD_BACK_ATTACK_BIT_SMALL = "reliquaryAssets/images/cardui/cookie/attack512_bite.png";
+    public static final String CARD_BACK_ATTACK_BITE_SMALL = "reliquaryAssets/images/cardui/cookie/attack512_bite.png";
 }

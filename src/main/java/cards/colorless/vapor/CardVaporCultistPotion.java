@@ -16,11 +16,10 @@ public class CardVaporCultistPotion extends CardVapor {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final int COST = 0;
     private static final String[] SFXS = new String[] { "VO_CULTIST_1A", "VO_CULTIST_1B", "VO_CULTIST_1C" };
 
     public CardVaporCultistPotion() {
-        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.NONE);
+        super(ID, NAME, IMG_PATH, DESCRIPTION, CardType.POWER, CardTarget.NONE);
         baseMagicNumber = 3;
         magicNumber = 3;
         selfRetain = true;

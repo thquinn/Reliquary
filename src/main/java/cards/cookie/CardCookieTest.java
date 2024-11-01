@@ -1,6 +1,6 @@
 package cards.cookie;
 
-import cards.ReliquaryCard;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.vfx.combat.ExplosionSmallEffect;
 
-public class CardCookieTest extends ReliquaryCard {
+public class CardCookieTest extends CardCookie {
     public static final String ID = "reliquary:CookieTest";
     private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/blastoff.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -25,12 +25,11 @@ public class CardCookieTest extends ReliquaryCard {
     public static final int COST = 0;
 
     public CardCookieTest() {
-        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, CookieStatics.RELIQUARY_COOKIE, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
+        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, CardTarget.ALL_ENEMY);
         baseDamage = 25;
         baseMagicNumber = 1;
         magicNumber = 1;
         exhaust = true;
-        setBackgroundTexture(CookieStatics.CARD_BACK_ATTACK_BIT_SMALL, CookieStatics.CARD_BACK_ATTACK_BIT_LARGE);
     }
 
     @Override
@@ -55,8 +54,6 @@ public class CardCookieTest extends ReliquaryCard {
             upgradeDamage(10);
         }
     }
-
-
 
     @Override
     public AbstractCard makeCopy() {

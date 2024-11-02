@@ -2,9 +2,12 @@ package relics;
 
 import basemod.abstracts.CustomRelic;
 import cards.cookie.CardCookie;
-import cards.cookie.CardCookieTest;
+import cards.cookie.CardCookieRainbowCookie;
+import cards.cookie.CardCookieSnackBreak;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -14,9 +17,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import util.TextureLoader;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
 public class RelicCookieJar extends CustomRelic {
@@ -33,31 +34,35 @@ public class RelicCookieJar extends CustomRelic {
 
     @Override
     public void onEquip() {
-        getRandomCookie(null);
+        cookiesToAdd.add(getRandomCookie(null));
     }
-    public void onPurgeCookie(CardCookie cookie) {
-        getRandomCookie(cookie);
-    }
-    public void onUpgradeCookie(CardCookie cookie) {
-        getRandomCookie(cookie);
-    }
-    void getRandomCookie(CardCookie except) {
-        // For some godforsaken reason, the ShowCardAndObtainEffect constructor puts an effect on the effect queue
-        // immediately, so it triggers a concurrent modification except if performed during a Smith upgrade.
-        CardCookie cookie = new CardCookieTest();
-        cookiesToAdd.add(cookie);
-    }
+
     @Override
     public void update() {
         super.update();
+        if (!isObtained || AbstractDungeon.getCurrRoom() == null) {
+            return;
+        }
         while (!cookiesToAdd.isEmpty()) {
             CardCookie cookie = cookiesToAdd.remove();
             AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(cookie, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
             boolean inCombat = CardCrawlGame.isInARun() && AbstractDungeon.currMapNode != null && AbstractDungeon.getCurrRoom() != null && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT;
             if (inCombat) {
+                addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
                 addToBot(new MakeTempCardInHandAction(cookie, true, true));
+            } else {
+                flash();
             }
         }
+        // Wait for queued effects to finish before checking for the absence of unupgraded cookies.
+        if (AbstractDungeon.effectList.stream().noneMatch(e -> e instanceof ShowCardAndObtainEffect) && AbstractDungeon.player.masterDeck.group.stream().noneMatch(c -> c instanceof CardCookie && !c.upgraded)) {
+            // For some godforsaken reason, the ShowCardAndObtainEffect constructor puts an effect on the effect queue
+            // immediately, so it triggers a concurrent modification except if performed during a Smith upgrade.
+            cookiesToAdd.add(getRandomCookie(null));
+        }
+    }
+    CardCookie getRandomCookie(CardCookie except) {
+        return new CardCookieRainbowCookie();
     }
 
     @Override

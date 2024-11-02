@@ -28,7 +28,14 @@ public class CookieCardBiteAction extends AbstractGameAction {
         int bites = CardCookie.CookieBiteField.bites.get(target);
         target.setBites(bites + 1);
         if (masterCard instanceof CardCookie) {
-            ((CardCookie) masterCard).setBites(bites + 1);
+            CardCookie masterCookie = (CardCookie) masterCard;
+
+            if (
+                    !masterCard.upgraded && // The master card might be upgraded and the local copy unupgraded, from effects like Lesson Learned.
+                    bites + 1 > CardCookie.CookieBiteField.bites.get(masterCookie) // Playing a cookie shouldn't make the master copy's bite count decrease.
+            ) {
+                masterCookie.setBites(bites + 1);
+            }
         }
     }
 }

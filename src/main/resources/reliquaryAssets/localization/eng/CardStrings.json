@@ -13,9 +13,13 @@
     "NOTE_FOR_TRANSLATORS": "The description should match the translation of the pearlescence keyword."
   },
 
-  "reliquary:CookieTest": {
-    "NAME": "Cookie Test",
-    "DESCRIPTION": "Does nothing."
+  "reliquary:CookieRainbowCookie": {
+    "NAME": "Rainbow Cookie",
+    "DESCRIPTION": "Put a random Attack, Skill, and Power from your Draw pile into your hand. NL Exhaust."
+  },
+  "reliquary:CookieSnackBreak": {
+    "NAME": "Snack Break",
+    "DESCRIPTION": "Snack. NL This turn, if you would deal attack damage, gain that much Block instead."
   },
 
   "reliquary:VaporAmbrosia": {

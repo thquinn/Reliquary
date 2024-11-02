@@ -94,7 +94,7 @@ public abstract class CardCookie extends ReliquaryCard implements CustomSavable<
     }
 
     @Override
-    public List<TooltipInfo> getCustomTooltips() {
+    public List<TooltipInfo> getCustomTooltipsTop() {
         return Arrays.asList(new TooltipInfo(DESCRIPTIONS[1], DESCRIPTIONS[3]));
     }
 
@@ -107,15 +107,8 @@ public abstract class CardCookie extends ReliquaryCard implements CustomSavable<
     }
 
     @Override
-    public void onRemoveFromMasterDeck() {
-        AbstractDungeon.player.relics.stream().filter(r -> r instanceof RelicCookieJar).map(r -> (RelicCookieJar)r).forEach(r -> r.onPurgeCookie(this));
-    }
-    @Override
     public void upgrade() {
         if (!upgraded) {
-            if (AbstractDungeon.player.masterDeck.contains(this)) {
-                AbstractDungeon.player.relics.stream().filter(r -> r instanceof RelicCookieJar).map(r -> (RelicCookieJar) r).forEach(r -> r.onUpgradeCookie(this));
-            }
             upgradeName();
         }
         setBites(0);

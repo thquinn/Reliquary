@@ -191,6 +191,13 @@
       " Colorless cards you play cost #b1 less."
     ]
   },
+  "reliquary:SnackBreak": {
+    "NAME": "Snack Break",
+    "DESCRIPTIONS": [
+      "If you would deal attack damage this turn, gain that much #yBlock instead."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This power augments the behavior of the Defect's Heatsinks power."
+  },
   "reliquary:StormPlus": {
     "NAME": "Superstorm",
     "DESCRIPTIONS": [

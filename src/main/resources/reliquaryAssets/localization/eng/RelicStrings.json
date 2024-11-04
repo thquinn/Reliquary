@@ -159,8 +159,8 @@
     "DESCRIPTIONS": [
       "Upon pickup, add a #yCookie #ycard to your deck. Whenever you have no unupgraded #yCookie #ycards in your deck, get another.",
       "Cookie Card",
-      "A random special card. Eaten after being played #b3 times, unless #yUpgraded.",
-      "#yEaten after being played #b3 times, unless #yUpgraded."
+      "A random special card. Removed from your deck after being played #b3 times, unless #yUpgraded.",
+      "Removed from your deck after being played #b3 times, unless #yUpgraded."
     ],
     "NOTE_FOR_TRANSLATORS": "This relic was made in honor of our wonderful DEU translator FunnyCookie!"
   },

@@ -12,7 +12,7 @@ import powers.SnackBreakPower;
 
 public class CardCookieSnackBreak extends CardCookie {
     public static final String ID = "reliquary:CookieSnackBreak";
-    private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/cookies/snackBreak.png";
+    private static final String IMG_PATH = "reliquaryAssets/images/cards/cookie/snackBreak.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

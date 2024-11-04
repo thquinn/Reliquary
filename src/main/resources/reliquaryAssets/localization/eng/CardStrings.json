@@ -13,6 +13,14 @@
     "NOTE_FOR_TRANSLATORS": "The description should match the translation of the pearlescence keyword."
   },
 
+  "reliquary:CookieOmNom": {
+    "NAME": "Om Nom",
+    "DESCRIPTION": "Retain. NL Deal !D! damage to ALL enemies. NL Can't be played the turn it's drawn.",
+    "EXTENDED_DESCRIPTION": [
+      "I must wait until next turn."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is a pun referencing the Hindu mantra 'om' and the internet's favorite onomatopoeia for eating, 'om nom nom.'"
+  },
   "reliquary:CookieRainbowCookie": {
     "NAME": "Rainbow Cookie",
     "DESCRIPTION": "Put a random Attack, Skill, and Power from your Draw pile into your hand. NL Exhaust."
@@ -20,6 +28,30 @@
   "reliquary:CookieSnackBreak": {
     "NAME": "Snack Break",
     "DESCRIPTION": "Snack. NL This turn, if you would deal attack damage, gain that much Block instead."
+  },
+  "reliquary:CookieSugarRush": {
+    "NAME": "Sugar Rush",
+    "DESCRIPTION": "Deal twice X damage and gain X [E]."
+  },
+  "reliquary:CookieSweetRevenge": {
+    "NAME": "Sweet Revenge",
+    "DESCRIPTION": "At the start of each turn, add a *Just *Desserts into your hand."
+  },
+  "reliquary:CookieSweetRevengeJustDesserts": {
+    "NAME": "Just Desserts",
+    "DESCRIPTION": "Ethereal. NL Deal damage equal to the damage you blocked last turn. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "Ethereal. NL Deal !D! damage. NL Exhaust."
+    ]
+  },
+  "reliquary:CookieSweetScience": {
+    "NAME": "Sweet Science",
+    "DESCRIPTION": "Snack. NL Convert up to !M! of your Block into Gold. NL Exhaust.",
+    "NOTE_FOR_TRANSLATORS": "This is a reference to boxing, which for some reason was nicknamed 'the sweet science.'"
+  },
+  "reliquary:CookieToughCookie": {
+    "NAME": "Tough Cookie",
+    "DESCRIPTION": "Gain !B! Block. NL Cost reduced by the highest card cost paid this turn."
   },
 
   "reliquary:VaporAmbrosia": {

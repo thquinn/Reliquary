@@ -4,6 +4,7 @@ import cards.ReliquaryCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -16,35 +17,32 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.vfx.combat.ExplosionSmallEffect;
 
-public class CardBlastOff extends ReliquaryCard {
-    public static final String ID = "reliquary:BlastOff";
-    private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/blastOff.png";
+import java.util.ArrayList;
+
+public class CardJustDesserts extends ReliquaryCard {
+    public static final String ID = "reliquary:CookieSweetRevengeJustDesserts";
+    private static final String IMG_PATH = "reliquaryAssets/images/cards/colorless/justDesserts.png";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final int COST = 0;
+    public static final int COST = 1;
 
-    public CardBlastOff() {
-        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
-        baseDamage = 25;
-        baseMagicNumber = 1;
-        magicNumber = 1;
+    public CardJustDesserts() {
+        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ENEMY);
+        baseDamage = 0;
         exhaust = true;
+        isEthereal = true;
+    }
+
+    public void setDamage(int d) {
+        baseDamage += d;
+        rawDescription = cardStrings.EXTENDED_DESCRIPTION[0];
+        initializeDescription();
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
-            if (!mo.isDeadOrEscaped())
-                addToBot(new VFXAction(new ExplosionSmallEffect(mo.hb.cX, mo.hb.cY), 0.1F));
-        }
-        addToBot(new WaitAction(0.5F));
-        addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(damage, true), DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.NONE));
-        for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
-            if (!mo.isDeadOrEscaped()) {
-                addToBot(new ApplyPowerAction(mo, AbstractDungeon.player, new VulnerablePower(mo, 1, false)));
-            }
-        }
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
     }
 
     @Override
@@ -57,6 +55,13 @@ public class CardBlastOff extends ReliquaryCard {
 
     @Override
     public AbstractCard makeCopy() {
-        return new CardBlastOff();
+        return new CardJustDesserts();
+    }
+
+    @Override
+    public AbstractCard makeStatEquivalentCopy() {
+        AbstractCard copy = super.makeStatEquivalentCopy();
+        copy.description = (ArrayList) description.clone();
+        return copy;
     }
 }

@@ -215,6 +215,15 @@
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Study power."
   },
+  "reliquary:SweetRevengePower": {
+    "NAME": "Sweet Revenge",
+    "DESCRIPTIONS": [
+      "At the start of each turn, add a #yJust #yDesserts into your hand.",
+      "At the start of each turn, add #b",
+      " #yJust #yDesserts into your hand."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the power created by the 'Sweet Revenge' cookie card."
+  },
   "reliquary:Taunt": {
     "NAME": "Taunt",
     "DESCRIPTIONS": [

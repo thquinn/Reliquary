@@ -1,9 +1,7 @@
 package relics;
 
 import basemod.abstracts.CustomRelic;
-import cards.cookie.CardCookie;
-import cards.cookie.CardCookieRainbowCookie;
-import cards.cookie.CardCookieSnackBreak;
+import cards.cookie.*;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
@@ -62,7 +60,7 @@ public class RelicCookieJar extends CustomRelic {
         }
     }
     CardCookie getRandomCookie(CardCookie except) {
-        return new CardCookieRainbowCookie();
+        return new CardCookieSweetRevenge();
     }
 
     @Override

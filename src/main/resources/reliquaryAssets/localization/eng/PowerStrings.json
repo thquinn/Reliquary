@@ -191,6 +191,14 @@
       " Colorless cards you play cost #b1 less."
     ]
   },
+  "reliquary:SmartCookiePower": {
+    "NAME": "Smart Cookie",
+    "DESCRIPTIONS": [
+      "Play a copy of ",
+      " at the start of each turn."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the power created by the 'Smart Cookie' cookie card."
+  },
   "reliquary:SnackBreak": {
     "NAME": "Snack Break",
     "DESCRIPTIONS": [

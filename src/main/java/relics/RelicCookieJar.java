@@ -60,7 +60,7 @@ public class RelicCookieJar extends CustomRelic {
         }
     }
     CardCookie getRandomCookie(CardCookie except) {
-        return new CardCookieSweetRevenge();
+        return new CardCookieSmartCookie();
     }
 
     @Override

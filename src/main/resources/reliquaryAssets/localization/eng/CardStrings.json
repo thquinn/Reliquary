@@ -25,9 +25,21 @@
     "NAME": "Rainbow Cookie",
     "DESCRIPTION": "Put a random Attack, Skill, and Power from your Draw pile into your hand. NL Exhaust."
   },
+  "reliquary:CookieSmartCookie": {
+    "NAME": "Smart Cookie",
+    "DESCRIPTION": "Snack. NL Exhaust a card. At the start of each turn, play a copy of it.",
+    "EXTENDED_DESCRIPTION": [
+      "Exhaust."
+    ],
+    "NOTE_FOR_TRANSLATORS": "That last string is put at the end of \"Choose a card to Exhaust.\""
+  },
   "reliquary:CookieSnackBreak": {
     "NAME": "Snack Break",
     "DESCRIPTION": "Snack. NL This turn, if you would deal attack damage, gain that much Block instead."
+  },
+  "reliquary:CookieSugarAndSpice": {
+    "NAME": "Sugar and Spice",
+    "DESCRIPTION": "Deal !D! damage. NL Next turn, the enemy gains !B! Block."
   },
   "reliquary:CookieSugarRush": {
     "NAME": "Sugar Rush",

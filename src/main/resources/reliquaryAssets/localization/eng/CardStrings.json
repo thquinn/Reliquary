@@ -13,6 +13,10 @@
     "NOTE_FOR_TRANSLATORS": "The description should match the translation of the pearlescence keyword."
   },
 
+  "reliquary:CookieHalfBakedIdea": {
+    "NAME": "Half-Baked Idea",
+    "DESCRIPTION": "Snack. NL Does nothing. NL When eaten, add a Common relic to this combat's reward."
+  },
   "reliquary:CookieOmNom": {
     "NAME": "Om Nom",
     "DESCRIPTION": "Retain. NL Deal !D! damage to ALL enemies. NL Can't be played the turn it's drawn.",
@@ -31,7 +35,7 @@
     "EXTENDED_DESCRIPTION": [
       "Exhaust."
     ],
-    "NOTE_FOR_TRANSLATORS": "That last string is put at the end of \"Choose a card to Exhaust.\""
+    "NOTE_FOR_TRANSLATORS": "That last string is put at the end of 'Choose a card to Exhaust.'"
   },
   "reliquary:CookieSnackBreak": {
     "NAME": "Snack Break",
@@ -41,9 +45,24 @@
     "NAME": "Sugar and Spice",
     "DESCRIPTION": "Deal !D! damage. NL Next turn, the enemy gains !B! Block."
   },
+  "reliquary:CookieSugarcoat": {
+    "NAME": "Sugarcoat",
+    "DESCRIPTION": "Snack. NL Shuffle a *Doughfend into your draw pile. X is your current Block."
+  },
+  "reliquary:CookieSugarcoatDoughfend": {
+    "NAME": "Doughfend",
+    "DESCRIPTION": "Ethereal. NL Gain X Block. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "Ethereal. NL Gain !B! Block. NL Exhaust."
+    ]
+  },
   "reliquary:CookieSugarRush": {
     "NAME": "Sugar Rush",
     "DESCRIPTION": "Deal twice X damage and gain X [E]."
+  },
+  "reliquary:CookieSweetDreams": {
+    "NAME": "Sweet Dreams",
+    "DESCRIPTION": "Next turn, draw !M! cards unless damaged first. NL End your turn."
   },
   "reliquary:CookieSweetRevenge": {
     "NAME": "Sweet Revenge",
@@ -61,9 +80,18 @@
     "DESCRIPTION": "Snack. NL Convert up to !M! of your Block into Gold. NL Exhaust.",
     "NOTE_FOR_TRANSLATORS": "This is a reference to boxing, which for some reason was nicknamed 'the sweet science.'"
   },
+  "reliquary:CookieTheCookieCrumbles": {
+    "NAME": "The Cookie Crumbles",
+    "DESCRIPTION": "Snack. NL Exhaust ALL your cards and deal twice that much damage."
+  },
   "reliquary:CookieToughCookie": {
     "NAME": "Tough Cookie",
     "DESCRIPTION": "Gain !B! Block. NL Cost reduced by the highest card cost paid this turn."
+  },
+  "reliquary:CookieToutSweet": {
+    "NAME": "Tout Sweet",
+    "DESCRIPTION": "Put all Skills from your discard pile put there this turn into your hand. NL Exhaust.",
+    "NOTE_FOR_TRANSLATORS": "This is a pun on the French phrase 'tout suite.'"
   },
 
   "reliquary:VaporAmbrosia": {

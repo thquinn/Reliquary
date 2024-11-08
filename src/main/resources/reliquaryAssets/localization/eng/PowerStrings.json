@@ -223,6 +223,14 @@
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Study power."
   },
+  "reliquary:SweetDreamsPower": {
+    "NAME": "Sweet Dreams",
+    "DESCRIPTIONS": [
+      "Next turn, draw #b",
+      " cards unless damaged first."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the power created by the 'Sweet Dreams' cookie card."
+  },
   "reliquary:SweetRevengePower": {
     "NAME": "Sweet Revenge",
     "DESCRIPTIONS": [

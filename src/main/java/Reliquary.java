@@ -5,7 +5,7 @@ import basemod.ModPanel;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import cards.ReliquaryCard;
-import cards.colorless.CardVim;
+import cards.cookie.CardCookieToutSweet;
 import cards.cookie.CookieStatics;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
@@ -30,7 +30,8 @@ import java.nio.charset.StandardCharsets;
 import java.util.Properties;
 
 @SpireInitializer
-public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber, EditStringsSubscriber, PostInitializeSubscriber, PostUpdateSubscriber, OnStartBattleSubscriber, OnCardUseSubscriber {
+public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber, EditStringsSubscriber, PostInitializeSubscriber,
+        OnCardUseSubscriber, OnPlayerTurnStartPostDrawSubscriber, OnStartBattleSubscriber, PostUpdateSubscriber {
     public static final String ID = "reliquary";
     public static final String CONFIG_NAME = "reliconfig";
     public static final String CONFIG_USE_RETIRED_RELICS = "use_retired_relics";
@@ -418,6 +419,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
 
     @Override
     public void receivePostUpdate() {
+        CardCookieToutSweet.postUpdateStatic();
         if (AbstractDungeon.player == null) return;
         if (AbstractDungeon.player.hasRelic(RelicRedPaperclip.ID)) ((RelicRedPaperclip)AbstractDungeon.player.getRelic(RelicRedPaperclip.ID)).postUpdate();
     }
@@ -425,6 +427,11 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
     @Override
     public void receiveOnBattleStart(AbstractRoom abstractRoom) {
         RelicThinkingCap.onStartBattleStatic();
+    }
+
+    @Override
+    public void receiveOnPlayerTurnStartPostDraw() {
+        CardCookieToutSweet.onPlayerTurnStartPostDrawStatic();
     }
 
     @Override

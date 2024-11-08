@@ -65,6 +65,8 @@ public abstract class CardCookie extends ReliquaryCard implements CustomSavable<
         FleetingField.fleeting.set(this, bites >= 2);
     }
 
+    public void onEaten() { }
+
     @Override
     public void update() {
         int bites = CookieBiteField.bites.get(this);

@@ -24,12 +24,14 @@ public class CookieCardBiteAction extends AbstractGameAction {
         if (target.upgraded) {
             return;
         }
-        AbstractCard masterCard = StSLib.getMasterDeckEquivalent(target);
         int bites = CardCookie.CookieBiteField.bites.get(target);
+        if (FleetingField.fleeting.get(target)) {
+            target.onEaten();
+        }
         target.setBites(bites + 1);
+        AbstractCard masterCard = StSLib.getMasterDeckEquivalent(target);
         if (masterCard instanceof CardCookie) {
             CardCookie masterCookie = (CardCookie) masterCard;
-
             if (
                     !masterCard.upgraded && // The master card might be upgraded and the local copy unupgraded, from effects like Lesson Learned.
                     bites + 1 > CardCookie.CookieBiteField.bites.get(masterCookie) // Playing a cookie shouldn't make the master copy's bite count decrease.

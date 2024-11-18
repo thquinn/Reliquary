@@ -22,6 +22,15 @@
     ],
     "NOTE_FOR_TRANSLATORS": "This is an improved version of the base game's Battle Hymn power."
   },
+  "reliquary:BlackAndWhitePower": {
+    "NAME": "Black and White",
+    "DESCRIPTIONS": [
+      "Each turn, if you play an #yAttack and a #ySkill, enemies that intend to attack take that much damage.",
+      "Each turn, if you play an #yAttack and a #ySkill, enemies that intend to attack take #b",
+      " times that much damage."
+    ],
+    "NOTE_FOR_TRANSLATORS": "This is the power created by the 'Black and White' cookie card."
+  },
   "reliquary:BlurPlus": {
     "NAME": "Double Vision",
     "DESCRIPTIONS": [
@@ -199,7 +208,7 @@
     ],
     "NOTE_FOR_TRANSLATORS": "This is the power created by the 'Smart Cookie' cookie card."
   },
-  "reliquary:SnackBreak": {
+  "reliquary:SnackBreakPower": {
     "NAME": "Snack Break",
     "DESCRIPTIONS": [
       "If you would deal attack damage this turn, gain that much #yBlock instead."

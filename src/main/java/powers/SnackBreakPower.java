@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import util.TextureLoader;
 
 public class SnackBreakPower extends AbstractPower {
-    public static final String POWER_ID = "reliquary:SnackBreak";
+    public static final String POWER_ID = "reliquary:SnackBreakPower";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     private static final Texture tex32 = TextureLoader.getTexture("reliquaryAssets/images/powers/snackBreak32.png");
     private static final Texture tex84 = TextureLoader.getTexture("reliquaryAssets/images/powers/snackBreak84.png");

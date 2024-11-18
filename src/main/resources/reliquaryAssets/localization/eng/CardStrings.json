@@ -4,15 +4,19 @@
     "DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable to ALL enemies. NL Exhaust.",
     "NOTE_FOR_TRANSLATORS": "The card name is the culmination of a rocket launch countdown: 3, 2, 1, blast off!"
   },
-  "reliquary:Pearlescence": {
-    "NAME": "",
-    "DESCRIPTION": "pearlescence",
-    "EXTENDED_DESCRIPTION": [
-      "I must play another card first."
-    ],
-    "NOTE_FOR_TRANSLATORS": "The description should match the translation of the pearlescence keyword."
-  },
 
+  "reliquary:CookieBlackAndWhite": {
+    "NAME": "Black and White",
+    "DESCRIPTION": "Each turn, if you play an Attack and a Skill, enemies that intend to attack take that much damage.",
+    "NOTE_FOR_TRANSLATORS": [
+      "These 'cookie' cards are created by the Cookie Jar relic.",
+      "This is based on a type of cookie: the black-and-white cookie."
+    ]
+  },
+  "reliquary:CookieBrowniePoints": {
+    "NAME": "Brownie Points",
+    "DESCRIPTION": "Snack. NL Heal an enemy for !M! HP. If you do, gain NL [E] [E]."
+  },
   "reliquary:CookieHalfBakedIdea": {
     "NAME": "Half-Baked Idea",
     "DESCRIPTION": "Snack. NL Does nothing. NL When eaten, add a Common relic to this combat's reward."
@@ -92,6 +96,15 @@
     "NAME": "Tout Sweet",
     "DESCRIPTION": "Put all Skills from your discard pile put there this turn into your hand. NL Exhaust.",
     "NOTE_FOR_TRANSLATORS": "This is a pun on the French phrase 'tout suite.'"
+  },
+
+  "reliquary:Pearlescence": {
+    "NAME": "",
+    "DESCRIPTION": "pearlescence",
+    "EXTENDED_DESCRIPTION": [
+      "I must play another card first."
+    ],
+    "NOTE_FOR_TRANSLATORS": "The description should match the translation of the pearlescence keyword."
   },
 
   "reliquary:VaporAmbrosia": {

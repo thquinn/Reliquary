@@ -59,7 +59,7 @@ public class RelicCookieJar extends CustomRelic {
         }
     }
     CardCookie getRandomCookie(CardCookie except) {
-        return new CardCookieSugarcoat();
+        return new CardCookieBlackAndWhite();
     }
 
     @Override

@@ -1,6 +1,7 @@
 package cards.colorless.vapor;
 
 import basemod.ReflectionHacks;
+import basemod.abstracts.CustomCard;
 import cards.ReliquaryCard;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Texture;
@@ -69,6 +70,6 @@ public abstract class CardVapor extends ReliquaryCard {
         int tw = portraitImg.getWidth();
         int th = portraitImg.getHeight();
         TextureAtlas.AtlasRegion cardImg = new TextureAtlas.AtlasRegion(portraitImg, 0, 0, tw, th);
-        ReflectionHacks.setPrivateInherited(this, ReliquaryCard.class, "portrait", cardImg);
+        ReflectionHacks.setPrivateInherited(this, CustomCard.class, "portrait", cardImg);
     }
 }

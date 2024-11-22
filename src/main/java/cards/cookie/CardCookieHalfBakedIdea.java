@@ -22,6 +22,10 @@ public class CardCookieHalfBakedIdea extends CardCookie {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.SKILL, CardTarget.NONE);
         isSnack = true;
     }
+    @Override
+    public boolean canSpawnAsFirst() {
+        return false;
+    }
 
     @Override
     public void onEaten() {

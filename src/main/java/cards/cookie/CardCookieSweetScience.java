@@ -27,6 +27,10 @@ public class CardCookieSweetScience extends CardCookie {
         exhaust = true;
         isSnack = true;
     }
+    @Override
+    public boolean canSpawnAsFirst() {
+        return false;
+    }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

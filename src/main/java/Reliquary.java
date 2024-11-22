@@ -41,9 +41,9 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         BaseMod.addColor(
                 CookieStatics.RELIQUARY_COOKIE,
                 CookieStatics.COLOR,
-                CookieStatics.CARD_BACKS_ATTACK_SMALL[0], CookieStatics.CARD_BACKS_SKILL_SMALL[0], CookieStatics.CARD_BACKS_POWER_SMALL[0],
+                CookieStatics.CARD_BACKS_ATTACK_SMALL[0][0], CookieStatics.CARD_BACKS_SKILL_SMALL[0][0], CookieStatics.CARD_BACKS_POWER_SMALL[0][0],
                 CookieStatics.CARD_BACK_ENERGY_SMALL,
-                CookieStatics.CARD_BACKS_ATTACK_LARGE[0], CookieStatics.CARD_BACKS_SKILL_LARGE[0], CookieStatics.CARD_BACKS_POWER_LARGE[0],
+                CookieStatics.CARD_BACKS_ATTACK_LARGE[0][0], CookieStatics.CARD_BACKS_SKILL_LARGE[0][0], CookieStatics.CARD_BACKS_POWER_LARGE[0][0],
                 CookieStatics.CARD_BACK_ENERGY_LARGE, CookieStatics.CARD_BACK_ENERGY_TEXT
         );
         try {
@@ -373,6 +373,8 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
     public void receiveAddAudio() {
         BaseMod.addAudio(AtonementStance.SFX_ENTER_ID, "reliquaryAssets/audio/sound/atonement_enter.ogg");
         BaseMod.addAudio(AtonementStance.SFX_LOOP_ID, "reliquaryAssets/audio/sound/atonement_loop.ogg");
+        BaseMod.addAudio(CookieStatics.SFX_BITE_ID, CookieStatics.SFX_BITE_PATH);
+        BaseMod.addAudio(CookieStatics.SFX_EAT_ID, CookieStatics.SFX_EAT_PATH);
         BaseMod.addAudio(OrbBias.SFX_CHANNEL, "reliquaryAssets/audio/sound/orb_bias_channel.ogg");
         BaseMod.addAudio(OrbBias.SFX_EVOKE, "reliquaryAssets/audio/sound/orb_bias_evoke.ogg");
         BaseMod.addAudio(OrbData.SFX_CHANNEL, "reliquaryAssets/audio/sound/orb_data_channel.ogg");
@@ -395,6 +397,7 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
         BaseMod.addPower(TauntPower.class, TauntPower.POWER_ID);
         BaseMod.addPower(TriumphPower.class, TriumphPower.POWER_ID);
         BaseMod.addPower(VimPower.class, VimPower.POWER_ID);
+        BaseMod.addSaveField("reliquary:saveAllRemovedCards", CookieStatics.removedFromMasterDeckSavable);
     }
     ModPanel initConfig() throws IOException {
         SpireConfig config = new SpireConfig(ID, CONFIG_NAME);

@@ -7,7 +7,7 @@
 
   "reliquary:CookieBlackAndWhite": {
     "NAME": "Black and White",
-    "DESCRIPTION": "Each turn, if you play an Attack and a Skill, enemies that intend to attack take that much damage.",
+    "DESCRIPTION": "Each turn, if you play an Attack and a Skill, enemies that intend to attack damage themselves.",
     "NOTE_FOR_TRANSLATORS": [
       "These 'cookie' cards are created by the Cookie Jar relic.",
       "This is based on a type of cookie: the black-and-white cookie."
@@ -68,6 +68,13 @@
     "NAME": "Sweet Dreams",
     "DESCRIPTION": "Next turn, draw !M! cards unless damaged first. NL End your turn."
   },
+  "reliquary:CookieSweetNothings": {
+    "NAME": "Sweet Nothings",
+    "DESCRIPTION": "Snack. NL Put a card removed from your deck this run into your hand. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "Select a card to put into your hand."
+    ]
+  },
   "reliquary:CookieSweetRevenge": {
     "NAME": "Sweet Revenge",
     "DESCRIPTION": "At the start of each turn, add a *Just *Desserts into your hand."
@@ -90,7 +97,7 @@
   },
   "reliquary:CookieToughCookie": {
     "NAME": "Tough Cookie",
-    "DESCRIPTION": "Gain !B! Block. NL Cost reduced by the highest card cost paid this turn."
+    "DESCRIPTION": "Gain !B! Block. NL Cost reduced by the highest cost paid for a card this turn."
   },
   "reliquary:CookieToutSweet": {
     "NAME": "Tout Sweet",

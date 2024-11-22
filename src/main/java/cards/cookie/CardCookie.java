@@ -1,9 +1,13 @@
 package cards.cookie;
 
+import actions.CookieCardAnimatePlayAction;
 import actions.CookieCardBiteAction;
+import basemod.ReflectionHacks;
+import basemod.abstracts.CustomCard;
 import basemod.abstracts.CustomSavable;
 import basemod.helpers.TooltipInfo;
 import cards.ReliquaryCard;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.FleetingField;
 import com.evacipated.cardcrawl.modthespire.lib.SpireField;
@@ -12,18 +16,20 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import relics.RelicCookieJar;
+import util.ReliquaryLogger;
 import util.TextureLoader;
 
 import java.lang.reflect.Type;
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public abstract class CardCookie extends ReliquaryCard implements CustomSavable<Integer> {
     static String[] DESCRIPTIONS = CardCrawlGame.languagePack.getRelicStrings(RelicCookieJar.ID).DESCRIPTIONS;
     static TextureAtlas.AtlasRegion[] SILHOUETTES_ATTACK, SILHOUETTES_POWER, SILHOUETTES_SKILL;
-    int displayBites;
+    int displayBites, displayTimesUpgraded;
 
     public CardCookie(String id,
                      String name,
@@ -33,6 +39,44 @@ public abstract class CardCookie extends ReliquaryCard implements CustomSavable<
                      AbstractCard.CardType type,
                      AbstractCard.CardTarget target) {
         super(id, name, img, cost, rawDescription, type, CookieStatics.RELIQUARY_COOKIE, CardRarity.SPECIAL, target);
+        // Set frames (from CustomCard.setPortraitTextures).
+        bannerSmallRegion = TextureLoader.asAtlasRegion("reliquaryAssets/images/cardui/cookie/banner512.png");
+        bannerSmallRegion.offsetX = ImageMaster.CARD_BANNER_RARE.offsetX;
+        bannerSmallRegion.offsetY = ImageMaster.CARD_BANNER_RARE.offsetY;
+        bannerSmallRegion.originalWidth = bannerSmallRegion.originalHeight = 512;
+        bannerLargeRegion = TextureLoader.asAtlasRegion("reliquaryAssets/images/cardui/cookie/banner1024.png");
+        bannerLargeRegion.offsetX = ImageMaster.CARD_BANNER_RARE_L.offsetX;
+        bannerLargeRegion.offsetY = ImageMaster.CARD_BANNER_RARE_L.offsetY;
+        bannerLargeRegion.originalWidth = bannerLargeRegion.originalHeight = 1024;
+        switch(type) {
+            case ATTACK:
+                frameSmallRegion = TextureLoader.asAtlasRegion("reliquaryAssets/images/cardui/cookie/frame_attack512.png");
+                frameSmallRegion.offsetX = ImageMaster.CARD_FRAME_ATTACK_RARE.offsetX;
+                frameSmallRegion.offsetY = ImageMaster.CARD_FRAME_ATTACK_RARE.offsetY;
+                frameLargeRegion = TextureLoader.asAtlasRegion("reliquaryAssets/images/cardui/cookie/frame_attack1024.png");
+                frameLargeRegion.offsetX = ImageMaster.CARD_FRAME_ATTACK_RARE_L.offsetX;
+                frameLargeRegion.offsetY = ImageMaster.CARD_FRAME_ATTACK_RARE_L.offsetY;
+                break;
+            case POWER:
+                frameSmallRegion = TextureLoader.asAtlasRegion("reliquaryAssets/images/cardui/cookie/frame_power512.png");
+                frameSmallRegion.offsetX = ImageMaster.CARD_FRAME_POWER_RARE.offsetX;
+                frameSmallRegion.offsetY = ImageMaster.CARD_FRAME_POWER_RARE.offsetY;
+                frameLargeRegion = TextureLoader.asAtlasRegion("reliquaryAssets/images/cardui/cookie/frame_power1024.png");
+                frameLargeRegion.offsetX = ImageMaster.CARD_FRAME_POWER_RARE_L.offsetX;
+                frameLargeRegion.offsetY = ImageMaster.CARD_FRAME_POWER_RARE_L.offsetY;
+                break;
+            default:
+                frameSmallRegion = TextureLoader.asAtlasRegion("reliquaryAssets/images/cardui/cookie/frame_skill512.png");
+                frameSmallRegion.offsetX = ImageMaster.CARD_FRAME_SKILL_RARE.offsetX;
+                frameSmallRegion.offsetY = ImageMaster.CARD_FRAME_SKILL_RARE.offsetY;
+                frameLargeRegion = TextureLoader.asAtlasRegion("reliquaryAssets/images/cardui/cookie/frame_skill1024.png");
+                frameLargeRegion.offsetX = ImageMaster.CARD_FRAME_SKILL_RARE_L.offsetX;
+                frameLargeRegion.offsetY = ImageMaster.CARD_FRAME_SKILL_RARE_L.offsetY;
+        }
+        frameSmallRegion.originalWidth = frameSmallRegion.originalHeight = 512;
+        frameLargeRegion.originalWidth = frameLargeRegion.originalHeight = 1024;
+        ReflectionHacks.setPrivateInherited(this, CustomCard.class, "typeColor", Color.WHITE);
+        // Set glow silhouettes.
         if (SILHOUETTES_ATTACK == null) {
             SILHOUETTES_ATTACK = new TextureAtlas.AtlasRegion[] {
                     TextureLoader.asAtlasRegion("reliquaryAssets/images/cardui/cookie/silhouette_attack.png"),
@@ -52,17 +96,21 @@ public abstract class CardCookie extends ReliquaryCard implements CustomSavable<
         }
     }
 
+    public boolean canSpawn() {
+        return true;
+    }
+    public boolean canSpawnAsFirst() {
+        return true;
+    }
+
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new CookieCardBiteAction(this));
     }
     public void setBites(int bites) {
-        if (upgraded) {
-            bites = 0;
-        }
         bites = Math.min(bites, 2);
         CardCookie.CookieBiteField.bites.set(this, bites);
-        FleetingField.fleeting.set(this, bites >= 2);
+        FleetingField.fleeting.set(this, !upgraded && bites >= 2);
     }
 
     public void onEaten() { }
@@ -70,19 +118,49 @@ public abstract class CardCookie extends ReliquaryCard implements CustomSavable<
     @Override
     public void update() {
         int bites = CookieBiteField.bites.get(this);
-        if (bites != displayBites) {
+        if (shouldUpdateDisplay()) {
             displayBites = bites;
-            String[] smallBacks = CookieStatics.CARD_BACKS_SKILL_SMALL, largeBacks = CookieStatics.CARD_BACKS_SKILL_LARGE;
-            if (type == CardType.ATTACK) {
-                smallBacks = CookieStatics.CARD_BACKS_ATTACK_SMALL;
-                largeBacks = CookieStatics.CARD_BACKS_ATTACK_LARGE;
-            } else if (type == CardType.POWER) {
-                smallBacks = CookieStatics.CARD_BACKS_POWER_SMALL;
-                largeBacks = CookieStatics.CARD_BACKS_POWER_LARGE;
-            }
-            setBackgroundTexture(smallBacks[displayBites], largeBacks[displayBites]);
+            displayTimesUpgraded = timesUpgraded;
+            setBackgroundTexture(
+                    getBackgroundSmallTexturePath(type, displayBites, displayTimesUpgraded),
+                    getBackgroundLargeTexturePath(type, displayBites, displayTimesUpgraded)
+            );
         }
         super.update();
+    }
+    boolean shouldUpdateDisplay() {
+        int bites = CookieBiteField.bites.get(this);
+        if (bites == displayBites && timesUpgraded == displayTimesUpgraded) {
+            return false;
+        }
+        if (AbstractDungeon.actionManager == null) {
+            return true;
+        }
+        if (AbstractDungeon.actionManager.actions.stream().anyMatch(a -> a instanceof CookieCardAnimatePlayAction)) {
+            return false;
+        }
+        if (!(AbstractDungeon.actionManager.currentAction instanceof CookieCardAnimatePlayAction)) {
+            return true;
+        }
+        return ((CookieCardAnimatePlayAction)AbstractDungeon.actionManager.currentAction).didGetBit();
+    }
+    public static String getBackgroundSmallTexturePath(CardType type, int bites, int timesUpgraded) {
+        int upgradeIndex = Math.max(0, Math.min(timesUpgraded, 1));
+        if (type == CardType.ATTACK) {
+            return CookieStatics.CARD_BACKS_ATTACK_SMALL[bites][upgradeIndex];
+        } else if (type == CardType.POWER) {
+            return CookieStatics.CARD_BACKS_POWER_SMALL[bites][upgradeIndex];
+        }
+        return CookieStatics.CARD_BACKS_SKILL_SMALL[bites][upgradeIndex];
+    }
+    public static String getBackgroundLargeTexturePath(CardType type, int bites, int timesUpgraded) {
+        int upgradeIndex = Math.max(0, Math.min(timesUpgraded, 1));
+        if (type == CardType.ATTACK) {
+            return CookieStatics.CARD_BACKS_ATTACK_LARGE[bites][upgradeIndex];
+        } else if (type == CardType.POWER) {
+            return CookieStatics.CARD_BACKS_POWER_LARGE[bites][upgradeIndex];
+        }
+        return CookieStatics.CARD_BACKS_SKILL_LARGE[bites][upgradeIndex];
     }
 
     @Override
@@ -97,7 +175,7 @@ public abstract class CardCookie extends ReliquaryCard implements CustomSavable<
 
     @Override
     public List<TooltipInfo> getCustomTooltipsTop() {
-        return Arrays.asList(new TooltipInfo(DESCRIPTIONS[1], DESCRIPTIONS[3]));
+        return Collections.singletonList(new TooltipInfo(DESCRIPTIONS[1], DESCRIPTIONS[3]));
     }
 
     @Override
@@ -113,7 +191,7 @@ public abstract class CardCookie extends ReliquaryCard implements CustomSavable<
         if (!upgraded) {
             upgradeName();
         }
-        setBites(0);
+        FleetingField.fleeting.set(this, false);
     }
 
     @Override

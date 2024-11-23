@@ -2,6 +2,7 @@ package relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -34,7 +35,7 @@ public class RelicJackalopeAntler extends CustomRelic {
     public void onMonsterDeath(AbstractMonster m) {
         if (lastCost > 0) {
             addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-            AbstractDungeon.player.gainEnergy(lastCost);
+            addToBot(new GainEnergyAction(lastCost));
         }
     }
 

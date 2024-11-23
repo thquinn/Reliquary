@@ -52,6 +52,7 @@ public class RelicTridentHead extends CustomRelic {
             copy.current_y = c.current_y;
             copy.target_x = Settings.WIDTH / 2.0F - 300.0F * Settings.scale;
             copy.target_y = Settings.HEIGHT / 2.0F;
+            copy.energyOnUse = c.energyOnUse;
             copy.calculateCardDamage(mo);
             copy.purgeOnUse = true;
             AbstractDungeon.actionManager.addCardQueueItem(new CardQueueItem(copy, mo, copy.energyOnUse, true, true), true);

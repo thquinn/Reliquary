@@ -75,7 +75,7 @@ public abstract class CardCookie extends ReliquaryCard implements CustomSavable<
         }
         frameSmallRegion.originalWidth = frameSmallRegion.originalHeight = 512;
         frameLargeRegion.originalWidth = frameLargeRegion.originalHeight = 1024;
-        ReflectionHacks.setPrivateInherited(this, CustomCard.class, "typeColor", Color.WHITE);
+        ReflectionHacks.setPrivateInherited(this, CustomCard.class, "typeColor", new Color(1, 1, 1, 1));
         // Set glow silhouettes.
         if (SILHOUETTES_ATTACK == null) {
             SILHOUETTES_ATTACK = new TextureAtlas.AtlasRegion[] {

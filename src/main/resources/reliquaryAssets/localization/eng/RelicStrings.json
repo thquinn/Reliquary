@@ -308,6 +308,13 @@
     ],
     "NOTE_FOR_TRANSLATORS": "The flavor text is a reference to stealing from your future self."
   },
+  "reliquary:FrayedKnot": {
+    "NAME": "Frayed Knot",
+    "FLAVOR": "The time is now.",
+    "DESCRIPTIONS": [
+      "Cards' \"next turn\" effects happen immediately."
+    ]
+  },
   "reliquary:FreeSamples": {
     "NAME": "Free Samples",
     "FLAVOR": "Everyone's going to want a piece.",
@@ -866,6 +873,13 @@
       " #yBlock."
     ]
   },
+  "reliquary:SpiralShell": {
+    "NAME": "Spiral Shell",
+    "FLAVOR": "You could trace its form forever.",
+    "DESCRIPTIONS": [
+      "Whenever you play a cost #bX card for #b1 or more, gain [E] and draw #b1 card."
+    ]
+  },
   "reliquary:SpireOfHannoy": {
     "NAME": "Spire of Hannoy",
     "FLAVOR": "This puzzle's namesake Spire must have been even deadlier and more perplexing than this one.",
@@ -1050,5 +1064,13 @@
       " #yBlock."
     ],
     "NOTE_FOR_TRANSLATORS": "'Mandamus' is just a made-up name."
+  },
+  "reliquary:ZipperTab": {
+    "NAME": "Zipper Tab",
+    "FLAVOR": "Embossed on its surface are the letters \"XYZ.\" An idol exalting some ancient god...?",
+    "DESCRIPTIONS": [
+      "Whenever multiple unupgraded copies of a Common, #bUncommon, or #yRare card are in your deck, #yUpgrade one and remove the rest."
+    ],
+    "NOTE_FOR_TRANSLATORS": "'XYZ' stands for 'examine your zipper': what you tell them when their fly is down."
   }
 }

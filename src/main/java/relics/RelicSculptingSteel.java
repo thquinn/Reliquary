@@ -10,7 +10,7 @@ import util.TextureLoader;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class RelicSculptingSteel extends CustomRelic {
+public class RelicSculptingSteel extends ReliquaryRelic {
     public static final String ID = "reliquary:SculptingSteel";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/sculptingSteel.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/sculptingSteel.png");

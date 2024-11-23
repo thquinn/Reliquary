@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicPrincelyHelmet extends CustomRelic {
+public class RelicPrincelyHelmet extends ReliquaryRelic {
     public static final String ID = "reliquary:PrincelyHelmet";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/princelyHelmet.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/princelyHelmet.png");

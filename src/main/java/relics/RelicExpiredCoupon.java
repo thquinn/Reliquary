@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.MonsterRoom;
 import util.TextureLoader;
 
-public class RelicExpiredCoupon extends CustomRelic {
+public class RelicExpiredCoupon extends ReliquaryRelic {
     public static final String ID = "reliquary:ExpiredCoupon";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/expiredCoupon.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/expiredCoupon.png");

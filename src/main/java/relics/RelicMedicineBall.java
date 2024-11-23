@@ -1,6 +1,7 @@
 package relics;
 
 import basemod.abstracts.CustomRelic;
+import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
@@ -12,7 +13,7 @@ import util.TextureLoader;
 
 import java.util.OptionalInt;
 
-public class RelicMedicineBall extends CustomRelic {
+public class RelicMedicineBall extends ReliquaryRelic {
     public static final String ID = "reliquary:MedicineBall";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/medicineBall.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/medicineBall.png");
@@ -21,7 +22,7 @@ public class RelicMedicineBall extends CustomRelic {
     boolean firstPerBattle = true;
 
     public RelicMedicineBall() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.HEAVY);
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.HEAVY, RelicType.RED);
     }
 
     @Override

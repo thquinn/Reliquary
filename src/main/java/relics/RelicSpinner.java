@@ -17,7 +17,7 @@ import util.TextureLoader;
 
 import java.util.List;
 
-public class RelicSpinner extends CustomRelic {
+public class RelicSpinner extends ReliquaryRelic {
     public static final String ID = "reliquary:Spinner";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/spinner.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/spinner.png");

@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import powers.ReduceColorlessCostPower;
 import util.TextureLoader;
 
-public class RelicWeakTea extends CustomRelic {
+public class RelicWeakTea extends ReliquaryRelic {
     public static final String ID = "reliquary:WeakTea";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/weakTea.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/weakTea.png");

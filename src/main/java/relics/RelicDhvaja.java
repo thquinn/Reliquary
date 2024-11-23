@@ -1,6 +1,7 @@
 package relics;
 
 import basemod.abstracts.CustomRelic;
+import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
@@ -11,13 +12,13 @@ import com.megacrit.cardcrawl.stances.DivinityStance;
 import powers.TriumphPower;
 import util.TextureLoader;
 
-public class RelicDhvaja extends CustomRelic {
+public class RelicDhvaja extends ReliquaryRelic {
     public static final String ID = "reliquary:Dhvaja";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/dhvaja.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/dhvaja.png");
 
     public RelicDhvaja() {
-        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.MAGICAL, RelicType.PURPLE);
     }
 
     @Override

@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import powers.HookedPower;
 import util.TextureLoader;
 
-public class RelicFishingReel extends CustomRelic implements AlternateCardCostModifier {
+public class RelicFishingReel extends ReliquaryRelic implements AlternateCardCostModifier {
     public static final String ID = "reliquary:FishingReel";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/fishingReel.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/fishingReel.png");

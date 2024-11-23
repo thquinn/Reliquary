@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicKinkedSpring extends CustomRelic {
+public class RelicKinkedSpring extends ReliquaryRelic {
     public static final String ID = "reliquary:KinkedSpring";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/kinkedSpring.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/kinkedSpring.png");

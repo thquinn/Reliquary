@@ -19,7 +19,7 @@ import util.StaticHelpers;
 import util.TextureLoader;
 import vfx.ShowRealCardAndAddToDrawPileEffect;
 
-public class RelicVitrine extends CustomRelic implements CustomSavable<CardSave>, ClickableRelic {
+public class RelicVitrine extends ReliquaryRelic implements CustomSavable<CardSave>, ClickableRelic {
     public static final String ID = "reliquary:Vitrine";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/vitrine.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/vitrine.png");

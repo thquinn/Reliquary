@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.ReliquaryLogger;
 import util.TextureLoader;
 
-public class RelicPaperSnowflake extends CustomRelic {
+public class RelicPaperSnowflake extends ReliquaryRelic {
     public static final String ID = "reliquary:PaperSnowflake";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/paperSnowflake.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/paperSnowflake.png");

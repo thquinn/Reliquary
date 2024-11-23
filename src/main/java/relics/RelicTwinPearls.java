@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicTwinPearls extends CustomRelic {
+public class RelicTwinPearls extends ReliquaryRelic {
     public static final String ID = "reliquary:TwinPearls";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/twinPearls.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/twinPearls.png");

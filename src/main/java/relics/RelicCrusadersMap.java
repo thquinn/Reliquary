@@ -13,7 +13,7 @@ import util.TextureLoader;
 
 import java.util.List;
 
-public class RelicCrusadersMap extends CustomRelic {
+public class RelicCrusadersMap extends ReliquaryRelic {
     public static final String ID = "reliquary:CrusadersMap";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/crusadersMap.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/crusadersMap.png");

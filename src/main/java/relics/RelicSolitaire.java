@@ -1,5 +1,6 @@
 package relics;
 
+import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.optionCards.BecomeAlmighty;
@@ -42,7 +43,7 @@ public class RelicSolitaire extends RelicSolitaireBase {
     private final static int DESC_INDEX_ERUPTION = 24;
 
     public RelicSolitaire() {
-        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
+        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK, RelicType.PURPLE);
     }
 
     @Override

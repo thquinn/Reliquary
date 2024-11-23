@@ -27,7 +27,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class RelicCookieJar extends CustomRelic implements CustomSavable<String>, ClickableRelic {
+public class RelicCookieJar extends ReliquaryRelic implements CustomSavable<String>, ClickableRelic {
     public static final String ID = "reliquary:CookieJar";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/cookieJar.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/cookieJar.png");

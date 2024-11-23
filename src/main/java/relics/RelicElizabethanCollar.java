@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class RelicElizabethanCollar extends CustomRelic {
+public class RelicElizabethanCollar extends ReliquaryRelic {
     public static final String ID = "reliquary:ElizabethanCollar";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/elizabethanCollar.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/elizabethanCollar.png");

@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicFirecrackers extends CustomRelic {
+public class RelicFirecrackers extends ReliquaryRelic {
     public static final String ID = "reliquary:Firecrackers";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/firecrackers.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/firecrackers.png");

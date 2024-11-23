@@ -1,6 +1,7 @@
 package relics;
 
 import basemod.abstracts.CustomRelic;
+import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
@@ -9,7 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicIvoryTrinket extends CustomRelic {
+public class RelicIvoryTrinket extends ReliquaryRelic {
     public static final String ID = "reliquary:IvoryTrinket";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/ivoryTrinket.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/ivoryTrinket.png");
@@ -17,7 +18,7 @@ public class RelicIvoryTrinket extends CustomRelic {
     static int NTH = 5;
 
     public RelicIvoryTrinket() {
-        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.SOLID);
+        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.SOLID, RelicType.PURPLE);
     }
 
     @Override

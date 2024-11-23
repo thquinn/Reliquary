@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicSod extends CustomRelic {
+public class RelicSod extends ReliquaryRelic {
     public static final String ID = "reliquary:Sod";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/sod.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/sod.png");

@@ -12,13 +12,17 @@ import com.megacrit.cardcrawl.powers.EnergizedPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicRosewoodLute extends CustomRelic implements OnLoseBlockRelic {
+public class RelicRosewoodLute extends ReliquaryRelic implements OnLoseBlockRelic {
     public static final String ID = "reliquary:RosewoodLute";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/rosewoodLute.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/rosewoodLute.png");
 
     public RelicRosewoodLute() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.SOLID);
+    }
+    @Override
+    public boolean isRetired() {
+        return true;
     }
 
     @Override

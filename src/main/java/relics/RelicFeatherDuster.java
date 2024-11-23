@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
 import util.StaticHelpers;
 import util.TextureLoader;
 
-public class RelicFeatherDuster extends CustomRelic {
+public class RelicFeatherDuster extends ReliquaryRelic {
     public static final String ID = "reliquary:FeatherDuster";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/featherDuster.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/featherDuster.png");

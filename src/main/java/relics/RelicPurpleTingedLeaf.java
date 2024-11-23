@@ -20,7 +20,7 @@ import util.TextureLoader;
 
 import java.util.function.Predicate;
 
-public class RelicPurpleTingedLeaf extends CustomRelic implements CustomBottleRelic, CustomSavable<Integer> {
+public class RelicPurpleTingedLeaf extends ReliquaryRelic implements CustomBottleRelic, CustomSavable<Integer> {
     public static final String ID = "reliquary:PurpleTingedLeaf";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/purpleTingedLeaf.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/purpleTingedLeaf.png");

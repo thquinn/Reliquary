@@ -507,7 +507,7 @@
     "NAME": "Plasma Lobster",
     "FLAVOR": "Smells of petrichor.",
     "DESCRIPTIONS": [
-      "Increases your attack damage by #b",
+      "Your attack damage is increased by #b",
       " while you have #yBlock."
     ]
   },

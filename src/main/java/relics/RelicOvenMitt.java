@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicOvenMitt extends CustomRelic {
+public class RelicOvenMitt extends ReliquaryRelic {
     public static final String ID = "reliquary:OvenMitt";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/ovenMitt.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/ovenMitt.png");

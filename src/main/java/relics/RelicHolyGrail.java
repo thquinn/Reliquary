@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import powers.InNTurnsDeathPower;
 import util.TextureLoader;
 
-public class RelicHolyGrail extends CustomRelic implements OnPlayerDeathRelic {
+public class RelicHolyGrail extends ReliquaryRelic implements OnPlayerDeathRelic {
     public static final String ID = "reliquary:HolyGrail";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/holyGrail.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/holyGrail.png");

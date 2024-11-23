@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicTrainingWheel extends CustomRelic {
+public class RelicTrainingWheel extends ReliquaryRelic {
     public static final String ID = "reliquary:TrainingWheel";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/trainingWheel.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/trainingWheel.png");

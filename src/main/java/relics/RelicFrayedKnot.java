@@ -2,6 +2,7 @@ package relics;
 
 import basemod.ReflectionHacks;
 import basemod.abstracts.CustomRelic;
+import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.relics.OnAnyPowerAppliedRelic;
 import com.evacipated.cardcrawl.mod.stslib.relics.OnApplyPowerRelic;
@@ -22,13 +23,13 @@ import powers.SkeletonKeyBlurPower;
 import powers.VulnerableNextTurnPower;
 import util.TextureLoader;
 
-public class RelicFrayedKnot extends CustomRelic implements OnReceivePowerRelic {
+public class RelicFrayedKnot extends ReliquaryRelic implements OnReceivePowerRelic {
     public static final String ID = "reliquary:FrayedKnot";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/frayedKnot.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/frayedKnot.png");
 
     public RelicFrayedKnot() {
-        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT);
+        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT, RelicType.GREEN);
     }
 
     @Override

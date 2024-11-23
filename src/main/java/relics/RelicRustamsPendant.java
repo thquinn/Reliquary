@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.ReliquaryLogger;
 import util.TextureLoader;
 
-public class RelicRustamsPendant extends CustomRelic {
+public class RelicRustamsPendant extends ReliquaryRelic {
     public static final String ID = "reliquary:RustamsPendant";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/rustamsPendant.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/rustamsPendant.png");

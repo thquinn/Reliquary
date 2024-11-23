@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicSplatula extends CustomRelic {
+public class RelicSplatula extends ReliquaryRelic {
     public static final String ID = "reliquary:Splatula";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/splatula.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/splatula.png");

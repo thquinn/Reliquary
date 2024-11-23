@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicHotPoker extends CustomRelic {
+public class RelicHotPoker extends ReliquaryRelic {
     public static final String ID = "reliquary:HotPoker";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/hotPoker.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/hotPoker.png");

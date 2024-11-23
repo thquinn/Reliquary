@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import powers.RattledPower;
 import util.TextureLoader;
 
-public class RelicRattleCoin extends CustomRelic {
+public class RelicRattleCoin extends ReliquaryRelic {
     public static final String ID = "reliquary:RattleCoin";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/rattleCoin.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/rattleCoin.png");

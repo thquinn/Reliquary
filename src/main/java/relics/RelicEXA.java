@@ -1,6 +1,7 @@
 package relics;
 
 import basemod.abstracts.CustomRelic;
+import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
@@ -18,13 +19,13 @@ import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toCollection;
 
-public class RelicEXA extends CustomRelic {
+public class RelicEXA extends ReliquaryRelic {
     public static final String ID = "reliquary:EXA";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/exa.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/exa.png");
 
     public RelicEXA() {
-        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.SOLID);
+        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.SOLID, RelicType.BLUE);
     }
 
     @Override

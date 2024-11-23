@@ -1,6 +1,7 @@
 package relics;
 
 import basemod.abstracts.CustomRelic;
+import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
@@ -11,7 +12,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import util.TextureLoader;
 
-public class RelicStimpack extends CustomRelic {
+public class RelicStimpack extends ReliquaryRelic {
     public static final String ID = "reliquary:Stimpack";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/stimpack.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/stimpack.png");
@@ -19,7 +20,7 @@ public class RelicStimpack extends CustomRelic {
     boolean triggeredThisCombat;
 
     public RelicStimpack() {
-        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
+        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK, RelicType.RED);
     }
 
     @Override

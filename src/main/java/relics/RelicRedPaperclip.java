@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
 
-public class RelicRedPaperclip extends CustomRelic {
+public class RelicRedPaperclip extends ReliquaryRelic {
     public static final String ID = "reliquary:RedPaperclip";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/redPaperclip.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/redPaperclip.png");

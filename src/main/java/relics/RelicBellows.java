@@ -2,6 +2,7 @@ package relics;
 
 import actions.BellowsAction;
 import basemod.abstracts.CustomRelic;
+import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -9,7 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicBellows extends CustomRelic {
+public class RelicBellows extends ReliquaryRelic {
     public static final String ID = "reliquary:Bellows";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/bellows.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/bellows.png");
@@ -17,7 +18,7 @@ public class RelicBellows extends CustomRelic {
     static final int N = 5;
 
     public RelicBellows() {
-        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.SOLID);
+        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.SOLID, RelicType.RED);
     }
 
     @Override

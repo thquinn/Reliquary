@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicPlasmaLobster extends CustomRelic {
+public class RelicPlasmaLobster extends ReliquaryRelic {
     public static final String ID = "reliquary:PlasmaLobster";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/plasmaLobster.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/plasmaLobster.png");

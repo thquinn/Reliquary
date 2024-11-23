@@ -1,5 +1,6 @@
 package relics;
 
+import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.blue.*;
@@ -49,7 +50,7 @@ public class RelicRabbitEars extends RelicSolitaireBase {
     public final static int DESC_INDEX_ZAP = 35;
 
     public RelicRabbitEars() {
-        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.SOLID);
+        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.SOLID, RelicType.BLUE);
     }
 
     @Override

@@ -16,7 +16,7 @@ import util.TextureLoader;
 
 import java.util.function.Predicate;
 
-public class RelicAerogel extends CustomRelic implements CustomBottleRelic, CustomSavable<Integer> {
+public class RelicAerogel extends ReliquaryRelic implements CustomBottleRelic, CustomSavable<Integer> {
     public static final String ID = "reliquary:Aerogel";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/aerogel.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/aerogel.png");

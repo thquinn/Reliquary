@@ -35,7 +35,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class RelicRunicRemote extends CustomRelic implements CustomSavable<RunicRemoteSave> {
+public class RelicRunicRemote extends ReliquaryRelic implements CustomSavable<RunicRemoteSave> {
     public static final String ID = "reliquary:RunicRemote";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/runicRemote.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/runicRemote.png");

@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicAluminiumFoil extends CustomRelic {
+public class RelicAluminiumFoil extends ReliquaryRelic {
     public static final String ID = "reliquary:AluminiumFoil";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/aluminiumFoil.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/aluminiumFoil.png");

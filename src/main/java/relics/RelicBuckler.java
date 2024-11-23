@@ -13,7 +13,7 @@ import util.TextureLoader;
 
 import java.util.Optional;
 
-public class RelicBuckler extends CustomRelic {
+public class RelicBuckler extends ReliquaryRelic {
     public static final String ID = "reliquary:Buckler";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/buckler.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/buckler.png");

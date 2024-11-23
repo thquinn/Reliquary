@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
 
-public class RelicCrucible extends CustomRelic implements OnRemoveCardFromMasterDeckRelic {
+public class RelicCrucible extends ReliquaryRelic implements OnRemoveCardFromMasterDeckRelic {
     public static final String ID = "reliquary:Crucible";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/crucible.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/crucible.png");

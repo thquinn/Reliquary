@@ -21,7 +21,7 @@ import util.TextureLoader;
 
 import java.util.HashSet;
 
-public class RelicZipperTab extends CustomRelic {
+public class RelicZipperTab extends ReliquaryRelic {
     public static final String ID = "reliquary:ZipperTab";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/zipperTab.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/zipperTab.png");

@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicBookmark extends CustomRelic {
+public class RelicBookmark extends ReliquaryRelic {
     public static final String ID = "reliquary:Bookmark";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/bookmark.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/bookmark.png");

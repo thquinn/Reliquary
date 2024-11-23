@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicIridiumChain extends CustomRelic {
+public class RelicIridiumChain extends ReliquaryRelic {
     public static final String ID = "reliquary:IridiumChain";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/iridiumChain.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/iridiumChain.png");

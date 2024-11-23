@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.vfx.FastCardObtainEffect;
 import util.TextureLoader;
 
-public class RelicSoularoid extends CustomRelic {
+public class RelicSoularoid extends ReliquaryRelic {
     public static final String ID = "reliquary:Soularoid";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/soularoid.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/soularoid.png");

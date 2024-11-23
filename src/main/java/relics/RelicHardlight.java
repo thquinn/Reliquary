@@ -1,6 +1,7 @@
 package relics;
 
 import basemod.abstracts.CustomRelic;
+import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
@@ -11,7 +12,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.MonsterRoom;
 import util.TextureLoader;
 
-public class RelicHardlight extends CustomRelic {
+public class RelicHardlight extends ReliquaryRelic {
     public static final String ID = "reliquary:Hardlight";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/hardlight.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/hardlight.png");
@@ -20,7 +21,7 @@ public class RelicHardlight extends CustomRelic {
     private static final int STRENGTH_GAIN = 2;
 
     public RelicHardlight() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.SOLID);
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.SOLID, RelicType.RED);
     }
 
     @Override

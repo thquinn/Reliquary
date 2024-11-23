@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import util.TextureLoader;
 
-public class RelicFingerTrap extends CustomRelic {
+public class RelicFingerTrap extends ReliquaryRelic {
     public static final String ID = "reliquary:FingerTrap";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/fingerTrap.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/fingerTrap.png");
@@ -17,6 +17,10 @@ public class RelicFingerTrap extends CustomRelic {
 
     public RelicFingerTrap() {
         super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.FLAT);
+    }
+    @Override
+    public boolean isRetired() {
+        return true;
     }
 
     @Override

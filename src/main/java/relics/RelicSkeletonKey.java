@@ -1,5 +1,6 @@
 package relics;
 
+import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.green.*;
@@ -58,7 +59,7 @@ public class RelicSkeletonKey extends RelicSolitaireBase {
     public final static int DESC_INDEX_UNLOAD = 44;
 
     public RelicSkeletonKey() {
-        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
+        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK, RelicType.GREEN);
     }
 
     @Override

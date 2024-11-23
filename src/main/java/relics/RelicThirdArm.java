@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicThirdArm extends CustomRelic {
+public class RelicThirdArm extends ReliquaryRelic {
     public static final String ID = "reliquary:ThirdArm";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/thirdArm.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/thirdArm.png");

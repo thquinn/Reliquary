@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import util.TextureLoader;
 
-public class RelicBloodSugar extends CustomRelic {
+public class RelicBloodSugar extends ReliquaryRelic {
     public static final String ID = "reliquary:BloodSugar";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/bloodSugar.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/bloodSugar.png");

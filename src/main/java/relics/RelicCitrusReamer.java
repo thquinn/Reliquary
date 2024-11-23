@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import util.TextureLoader;
 
-public class RelicCitrusReamer extends CustomRelic {
+public class RelicCitrusReamer extends ReliquaryRelic {
     public static final String ID = "reliquary:CitrusReamer";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/citrusReamer.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/citrusReamer.png");

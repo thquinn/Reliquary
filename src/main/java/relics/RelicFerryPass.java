@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class RelicFerryPass extends CustomRelic implements ClickableRelic {
+public class RelicFerryPass extends ReliquaryRelic implements ClickableRelic {
     public static final String ID = "reliquary:FerryPass";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/ferryPass.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/ferryPass.png");

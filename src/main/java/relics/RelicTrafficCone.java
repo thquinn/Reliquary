@@ -13,7 +13,7 @@ import util.TextureLoader;
 import java.util.HashSet;
 import java.util.Set;
 
-public class RelicTrafficCone extends CustomRelic {
+public class RelicTrafficCone extends ReliquaryRelic {
     public static final String ID = "reliquary:TrafficCone";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/trafficCone.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/trafficCone.png");

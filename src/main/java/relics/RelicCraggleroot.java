@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicCraggleroot extends CustomRelic {
+public class RelicCraggleroot extends ReliquaryRelic {
     public static final String ID = "reliquary:Craggleroot";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/craggleroot.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/craggleroot.png");

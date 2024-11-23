@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicSilkGlove extends CustomRelic {
+public class RelicSilkGlove extends ReliquaryRelic {
     public static final String ID = "reliquary:SilkGlove";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/silkGlove.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/silkGlove.png");

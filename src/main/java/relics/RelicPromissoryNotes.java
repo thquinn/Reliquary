@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import powers.DeathWarrantPower;
 import util.TextureLoader;
 
-public class RelicPromissoryNotes extends CustomRelic implements OnReceivePowerRelic {
+public class RelicPromissoryNotes extends ReliquaryRelic implements OnReceivePowerRelic {
     public static final String ID = "reliquary:PromissoryNotes";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/promissoryNotes.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/promissoryNotes.png");

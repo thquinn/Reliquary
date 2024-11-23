@@ -18,7 +18,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class RelicWitchyDice extends CustomRelic {
+public class RelicWitchyDice extends ReliquaryRelic {
     public static final String ID = "reliquary:WitchyDice";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/witchyDice.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/witchyDice.png");

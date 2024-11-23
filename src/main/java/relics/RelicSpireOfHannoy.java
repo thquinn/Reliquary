@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicSpireOfHannoy extends CustomRelic {
+public class RelicSpireOfHannoy extends ReliquaryRelic {
     public static final String ID = "reliquary:SpireOfHannoy";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/spireOfHannoy.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/spireOfHannoy.png");

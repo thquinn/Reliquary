@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicUnderdogBone extends CustomRelic {
+public class RelicUnderdogBone extends ReliquaryRelic {
     public static final String ID = "reliquary:UnderdogBone";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/underdogBone.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/underdogBone.png");

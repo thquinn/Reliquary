@@ -1,19 +1,20 @@
 package relics;
 
 import basemod.abstracts.CustomRelic;
+import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import util.TextureLoader;
 
-public class RelicBloodFilter extends CustomRelic {
+public class RelicBloodFilter extends ReliquaryRelic {
     public static final String ID = "reliquary:BloodFilter";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/bloodFilter.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/bloodFilter.png");
 
     public RelicBloodFilter() {
-        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.SOLID);
+        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.SOLID, RelicType.RED);
     }
 
     @Override

@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicRoseTintedGlasses extends CustomRelic {
+public class RelicRoseTintedGlasses extends ReliquaryRelic {
     public static final String ID = "reliquary:RoseTintedGlasses";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/roseTintedGlasses.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/roseTintedGlasses.png");

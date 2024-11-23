@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.powers.ReboundPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicBoomerang extends CustomRelic {
+public class RelicBoomerang extends ReliquaryRelic {
     public static final String ID = "reliquary:Boomerang";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/boomerang.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/boomerang.png");

@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import patches.PatchSkipPlayerTurn;
 import util.TextureLoader;
 
-public class RelicBrokenClock extends CustomRelic {
+public class RelicBrokenClock extends ReliquaryRelic {
     public static final String ID = "reliquary:BrokenClock";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/brokenClock.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/brokenClock.png");

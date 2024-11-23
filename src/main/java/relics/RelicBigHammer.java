@@ -1,5 +1,6 @@
 package relics;
 
+import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.red.*;
@@ -41,7 +42,7 @@ public class RelicBigHammer extends RelicSolitaireBase {
     private final static int DESC_INDEX_WHIRLWIND = 26;
 
     public RelicBigHammer() {
-        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.HEAVY);
+        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.HEAVY, RelicType.RED);
     }
 
     @Override

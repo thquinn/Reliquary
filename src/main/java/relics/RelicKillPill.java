@@ -1,6 +1,7 @@
 package relics;
 
 import basemod.abstracts.CustomRelic;
+import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
@@ -9,7 +10,7 @@ import util.TextureLoader;
 import java.util.HashSet;
 import java.util.Set;
 
-public class RelicKillPill extends CustomRelic {
+public class RelicKillPill extends ReliquaryRelic {
     public static final String ID = "reliquary:KillPill";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/killPill.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/killPill.png");
@@ -17,7 +18,7 @@ public class RelicKillPill extends CustomRelic {
     Set<AbstractCreature> triggeredThisTurn;
 
     public RelicKillPill() {
-        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.SOLID);
+        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.SOLID, RelicType.GREEN);
         triggeredThisTurn = new HashSet<>();
     }
 

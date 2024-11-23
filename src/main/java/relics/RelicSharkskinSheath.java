@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicSharkskinSheath extends CustomRelic {
+public class RelicSharkskinSheath extends ReliquaryRelic {
     public static final String ID = "reliquary:SharkskinSheath";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/sharkskinSheath.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/sharkskinSheath.png");

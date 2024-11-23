@@ -16,7 +16,7 @@ import util.TextureLoader;
 import java.util.HashSet;
 import java.util.Set;
 
-public class RelicKnoch extends CustomRelic {
+public class RelicKnoch extends ReliquaryRelic {
     public static final String ID = "reliquary:Knoch";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/knoch.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/knoch.png");

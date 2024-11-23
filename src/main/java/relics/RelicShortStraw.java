@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicShortStraw extends CustomRelic {
+public class RelicShortStraw extends ReliquaryRelic {
     public static final String ID = "reliquary:ShortStraw";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/shortStraw.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/shortStraw.png");

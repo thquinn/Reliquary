@@ -17,7 +17,7 @@ import util.TextureLoader;
 
 import java.util.stream.Stream;
 
-public class RelicCrutches extends CustomRelic {
+public class RelicCrutches extends ReliquaryRelic {
     public static final String ID = "reliquary:Crutches";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/crutches.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/crutches.png");

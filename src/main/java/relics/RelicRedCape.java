@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicRedCape extends CustomRelic {
+public class RelicRedCape extends ReliquaryRelic {
     public static final String ID = "reliquary:RedCape";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/redCape.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/redCape.png");

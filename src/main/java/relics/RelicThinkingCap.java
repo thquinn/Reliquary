@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public class RelicThinkingCap extends CustomRelic {
+public class RelicThinkingCap extends ReliquaryRelic {
     public static final String ID = "reliquary:ThinkingCap";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/thinkingCap.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/thinkingCap.png");

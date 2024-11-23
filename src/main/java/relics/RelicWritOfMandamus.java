@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicWritOfMandamus extends CustomRelic {
+public class RelicWritOfMandamus extends ReliquaryRelic {
     public static final String ID = "reliquary:WritOfMandamus";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/writOfMandamus.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/writOfMandamus.png");

@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicToyRocket extends CustomRelic {
+public class RelicToyRocket extends ReliquaryRelic {
     public static final String ID = "reliquary:ToyRocket";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/toyRocket.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/toyRocket.png");

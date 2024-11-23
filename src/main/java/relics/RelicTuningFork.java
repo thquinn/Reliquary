@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicTuningFork extends CustomRelic {
+public class RelicTuningFork extends ReliquaryRelic {
     public static final String ID = "reliquary:TuningFork";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/tuningFork.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/tuningFork.png");
@@ -20,6 +20,10 @@ public class RelicTuningFork extends CustomRelic {
 
     public RelicTuningFork() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
+    }
+    @Override
+    public boolean isRetired() {
+        return true;
     }
 
     // event implemented in PatchTuningFork

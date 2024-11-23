@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.StaticHelpers;
 import util.TextureLoader;
 
-public class RelicNewFriend extends CustomRelic {
+public class RelicNewFriend extends ReliquaryRelic {
     public static final String ID = "reliquary:NewFriend";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/newFriend.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/newFriend.png");

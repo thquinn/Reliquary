@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicStiletto extends CustomRelic {
+public class RelicStiletto extends ReliquaryRelic {
     public static final String ID = "reliquary:Stiletto";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/stiletto.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/stiletto.png");

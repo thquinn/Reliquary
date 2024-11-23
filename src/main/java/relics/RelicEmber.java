@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicEmber extends CustomRelic implements OnAfterUseCardRelic {
+public class RelicEmber extends ReliquaryRelic implements OnAfterUseCardRelic {
     public static final String ID = "reliquary:Ember";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/ember.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/ember.png");
@@ -23,6 +23,10 @@ public class RelicEmber extends CustomRelic implements OnAfterUseCardRelic {
 
     public RelicEmber() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.SOLID);
+    }
+    @Override
+    public boolean isRetired() {
+        return true;
     }
 
     @Override

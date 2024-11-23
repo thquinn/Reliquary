@@ -15,7 +15,7 @@ import util.TextureLoader;
 
 import java.util.List;
 
-public class RelicTankTop extends CustomRelic {
+public class RelicTankTop extends ReliquaryRelic {
     public static final String ID = "reliquary:TankTop";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/tankTop.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/tankTop.png");

@@ -1,6 +1,7 @@
 package relics;
 
 import basemod.abstracts.CustomRelic;
+import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
@@ -15,7 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
-public class RelicConveyor extends CustomRelic {
+public class RelicConveyor extends ReliquaryRelic {
     public static final String ID = "reliquary:Conveyor";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/conveyor.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/conveyor.png");
@@ -23,7 +24,7 @@ public class RelicConveyor extends CustomRelic {
     static int MIN_COUNT = 3;
 
     public RelicConveyor() {
-        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.HEAVY);
+        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.HEAVY, RelicType.BLUE);
     }
 
     @Override

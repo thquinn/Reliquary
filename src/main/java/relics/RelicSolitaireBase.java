@@ -2,6 +2,7 @@ package relics;
 
 import basemod.abstracts.CustomRelic;
 import basemod.helpers.CardModifierManager;
+import basemod.helpers.RelicType;
 import cardmods.CardModSolitairized;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -15,11 +16,11 @@ import util.ReliquaryLogger;
 
 import java.lang.reflect.Method;
 
-public abstract class RelicSolitaireBase extends CustomRelic {
+public abstract class RelicSolitaireBase extends ReliquaryRelic {
     private boolean cardsSelected = true;
 
-    public RelicSolitaireBase(String id, Texture texture, Texture outline, RelicTier tier, LandingSound sfx) {
-        super(id, texture, outline, tier, sfx);
+    public RelicSolitaireBase(String id, Texture texture, Texture outline, RelicTier tier, LandingSound sfx, RelicType relicType) {
+        super(id, texture, outline, tier, sfx, relicType);
     }
 
     @Override

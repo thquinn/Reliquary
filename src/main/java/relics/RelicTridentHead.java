@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import util.TextureLoader;
 
-public class RelicTridentHead extends CustomRelic {
+public class RelicTridentHead extends ReliquaryRelic {
     public static final String ID = "reliquary:TridentHead";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/tridentHead.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/tridentHead.png");

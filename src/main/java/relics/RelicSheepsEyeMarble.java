@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.StaticHelpers;
 import util.TextureLoader;
 
-public class RelicSheepsEyeMarble extends CustomRelic {
+public class RelicSheepsEyeMarble extends ReliquaryRelic {
     public static final String ID = "reliquary:SheepsEyeMarble";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/sheepsEyeMarble.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/sheepsEyeMarble.png");

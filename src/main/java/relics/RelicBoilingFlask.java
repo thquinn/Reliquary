@@ -24,7 +24,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class RelicBoilingFlask extends CustomRelic {
+public class RelicBoilingFlask extends ReliquaryRelic {
     public static final String ID = "reliquary:BoilingFlask";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/boilingFlask.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/boilingFlask.png");

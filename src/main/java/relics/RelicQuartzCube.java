@@ -17,7 +17,7 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class RelicQuartzCube extends CustomRelic {
+public class RelicQuartzCube extends ReliquaryRelic {
     public static final String ID = "reliquary:QuartzCube";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/quartzCube.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/quartzCube.png");

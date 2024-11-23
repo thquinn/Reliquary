@@ -17,7 +17,7 @@ import patches.PatchAfterUseCard;
 import powers.ReduceColorlessCostPower;
 import util.TextureLoader;
 
-public class RelicSpiralShell extends CustomRelic implements PatchAfterUseCard.AfterUseCardRelic {
+public class RelicSpiralShell extends ReliquaryRelic implements PatchAfterUseCard.AfterUseCardRelic {
     public static final String ID = "reliquary:SpiralShell";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/spiralShell.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/spiralShell.png");

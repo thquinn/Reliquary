@@ -4,6 +4,7 @@ import basemod.abstracts.CustomBottleRelic;
 import basemod.abstracts.CustomRelic;
 import basemod.abstracts.CustomSavable;
 import basemod.helpers.CardModifierManager;
+import basemod.helpers.RelicType;
 import cardmods.CardModBouncer;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -18,7 +19,7 @@ import util.TextureLoader;
 
 import java.util.function.Predicate;
 
-public class RelicBouncer extends CustomRelic implements CustomBottleRelic, CustomSavable<Integer> {
+public class RelicBouncer extends ReliquaryRelic implements CustomBottleRelic, CustomSavable<Integer> {
     public static final String ID = "reliquary:Bouncer";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/bouncer.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/bouncer.png");
@@ -27,7 +28,7 @@ public class RelicBouncer extends CustomRelic implements CustomBottleRelic, Cust
     private boolean cardSelected = true;
 
     public RelicBouncer() {
-        super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.MAGICAL, RelicType.GREEN);
     }
 
     @Override

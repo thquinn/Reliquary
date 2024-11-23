@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicBallBearing extends CustomRelic {
+public class RelicBallBearing extends ReliquaryRelic {
     public static final String ID = "reliquary:BallBearing";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/ballBearing.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/ballBearing.png");

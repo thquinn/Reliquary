@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicJackalopeAntler extends CustomRelic {
+public class RelicJackalopeAntler extends ReliquaryRelic {
     public static final String ID = "reliquary:JackalopeAntler";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/jackalopeAntler.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/jackalopeAntler.png");

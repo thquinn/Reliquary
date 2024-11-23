@@ -1,6 +1,7 @@
 package relics;
 
 import basemod.abstracts.CustomRelic;
+import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -10,13 +11,13 @@ import com.megacrit.cardcrawl.powers.watcher.MantraPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicPrayerBox extends CustomRelic {
+public class RelicPrayerBox extends ReliquaryRelic {
     public static final String ID = "reliquary:PrayerBox";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/prayerBox.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/prayerBox.png");
 
     public RelicPrayerBox() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.SOLID);
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.SOLID, RelicType.PURPLE);
     }
 
     @Override

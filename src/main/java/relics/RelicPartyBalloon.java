@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import util.TextureLoader;
 
-public class RelicPartyBalloon extends CustomRelic {
+public class RelicPartyBalloon extends ReliquaryRelic {
     public static final String ID = "reliquary:PartyBalloon";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/partyBalloon.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/partyBalloon.png");

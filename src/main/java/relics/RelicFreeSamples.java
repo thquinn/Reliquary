@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import powers.IntangibleTurnsPower;
 import util.TextureLoader;
 
-public class RelicFreeSamples extends CustomRelic implements BetterOnLoseHpRelic {
+public class RelicFreeSamples extends ReliquaryRelic implements BetterOnLoseHpRelic {
     public static final String ID = "reliquary:FreeSamples";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/freeSamples.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/freeSamples.png");

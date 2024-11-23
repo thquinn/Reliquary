@@ -15,7 +15,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class RelicIceCubeTray extends CustomRelic {
+public class RelicIceCubeTray extends ReliquaryRelic {
     public static final String ID = "reliquary:IceCubeTray";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/iceCubeTray.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/iceCubeTray.png");

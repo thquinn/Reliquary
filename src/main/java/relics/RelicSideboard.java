@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 // thanks to Github user ReinaSHSL for much of this
-public class RelicSideboard extends CustomRelic implements CustomSavable<List<CardSave>>, ClickableRelic {
+public class RelicSideboard extends ReliquaryRelic implements CustomSavable<List<CardSave>>, ClickableRelic {
     public static final String ID = "reliquary:Sideboard";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/sideboard.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/sideboard.png");

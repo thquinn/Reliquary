@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.vfx.ThoughtBubble;
 import util.StaticHelpers;
 import util.TextureLoader;
 
-public class RelicOuijaBoard extends CustomRelic implements ClickableRelic {
+public class RelicOuijaBoard extends ReliquaryRelic implements ClickableRelic {
     public static final String ID = "reliquary:OuijaBoard";
     private static final Texture IMG = TextureLoader.getTexture("reliquaryAssets/images/relics/ouijaBoard.png");
     private static final Texture OUTLINE  = TextureLoader.getTexture("reliquaryAssets/images/relics/outline/ouijaBoard.png");

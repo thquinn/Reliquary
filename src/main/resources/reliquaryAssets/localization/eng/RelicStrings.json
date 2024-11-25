@@ -135,6 +135,13 @@
       "Each combat starts with two player turns, then two enemy turns."
     ]
   },
+  "reliquary:BubbleWand": {
+    "NAME": "Bubble Wand",
+    "FLAVOR": "Don't do sadness.",
+    "DESCRIPTIONS": [
+      "Whenever you play the last card in your hand, enter #yCalm."
+    ]
+  },
   "reliquary:Buckler": {
     "NAME": "Buckler",
     "FLAVOR": "Emblazoned with the famed cygnet signet of Merek.",

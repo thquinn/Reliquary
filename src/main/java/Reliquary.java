@@ -25,9 +25,11 @@ import orbs.OrbData;
 import powers.*;
 import relics.*;
 import stances.AtonementStance;
+import util.ReliquaryLogger;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.Properties;
 
 @SpireInitializer
@@ -86,23 +88,8 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
 
     @Override
     public void receiveEditKeywords() {
-        String path;
-        if (Settings.language == Settings.GameLanguage.DEU) {
-            path = "reliquaryAssets/localization/deu/KeywordStrings.json";
-        } else if (Settings.language == Settings.GameLanguage.JPN) {
-            path = "reliquaryAssets/localization/jpn/KeywordStrings.json";
-        } else if (Settings.language == Settings.GameLanguage.KOR) {
-            path = "reliquaryAssets/localization/kor/KeywordStrings.json";
-        } else if (Settings.language == Settings.GameLanguage.RUS) {
-            path = "reliquaryAssets/localization/rus/KeywordStrings.json";
-        } else if (Settings.language == Settings.GameLanguage.SPA) {
-            path = "reliquaryAssets/localization/spa/KeywordStrings.json";
-        } else if (Settings.language == Settings.GameLanguage.ZHS) {
-            path = "reliquaryAssets/localization/zhs/KeywordStrings.json";
-        } else {
-            path = "reliquaryAssets/localization/eng/KeywordStrings.json";
-        }
-
+        String language = getLanguage();
+        String path = String.format("reliquaryAssets/localization/%s/KeywordStrings.json", language);
         Gson gson = new Gson();
         String json = Gdx.files.internal(path).readString(String.valueOf(StandardCharsets.UTF_8));
         Keyword[] keywords = gson.fromJson(json, Keyword[].class);
@@ -113,59 +100,20 @@ public class Reliquary implements AddAudioSubscriber, EditCardsSubscriber, EditK
             }
         }
     }
-
     @Override
     public void receiveEditStrings() {
-        if (Settings.language == Settings.GameLanguage.DEU) {
-            BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/deu/CardStrings.json");
-            BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/deu/OrbStrings.json");
-            BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/deu/PowerStrings.json");
-            BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/deu/RelicStrings.json");
-            BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/deu/StanceStrings.json");
-            BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/deu/UIStrings.json");
-        } else if (Settings.language == Settings.GameLanguage.JPN) {
-            BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/jpn/CardStrings.json");
-            BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/jpn/OrbStrings.json");
-            BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/jpn/PowerStrings.json");
-            BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/jpn/RelicStrings.json");
-            BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/jpn/StanceStrings.json");
-            BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/jpn/UIStrings.json");
-        } else if (Settings.language == Settings.GameLanguage.KOR) {
-            BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/kor/CardStrings.json");
-            BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/kor/OrbStrings.json");
-            BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/kor/PowerStrings.json");
-            BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/kor/RelicStrings.json");
-            BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/kor/StanceStrings.json");
-            BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/kor/UIStrings.json");
-        } else if (Settings.language == Settings.GameLanguage.RUS) {
-            BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/rus/CardStrings.json");
-            BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/rus/OrbStrings.json");
-            BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/rus/PowerStrings.json");
-            BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/rus/RelicStrings.json");
-            BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/rus/StanceStrings.json");
-            BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/rus/UIStrings.json");
-        } else if (Settings.language == Settings.GameLanguage.SPA) {
-            BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/spa/CardStrings.json");
-            BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/spa/OrbStrings.json");
-            BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/spa/PowerStrings.json");
-            BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/spa/RelicStrings.json");
-            BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/spa/StanceStrings.json");
-            BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/spa/UIStrings.json");
-        } else if (Settings.language == Settings.GameLanguage.ZHS) {
-            BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/zhs/CardStrings.json");
-            BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/zhs/OrbStrings.json");
-            BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/zhs/PowerStrings.json");
-            BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/zhs/RelicStrings.json");
-            BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/zhs/StanceStrings.json");
-            BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/zhs/UIStrings.json");
-        } else {
-            BaseMod.loadCustomStringsFile(CardStrings.class, "reliquaryAssets/localization/eng/CardStrings.json");
-            BaseMod.loadCustomStringsFile(OrbStrings.class, "reliquaryAssets/localization/eng/OrbStrings.json");
-            BaseMod.loadCustomStringsFile(PowerStrings.class, "reliquaryAssets/localization/eng/PowerStrings.json");
-            BaseMod.loadCustomStringsFile(RelicStrings.class, "reliquaryAssets/localization/eng/RelicStrings.json");
-            BaseMod.loadCustomStringsFile(StanceStrings.class, "reliquaryAssets/localization/eng/StanceStrings.json");
-            BaseMod.loadCustomStringsFile(UIStrings.class, "reliquaryAssets/localization/eng/UIStrings.json");
-        }
+        String language = getLanguage();
+        BaseMod.loadCustomStringsFile(CardStrings.class, String.format("reliquaryAssets/localization/%s/CardStrings.json", language));
+        BaseMod.loadCustomStringsFile(OrbStrings.class, String.format("reliquaryAssets/localization/%s/OrbStrings.json", language));
+        BaseMod.loadCustomStringsFile(PowerStrings.class, String.format("reliquaryAssets/localization/%s/PowerStrings.json", language));
+        BaseMod.loadCustomStringsFile(RelicStrings.class, String.format("reliquaryAssets/localization/%s/RelicStrings.json", language));
+        BaseMod.loadCustomStringsFile(StanceStrings.class, String.format("reliquaryAssets/localization/%s/StanceStrings.json", language));
+        BaseMod.loadCustomStringsFile(UIStrings.class, String.format("reliquaryAssets/localization/%s/UIStrings.json", language));
+    }
+    String getLanguage() {
+        String language = Settings.language.name().toLowerCase();
+        String[] translatedLanguages = new String[]{ "jpn", "kor", "rus", "spa", "zhs" };
+        return Arrays.stream(translatedLanguages).anyMatch(language::equals) ? language : "eng";
     }
 
     @Override

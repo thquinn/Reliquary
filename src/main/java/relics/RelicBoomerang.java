@@ -21,6 +21,10 @@ public class RelicBoomerang extends ReliquaryRelic {
     public RelicBoomerang() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT);
     }
+    @Override
+    public boolean isRetired() {
+        return true;
+    }
 
     @Override
     public void atTurnStart() {

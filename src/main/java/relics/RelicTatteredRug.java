@@ -22,6 +22,10 @@ public class RelicTatteredRug extends ReliquaryRelic {
     public RelicTatteredRug() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT);
     }
+    @Override
+    public boolean isRetired() {
+        return true;
+    }
 
     @Override
     public boolean canSpawn() {

@@ -97,6 +97,7 @@ public class RelicSculptingSteel extends ReliquaryRelic {
             RelicSheepsEyeMarble.ID,
             RelicShortStraw.ID,
             RelicSpinner.ID,
+            RelicSpiralShell.ID,
             RelicTamtam.ID,
             RelicTankTop.ID,
             RelicThumbDrive.ID,
